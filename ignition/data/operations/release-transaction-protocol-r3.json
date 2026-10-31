@@ -1,0 +1,315 @@
+{
+  "schema_version": "release-transaction-protocol-r3",
+  "contract_id": "RELEASE_TRANSACTION_PROTOCOL_R3",
+  "governance_task_id": "IGNITION_20261018_R3_PROTECTED_PR_MERGE_CONTRACT",
+  "type": "GOVERNANCE",
+  "status": "CANDIDATE_NOT_EFFECTIVE",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "receipt_repository": "Arvin-liu/1111",
+  "supersedes_contract_id": "RELEASE_TRANSACTION_PROTOCOL_R2",
+  "effective_policy_before_activation": "RELEASE_TRANSACTION_PROTOCOL_R2",
+  "activation": {
+    "candidate_can_self_authorize": false,
+    "requires_independent_1111_transition_receipt": true,
+    "requires_exact_remote_main_sha_observation": true,
+    "requires_fresh_main_checkout": true,
+    "requires_explicit_owner_transition_approval": true,
+    "required_receipt_status": "PUBLISHED_AND_VERIFIED",
+    "required_migration_scope": "ONE_TIME_R3_BOOTSTRAP_ONLY",
+    "r2_is_current_before_any_merge_bound_activation_claim": true,
+    "merge_bound_activation_claim_latches_r3_until_signed_r2_restoration": true,
+    "signed_protected_r2_restoration_is_the_only_postactivation_route_to_r2": true
+  },
+  "preserved_hard_gates": {
+    "source_contract": "ignition/data/operations/release-transaction-protocol-r2.json",
+    "required_gate_ids": [
+      "deterministic_projection_preflight",
+      "current_path_manifest_exact",
+      "residual_non_growth",
+      "current_semantic_gates",
+      "canonical_full_suite",
+      "exact_candidate_sha_binding",
+      "no_post_suite_tracked_mutation",
+      "task_ordinal_binding"
+    ],
+    "fail_closed": true,
+    "canonical_full_suite": {
+      "run_count_policy": "EVIDENCE_DRIVEN_NO_FIXED_COUNT",
+      "evidence_sufficiency": {
+        "complete_current_inventory_required": true,
+        "exact_candidate_sha_and_environment_required": true,
+        "zero_failures_errors_skips_required": true,
+        "clean_before_after_required": true,
+        "natural_successful_exit_required": true,
+        "every_admitted_receipt_must_pass": true
+      },
+      "independent_revalidation": {
+        "required": true,
+        "workflow_name": "release-transaction-protocol-validation",
+        "method": "INDEPENDENTLY_RECHECK_EXACT_HEAD_INVENTORY_ENVIRONMENT_AND_ALL_SUITE_RECEIPTS",
+        "must_cover_all_receipt_ids": true,
+        "requires_another_full_suite_execution": false
+      },
+      "zero_failures_errors_skips": true,
+      "clean_before_after": true,
+      "exact_candidate_sha": true,
+      "no_watchdog": true
+    }
+  },
+  "identity_binding": {
+    "current_task_source_path": "ignition/data/operations/current-task-lineage-status.json",
+    "task_identity_model_path": "ignition/data/operations/task-identity-model-r1.json",
+    "formal_ordinal_source": "the exact authorized task execution contract and canonical current-task source",
+    "bind_source_digests": true,
+    "reject_historical_task_receipt_replay": true,
+    "never_infer_task_ordinal_from_this_protocol": true,
+    "successor_registration": {
+      "status": "OWNER_REGISTRATION_REQUIRED",
+      "authority_repository": "Arvin-liu/1111",
+      "authority_branch": "main",
+      "authority_path": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json",
+      "requires_github_verified_owner_signature": true,
+      "must_bind": [
+        "task_id",
+        "formal_ordinal",
+        "work_branch",
+        "receipt_branch",
+        "formal_base_main_sha"
+      ],
+      "conflict_inventory": [
+        "formal_task_lifecycle_and_merged_receipts",
+        "current_task_lineage_and_execution_contracts",
+        "all_merged_and_open_formal_task_pull_requests",
+        "all_formal_task_and_receipt_branches_in_1111"
+      ],
+      "task148_reuse": "FORBIDDEN",
+      "ordinal_inference": "FORBIDDEN"
+    }
+  },
+  "source_evidence_fields": [
+    "task_id",
+    "formal_ordinal",
+    "task_branch",
+    "candidate_head_sha",
+    "candidate_tree_sha",
+    "base_main_sha",
+    "merge_preview_sha",
+    "merge_preview_tree_sha",
+    "ordered_merge_preview_parents",
+    "reviewed_changed_paths",
+    "observed_changed_paths",
+    "task_identity_model_sha256",
+    "pull_request_workflow_checks",
+    "canonical_full_suite_receipts",
+    "canonical_full_suite_evidence_revalidation",
+    "owner_transition_authorization_record"
+  ],
+  "prepublication": {
+    "required_merge_method": "MERGE_COMMIT",
+    "required_merge_preview_parent_order": [
+      "base_main_sha",
+      "candidate_head_sha"
+    ],
+    "require_preview_tree_equal_candidate_tree": true,
+    "require_base_and_head_stable_since_tests": true,
+    "require_pull_request_workflow_evidence_for_exact_head_base": true,
+    "required_workflow_names": [
+      "release-transaction-protocol-validation",
+      "foundation-validation",
+      "repository-path-accounting-preflight"
+    ],
+    "required_status_check_contexts": [
+      {"context": "release-transaction-protocol-validation", "app_id": 15368},
+      {"context": "foundation-validation", "app_id": 15368},
+      {"context": "repository-path-accounting-preflight", "app_id": 15368}
+    ],
+    "required_status_checks_strict": true,
+    "required_pull_request_rule": true,
+    "minimum_approving_reviews": 0,
+    "self_approval_is_not_required": true,
+    "owner_transition_authorization_is_not_a_github_review": true,
+    "require_reviewed_paths_equal_observed_paths": true,
+    "require_verified_branch_protection": true,
+    "record_live_review_and_status_rules_without_strengthening_them": true,
+    "code_review_requirement_follows_verified_github_branch_rules": true,
+    "if_base_head_preview_or_tree_changes": "refresh_preview_and_rerun_affected_admission_checks"
+  },
+  "merge_method": {
+    "supported_methods": [
+      "MERGE_COMMIT"
+    ],
+    "required_final_parent_order": [
+      "base_main_sha",
+      "candidate_head_sha"
+    ],
+    "rebase_supported": false,
+    "squash_supported": false,
+    "changes_repository_merge_settings": false,
+    "unknown_branch_protection_blocks_admission": true
+  },
+  "branch_protection_requirements": {
+    "require_protected_main": true,
+    "require_pull_request_before_merge": true,
+    "minimum_approving_reviews": 0,
+    "independent_review_required": false,
+    "single_owner_policy": "ZERO_APPROVALS_REQUIRED; NO_CODEOWNER_OR_LAST_PUSH_REVIEW; OWNER_AUTHORIZATION_IS_A_SEPARATE_SIGNED_RECORD",
+    "require_code_owner_review_disabled": true,
+    "require_last_push_approval_disabled": true,
+    "require_linear_history_disabled": true,
+    "require_required_status_checks": true,
+    "required_status_check_contexts": [
+      {"context": "release-transaction-protocol-validation", "app_id": 15368},
+      {"context": "foundation-validation", "app_id": 15368},
+      {"context": "repository-path-accounting-preflight", "app_id": 15368}
+    ],
+    "require_strict_status_checks": true,
+    "require_admin_enforcement": true,
+    "require_zero_ruleset_bypass_actors": true,
+    "require_zero_classic_pull_request_bypass_allowances": true,
+    "force_push_allowed": false,
+    "deletions_allowed": false,
+    "require_merge_commit_enabled": true,
+    "require_squash_merge_disabled": true,
+    "require_rebase_merge_disabled": true,
+    "fail_closed_if_any_protection_source_is_unreadable": true
+  },
+  "owner_authorization_integrity": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "record_path": "instructions/goal-mode/IGNITION-2026-10-24-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R1.json",
+    "signature_verification_source": "GitHub REST commit.verification",
+    "require_verified": true,
+    "require_reason": "valid",
+    "require_nonempty_signature_and_payload": true,
+    "accepted_commit_attribution": "OWNER_AUTHOR_AND_OWNER_OR_VERIFIED_GITHUB_WEB_FLOW_COMMITTER_19864447",
+    "require_exact_record_hash_at_signed_commit": true,
+    "require_record_commit_on_1111_main": true,
+    "require_latest_record_commit_and_no_replay": true,
+    "authorization_must_bind": [
+      "task_id",
+      "formal_ordinal",
+      "successor_registration_commit_sha",
+      "pr_number",
+      "candidate_head_sha",
+      "base_main_sha",
+      "r3_protocol_blob_sha",
+      "r2_duration_policy_exception",
+      "r2_full_suite_count_policy_exception",
+      "r2_publication_method_exception",
+      "one_time_scope"
+    ],
+    "unsigned_author_or_committer_attribution_is_insufficient": true
+  },
+  "postactivation_recovery": {
+    "mode": "OWNER_AUTHORIZED_PROTECTED_PR_RESTORATION",
+    "current_main_state_path": "ignition/data/operations/release-transaction-recovery-state-r1.json",
+    "target_r2_protocol_blob_sha": "9d87de51f0b2bb0a1d075bbcdf6ca6e8ff8e3615",
+    "private_authorization_repository": "Arvin-liu/1111",
+    "private_authorization_path": "instructions/goal-mode/IGNITION-R3-TO-R2-RESTORE-AUTHORIZATION-R1.json",
+    "private_witness_path": "reports/operations/IGNITION-R3-TO-R2-RESTORED-AND-VERIFIED-R1.json",
+    "authorization_action": "RESTORE_R2_ONLY",
+    "requires_github_verified_owner_signature": true,
+    "must_bind_exact_current_r3_blob_and_target_r2_blob": true,
+    "must_bind_exact_recovery_pr_head_base_preview_and_final_main": true,
+    "requires_normal_protected_pr_merge": true,
+    "requires_no_bypass_and_all_current_r3_checks": true,
+    "requires_exact_remote_main_and_fresh_clone_witness": true,
+    "switch_to_r2_only_after_witness_status": "R2_RESTORED_AND_VERIFIED",
+    "missing_or_mismatched_recovery_keeps_r3_effective": true,
+    "forward_repair_after_failed_recovery": "UNDER_R3_WITHOUT_FORCE_PUSH_OR_HISTORY_REWRITE",
+    "restore_authorization_approves_no_r2_exceptions": true
+  },
+  "postpublication": {
+    "verify_remote_ref": "refs/heads/main",
+    "verify_pr_merged": true,
+    "verify_final_commit_parents_and_tree": true,
+    "require_final_parents_equal_preview_parent_order": true,
+    "require_final_tree_equal_tested_preview_tree": true,
+    "allow_final_sha_to_differ_from_preview_sha": true,
+    "require_observed_remote_sha_equal_actual_final_main_sha": true,
+    "require_fresh_clone_head_equal_actual_final_main_sha": true,
+    "run_postpublication_checks_on_actual_final_main_sha": true,
+    "require_projection_check_source_sha_equal_actual_final_main_sha": true,
+    "nonempty_unexpected_generated_paths_fail_closed": true,
+    "mismatch_state": "PUBLISHED_UNVERIFIED",
+    "required_workflow_names": [
+      "release-transaction-protocol-validation",
+      "foundation-validation",
+      "repository-path-accounting-preflight"
+    ]
+  },
+  "independent_witness": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path": "reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json",
+    "must_bind": [
+      "governance_task_id",
+      "prepublication_record_sha256",
+      "pr_number",
+      "candidate_head_sha",
+      "candidate_tree_sha",
+      "base_main_sha",
+      "merge_preview_sha",
+      "merge_preview_tree_sha",
+      "ordered_merge_preview_parents",
+      "merge_method",
+      "actual_final_main_sha",
+      "actual_final_main_tree_sha",
+      "actual_final_main_parents",
+      "remote_main_observation",
+      "fresh_clone_head_sha",
+      "postpublication_check_statuses",
+      "owner_transition_approval"
+    ],
+    "pending_status": "MERGED_PENDING_POSTPUBLICATION_VALIDATION",
+    "success_status": "PUBLISHED_AND_VERIFIED",
+    "receipt_must_not_create_formal_commit": true
+  },
+  "failure_states": [
+    "MERGED_PENDING_POSTPUBLICATION_VALIDATION",
+    "PUBLISHED_UNVERIFIED",
+    "RELEASE_CLOSURE_BLOCKED"
+  ],
+  "claim_ceiling": "Candidate R3 release protocol only. It does not activate R3, change R2 or GitHub settings, self-authorize, assert a review/check rule that GitHub does not enforce, authorize publication, or infer external truth or production readiness.",
+  "canonical_suite_duration_policy": {
+    "elapsed_duration_semantics": "OBSERVED_NATURAL_ELAPSED_SECONDS_ONLY",
+    "natural_process_exit_required": true,
+    "watchdog_termination_fails": true,
+    "r2_duration_exception": {
+      "source": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/minimum_natural_window_seconds",
+      "r2_minimum_natural_window_seconds": 14400,
+      "r2_remains_effective_before_activation": true,
+      "r3_candidate_duration_threshold": "NONE",
+      "explicit_owner_approval_required": true,
+      "owner_authorization_field": "r2_duration_policy_exception",
+      "owner_authorization_value": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"
+    }
+  },
+  "r2_full_suite_count_exception": {
+    "source": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/required_runs",
+    "r2_required_runs": 2,
+    "r2_remains_effective_before_activation": true,
+    "r3_run_count_policy": "EVIDENCE_DRIVEN_NO_FIXED_COUNT",
+    "r3_requires_complete_evidence_and_independent_revalidation": true,
+    "explicit_owner_approval_required": true,
+    "owner_authorization_field": "r2_full_suite_count_policy_exception",
+    "owner_authorization_value": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT"
+  },
+  "r2_publication_method_exception": {
+    "source": "ignition/data/operations/release-transaction-protocol-r2.json#/main_mutation_policy/mode",
+    "r2_publication_method": "ORDINARY_FAST_FORWARD_ONLY",
+    "r2_candidate_sha_must_equal_final_main_sha": true,
+    "r3_publication_method": "PROTECTED_GITHUB_PR_MERGE_COMMIT",
+    "r3_final_merge_commit_sha_may_differ_from_candidate_sha": true,
+    "preserved_requirements": [
+      "normal_protected_pull_request_merge_with_no_bypass",
+      "merge_commit_parents_equal_base_then_candidate",
+      "final_main_tree_equals_tested_merge_preview_tree",
+      "actual_final_main_sha_equals_remote_main_and_fresh_clone_head",
+      "postpublication_checks_and_1111_witness_bind_actual_final_main_sha"
+    ],
+    "explicit_owner_approval_required": true,
+    "owner_authorization_field": "r2_publication_method_exception",
+    "owner_authorization_value": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS"
+  }
+}

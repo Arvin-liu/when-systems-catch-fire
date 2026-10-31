@@ -1,0 +1,51 @@
+{
+  "schema_version": "toolbox-executed-experience-r1-replay-provenance-r0",
+  "recorded_at_utc": "2026-10-27T14:07:46Z",
+  "task_ref": "pr264:four-run-target-coverage-local-replay",
+  "replay": {
+    "command": "python3 -B ignition/tools/toolbox_actions_validation_target_coverage.py --stdin < ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+    "exit_code": 0,
+    "python_version": "3.9.6",
+    "network_used_by_tool": false,
+    "filesystem_writes_by_target_tool": false,
+    "artifacts": {
+      "source": {
+        "path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+        "bytes": 20193,
+        "sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636"
+      },
+      "input": {
+        "path": "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+        "bytes": 835523,
+        "sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372"
+      },
+      "output_replay": {
+        "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-replay-output-20261027-r0.json",
+        "bytes": 29294,
+        "sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6"
+      },
+      "effect_receipt": {
+        "path": "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+        "bytes": 6979,
+        "sha256": "16c7120654937385e1c624976488f4b8d20e65d72f98391d2b5bf601550d9940"
+      },
+      "preflight_input_r1": {
+        "path": "ignition/data/operations/toolbox-executed-experience-real-task-input-r1.json",
+        "bytes": 2019,
+        "sha256": "7ddd1889d736f06c35d6be30ee5930a709912a22e75992c243dc44491a126e83"
+      },
+      "preflight_output_r1": {
+        "path": "ignition/data/operations/toolbox-executed-experience-real-task-output-r1.json",
+        "bytes": 1321,
+        "sha256": "cbd2454f8e1c14d6a4e14f4f0dcc57676cb31c9179b0cccf9b5811d0eb1678d8"
+      }
+    }
+  },
+  "comparison": {
+    "receipt_declared_output_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+    "replayed_output_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+    "matches_previous_declared_digest": true,
+    "original_output_bytes_preserved": false
+  },
+  "claim_ceiling": "A fresh local replay produced bytes matching the output digest declared in the earlier caller-supplied execution receipt. This does not prove the historical run produced these bytes, authenticate the receipt or actors, establish effect truth, or authorize reuse or execution."
+}

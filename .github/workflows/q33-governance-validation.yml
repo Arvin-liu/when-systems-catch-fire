@@ -6,11 +6,53 @@ on:
   pull_request:
     paths:
       - '.github/workflows/q33-governance-validation.yml'
+      - '.github/README.md'
       - 'ignition/requirements-q33.txt'
       - 'ignition/data/governance/**'
+      - 'ignition/data/foundation/function-assets/**'
+      - 'ignition/data/foundation/nonfunction-claims/**'
+      - 'ignition/data/foundation/migrations/**'
+      - 'ignition/data/architecture/interactive-system-map.json'
+      - 'ignition/data/operations/human-front-door-identity-r1.json'
+      - 'ignition/data/operations/project-components.json'
+      - 'ignition/AI-START-HERE.md'
+      - 'ignition/AI-HANDOFF.md'
+      - 'ignition/HUMAN-READING.md'
+      - 'ignition/ITERATION.md'
+      - 'ignition/STATE-CHANGELOG.md'
+      - 'ignition/SUMMARY.md'
+      - 'ignition/llms.txt'
+      - 'ignition/docs/ai-assistant-usage-reference.md'
+      - 'ignition/docs/project-current-state.md'
+      - 'ignition/docs/architecture/interactive-system-map.md'
+      - 'ignition/docs/generated/ignition-system-architecture.svg'
+      - 'ignition/docs/governance/human-surface-editorial-contract.md'
+      - 'ignition/docs/human/**'
+      - 'ignition/KNOWLEDGE/**'
+      - 'ignition/RESULTS/**'
+      - 'ignition/PUBLICATIONS/pointfire-results-book/**'
+      - 'ignition/tools/validate_human_front_door.py'
+      - 'ignition/tools/generate_interactive_system_map.py'
+      - 'ignition/tools/validate_homepage_architecture_projection.py'
       - 'ignition/schemas/governance/**'
       - 'ignition/tools/governance/**'
       - 'ignition/data/operations/propagation/121Q33-request.json'
+      - '.github/README.md'
+      - 'ignition/HUMAN-READING.md'
+      - 'ignition/AI-START-HERE.md'
+      - 'ignition/AI-HANDOFF.md'
+      - 'ignition/llms.txt'
+      - 'ignition/docs/human/**'
+      - 'ignition/docs/governance/human-surface-editorial-contract.md'
+      - 'ignition/docs/ai-assistant-usage-reference.md'
+      - 'ignition/docs/project-current-state.md'
+      - 'ignition/docs/architecture/interactive-system-map.md'
+      - 'ignition/docs/generated/ignition-system-architecture.svg'
+      - 'ignition/data/architecture/interactive-system-map.json'
+      - 'ignition/data/operations/project-components.json'
+      - 'ignition/tools/validate_human_front_door.py'
+      - 'ignition/tools/validate_homepage_architecture_projection.py'
+      - 'ignition/tools/generate_interactive_system_map.py'
       - 'ignition/tests/test_q33_governance_infrastructure.py'
       - 'ignition/tests/test_publication_gate_fail_closed.py'
       - 'ignition/tests/test_publication_provenance_attack.py'
@@ -22,6 +64,12 @@ on:
       - 'ignition/tests/test_diff_coverage_gate.py'
       - 'ignition/tests/test_era_resolver_generalization.py'
       - 'ignition/tests/test_human_front_door.py'
+      - 'ignition/tests/test_human_visibility_gate.py'
+      - 'ignition/tests/test_current_surface_compiler.py'
+      - 'ignition/tests/test_homepage_architecture_projection.py'
+      - 'ignition/tests/test_q33_workflow_trigger_coverage.py'
+      - 'ignition/tests/fixtures/human-front-door-r3.json'
+      - 'ignition/tests/fixtures/ignition-operating-method/homepage-ai-first-r1.json'
       - 'ignition/tests/test_pr_front_door_audit.py'
       - 'ignition/tests/test_q33_fail_closed_fixtures.py'
   push:
@@ -61,8 +109,13 @@ jobs:
             tests/test_diff_coverage_gate.py \
             tests/test_era_resolver_generalization.py \
             tests/test_human_front_door.py \
+            tests/test_human_visibility_gate.py \
+            tests/test_current_surface_compiler.py \
+            tests/test_homepage_architecture_projection.py \
+            tests/test_q33_workflow_trigger_coverage.py \
             tests/test_pr_front_door_audit.py \
             tests/test_q33_fail_closed_fixtures.py \
             -v
-      - name: Run generalized generated-output authority validator (diff coverage)
+      - name: Run Q33 generated-output authority validator for its candidate branch
+        if: ${{ github.ref == 'refs/heads/agent/121q33-global-copyright-risk-and-rights-governance' || (github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/121q33-global-copyright-risk-and-rights-governance') }}
         run: python3 tools/operations/validate_generated_output_authority.py --request data/operations/propagation/121Q33-request.json

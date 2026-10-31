@@ -173,10 +173,10 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         # its current-cli eligibility and bounded attempt under explicit
         # step names.  Keep both forms so historical current projections can
         # still be regenerated without importing a newer task's vocabulary.
-        f"ignition/data/operations/iterations/{current_ordinal}/step03-codex-live-eligibility.json",
-        f"ignition/data/operations/iterations/{current_ordinal}/step09-live-codex-attempt.json",
-        f"ignition/data/operations/iterations/{architecture_ordinal}/step11-live-preflight.json",
-        f"ignition/data/operations/iterations/{architecture_ordinal}/step13-live-execution-receipt.json",
+        f"ignition/data/operations/iterations/{current_ordinal:03d}/step03-codex-live-eligibility.json",
+        f"ignition/data/operations/iterations/{current_ordinal:03d}/step09-live-codex-attempt.json",
+        f"ignition/data/operations/iterations/{architecture_ordinal:03d}/step11-live-preflight.json",
+        f"ignition/data/operations/iterations/{architecture_ordinal:03d}/step13-live-execution-receipt.json",
     ):
         candidate = sync.resolve_repo_path(relative_path)
         if candidate.is_file():
@@ -242,8 +242,8 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     current_ordinal = iteration["current_formal_task_ordinal"]
     architecture_ordinal = iteration["latest_architecture_task_ordinal"]
     live_evidence_paths = [
-        ROOT / f"data/operations/iterations/{current_ordinal}/step03-codex-live-eligibility.json",
-        ROOT / f"data/operations/iterations/{architecture_ordinal}/step11-live-preflight.json",
+        ROOT / f"data/operations/iterations/{current_ordinal:03d}/step03-codex-live-eligibility.json",
+        ROOT / f"data/operations/iterations/{architecture_ordinal:03d}/step11-live-preflight.json",
     ]
     for preflight_path in live_evidence_paths:
         if not preflight_path.is_file():
@@ -262,8 +262,8 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             if executor_id and eligibility:
                 live_statuses[executor_id] = eligibility
     live_receipt_paths = [
-        ROOT / f"data/operations/iterations/{current_ordinal}/step09-live-codex-attempt.json",
-        ROOT / f"data/operations/iterations/{architecture_ordinal}/step13-live-execution-receipt.json",
+        ROOT / f"data/operations/iterations/{current_ordinal:03d}/step09-live-codex-attempt.json",
+        ROOT / f"data/operations/iterations/{architecture_ordinal:03d}/step13-live-execution-receipt.json",
     ]
     for live_receipt_path in live_receipt_paths:
         if not live_receipt_path.is_file():

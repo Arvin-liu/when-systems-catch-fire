@@ -1,0 +1,49 @@
+{
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true
+  },
+  "claim_ceiling": "Route proposal only. It does not invoke the candidate or authorize execution, checkpoint resume, or rollback.",
+  "planner_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_trials": [
+    {
+      "candidate_invoked": false,
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "network_calls_made": 0,
+      "scenario": "default_off",
+      "selected_tool_ids": []
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "network_calls_made": 0,
+      "network_permission_required": false,
+      "scenario": "explicit_allowlist",
+      "selected_tool_ids": [
+        "maintenance.audit_execution_state_lineage"
+      ]
+    }
+  ],
+  "real_task_replay": {
+    "task_ref": "agent-runtime-pilot:non-knowledge-manifest-r0",
+    "classification": "REAL_LOCAL_TOOL_TEST_ON_CHECKED_IN_SYNTHETIC_PILOT_RECORD",
+    "input_path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+    "input_sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7",
+    "output_path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+    "output_sha256": "88e33f5db91a163cef87c04e429eba85ae6ff336ed5e770b1470d6f83ffd1816",
+    "default_off_invocations": 0,
+    "sufficient_invocations": 1,
+    "sufficient_status": "PASS",
+    "redundant_replay_invocations": 2,
+    "redundant_outputs_identical": true,
+    "redundant_added_output_bytes": 1318,
+    "execution_authorized": false
+  },
+  "schema_version": "toolbox-execution-state-lineage-route-evidence-r0",
+  "task_profile_path": "ignition/data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
+  "task_profile_sha256": "63938b4654effa159e7398168ecfd07a21bb95fd72693c254b2aaa2f814046ab",
+  "tool_id": "maintenance.audit_execution_state_lineage"
+}

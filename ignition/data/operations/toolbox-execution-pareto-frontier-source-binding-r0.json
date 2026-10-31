@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-candidate-pareto-source-binding-r0",
+  "candidate_status": "EXPERIMENTAL_CANDIDATE_ONLY",
+  "workbench_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 85,
+    "head_sha": "77d308ea132a4952d151cab1d81f9f9c9f44f55c",
+    "semantic_goal_id": "AB-19-HARNESS-PARETO-R0",
+    "source_url": "https://github.com/Arvin-liu/ignition-architecture-workbench/pull/85",
+    "relationship": "BOUNDED_COMPONENT_DERIVED_FROM_P2_CANDIDATE_SELECTION_SCOPE"
+  },
+  "paper_source": {
+    "title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs",
+    "arxiv": "2610.26770v2",
+    "version_date": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.26770",
+    "relationship": "CONCEPTUAL_SOURCE_ONLY_NOT_REPRODUCTION_OR_BENCHMARK_REPLICATION"
+  },
+  "implemented_scope": [
+    "Require caller-declared same evaluator, task-set, environment, and paired case/trial rows.",
+    "Compute empirical pass fractions and exact means for one caller-declared resource metric.",
+    "Apply the baseline pass-rate floor and return the observed nondominated set when all resource measurements are present."
+  ],
+  "not_implemented": [
+    "No trajectory analyzer, LLM agents, test generator, harness editor, recursive evolution, deployment selection, CI gate change, or Foundation route change.",
+    "No benchmark result from the paper is imported as evidence for this component."
+  ],
+  "external_code_copied": false,
+  "license_note": "No external implementation code or dependencies were copied; this component uses the Ignition repository license."
+}

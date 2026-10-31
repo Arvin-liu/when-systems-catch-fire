@@ -1,0 +1,101 @@
+{
+  "schema_version": "ignition.crossref-reference-metadata-comparison-real-task-evidence-r1",
+  "tool_id": "research.compare_crossref_reference_metadata",
+  "tool_version": "0.2.0",
+  "task_id": "crossref-source-reference-binding-and-target-resolution-20261026",
+  "selection_method": "Purposive reuse of one previously recorded public Crossref source DOI/reference pair; this is not a random or representative sample.",
+  "invocation_timestamp_utc": "2026-10-26T00:46:57Z",
+  "input": {
+    "source_work_doi": "10.1186/s12884-025-07725-7",
+    "verify_source_link": true,
+    "references": [
+      {
+        "key": "7725_CR2",
+        "doi": "10.1136/bjsports-2020-102955",
+        "year": 2020,
+        "journal_title": "Br J Sports Med",
+        "volume": "54",
+        "first_page": "1451"
+      }
+    ]
+  },
+  "input_sha256_of_exact_stdin_bytes": "9d6ac79454c3ba037e603a183d44f67758261ad6d474a5b00e17bcd0130a17a0",
+  "input_source_evidence": {
+    "path": "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+    "task_id": "crossref-deposited-reference-projection-real-doi-r1",
+    "source_work_doi": "10.1186/s12884-025-07725-7",
+    "reference_key": "7725_CR2",
+    "reference_doi": "10.1136/bjsports-2020-102955"
+  },
+  "invocation": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_compare_crossref_reference_metadata.py --stdin --allow-public-network",
+    "network_permission_flag_present": true,
+    "host": "api.crossref.org",
+    "request_attempt_count": 2,
+    "source_doi_transmitted": true,
+    "target_doi_transmitted": true,
+    "repository_writes": false,
+    "article_or_publisher_pages_fetched": false,
+    "raw_provider_bodies_retained": false,
+    "tool_stdout_retained": false
+  },
+  "implementation": {
+    "wrapper_path": "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+    "wrapper_sha256": "b0c691dfc3b6e630a9f92c402b8b0fa49e7dbbd5badc61f9b9b186c27ee04058",
+    "crossref_adapter_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+    "crossref_adapter_sha256": "12a2803c6c5414954f9a9cd895d7d45966e9214404e887a6b97e5b486f17f11a",
+    "task103_helper_path": "ignition/evidence-program/tools/run_crossref_verification.py",
+    "task103_helper_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51"
+  },
+  "provider_requests": [
+    {
+      "role": "SOURCE_WORK",
+      "doi": "10.1186/s12884-025-07725-7",
+      "http_status": 200,
+      "response_sha256": "1762ef52a1d3bd766876833b59832c404527dc6d6dd31e9961ffe8c002729d42",
+      "source_work_identity_status": "EXACT_DOI_MATCH",
+      "reported_reference_count": 40,
+      "raw_provider_body_retained": false
+    },
+    {
+      "role": "TARGET_WORK",
+      "doi": "10.1136/bjsports-2020-102955",
+      "http_status": 200,
+      "response_sha256": "faa21a8fccfd7fcc447efeb649b4a8af058f3290e5882e5df61f395852320bc9",
+      "target_doi_identity_status": "EXACT_DOI_MATCH",
+      "raw_provider_body_retained": false
+    }
+  ],
+  "observed_outcome": {
+    "tool_status": "FIELD_DIFFERENCES_OBSERVED",
+    "source_binding_status": "SOURCE_REFERENCE_DOI_MATCH",
+    "source_key_match_count": 1,
+    "source_reference_doi": "10.1136/bjsports-2020-102955",
+    "source_field_comparisons": {
+      "first_page": "NORMALIZED_EQUAL",
+      "journal_title": "NORMALIZED_EQUAL",
+      "volume": "NORMALIZED_EQUAL",
+      "year": "NORMALIZED_EQUAL"
+    },
+    "target_doi_identity_status": "EXACT_DOI_MATCH",
+    "target_field_comparisons": {
+      "first_page": "NORMALIZED_EQUAL",
+      "journal_title": "NORMALIZED_DIFFERENT",
+      "volume": "NORMALIZED_EQUAL",
+      "year": "NORMALIZED_EQUAL"
+    },
+    "claim_ceiling": "This one run reports exact DOI identity and a unique key/DOI pair in the returned Crossref source record, then selected metadata comparisons against the source row and target Work. It does not authenticate publisher provenance, prove the citation correct or incorrect, establish bibliography completeness, or validate scientific support."
+  },
+  "interpretation_and_limits": [
+    "One purposively selected source row was uniquely bound by key and exact DOI before target lookup; this demonstrates the optional source-link behavior on one record only.",
+    "All four selected fields were normalized-equal against the Crossref-deposited source row; the target Work journal abbreviation/full title difference was preserved as metadata difference only.",
+    "No raw provider response body or tool stdout was retained; response digests and selected statuses are recorded.",
+    "This one record does not estimate accuracy, coverage, completeness, general reliability, cost, or latency and does not replace the earlier 0.1.0 real-task record."
+  ],
+  "comparison_context": {
+    "existing_tool": "research.verify_crossref_metadata@0.3.0",
+    "existing_tool_evidence": "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+    "relationship": "SPECIALIZED_COMPLEMENT",
+    "basis": "The existing verifier provides a bounded source-deposited reference projection; this optional mode uniquely binds a selected key/DOI pair and additionally resolves that target DOI Work. No broad superiority or replacement is established."
+  }
+}

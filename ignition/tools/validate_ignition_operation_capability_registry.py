@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -20,7 +21,6 @@ SCHEMA_PATH = ROOT / "schemas/operations/ignition-operation-capability-registry-
 OPEN_OBLIGATION_PATH = ROOT / "data/operations/open-obligation-registry-r1.json"
 SYSTEM_IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
 CURRENT_FACTS_PATH = ROOT / "data/architecture/current-facts.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/148/execution-contract-r1.json"
 
 EXPECTED_STATUSES = {
     "CURRENT",
@@ -54,6 +54,15 @@ def _resolve_pointer(document: Any, pointer: str) -> Any:
         else:
             value = value[part]
     return value
+
+
+def _registry_lifecycle_contract_path(registry: dict[str, Any]) -> Path:
+    """Resolve the historical contract that owns this registry's baseline."""
+    task_id = registry["registry_lifecycle"]["task_id"]
+    match = re.fullmatch(r"IGNITION-[0-9]{8}-(?P<ordinal>[0-9]{3})", task_id)
+    if not match:
+        raise ValueError("registry lifecycle task id is not canonical")
+    return ROOT / f"data/operations/iterations/{match.group('ordinal')}/execution-contract-r1.json"
 
 
 def validate(document: dict[str, Any] | None = None) -> list[str]:
@@ -205,11 +214,18 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("Pack manifest count differs from deterministic Current facts")
     if current_pack_facts["capability_route_count"] != len(expected_pack_capabilities):
         errors.append("Pack capability count differs from deterministic Current facts")
-    execution_baseline = load_json(EXECUTION_CONTRACT_PATH)["formal_baseline"]["sha"]
+    try:
+        lifecycle_contract = load_json(_registry_lifecycle_contract_path(registry))
+        if lifecycle_contract.get("task_id") != registry["registry_lifecycle"]["task_id"]:
+            raise ValueError("registry lifecycle contract task ID differs")
+        execution_baseline = lifecycle_contract["formal_baseline"]["sha"]
+    except (KeyError, OSError, ValueError, json.JSONDecodeError) as exc:
+        errors.append(f"registry lifecycle execution-contract baseline cannot be read: {exc}")
+        execution_baseline = None
     if coverage["formal_main_baseline"] != registry["registry_lifecycle"]["baseline_sha"]:
         errors.append("coverage baseline differs from registry lifecycle baseline")
-    if coverage["formal_main_baseline"] != execution_baseline:
-        errors.append("registry baseline differs from the Task148 execution contract")
+    if execution_baseline is not None and coverage["formal_main_baseline"] != execution_baseline:
+        errors.append("registry baseline differs from its lifecycle task execution contract")
 
     operation_map = _operation_map(registry)
     live = operation_map.get("external.live_invocation")

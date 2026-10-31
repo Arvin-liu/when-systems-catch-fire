@@ -1,0 +1,56 @@
+{
+  "schema_version": "toolbox-c1-comparison-evidence-r0",
+  "tool_id": "collaboration.verify_handoff_artifact_files",
+  "evidence_level": "SYNTHETIC_ONLY",
+  "scope": "Matched local synthetic controls compare receiver declaration preflight and UTF-8 context packet behavior with receipt-native, digest-only checking of bounded file bytes.",
+  "comparators": [
+    {
+      "tool_id": "collaboration.preflight_receiver_handoff",
+      "case_id": "same-receipt-changed-artifact-bytes",
+      "matched_receipt_and_artifact_reference": true,
+      "expected_sha256": "5f9b21643146e910df4fabd6aacfba0711e0a5ae4a0001b7814190254b514cea",
+      "observed_file_sha256": "7f23cdab3e0958fda229db23ce04932a22e8e2dd6489c259364b03887c539f9f",
+      "comparator_outcome": {
+        "status": "PREFLIGHT_READY_NO_AUTHORITY",
+        "execution_authorized": false,
+        "reads_artifact_bytes": false
+      },
+      "candidate_outcome": {
+        "status": "DIGEST_MISMATCH",
+        "execution_authorized": false,
+        "returns_artifact_contents": false
+      },
+      "interpretation": "The receiver preflight verifies receipt-to-bundle declarations and caller-supplied receiver conditions; it does not make a local-byte observation. The candidate adds that separately bounded observation."
+    },
+    {
+      "tool_id": "knowledge.assemble_context_packet",
+      "case_id": "same-binary-file-digest-only-versus-text-context",
+      "same_file_bytes_and_expected_sha256": true,
+      "artifact_sha256": "13d4f9fcd30a4862a0fde55022c8758b429e42a7c886250d002b8e1fa0d7b8c3",
+      "comparator_outcome": {
+        "materialization_status": "SOURCE_NOT_UTF8",
+        "context_excerpt": null,
+        "semantic_support": "NOT_EVALUATED"
+      },
+      "candidate_outcome": {
+        "status": "DIGEST_MATCH",
+        "returns_artifact_contents": false,
+        "execution_authorized": false
+      },
+      "interpretation": "The context packet remains the appropriate tool for digest-checked UTF-8 excerpts and obligation mapping. The candidate supports receipt-bound binary byte checks without returning content."
+    }
+  ],
+  "comparison": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "unique_remaining_use_cases": [
+      "Verify receipt-bound bytes of binary or non-UTF-8 artifacts under an explicit ignition/ workspace without returning artifact contents.",
+      "Add a bounded local-byte observation between a serialized Federation receipt and a separate receiver review."
+    ],
+    "deprecation_or_retirement_status": "SPECIALIZED",
+    "findings": [
+      "The byte verifier complements receiver declaration checks and UTF-8 context assembly; the matched controls do not support replacing either existing tool.",
+      "Evidence is synthetic and local. It establishes neither real-task quality nor source authenticity, provenance, stable snapshots, scientific validity, safety, or measured cost."
+    ]
+  }
+}

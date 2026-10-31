@@ -1,0 +1,86 @@
+{
+  "schema_version": "toolbox-arxiv-query-search-c1-evidence-r0",
+  "policy": "Owner C1: compare same-task capability with available alternatives; retire no tool without evidence that its valuable uses are covered.",
+  "comparison_design": {
+    "task": "Find at most five bibliographic metadata records about artificial intelligence in healthcare, retaining provider identifiers for follow-up.",
+    "public_task_query": "artificial intelligence AND healthcare",
+    "provider_query_syntax": {
+      "arxiv": "all:\"artificial intelligence\" AND all:healthcare",
+      "europe_pmc": "artificial intelligence AND healthcare"
+    },
+    "same_execution_environment": true,
+    "same_permission_class": "One public read-only query per selected provider; no credentials, secrets, billing, writes, or external actions.",
+    "max_results_per_provider": 5,
+    "query_was_public_and_non_sensitive": true,
+    "query_persisted_in_receipts": false,
+    "raw_provider_responses_retained": false
+  },
+  "observations": {
+    "arxiv": {
+      "tool_id": "research.search_arxiv_query",
+      "source": "arXiv API Atom search",
+      "retrieval_timestamp_utc": "2026-10-26T04:41:21Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "status": "FOUND",
+      "hit_count": 4563,
+      "returned_count": 5,
+      "returned_arxiv_ids": ["2304.04780v1", "1301.2158v1", "2107.13454v1", "2508.03278v1", "2307.00067v1"],
+      "response_sha256": "a0a4aa37299048d4a0995f62632c58915cc6648caa9312f6807b4c42f638ec46",
+      "query_sha256": "911406f2d2b51a79888ffafdc1cafd3a1401ac70c731e3c02355e47b9c64b4ce",
+      "request_sha256": "e17b60e9189ff8c7226a09edf8193ae573117dd9975e3e4e54616c65645b6506",
+      "source_code_sha256": "aea2472d4ea99c38939fdbfa5dd91a11aa574680ede8549d88d1100256c1afbe",
+      "response_bytes": 13040,
+      "abstracts_or_full_text_returned": false
+    },
+    "europe_pmc": {
+      "tool_id": "research.search_europe_pmc_query",
+      "source": "Europe PMC lite search",
+      "retrieval_timestamp_utc": "2026-10-26T04:37:24Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "status": "FOUND",
+      "hit_count": 159566,
+      "returned_count": 5,
+      "returned_ids": ["41672140", "40069303", "PMC11718711", "37386943", "37467785"],
+      "returned_pmids": ["41672140", "40069303", null, "37386943", "37467785"],
+      "response_sha256": "fefdf30b99631d43976845ad35ad1f97972636797945d492383e6e8c7182aba2",
+      "query_sha256": "a7ad72be7af8a1513495e3e2a93f0264bebc9ae65e70f793cd90ac7ebc5ed557",
+      "source_code_sha256": "0c6374f3d3bbd3bdcc05ede780b935ee942c1b190d378dc492913c7c1783ce1c",
+      "abstracts_or_full_text_returned": false
+    },
+    "pubmed": {
+      "tool_id": "research.search_pubmed_query",
+      "same_task_live_query": "NOT_RUN",
+      "reason": "The existing PubMed adapter requires a caller-supplied contact_email sent to NCBI. No task-specific contact address was supplied, so none was transmitted.",
+      "contract_comparison": "Reviewed as an alternative, but no same-task quality, recall, or result comparison is claimed."
+    },
+    "arxiv_known_id_lookup": {
+      "tool_id": "research.lookup_arxiv_paper_metadata",
+      "comparison": "Its exact-ID input cannot discover candidate IDs from a topic query; it remains useful after a record identifier is known."
+    }
+  },
+  "findings": [
+    "Both completed the same high-level public discovery task with one read-only query and returned five bounded metadata rows; their provider-specific hit counts and ranks are not comparable measures of recall or relevance.",
+    "arXiv returns arXiv entry identifiers and categories, while Europe PMC returns MED/PMC identifiers and biomedical publication metadata. The observed top-five DOI intersection was zero; this one snapshot does not establish broad coverage or source quality.",
+    "The tool scopes are complementary by source collection and identifier contract. The known-ID arXiv lookup cannot replace query discovery; Europe PMC does not return the arXiv-source identifier contract. No retirement is supported.",
+    "The same-task live PubMed comparison remains unmeasured because its contact_email input was not supplied. Existing PubMed and Europe PMC candidates remain distinct; no PubMed superiority or inferiority is claimed.",
+    "The final tool source was smoke-tested after adding request_count and duplicate-ID rejection; the returned top-five snapshot and response digest matched its earlier successful smoke. Relevance precision, recall, completeness, latency, availability, cost, human review time, and scientific quality remain UNKNOWN. No result was scientifically reviewed or treated as evidence for a claim."
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "retired_tools": [],
+    "replacement_candidates": [],
+    "reason": "Same-task observations show distinct source/identifier coverage but do not establish a superior or complete replacement. Preserve the optional arXiv search beside exact-ID lookup and other provider-specific query tools."
+  },
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-arxiv-query-search-source-binding-r0.json",
+    "ignition/data/operations/toolbox-arxiv-query-search-real-task-evidence-r1.json",
+    "ignition/tools/toolbox_arxiv_query_search.py",
+    "ignition/tests/test_toolbox_arxiv_query_search.py",
+    "ignition/tools/toolbox_europe_pmc_query_search.py",
+    "ignition/tests/test_toolbox_europe_pmc_query_search.py",
+    "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+    "ignition/tests/test_toolbox_arxiv_metadata_lookup.py"
+  ]
+}

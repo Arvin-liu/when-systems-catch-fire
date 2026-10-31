@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 575 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 635 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -1071,6 +1071,19 @@
 - **问题：** 此来源记录了什么：104 双 088 归并与外部证据层定版报告？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Slower methane growth and emissions: bounded source review](../reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md)
+
+- **结果 ID：** `HR-3F1B23502128513C`
+- **日期：** 2026-10-31
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Slower methane growth and emissions: bounded source review？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PARTIAL. This is a bounded source review and reproducible calculation for one published inversion. It is not human scientific review, peer review, or scientific acceptance. No result changes EPISTEMICALLYACCEPTED=0.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -4421,6 +4434,370 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Verify an Offline Source-Snapshot Run](../docs/operations/toolbox-verify-offline-source-snapshot-run.md)
+
+- **结果 ID：** `HR-6D4A0058A515C96E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Verify an Offline Source-Snapshot Run？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.verifyofflinesourcesnapshotrun checks a saved E37 run directory against its receipt.json declarations. It reads the caller-selected run directory and writes one JSON result to stdout.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Validation Invocation Deduplication Planner](../docs/operations/toolbox-validation-invocation-deduplication.md)
+
+- **结果 ID：** `HR-D0F2B4236C36DF64`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Validation Invocation Deduplication Planner？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.planvalidationinvocationdeduplication@0.1.0 groups caller-supplied validation profile records that have an exactly matching argument vector, working directory, source tree, runtime fingerprint, environment fingerprint, and result contract. It reports a potential read-only reuse group…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task Decomposition Solvability Comparator](../docs/operations/toolbox-task-decomposition-solvability.md)
+
+- **结果 ID：** `HR-1EC7ABBE63CC5D5F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task Decomposition Solvability Comparator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** planning.comparetaskdecompositionsolvability@0.1.0 is an optional, offline CLI for checking several caller-declared task DAGs against the same typed task inputs, required outputs, executor capability contracts, validator contracts, and resource budget.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Structural Analogy Search](../docs/operations/toolbox-structural-analogy-search.md)
+
+- **结果 ID：** `HR-AF93590EF97F9465`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Structural Analogy Search？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Cross-task reusable context preflight](../docs/operations/toolbox-reusable-context-preflight.md)
+
+- **结果 ID：** `HR-2EDDD73F8E2AFB38`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Cross-task reusable context preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** knowledge.preflightreusablecontext@0.2.0 checks caller-selected derived context cards before a task reuses them. It requires the source identity, declared version, SHA-256 digest, and access-scope identifier to match the caller's current source snapshot. For eligible local files under ignition/,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Receiver Handoff Preflight](../docs/operations/toolbox-receiver-handoff-preflight.md)
+
+- **结果 ID：** `HR-73071217495B5939`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Receiver Handoff Preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional read-only tool checks an incoming serialized FederatedHandoffBundle against its FederatedResultReceipt before a receiver separately considers a takeover. It validates the receipt's canonical self-digest, rebuilds the handoff projection through the existing Federation API, compares e…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [PubMed bounded query search candidate](../docs/operations/toolbox-pubmed-query-search.md)
+
+- **结果 ID：** `HR-719106FADBC1F1B0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：PubMed bounded query search candidate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.searchpubmedquery is an experimental, default-off adapter for caller-directed PubMed query-to-record discovery. It sends the caller's non-sensitive query to the fixed NCBI E-utilities host, runs one ESearch request and, when IDs are returned, one ESummary request, then emits at most ten…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Cross-source publication metadata comparison](../docs/operations/toolbox-publication-metadata-cross-source-comparison.md)
+
+- **结果 ID：** `HR-554D799B050AF008`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Cross-source publication metadata comparison？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.comparepublicationmetadatasnapshots compares the title and publication year in one existing Crossref verifier result and one OpenAlex lookup result for the same bare DOI. It reads a bounded JSON envelope on stdin and emits field-level AGREE, DISAGREE, or INSUFFICIENT outcomes with the pr…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Portable Research Episode Builder](../docs/operations/toolbox-portable-research-episode-builder.md)
+
+- **结果 ID：** `HR-37A0D2F882088DBF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Portable Research Episode Builder？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional, default-off tool builds the existing R0 Portable Research Episode manifest from caller-supplied event declarations and local included-file paths.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [OpenAlex Work metadata and location lookup](../docs/operations/toolbox-openalex-work-metadata.md)
+
+- **结果 ID：** `HR-2C7EEB53147147E5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：OpenAlex Work metadata and location lookup？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.lookupopenalexworkmetadata v0.2.0 accepts one to five unique bare DOI identifiers and returns an exact-primary-DOI-matched OpenAlex Work projection. In addition to the v0.1 metadata, it returns OpenAlex-reported openaccess, bestoalocation, and locations fields.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Offline source-snapshot binding tool](../docs/operations/toolbox-offline-source-snapshot-binding.md)
+
+- **结果 ID：** `HR-D15D17D7AA8F8152`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Offline source-snapshot binding tool？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.bindofflinesourcesnapshotrun runs the existing E37 saved-source adapter through a fixed, offline-only entry point. It binds each capture to a caller-supplied SHA-256 lock, binds the normalized source set to a separate expected digest, and preserves the selected captures, draft, claim-rev…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Handoff Artifact Byte Checker](../docs/operations/toolbox-handoff-artifact-byte-check.md)
+
+- **结果 ID：** `HR-C89C1B1DD9604EAF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Handoff Artifact Byte Checker？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** collaboration.verifyhandoffartifactfiles is an optional, read-only local checker for a typed Federation result receipt. It opens the receipt's artifact references under a caller-selected workspace root inside this checkout's ignition/ directory and compares bounded file bytes with each declared S…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Handoff Advisory Selector](../docs/operations/toolbox-handoff-advisory-selection.md)
+
+- **结果 ID：** `HR-19BC76898D1E08C5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Handoff Advisory Selector？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional read-only tool creates a review-only suggestion for omitting an advisory message when its exact text, ordered source references, and task scope already appear in a caller-declared receiver context. It never edits a bundle, sends a message, or decides whether a message is semanticall…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Handoff Action Binding Preflight (experimental)](../docs/operations/toolbox-handoff-action-binding-preflight.md)
+
+- **结果 ID：** `HR-694824C32FDF3279`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Handoff Action Binding Preflight (experimental)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** collaboration.preflighthandoffactionbinding@0.1.0 checks whether one caller-supplied Federation handoff, local action packet, approval request/decision, execution lease, and receiver descriptor agree on the action being proposed. It extends the receipt-to-bundle and receiver-precondition checks i…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Execution Effect Receipt Preflight R0](../docs/operations/toolbox-execution-effect-receipt.md)
+
+- **结果 ID：** `HR-6E55AF3204BDECC7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Execution Effect Receipt Preflight R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.preflightexecutioneffectreceipt checks whether a caller-supplied execution record and later observation refer to the same declared tool, version, source digest, input/output digest, environment, and run. It keeps NOTRUN, STARTED, COMPLETED, and UNKNOWN distinct and flags a nonzero com…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Evidence Update Snapshot Comparator](../docs/operations/toolbox-evidence-update-snapshot-comparator.md)
+
+- **结果 ID：** `HR-4F27B5F34521AFE8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Evidence Update Snapshot Comparator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.compareevidenceupdatesnapshots makes one bounded, read-only structural comparison between two caller-supplied snapshots for the same task and claim. It reports added and absent evidence IDs, exact record-field changes, source-family count changes, declared scope/applicability/state delta…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Europe PMC topic search candidate](../docs/operations/toolbox-europe-pmc-query-search.md)
+
+- **结果 ID：** `HR-2535490F67EEC4F5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Europe PMC topic search candidate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.searcheuropepmcquery is an experimental, default-off adapter for discovering a small set of publication metadata records from a caller-supplied public query. It sends one request to the Europe PMC REST Web Service, asks for JSON lite results, and returns no more than ten selected metadat…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Europe PMC exact identifier full-text location locator](../docs/operations/toolbox-europe-pmc-fulltext-locator.md)
+
+- **结果 ID：** `HR-AD94CF91BC1E6953`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Europe PMC exact identifier full-text location locator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.resolveeuropepmcfulltextlocations v0.2.0 is an optional experimental adapter for a task that already has one to five public DOI, PMID, or PMCID identifiers and needs the fullTextUrlList metadata reported by Europe PMC. It uses the fixed Europe PMC Search API with the exact DOI:, EXTID:,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Crossref Reference Metadata Comparator 0.2.0](../docs/operations/toolbox-crossref-reference-metadata-comparison.md)
+
+- **结果 ID：** `HR-B21E9407F99BE35B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Crossref Reference Metadata Comparator 0.2.0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.comparecrossrefreferencemetadata accepts one source-work DOI and one to five caller-selected Crossref reference rows. With the optional verifysourcelink omitted or set to false (the default), it preserves the 0.1.0 behavior: send only each selected reference DOI to the fixed Crossref Wor…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Crossref Metadata Verifier 0.3.0](../docs/operations/toolbox-crossref-metadata-verifier.md)
+
+- **结果 ID：** `HR-EAC4F5F01038D25C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Crossref Metadata Verifier 0.3.0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.verifycrossrefmetadata compares up to ten caller-supplied DOI, expected-title, and expected-year records with the fixed Crossref Works API. Version 0.2.0 also projects bounded Crossref update-to, updated-by, and typed relation identifiers from the same response, so relation metadata adds…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Crossref 引文候选匹配器 / Crossref Citation Candidate Matcher](../docs/operations/toolbox-crossref-citation-matcher.md)
+
+- **结果 ID：** `HR-5F4FF7A29D422E2F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Crossref 引文候选匹配器 / Crossref Citation Candidate Matcher？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.matchcrossrefcitation sends one caller-supplied public, non-sensitive bibliographic citation to the fixed Crossref REST API v1 Works endpoint using query.bibliographic. It requests two rows, the provider-recommended small result set for ordinary citation matching, and projects a bounded…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ContextPacket Variant Comparator](../docs/operations/toolbox-context-packet-variant-comparator.md)
+
+- **结果 ID：** `HR-EB6950CE5817FC8E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ContextPacket Variant Comparator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Tool ID: maintenance.comparecontextpacketvariants
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Component path residue grouper](../docs/operations/toolbox-component-path-residue.md)
+
+- **结果 ID：** `HR-D2507C43EE6390F9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Component path residue grouper？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.summarizecomponentpathresidue groups caller-supplied unmappedpath rows by their exact parent directory and by a conservative normalized filename prefix. It is a read-only, offline triage helper.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Toolbox Component Coverage Comparison](../docs/operations/toolbox-component-comparison.md)
+
+- **结果 ID：** `HR-3D2F359D4D5AA628`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Toolbox Component Coverage Comparison？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.comparetoolboxcomponentcoverage compares one incumbent toolbox component with one proposed successor. It checks caller-declared valuable use-case inventories, exact input and output contract digests, paired outcomes, a shared evaluator and environment, one resource metric, permission…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Bounded Thinking Operation Selector](../docs/operations/toolbox-bounded-thinking-operation.md)
+
+- **结果 ID：** `HR-3717A33FCA149544`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Bounded Thinking Operation Selector？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The selector recommends one next thinking operation for a caller-declared, already-bounded run. It can return READMORE, VERIFY, DECOMPOSE, REFRAMEORCLARIFY, CAPACITYOREXECUTORESCALATE, REQUESTOWNERDECISION, or a terminal STOP.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Audit Finding Comparator R0](../docs/operations/toolbox-audit-finding-comparator.md)
+
+- **结果 ID：** `HR-CFC7E6ABCA6A8EE5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Audit Finding Comparator R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.compareauditfindings compares two caller-supplied audit records that declare the same scope, target, and target revision. It reports finding coverage, disposition disagreements, and evidence-reference differences as a bounded JSON result.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent Episode Binding Plan Preflight](../docs/operations/toolbox-agent-episode-binding.md)
+
+- **结果 ID：** `HR-9A2112123D248AF3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Agent Episode Binding Plan Preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional tool checks one declarative Agent Episode Binding plan from JSON on stdin. It checks the plan schema and consistency between role declarations, digest-bound context references, feedback edges, write-domain bindings, permissions declared in the plan, and the work-unit dependency DAG.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Exact-head GitHub check-run observations](../docs/operations/toolbox-actions-check-observations.md)
+
+- **结果 ID：** `HR-4E495C404F7D17B1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Exact-head GitHub check-run observations？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.inspectexactheadcheckobservations compares a caller-supplied GitHub check-runs JSON snapshot with an expected commit SHA and a caller-supplied list of check names and GitHub App IDs. It reports exact matches, stale-SHA observations, provider mismatches, pending/non-success results, mi…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [阶段成果持续快照与分层发布制度](../docs/operations/stage-snapshot-publication.md)
 
 - **结果 ID：** `HR-8E4B48D6273130F9`
@@ -4429,6 +4806,201 @@
 - **问题：** 此来源记录了什么：阶段成果持续快照与分层发布制度？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publication（已升为 Current；1.3.0 转为 Historical）。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Source Section Byte Parity](../docs/operations/source-section-byte-parity.md)
+
+- **结果 ID：** `HR-D7A14DE5391B6177`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Source Section Byte Parity？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.comparesourcesectionbytes compares one explicitly marked text section from a caller-supplied UTF-8 source document with the same marked section in one checked-out human document. It returns section offsets, byte counts and SHA-256 values; it does not return either section's text.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Selected index search result merge](../docs/operations/selected-index-search-result-merge.md)
+
+- **结果 ID：** `HR-CEB262B64142D010`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Selected index search result merge？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.mergeselectedindexsearchresults@0.2.0 combines two or three already captured topic-search receipts from the existing Crossref, OpenAlex, and Europe PMC adapters. It is a local, offline operation: it makes no network requests, reads no repository files, writes no files, and does not need…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [PubMed Citation Matcher](../docs/operations/pubmed-citation-matcher.md)
+
+- **结果 ID：** `HR-96F5B44E32866558`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：PubMed Citation Matcher？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.matchpubmedcitation is an experimental, default-off adapter for one caller-supplied public bibliographic citation when no DOI or PMID is available. It sends journal title, year, volume, first page, and first author to the fixed NCBI ECitMatch endpoint and returns only the PMID that NCBI…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Producer Consumer Semantic Preflight R0](../docs/operations/producer-consumer-semantic-preflight.md)
+
+- **结果 ID：** `HR-0CC88B44B786A0B2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Producer Consumer Semantic Preflight R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.preflightproducerconsumersemantics checks a bounded producer text against constant re.search patterns in one caller-supplied Python consumer function. It parses the source with Python ast, never imports or executes it, then applies the extracted patterns to the producer text. The CLI…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Portable Research Episode Manifest Preflight](../docs/operations/portable-research-episode-preflight.md)
+
+- **结果 ID：** `HR-DE2155B5CA586323`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Portable Research Episode Manifest Preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional read-only CLI checks one caller-supplied episode manifest from JSON on stdin. It validates artifact identity/version references, declared parent and dependency links, planned/attempted/executed/not-executed states, separate used and attached artifact references, review targets, expl…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [OpenAlex bounded query search](../docs/operations/openalex-query-search.md)
+
+- **结果 ID：** `HR-253AB45880967464`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：OpenAlex bounded query search？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.searchopenalexquery is an optional, default-off toolbox adapter over the existing OpenAlex client. It discovers Works from one caller-supplied public query and returns at most ten provider-ranked metadata records. It does not return abstracts, full text, or the raw query.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual SF6 source-surface comparison](../docs/operations/noaa-sf6-source-surface-comparison.md)
+
+- **结果 ID：** `HR-AFEC762EF69D1B94`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual SF6 source-surface comparison？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.comparenoaasf6sourcesurfaces compares NOAA GML's rendered annual SF6 growth page with its fixed raw table for a bounded inclusive year range. It returns both provider-reported increments and uncertainties in ppt, literal differences, missing years, retrieval metadata, and a digest for ea…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual SF6 growth lookup](../docs/operations/noaa-sf6-annual-growth-lookup.md)
+
+- **结果 ID：** `HR-E56DD6AE366C46D0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual SF6 growth lookup？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.lookupnoaaglobalsf6annualgrowth v0.1.0 reads one bounded inclusive year range from NOAA GML's fixed global annual SF6 raw table. The matching NOAA trend page describes the values as globally averaged marine-surface data and explains that annual increase is measured from January 1 through…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual N2O source-surface comparison](../docs/operations/noaa-n2o-source-surface-comparison.md)
+
+- **结果 ID：** `HR-395798E80C24DE9F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual N2O source-surface comparison？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.comparenoaan2osourcesurfaces compares NOAA Global Monitoring Laboratory's rendered annual nitrous-oxide increase table with its fixed raw table for a caller-bounded inclusive year range. It reports both stated N2O mole-fraction increases and uncertainties in ppb, literal differences, mis…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual N2O growth lookup](../docs/operations/noaa-n2o-annual-growth-lookup.md)
+
+- **结果 ID：** `HR-A58DDA231F0C4268`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual N2O growth lookup？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.lookupnoaaglobaln2oannualgrowth retrieves a caller-bounded year range from NOAA Global Monitoring Laboratory's fixed raw annual nitrous-oxide mole-fraction increase table. It returns provider-reported annual increases and uncertainties in ppb, explicit missing-year status, retrieval meta…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA CO2 Source-Surface Comparator](../docs/operations/noaa-co2-source-surface-comparison.md)
+
+- **结果 ID：** `HR-C2940EFA778EA858`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA CO2 Source-Surface Comparator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.comparenoaaco2sourcesurfaces compares the annual-growth values and stated uncertainties on NOAA GML's rendered CO2 page and its fixed raw table for a bounded year range.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA greenhouse gas annual-growth pairing](../docs/operations/noaa-co2-ch4-annual-growth-pairing.md)
+
+- **结果 ID：** `HR-549E70F041F9D2DA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA greenhouse gas annual-growth pairing？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.pairnoaaco2ch4growthbyyear v0.3.0 aligns already captured NOAA GML source-surface comparison outputs by equal integer year. It always accepts CO2 and CH4. Input schema r1 may also include N2O; schema r2 may include N2O and/or SF6. The tool reads one bounded JSON envelope from stdin and w…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual CO2 growth lookup](../docs/operations/noaa-co2-annual-growth-lookup.md)
+
+- **结果 ID：** `HR-66BA2A3B22F95840`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual CO2 growth lookup？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional tool retrieves a caller-bounded inclusive year range from NOAA Global Monitoring Laboratory's fixed public table at https://gml.noaa.gov/webdata/ccgg/trends/co2/co2grgl.txt. The input accepts years 1959–2100 and at most 50 years per request. It returns the provider's annual atmosphe…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual CH4 source-surface comparison](../docs/operations/noaa-ch4-source-surface-comparison.md)
+
+- **结果 ID：** `HR-84143D17D04E770A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual CH4 source-surface comparison？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional tool compares NOAA Global Monitoring Laboratory's rendered annual methane-growth table with its fixed raw table for a caller-bounded inclusive year range. It returns both reported increments and uncertainties in ppb, their exact arithmetic differences, request timestamps, HTTP metad…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NOAA GML global annual methane growth lookup](../docs/operations/noaa-ch4-annual-growth-lookup.md)
+
+- **结果 ID：** `HR-672777F571EFC62E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NOAA GML global annual methane growth lookup？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional tool reads NOAA Global Monitoring Laboratory's fixed public text table at https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4grgl.txt. Its task contract is narrow: select a caller-bounded inclusive year range (1984–2100, at most 50 years), returning the provider's annual atmospheric me…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -4455,6 +5027,214 @@
 - **问题：** 此来源记录了什么：点火 Operation-specific Playbooks R1？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Only operations whose registry status is CURRENT or CURRENTBOUNDED and whose AI callability is PUBLIC or PUBLICBOUNDED receive a callable playbook. Required inputs, outputs, status, mode, read set, authorities, validators and claim ceiling below are derived from the registry rather than copied as…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Grounded Ideation Preflight](../docs/operations/grounded-ideation-preflight.md)
+
+- **结果 ID：** `HR-B8735594845D5B76`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Grounded Ideation Preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.preflightgroundedideation@0.1.0 checks one caller-supplied research-proposal packet for structural traceability before human review. It is an optional offline preflight, not an idea generator or literature-search system.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Governed Improvement Transition Preflight R0](../docs/operations/governed-improvement-transition.md)
+
+- **结果 ID：** `HR-E66D0FD402A55EB1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Governed Improvement Transition Preflight R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.preflightgovernedimprovementtransition summarizes one caller-declared predecessor-to-successor record. It is a narrow, offline implementation candidate for Workbench AB-19's governed improvement transition.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Failure-Anchored Recovery Preflight R0](../docs/operations/failure-anchored-recovery-preflight.md)
+
+- **结果 ID：** `HR-46C5D8B0948512D4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Failure-Anchored Recovery Preflight R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.preflightfailureanchoredrecovery checks one proposed recovery plan against a caller-supplied failed-run record. It is an optional, default-off, offline review aid.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Execution State Lineage Audit](../docs/operations/execution-state-lineage-audit.md)
+
+- **结果 ID：** `HR-E45C9AB464407BF5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Execution State Lineage Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.auditexecutionstatelineage checks a bounded, caller-supplied projection of checkpoint and resume records. It is an optional read-only CLI and is not selected by default.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Paired execution candidate Pareto frontier](../docs/operations/execution-candidate-pareto-frontier.md)
+
+- **结果 ID：** `HR-351C314DDB7F12A6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Paired execution candidate Pareto frontier？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.summarizeexecutioncandidateparetofrontier analyzes caller-supplied observations for candidate implementations evaluated on the same case/trial set, evaluator digest, task-set digest, and environment reference. It reports each candidate's empirical pass fraction and exact mean of one c…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Executed Experience Reuse Preflight](../docs/operations/executed-experience-reuse-preflight.md)
+
+- **结果 ID：** `HR-278ED53DC2D9A73F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Executed Experience Reuse Preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** knowledge.preflightexecutedexperiencereuse checks caller-selected execution receipts before a prior result is shown as an optional reference for a later task. It is an experimental CLI candidate and remains excluded from routing by default. It is read-only, has no network or secret access, writes…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Declared Permission Delta Preflight](../docs/operations/declared-permission-delta-preflight.md)
+
+- **结果 ID：** `HR-8A2D6BB23669742E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Declared Permission Delta Preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** governance.preflightdeclaredpermissiondelta@0.1.0 compares two caller-supplied declarations of grants for the same policy and subject. It reports exact (capability, scope) strings added to and removed from the candidate list. An addition or mixed change is labeled for review; a removal is not tre…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [DataCite DOI metadata lookup](../docs/operations/datacite-doi-metadata.md)
+
+- **结果 ID：** `HR-BBF9E07C5D35A7F1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：DataCite DOI metadata lookup？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.lookupdatacitedoimetadata retrieves one DataCite DOI record projection from the public, unauthenticated API. The input is exactly one bare DOI in UTF-8 JSON, such as {"doi":"10.25491/3v3x-tj13"}. Run it only when DataCite-specific record fields are needed and the caller permits this publ…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Crossref topic query search](../docs/operations/crossref-query-search.md)
+
+- **结果 ID：** `HR-6877CA1684609A44`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Crossref topic query search？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.searchcrossrefquery is an optional, default-off adapter for discovering Crossref Works from one caller-supplied public query. It makes one request to the versioned /v1/works endpoint, asks Crossref for at most ten rows and a limited field projection, and returns DOI and bibliographic met…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Counterfactual Fragility Probe](../docs/operations/counterfactual-fragility-probe.md)
+
+- **结果 ID：** `HR-E7556FFBAC294881`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Counterfactual Fragility Probe？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.probecounterfactualfragility@0.1.0 runs one baseline and up to eight independent, caller-declared input edits against the same pure symbolic FunctionSpec. It reports the model output before and after each edit, whether the declared conclusion stayed stable within that model, and whether…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [arXiv query search candidate](../docs/operations/arxiv-query-search.md)
+
+- **结果 ID：** `HR-C9C7BE7590F4054E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：arXiv query search candidate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** research.searcharxivquery is an experimental, default-off adapter for discovering up to ten arXiv records from one public, non-sensitive query. It sends one HTTPS GET to export.arxiv.org/api/query, requests Atom metadata in relevance order, and returns selected identifiers, titles, author names,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [arXiv metadata lookup candidate](../docs/operations/arxiv-metadata-lookup.md)
+
+- **结果 ID：** `HR-9F3A5CBFB80053B2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：arXiv metadata lookup candidate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This default-off experimental tool accepts exactly one modern arXiv identifier and makes one bounded GET to export.arxiv.org/api/query. The arXiv API's idlist parameter accepts a comma-delimited list of arXiv IDs; this adapter narrows that contract to one caller-supplied ID. See the arXiv API use…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Actions validation target coverage comparison](../docs/operations/actions-validation-target-coverage.md)
+
+- **结果 ID：** `HR-A042D0F21E30AEF9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Actions validation target coverage comparison？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.compareactionsvalidationtargetcoverage compares validation plans and caller-declared target results across 2–20 GitHub Actions runs from the same workflow, event, pull request, and base commit.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Actions Validation Attribution R0](../docs/operations/actions-validation-attribution.md)
+
+- **结果 ID：** `HR-A3012CEDCCD93410`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Actions Validation Attribution R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.attributeactionsvalidationevidence joins one caller-supplied component-validation plan, one GitHub Actions run/jobs snapshot, an extracted artifact file list and an optional component-validation receipt. It is a local, read-only inspection helper. It does not query GitHub or replace t…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [GitHub Actions job/step timeline summarizer](../docs/operations/actions-step-timeline-summary.md)
+
+- **结果 ID：** `HR-19BCDF261EB4D816`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：GitHub Actions job/step timeline summarizer？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This optional offline tool implements the low-risk measurement portion of Workbench PR 85, “HarnessPro Pareto RSI lessons and P0 Foundation CI verification economics.” Source: Arvin-liu/ignition-architecture-workbench PR 85 head 77d308ea132a4952d151cab1d81f9f9c9f44f55c; blueprint governance/IGNIT…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [GitHub Actions multi-run interval union](../docs/operations/actions-interval-union.md)
+
+- **结果 ID：** `HR-5ACB62A3128A55C1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：GitHub Actions multi-run interval union？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** maintenance.summarizeactionsintervalunion summarizes the wall-clock intervals present in two to twenty caller-supplied GitHub Actions job snapshots. Inputs must share one workflow, event, pull request, and base SHA; the existing repeated-step analyzer validates that binding and normalizes the kno…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -1,0 +1,90 @@
+{
+  "schema_version": "toolbox-counterfactual-probe-input-r0",
+  "target_conclusion": {
+    "conclusion_id": "a081-formal-main-eligible-under-declared-gates",
+    "statement": "Under the explicitly declared release-gate conjunction, homepage candidate a081fe47 is eligible to merge into Formal main this turn."
+  },
+  "function_spec": {
+    "function_id": "FN-20261026-0002",
+    "spec_version": "1.0.0",
+    "name": "formal_candidate_release_gate",
+    "domain": "symbolic",
+    "inputs": {
+      "formal_pr_open": "boolean",
+      "foundation_validation_passed": "boolean",
+      "release_protocol_validation_passed": "boolean",
+      "path_accounting_preflight_passed": "boolean",
+      "full_foundation_allowed_this_turn": "boolean"
+    },
+    "outputs": {"eligible": "boolean"},
+    "preconditions": [],
+    "postconditions": [
+      {
+        "expression": "eligible == (formal_pr_open and foundation_validation_passed and release_protocol_validation_passed and path_accounting_preflight_passed and full_foundation_allowed_this_turn)",
+        "message": "All declared PR, required-check, and current-turn Foundation permission conditions must hold."
+      }
+    ],
+    "effects_declared": ["pure"],
+    "created_at": "2026-10-26T00:00:00Z"
+  },
+  "baseline_inputs": {
+    "formal_pr_open": false,
+    "foundation_validation_passed": false,
+    "release_protocol_validation_passed": false,
+    "path_accounting_preflight_passed": false,
+    "full_foundation_allowed_this_turn": false
+  },
+  "assumptions": [
+    {
+      "assumption_id": "formal-pr-exists",
+      "statement": "A Formal PR for this exact candidate exists.",
+      "input_names": ["formal_pr_open"]
+    },
+    {
+      "assumption_id": "foundation-required-check-passes",
+      "statement": "The exact-head foundation-validation required status is successful.",
+      "input_names": ["foundation_validation_passed"]
+    },
+    {
+      "assumption_id": "release-protocol-required-check-passes",
+      "statement": "The exact-head release-transaction-protocol-validation required status is successful.",
+      "input_names": ["release_protocol_validation_passed"]
+    },
+    {
+      "assumption_id": "path-accounting-required-check-passes",
+      "statement": "The exact-head repository-path-accounting-preflight required status is successful.",
+      "input_names": ["path_accounting_preflight_passed"]
+    },
+    {
+      "assumption_id": "foundation-is-permitted-this-turn",
+      "statement": "Owner permits the Full Foundation run required by the exact route during this turn.",
+      "input_names": ["full_foundation_allowed_this_turn"]
+    }
+  ],
+  "probes": [
+    {
+      "probe_id": "foundation-status-alone-does-not-open-main",
+      "assumption_id": "foundation-required-check-passes",
+      "input_name": "foundation_validation_passed",
+      "replacement_value": true,
+      "expected_direction": "NO_CHANGE",
+      "admissibility_note": "One-variable hypothetical gate edit only; no check is run and no repository state changes."
+    },
+    {
+      "probe_id": "pr-alone-does-not-open-main",
+      "assumption_id": "formal-pr-exists",
+      "input_name": "formal_pr_open",
+      "replacement_value": true,
+      "expected_direction": "NO_CHANGE",
+      "admissibility_note": "One-variable hypothetical gate edit only; no PR is created and no repository state changes."
+    },
+    {
+      "probe_id": "foundation-permission-alone-does-not-open-main",
+      "assumption_id": "foundation-is-permitted-this-turn",
+      "input_name": "full_foundation_allowed_this_turn",
+      "replacement_value": true,
+      "expected_direction": "NO_CHANGE",
+      "admissibility_note": "One-variable hypothetical permission edit only; no Foundation run is started and no authorization is inferred."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "One UTF-8 JSON object conforming to toolbox-execution-state-lineage-input-r0; maximum 262144 bytes."
+  ],
+  "required_outputs": [
+    "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+  ],
+  "task_id": "audit-caller-declared-execution-checkpoint-lineage"
+}

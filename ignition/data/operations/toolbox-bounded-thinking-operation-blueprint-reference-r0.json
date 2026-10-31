@@ -1,0 +1,90 @@
+{
+  "schema_version": "toolbox-bounded-thinking-operation-blueprint-reference-r0",
+  "owner_direction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "blob_sha1": "d0e85f7baeb55ec538189e2657c33e4759d704ef",
+    "c1_commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "c1_blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e"
+  },
+  "blueprint_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 8,
+    "state_at_readback": "OPEN_DRAFT_UNMERGED",
+    "base_sha": "968924e4f12f447aefea8ca186da3a7ae9dc3620",
+    "head_sha": "0763a4e56191665fb1e4ce995e1ca1fa77b78e47",
+    "pull_request_reviews_at_readback": 0,
+    "issue_comments_at_readback": 0,
+    "source_files": [
+      {
+        "path": "pilots/ab16-bounded-thinking-operation-control-r0/PREREGISTRATION.md",
+        "blob_sha1": "1c24252a47e14f35ff241229ec567880f9b595cf",
+        "role": "FROZEN_SYNTHETIC_PILOT_PROTOCOL"
+      },
+      {
+        "path": "pilots/ab16-bounded-thinking-operation-control-r0/fixture-matrix.md",
+        "blob_sha1": "00522cefee7f902dc9d8421ed29a70dc94f810b0",
+        "role": "EXPECTED_OPERATION_SEQUENCE_FIXTURES"
+      },
+      {
+        "path": "pilots/ab16-bounded-thinking-operation-control-r0/metrics.json",
+        "blob_sha1": "809fff63d235806a039ad0ade0d2c8008a581767",
+        "role": "METRICS_AND_MANDATORY_GATES"
+      },
+      {
+        "path": "pilots/ab16-bounded-thinking-operation-control-r0/execution/results/replay-2/summary.json",
+        "blob_sha1": "2e6d77c1b5a9e2602a3f021630457613bb1e2d7a",
+        "role": "FROZEN_SYNTHETIC_RESULT_SUMMARY"
+      },
+      {
+        "path": "pilots/ab16-bounded-thinking-operation-control-r0/execution/results/replay-2/arm_b/traces/F13.json",
+        "blob_sha1": "2679e4a88b67155b056f85d5cac827f36695cd07",
+        "role": "F13_FRESHNESS_THEN_VERIFICATION_TRACE"
+      },
+      {
+        "path": "decisions/ADR-0007-deliberation-control-is-intra-run-operation-arbitration-not-second-steering-plane.md",
+        "blob_sha1": "a2e740cbbc43be1872bc61db8e6b79d52038b704",
+        "role": "INTRA_RUN_SCOPE_AND_STEERING_BOUNDARY"
+      },
+      {
+        "path": "iterations/2026-10-05-ab16-metacognitive-deliberation-gap-audit.md",
+        "blob_sha1": "9a5c000c0a171a243f705c698eb8e8ec833e57443",
+        "role": "BLUEPRINT_GAP_CONTEXT"
+      }
+    ]
+  },
+  "independent_review": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "commit": "9514ded4d76b1b61f4dba782c3c9a28349160f5f",
+    "path": "reviews/2026-10-06-ab16-independent-pilot-review.md",
+    "blob_sha1": "14c5fe5fc4aedd8d001bcb69c94c4550eaff0bf2",
+    "reviewed_execution_head": "0763a4e56191665fb1e4ce995e1ca1fa77b78e47",
+    "verdict": "AB16_INDEPENDENT_REVIEW_PASS_WITH_SYNTHETIC_CLAIM_CEILING",
+    "scope_limit": "Accepts the frozen synthetic episode result only; does not establish live-model metacognition, human-like cognition, production-wide efficiency, or public Current readiness."
+  },
+  "synthetic_results": {
+    "population": "13 frozen holdout and transfer episodes; no live model calls",
+    "fixed_workflow_arm_a": {
+      "correct_terminal_disposition": "10/13",
+      "premature_stop": "3/13",
+      "required_verification_omission": "1/3",
+      "unnecessary_operation": "1/13",
+      "synthetic_cost_per_correct_resolution": "2.0 (20 units / 10 correct)"
+    },
+    "bounded_controller_arm_b": {
+      "correct_terminal_disposition": "13/13",
+      "premature_stop": "0/13",
+      "required_verification_omission": "0/3",
+      "unnecessary_operation": "0/15",
+      "synthetic_cost_per_correct_resolution": "1.846154 (24 units / 13 correct)"
+    },
+    "mandatory_authority_evidence_budget_gates": {
+      "count": 8,
+      "violations": 0
+    },
+    "budget_violations": 0,
+    "deterministic_replay": "PASS"
+  },
+  "claim_ceiling": "The source pilot is synthetic mechanism evidence only. The Formal implementation is a new rule-based candidate and has not reproduced the pilot as a live model or established production quality, general efficiency, scientific truth, Current status, or authority."
+}

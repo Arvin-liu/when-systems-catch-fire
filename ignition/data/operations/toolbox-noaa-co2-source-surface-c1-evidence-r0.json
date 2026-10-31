@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition.toolbox-noaa-co2-source-surface-c1-evidence-r0",
+  "comparison_id": "noaa-co2-source-surface-comparator-vs-existing-tools-r0",
+  "scope": "Compare the new two-surface annual-observation comparator with the existing NOAA raw-table reader and evidence-update snapshot comparator. Determine whether either incumbent covers the new task's valuable use case and whether any existing use remains.",
+  "compared_tool_ids": [
+    "research.lookup_noaa_global_co2_annual_growth",
+    "research.compare_evidence_update_snapshots"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+    "ignition/tools/toolbox_compare_evidence_update_snapshots.py",
+    "ignition/tools/toolbox_compare_noaa_co2_surfaces.py"
+  ],
+  "matched_real_task": {
+    "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+    "input_path": "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-input-r0.json",
+    "input_sha256": "b476c8889e542779fd9e825e65e40e93011d6ceef923131127d9ee66c4fafbc9",
+    "output_path": "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+    "output_sha256": "68f7393f454c942a339cef75f2f9173c6b95a6722ca544763260e763deaa9a59",
+    "observation": "The live page and raw table both returned 2023–2025. All three annual-growth values and uncertainties matched exactly in this capture; no difference or missing year was reported."
+  },
+  "historical_context": {
+    "source_review_path": "ignition/data/operations/toolbox-noaa-co2-source-review-r0.json",
+    "historical_page_observation": {
+      "2023_annual_increase_ppm": 2.7,
+      "reviewed_on": "2026-10-25"
+    },
+    "historical_raw_table_observation": {
+      "2023_annual_increase_ppm": 2.69,
+      "reviewed_on": "2026-10-25"
+    },
+    "current_live_page_and_table_observation": {
+      "2023_annual_increase_ppm": 2.69,
+      "disposition": "CURRENT_CAPTURE_MATCHES_EXACTLY; reason for historical difference remains unknown"
+    }
+  },
+  "functional_comparison": [
+    {
+      "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+      "valuable_scope": "One fixed raw-table GET and a year-bounded NOAA CO2 values receipt.",
+      "does_not_cover": "The rendered page surface or a matched page-to-raw comparison.",
+      "measured_difference": "One GET versus two fixed GETs for the new cross-surface task. Timing, monetary cost, and general reliability advantage are unmeasured."
+    },
+    {
+      "tool_id": "research.compare_evidence_update_snapshots",
+      "valuable_scope": "Structural predecessor-to-successor evidence-state and source-family deltas over time.",
+      "does_not_cover": "Retrieval and numeric comparison of two simultaneous provider surfaces for one annual series."
+    }
+  ],
+  "c1_disposition": {
+    "status": "COEXIST_DISTINCT_SCOPE",
+    "basis": "The new tool detects exact provider-surface value or uncertainty differences for a selected year range. The raw reader retains its lower-request-count raw-only task, and the evidence snapshot comparator retains its temporal record-delta task. No existing tool covers every valuable use of the new cross-surface task, and no existing tool is proposed for retirement.",
+    "uncertainties": [
+      "A single live retrieval does not establish long-term parser reliability or provider change frequency.",
+      "The historical 2023 page/raw difference is not explained by this comparison.",
+      "Monetary/network cost beyond the fixed two-request count remains unknown."
+    ]
+  },
+  "authorization_boundary": {
+    "default_route_enabled": false,
+    "route_is_execution_authority": false,
+    "scientific_validation_claimed": false,
+    "registry_mutation_or_retirement_performed": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "toolbox-crossref-query-search-route-profile-r0",
+  "task_id": "crossref-public-topic-discovery",
+  "source_candidate": "ignition/data/operations/toolbox-candidate-cards-r0.json#research.search_crossref_query@0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object with exactly a public query string (1-512 characters, at most 2048 UTF-8 bytes) and integer max_results (1-10)"
+  ],
+  "required_outputs": [
+    "At most ten Crossref Works metadata rows with DOI when present, title, issued publication year when present, type, publisher, container title, up to ten author names with count/truncation, and provider-reported cited-by count; abstracts, references, links, and URLs are omitted.",
+    "Provider hit count, retrieval timestamp, response bytes, query/request/response/source-code SHA-256 values, HTTP/acquisition outcome, selected public-pool rate headers, and bounded claim ceiling."
+  ],
+  "allowed_execution_modes": ["READ_ONLY_RUN"],
+  "allowed_network_hosts": ["api.crossref.org"],
+  "route_default": "EXCLUDED",
+  "route_preconditions": [
+    "Local source navigation and the declared source-cluster brief do not already satisfy the task.",
+    "The caller explicitly selects the Crossref candidate and separately approves sending this public non-sensitive query.",
+    "The task needs Crossref Works DOI and deposited metadata discovery, not exact DOI verification or exhaustive review.",
+    "The caller coordinates public-pool rate and concurrency at one list-query request per second and one concurrent request."
+  ],
+  "authority_boundary": "Route selection only proposes a tool. Actual execution still requires --allow-public-network and task-specific caller authorization; no permission or external-action authority is granted."
+}

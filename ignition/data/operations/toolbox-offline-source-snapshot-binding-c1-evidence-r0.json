@@ -1,0 +1,78 @@
+{
+  "schema_version": "toolbox-c1-comparison-evidence-r0",
+  "tool_id": "research.bind_offline_source_snapshot_run",
+  "source_binding": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "pull_request": 259,
+    "head": "b38acbe2ce24e1c05ae7032b96c0b2efa22ed2c1",
+    "implementation_commit": "163ea1321a94136d6fabc5189a21bbf16673a0b2",
+    "comparison_source_set_sha256": "14d7cc7ee5465d8a62b9de4c8b2fc5bf8e5b2f2b257b068d75d0abbbee44a761"
+  },
+  "same_task_adapter_comparison": {
+    "shared_inputs": [
+      "frozen STEP 1 and STEP 4 abstracts",
+      "same question and draft",
+      "same claim rows and downstream anchor consumer"
+    ],
+    "offline_subprocess_runs": 8,
+    "model_calls": 0,
+    "search_calls": 0,
+    "network_requests": 0,
+    "original_v1": {
+      "status": "NO_NET_BENEFIT_ESTABLISHED",
+      "legacy_exact_anchors": "6/7",
+      "e37_exact_anchors": "6/7",
+      "shared_input_issue": "The same U+0020/U+00A0 mismatch affected both arms."
+    },
+    "preregistered_corrective_v2": {
+      "legacy_exact_anchors": "7/7",
+      "e37_exact_anchors": "7/7",
+      "legacy_normalized_abstracts": "2/2",
+      "e37_normalized_abstracts": "2/2",
+      "wrong_source_control": "FAILED_CLOSED_IN_BOTH_ARMS",
+      "unknown_source_id_control": "FAILED_CLOSED_IN_BOTH_ARMS",
+      "overclaimed_exact_quote": "EXACT_MATCH; semantic validation NOT_PERFORMED"
+    },
+    "capture_artifact_audit": {
+      "explicit_source_linked_raw_capture_files": {
+        "legacy": "0/2",
+        "e37": "2/2"
+      },
+      "whole_output_recovery_after_legacy_s1_audit": {
+        "legacy": "1/2",
+        "e37": "2/2"
+      },
+      "narrow_observed_difference": "One additional recoverable raw stream with explicit independently hashable capture artifacts."
+    }
+  },
+  "adjacent_tool_contract_comparison": [
+    {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "implementation": "ignition/tools/toolbox_validate_evidence_program.py",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "difference": "Validates an existing Evidence Program snapshot; it does not create a lock-bound run from caller-supplied offline captures."
+    },
+    {
+      "tool_id": "knowledge.navigate_raw_evidence",
+      "implementation": "ignition/tools/toolbox_raw_evidence_navigator.py",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "difference": "Navigates raw files in the checked-out repository; it does not bind an external saved-capture manifest and research run."
+    },
+    {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "implementation": "ignition/tools/toolbox_openalex_work_metadata.py",
+      "relationship": "ALTERNATE_PROVIDER_DIFFERENT_PROVENANCE",
+      "difference": "Performs explicit live OpenAlex metadata lookup; this tool consumes saved captures offline and preserves their bytes."
+    }
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "unique_use_case": "Run an offline, caller-frozen source capture through exact quote anchoring while binding capture bytes, canonical source identity, draft, claim rows, and output artifacts to a receipt.",
+    "replacement_candidates": [],
+    "limits": [
+      "The matched adapter comparison does not measure retrieval quality because both arms use the same frozen source observations.",
+      "An exact anchor does not authenticate a publisher, evaluate semantic support, validate a review judgment, or establish scientific truth.",
+      "Human time, latency distributions, compute cost, and economic cost remain UNKNOWN."
+    ]
+  }
+}

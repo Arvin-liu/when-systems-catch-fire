@@ -1,0 +1,65 @@
+{
+  "schema_version": "toolbox-counterfactual-probe-source-binding-r0",
+  "candidate_tool_id": "research.probe_counterfactual_fragility",
+  "candidate_version": "0.1.0",
+  "owner_toolbox_instruction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "scope": "Implement real distinct capabilities; keep optional candidates default-off; machine-readable identity cards; route selection does not invoke tools or grant authority; focused tests and no Full Foundation during development."
+  },
+  "owner_c1_update": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "chapter": "C1",
+    "scope": "Retention, replacement, coexistence, or retirement depends on same-task comparison evidence; insufficient evidence remains COMPARISON_UNKNOWN."
+  },
+  "source_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "checkout_head": "2f13848f693cd8411329fd92c4bf0735464e3677",
+    "path": "iterations/2026-10-05-thinking-system-reframe.md",
+    "git_blob_sha1": "ffc3b7069c7008f8cd8d2ba317e00e54c3ba7eb6",
+    "section": "AB-17 Counterfactual Disconfirmation",
+    "source_status": "NEEDS_GAP_AUDIT",
+    "fields_and_invariants": [
+      "target conclusion",
+      "load-bearing assumption",
+      "proposed intervention/edit",
+      "expected directional effect",
+      "admissibility",
+      "observed or simulated result",
+      "conclusion stability",
+      "COUNTERFACTUAL_EDIT_IS_NOT_EVIDENCE_OF_ACTUAL_WORLD",
+      "COUNTERFACTUAL_CHANGE_MUST_BIND_TARGET_ASSUMPTION",
+      "DISCONFIRMATION_HAS_PRIORITY_OVER_SELF_CONFIRMING_REPETITION",
+      "FAILED_COUNTERFACTUAL_DOES_NOT_REWRITE_SOURCE_EVIDENCE"
+    ]
+  },
+  "gap_audit": {
+    "existing_single_run_executor": "function_os.run_bounded_symbolic_spec executes one FunctionSpec/input pair and performs N1-N7 internal checks; it does not bind a baseline plus multiple independent assumption edits or summarize conclusion fragility.",
+    "existing_operation_selector": "ignition.select_bounded_thinking_operation may propose VERIFY but does not execute a model probe or construct a paired baseline/probe record.",
+    "existing_evidence_update_comparator": "research.compare_evidence_update_snapshots compares caller-supplied evidence snapshots and is not a model intervention executor.",
+    "gap": "A bounded wrapper that evaluates one declared model against a baseline and independent assumption-bound edits, preserves every result, and marks the report as model-conditional is not represented by these adjacent tools.",
+    "claim_ceiling": "This gap is an interface comparison within the checked candidate inventory; it does not assert that no other project or human process can manually perform a counterfactual analysis."
+  },
+  "implementation_scope": {
+    "does": [
+      "Reuse the existing bounded pure Function OS evaluator for one baseline and at most eight one-input edits.",
+      "Require each edit to bind to one caller-declared assumption and its named model input.",
+      "Compare exact model outputs and keep direction mismatches, precondition failures, and evaluation errors visible.",
+      "Mark admissibility as caller-declared and unverified; label all outputs model-conditional."
+    ],
+    "does_not": [
+      "Observe or change the actual world.",
+      "Admit causal identification, validate the caller's assumptions, or determine real-world intervention admissibility.",
+      "Rewrite source evidence, execute external tools, invoke providers, or grant permissions."
+    ]
+  },
+  "dependencies": [
+    "ignition/tools/toolbox_function_os_evaluator.py",
+    "ignition/function-os-candidate/v0.2/function_os/",
+    "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+    "ignition/function-os-candidate/v0.2/pyproject.toml"
+  ],
+  "claim_ceiling": "A new optional local interface for assumption-bound sensitivity probes over a bounded caller-declared symbolic model; no scientific, causal, external-truth, or real-world evidence claim."
+}

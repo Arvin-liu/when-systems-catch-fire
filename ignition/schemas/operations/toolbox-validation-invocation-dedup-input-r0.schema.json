@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:validation-invocation-dedup-input-r0",
+  "title": "Validation Invocation Deduplication Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "evaluation_context", "profiles"],
+  "properties": {
+    "schema_version": {"const": "validation-invocation-dedup-input-r0"},
+    "evaluation_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluation_id", "source_ref", "analysis_purpose"],
+      "properties": {
+        "evaluation_id": {"$ref": "#/$defs/id"},
+        "source_ref": {"$ref": "#/$defs/nonblank"},
+        "analysis_purpose": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "items": {"$ref": "#/$defs/profile"}
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "maxLength": 2048, "pattern": "\\S"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,95}$"},
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id", "argv", "working_directory", "source_tree_git_sha1",
+        "runtime_fingerprint_sha256", "environment_fingerprint_sha256",
+        "result_contract_id", "side_effect_class", "review_status", "evidence_ref"
+      ],
+      "properties": {
+        "profile_id": {"$ref": "#/$defs/id"},
+        "argv": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 64,
+          "items": {"type": "string", "minLength": 1, "maxLength": 2048, "pattern": "\\S"}
+        },
+        "working_directory": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^(?:\\.|[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*)$",
+          "not": {"pattern": "(^|/)\\.\\.(/|$)"}
+        },
+        "source_tree_git_sha1": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "runtime_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "environment_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "result_contract_id": {"$ref": "#/$defs/id"},
+        "side_effect_class": {"enum": ["READ_ONLY_VALIDATION", "EFFECTFUL_OR_UNKNOWN"]},
+        "review_status": {"enum": ["SOURCE_REVIEWED_READ_ONLY", "NOT_REVIEWED"]},
+        "evidence_ref": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}

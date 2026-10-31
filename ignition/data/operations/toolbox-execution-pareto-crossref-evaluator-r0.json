@@ -1,0 +1,60 @@
+{
+  "schema_version": "execution-candidate-pareto-crossref-evaluator-r0",
+  "evaluation_id": "gap001-crossref-route-tradeoff-20261027",
+  "task_scope": "One previously captured Crossref citation lookup task from source ID GAP001-01.",
+  "task_set": {
+    "source_path": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json",
+    "source_input_sha256": "358549fe4b7e318b3e7a1e7dec3da63220bed41d1d19181db19e49b22c807ba0",
+    "target_record_path": "ignition/evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl",
+    "target_source_id": "GAP001-01"
+  },
+  "outcome_rule": {
+    "pass": "At least one provider-returned DOI in the route's top-two rows equals the DOI previously recorded for target_source_id in the cited source manifest.",
+    "fail": "No DOI in the route's top-two returned rows equals the prior source-manifest DOI.",
+    "aggregation": "For a route with multiple requests, pass if any request returns a matching DOI."
+  },
+  "resource_metric": {
+    "metric_id": "crossref_get_count",
+    "unit": "HTTP GET requests",
+    "count_basis": "Count the observed Crossref requests composing each route. Do not infer wall time, bytes, monetary cost, or reliability."
+  },
+  "route_variants": [
+    {
+      "candidate_id": "generic_only",
+      "evidence_records": [
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/generic_adapter"
+      ],
+      "http_get_count": 1
+    },
+    {
+      "candidate_id": "specialized_only",
+      "evidence_records": [
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/specialized_adapter"
+      ],
+      "http_get_count": 1
+    },
+    {
+      "candidate_id": "specialized_plus_generic",
+      "evidence_records": [
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/specialized_adapter",
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/generic_adapter"
+      ],
+      "http_get_count": 2
+    },
+    {
+      "candidate_id": "specialized_plus_generic_recheck",
+      "evidence_records": [
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/specialized_adapter",
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/generic_adapter",
+        "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json#/generic_adapter/identical_response_sha256_rechecks/0"
+      ],
+      "http_get_count": 3
+    }
+  ],
+  "limitations": [
+    "The prior source-manifest DOI is a comparison target, not independently authenticated truth.",
+    "This is one captured task and one trial; it does not establish general precision, recall, reliability, latency, savings, source authenticity, or scientific support.",
+    "The generic-only candidate uses one captured generic response; the duplicate generic request was observed as an identical response recheck.",
+    "The route variants are a retrospective analysis of captured results, not four separately randomized live trials."
+  ]
+}

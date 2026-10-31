@@ -1,0 +1,540 @@
+{
+  "schema_version": "ignition.toolbox-europe-pmc-fulltext-locator-evidence-r0",
+  "evidence_id": "europe-pmc-exact-doi-fulltext-location-c1-20261026",
+  "status": "OBSERVED_PROVIDER_METADATA_AND_SPECIALIZED_COMPARISON",
+  "task": {
+    "task_id": "exact-doi-europe-pmc-fulltext-locations",
+    "public_doi": "10.1371/journal.pone.0005403",
+    "task_need": "Return exact DOI-matched Europe PMC fullTextUrlList metadata without downloading or inspecting article content.",
+    "sensitive_input": false
+  },
+  "provider": "Europe PMC",
+  "provider_documentation": "https://europepmc.org/RestfulWebService",
+  "candidate_invocation": {
+    "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+    "tool_version": "0.1.0",
+    "command": "python3 -B ignition/tools/toolbox_europe_pmc_fulltext_locator.py --stdin --allow-public-network",
+    "source_code_sha256": "ab1c701494a3754422f17671ed5e1f6f2dbf5d9ca34597a4c583d47ba422d283",
+    "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "query_mode": "DOI:<exact caller-supplied DOI>; format=json; resultType=core; pageSize=5",
+    "retrieval_timestamp_utc": "2026-10-25T21:52:51Z",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "response_sha256": "5d32c84fa12a05d88b4458722f940f0ac877f9224d36f0b193f0dc56fb6dff45",
+    "provider_hit_count": 1,
+    "match_status": "EXACT_RECORD_WITH_LOCATIONS",
+    "exact_provider_record": {
+      "source": "MED",
+      "id": "19404397",
+      "pmid": "19404397",
+      "pmcid": "PMC2671458",
+      "doi": "10.1371/journal.pone.0005403",
+      "is_open_access_claim": "Y"
+    },
+    "provider_reported_locations": [
+      {
+        "url": "https://doi.org/10.1371/journal.pone.0005403",
+        "availability": "Subscription required",
+        "availability_code": "S",
+        "document_style": "doi",
+        "site": "DOI",
+        "license": null
+      },
+      {
+        "url": "https://europepmc.org/articles/PMC2671458",
+        "availability": "Open access",
+        "availability_code": "OA",
+        "document_style": "html",
+        "site": "Europe_PMC",
+        "license": null
+      },
+      {
+        "url": "https://europepmc.org/articles/PMC2671458?pdf=render",
+        "availability": "Open access",
+        "availability_code": "OA",
+        "document_style": "pdf",
+        "site": "Europe_PMC",
+        "license": null
+      }
+    ],
+    "omitted_unsafe_location_count": 0,
+    "returned_article_urls_requested": false,
+    "article_content_downloaded": false,
+    "license_or_reuse_rights_verified": false
+  },
+  "same_task_comparator": {
+    "tool_id": "research.search_europe_pmc_query",
+    "tool_version": "0.1.0",
+    "command": "python3 -B ignition/tools/toolbox_europe_pmc_query_search.py --stdin --allow-public-network",
+    "query": "DOI:10.1371/journal.pone.0005403",
+    "query_sha256": "3d989a000c5a913f3bd4cfe73bacaf90b96a7481a6c8c63292f80e1e9c079ee2",
+    "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "query_mode": "resultType=lite; pageSize=1",
+    "retrieval_timestamp_utc": "2026-10-25T21:52:57Z",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "response_sha256": "e974f6970cef92b7c11430b9a3fe3f66bcef3702b99c3839d707a660dafb0f66",
+    "status": "FOUND",
+    "returned_count": 1,
+    "matching_record_identity": {
+      "source": "MED",
+      "id": "19404397",
+      "pmid": "19404397",
+      "pmcid": "PMC2671458",
+      "doi": "10.1371/journal.pone.0005403"
+    },
+    "fullTextUrlList_returned": false
+  },
+  "comparison": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "same_task_same_doi": true,
+    "shared_record_identity_matches": true,
+    "finding": "Both calls returned the same Europe PMC MED record identity for the exact DOI. The existing lite metadata search did not return fullTextUrlList; the new core query returned three provider-reported locations. The new adapter supplies a distinct exact-DOI location output and does not replace topic-to-record discovery.",
+    "retained_unique_use_case": "For a known DOI, inspect a bounded provider-reported Europe PMC fullTextUrlList projection while keeping the actual article URLs untouched.",
+    "not_established": [
+      "URL availability or successful article access",
+      "license validity or legal reuse permission",
+      "scientific quality or support",
+      "provider coverage or completeness",
+      "comparative stable latency or cost"
+    ],
+    "replacement_candidates": [],
+    "compared_tool_ids": [
+      "research.search_europe_pmc_query",
+      "research.lookup_openalex_work_metadata",
+      "research.resolve_pubmed_identifiers"
+    ],
+    "route_experiment": {
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "candidate_catalog_git_blob_sha1": "415ffdde8365dd9337ba58612fddd5e341c55391",
+      "provider_calls_during_planning": 0,
+      "trials": [
+        {
+          "scenario": "default_off",
+          "profile": {
+            "task_id": "exact-doi-europe-pmc-fulltext-locations",
+            "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+            "input_types": [
+              "UTF-8 JSON stdin object with exactly one key dois whose value is an array of 1-5 unique bare DOI strings (each at most 128 characters); request maximum 4096 bytes"
+            ],
+            "required_outputs": [
+              "Input-ordered per-DOI acquisition and exact-match state, provider hit count, and at most five exact DOI-matched provider records.",
+              "For each exact record, provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and a count of omitted unsafe locations; no title, abstract, raw response, or article content.",
+              "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts."
+            ],
+            "allowed_execution_modes": [
+              "READ_ONLY_RUN"
+            ]
+          },
+          "include_experimental_tool_ids": [],
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "selected_tool_permissions": [],
+          "relevant_rejections": [
+            {
+              "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+              "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+            },
+            {
+              "tool_id": "research.search_europe_pmc_query",
+              "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+            }
+          ],
+          "other_rejection_count": 53,
+          "execution_authorized": false,
+          "cost_estimate_status": "UNKNOWN",
+          "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+        },
+        {
+          "scenario": "allowlisted_without_host",
+          "profile": {
+            "task_id": "exact-doi-europe-pmc-fulltext-locations",
+            "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+            "input_types": [
+              "UTF-8 JSON stdin object with exactly one key dois whose value is an array of 1-5 unique bare DOI strings (each at most 128 characters); request maximum 4096 bytes"
+            ],
+            "required_outputs": [
+              "Input-ordered per-DOI acquisition and exact-match state, provider hit count, and at most five exact DOI-matched provider records.",
+              "For each exact record, provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and a count of omitted unsafe locations; no title, abstract, raw response, or article content.",
+              "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts."
+            ],
+            "allowed_execution_modes": [
+              "READ_ONLY_RUN"
+            ]
+          },
+          "include_experimental_tool_ids": [
+            "research.resolve_europe_pmc_fulltext_locations"
+          ],
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "selected_tool_permissions": [],
+          "relevant_rejections": [
+            {
+              "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+              "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+            },
+            {
+              "tool_id": "research.search_europe_pmc_query",
+              "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+            }
+          ],
+          "other_rejection_count": 53,
+          "execution_authorized": false,
+          "cost_estimate_status": "UNKNOWN",
+          "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+        },
+        {
+          "scenario": "explicit_host_and_redundant_topic_search",
+          "profile": {
+            "task_id": "exact-doi-europe-pmc-fulltext-locations",
+            "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+            "input_types": [
+              "UTF-8 JSON stdin object with exactly one key dois whose value is an array of 1-5 unique bare DOI strings (each at most 128 characters); request maximum 4096 bytes"
+            ],
+            "required_outputs": [
+              "Input-ordered per-DOI acquisition and exact-match state, provider hit count, and at most five exact DOI-matched provider records.",
+              "For each exact record, provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and a count of omitted unsafe locations; no title, abstract, raw response, or article content.",
+              "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts."
+            ],
+            "allowed_execution_modes": [
+              "READ_ONLY_RUN"
+            ],
+            "allowed_network_hosts": [
+              "www.ebi.ac.uk"
+            ]
+          },
+          "include_experimental_tool_ids": [
+            "research.resolve_europe_pmc_fulltext_locations",
+            "research.search_europe_pmc_query"
+          ],
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "research.resolve_europe_pmc_fulltext_locations"
+          ],
+          "selected_tool_permissions": [
+            {
+              "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+              "permissions": {
+                "read_paths": [
+                  "ignition/tools/toolbox_europe_pmc_fulltext_locator.py"
+                ],
+                "write_paths": [],
+                "network": true,
+                "network_hosts": [
+                  "www.ebi.ac.uk"
+                ],
+                "secrets": false,
+                "billing": false,
+                "external_actions": false
+              }
+            }
+          ],
+          "relevant_rejections": [
+            {
+              "tool_id": "research.search_europe_pmc_query",
+              "reason": "NO_INPUT_TYPE_MATCH"
+            }
+          ],
+          "other_rejection_count": 53,
+          "execution_authorized": false,
+          "cost_estimate_status": "UNKNOWN",
+          "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+        }
+      ],
+      "planner_source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+      "route_results_are_relevant_field_projection": true
+    }
+  },
+  "evidence_limits": [
+    "The tool output contains selected provider metadata only; no raw response, abstract, title, or article body is retained in this receipt.",
+    "The tool made only the fixed Europe PMC API request for each DOI. It did not request any returned location URL.",
+    "The value is provider-reported at the recorded retrieval time; no live recheck or source-level adjudication is implied."
+  ],
+  "typed_identifier_extension": {
+    "status": "LIVE_TYPED_IDENTIFIER_TASK_AND_SAME_PMID_COMPARISON",
+    "task": {
+      "task_id": "known-pmid-europe-pmc-fulltext-location",
+      "need": "Given a known public PMID and PMCID for one record, return provider-reported fullTextUrlList metadata without requesting locations or article content.",
+      "sensitive_input": false,
+      "identifiers": [
+        {
+          "type": "PMID",
+          "value": "19404397"
+        },
+        {
+          "type": "PMCID",
+          "value": "PMC2671458"
+        }
+      ]
+    },
+    "provider": "Europe PMC",
+    "provider_documentation": "https://europepmc.org/RestfulWebService",
+    "route_experiment": {
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
+      "planner_source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+      "provider_calls_during_planning": 0,
+      "trials": [
+        {
+          "scenario": "default_off",
+          "include_experimental_tool_ids": [],
+          "task_profile": {
+            "task_id": "known-pmid-europe-pmc-fulltext-location",
+            "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+            "input_types": [
+              "Legacy UTF-8 JSON stdin object with exactly one key dois and an array of 1-5 unique bare DOI strings (each at most 128 characters), or typed UTF-8 JSON stdin object with exactly one key identifiers and an array of 1-5 unique {type,value} objects where type is DOI, PMID, or PMCID; request maximum 4096 bytes."
+            ],
+            "required_outputs": [
+              "Input-ordered per-identifier acquisition and exact-match state, provider hit count, and at most five exact-identifier-matched provider records.",
+              "Each row preserves requested_identifier type/value and keeps requested_doi populated only for legacy/typed DOI requests; records include provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and omitted-unsafe count.",
+              "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts; no title, abstract, raw response, or article content."
+            ],
+            "allowed_execution_modes": [
+              "READ_ONLY_RUN"
+            ]
+          },
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "selected_tool_permissions": [],
+          "relevant_rejections": [
+            {
+              "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+              "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+            },
+            {
+              "tool_id": "research.search_europe_pmc_query",
+              "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+            }
+          ],
+          "unmet_outputs": [
+            "Each row preserves requested_identifier type/value and keeps requested_doi populated only for legacy/typed DOI requests; records include provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and omitted-unsafe count.",
+            "Input-ordered per-identifier acquisition and exact-match state, provider hit count, and at most five exact-identifier-matched provider records.",
+            "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts; no title, abstract, raw response, or article content."
+          ],
+          "execution_authorized": false,
+          "cost_estimate_status": "UNKNOWN",
+          "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+        },
+        {
+          "scenario": "allowlisted_without_host",
+          "include_experimental_tool_ids": [
+            "research.resolve_europe_pmc_fulltext_locations"
+          ],
+          "task_profile": {
+            "task_id": "known-pmid-europe-pmc-fulltext-location",
+            "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+            "input_types": [
+              "Legacy UTF-8 JSON stdin object with exactly one key dois and an array of 1-5 unique bare DOI strings (each at most 128 characters), or typed UTF-8 JSON stdin object with exactly one key identifiers and an array of 1-5 unique {type,value} objects where type is DOI, PMID, or PMCID; request maximum 4096 bytes."
+            ],
+            "required_outputs": [
+              "Input-ordered per-identifier acquisition and exact-match state, provider hit count, and at most five exact-identifier-matched provider records.",
+              "Each row preserves requested_identifier type/value and keeps requested_doi populated only for legacy/typed DOI requests; records include provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and omitted-unsafe count.",
+              "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts; no title, abstract, raw response, or article content."
+            ],
+            "allowed_execution_modes": [
+              "READ_ONLY_RUN"
+            ]
+          },
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "selected_tool_permissions": [],
+          "relevant_rejections": [
+            {
+              "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+              "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+            },
+            {
+              "tool_id": "research.search_europe_pmc_query",
+              "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+            }
+          ],
+          "unmet_outputs": [
+            "Each row preserves requested_identifier type/value and keeps requested_doi populated only for legacy/typed DOI requests; records include provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and omitted-unsafe count.",
+            "Input-ordered per-identifier acquisition and exact-match state, provider hit count, and at most five exact-identifier-matched provider records.",
+            "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts; no title, abstract, raw response, or article content."
+          ],
+          "execution_authorized": false,
+          "cost_estimate_status": "UNKNOWN",
+          "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+        },
+        {
+          "scenario": "explicit_host_with_lite_comparator_available",
+          "include_experimental_tool_ids": [
+            "research.resolve_europe_pmc_fulltext_locations",
+            "research.search_europe_pmc_query"
+          ],
+          "task_profile": {
+            "task_id": "known-pmid-europe-pmc-fulltext-location",
+            "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+            "input_types": [
+              "Legacy UTF-8 JSON stdin object with exactly one key dois and an array of 1-5 unique bare DOI strings (each at most 128 characters), or typed UTF-8 JSON stdin object with exactly one key identifiers and an array of 1-5 unique {type,value} objects where type is DOI, PMID, or PMCID; request maximum 4096 bytes."
+            ],
+            "required_outputs": [
+              "Input-ordered per-identifier acquisition and exact-match state, provider hit count, and at most five exact-identifier-matched provider records.",
+              "Each row preserves requested_identifier type/value and keeps requested_doi populated only for legacy/typed DOI requests; records include provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and omitted-unsafe count.",
+              "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts; no title, abstract, raw response, or article content."
+            ],
+            "allowed_execution_modes": [
+              "READ_ONLY_RUN"
+            ],
+            "allowed_network_hosts": [
+              "www.ebi.ac.uk"
+            ]
+          },
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "research.resolve_europe_pmc_fulltext_locations"
+          ],
+          "selected_tool_permissions": [
+            {
+              "read_paths": [
+                "ignition/tools/toolbox_europe_pmc_fulltext_locator.py"
+              ],
+              "write_paths": [],
+              "network": true,
+              "network_hosts": [
+                "www.ebi.ac.uk"
+              ],
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            }
+          ],
+          "relevant_rejections": [
+            {
+              "tool_id": "research.search_europe_pmc_query",
+              "reason": "NO_INPUT_TYPE_MATCH"
+            }
+          ],
+          "unmet_outputs": [],
+          "execution_authorized": false,
+          "cost_estimate_status": "UNKNOWN",
+          "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+        }
+      ],
+      "execution_authorized_by_planner": false
+    },
+    "candidate_invocation": {
+      "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+      "tool_version": "0.2.0",
+      "command": "python3 -B ignition/tools/toolbox_europe_pmc_fulltext_locator.py --stdin --allow-public-network",
+      "source_code_sha256": "83eef8d5d455467f3c865444f04966b98f03630253592111a08c26f66c55a396",
+      "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "result_type": "core",
+      "retrieval_date_utc": "2026-10-26",
+      "http_statuses": [
+        200,
+        200
+      ],
+      "acquisition_statuses": [
+        "OK",
+        "OK"
+      ],
+      "response_sha256_by_identifier": [
+        {
+          "type": "PMID",
+          "value": "19404397",
+          "sha256": "f3a5be2c6a7a5fb894d5195d4677171d5710e2417e1633b6ce20a2b0a6bf43b8"
+        },
+        {
+          "type": "PMCID",
+          "value": "PMC2671458",
+          "sha256": "7d9cb6a4ae09abd2c63a80754e1a4c2600aa91420201d8e400c7511b0f33f8d3"
+        }
+      ],
+      "exact_record_by_identifier": [
+        {
+          "requested_type": "PMID",
+          "requested_value": "19404397",
+          "source": "MED",
+          "id": "19404397",
+          "pmid": "19404397",
+          "pmcid": "PMC2671458",
+          "doi": "10.1371/journal.pone.0005403",
+          "provider_hit_count": 1,
+          "match_status": "EXACT_RECORD_WITH_LOCATIONS",
+          "full_text_location_count": 3,
+          "license_fields": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "requested_type": "PMCID",
+          "requested_value": "PMC2671458",
+          "source": "MED",
+          "id": "19404397",
+          "pmid": "19404397",
+          "pmcid": "PMC2671458",
+          "doi": "10.1371/journal.pone.0005403",
+          "provider_hit_count": 1,
+          "match_status": "EXACT_RECORD_WITH_LOCATIONS",
+          "full_text_location_count": 3,
+          "license_fields": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "observed_elapsed_ms_for_two_identifier_invocation": 3400.25,
+      "returned_article_urls_requested": false,
+      "article_content_downloaded": false,
+      "interpretation": "One bounded fixed-host request per supplied typed identifier returned the same exact MED record and three provider-reported locations. Observed elapsed time is one environment snapshot, not a stable cost or latency estimate."
+    },
+    "same_pmid_lite_comparator": {
+      "tool_id": "research.search_europe_pmc_query",
+      "tool_version": "0.1.0",
+      "command": "python3 -B ignition/tools/toolbox_europe_pmc_query_search.py --stdin --allow-public-network",
+      "query": "EXT_ID:19404397",
+      "query_mode": "resultType=lite; pageSize=1",
+      "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "status": "FOUND",
+      "returned_count": 1,
+      "response_sha256": "337d8eef19ddf5eb357064c5108d80dc35393647e9d52da176d1fd642e6b58b3",
+      "same_record_identity": {
+        "source": "MED",
+        "id": "19404397",
+        "pmid": "19404397",
+        "pmcid": "PMC2671458",
+        "doi": "10.1371/journal.pone.0005403"
+      },
+      "fullTextUrlList_returned": false,
+      "observed_elapsed_ms": 1816.54,
+      "retained_title_or_article_text": false
+    },
+    "comparison": {
+      "same_task_same_pmid": true,
+      "shared_record_identity_matches": true,
+      "same_fixed_provider_and_one_request_for_the_pmid_row": true,
+      "task_completion": "The lite adapter returned the exact MED identity but not fullTextUrlList; the core locator returned the same identity and three provider-reported locations.",
+      "new_unique_input_coverage": [
+        "PMID",
+        "PMCID"
+      ],
+      "no_existing_tool_replaced": true,
+      "replacement_candidates": [],
+      "retained_unique_use_case": "For an already-known public PMID or PMCID, obtain exact Europe PMC fullTextUrlList metadata directly without a preceding DOI cross-reference lookup.",
+      "not_established": [
+        "stable latency or cost advantage",
+        "URL reachability",
+        "license validity or legal reuse permission",
+        "provider completeness",
+        "scientific quality or support"
+      ]
+    },
+    "safety_and_permission_boundary": {
+      "route_proposal_execution_authorized": false,
+      "separate_cli_network_flag_used": true,
+      "host": "www.ebi.ac.uk",
+      "returned_urls_fetched": false,
+      "raw_provider_body_retained": false,
+      "secret_billing_file_write_or_external_action": false
+    }
+  }
+}

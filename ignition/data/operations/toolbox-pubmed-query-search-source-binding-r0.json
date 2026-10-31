@@ -1,0 +1,57 @@
+{
+  "schema_version": "toolbox-pubmed-query-search-source-binding-r0",
+  "tool_id": "research.search_pubmed_query",
+  "tool_version": "0.1.0",
+  "source_contract": {
+    "esearch": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "esummary": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi",
+    "primary_documentation": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK25499/",
+        "claim": "ESearch returns UIDs matching a text query; PubMed field tags and query syntax are database-specific."
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK25499/",
+        "claim": "ESummary returns document summaries for supplied UIDs and supports JSON output."
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+        "claim": "NCBI recommends no more than three E-utilities URL requests per second; this tool performs at most two sequential requests per invocation."
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+        "claim": "PubMed disclaimer: NLM indexes material published by other organizations; database inclusion is not endorsement, and users must examine copyright and licensing restrictions for linked material."
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+        "claim": "NCBI scripting guidance requires its Disclaimer and Copyright notice to be evident to service users, recommends tool and email parameters, and caps E-utilities requests at three per second per IP."
+      }
+    ],
+    "request_policy": {
+      "tool_parameter": "IgnitionToolboxPubMedSearch",
+      "contact_email_required_from_caller": true,
+      "contact_email_sent_to_provider": true,
+      "contact_email_value_retained": false,
+      "api_key": "NOT_USED",
+      "redirects": false,
+      "retry": false,
+      "requests_per_invocation_max": 2
+    }
+  },
+  "differentiation": {
+    "baseline_tool_id": "research.search_europe_pmc_query",
+    "baseline_source_path": "ignition/tools/toolbox_europe_pmc_query_search.py",
+    "difference": "This adapter queries the PubMed Entrez database with PubMed field-tag syntax and returns bounded ESummary records. Europe PMC remains a distinct database/API source; an exact PMID/DOI resolver is not query-to-record search.",
+    "replacement_claim": "NONE",
+    "comparison_status": "ONE_MATCHED_PUBLIC_QUERY_ONLY"
+  },
+  "dependency_status": {
+    "runtime": "Python 3.9+ standard library",
+    "network_host": "eutils.ncbi.nlm.nih.gov",
+    "hardware": "NONE",
+    "credentials": "NONE",
+    "billing_account": "NONE",
+    "permission_default": "OFF; explicit host permission and per-invocation flag required"
+  },
+  "claim_ceiling": "API interface and provider-returned metadata fields only; no source authenticity, relevance, completeness, evidence support, scientific validity, or provider superiority."
+}

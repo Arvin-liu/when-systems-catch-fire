@@ -1,0 +1,145 @@
+{
+  "schema_version": "ignition.toolbox-crossref-pubmed-matched-relation-evidence-r1",
+  "evidence_level": "REAL_TASK_OUTCOME",
+  "observed_at_utc": "2026-10-25T23:25:16Z",
+  "comparison_scope": {
+    "task_id": "crossref-pubmed-correction-link-pair-r1",
+    "purpose": "On one DOI with a recorded correction, compare the Crossref update/relation projection with PubMed Comments/Corrections output.",
+    "doi": "10.1186/s12884-025-07725-7",
+    "selection_method": "Purposively selected from a bounded Crossref REST works query with filter has-update:true, rows=3, after earlier test-account-only relation evidence.",
+    "selection_bias": "Positive-case selection from Crossref update data; this cannot estimate prevalence, comparative coverage, false negatives, or general provider quality.",
+    "expected_title": "“We need more guidance, more encouragement and empowerment for what our bodies are capable of”, pregnant and postpartum women’s knowledge and experiences of receiving physical activity guidance and support on the island of Ireland: an online survey study",
+    "expected_year": 2025
+  },
+  "selection_query": {
+    "source_url": "https://api.crossref.org/works?filter=has-update%3Atrue&select=DOI%2Ctitle%2Cpublished%2Cupdate-to%2Cupdated-by%2Crelation&rows=3",
+    "http_status": 200,
+    "response_sha256": "1b7ff51f790d3d14685415100827461bf8499945081e9c7fc618be204daea18d",
+    "returned_rows": 3,
+    "selected_record": {
+      "doi": "10.1186/s12884-025-07725-7",
+      "updated_by_doi": "10.1186/s12884-025-07791-x",
+      "update_type": "correction"
+    },
+    "raw_provider_body_retained": false
+  },
+  "crossref_tool_invocation": {
+    "tool_id": "research.verify_crossref_metadata",
+    "tool_version": "0.2.0",
+    "source_sha256": "b050413a92043a6cf7afcd760e50a342917cd3c53bdb2e6d0458a4da56116151",
+    "upstream_helper_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51",
+    "network_permission": "Explicit per-call --allow-public-network flag",
+    "host": "api.crossref.org",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "title_match": true,
+    "year_match": true,
+    "response_sha256": "1762ef52a1d3bd766876833b59832c404527dc6d6dd31e9961ffe8c002729d42",
+    "update_to": {
+      "field_status": "NOT_REPORTED",
+      "omitted_count": 0,
+      "reported_count": null,
+      "rows": [],
+      "truncated": false
+    },
+    "updated_by": {
+      "field_status": "PRESENT_NONEMPTY",
+      "omitted_count": 0,
+      "reported_count": 1,
+      "rows": [
+        {
+          "doi": "10.1186/s12884-025-07791-x",
+          "label": "Correction",
+          "source": "publisher",
+          "type": "correction",
+          "updated_date_time": "2025-06-13T00:00:00Z"
+        }
+      ],
+      "truncated": false
+    },
+    "related_items": {
+      "field_status": "PRESENT_NONEMPTY",
+      "malformed_relation_type_count": 0,
+      "omitted_count": 0,
+      "relation_type_count": 1,
+      "reported_count": 1,
+      "rows": [
+        {
+          "asserted_by": "object",
+          "id_type": "doi",
+          "identifier": "10.1186/s12884-025-07791-x",
+          "relation_type": "correction"
+        }
+      ],
+      "truncated": false
+    },
+    "raw_provider_body_retained": false,
+    "follow_on_identifier_requests": 0
+  },
+  "pubmed_identifier_resolution": {
+    "tool_id": "research.resolve_pubmed_identifiers",
+    "tool_version": "0.1.1",
+    "source_sha256": "05b89735fabd074f1ff79daf14fbc04af0b18a7d7ca6fb03d074306f9d6a05eb",
+    "network_permission": "Explicit per-call --allow-public-network flag",
+    "host": "pmc.ncbi.nlm.nih.gov",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "doi_binding_status": "IDENTIFIER_RESOLVED",
+    "matched_doi": "10.1186/s12884-025-07725-7",
+    "pmid": "40437423",
+    "pmcid": "PMC12121139",
+    "response_sha256": "cfab31c4dca0328a80ac3b3ba15f6b86c19e881f8058ad48cb48b0394d2e6d94"
+  },
+  "pubmed_relation_reader": {
+    "tool_id": "research.inspect_pubmed_update_links",
+    "tool_version": "0.2.0",
+    "source_sha256": "e66e2083327b86be30f1c0d9b00c65e079d3b65e9be0ac0015930ee5baa7647f",
+    "network_permission": "Explicit per-call --allow-public-network flag",
+    "host": "eutils.ncbi.nlm.nih.gov",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "doi_binding_status": "EXACT_MATCH",
+    "record_status": "RECORD_FOUND_WITH_RECORDED_RELATIONS",
+    "relations": [
+      {
+        "ref_type": "ErratumIn",
+        "related_pmid": "40514682",
+        "related_doi": "10.1186/s12884-025-07791-x"
+      }
+    ],
+    "response_sha256": "639dfe79f1d91a25d69347efbbef4d59903f88c7bdc486ef4bb25b74d018c890",
+    "raw_provider_body_retained": false
+  },
+  "matched_observations": {
+    "same_source_doi": true,
+    "same_correction_doi": true,
+    "correction_doi": "10.1186/s12884-025-07791-x",
+    "crossref_relation_types": [
+      "updated-by:correction",
+      "relation:correction"
+    ],
+    "pubmed_relation_types": [
+      "ErratumIn"
+    ],
+    "provider_contract_difference": "Crossref supplied depositor update source/date and typed DOI relation; PubMed supplied an exact DOI-bound Comments/Corrections record and related PMID/PMCID identifiers.",
+    "requests_for_comparison_task": {
+      "crossref_work_gets": 1,
+      "pubmed_id_converter_gets": 1,
+      "pubmed_efetch_gets": 1
+    }
+  },
+  "c1_disposition": {
+    "status": "COMPARISON_UNKNOWN",
+    "positive_overlap_observed": true,
+    "replacement_decision": "NO_REPLACEMENT_ESTABLISHED",
+    "decision": "Keep both optional and default-off; no claim of superiority or broader coverage.",
+    "reason": "One deliberately selected positive DOI shows the same correction identifier in both providers, but cannot measure general coverage, accuracy, reliability, costs, latency, or missing-relation rates. Sampling from Crossref has-update:true is selection-biased."
+  },
+  "claim_ceiling": "One matched DOI and one correction relation are observed in public provider metadata at retrieval time. This does not establish article content, correction completeness, source authenticity, current article status, scientific validity, or general comparative performance.",
+  "official_references": [
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/rest-api-filters/",
+    "https://www.crossref.org/documentation/principles-practices/best-practices/relationships/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK25497/"
+  ]
+}

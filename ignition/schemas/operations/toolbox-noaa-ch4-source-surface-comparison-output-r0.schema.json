@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arvin-liu.github.io/ignition/schemas/operations/toolbox-noaa-ch4-source-surface-comparison-output-r0.schema.json",
+  "title": "NOAA CH4 Source-Surface Comparison Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "requested_range",
+    "invocation",
+    "sources",
+    "comparison",
+    "claim_ceiling",
+    "non_claims"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "toolbox-noaa-ch4-source-surface-comparison-output-r0"
+    },
+    "tool_id": {
+      "const": "research.compare_noaa_ch4_source_surfaces"
+    },
+    "tool_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "status": {
+      "enum": ["COMPARED", "SOURCE_UNAVAILABLE"]
+    },
+    "requested_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_year", "end_year"],
+      "properties": {
+        "start_year": {"type": "integer"},
+        "end_year": {"type": "integer"}
+      }
+    },
+    "invocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allow_public_network_flag", "requests_made"],
+      "properties": {
+        "allow_public_network_flag": {"const": true},
+        "requests_made": {"const": 2}
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_page", "fixed_raw_table"],
+      "properties": {
+        "provider_page": {"$ref": "#/$defs/sourceReceipt"},
+        "fixed_raw_table": {"$ref": "#/$defs/sourceReceipt"}
+      }
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "requested_year_count",
+        "exact_match_count",
+        "numeric_difference_count",
+        "missing_year_count",
+        "rows"
+      ],
+      "properties": {
+        "status": {
+          "enum": ["NOT_COMPARED", "EXACT_MATCH", "DIFFERENT", "PARTIAL"]
+        },
+        "requested_year_count": {"type": "integer", "minimum": 1},
+        "exact_match_count": {"type": "integer", "minimum": 0},
+        "numeric_difference_count": {"type": "integer", "minimum": 0},
+        "missing_year_count": {"type": "integer", "minimum": 0},
+        "rows": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/comparisonRow"}
+        }
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "non_claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["year", "annual_increase_ppb", "uncertainty_ppb"],
+      "properties": {
+        "year": {"type": "integer", "minimum": 1984, "maximum": 2100},
+        "annual_increase_ppb": {"type": "string", "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"},
+        "uncertainty_ppb": {"type": "string", "pattern": "^(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"}
+      }
+    },
+    "sourceReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "acquisition_status",
+        "parse_status",
+        "http_status",
+        "etag",
+        "last_modified",
+        "retrieved_at_utc",
+        "response_bytes",
+        "response_sha256",
+        "records",
+        "raw_response_retained"
+      ],
+      "properties": {
+        "url": {"type": "string", "format": "uri"},
+        "acquisition_status": {
+          "enum": [
+            "OK",
+            "HTTP_ERROR",
+            "REDIRECT_BLOCKED",
+            "RATE_LIMITED",
+            "NON_TEXT_RESPONSE",
+            "RESPONSE_TIMEOUT",
+            "RESPONSE_TOO_LARGE",
+            "NETWORK_ERROR"
+          ]
+        },
+        "parse_status": {
+          "enum": [
+            "FOUND",
+            "PARTIAL_DATA",
+            "NO_MATCH",
+            "NOT_RUN",
+            "INVALID_TEXT_RESPONSE",
+            "INVALID_PROVIDER_RESPONSE"
+          ]
+        },
+        "http_status": {"type": ["integer", "null"]},
+        "etag": {"type": ["string", "null"]},
+        "last_modified": {"type": ["string", "null"]},
+        "retrieved_at_utc": {"type": "string", "format": "date-time"},
+        "response_bytes": {"type": ["integer", "null"], "minimum": 0},
+        "response_sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "records": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/sourceRecord"}
+        },
+        "raw_response_retained": {"const": false}
+      }
+    },
+    "comparisonRow": {
+      "type": "object",
+      "required": ["year", "status"],
+      "properties": {
+        "year": {"type": "integer", "minimum": 1984, "maximum": 2100},
+        "status": {
+          "enum": [
+            "EXACT_MATCH",
+            "NUMERIC_DIFFERENCE",
+            "MISSING_FROM_PAGE",
+            "MISSING_FROM_RAW_TABLE",
+            "MISSING_FROM_BOTH"
+          ]
+        },
+        "page": {"$ref": "#/$defs/sourceRecord"},
+        "raw_table": {"$ref": "#/$defs/sourceRecord"},
+        "page_annual_increase_ppb": {"type": "string"},
+        "raw_table_annual_increase_ppb": {"type": "string"},
+        "page_minus_raw_annual_increase_ppb": {"type": "string"},
+        "page_uncertainty_ppb": {"type": "string"},
+        "raw_table_uncertainty_ppb": {"type": "string"},
+        "page_minus_raw_uncertainty_ppb": {"type": "string"}
+      }
+    }
+  }
+}

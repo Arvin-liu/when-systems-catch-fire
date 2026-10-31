@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolbox-selected-index-search-result-merge-input-r0.schema.json",
+  "title": "Selected-index search result merge input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_results"],
+  "properties": {
+    "source_results": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "oneOf": [
+          {"$ref": "#/$defs/crossrefReceipt"},
+          {"$ref": "#/$defs/openalexReceipt"},
+          {"$ref": "#/$defs/europePmcReceipt"}
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "baseReceipt": {
+      "type": "object",
+      "required": ["schema_version", "tool_id", "tool_version", "status", "acquisition_status", "source_endpoint", "retrieval_timestamp_utc", "max_results", "query_sha256", "response_sha256", "returned_count", "records"],
+      "properties": {
+        "tool_version": {"type": "string", "minLength": 1, "maxLength": 32},
+        "status": {"type": "string", "minLength": 1, "maxLength": 64},
+        "acquisition_status": {"type": "string", "minLength": 1, "maxLength": 64},
+        "retrieval_timestamp_utc": {"type": "string", "format": "date-time", "maxLength": 64},
+        "max_results": {"type": "integer", "minimum": 1, "maximum": 10},
+        "query_sha256": {"$ref": "#/$defs/sha256"},
+        "response_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "returned_count": {"type": "integer", "minimum": 0, "maximum": 10},
+        "records": {"type": "array", "maxItems": 10, "items": {"type": "object"}}
+      },
+      "additionalProperties": true
+    },
+    "crossrefReceipt": {
+      "allOf": [
+        {"$ref": "#/$defs/baseReceipt"},
+        {"type": "object", "properties": {"schema_version": {"const": "ignition.crossref-query-search-r0"}, "tool_id": {"const": "research.search_crossref_query"}, "source_endpoint": {"const": "https://api.crossref.org/v1/works"}}, "required": ["schema_version", "tool_id", "source_endpoint"]}
+      ]
+    },
+    "openalexReceipt": {
+      "allOf": [
+        {"$ref": "#/$defs/baseReceipt"},
+        {"type": "object", "properties": {"schema_version": {"const": "ignition.openalex-query-search-r0"}, "tool_id": {"const": "research.search_openalex_query"}, "source_endpoint": {"const": "https://api.openalex.org/works"}}, "required": ["schema_version", "tool_id", "source_endpoint"]}
+      ]
+    },
+    "europePmcReceipt": {
+      "allOf": [
+        {"$ref": "#/$defs/baseReceipt"},
+        {"type": "object", "properties": {"schema_version": {"const": "ignition.europe-pmc-query-search-r0"}, "tool_id": {"const": "research.search_europe_pmc_query"}, "source_endpoint": {"const": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"}}, "required": ["schema_version", "tool_id", "source_endpoint"]}
+      ]
+    }
+  }
+}

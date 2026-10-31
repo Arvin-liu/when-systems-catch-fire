@@ -1,0 +1,85 @@
+{
+  "doi": "10.1016/j.ajhg.2010.04.006",
+  "baseline_resolution": {
+    "returncode": 0,
+    "stdout_json": {
+      "acquisition_failure_count": 0,
+      "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup in the live PMC ID Converter response only; no article-content, bibliographic-accuracy, source-authenticity, scientific-validity, or completeness claim is established.",
+      "doi_count": 1,
+      "resolved_count": 1,
+      "rows": [
+        {
+          "acquisition_status": "OK",
+          "doi": "10.1016/j.ajhg.2010.04.006",
+          "http_status": 200,
+          "identifier_status": "IDENTIFIER_RESOLVED",
+          "matched_doi": "10.1016/j.ajhg.2010.04.006",
+          "pmcid": "PMC2869000",
+          "pmid": null,
+          "response_sha256": "766f7ecae2ab45cf59eef6e80e8404d46be0c71774d635f7d84208d0522a528e",
+          "retrieval_timestamp_utc": "2026-10-25T19:21:45Z",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.1016%2Fj.ajhg.2010.04.006&format=json"
+        }
+      ],
+      "schema_version": "ignition.pubmed-identifier-resolution-r0",
+      "source_code_sha256": {
+        "wrapper": "ade1e10f4b0e3bab11ea21ee2ab76b74f28b4e0af671d77a6ea1eef8a69dcebc"
+      },
+      "status": "IDENTIFIERS_RESOLVED",
+      "tool_id": "research.resolve_pubmed_identifiers",
+      "tool_version": "0.1.0"
+    },
+    "stderr": "",
+    "process_wall_ms": 788.859,
+    "child_cpu_ms": 67.818
+  },
+  "baseline_update_link_inspection": null,
+  "composed_invocation": {
+    "returncode": 0,
+    "stdout_json": {
+      "claim_ceiling": "One DOI-to-PMID resolution response followed, only when an exact PMID is returned, by raw PubMed Comments/Corrections fields for that exact record. An absent PMID, unavailable response, or empty relation list does not establish that no update exists; no source authenticity, completeness, retraction-status, article-content, or scientific-validity claim is made.",
+      "doi": "10.1016/j.ajhg.2010.04.006",
+      "identifier_resolution": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup in the live PMC ID Converter response only; no article-content, bibliographic-accuracy, source-authenticity, scientific-validity, or completeness claim is established.",
+        "doi_count": 1,
+        "resolved_count": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "doi": "10.1016/j.ajhg.2010.04.006",
+            "http_status": 200,
+            "identifier_status": "IDENTIFIER_RESOLVED",
+            "matched_doi": "10.1016/j.ajhg.2010.04.006",
+            "pmcid": "PMC2869000",
+            "pmid": null,
+            "response_sha256": "c9f86cdc59ee73620d2985ce8d34ad6b0a5ab9eda2cb18e26cd7c99428fae8c1",
+            "retrieval_timestamp_utc": "2026-10-25T19:21:45Z",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.1016%2Fj.ajhg.2010.04.006&format=json"
+          }
+        ],
+        "schema_version": "ignition.pubmed-identifier-resolution-r0",
+        "source_code_sha256": {
+          "wrapper": "ade1e10f4b0e3bab11ea21ee2ab76b74f28b4e0af671d77a6ea1eef8a69dcebc"
+        },
+        "status": "IDENTIFIERS_RESOLVED",
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "tool_version": "0.1.0"
+      },
+      "schema_version": "ignition.pubmed-doi-update-audit-r0",
+      "source_code_sha256": {
+        "composition_wrapper": "cd491bd0bfa0a72e43a8c993f3cac20d21903e4a972f96611afbb9a96a2a8c6e",
+        "identifier_resolver": "ade1e10f4b0e3bab11ea21ee2ab76b74f28b4e0af671d77a6ea1eef8a69dcebc",
+        "update_link_reader": "01823e6d5c4eda500f83a10ae08028de7ce2431375c7e58c36647635c1303f3c"
+      },
+      "status": "COMPLETED_WITH_EXPLICIT_STAGE_OUTCOMES",
+      "tool_id": "research.audit_pubmed_updates_from_doi",
+      "tool_version": "0.1.0",
+      "update_link_inspection": null,
+      "update_link_status": "SKIPPED_NO_EXACT_PMID"
+    },
+    "stderr": "",
+    "process_wall_ms": 590.962,
+    "child_cpu_ms": 77.205
+  }
+}

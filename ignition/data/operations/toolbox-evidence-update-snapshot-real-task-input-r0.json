@@ -1,0 +1,120 @@
+{
+  "schema_version": "ignition.toolbox-evidence-update-snapshot-comparison-input-r0",
+  "comparison_id": "formal-claim-a1-main-to-toolbox-candidate-r0",
+  "baseline_snapshot": {
+    "snapshot_id": "claim-a1-main-483658e2ff57",
+    "task_ref": {
+      "task_id": "formal-claim-lineage-snapshot-review-claim-a1",
+      "revision_digest": "0e4d1740135982891d3b419b166ca504aad2781840c7ca211e2106752ce20a20"
+    },
+    "claim_id": "CLAIM-A1",
+    "as_of": {
+      "reference": "repository-ref:483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "observed_at_utc": "2026-10-22T07:27:02Z"
+    },
+    "scope_digest": "c7ff88a0f02fda1e2587865621cb4ead75b0c4c23b2bec81b64e4e3d079096a7",
+    "applicability_digest": "da1892594c0b9da483dd990fea8d7b85db2fed8ce175630505ceb5f84337b0a2",
+    "declared_claim_state": "RETAINED_AS_HEURISTIC",
+    "change_reason": {
+      "code": "REPOSITORY_REF_SNAPSHOT",
+      "reference": "commit:483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+    },
+    "evaluation_instrument": {
+      "identity": "UNKNOWN",
+      "revision_digest": null
+    },
+    "update_policy": {
+      "identity": "UNKNOWN",
+      "revision_digest": null
+    },
+    "stopping_policy": {
+      "identity": "UNKNOWN",
+      "revision_digest": null
+    },
+    "acquisition_dependence": "UNKNOWN",
+    "evidence_items": [
+      {
+        "evidence_id": "SOURCE_TEXT:data/foundation/adjudications/core-kernel.jsonl#16",
+        "source_family": "SOURCE_TEXT",
+        "record_state": "LINKED",
+        "record_sha256": "9fb6dd031f9d320de59d473caa176ad0bccc6a3ada1b7712775987dbb2d6343c"
+      },
+      {
+        "evidence_id": "SOURCE_TEXT:data/foundation/arguments/arguments.jsonl#7",
+        "source_family": "SOURCE_TEXT",
+        "record_state": "LINKED",
+        "record_sha256": "c076b5a6535b9308eb4257bd873197bdfd93c739c84802cc7a1fb6470e1bd55b"
+      },
+      {
+        "evidence_id": "SOURCE_TEXT:data/foundation/claims/claims.jsonl#7",
+        "source_family": "SOURCE_TEXT",
+        "record_state": "LINKED",
+        "record_sha256": "7da60e42a214f589ee048aaf10360009a31a7cec98314db5c26be88add760a0c"
+      },
+      {
+        "evidence_id": "FUNCTION_ASSET_AUTHORITY:A1",
+        "source_family": "FUNCTION_ASSET_AUTHORITY",
+        "record_state": "LINKED",
+        "record_sha256": "3aab4e0e02b4c1007818fd6cd780843da1676ba8666cf288e888f559700fc9f2"
+      }
+    ]
+  },
+  "candidate_snapshot": {
+    "snapshot_id": "claim-a1-candidate-c94ad4407823",
+    "task_ref": {
+      "task_id": "formal-claim-lineage-snapshot-review-claim-a1",
+      "revision_digest": "0e4d1740135982891d3b419b166ca504aad2781840c7ca211e2106752ce20a20"
+    },
+    "claim_id": "CLAIM-A1",
+    "as_of": {
+      "reference": "repository-ref:c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+      "observed_at_utc": "2026-10-26T09:20:55Z"
+    },
+    "scope_digest": "c7ff88a0f02fda1e2587865621cb4ead75b0c4c23b2bec81b64e4e3d079096a7",
+    "applicability_digest": "da1892594c0b9da483dd990fea8d7b85db2fed8ce175630505ceb5f84337b0a2",
+    "declared_claim_state": "RETAINED_AS_HEURISTIC",
+    "change_reason": {
+      "code": "REPOSITORY_REF_SNAPSHOT",
+      "reference": "commit:c94ad44078232a3657f7ae4fcca62a2a34a852f4"
+    },
+    "evaluation_instrument": {
+      "identity": "UNKNOWN",
+      "revision_digest": null
+    },
+    "update_policy": {
+      "identity": "UNKNOWN",
+      "revision_digest": null
+    },
+    "stopping_policy": {
+      "identity": "UNKNOWN",
+      "revision_digest": null
+    },
+    "acquisition_dependence": "UNKNOWN",
+    "evidence_items": [
+      {
+        "evidence_id": "SOURCE_TEXT:data/foundation/adjudications/core-kernel.jsonl#16",
+        "source_family": "SOURCE_TEXT",
+        "record_state": "LINKED",
+        "record_sha256": "9fb6dd031f9d320de59d473caa176ad0bccc6a3ada1b7712775987dbb2d6343c"
+      },
+      {
+        "evidence_id": "SOURCE_TEXT:data/foundation/arguments/arguments.jsonl#7",
+        "source_family": "SOURCE_TEXT",
+        "record_state": "LINKED",
+        "record_sha256": "c076b5a6535b9308eb4257bd873197bdfd93c739c84802cc7a1fb6470e1bd55b"
+      },
+      {
+        "evidence_id": "SOURCE_TEXT:data/foundation/claims/claims.jsonl#7",
+        "source_family": "SOURCE_TEXT",
+        "record_state": "LINKED",
+        "record_sha256": "7da60e42a214f589ee048aaf10360009a31a7cec98314db5c26be88add760a0c"
+      },
+      {
+        "evidence_id": "FUNCTION_ASSET_AUTHORITY:A1",
+        "source_family": "FUNCTION_ASSET_AUTHORITY",
+        "record_state": "LINKED",
+        "record_sha256": "3aab4e0e02b4c1007818fd6cd780843da1676ba8666cf288e888f559700fc9f2"
+      }
+    ]
+  }
+}

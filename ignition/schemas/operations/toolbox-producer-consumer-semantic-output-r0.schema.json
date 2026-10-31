@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/toolbox-producer-consumer-semantic-output-r0.schema.json",
+  "title": "Producer Consumer Semantic Preflight output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "input_sha256", "source_bindings", "analysis_status", "contract_status", "checks", "unsupported_reasons", "claim_flags"],
+  "properties": {
+    "schema_version": {"const": "producer-consumer-semantic-preflight-output-r0"},
+    "tool_id": {"const": "maintenance.preflight_producer_consumer_semantics"},
+    "tool_version": {"const": "0.1.0"},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["consumer_source", "producer_text"],
+      "properties": {
+        "consumer_source": {"$ref": "#/$defs/binding"},
+        "producer_text": {"$ref": "#/$defs/binding"}
+      }
+    },
+    "analysis_status": {"enum": ["NOT_RUN", "NOT_EVALUABLE", "EVALUATED"]},
+    "contract_status": {"enum": ["NOT_EVALUABLE", "SOURCE_BINDING_MISMATCH", "STATIC_REQUIRED_PATTERNS_MATCHED", "STATIC_REQUIRED_PATTERN_MISMATCH", "INPUT_INVALID"]},
+    "checks": {"type": "array", "maxItems": 16, "items": {"$ref": "#/$defs/check"}},
+    "unsupported_reasons": {"type": "array", "maxItems": 16, "items": {"type": "string", "minLength": 1}},
+    "claim_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["consumer_code_executed", "source_provenance_authenticated", "consumer_acceptance_proven", "semantic_equivalence_proven", "external_truth_verified", "execution_authorized"],
+      "properties": {
+        "consumer_code_executed": {"const": false},
+        "source_provenance_authenticated": {"const": false},
+        "consumer_acceptance_proven": {"const": false},
+        "semantic_equivalence_proven": {"const": false},
+        "external_truth_verified": {"const": false},
+        "execution_authorized": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_sha256", "observed_sha256", "status"],
+      "properties": {
+        "expected_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "observed_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "status": {"enum": ["NOT_CHECKED", "MATCH", "MISMATCH"]}
+      }
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field_id", "occurrence_count", "status"],
+      "properties": {
+        "field_id": {"type": "string", "minLength": 1},
+        "occurrence_count": {"type": "integer", "minimum": 0},
+        "status": {"enum": ["PRESENT", "ABSENT", "CASE_VARIANT", "AMBIGUOUS", "CONTRADICTORY", "PRESENT_UNVALIDATED"]},
+        "value_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "occurrence_line_sha256": {"type": "array", "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["consumer_variable", "method", "source_line", "pattern_sha256", "status", "match_count", "capture_fields"],
+      "properties": {
+        "consumer_variable": {"type": "string", "minLength": 1},
+        "method": {"const": "re.search"},
+        "source_line": {"type": "integer", "minimum": 1},
+        "pattern_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "status": {"enum": ["PRESENT", "ABSENT", "CASE_VARIANT", "MALFORMED_OR_REORDERED", "AMBIGUOUS", "CONTRADICTORY"]},
+        "match_count": {"type": "integer", "minimum": 0},
+        "capture_fields": {"type": "array", "items": {"$ref": "#/$defs/field"}}
+      }
+    }
+  }
+}

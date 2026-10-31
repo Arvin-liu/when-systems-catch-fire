@@ -1,0 +1,61 @@
+{
+  "actual_task_evidence_observed_outside_the_comparator": {
+    "focused_human_front_door_tests_passed": 14,
+    "formal_main_foundation_status_at_PR264_head": "CANCELLED",
+    "formal_main_release_disposition": "BLOCKED_UNDER_CURRENT_NO_FOUNDATION_INSTRUCTION",
+    "formal_main_required_check": "foundation-validation",
+    "owner_copy_matches_homepage_candidate": true
+  },
+  "authority_and_effects": {
+    "execution_authorized_by_comparator": false,
+    "executors_invoked_by_comparator": false,
+    "filesystem_or_network_effects_from_tool": "None; stdin/stdout only. This evidence writer stored the result separately.",
+    "provider_calls": 0,
+    "validators_executed_by_comparator": false
+  },
+  "claim_ceiling": "One actual local invocation structurally compared caller-declared alternatives and exposed the missing required Foundation step. It did not establish actual task execution success, release eligibility, scientific validity, or authority; source and protection facts remain separately bound above.",
+  "invocation": {
+    "command": "python3 -B ignition/tools/toolbox_compare_task_decomposition_solvability.py --stdin",
+    "elapsed_scope_limit": "One local CLI invocation only; not a stable latency estimate for the decision task.",
+    "input_bytes": 7287,
+    "input_path": "ignition/data/operations/toolbox-task-decomposition-solvability-real-task-input-r0.json",
+    "input_sha256": "cc3585904af420a471eb1906df6342c17c861f063845314bd8b1fdd72f6346af",
+    "output_file_sha256": "b95801eed00eb0ceaccfd6f0a8c33eb34f2e51c89a96110b09d212fc876edd48",
+    "output_path": "ignition/data/operations/toolbox-task-decomposition-solvability-real-task-output-r0.json",
+    "runtime": "3.9.6",
+    "single_process_elapsed_ms": 28.516,
+    "stdout_sha256": "6940adb5d4259d334dbad2abca58e9e992d34c96fca9d9e15afdab1fcd8c0af7",
+    "tool_git_blob_sha1": "13b1eb411ddecf886ba0f4d834967f3c4ceee5b7"
+  },
+  "result_summary": {
+    "alternative_statuses": {
+      "current_protected_main_release_path": "UNSOLVABLE_AS_DECLARED",
+      "focused_homepage_checks_only": "UNSOLVABLE_AS_DECLARED"
+    },
+    "comparison_status": "CALLER_DECLARED_ALTERNATIVES_COMPARED",
+    "disposition": "NO_ALTERNATIVE_SOLVABLE_AS_DECLARED",
+    "focused_only_blockers": [
+      "REQUIRED_TASK_OUTPUTS_NOT_PRODUCED:formal_main_release_readiness"
+    ],
+    "protected_path_blockers": [
+      "run_full_foundation_gate:CAPABILITY_DECLARED_UNAVAILABLE"
+    ],
+    "protected_path_resource_estimate_status": "UNKNOWN",
+    "resource_frontier": {
+      "alternative_ids": [],
+      "basis": "Caller-declared serial estimates only; no empirical success or calibrated cost ranking.",
+      "status": "NOT_EVALUATED_NO_FEASIBLE_ALTERNATIVE"
+    },
+    "structural_leader_id": null
+  },
+  "schema_version": "toolbox-task-decomposition-solvability-real-task-evidence-r0",
+  "source_bindings": {
+    "formal_main_ref": "Arvin-liu/when-systems-catch-fire@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "formal_pr_ref": "Arvin-liu/when-systems-catch-fire#264@8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "homepage_candidate_ref": "Arvin-liu/when-systems-catch-fire@a081fe474cd9a4bca6bc3a5680fbf634a34b442a",
+    "owner_source_ref": "Arvin-liu/1111@4e1e3ae8cade11f1932d10169f546abf7317ece0"
+  },
+  "task_id": "homepage-main-release-readiness-20261026",
+  "task_revision": "source-4e1e3ae8-candidate-a081fe47-formal-main-483658e2-pr264-8230dc6c",
+  "task_scope": "Assess whether the exact Owner homepage text candidate could be declared ready for Formal main while this task forbids a Full Foundation run."
+}

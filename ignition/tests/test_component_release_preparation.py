@@ -38,6 +38,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
         self._git(repo, "config", "user.name", "Component Fixture")
         self._git(repo, "config", "user.email", "component@example.invalid")
         files = {
+            "ignition/research_workflow/__init__.py": "",
             "ignition/research_workflow/slot.py": "VERSION = 'r1'\n",
             "ignition/research_workflow/test_pluggable_slot.py": (
                 "import unittest\n"
@@ -141,7 +142,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             self.assertEqual(first["artifact_state"], "CONTENT_ADDRESSED")
             self.assertEqual(first["artifact_sha256"], second["artifact_sha256"])
             self.assertEqual(first_archive.read_bytes(), second_archive.read_bytes())
-            self.assertEqual(len(first["files"]), 5)
+            self.assertEqual(len(first["files"]), 6)
             verified = validate_release_manifest(first, first_archive, repo_root=repo)
             self.assertEqual(verified["source_commit_sha"], source_sha)
 

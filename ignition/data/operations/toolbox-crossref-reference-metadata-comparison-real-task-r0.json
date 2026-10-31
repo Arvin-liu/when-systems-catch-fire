@@ -1,0 +1,114 @@
+{
+  "schema_version": "ignition.crossref-reference-metadata-comparison-real-task-evidence-r0",
+  "tool_id": "research.compare_crossref_reference_metadata",
+  "tool_version": "0.1.0",
+  "task_id": "crossref-selected-reference-doi-resolution-20261026",
+  "selection_method": "Purposive single reference selected from a previously recorded Crossref reference projection; not a random or representative sample.",
+  "invocation_timestamp_utc": "2026-10-26T00:15:42Z",
+  "input": {
+    "source_work_doi": "10.1186/s12884-025-07725-7",
+    "references": [
+      {
+        "key": "7725_CR2",
+        "doi": "10.1136/bjsports-2020-102955",
+        "first_page": "1451",
+        "journal_title": "Br J Sports Med",
+        "volume": "54",
+        "year": 2020
+      }
+    ]
+  },
+  "input_sha256": "a77b8db3cf4f4b4a22712e8d54b0b64c1fa813f8a89a75f2ffa6a23c4427535d",
+  "input_source_evidence": {
+    "path": "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+    "sha256": "5443c31d08a75455644d826d045993d73066f4aa777309031bda003f43d2004b",
+    "task_id": "crossref-deposited-reference-projection-real-doi-r1",
+    "source_work_doi": "10.1186/s12884-025-07725-7",
+    "reference_key": "7725_CR2",
+    "reference_doi": "10.1136/bjsports-2020-102955",
+    "deposited_metadata": {
+      "first_page": "1451",
+      "journal_title": "Br J Sports Med",
+      "volume": "54",
+      "year": 2020
+    }
+  },
+  "invocation": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_compare_crossref_reference_metadata.py --stdin --allow-public-network",
+    "network_permission_flag_present": true,
+    "host": "api.crossref.org",
+    "request_count": 1,
+    "repository_writes": false,
+    "article_or_publisher_pages_fetched": false,
+    "raw_provider_body_retained": false
+  },
+  "implementation": {
+    "wrapper_path": "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+    "wrapper_sha256": "855ad7c94bdb675ac821e2f20ba7bf0b5ce45419e3fa19be7cf7a9e214cf7582",
+    "crossref_adapter_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+    "crossref_adapter_sha256": "12a2803c6c5414954f9a9cd895d7d45966e9214404e887a6b97e5b486f17f11a",
+    "task103_helper_path": "ignition/evidence-program/tools/run_crossref_verification.py",
+    "task103_helper_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51"
+  },
+  "provider_request": {
+    "provider": "Crossref REST API",
+    "endpoint": "https://api.crossref.org/works/10.1136%2Fbjsports-2020-102955",
+    "host": "api.crossref.org",
+    "request_count": 1,
+    "http_status": 200,
+    "response_sha256": "faa21a8fccfd7fcc447efeb649b4a8af058f3290e5882e5df61f395852320bc9",
+    "raw_provider_body_retained": false
+  },
+  "observed_outcome": {
+    "tool_status": "FIELD_DIFFERENCES_OBSERVED",
+    "acquisition_status": "OK",
+    "doi_identity_status": "EXACT_DOI_MATCH",
+    "comparison_status": "FIELD_DIFFERENCES_OBSERVED",
+    "field_comparisons": {
+      "first_page": {
+        "reference_value": "1451",
+        "status": "NORMALIZED_EQUAL",
+        "work_value": "1451"
+      },
+      "journal_title": {
+        "reference_value": "Br J Sports Med",
+        "status": "NORMALIZED_DIFFERENT",
+        "work_value": "British Journal of Sports Medicine"
+      },
+      "volume": {
+        "reference_value": "54",
+        "status": "NORMALIZED_EQUAL",
+        "work_value": "54"
+      },
+      "year": {
+        "reference_value": 2020,
+        "status": "NORMALIZED_EQUAL",
+        "work_value": 2020
+      }
+    },
+    "resolved_work": {
+      "article_title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour",
+      "doi": "10.1136/bjsports-2020-102955",
+      "first_page": "1451",
+      "issue": "24",
+      "journal_title": "British Journal of Sports Medicine",
+      "page": "1451-1462",
+      "volume": "54",
+      "year": 2020
+    },
+    "claim_ceiling": "For up to five caller-supplied Crossref reference rows, retrieve the exact cited DOI Work metadata from api.crossref.org and report normalized field equality or difference for supplied title, year, journal, volume, issue, and first-page values. A difference is not proof of an incorrect citation; a match does not establish source authenticity, bibliography completeness, article content, or scientific support. The source-work DOI and projection provenance are caller declarations only."
+  },
+  "tool_output_sha256": "9210a4a5a0b44df0c2ff284d7676c3c9042ba246de9cb45745466bfbcf88b7ca",
+  "interpretation_and_limits": [
+    "The candidate DOI resolved to an exact Crossref Work DOI match with HTTP 200.",
+    "The deposited abbreviation Br J Sports Med and resolved value British Journal of Sports Medicine were reported as NORMALIZED_DIFFERENT; this is a literal normalized metadata difference only and is not a judgment that the reference is incorrect.",
+    "The caller-declared source DOI and the source reference row provenance were not authenticated by this tool.",
+    "One selected DOI does not estimate coverage, correctness, completeness, quality, cost, or latency; no source or article content was reviewed."
+  ],
+  "comparison_context": {
+    "existing_tool": "research.verify_crossref_metadata@0.3.0",
+    "existing_tool_evidence": "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+    "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+    "basis": "The existing tool projects deposited reference fields from the citing Work response; this candidate resolves one caller-selected cited DOI and compares supplied structured fields against that target Work record."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "toolbox-crossref-query-search-route-evidence-r0",
+  "experiment_id": "research.search_crossref_query.default_off_exact_host_minimality",
+  "profile_ref": "ignition/data/operations/toolbox-crossref-query-search-route-profile-r0.json",
+  "candidate_id": "research.search_crossref_query",
+  "candidate_version": "0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "experimental_candidate_catalog_blob_sha1": "58f0ed1aea5a54db27529ec322fa1f74f899c38a",
+  "route_profile": {
+    "task_id": "crossref-public-topic-discovery",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly a public query string (1-512 characters, at most 2048 UTF-8 bytes) and integer max_results (1-10)"
+    ],
+    "required_outputs": [
+      "At most ten Crossref Works metadata rows with DOI when present, title, issued publication year when present, type, publisher, container title, up to ten author names with count/truncation, and provider-reported cited-by count; abstracts, references, links, and URLs are omitted.",
+      "Provider hit count, retrieval timestamp, response bytes, query/request/response/source-code SHA-256 values, HTTP/acquisition outcome, selected public-pool rate headers, and bounded claim ceiling."
+    ],
+    "allowed_execution_modes": ["READ_ONLY_RUN"]
+  },
+  "route_selection_is_not_execution_authority": true,
+  "route_trials": [
+    {
+      "scenario": "default_opt_out",
+      "include_experimental_tool_ids": [],
+      "allowed_network_hosts": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "relevant_rejected_candidates": [
+        {"tool_id": "research.search_crossref_query", "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"}
+      ],
+      "execution_authorized": false
+    },
+    {
+      "scenario": "explicit_candidate_without_exact_host",
+      "include_experimental_tool_ids": ["research.search_crossref_query"],
+      "allowed_network_hosts": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "relevant_rejected_candidates": [
+        {"tool_id": "research.search_crossref_query", "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"}
+      ],
+      "execution_authorized": false
+    },
+    {
+      "scenario": "exact_host_minimum_route",
+      "include_experimental_tool_ids": ["research.search_crossref_query"],
+      "allowed_network_hosts": ["api.crossref.org"],
+      "decision": "COMPLETE",
+      "selected_tool_ids": ["research.search_crossref_query"],
+      "relevant_rejected_candidates": [],
+      "execution_authorized": false
+    },
+    {
+      "scenario": "all_query_providers_offered_crossref_outputs_required",
+      "include_experimental_tool_ids": [
+        "research.search_crossref_query",
+        "research.search_openalex_query",
+        "research.search_arxiv_query",
+        "research.search_europe_pmc_query"
+      ],
+      "allowed_network_hosts": ["api.crossref.org", "api.openalex.org", "export.arxiv.org", "www.ebi.ac.uk"],
+      "decision": "COMPLETE",
+      "selected_tool_ids": ["research.search_crossref_query"],
+      "relevant_rejected_candidates": [
+        {"tool_id": "research.search_arxiv_query", "reason": "NO_INPUT_TYPE_MATCH"},
+        {"tool_id": "research.search_europe_pmc_query", "reason": "NO_INPUT_TYPE_MATCH"}
+      ],
+      "execution_authorized": false
+    }
+  ],
+  "findings": [
+    "The candidate is excluded by default.",
+    "Explicit candidate inclusion without the exact Crossref host is rejected.",
+    "With the exact host and Crossref-specific output contract, the planner selects only research.search_crossref_query.",
+    "Offering OpenAlex, arXiv, and Europe PMC with their exact hosts does not expand the route when only Crossref-deposited DOI and publisher/container outputs are required.",
+    "Every COMPLETE route leaves execution_authorized=false."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "toolbox-bounded-thinking-operation-input-r0",
+  "task": {
+    "episode_id": "ignition-toolbox-component-admission-20261026-ab16",
+    "intent_ref": "owner-instruction:9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "goal_ref": "goal:expand-ignition-toolbox-with-verified-optional-tools",
+    "frame_ref": "frame:formal-isolated-tool-candidate-admission",
+    "objective": "Admit the AB-16 bounded operation selector as a default-off experimental candidate with a verified identity card, route behavior and negative controls.",
+    "required_outputs": [
+      "machine-readable candidate card",
+      "default-off route evidence",
+      "focused tests and negative controls"
+    ]
+  },
+  "state": {
+    "state_ref": "state:ab16-admission-before-card-route-verification",
+    "required_obligations": [
+      {
+        "obligation_ref": "obligation:machine-card-and-evidence",
+        "status": "OPEN",
+        "required": true,
+        "verification_required": true,
+        "evidence_refs": [
+          "source:AB16-PR8",
+          "source:C1"
+        ]
+      },
+      {
+        "obligation_ref": "obligation:default-off-route-and-negative-controls",
+        "status": "OPEN",
+        "required": true,
+        "verification_required": true,
+        "evidence_refs": [
+          "contract:toolbox-route-planner"
+        ]
+      }
+    ],
+    "uncertainty_refs": [
+      "uncertainty:real-task-quality-and-measured-cost"
+    ],
+    "frame_unresolved": false,
+    "authority_missing": false,
+    "capability_missing": false,
+    "freshness_gap": false,
+    "decomposition_needed": false,
+    "first_failure_ref": null,
+    "failure_refs": [],
+    "operation_history": [],
+    "remaining_budget_units": 2
+  },
+  "available_operations": [
+    "VERIFY",
+    "READ_MORE",
+    "DECOMPOSE"
+  ],
+  "available_capabilities": [
+    "local-targeted-tests",
+    "jsonschema-validation",
+    "toolbox-route-planner"
+  ],
+  "candidate_assessments": [
+    {
+      "operation": "VERIFY",
+      "expected_state_delta": "Resolve the card and default-off route obligations from observed focused checks, or preserve any failed gate.",
+      "expected_value_status": "POSITIVE",
+      "expected_value_band": "MEDIUM",
+      "expected_cost_band": "LOW",
+      "estimated_cost_units": 1,
+      "reason_refs": [
+        "obligation:machine-card-and-evidence",
+        "obligation:default-off-route-and-negative-controls"
+      ],
+      "required_capabilities": [
+        "local-targeted-tests",
+        "jsonschema-validation",
+        "toolbox-route-planner"
+      ],
+      "return_condition": "Re-derive caller-declared state after the candidate card, route proposal and negative controls have been observed."
+    }
+  ]
+}

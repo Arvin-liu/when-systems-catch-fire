@@ -1,0 +1,22 @@
+{
+  "schema_version": "toolbox-datacite-doi-metadata-source-binding-r0",
+  "tool_id": "research.lookup_datacite_doi_metadata",
+  "provider": "DataCite",
+  "source_name": "DataCite REST API Public API",
+  "api_version": "REST API JSON:API projection; schema version is returned per DOI record",
+  "authentication": "NONE_FOR_PUBLIC_METADATA_RETRIEVAL",
+  "method": "GET",
+  "fixed_host": "api.datacite.org",
+  "path_template": "/dois/{percent-encoded-bare-doi}",
+  "response_content_types": ["application/json", "application/vnd.api+json"],
+  "public_api_record_states": ["findable"],
+  "not_exposed_by_public_api": ["registered", "draft"],
+  "write_operations": [],
+  "secondary_requests": [],
+  "official_references": [
+    "https://support.datacite.org/docs/api-get-doi",
+    "https://support.datacite.org/docs/rest-api",
+    "https://support.datacite.org/docs/doi-states"
+  ],
+  "claim_ceiling": "Records and fields returned by this public API request only; public API no-result does not establish that a DOI is absent from DataCite or other systems."
+}

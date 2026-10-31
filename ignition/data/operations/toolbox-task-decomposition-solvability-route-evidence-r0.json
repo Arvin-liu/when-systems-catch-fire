@@ -1,0 +1,120 @@
+{
+  "schema_version": "toolbox-task-decomposition-solvability-route-evidence-r0",
+  "tool_id": "planning.compare_task_decomposition_solvability",
+  "route_profile_ref": "ignition/data/operations/toolbox-task-decomposition-solvability-route-profile-r0.json",
+  "route_planner_source_ref": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "route_planner_invocation_count": 3,
+  "route_trials": [
+    {
+      "trial_id": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejected_candidate_reasons": [
+        {
+          "tool_id": "planning.compare_task_decomposition_solvability",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_tool_invocation_count": 0,
+      "planner_output_projection_sha256": "0408abbeff6accea266345540953da2f2758a8372e82a1ec4eb948313244f572"
+    },
+    {
+      "trial_id": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "planning.compare_task_decomposition_solvability"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "planning.compare_task_decomposition_solvability"
+      ],
+      "rejected_candidate_reasons": [
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_tool_invocation_count": 0,
+      "planner_output_projection_sha256": "c3702fb0c2fcfa1116f8e744de4427292e858cb2deaf4fc817333fc9207150f9"
+    },
+    {
+      "trial_id": "with_unrelated_candidate",
+      "include_experimental_tool_ids": [
+        "planning.compare_task_decomposition_solvability",
+        "research.compare_evidence_update_snapshots"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "planning.compare_task_decomposition_solvability"
+      ],
+      "rejected_candidate_reasons": [
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_tool_invocation_count": 0,
+      "planner_output_projection_sha256": "149784604a053935d0299ca9dd6a4ccddc2e0569bdb2e340bfb93780850a9dd4"
+    }
+  ],
+  "provider_call_count": 0,
+  "candidate_tool_invocation_count": 0,
+  "execution_authorized": false,
+  "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle.",
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-29T14:14:20Z",
+    "route_trials_replayed": 3,
+    "all_expected_decisions_reproduced": true,
+    "candidate_tool_invocation_count": 0,
+    "provider_call_count": 0,
+    "execution_authorized": false,
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+    "provider_calls_made": 0,
+    "candidate_invoked": false,
+    "replay_result_sha256": "ed2b83414613a63065b5cd5c4931b359295d47d734acdd91f3089b870ea9bde1",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered {trial_id, planner_output_projection_sha256} records; each route digest excludes source_refs to avoid a candidate-catalog self-reference."
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "77af7256b32e63af767264f07b5123f6e96cc262",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "98237632cd6c06ddda4d681188941dc525bc6258",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "c16b7a08174d95c52bfc67b5f80bf5f49f3ce4b4",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:47:07Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "39c117b891afcc9688e8703faeeb76c9d06fb372",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:47:07Z",
+      "replayed_at_utc": "2026-10-27T01:23:02Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "21123bef99c1844323fd67ac97006b0ee90c1c96",
+      "superseded_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+      "superseded_observed_at_utc": "2026-10-27T01:23:02Z",
+      "replayed_at_utc": "2026-10-29T14:14:20Z"
+    }
+  ],
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+}

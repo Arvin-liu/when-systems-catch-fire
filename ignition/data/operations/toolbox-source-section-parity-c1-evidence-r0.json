@@ -1,0 +1,35 @@
+{
+  "schema_version": "toolbox-source-section-parity-c1-evidence-r0",
+  "tool_id": "maintenance.compare_source_section_bytes",
+  "tool_version": "0.1.0",
+  "disposition": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "comparison_scope": "One bounded same-task comparison of the approved source first-component section with the larger homepage candidate document, plus contract inspection of whole-file digest and structural homepage tools. This is not a broad quality, reliability, or cost benchmark.",
+  "compared_tool_ids": [
+    "maintenance.preflight_execution_effect_receipt",
+    "collaboration.verify_handoff_artifact_files"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_execution_effect_receipt.py",
+    "ignition/tools/toolbox_verify_handoff_artifact_files.py",
+    "ignition/tools/validate_homepage_components.py"
+  ],
+  "real_task_ref": "ignition/data/operations/toolbox-source-section-parity-real-task-evidence-r0.json",
+  "findings": [
+    "The exact-copy task concerns one marker-delimited section inside a larger candidate file. The whole-file digest tools compare complete files and cannot show that the selected section matches when surrounding document content differs.",
+    "The homepage component validator checks declared component shape/count; it does not compare a section with caller-supplied authorized source text.",
+    "This tool checks one explicit section by exact UTF-8 bytes and reports hashes/offsets only. It does not fetch or authenticate the source, establish source approval, decide semantic equivalence, or authorize edits or publication.",
+    "The real task output matched the source section and candidate section at 2,403 bytes each. This demonstrates one narrow use case only; it does not establish broad reliability or analyst-time savings."
+  ],
+  "replacement_candidates": [],
+  "retired_tools": [],
+  "unique_remaining_use_cases": [
+    "Compare one approved/caller-supplied source section with the corresponding section of a larger checked-out human document when whole-file equality is intentionally not expected.",
+    "Record exact selected-section byte identity and offsets without storing the compared text in the result."
+  ],
+  "deprecation_or_retirement_status": "SPECIALIZED",
+  "estimated_cost": {
+    "status": "UNKNOWN",
+    "basis": "No matched latency, resource, or analyst-time benchmark was run; one candidate file is capped at 2 MiB and source stdin at 512,000 bytes."
+  },
+  "claim_ceiling": "One repository-local exact-byte comparison for one caller-supplied source document and one checked-out candidate document. Source authenticity, authorship, approval, semantic equivalence, edit permission, release permission and scientific truth remain unestablished."
+}

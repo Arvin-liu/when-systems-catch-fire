@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:governed-improvement-transition-r0",
+  "title": "Governed Improvement Transition Preflight R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "transition_id", "predecessor", "successor_candidate",
+    "changed_mechanisms", "preregistration", "evaluation_bindings",
+    "quality_metrics", "cost_metrics", "failure_deltas", "authority_scopes",
+    "rollback", "next_round_rnd_gain"
+  ],
+  "properties": {
+    "schema_version": {"const": "governed-improvement-transition-r0"},
+    "transition_id": {"$ref": "#/$defs/text"},
+    "predecessor": {"$ref": "#/$defs/system"},
+    "successor_candidate": {"$ref": "#/$defs/system"},
+    "changed_mechanisms": {"$ref": "#/$defs/textList"},
+    "preregistration": {
+      "type": "object", "additionalProperties": false,
+      "required": ["ref", "sha256"],
+      "properties": {"ref": {"$ref": "#/$defs/text"}, "sha256": {"$ref": "#/$defs/digest"}}
+    },
+    "evaluation_bindings": {
+      "type": "object", "additionalProperties": false,
+      "required": ["predecessor", "successor", "successor_on_predecessor_anchor"],
+      "properties": {
+        "predecessor": {"$ref": "#/$defs/evaluationBinding"},
+        "successor": {"$ref": "#/$defs/evaluationBinding"},
+        "successor_on_predecessor_anchor": {
+          "oneOf": [
+            {
+              "type": "object", "additionalProperties": false,
+              "required": ["status", "evaluation_binding", "metrics"],
+              "properties": {"status": {"const": "NOT_RUN"}, "evaluation_binding": {"type": "null"}, "metrics": {"type": "array", "maxItems": 0}}
+            },
+            {
+              "type": "object", "additionalProperties": false,
+              "required": ["status", "evaluation_binding", "metrics"],
+              "properties": {"status": {"const": "MEASURED"}, "evaluation_binding": {"$ref": "#/$defs/evaluationBinding"}, "metrics": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"$ref": "#/$defs/replayMetric"}}}
+            }
+          ]
+        }
+      }
+    },
+    "quality_metrics": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"$ref": "#/$defs/qualityMetric"}},
+    "cost_metrics": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"$ref": "#/$defs/costMetric"}},
+    "failure_deltas": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"$ref": "#/$defs/failureDelta"}},
+    "authority_scopes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["predecessor", "successor"],
+      "properties": {"predecessor": {"$ref": "#/$defs/stringSet"}, "successor": {"$ref": "#/$defs/stringSet"}}
+    },
+    "rollback": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_system_ref", "target_system_sha256", "exercise_status"],
+      "properties": {
+        "target_system_ref": {"$ref": "#/$defs/text"},
+        "target_system_sha256": {"$ref": "#/$defs/digest"},
+        "exercise_status": {"enum": ["PASS", "FAIL", "NOT_RUN"]}
+      }
+    },
+    "next_round_rnd_gain": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "metric"],
+          "properties": {"status": {"const": "NOT_MEASURED"}, "metric": {"type": "null"}}
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "metric"],
+          "properties": {"status": {"const": "MEASURED"}, "metric": {"$ref": "#/$defs/nextRoundMetric"}}
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1, "maxLength": 512, "pattern": "\\S"},
+    "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "number": {"type": "number"},
+    "nonnegative": {"type": "number", "minimum": 0},
+    "stringSet": {"type": "array", "maxItems": 128, "uniqueItems": true, "items": {"$ref": "#/$defs/text"}},
+    "textList": {"type": "array", "minItems": 1, "maxItems": 128, "uniqueItems": true, "items": {"$ref": "#/$defs/text"}},
+    "system": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system_ref", "system_sha256"],
+      "properties": {"system_ref": {"$ref": "#/$defs/text"}, "system_sha256": {"$ref": "#/$defs/digest"}}
+    },
+    "evaluationBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evaluator_sha256", "benchmark_sha256", "heldout_sha256"],
+      "properties": {
+        "evaluator_sha256": {"$ref": "#/$defs/digest"},
+        "benchmark_sha256": {"$ref": "#/$defs/digest"},
+        "heldout_sha256": {"$ref": "#/$defs/digest"}
+      }
+    },
+    "direction": {"enum": ["HIGHER_IS_BETTER", "LOWER_IS_BETTER"]},
+    "qualityMetric": {
+      "type": "object", "additionalProperties": false,
+      "required": ["metric_id", "unit", "direction", "predecessor_value", "successor_value"],
+      "properties": {
+        "metric_id": {"$ref": "#/$defs/text"}, "unit": {"$ref": "#/$defs/text"},
+        "direction": {"$ref": "#/$defs/direction"},
+        "predecessor_value": {"$ref": "#/$defs/number"}, "successor_value": {"$ref": "#/$defs/number"}
+      }
+    },
+    "replayMetric": {
+      "type": "object", "additionalProperties": false,
+      "required": ["metric_id", "unit", "direction", "value"],
+      "properties": {
+        "metric_id": {"$ref": "#/$defs/text"}, "unit": {"$ref": "#/$defs/text"},
+        "direction": {"$ref": "#/$defs/direction"}, "value": {"$ref": "#/$defs/number"}
+      }
+    },
+    "costMetric": {
+      "type": "object", "additionalProperties": false,
+      "required": ["metric_id", "unit", "predecessor_value", "successor_value", "max_allowed_increase"],
+      "properties": {
+        "metric_id": {"$ref": "#/$defs/text"}, "unit": {"$ref": "#/$defs/text"},
+        "predecessor_value": {"$ref": "#/$defs/nonnegative"}, "successor_value": {"$ref": "#/$defs/nonnegative"},
+        "max_allowed_increase": {"$ref": "#/$defs/nonnegative"}
+      }
+    },
+    "failureDelta": {
+      "type": "object", "additionalProperties": false,
+      "required": ["failure_class", "predecessor_count", "successor_count", "max_allowed_increase"],
+      "properties": {
+        "failure_class": {"$ref": "#/$defs/text"}, "predecessor_count": {"type": "integer", "minimum": 0},
+        "successor_count": {"type": "integer", "minimum": 0}, "max_allowed_increase": {"type": "integer", "minimum": 0}
+      }
+    },
+    "nextRoundMetric": {
+      "type": "object", "additionalProperties": false,
+      "required": ["metric_id", "unit", "direction", "predecessor_value", "successor_value", "evaluator_sha256", "benchmark_sha256"],
+      "properties": {
+        "metric_id": {"$ref": "#/$defs/text"}, "unit": {"$ref": "#/$defs/text"},
+        "direction": {"$ref": "#/$defs/direction"},
+        "predecessor_value": {"$ref": "#/$defs/number"}, "successor_value": {"$ref": "#/$defs/number"},
+        "evaluator_sha256": {"$ref": "#/$defs/digest"}, "benchmark_sha256": {"$ref": "#/$defs/digest"}
+      }
+    }
+  }
+}

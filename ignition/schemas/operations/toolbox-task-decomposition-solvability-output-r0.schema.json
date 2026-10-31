@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-task-decomposition-solvability-output-r0",
+  "title": "Task decomposition solvability comparison result",
+  "oneOf": [
+    {"$ref": "#/$defs/success"},
+    {"$ref": "#/$defs/invalidInput"}
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,95}$"},
+    "textList": {"type": "array", "items": {"type": "string"}},
+    "idList": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action_count", "wall_clock_seconds", "output_bytes"],
+      "properties": {
+        "action_count": {"type": "integer", "minimum": 0, "maximum": 99999999999999999999999999999999},
+        "wall_clock_seconds": {"type": "number", "minimum": 0, "maximum": 99999999999999999999999999999999},
+        "output_bytes": {"type": "integer", "minimum": 0, "maximum": 99999999999999999999999999999999}
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_action_count", "max_wall_clock_seconds", "max_output_bytes"],
+      "properties": {
+        "max_action_count": {"type": "integer", "minimum": 0, "maximum": 99999999999999999999999999999999},
+        "max_wall_clock_seconds": {"type": "number", "minimum": 0, "maximum": 99999999999999999999999999999999},
+        "max_output_bytes": {"type": "integer", "minimum": 0, "maximum": 99999999999999999999999999999999}
+      }
+    },
+    "unitResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id",
+        "capability_id",
+        "validator_ids",
+        "status",
+        "blockers",
+        "unknowns",
+        "required_input_types",
+        "produced_output_types"
+      ],
+      "properties": {
+        "unit_id": {"$ref": "#/$defs/id"},
+        "capability_id": {"$ref": "#/$defs/id"},
+        "validator_ids": {"$ref": "#/$defs/idList"},
+        "status": {"enum": ["BLOCKED_AS_DECLARED", "SOLVABILITY_UNKNOWN", "SOLVABLE_AS_DECLARED"]},
+        "blockers": {"$ref": "#/$defs/textList"},
+        "unknowns": {"$ref": "#/$defs/textList"},
+        "required_input_types": {"$ref": "#/$defs/idList"},
+        "produced_output_types": {"$ref": "#/$defs/idList"}
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alternative_id",
+        "status",
+        "dependency_order",
+        "unit_results",
+        "blockers",
+        "unknowns",
+        "required_output_types",
+        "resource_estimate"
+      ],
+      "properties": {
+        "alternative_id": {"$ref": "#/$defs/id"},
+        "status": {"enum": ["UNSOLVABLE_AS_DECLARED", "SOLVABILITY_UNKNOWN", "SOLVABLE_AS_DECLARED"]},
+        "dependency_order": {"$ref": "#/$defs/idList"},
+        "unit_results": {"type": "array", "items": {"$ref": "#/$defs/unitResult"}},
+        "blockers": {"$ref": "#/$defs/textList"},
+        "unknowns": {"$ref": "#/$defs/textList"},
+        "required_output_types": {"$ref": "#/$defs/idList"},
+        "resource_estimate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "basis", "total", "budget"],
+          "properties": {
+            "status": {"enum": ["WITHIN_DECLARED_BUDGET", "EXCEEDS_DECLARED_BUDGET", "UNKNOWN"]},
+            "basis": {"type": "string", "minLength": 1},
+            "total": {"oneOf": [{"$ref": "#/$defs/cost"}, {"type": "null"}]},
+            "budget": {"$ref": "#/$defs/budget"}
+          }
+        }
+      }
+    },
+    "success": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "comparison_status",
+        "task_id",
+        "task_revision",
+        "input_sha256",
+        "alternative_count",
+        "alternatives",
+        "structural_leader_id",
+        "disposition",
+        "resource_frontier",
+        "declaration_limits",
+        "validators_executed",
+        "executors_invoked",
+        "execution_authorized",
+        "claim_ceiling"
+      ],
+      "properties": {
+        "schema_version": {"const": "task-decomposition-solvability-output-r0"},
+        "comparison_status": {"const": "CALLER_DECLARED_ALTERNATIVES_COMPARED"},
+        "task_id": {"$ref": "#/$defs/id"},
+        "task_revision": {"type": "string", "minLength": 1, "maxLength": 128},
+        "input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "alternative_count": {"type": "integer", "minimum": 2, "maximum": 16},
+        "alternatives": {"type": "array", "minItems": 2, "maxItems": 16, "items": {"$ref": "#/$defs/alternative"}},
+        "structural_leader_id": {"oneOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
+        "disposition": {
+          "enum": [
+            "ONE_ALTERNATIVE_SOLVABLE_AS_DECLARED",
+            "MULTIPLE_SOLVABLE_ALTERNATIVES_RETAINED",
+            "NO_CONFIRMED_SOLVABLE_ALTERNATIVE",
+            "NO_ALTERNATIVE_SOLVABLE_AS_DECLARED"
+          ]
+        },
+        "resource_frontier": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "alternative_ids", "basis"],
+          "properties": {
+            "status": {"enum": ["CALLER_ESTIMATE_PARETO_FRONTIER", "NOT_EVALUATED_NO_FEASIBLE_ALTERNATIVE"]},
+            "alternative_ids": {"$ref": "#/$defs/idList"},
+            "basis": {"type": "string", "minLength": 1}
+          }
+        },
+        "declaration_limits": {"$ref": "#/$defs/textList"},
+        "validators_executed": {"const": false},
+        "executors_invoked": {"const": false},
+        "execution_authorized": {"const": false},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    },
+    "invalidInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "status", "error", "executors_invoked", "validators_executed", "execution_authorized"],
+      "properties": {
+        "schema_version": {"const": "task-decomposition-solvability-output-r0"},
+        "status": {"const": "INVALID_INPUT"},
+        "error": {"type": "string", "minLength": 1},
+        "executors_invoked": {"const": false},
+        "validators_executed": {"const": false},
+        "execution_authorized": {"const": false}
+      }
+    }
+  }
+}

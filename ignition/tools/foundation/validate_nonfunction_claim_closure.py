@@ -12,6 +12,7 @@ from pathlib import Path
 import jsonschema
 
 from legacy_table_migration import migration_paths, source_exists as migrated_source_exists
+from adjudicate_nonfunction_claims import STABLE_SOURCE_LOCATOR_SURFACES, text_fragments
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
@@ -59,6 +60,26 @@ def main() -> int:
     def check(name: str, condition: bool, detail: str = "") -> None:
         checks.append((name, bool(condition), detail))
 
+    stable_locator_cache: dict[str, set[str]] = {}
+
+    def stable_locator_exists(path: str, locator: str) -> bool:
+        if path not in stable_locator_cache:
+            fragments, _ = text_fragments(path)
+            stable_locator_cache[path] = {
+                fragment["locator"] for fragment in fragments if fragment.get("candidate", True)
+            }
+        return locator in stable_locator_cache[path]
+
+    def source_anchor_valid(anchor: dict) -> bool:
+        path = anchor["path"]
+        if path in STABLE_SOURCE_LOCATOR_SURFACES:
+            return (
+                "first_line" not in anchor
+                and "last_line" not in anchor
+                and stable_locator_exists(path, anchor["locator"])
+            )
+        return anchor.get("first_line", 0) >= 1 and anchor.get("last_line", 0) >= anchor.get("first_line", 0)
+
     claims = rows("claim-registry.jsonl")
     discovery = rows("source-discovery.jsonl")
     ledger = rows("adjudication-ledger.jsonl")
@@ -94,7 +115,7 @@ def main() -> int:
     check("closure:one-graph-record-per-claim", [row["canonical_id"] for row in graph] == ids)
     check("closure:source-anchor-present", all(row["source_anchors"] for row in claims))
     check("closure:source-files-exist", all(source_exists(anchor["path"]) for row in claims for anchor in row["source_anchors"]))
-    check("closure:source-lines-valid", all(anchor["first_line"] >= 1 and anchor["last_line"] >= anchor["first_line"] for row in claims for anchor in row["source_anchors"]))
+    check("closure:source-locators-valid", all(source_anchor_valid(anchor) for row in claims for anchor in row["source_anchors"]))
     check("closure:record-hashes", all(row["record_sha256"] == record_hash(row) for row in claims))
     check("closure:all-thirteen-audits", all(set(row["audit_gates"]) == AUDITS for row in claims))
     check("closure:registry-closed", summary["registry_closed"] is True)
@@ -144,7 +165,14 @@ def main() -> int:
     check("inference:analogy-not-isomorphism", all(row["final_disposition"] not in {"ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT", "ACCEPTED_AS_ESTABLISHED_EXTERNAL_FACT"} for row in claims if row["audit_gates"]["cross_domain_audit"] == "FAIL"))
     check("inference:risk-records-blocked", all(row["blocked_by_disposition"] for row in risks if any(value == "FAIL" for value in row["risk_gates"].values())))
 
-    check("public:front-doors-traceable", all(source_exists(row["source_path"]) and row["line"] >= 1 for row in public))
+    check("public:front-doors-traceable", all(
+        source_exists(row["source_path"])
+        and (
+            (row["source_path"] in STABLE_SOURCE_LOCATOR_SURFACES and "line" not in row and stable_locator_exists(row["source_path"], row.get("locator", "")))
+            or (row["source_path"] not in STABLE_SOURCE_LOCATOR_SURFACES and row.get("line", 0) >= 1)
+        )
+        for row in public
+    ))
     check("public:no-claim-ceiling-violations", not any(row["current_violation"] for row in public))
     check("public:summary-agrees", summary["public_surface_violations"] == 0)
     check("history:supersession-preserved", bool(supersession) and all(row["source_anchors"] for row in supersession))

@@ -1,0 +1,549 @@
+{
+  "schema_version": "toolbox-counterfactual-probe-c1-evidence-r0",
+  "candidate_tool_id": "research.probe_counterfactual_fragility",
+  "comparator_tool_id": "function_os.run_bounded_symbolic_spec",
+  "comparison_type": "PAIRED_SAME_TASK_TOOL_OUTCOME_AND_LOCAL_LATENCY_SAMPLE",
+  "task_binding": {
+    "input_path": "ignition/data/operations/toolbox-counterfactual-probe-real-task-input-r0.json",
+    "input_sha256": "828f6065880d6151fcd86b79dfe5da6b02b8d7eee806a28ff25ead9362b86eec",
+    "task": "Model-only check of whether individually changing a release-gate assumption flips a conjunction while the other gates remain false.",
+    "actual_world_or_release_adjudication": "NOT_PERFORMED",
+    "request_sha256": "e370e08c547c41c0689147cea4b6613c8b8651e9c66ee866048fe203c065c263"
+  },
+  "protocol": {
+    "paired_repeats": 5,
+    "runner": "subprocess CLI via the same Python interpreter; -B disables bytecode output",
+    "wrapper_invocations_per_pair": 1,
+    "legacy_single_case_invocations_per_pair": 4,
+    "function_os_evaluations_per_pair_each": 4,
+    "case_order": "baseline followed by each independent probe; wrapper/legacy order alternates by pair",
+    "timing_scope": "Local process wall time only; Python 3.12 interpreter and one tiny Boolean model; exploratory measurement, not portable cost evidence."
+  },
+  "outcome_comparison": {
+    "pairs": 5,
+    "paired_cases": 20,
+    "all_execution_policy_n7_integrity_and_output_fields_match": true,
+    "mismatch_count": 0,
+    "wrapper_reported_case_count": 4,
+    "n7_pass_count": 4,
+    "model_output_values_by_case": [
+      {
+        "case_id": "BASELINE",
+        "output_value": false
+      },
+      {
+        "case_id": "foundation-status-alone-does-not-open-main",
+        "output_value": false
+      },
+      {
+        "case_id": "pr-alone-does-not-open-main",
+        "output_value": false
+      },
+      {
+        "case_id": "foundation-permission-alone-does-not-open-main",
+        "output_value": false
+      }
+    ]
+  },
+  "local_latency_ns": {
+    "wrapper_one_process": {
+      "min_ns": 37350875,
+      "median_ns": 37741833,
+      "max_ns": 41981542
+    },
+    "legacy_four_processes": {
+      "min_ns": 121732167,
+      "median_ns": 125650749,
+      "max_ns": 126993624
+    }
+  },
+  "samples": [
+    {
+      "pair_index": 1,
+      "order": "wrapper_then_legacy_four_calls",
+      "wrapper_wall_time_ns": 41981542,
+      "legacy_four_call_wall_time_ns": 121732167,
+      "wrapper_command_count": 1,
+      "legacy_command_count": 4,
+      "model_evaluation_count_each": 4,
+      "all_case_status_n7_integrity_and_output_fields_match": true,
+      "paired_case_results": [
+        {
+          "case_id": "BASELINE",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-status-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "pr-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-permission-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        }
+      ],
+      "legacy_stdout_bytes_total": 19662
+    },
+    {
+      "pair_index": 2,
+      "order": "legacy_four_calls_then_wrapper",
+      "wrapper_wall_time_ns": 37741833,
+      "legacy_four_call_wall_time_ns": 124564625,
+      "wrapper_command_count": 1,
+      "legacy_command_count": 4,
+      "model_evaluation_count_each": 4,
+      "all_case_status_n7_integrity_and_output_fields_match": true,
+      "paired_case_results": [
+        {
+          "case_id": "BASELINE",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-status-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "pr-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-permission-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        }
+      ],
+      "legacy_stdout_bytes_total": 19666
+    },
+    {
+      "pair_index": 3,
+      "order": "wrapper_then_legacy_four_calls",
+      "wrapper_wall_time_ns": 37590625,
+      "legacy_four_call_wall_time_ns": 126347626,
+      "wrapper_command_count": 1,
+      "legacy_command_count": 4,
+      "model_evaluation_count_each": 4,
+      "all_case_status_n7_integrity_and_output_fields_match": true,
+      "paired_case_results": [
+        {
+          "case_id": "BASELINE",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-status-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "pr-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-permission-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        }
+      ],
+      "legacy_stdout_bytes_total": 19662
+    },
+    {
+      "pair_index": 4,
+      "order": "legacy_four_calls_then_wrapper",
+      "wrapper_wall_time_ns": 37817542,
+      "legacy_four_call_wall_time_ns": 125650749,
+      "wrapper_command_count": 1,
+      "legacy_command_count": 4,
+      "model_evaluation_count_each": 4,
+      "all_case_status_n7_integrity_and_output_fields_match": true,
+      "paired_case_results": [
+        {
+          "case_id": "BASELINE",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-status-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "pr-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-permission-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        }
+      ],
+      "legacy_stdout_bytes_total": 19666
+    },
+    {
+      "pair_index": 5,
+      "order": "wrapper_then_legacy_four_calls",
+      "wrapper_wall_time_ns": 37350875,
+      "legacy_four_call_wall_time_ns": 126993624,
+      "wrapper_command_count": 1,
+      "legacy_command_count": 4,
+      "model_evaluation_count_each": 4,
+      "all_case_status_n7_integrity_and_output_fields_match": true,
+      "paired_case_results": [
+        {
+          "case_id": "BASELINE",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-status-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "pr-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        },
+        {
+          "case_id": "foundation-permission-alone-does-not-open-main",
+          "wrapper": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          },
+          "legacy_runner": {
+            "execution_status": "OK",
+            "policy_status": "OK",
+            "n7_status": "PASS",
+            "artifact_integrity_valid": true,
+            "output_name": "eligible",
+            "output_value": false
+          }
+        }
+      ],
+      "legacy_stdout_bytes_total": 19666
+    }
+  ],
+  "qualitative_delta": {
+    "legacy_runner_provides": "One bounded FunctionSpec/input evaluation with N1-N7 internal checks and source digests per invocation.",
+    "new_wrapper_adds": [
+      "declared target conclusion",
+      "load-bearing assumption-to-input binding",
+      "independent baseline-relative probes",
+      "expected-direction and mismatch status",
+      "failed probe retention",
+      "explicit model-only and source-evidence-unchanged flags"
+    ],
+    "same_case_computation": "Both execute the existing Function OS bounded evaluator; this comparison does not establish a better model, truer assumption, or scientific validity."
+  },
+  "c1_disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "existing_tool_retained": "function_os.run_bounded_symbolic_spec remains useful for single-case model execution.",
+    "new_tool_retained_as_optional_specialization": true,
+    "replacement_candidates": [],
+    "retirement_supported": false,
+    "limitations": "The sample is one task and one local interpreter; it does not support broad latency, quality, or cost claims."
+  },
+  "source_refs": [
+    {
+      "path": "ignition/tools/toolbox_counterfactual_probe.py",
+      "sha256": "b9c240dc7c32ade9cfa734b6df0a532b98299e338be102f57c57dd4a6e2228c3"
+    },
+    {
+      "path": "ignition/tools/toolbox_function_os_evaluator.py",
+      "sha256": "dd599145061c417a0cbd0d06c7d6c90b00770a71e2cdbc1fbd8714422d611fdc"
+    },
+    {
+      "path": "ignition/function-os-candidate/v0.2/function_os/n1_functionspec_parser.py",
+      "sha256": "e4946c22620c55ff8b63d217c0b340a56abbbfae0a073566ad3b9e70c765a62a"
+    },
+    {
+      "path": "ignition/function-os-candidate/v0.2/function_os/n7_validator.py",
+      "sha256": "f7c3d87ef2cc9f80b4d62ea2ecf5cbf5e4eb9c116324c88b57314e6984ebb306"
+    },
+    {
+      "path": "ignition/function-os-candidate/v0.2/function_os/",
+      "claim": "Both paths delegate to this checked-in N1-N7 implementation tree."
+    }
+  ]
+}

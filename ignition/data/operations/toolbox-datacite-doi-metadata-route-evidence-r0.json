@@ -1,0 +1,44 @@
+{
+  "schema_version": "toolbox-datacite-doi-metadata-route-evidence-r0",
+  "tool_id": "research.lookup_datacite_doi_metadata",
+  "tool_version": "0.1.0",
+  "task_id": "datacite-known-doi-provider-metadata",
+  "observed_at_utc": "2026-10-27T02:02:42.178001Z",
+  "candidate_source_sha256": "eee060f4bdbe24f07fdbe34b80fb1bc8a0ba94474c4afd57c7a5c25786e50f94",
+  "profile_path": "ignition/data/operations/toolbox-datacite-doi-metadata-route-profile-r0.json",
+  "routing": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "provider_calls_made": 0
+    },
+    "no_host": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejection_reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+      "execution_authorized": false,
+      "provider_calls_made": 0
+    },
+    "explicit_datacite_host": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.lookup_datacite_doi_metadata"
+      ],
+      "allowed_network_hosts": [
+        "api.datacite.org"
+      ],
+      "execution_authorized": false,
+      "provider_calls_made": 0
+    },
+    "wrong_host": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejection_reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+      "execution_authorized": false,
+      "provider_calls_made": 0
+    }
+  },
+  "claim_ceiling": "A planner route is not tool execution authorization. The only live provider call is the separately recorded one-DOI DataCite comparison receipt.",
+  "route_planner_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83"
+}

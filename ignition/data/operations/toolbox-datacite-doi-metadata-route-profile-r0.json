@@ -1,0 +1,24 @@
+{
+  "schema_version": "toolbox-datacite-doi-metadata-route-profile-r0",
+  "task_id": "datacite-known-doi-provider-metadata",
+  "source_candidate": "ignition/data/operations/toolbox-candidate-cards-r0.json#research.lookup_datacite_doi_metadata@0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object with exactly one bare DOI identifier string"
+  ],
+  "required_outputs": [
+    "One exact DOI-matched DataCite Public API metadata projection with state, schema version, resourceTypeGeneral/resourceType, publisher/year, bounded rights/related-identifier fields, per-field presence/counts, response hash, and explicit acquisition outcome."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "required_network_host_for_explicit_trial": "api.datacite.org",
+  "route_default": "EXCLUDED",
+  "route_preconditions": [
+    "The caller already has one DOI and specifically needs DataCite-registered record fields; local captured metadata does not satisfy the requested freshness or provenance.",
+    "The caller separately permits sending this DOI to the public DataCite API for this invocation.",
+    "The route proposal includes this candidate explicitly and the caller-provided allowed network host list contains exactly api.datacite.org.",
+    "The caller understands that the unauthenticated Public API only exposes Findable records and that no result does not establish DOI nonexistence."
+  ],
+  "authority_boundary": "Routing proposes an optional tool only. Invocation still requires explicit candidate selection, per-call --allow-public-network, and task-specific caller consent."
+}

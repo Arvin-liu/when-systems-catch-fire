@@ -1,0 +1,168 @@
+{
+  "schema_version": "toolbox-actions-validation-target-coverage-route-evidence-r0",
+  "observed_at_utc": "2026-10-27",
+  "scenario": "Offline route-planner trials for target coverage and complementary existing task scopes.",
+  "current_main_ref_used": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "route_profile": "ignition/data/operations/toolbox-actions-validation-target-coverage-route-profile-r0.json",
+  "candidate_catalog": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+  "candidate_tool_id": "maintenance.compare_actions_validation_target_coverage",
+  "route_trials": [
+    {
+      "scenario": "default_opt_out",
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "allowlisted_experimental_tool_ids": [],
+      "selected_tool_ids": [],
+      "candidate_rejection_reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+      "selected_permissions": [],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Deterministic JSON with per-run plan/run/artifact/receipt bindings, target-set union/intersection, adjacent additions/removals/result deltas, per-target plan and caller-declared result counts, repeated coverage signatures, timestamp anomaly records, and explicit non-claims."
+      ]
+    },
+    {
+      "scenario": "explicit_candidate_allowlist",
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "allowlisted_experimental_tool_ids": [
+        "maintenance.compare_actions_validation_target_coverage"
+      ],
+      "selected_tool_ids": [
+        "maintenance.compare_actions_validation_target_coverage"
+      ],
+      "candidate_rejection_reason": null,
+      "selected_permissions": [
+        {
+          "tool_id": "maintenance.compare_actions_validation_target_coverage",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_actions_validation_target_coverage.py",
+              "ignition/tools/toolbox_actions_validation_attribution.py",
+              "ignition/tools/toolbox_actions_step_timeline.py"
+            ],
+            "write_paths": [],
+            "network": false,
+            "network_hosts": [],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          }
+        }
+      ],
+      "covered_outputs": [
+        "Deterministic JSON with per-run plan/run/artifact/receipt bindings, target-set union/intersection, adjacent additions/removals/result deltas, per-target plan and caller-declared result counts, repeated coverage signatures, timestamp anomaly records, and explicit non-claims."
+      ],
+      "unmet_outputs": []
+    },
+    {
+      "scenario": "overinclusive_allowlist",
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "allowlisted_experimental_tool_ids": [
+        "maintenance.compare_actions_validation_target_coverage",
+        "maintenance.attribute_actions_validation_evidence",
+        "maintenance.compare_actions_repeated_step_sequences"
+      ],
+      "selected_tool_ids": [
+        "maintenance.compare_actions_validation_target_coverage"
+      ],
+      "candidate_rejection_reason": null,
+      "selected_permissions": [
+        {
+          "tool_id": "maintenance.compare_actions_validation_target_coverage",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_actions_validation_target_coverage.py",
+              "ignition/tools/toolbox_actions_validation_attribution.py",
+              "ignition/tools/toolbox_actions_step_timeline.py"
+            ],
+            "write_paths": [],
+            "network": false,
+            "network_hosts": [],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          }
+        }
+      ],
+      "covered_outputs": [
+        "Deterministic JSON with per-run plan/run/artifact/receipt bindings, target-set union/intersection, adjacent additions/removals/result deltas, per-target plan and caller-declared result counts, repeated coverage signatures, timestamp anomaly records, and explicit non-claims."
+      ],
+      "unmet_outputs": []
+    },
+    {
+      "scenario": "single_run_attribution_scope",
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "allowlisted_experimental_tool_ids": [
+        "maintenance.attribute_actions_validation_evidence",
+        "maintenance.compare_actions_validation_target_coverage"
+      ],
+      "selected_tool_ids": [
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "candidate_rejection_reason": "NO_INPUT_TYPE_MATCH",
+      "selected_permissions": [
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_actions_validation_attribution.py",
+              "ignition/tools/toolbox_actions_step_timeline.py"
+            ],
+            "write_paths": [],
+            "network": false,
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          }
+        }
+      ],
+      "covered_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "unmet_outputs": []
+    },
+    {
+      "scenario": "repeated_step_history_scope",
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "allowlisted_experimental_tool_ids": [
+        "maintenance.compare_actions_repeated_step_sequences",
+        "maintenance.compare_actions_validation_target_coverage"
+      ],
+      "selected_tool_ids": [
+        "maintenance.compare_actions_repeated_step_sequences"
+      ],
+      "candidate_rejection_reason": "NO_INPUT_TYPE_MATCH",
+      "selected_permissions": [
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+              "ignition/tools/toolbox_actions_step_timeline.py"
+            ],
+            "write_paths": [],
+            "network": false,
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          }
+        }
+      ],
+      "covered_outputs": [
+        "Explicit timestamp-anomaly list, input/tool digests, and non-claim markers",
+        "Per-run source-bound-to-input timeline projections retaining each head SHA and run conclusion",
+        "Repeated step groups with per-run identifiers, outcomes, timestamps, and observed interval seconds"
+      ],
+      "unmet_outputs": []
+    }
+  ],
+  "findings": [
+    "The default route excludes the candidate and remains incomplete for this new coverage-only task.",
+    "Explicit inclusion is required before the candidate can be proposed for its declared task; a proposal is not execution authorization.",
+    "An overinclusive allowlist containing the candidate plus the one-run attribution and repeated-step tools must still route by output sufficiency; single-run attribution and step-history tasks remain with their existing tools."
+  ],
+  "claim_ceiling": "Local route-planner outputs only; the planner does not resolve the supplied main ref, invoke tools, authenticate inputs, or authorize execution, CI, merge, or release."
+}

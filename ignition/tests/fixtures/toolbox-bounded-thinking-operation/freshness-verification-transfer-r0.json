@@ -1,0 +1,59 @@
+{
+  "schema_version": "toolbox-bounded-thinking-operation-input-r0",
+  "task": {
+    "episode_id": "transfer-F13-freshness-verification",
+    "intent_ref": "synthetic:ab16:f13-intent",
+    "goal_ref": "synthetic:ab16:f13-goal",
+    "frame_ref": "synthetic:ab16:f13-frame",
+    "objective": "Read the fresh source, then verify any required follow-up it reveals.",
+    "required_outputs": ["fresh source-bound verification outcome"]
+  },
+  "state": {
+    "state_ref": "state:F13:initial",
+    "required_obligations": [
+      {
+        "obligation_ref": "fresh:f13:claim",
+        "status": "OPEN",
+        "required": true,
+        "verification_required": false,
+        "evidence_refs": []
+      }
+    ],
+    "uncertainty_refs": ["uncertainty:f13:source"],
+    "frame_unresolved": false,
+    "authority_missing": false,
+    "capability_missing": false,
+    "freshness_gap": true,
+    "decomposition_needed": false,
+    "first_failure_ref": null,
+    "failure_refs": [],
+    "operation_history": [],
+    "remaining_budget_units": 6
+  },
+  "available_operations": ["READ_MORE", "VERIFY"],
+  "available_capabilities": ["source-reader", "local-verifier"],
+  "candidate_assessments": [
+    {
+      "operation": "READ_MORE",
+      "expected_state_delta": "Acquire the current source and return the observed follow-up obligations.",
+      "expected_value_status": "POSITIVE",
+      "expected_value_band": "MEDIUM",
+      "expected_cost_band": "MEDIUM",
+      "estimated_cost_units": 2,
+      "reason_refs": ["fresh:f13:claim"],
+      "required_capabilities": ["source-reader"],
+      "return_condition": "Re-derive the declared state after recording the source result."
+    },
+    {
+      "operation": "VERIFY",
+      "expected_state_delta": "Check a declared follow-up after it becomes visible in current source evidence.",
+      "expected_value_status": "POSITIVE",
+      "expected_value_band": "HIGH",
+      "expected_cost_band": "LOW",
+      "estimated_cost_units": 1,
+      "reason_refs": ["verify:f13:follow-up"],
+      "required_capabilities": ["local-verifier"],
+      "return_condition": "Re-derive the declared state after recording the verifier result."
+    }
+  ]
+}

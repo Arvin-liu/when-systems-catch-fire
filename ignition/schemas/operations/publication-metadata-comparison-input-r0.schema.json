@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:publication-metadata-comparison-input-r0",
+  "title": "Crossref and OpenAlex Metadata Comparison Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "doi", "source_results"],
+  "properties": {
+    "schema_version": {"const": "ignition.publication-metadata-comparison-input-r0"},
+    "doi": {"type": "string", "maxLength": 160, "pattern": "^10\\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+$"},
+    "source_results": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"oneOf": [{"$ref": "#/$defs/crossrefResult"}, {"$ref": "#/$defs/openalexResult"}]},
+      "allOf": [
+        {"contains": {"properties": {"tool_id": {"const": "research.verify_crossref_metadata"}}, "required": ["tool_id"]}},
+        {"contains": {"properties": {"tool_id": {"const": "research.lookup_openalex_work_metadata"}}, "required": ["tool_id"]}}
+      ]
+    }
+  },
+  "$defs": {
+    "sha256OrNull": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"type": "null"}]},
+    "crossrefResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tool_id", "result"],
+      "properties": {
+        "tool_id": {"const": "research.verify_crossref_metadata"},
+        "result": {
+          "type": "object",
+          "required": ["schema_version", "tool_id", "tool_version", "rows"],
+          "properties": {
+            "schema_version": {"const": "ignition.crossref-metadata-verification-r0"},
+            "tool_id": {"const": "research.verify_crossref_metadata"},
+            "tool_version": {"const": "0.1.0"},
+            "rows": {
+              "type": "array", "minItems": 1, "maxItems": 10,
+              "items": {
+                "type": "object",
+                "required": ["canonical_identifier", "acquisition_status", "response_sha256", "observed_title", "observed_year"],
+                "properties": {
+                  "canonical_identifier": {"type": "string"},
+                  "acquisition_status": {"type": "string", "maxLength": 64},
+                  "response_sha256": {"$ref": "#/$defs/sha256OrNull"},
+                  "observed_title": {"oneOf": [{"type": "string", "maxLength": 500}, {"type": "null"}]},
+                  "observed_year": {"oneOf": [{"type": "integer", "minimum": 1000, "maximum": 9999}, {"type": "null"}]}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "openalexResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tool_id", "result"],
+      "properties": {
+        "tool_id": {"const": "research.lookup_openalex_work_metadata"},
+        "result": {
+          "type": "object",
+          "required": ["schema_version", "tool_id", "tool_version", "acquisition_status", "response_sha256", "rows"],
+          "properties": {
+            "schema_version": {"const": "ignition.openalex-work-metadata-lookup-r0"},
+            "tool_id": {"const": "research.lookup_openalex_work_metadata"},
+            "tool_version": {"const": "0.1.0"},
+            "acquisition_status": {"type": "string", "maxLength": 64},
+            "response_sha256": {"$ref": "#/$defs/sha256OrNull"},
+            "rows": {
+              "type": "array", "minItems": 1, "maxItems": 10,
+              "items": {
+                "type": "object",
+                "required": ["requested_doi", "status"],
+                "properties": {
+                  "requested_doi": {"type": "string"},
+                  "status": {"type": "string", "maxLength": 64},
+                  "openalex_doi": {"type": ["string", "null"]},
+                  "title": {"oneOf": [{"type": "string", "maxLength": 500}, {"type": "null"}]},
+                  "publication_year": {"oneOf": [{"type": "integer", "minimum": 1000, "maximum": 9999}, {"type": "null"}]}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

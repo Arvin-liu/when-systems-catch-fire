@@ -75,7 +75,7 @@ README_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.s
 README_HTML_TARGET = "../ignition/docs/generated/ignition-system-architecture.html"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
 ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
-README_INTERACTION_HINT = "滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件"
+README_INTERACTION_HINT = "可缩放、拖动、搜索节点并查看关联"
 STANDALONE_SVG_CSS = b"""<style>
   :root {
     --bg: #020617; --grid: #1e293b; --text: #ffffff; --text-muted: #94a3b8;

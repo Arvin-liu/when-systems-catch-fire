@@ -1,0 +1,188 @@
+{
+  "schema_version": "toolbox-crossref-citation-matcher-route-evidence-r0",
+  "tool_id": "research.match_crossref_citation",
+  "observed_at_utc": "2026-10-27T03:23:50.131494Z",
+  "candidate_catalog_git_blob_sha1": "e08ec53018a4ec68d307a43cc2721b22c51b0a08",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "candidate_working_tree_binding": "Uncommitted development delta based on candidate branch codex/toolbox-growth-20261025@8237d1e11db65d0ac5851ca1402bfa64d5169235; the planner echoes this caller-supplied ref and does not resolve it.",
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "route_profile": {
+        "task_id": "GAP001-01-crossref-citation-matcher-c1-01",
+        "current_ref": "codex/toolbox-growth-20261025@8237d1e11db65d0ac5851ca1402bfa64d5169235",
+        "input_types": [
+          "UTF-8 JSON stdin object containing exactly one trimmed public citation string (maximum 2048 characters and 4096 UTF-8 bytes)."
+        ],
+        "required_outputs": [
+          "At most two provider-ordered Crossref Work candidates with optional DOI, title, year, type, publisher, container, volume, issue, page, and bounded author names.",
+          "One-row request/response SHA-256 digests, retrieval timestamp, HTTP/acquisition outcome, bounded usage headers, and a claim ceiling; raw input and response text are omitted."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ]
+      },
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "research.match_crossref_citation",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "planner_output_sha256": "594f5db02afd202cc198fe651ecf0f5995e2337c72d893c7ffaa5ca626bb47b1"
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "research.match_crossref_citation"
+      ],
+      "route_profile": {
+        "task_id": "GAP001-01-crossref-citation-matcher-c1-01",
+        "current_ref": "codex/toolbox-growth-20261025@8237d1e11db65d0ac5851ca1402bfa64d5169235",
+        "input_types": [
+          "UTF-8 JSON stdin object containing exactly one trimmed public citation string (maximum 2048 characters and 4096 UTF-8 bytes)."
+        ],
+        "required_outputs": [
+          "At most two provider-ordered Crossref Work candidates with optional DOI, title, year, type, publisher, container, volume, issue, page, and bounded author names.",
+          "One-row request/response SHA-256 digests, retrieval timestamp, HTTP/acquisition outcome, bounded usage headers, and a claim ceiling; raw input and response text are omitted."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ]
+      },
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.match_crossref_citation"
+      ],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_crossref_citation_matcher.py"
+          ],
+          "write_paths": [],
+          "network": true,
+          "network_hosts": [
+            "api.crossref.org"
+          ],
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
+      "relevant_rejections": [],
+      "planner_output_sha256": "6873405f5e80773bff2b74d8c13e641ef0326fe58cdefa3d62bcffd0115178f5"
+    },
+    {
+      "scenario": "host_missing",
+      "include_experimental_tool_ids": [
+        "research.match_crossref_citation"
+      ],
+      "route_profile": {
+        "task_id": "GAP001-01-crossref-citation-matcher-c1-01",
+        "current_ref": "codex/toolbox-growth-20261025@8237d1e11db65d0ac5851ca1402bfa64d5169235",
+        "input_types": [
+          "UTF-8 JSON stdin object containing exactly one trimmed public citation string (maximum 2048 characters and 4096 UTF-8 bytes)."
+        ],
+        "required_outputs": [
+          "At most two provider-ordered Crossref Work candidates with optional DOI, title, year, type, publisher, container, volume, issue, page, and bounded author names.",
+          "One-row request/response SHA-256 digests, retrieval timestamp, HTTP/acquisition outcome, bounded usage headers, and a claim ceiling; raw input and response text are omitted."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "research.match_crossref_citation",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "planner_output_sha256": "50d6242279cedfe82580ed76b3b51b33bcf143b0c572b4d10cff57680d8a5585"
+    },
+    {
+      "scenario": "extra_host_does_not_expand_candidate_permissions",
+      "include_experimental_tool_ids": [
+        "research.match_crossref_citation"
+      ],
+      "route_profile": {
+        "task_id": "GAP001-01-crossref-citation-matcher-c1-01",
+        "current_ref": "codex/toolbox-growth-20261025@8237d1e11db65d0ac5851ca1402bfa64d5169235",
+        "input_types": [
+          "UTF-8 JSON stdin object containing exactly one trimmed public citation string (maximum 2048 characters and 4096 UTF-8 bytes)."
+        ],
+        "required_outputs": [
+          "At most two provider-ordered Crossref Work candidates with optional DOI, title, year, type, publisher, container, volume, issue, page, and bounded author names.",
+          "One-row request/response SHA-256 digests, retrieval timestamp, HTTP/acquisition outcome, bounded usage headers, and a claim ceiling; raw input and response text are omitted."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org",
+          "example.org"
+        ]
+      },
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.match_crossref_citation"
+      ],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_crossref_citation_matcher.py"
+          ],
+          "write_paths": [],
+          "network": true,
+          "network_hosts": [
+            "api.crossref.org"
+          ],
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
+      "relevant_rejections": [],
+      "planner_output_sha256": "3d2a2b73aa5711503128a620ca1ed688efdf1c8cb0482a657eccbe309d495b37"
+    }
+  ],
+  "router_provider_calls": 0,
+  "candidate_invocations_from_planner": 0,
+  "execution_authorized": false,
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "e08ec53018a4ec68d307a43cc2721b22c51b0a08",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "all_expected_decisions_reproduced": true,
+    "route_trials_replayed": 4,
+    "provider_calls_made": 0,
+    "candidate_invoked": false,
+    "execution_authorized": false,
+    "replay_result_sha256": "d4ab1e7708808f38ae561ccb287cd6a1d16182dd83612aab960a33045ed098f9",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered {scenario,planner_output_sha256} records."
+  },
+  "claim_ceiling": "Offline route proposals only. Default remains off; exact allowlisting plus an explicit exact host makes a plan complete but authorizes no network invocation or result interpretation. The planner made no provider call."
+}

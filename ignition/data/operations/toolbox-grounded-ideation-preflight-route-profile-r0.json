@@ -1,0 +1,15 @@
+{
+  "task_id": "grounded-ideation-structural-preflight",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "One UTF-8 JSON object matching ignition/schemas/operations/grounded-ideation-preflight-r0.schema.json, read from stdin and capped at 262144 bytes."
+  ],
+  "required_outputs": [
+    "Bounded structural status, reason-coded findings, counts and SHA-256 of the exact input bytes.",
+    "Explicit source-authenticity, semantic-support, independent-review, scientific-acceptance, network, write and execution-authority ceilings; quotes and source excerpts are omitted."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": []
+}

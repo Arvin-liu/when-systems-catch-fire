@@ -1,0 +1,220 @@
+{
+  "daily_coverage_source": "HEMCO_diagnostics.YYYYMMDD0000.nc filenames in each NetCDF history attribute",
+  "matched_calendar_date_monthly_mean_proxy": {
+    "comparisons": {
+      "2023": {
+        "calendar_window": "January 1 through December 29, 2023",
+        "five_positive_source_sectors_Tg_CH4": 577.5600393836522,
+        "monthly_mean_proxy_uses_observed_monthly_means": true,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.1316282072803006e-14,
+        "proxy_days": 363,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 242.25315924744112,
+          "EmisCH4_BB": 25.3606913005312,
+          "EmisCH4_FF": 111.54078328413968,
+          "EmisCH4_OtherNat": 58.9455211612334,
+          "EmisCH4_Wetlands": 139.45988439030683
+        }
+      },
+      "2024": {
+        "calendar_window": "January 1 through December 29, 2024",
+        "five_positive_source_sectors_Tg_CH4": 594.613321542048,
+        "monthly_mean_proxy_uses_observed_monthly_means": true,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.842170943040401e-14,
+        "proxy_days": 364,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 251.80654679186733,
+          "EmisCH4_BB": 24.142853631536575,
+          "EmisCH4_FF": 112.032118229985,
+          "EmisCH4_OtherNat": 59.09296126378804,
+          "EmisCH4_Wetlands": 147.53884162487103
+        }
+      },
+      "2024_vs_2023_daily_rate_difference_percent": 2.6698053926465404
+    },
+    "cutoff_month_day": "12-29",
+    "daily_rate_Tg_CH4_per_day": {
+      "2023": 1.591074488660199,
+      "2024": 1.6335530811594725
+    },
+    "interpretation": "matched-date proxy using monthly means, not daily-resolved totals; December 2023 uses its 31-day monthly mean to proxy 29 calendar days"
+  },
+  "method": "Monthly posterior flux (kg/m2/s) times grid-cell area (m2), weighted by daily source-file coverage, converted to Tg CH4; Gregorian full-month weighting is reported only as imputation sensitivity.",
+  "results": [
+    {
+      "available_coverage_estimate": {
+        "coverage_days": 365,
+        "five_positive_source_sectors_Tg_CH4": 578.087804929324,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.842170943040401e-14,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 238.91793198419145,
+          "EmisCH4_BB": 24.630666027021025,
+          "EmisCH4_FF": 114.46604263214903,
+          "EmisCH4_OtherNat": 55.46226171799967,
+          "EmisCH4_Wetlands": 144.61090256796277
+        },
+        "weighting": "monthly posterior mean weighted only by daily source files listed in NetCDF history"
+      },
+      "bytes": 4601366,
+      "daily_coverage": {
+        "daily_source_file_count": 365,
+        "expected_calendar_days": 365,
+        "first_daily_source_date": "2019-01-01",
+        "last_daily_source_date": "2019-12-31",
+        "missing_calendar_dates": [],
+        "monthly_daily_source_file_counts": {
+          "01": 31,
+          "02": 28,
+          "03": 31,
+          "04": 30,
+          "05": 31,
+          "06": 30,
+          "07": 31,
+          "08": 31,
+          "09": 30,
+          "10": 31,
+          "11": 30,
+          "12": 31
+        }
+      },
+      "file": "2019_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "full_month_imputation_sensitivity": {
+        "five_positive_source_sectors_Tg_CH4": 578.087804929324,
+        "imputed_days": 0,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.842170943040401e-14,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 238.91793198419145,
+          "EmisCH4_BB": 24.630666027021025,
+          "EmisCH4_FF": 114.46604263214903,
+          "EmisCH4_OtherNat": 55.46226171799967,
+          "EmisCH4_Wetlands": 144.61090256796277
+        },
+        "weighting": "Gregorian month lengths; any missing day is imputed at that month's observed posterior mean"
+      },
+      "md5": "3f88d98c231a9deae00fc4042bcd6613",
+      "monthly_record_count": 12,
+      "sha256": "5184942a22ff5d04c0b625740e2ee7b0aa7e8c8e70f1e16fe58abe0a854883e8",
+      "year": 2019
+    },
+    {
+      "available_coverage_estimate": {
+        "coverage_days": 365,
+        "five_positive_source_sectors_Tg_CH4": 580.3973621520128,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.842170943040401e-14,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 243.49384569673674,
+          "EmisCH4_BB": 25.519757048813037,
+          "EmisCH4_FF": 112.18154277565164,
+          "EmisCH4_OtherNat": 59.26316660697255,
+          "EmisCH4_Wetlands": 139.9390500238388
+        },
+        "weighting": "monthly posterior mean weighted only by daily source files listed in NetCDF history"
+      },
+      "bytes": 4601366,
+      "daily_coverage": {
+        "daily_source_file_count": 365,
+        "expected_calendar_days": 365,
+        "first_daily_source_date": "2023-01-01",
+        "last_daily_source_date": "2023-12-31",
+        "missing_calendar_dates": [],
+        "monthly_daily_source_file_counts": {
+          "01": 31,
+          "02": 28,
+          "03": 31,
+          "04": 30,
+          "05": 31,
+          "06": 30,
+          "07": 31,
+          "08": 31,
+          "09": 30,
+          "10": 31,
+          "11": 30,
+          "12": 31
+        }
+      },
+      "file": "2023_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "full_month_imputation_sensitivity": {
+        "five_positive_source_sectors_Tg_CH4": 580.3973621520128,
+        "imputed_days": 0,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.842170943040401e-14,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 243.49384569673674,
+          "EmisCH4_BB": 25.519757048813037,
+          "EmisCH4_FF": 112.18154277565164,
+          "EmisCH4_OtherNat": 59.26316660697255,
+          "EmisCH4_Wetlands": 139.9390500238388
+        },
+        "weighting": "Gregorian month lengths; any missing day is imputed at that month's observed posterior mean"
+      },
+      "md5": "b54c2122d5f56f08da82b9ed55b75fde",
+      "monthly_record_count": 12,
+      "sha256": "3882cec6b0e737e7e4680a37633401971f15265ac1a70ffcb48934c7d3f79cb3",
+      "year": 2023
+    },
+    {
+      "available_coverage_estimate": {
+        "coverage_days": 364,
+        "five_positive_source_sectors_Tg_CH4": 594.613321542048,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.842170943040401e-14,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 251.80654679186733,
+          "EmisCH4_BB": 24.142853631536575,
+          "EmisCH4_FF": 112.032118229985,
+          "EmisCH4_OtherNat": 59.09296126378804,
+          "EmisCH4_Wetlands": 147.53884162487103
+        },
+        "weighting": "monthly posterior mean weighted only by daily source files listed in NetCDF history"
+      },
+      "bytes": 4595180,
+      "daily_coverage": {
+        "daily_source_file_count": 364,
+        "expected_calendar_days": 366,
+        "first_daily_source_date": "2024-01-01",
+        "last_daily_source_date": "2024-12-29",
+        "missing_calendar_dates": [
+          "2024-12-30",
+          "2024-12-31"
+        ],
+        "monthly_daily_source_file_counts": {
+          "01": 31,
+          "02": 29,
+          "03": 31,
+          "04": 30,
+          "05": 31,
+          "06": 30,
+          "07": 31,
+          "08": 31,
+          "09": 30,
+          "10": 31,
+          "11": 30,
+          "12": 29
+        }
+      },
+      "file": "2024_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "full_month_imputation_sensitivity": {
+        "five_positive_source_sectors_Tg_CH4": 597.5673478884701,
+        "imputed_days": 2,
+        "monthly_spatial_vs_vectorized_max_abs_delta_Tg": 2.1316282072803006e-14,
+        "sectors_Tg_CH4": {
+          "EmisCH4_AW": 253.06649382384455,
+          "EmisCH4_BB": 24.234995100951657,
+          "EmisCH4_FF": 112.69300647664473,
+          "EmisCH4_OtherNat": 59.410606709527194,
+          "EmisCH4_Wetlands": 148.1622457775019
+        },
+        "weighting": "Gregorian month lengths; any missing day is imputed at that month's observed posterior mean"
+      },
+      "md5": "2f0f439d9b010a96a7d015c4ebcf30cf",
+      "monthly_record_count": 12,
+      "sha256": "49a8c80a070e9fe89d9d8f3e1383f62a8874621c4e582dcede74060df3e64601",
+      "year": 2024
+    }
+  ],
+  "sectors": [
+    "EmisCH4_OtherNat",
+    "EmisCH4_Wetlands",
+    "EmisCH4_BB",
+    "EmisCH4_AW",
+    "EmisCH4_FF"
+  ]
+}

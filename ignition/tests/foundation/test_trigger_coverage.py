@@ -14,7 +14,12 @@ Scenarios covered here:
 from __future__ import annotations
 
 import re
+import json
+import hashlib
+import os
 import sys
+import tempfile
+import time
 import unittest
 from pathlib import Path
 
@@ -22,6 +27,7 @@ ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
 sys.path.insert(0, str(ROOT / "tools" / "foundation"))
 import validate_repository_path_classification as preflight  # noqa: E402
+import run_foundation_ci  # noqa: E402
 
 CJK = ("统一函数总表/", "统一案例总表/")
 
@@ -104,9 +110,9 @@ class LayerBTriggerTest(unittest.TestCase):
         return path.read_text(encoding="utf-8")
 
     def test_layer_b_runs_task106_propagation_proof(self) -> None:
-        text = self._on_block()
-        self.assertIn("validate_reconciliation.py --check", text,
-                      "Layer B must run the task-106 propagation reconciliation step (contract §6)")
+        names = {item.name for item in run_foundation_ci.foundation_checks(sys.executable)}
+        self.assertIn("validate-propagation-reconciliation", names,
+                      "Layer B runner must retain the task-106 propagation reconciliation step (contract §6)")
 
     def test_layer_b_triggers_on_authoritative_change(self) -> None:
         text = self._on_block()
@@ -147,6 +153,290 @@ class LayerBTriggerTest(unittest.TestCase):
         self.assertIn(invoke, witness)
         self.assertLess(witness.index(install), witness.index(invoke))
         self.assertIn("jsonschema==4.26.0", (ROOT / "requirements-foundation.txt").read_text(encoding="utf-8"))
+
+
+class FoundationCiRunnerTest(unittest.TestCase):
+    def test_suite_inventory_is_unique_and_sequential(self) -> None:
+        checks = run_foundation_ci.foundation_checks(sys.executable)
+        names = [item.name for item in checks]
+        self.assertEqual(len(checks), 57)
+        self.assertEqual(len(names), len(set(names)))
+        self.assertIn("adjudicate-nonfunction-claims", names)
+        self.assertIn("test-human-front-door", names)
+        self.assertIn("validate-propagation-reconciliation", names)
+
+    def test_generated_output_negative_authority_runs_on_every_foundation_head(self) -> None:
+        checks = run_foundation_ci.foundation_checks(sys.executable)
+        authority_check = next(item for item in checks if item.name == "test-era-resolver-and-generated-output-authority")
+        self.assertIn("tests.test_generated_output_authority_negative", authority_check.argv)
+
+    def test_runner_continues_after_failure_and_retains_per_command_evidence(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-runner-test-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            checks = [
+                run_foundation_ci.Check(
+                    "intentional-failure",
+                    (sys.executable, "-c", "print('first ran'); raise SystemExit(7)"),
+                ),
+                run_foundation_ci.Check(
+                    "run-after-failure",
+                    (sys.executable, "-c", "from pathlib import Path; Path('second-ran').write_text('yes')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(
+                checks,
+                repo_root=repo,
+                app_root=app,
+                evidence_dir=evidence,
+            )
+            self.assertEqual(summary["status"], "FAIL")
+            self.assertEqual(summary["checks_total"], 2)
+            self.assertEqual(summary["checks_failed"], 1)
+            self.assertEqual((app / "second-ran").read_text(encoding="utf-8"), "yes")
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual([row["status"] for row in rows], ["FAIL", "PASS"])
+            self.assertTrue(all((evidence / row[stream]["path"]).is_file() for row in rows for stream in ("stdout", "stderr")))
+            first_stdout = rows[0]["stdout"]
+            self.assertEqual((evidence / first_stdout["path"]).read_bytes(), b"first ran\n")
+            self.assertEqual(first_stdout["retention"], "full")
+
+    def test_runner_declares_bounded_resource_policies_and_job_timeout(self) -> None:
+        checks = run_foundation_ci.foundation_checks(sys.executable)
+        names = [item.name for item in checks]
+        self.assertEqual(len(checks), 57)
+        self.assertEqual(len(names), len(set(names)))
+        self.assertTrue(all(item.timeout_seconds == 45 * 60 for item in checks))
+        self.assertEqual(run_foundation_ci.OUTPUT_TAIL_BYTES, 256 * 1024)
+        self.assertEqual(run_foundation_ci.MAX_OUTPUT_ARTIFACT_BYTES, 16 * 1024 * 1024)
+        workflow = (REPO_ROOT / ".github" / "workflows" / "foundation-validation.yml").read_text(encoding="utf-8")
+        self.assertRegex(workflow, r"(?m)^    timeout-minutes:\s*240\s*$")
+
+    def test_launch_error_fails_but_does_not_hide_a_later_independent_check(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-launch-error-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            missing = root / "missing-command"
+            marker = app / "after-launch-error"
+            checks = [
+                run_foundation_ci.Check("missing-executable", (str(missing),)),
+                run_foundation_ci.Check(
+                    "run-after-launch-error",
+                    (sys.executable, "-c", f"from pathlib import Path; Path({str(marker)!r}).write_text('ran')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(checks, repo_root=repo, app_root=app, evidence_dir=evidence)
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(summary["status"], "FAIL")
+            self.assertEqual([row["status"] for row in rows], ["FAIL", "PASS"])
+            self.assertEqual(rows[0]["returncode"], 127)
+            first_stderr = (evidence / rows[0]["stderr"]["path"]).read_text(encoding="utf-8")
+            self.assertIn(str(missing), first_stderr)
+            self.assertTrue(marker.is_file())
+
+    def test_success_with_margin_records_full_stream_integrity(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-success-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            payload = b"bounded-success\n"
+            code = "import sys; sys.stdout.buffer.write(" + repr(payload) + "); sys.stdout.flush()"
+            summary = run_foundation_ci.execute_checks(
+                [run_foundation_ci.Check("success-with-margin", (sys.executable, "-c", code), timeout_seconds=2.0)],
+                repo_root=repo,
+                app_root=app,
+                evidence_dir=evidence,
+            )
+            row = json.loads((evidence / "command-ledger.jsonl").read_text(encoding="utf-8"))
+            stream = (evidence / row["stdout"]["path"]).read_bytes()
+            digest = hashlib.sha256(payload).hexdigest()
+            self.assertEqual(summary["status"], "PASS")
+            self.assertEqual(row["status"], "PASS")
+            self.assertLess(row["duration_seconds"], 2.0)
+            self.assertEqual(stream, payload)
+            self.assertEqual(row["stdout"]["sha256"], digest)
+            self.assertEqual(row["stdout"]["stream_sha256"], digest)
+
+    def test_stderr_artifact_is_bounded_and_keeps_verifiable_stream_integrity(self) -> None:
+        block = b"z" * 4096
+        total_bytes = run_foundation_ci.MAX_OUTPUT_ARTIFACT_BYTES + len(block)
+        payload = block * (total_bytes // len(block))
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-stderr-bound-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            code = f"import sys; sys.stderr.buffer.write(b'z' * {len(payload)}); sys.stderr.flush()"
+            summary = run_foundation_ci.execute_checks(
+                [run_foundation_ci.Check("bounded-stderr", (sys.executable, "-c", code))],
+                repo_root=repo,
+                app_root=app,
+                evidence_dir=evidence,
+            )
+            row = json.loads((evidence / "command-ledger.jsonl").read_text(encoding="utf-8"))
+            capture = row["stderr"]
+            saved = (evidence / capture["path"]).read_bytes()
+            self.assertEqual(summary["status"], "PASS")
+            self.assertEqual(row["status"], "PASS")
+            self.assertEqual(capture["total_bytes"], len(payload))
+            self.assertEqual(capture["bytes"], run_foundation_ci.OUTPUT_TAIL_BYTES)
+            self.assertTrue(capture["truncated"])
+            self.assertEqual(capture["retention"], "last_bytes")
+            self.assertEqual(capture["sha256"], hashlib.sha256(saved).hexdigest())
+            self.assertEqual(capture["stream_sha256"], hashlib.sha256(payload).hexdigest())
+
+    def test_output_capture_retains_bounded_tail_and_distinguishes_hashes(self) -> None:
+        pattern = b"0123456789"
+        count = run_foundation_ci.MAX_OUTPUT_ARTIFACT_BYTES // len(pattern) + 100_000
+        total_bytes = len(pattern) * count
+        stream_digest = hashlib.sha256()
+        digest_chunk = pattern * 10_000
+        remaining = total_bytes
+        while remaining:
+            chunk = digest_chunk[: min(len(digest_chunk), remaining)]
+            stream_digest.update(chunk)
+            remaining -= len(chunk)
+        expected_tail = (pattern * (run_foundation_ci.OUTPUT_TAIL_BYTES // len(pattern) + 1))[-run_foundation_ci.OUTPUT_TAIL_BYTES :]
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-output-test-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            check = run_foundation_ci.Check(
+                "large-output",
+                (sys.executable, "-c", f"import sys; sys.stdout.buffer.write(b'0123456789' * {count})"),
+            )
+            summary = run_foundation_ci.execute_checks(
+                [check], repo_root=repo, app_root=app, evidence_dir=evidence,
+            )
+            row = json.loads((evidence / "command-ledger.jsonl").read_text(encoding="utf-8"))
+            saved = (evidence / row["stdout"]["path"]).read_bytes()
+            self.assertEqual(summary["status"], "PASS")
+            self.assertEqual(row["stdout"]["total_bytes"], total_bytes)
+            self.assertEqual(len(saved), run_foundation_ci.OUTPUT_TAIL_BYTES)
+            self.assertTrue(row["stdout"]["truncated"])
+            self.assertEqual(row["stdout"]["sha256"], hashlib.sha256(saved).hexdigest())
+            self.assertEqual(row["stdout"]["stream_sha256"], stream_digest.hexdigest())
+            self.assertEqual(row["stdout"]["retention"], "last_bytes")
+            self.assertEqual(saved, expected_tail)
+
+    @unittest.skipUnless(os.name == "posix", "process-group timeout test requires POSIX signals")
+    def test_timeout_terminates_descendants_before_next_check(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-timeout-test-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            marker = app / "orphan-marker"
+            child_script = (
+                "import time; from pathlib import Path; time.sleep(0.7); "
+                f"Path({str(marker)!r}).write_text('late', encoding='utf-8')"
+            )
+            parent_script = (
+                "import signal, subprocess, sys, time\n"
+                "stopping = False\n"
+                f"child = subprocess.Popen([sys.executable, '-c', {child_script!r}])\n"
+                "def stop(*_):\n"
+                "    global stopping\n"
+                "    stopping = True\n"
+                "    child.terminate()\n"
+                "signal.signal(signal.SIGTERM, stop)\n"
+                "while not stopping:\n"
+                "    time.sleep(0.02)\n"
+                "child.wait()\n"
+            )
+            checks = [
+                run_foundation_ci.Check("timeout-parent", (sys.executable, "-c", parent_script), timeout_seconds=0.15),
+                run_foundation_ci.Check(
+                    "following-check",
+                    (sys.executable, "-c", "from pathlib import Path; Path('following-check').write_text('ran')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(
+                checks, repo_root=repo, app_root=app, evidence_dir=evidence,
+            )
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            time.sleep(0.8)
+            self.assertEqual(summary["status"], "FAIL")
+            self.assertEqual([row["status"] for row in rows], ["TIMEOUT", "PASS"])
+            self.assertTrue(rows[0]["process_group_terminated"])
+            self.assertTrue(rows[0]["output_readers_complete"])
+            self.assertFalse(marker.exists(), "a timed-out descendant must not keep running after the next check starts")
+            self.assertTrue((app / "following-check").is_file())
+
+    @unittest.skipUnless(os.name == "posix", "process-group cleanup test requires POSIX process groups")
+    def test_successful_check_cannot_leave_a_detached_same_group_process_running(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-descendant-test-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            marker = app / "detached-marker"
+            child_script = (
+                "import time; from pathlib import Path; time.sleep(0.7); "
+                f"Path({str(marker)!r}).write_text('late', encoding='utf-8')"
+            )
+            parent_script = (
+                "import subprocess, sys; "
+                f"subprocess.Popen([sys.executable, '-c', {child_script!r}], "
+                "stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)"
+            )
+            checks = [
+                run_foundation_ci.Check("detached-descendant", (sys.executable, "-c", parent_script)),
+                run_foundation_ci.Check(
+                    "following-check",
+                    (sys.executable, "-c", "from pathlib import Path; Path('following-check').write_text('ran')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(
+                checks, repo_root=repo, app_root=app, evidence_dir=evidence,
+            )
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            time.sleep(0.8)
+            self.assertEqual(summary["status"], "FAIL")
+            self.assertEqual([row["status"] for row in rows], ["PROCESS_GROUP_CLEANED", "PASS"])
+            self.assertTrue(rows[0]["process_group_terminated"])
+            self.assertFalse(marker.exists(), "an exited check's detached descendant must not outlive its process group")
+            self.assertTrue((app / "following-check").is_file())
+
+    @unittest.skipUnless(os.name == "posix", "signal reconciliation test requires POSIX signals")
+    def test_sigterm_cancels_active_check_and_marks_remaining_checks_not_run(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-cancel-test-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            checks = [
+                run_foundation_ci.Check(
+                    "signal-parent",
+                    (sys.executable, "-c", "import os, signal, time; os.kill(os.getppid(), signal.SIGTERM); time.sleep(30)"),
+                ),
+                run_foundation_ci.Check(
+                    "must-not-run",
+                    (sys.executable, "-c", "from pathlib import Path; Path('must-not-run').write_text('bad')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(
+                checks, repo_root=repo, app_root=app, evidence_dir=evidence,
+            )
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(summary["status"], "CANCELLED")
+            self.assertEqual([row["status"] for row in rows], ["CANCELLED", "NOT_RUN_CANCELLED"])
+            self.assertTrue(rows[0]["process_group_terminated"])
+            self.assertFalse((app / "must-not-run").exists())
 
 
 if __name__ == "__main__":

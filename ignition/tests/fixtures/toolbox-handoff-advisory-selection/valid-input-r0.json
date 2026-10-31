@@ -1,0 +1,29 @@
+{
+  "schema_version": "handoff-advisory-selection-r0",
+  "task_scope_id": "handoff-demo-01",
+  "receiver_state_ref": "receiver-state-demo-v1",
+  "receiver_context_message_digests": ["11ad70f217af119b03f5fcc363127a389eebdb39d314580c05a1d6822a51a081"],
+  "messages": [
+    {
+      "message_id": "advice-already-seen",
+      "kind": "ADVISORY",
+      "must_forward": false,
+      "text": "Keep the current task scope and preserve unresolved items.",
+      "source_refs": ["receipt://demo/task-01"]
+    },
+    {
+      "message_id": "required-witness",
+      "kind": "WITNESS",
+      "must_forward": false,
+      "text": "The source receipt must be checked before takeover.",
+      "source_refs": ["receipt://demo/task-01"]
+    },
+    {
+      "message_id": "new-advice",
+      "kind": "ADVISORY",
+      "must_forward": false,
+      "text": "After re-observation, report any new state before acting.",
+      "source_refs": ["policy://demo/handoff"]
+    }
+  ]
+}

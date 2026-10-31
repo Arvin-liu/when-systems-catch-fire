@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-actions-validation-attribution-output-r0",
+  "title": "Actions Validation Attribution Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_id", "input_sha256", "tool_sha256", "timeline_helper_sha256", "source_binding",
+    "plan_binding", "workflow_binding", "artifact_inventory", "validation_receipt", "observed_jobs",
+    "timeline_summary", "snapshot_completeness", "non_claims", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-actions-validation-attribution-output-r0"},
+    "tool_id": {"const": "maintenance.attribute_actions_validation_evidence"},
+    "input_sha256": {"$ref": "#/$defs/sha64"},
+    "tool_sha256": {"$ref": "#/$defs/sha64"},
+    "timeline_helper_sha256": {"$ref": "#/$defs/sha64"},
+    "source_binding": {"const": "CALLER_SUPPLIED_UNAUTHENTICATED_JSON"},
+    "plan_binding": {"type": "object"},
+    "workflow_binding": {"type": "object"},
+    "artifact_inventory": {"type": "object"},
+    "validation_receipt": {"type": "object"},
+    "observed_jobs": {"type": "array", "items": {"type": "object"}},
+    "timeline_summary": {"type": "object"},
+    "snapshot_completeness": {"type": "object"},
+    "non_claims": {"type": "object"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {"sha64": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+}

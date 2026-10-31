@@ -1,0 +1,82 @@
+{
+  "schema_version": "grounded-ideation-preflight-r0",
+  "task": {
+    "question": "Synthetic exercise: can early alerts reduce missed events in a bounded workflow?",
+    "cutoff_date": "2026-01-01"
+  },
+  "sources": [
+    {
+      "source_id": "toy-study-1",
+      "citation": "Synthetic Example A, section 2",
+      "revision": "fixture-r0",
+      "usage": "USED",
+      "publication_date": "2025-02-01",
+      "excerpt": "Synthetic source A reports that alerting before inspection reduced missed events in a toy setup. It also notes that manual verification was required."
+    },
+    {
+      "source_id": "background-1",
+      "citation": "Synthetic Background Note",
+      "revision": "fixture-r0",
+      "usage": "ATTACHED",
+      "publication_date": "2025-03-01",
+      "excerpt": ""
+    }
+  ],
+  "anchors": [
+    {
+      "anchor_id": "a-gap-support",
+      "source_id": "toy-study-1",
+      "locator": "section 2, sentence 1",
+      "quote": "alerting before inspection reduced missed events in a toy setup",
+      "interpretation": "Synthetic support for a candidate gap only.",
+      "role": "gap_support"
+    },
+    {
+      "anchor_id": "a-counter",
+      "source_id": "toy-study-1",
+      "locator": "section 2, sentence 2",
+      "quote": "manual verification was required",
+      "interpretation": "Synthetic limitation relevant to the transfer.",
+      "role": "counterevidence"
+    },
+    {
+      "anchor_id": "a-mechanism",
+      "source_id": "toy-study-1",
+      "locator": "section 2, sentence 1",
+      "quote": "alerting before inspection",
+      "interpretation": "Candidate relation supplied by the caller.",
+      "role": "mechanism"
+    }
+  ],
+  "gap": {
+    "candidate": "A pre-inspection alert may reduce missed events in the synthetic target workflow.",
+    "support_anchor_ids": ["a-gap-support"],
+    "contrary_anchor_ids": ["a-counter"],
+    "limitations": ["The source is a synthetic toy setup and does not establish a real-world gap."],
+    "abstention_rule": "Abstain if target-domain evidence or a discriminating test is unavailable."
+  },
+  "mechanism_transfer": {
+    "source_domain": "toy inspection",
+    "target_domain": "synthetic research intake",
+    "failure_structure": "A relevant warning may arrive after the decision point.",
+    "mappings": [
+      {
+        "source_relation": "alert precedes inspection",
+        "target_relation_candidate": "source warning precedes intake decision",
+        "anchor_ids": ["a-mechanism"],
+        "assumptions": ["The target workflow has a comparable decision boundary."]
+      }
+    ],
+    "necessary_conditions": ["The alert must arrive before the decision point."],
+    "boundaries": ["The preflight cannot establish that the source and target mechanisms are equivalent."],
+    "closest_in_domain_alternative": "Add a direct in-domain checklist without transferring the source mechanism."
+  },
+  "proposal": {
+    "hypothesis": "In the synthetic exercise, a pre-decision alert will reduce missed required checks.",
+    "minimum_experiment": "Compare the same synthetic cases with and without a pre-decision alert.",
+    "controls": ["Use identical cases and the same checklist in both conditions."],
+    "falsifiers": ["No reduction in missed checks, or an increase in incorrect checks."],
+    "uncertainties": ["The fixture contains no real users, data, or external evidence."],
+    "evidence_anchor_ids": ["a-gap-support", "a-counter", "a-mechanism"]
+  }
+}

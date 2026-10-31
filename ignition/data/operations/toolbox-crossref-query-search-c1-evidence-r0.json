@@ -1,0 +1,57 @@
+{
+  "schema_version": "toolbox-crossref-query-search-c1-evidence-r0",
+  "policy": "C1: decide retention, replacement, and retirement from directly overlapping same-task evidence; preserve uncertainty and avoid inferring quality from names, hit counts, or result counts.",
+  "comparison_design": {
+    "task": "Return up to five provider metadata records for the same public topic query, artificial intelligence healthcare, for optional literature follow-up.",
+    "same_query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+    "same_result_limit": 5,
+    "permission_class": "One explicit public read-only request per provider; no account email, secret, credential, or billing action.",
+    "retrieval_timestamps_utc": {
+      "openalex": "2026-10-26T05:11:51.127704Z",
+      "crossref": "2026-10-26T05:30:05.810854Z"
+    },
+    "same_provider_snapshot": false,
+    "human_relevance_review": false
+  },
+  "observations": {
+    "crossref": {
+      "tool_id": "research.search_crossref_query",
+      "source": "Crossref REST API v1 Works query",
+      "hit_count": 1880808,
+      "returned_count": 5,
+      "returned_dois": ["10.62830/mmj1-04-6", "10.62830/mmj1-4-1a", "10.62830/mmj1-04-6a", "10.1201/9781003426073-1", "10.62830/mmj1-04-6b"],
+      "response_sha256": "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+      "top_five_title_pattern": "Three returned records share the same title but have different DOIs; one of the five has no provider-reported publication year."
+    },
+    "openalex": {
+      "tool_id": "research.search_openalex_query",
+      "source": "OpenAlex Works search",
+      "hit_count": 638997,
+      "returned_count": 5,
+      "returned_dois": ["10.1038/s41746-025-01503-7", "10.3389/fgene.2022.929736", "10.3390/electronics10192421", "10.3233/shti230409", "10.58532/v2bs16ch28"],
+      "response_sha256": "6f79220fec231f3d27f18ca0f1716cb1f7b6c8e1afbbee49d7f5555e777a8648"
+    },
+    "shared_exact_doi_in_top_five": [],
+    "shared_exact_doi_count": 0
+  },
+  "findings": [
+    "Both adapters completed the same exact public query and returned five provider metadata rows, but at different retrieval times and under provider-specific search and indexing behavior.",
+    "The observed top-five DOI sets did not overlap. This is one small ranked snapshot; it does not establish comparative relevance, recall, completeness, metadata correctness, or superiority.",
+    "Crossref's returned top five include three distinct DOI rows sharing a title and one missing year. No manual review was performed, so these patterns are not adjudicated as duplicate or invalid works.",
+    "Crossref query search has a provider-specific discovery contract. The existing Crossref metadata verifier requires known DOIs and cannot discover them from a topic query; OpenAlex returns OpenAlex Works IDs plus its own metadata and ranking fields.",
+    "PubMed, Europe PMC, and arXiv remain separate source-specific query routes. They were not re-run on this exact query in this comparison; no relative-quality conclusion is recorded."
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_COEXISTENCE_NO_REPLACEMENT_ESTABLISHED",
+    "retired_tools": [],
+    "replacement_claim": "NONE",
+    "reason": "The observed provider records differ, but this small unreviewed sample cannot establish that one provider is better or covers the other's valuable use cases. Keep the Crossref route default-off and coexist by explicit source scope."
+  },
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r0.json",
+    "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+    "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+    "ignition/tools/toolbox_crossref_query_search.py",
+    "ignition/tools/toolbox_openalex_query_search.py"
+  ]
+}

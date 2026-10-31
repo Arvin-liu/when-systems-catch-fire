@@ -82,7 +82,7 @@
         "canonical_id": "T2",
         "canonical_title": "乘法归零律",
         "authority_path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
-        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "record_sha256": "de899810dede2a28728cfaf760639d491b815c07379bf4026175f281da536a9b",
         "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
         "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
         "repository_identity_effect": "ESTABLISHES_REPOSITORY_IDENTITY_ONLY",

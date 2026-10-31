@@ -1,0 +1,267 @@
+{
+  "schema_version": "toolbox-raw-evidence-navigator-route-evidence-r0",
+  "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
+  "task": {
+    "task_id": "local-foundation-validation-record-navigation",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "Bounded UTF-8 JSON stdin with requirement IDs, literal query terms, maximum sources per requirement, total raw-source byte budget, and maximum excerpt length"
+    ],
+    "required_outputs": [
+      "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+      "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+      "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "candidate_allowlist": [
+    "knowledge.navigate_raw_evidence"
+  ],
+  "candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3",
+  "route_result": {
+    "schema_version": "ignition-tool-route-plan-r0",
+    "task_id": "local-foundation-validation-record-navigation",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+    "allowed_network_hosts": [],
+    "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+    "decision": "COMPLETE",
+    "selected_tools": [
+      {
+        "tool_id": "knowledge.navigate_raw_evidence",
+        "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+        "availability": "EXPERIMENTAL_AVAILABLE",
+        "input_types": [
+          "Bounded UTF-8 JSON stdin with requirement IDs, literal query terms, maximum sources per requirement, total raw-source byte budget, and maximum excerpt length"
+        ],
+        "output_types": [
+          "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+          "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+          "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+        ],
+        "execution_mode": "READ_ONLY_RUN",
+        "permission_mode": "READ_ONLY_SEARCH_INDEX_AND_INDEX_SELECTED_SOURCES_UNDER_IGNITION",
+        "permissions": {
+          "read_paths": [
+            "ignition/"
+          ],
+          "write_paths": [],
+          "network": false,
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        },
+        "explicit_owner_authorization_required": false,
+        "dependencies": [
+          "ignition/data/governance/knowledge-experience/search-index.jsonl"
+        ],
+        "declared_effect_rank": 0,
+        "pre_invocation_conditions": [
+          "Do not use a returned lexical match as claim support, freshness of an external source, or requirement completion.",
+          "Never invoke after route selection without the task's own request and input.",
+          "Only include through an explicit experimental allowlist for a local raw-source navigation task with literal terms and an available checked-out repository.",
+          "The caller accepts an explicit total raw-source byte budget, a per-requirement source limit, and a result ceiling of navigation hints only.",
+          "The checked-out Knowledge search index and current source files are the intended scope.",
+          "The requested task is local repository navigation and supplies 1 to 12 literal query terms for each of 1 to 8 named requirements."
+        ],
+        "claim_ceiling": "Lexical navigation through entries in the checked-out Knowledge search index, followed by bounded reopening of current repository source files and exact line/hash output. No source completeness, semantic relevance, evidence coverage, truth, proof, authenticity, scientific acceptance, or publication readiness is established.",
+        "covers_required_outputs": [
+          "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+          "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+          "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+        ]
+      }
+    ],
+    "required_outputs": [
+      "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+      "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+      "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+    ],
+    "covered_outputs": [
+      "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+      "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+      "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+    ],
+    "unmet_outputs": [],
+    "rejected_candidates": [
+      {
+        "tool_id": "executor.reference_conformance",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "external.live_invocation",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "foundation.batch_resolve_current_asset_references",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.read_current_asset_card",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.resolve_current_asset",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "function_os.run_bounded_symbolic_spec",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.adaptive_toolbox_route_planner",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.recover_current_state",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.assemble_context_packet",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.cluster_source_brief",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.collide_object",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.project_results",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.read_foundation",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_claim",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_evidence_link",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "language_thought.project_bounded_meaning",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_repository",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.validate_checkpoint",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method",
+        "reason": "EXECUTION_MODE_NOT_ALLOWED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method_1_3",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.coordinate_obligations",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_g1_goal_intake",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.reos_full",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_evidence_program_snapshot",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_reos_light",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "runtime.inspect_declared_pack_catalog",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.build_archify_derived_ir",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.render_derived_system_view",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.apply_editorial_method",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.preflight_cognitive_migration_revision",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "writing.validate_publication_surface",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      }
+    ],
+    "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+    "cost_estimate": {
+      "status": "UNKNOWN",
+      "reason": "No comparable measured cost data is declared for the candidate operations."
+    },
+    "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+    "execution_authorized": false,
+    "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+    "source_refs": {
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "experimental_candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3"
+    }
+  },
+  "execution_status": "NOT_INVOKED_BY_ROUTE_PLANNER",
+  "execution_authorized": false,
+  "network_call_made": false,
+  "claim_ceiling": "A complete opt-in local-tool route plan only; route planning does not invoke the tool, authorize execution, or establish evidence coverage."
+}

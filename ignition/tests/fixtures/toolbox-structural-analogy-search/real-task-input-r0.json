@@ -1,0 +1,75 @@
+{
+  "schema_version": "toolbox-structural-analogy-search-input-r0",
+  "task_id": "toolbox-gap-analogy-search",
+  "source_structure": {
+    "structure_id": "bounded-admission-workflow",
+    "domain_id": "repository-governance",
+    "nodes": [
+      {"node_id": "owner", "role_class": "ACTOR"},
+      {"node_id": "gate", "role_class": "ACTION"},
+      {"node_id": "contract", "role_class": "CONDITION"},
+      {"node_id": "decision", "role_class": "OUTCOME"}
+    ],
+    "relations": [
+      {"relation_id": "r1", "subject_id": "owner", "relation_type": "initiates", "object_id": "gate"},
+      {"relation_id": "r2", "subject_id": "contract", "relation_type": "constrains", "object_id": "gate"},
+      {"relation_id": "r3", "subject_id": "gate", "relation_type": "produces", "object_id": "decision"}
+    ]
+  },
+  "relation_mappings": [
+    {"source_relation_type": "initiates", "target_relation_type": "triggers"},
+    {"source_relation_type": "constrains", "target_relation_type": "constrains"},
+    {"source_relation_type": "produces", "target_relation_type": "produces"}
+  ],
+  "target_candidates": [
+    {
+      "candidate_id": "a_pipeline_validation",
+      "structure_id": "pipeline-validation",
+      "domain_id": "data-engineering",
+      "nodes": [
+        {"node_id": "maintainer", "role_class": "ACTOR"},
+        {"node_id": "validator", "role_class": "ACTION"},
+        {"node_id": "schema", "role_class": "CONDITION"},
+        {"node_id": "validation_result", "role_class": "OUTCOME"}
+      ],
+      "relations": [
+        {"relation_id": "p1", "subject_id": "maintainer", "relation_type": "triggers", "object_id": "validator"},
+        {"relation_id": "p2", "subject_id": "schema", "relation_type": "constrains", "object_id": "validator"},
+        {"relation_id": "p3", "subject_id": "validator", "relation_type": "produces", "object_id": "validation_result"}
+      ]
+    },
+    {
+      "candidate_id": "b_pipeline_with_extra_relation",
+      "structure_id": "pipeline-validation-with-audit",
+      "domain_id": "data-engineering",
+      "nodes": [
+        {"node_id": "maintainer", "role_class": "ACTOR"},
+        {"node_id": "validator", "role_class": "ACTION"},
+        {"node_id": "schema", "role_class": "CONDITION"},
+        {"node_id": "validation_result", "role_class": "OUTCOME"}
+      ],
+      "relations": [
+        {"relation_id": "q1", "subject_id": "maintainer", "relation_type": "triggers", "object_id": "validator"},
+        {"relation_id": "q2", "subject_id": "schema", "relation_type": "constrains", "object_id": "validator"},
+        {"relation_id": "q3", "subject_id": "validator", "relation_type": "produces", "object_id": "validation_result"},
+        {"relation_id": "q4", "subject_id": "maintainer", "relation_type": "triggers", "object_id": "validation_result"}
+      ]
+    },
+    {
+      "candidate_id": "c_reversed_relations",
+      "structure_id": "incident-response-reversed",
+      "domain_id": "incident-response",
+      "nodes": [
+        {"node_id": "commander", "role_class": "ACTOR"},
+        {"node_id": "evacuate", "role_class": "ACTION"},
+        {"node_id": "alert", "role_class": "CONDITION"},
+        {"node_id": "safe_state", "role_class": "OUTCOME"}
+      ],
+      "relations": [
+        {"relation_id": "n1", "subject_id": "evacuate", "relation_type": "triggers", "object_id": "commander"},
+        {"relation_id": "n2", "subject_id": "evacuate", "relation_type": "constrains", "object_id": "alert"},
+        {"relation_id": "n3", "subject_id": "safe_state", "relation_type": "produces", "object_id": "evacuate"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "schema_version": "toolbox-europe-pmc-query-search-evidence-r0",
+  "evidence_type": "LIVE_TOOL_SMOKE_AND_ROUTE_EXPERIMENT",
+  "task": {
+    "task_id": "europe-pmc-query-search-bounded-discovery",
+    "description": "Check one generic public scientific-topic query can return a bounded set of Europe PMC metadata rows and exercise default-off/minimal route selection.",
+    "raw_query_retained": false,
+    "query_sha256": "39a7eb39d1e54cc0687c0867ae7276b09a1a0f66f182f56cbf2a9ac28f767f66"
+  },
+  "live_tool_trial": {
+    "tool_id": "research.search_europe_pmc_query",
+    "tool_version": "0.1.0",
+    "wrapper_path": "ignition/tools/toolbox_europe_pmc_query_search.py",
+    "wrapper_source_sha256": "0c6374f3d3bbd3bdcc05ede780b935ee942c1b190d378dc492913c7c1783ce1c",
+    "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "provider_documentation": "https://europepmc.org/RestfulWebService",
+    "invocation_flags": [
+      "--stdin",
+      "--allow-public-network"
+    ],
+    "request_parameters": {
+      "format": "json",
+      "resultType": "lite",
+      "pageSize": 3
+    },
+    "retrieval_timestamp_utc": "2026-10-25T16:27:13Z",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "status": "FOUND",
+    "provider_hit_count": 81011,
+    "returned_count": 3,
+    "response_sha256": "8245035b46deac67ab31fe8600639b435cdbdf19b2505693e79b68ee4a930c04",
+    "returned_source_ids": [
+      {
+        "source": "MED",
+        "id": "42541388",
+        "doi": "10.1177/10430342261466427"
+      },
+      {
+        "source": "MED",
+        "id": "42088116",
+        "doi": "10.3389/fbinf.2026.1800237"
+      },
+      {
+        "source": "PPR",
+        "id": "PPR1144778",
+        "doi": "10.21203/rs.3.rs-8551250/v1"
+      }
+    ],
+    "raw_response_retained": false,
+    "query_echoed_in_receipt": false,
+    "claim_ceiling": "One live provider response returned three metadata rows for one public query at this retrieval time; this does not establish query relevance, completeness, source authenticity, scientific support, or article status."
+  },
+  "route_profile": {
+    "candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
+    ],
+    "required_outputs": [
+      "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+      "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+    ],
+    "allowed_network_hosts": [
+      "www.ebi.ac.uk"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "candidate_excluded_by_default",
+      "include_experimental_tool_ids": [],
+      "allowed_network_hosts": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_result": {
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+          "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+        ],
+        "relevant_rejected_candidates": [
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          }
+        ],
+        "execution_authorized": false,
+        "allowed_network_hosts": [],
+        "selected_permissions": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+        }
+      }
+    },
+    {
+      "scenario": "explicit_candidate_without_host_permission",
+      "include_experimental_tool_ids": [
+        "research.search_europe_pmc_query"
+      ],
+      "allowed_network_hosts": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "actual_result": {
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+          "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+        ],
+        "relevant_rejected_candidates": [
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          }
+        ],
+        "execution_authorized": false,
+        "allowed_network_hosts": [],
+        "selected_permissions": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+        }
+      }
+    },
+    {
+      "scenario": "explicit_minimal_route_with_redundant_identifier_tool",
+      "include_experimental_tool_ids": [
+        "research.search_europe_pmc_query",
+        "research.resolve_pubmed_identifiers"
+      ],
+      "allowed_network_hosts": [
+        "pmc.ncbi.nlm.nih.gov",
+        "www.ebi.ac.uk"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.search_europe_pmc_query"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "actual_result": {
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.search_europe_pmc_query"
+        ],
+        "unmet_outputs": [],
+        "relevant_rejected_candidates": [
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "execution_authorized": false,
+        "allowed_network_hosts": [
+          "pmc.ncbi.nlm.nih.gov",
+          "www.ebi.ac.uk"
+        ],
+        "selected_permissions": [
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_europe_pmc_query_search.py"
+              ],
+              "write_paths": [],
+              "network": true,
+              "network_hosts": [
+                "www.ebi.ac.uk"
+              ],
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            }
+          }
+        ],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+        }
+      }
+    }
+  ],
+  "comparison_scope": {
+    "compared_tool_ids": [
+      "research.verify_crossref_metadata",
+      "research.lookup_openalex_work_metadata",
+      "research.resolve_pubmed_identifiers",
+      "research.inspect_pubmed_update_links",
+      "research.lookup_arxiv_paper_metadata",
+      "research.compare_publication_metadata_snapshots",
+      "knowledge.cluster_source_brief",
+      "knowledge.navigate_raw_evidence"
+    ],
+    "neighbor_contracts": [
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "input_scope": "Caller-supplied DOI plus expected title and year",
+        "output_scope": "Comparison rows against one Crossref record"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "input_scope": "Caller-supplied DOI identifiers",
+        "output_scope": "Selected OpenAlex Work metadata"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "input_scope": "Caller-supplied DOI identifiers",
+        "output_scope": "PMID and PMCID mapping when returned"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "input_scope": "Caller-supplied exact PMIDs",
+        "output_scope": "Raw Comments/Corrections relations recorded for those records"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "input_scope": "Caller-supplied exact modern arXiv identifier",
+        "output_scope": "Selected arXiv provider metadata for that identifier"
+      },
+      {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "input_scope": "Already-collected Crossref and OpenAlex adapter results for one DOI",
+        "output_scope": "Local title/year field agreement, disagreement or insufficiency; no retrieval"
+      },
+      {
+        "tool_id": "knowledge.cluster_source_brief",
+        "input_scope": "Already-declared article-cluster ID",
+        "output_scope": "Deterministic source brief from checked-out asset-card corpus"
+      },
+      {
+        "tool_id": "knowledge.navigate_raw_evidence",
+        "input_scope": "Caller-declared requirements and literal terms against checked-out Knowledge index",
+        "output_scope": "Bounded current raw source lines and unresolved navigation gaps; no sufficiency decision"
+      }
+    ],
+    "distinct_inputs_and_outputs": "Europe PMC topic query to bounded external record discovery does not replace known-identifier Crossref/OpenAlex/PubMed/arXiv operations, local comparison of two already-collected provider results, or local source navigation over declared cluster IDs and the checked-out Knowledge corpus.",
+    "unmeasured": [
+      "search relevance and recall",
+      "completeness against other databases or search strategies",
+      "latency and service availability",
+      "comparative cost",
+      "scientific quality"
+    ],
+    "retirement_decision": "No existing component is deprecated or retired by this evidence."
+  },
+  "candidate_catalog_refresh": {
+    "prior_candidate_catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+    "current_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+    "note": "Replayed the stored route profiles after adding R1 repeated live-task evidence and measured single-run observations to the Crossref and PMC identifier cards; the evidence-reference type was corrected to its canonical string form. Decisions, selected tools, permissions, and limits remained unchanged; no provider call occurred during this route replay.",
+    "refresh_history": [
+      {
+        "prior_candidate_catalog_git_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
+        "current_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
+        "reason": "The ContextPacket comparator became the active default-off catalog at this historical revision."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
+        "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "reason": "The audit-finding comparator was added as another default-off optional candidate; the historical live Europe PMC response was not repeated."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
+        "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "reason": "Added the Crossref C1 same-task comparison and registered alternate-provider reference to the identity card; replayed all three Europe PMC default-off/permission/minimality route trials, which retained their prior decisions."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "current_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "reason": "Replayed all three Europe PMC route trials after the C1 source-brief comparison metadata changed the candidate catalog; the historical provider response was not repeated."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "current_candidate_catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+        "reason": "Replayed the stored local route profiles after adding R1 real-task route and measured single-run observations to the Crossref and PMC identifier candidate cards; selection and permissions were unchanged, and no provider request was repeated during this catalog replay."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+        "current_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+        "reason": "Replayed the stored route profiles after adding R1 repeated live-task evidence and measured single-run observations to the Crossref and PMC identifier cards; the evidence-reference type was corrected to its canonical string form. Decisions, selected tools, permissions, and limits remained unchanged; no provider call occurred during this route replay."
+      }
+    ],
+    "last_route_replay": {
+      "catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "provider_call_made": false,
+      "routes": [
+        {
+          "scenario": "candidate_excluded_by_default",
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "unmet_outputs": [
+            "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+            "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+          ],
+          "execution_authorized": false
+        },
+        {
+          "scenario": "explicit_candidate_without_host_permission",
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "unmet_outputs": [
+            "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+            "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+          ],
+          "execution_authorized": false
+        },
+        {
+          "scenario": "explicit_minimal_route_with_redundant_identifier_tool",
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "research.search_europe_pmc_query"
+          ],
+          "unmet_outputs": [],
+          "execution_authorized": false
+        }
+      ]
+    },
+    "route_replay_history": [
+      {
+        "catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "provider_call_made": false,
+        "routes": [
+          {
+            "group": "europe_pmc",
+            "scenario": "candidate_excluded_by_default",
+            "allowlist": [],
+            "allowed_network_hosts": [],
+            "decision": "INCOMPLETE",
+            "selected_tool_ids": [],
+            "unmet_outputs": [
+              "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+              "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+            ],
+            "execution_authorized": false,
+            "planner_wall_ms_observed": 1.413,
+            "relevant_rejections": []
+          },
+          {
+            "group": "europe_pmc",
+            "scenario": "explicit_candidate_without_host_permission",
+            "allowlist": [
+              "research.search_europe_pmc_query"
+            ],
+            "allowed_network_hosts": [],
+            "decision": "INCOMPLETE",
+            "selected_tool_ids": [],
+            "unmet_outputs": [
+              "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+              "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+            ],
+            "execution_authorized": false,
+            "planner_wall_ms_observed": 2.292,
+            "relevant_rejections": [
+              {
+                "tool_id": "research.search_europe_pmc_query",
+                "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+              }
+            ]
+          },
+          {
+            "group": "europe_pmc",
+            "scenario": "explicit_minimal_route_with_redundant_identifier_tool",
+            "allowlist": [
+              "research.search_europe_pmc_query",
+              "research.resolve_pubmed_identifiers"
+            ],
+            "allowed_network_hosts": [
+              "pmc.ncbi.nlm.nih.gov",
+              "www.ebi.ac.uk"
+            ],
+            "decision": "COMPLETE",
+            "selected_tool_ids": [
+              "research.search_europe_pmc_query"
+            ],
+            "unmet_outputs": [],
+            "execution_authorized": false,
+            "planner_wall_ms_observed": 2.466,
+            "relevant_rejections": [
+              {
+                "tool_id": "research.resolve_pubmed_identifiers",
+                "reason": "NO_INPUT_TYPE_MATCH"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

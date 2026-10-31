@@ -1,0 +1,63 @@
+{
+  "dataset_doi": "10.6084/m9.figshare.31939146.v2",
+  "dataset_title": "Global CH<sub>4</sub> emissions (2019–2024) estimated by the GONGGA-CH<sub>4</sub> inversion system",
+  "files": [
+    {
+      "bytes": 4601366,
+      "bytes_match": true,
+      "download_url": "https://ndownloader.figshare.com/files/63454056",
+      "figshare_bytes": 4601366,
+      "figshare_computed_md5": "3f88d98c231a9deae00fc4042bcd6613",
+      "figshare_supplied_md5": "3f88d98c231a9deae00fc4042bcd6613",
+      "md5": "3f88d98c231a9deae00fc4042bcd6613",
+      "md5_match": true,
+      "name": "2019_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "sha256": "5184942a22ff5d04c0b625740e2ee7b0aa7e8c8e70f1e16fe58abe0a854883e8",
+      "year": 2019,
+      "package_path": "input/data/2019_GONGGA-CH4_Flux_CAMS_TRO.nc"
+    },
+    {
+      "bytes": 4601366,
+      "bytes_match": true,
+      "download_url": "https://ndownloader.figshare.com/files/63454068",
+      "figshare_bytes": 4601366,
+      "figshare_computed_md5": "b54c2122d5f56f08da82b9ed55b75fde",
+      "figshare_supplied_md5": "b54c2122d5f56f08da82b9ed55b75fde",
+      "md5": "b54c2122d5f56f08da82b9ed55b75fde",
+      "md5_match": true,
+      "name": "2023_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "sha256": "3882cec6b0e737e7e4680a37633401971f15265ac1a70ffcb48934c7d3f79cb3",
+      "year": 2023,
+      "package_path": "input/data/2023_GONGGA-CH4_Flux_CAMS_TRO.nc"
+    },
+    {
+      "bytes": 4595180,
+      "bytes_match": true,
+      "download_url": "https://ndownloader.figshare.com/files/63454071",
+      "figshare_bytes": 4595180,
+      "figshare_computed_md5": "2f0f439d9b010a96a7d015c4ebcf30cf",
+      "figshare_supplied_md5": "2f0f439d9b010a96a7d015c4ebcf30cf",
+      "md5": "2f0f439d9b010a96a7d015c4ebcf30cf",
+      "md5_match": true,
+      "name": "2024_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "sha256": "49a8c80a070e9fe89d9d8f3e1383f62a8874621c4e582dcede74060df3e64601",
+      "year": 2024,
+      "package_path": "input/data/2024_GONGGA-CH4_Flux_CAMS_TRO.nc"
+    }
+  ],
+  "metadata_capture_sha256": "80e72e7f39bea5dc8bc1ab4d857bc21f568cf95518b1743626826d20704add81",
+  "metadata_source_url": "https://api.figshare.com/v2/articles/31939146",
+  "dataset_version": 2,
+  "dataset_citation": "Zhao, Min; Wang, Yilong; Tian, Xiangjun (2026). Global CH4 emissions (2019–2024) estimated by the GONGGA-CH4 inversion system. Figshare dataset version 2. https://doi.org/10.6084/m9.figshare.31939146.v2",
+  "dataset_license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "raw_binaries_in_evidence_package": true,
+  "binary_input_paths": [
+    "input/data/2019_GONGGA-CH4_Flux_CAMS_TRO.nc",
+    "input/data/2023_GONGGA-CH4_Flux_CAMS_TRO.nc",
+    "input/data/2024_GONGGA-CH4_Flux_CAMS_TRO.nc"
+  ],
+  "coverage_source": "Daily HEMCO_diagnostics filenames parsed from each NetCDF history attribute."
+}

@@ -56,10 +56,10 @@ def _current_paths() -> tuple[Path, Path, Path, Path, str, str, int]:
     architecture_task = lineage["task_identity"]["latest_architecture_changing_task"]
     ordinal = task_identity.parse_task_id(task_id)["ordinal"]
     return (
-        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json",
         ROOT / f"agent-results/{task_id}-result.md",
         ROOT / f"agent-results/{task_id}-machine-receipt.json",
-        ROOT / f"data/operations/iterations/{ordinal}/step15-ordinal-binding-gate-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/step15-ordinal-binding-gate-r1.json",
         task_id,
         architecture_task,
         ordinal,

@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-bounded-thinking-operation-input-r0",
+  "title": "Bounded Thinking Operation Selector Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task", "state", "available_operations", "available_capabilities", "candidate_assessments"],
+  "properties": {
+    "schema_version": {"const": "toolbox-bounded-thinking-operation-input-r0"},
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["episode_id", "intent_ref", "goal_ref", "frame_ref", "objective", "required_outputs"],
+      "properties": {
+        "episode_id": {"$ref": "#/$defs/nonblank"},
+        "intent_ref": {"$ref": "#/$defs/nonblank"},
+        "goal_ref": {"$ref": "#/$defs/nonblank"},
+        "frame_ref": {"$ref": "#/$defs/nonblank"},
+        "objective": {"type": "string", "minLength": 1, "maxLength": 2000},
+        "required_outputs": {"$ref": "#/$defs/stringList"}
+      }
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state_ref", "required_obligations", "uncertainty_refs", "frame_unresolved",
+        "authority_missing", "capability_missing", "freshness_gap", "decomposition_needed",
+        "first_failure_ref", "failure_refs", "operation_history", "remaining_budget_units"
+      ],
+      "properties": {
+        "state_ref": {"$ref": "#/$defs/nonblank"},
+        "required_obligations": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {"$ref": "#/$defs/obligation"}
+        },
+        "uncertainty_refs": {"$ref": "#/$defs/optionalStringList"},
+        "frame_unresolved": {"type": "boolean"},
+        "authority_missing": {"type": "boolean"},
+        "capability_missing": {"type": "boolean"},
+        "freshness_gap": {"type": "boolean"},
+        "decomposition_needed": {"type": "boolean"},
+        "first_failure_ref": {"type": ["string", "null"]},
+        "failure_refs": {"$ref": "#/$defs/optionalStringList"},
+        "operation_history": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {"$ref": "#/$defs/historyEntry"}
+        },
+        "remaining_budget_units": {"type": "integer", "minimum": 0, "maximum": 100}
+      }
+    },
+    "available_operations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/operation"}
+    },
+    "available_capabilities": {"$ref": "#/$defs/optionalStringList"},
+    "candidate_assessments": {
+      "type": "array",
+      "maxItems": 7,
+      "items": {"$ref": "#/$defs/candidateAssessment"}
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "maxLength": 512, "pattern": "\\S"},
+    "stringList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonblank"}
+    },
+    "optionalStringList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonblank"}
+    },
+    "operation": {
+      "enum": [
+        "READ_MORE", "VERIFY", "DECOMPOSE", "REFRAME_OR_CLARIFY",
+        "CAPACITY_OR_EXECUTOR_ESCALATE", "REQUEST_OWNER_DECISION"
+      ]
+    },
+    "historyOperation": {
+      "enum": [
+        "READ_MORE", "VERIFY", "DECOMPOSE", "REFRAME_OR_CLARIFY",
+        "CAPACITY_OR_EXECUTOR_ESCALATE", "REQUEST_OWNER_DECISION", "STOP"
+      ]
+    },
+    "obligation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["obligation_ref", "status", "required", "verification_required", "evidence_refs"],
+      "properties": {
+        "obligation_ref": {"$ref": "#/$defs/nonblank"},
+        "status": {"enum": ["OPEN", "UNKNOWN", "RESOLVED"]},
+        "required": {"type": "boolean"},
+        "verification_required": {"type": "boolean"},
+        "evidence_refs": {"$ref": "#/$defs/optionalStringList"}
+      }
+    },
+    "historyEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation", "outcome", "state_ref", "failure_ref"],
+      "properties": {
+        "operation": {"$ref": "#/$defs/historyOperation"},
+        "outcome": {"enum": ["STATE_CHANGED", "NO_STATE_CHANGE", "FAILED"]},
+        "state_ref": {"$ref": "#/$defs/nonblank"},
+        "failure_ref": {"type": ["string", "null"]}
+      }
+    },
+    "candidateAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation", "expected_state_delta", "expected_value_status", "expected_value_band",
+        "expected_cost_band", "estimated_cost_units", "reason_refs", "required_capabilities",
+        "return_condition"
+      ],
+      "properties": {
+        "operation": {"$ref": "#/$defs/operation"},
+        "expected_state_delta": {"$ref": "#/$defs/nonblank"},
+        "expected_value_status": {"enum": ["POSITIVE", "NON_POSITIVE", "UNKNOWN"]},
+        "expected_value_band": {"type": ["string", "null"], "enum": ["LOW", "MEDIUM", "HIGH", null]},
+        "expected_cost_band": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+        "estimated_cost_units": {"type": "integer", "minimum": 1, "maximum": 100},
+        "reason_refs": {"$ref": "#/$defs/stringList"},
+        "required_capabilities": {"$ref": "#/$defs/optionalStringList"},
+        "return_condition": {"$ref": "#/$defs/nonblank"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"expected_value_status": {"const": "POSITIVE"}}, "required": ["expected_value_status"]},
+          "then": {"properties": {"expected_value_band": {"enum": ["LOW", "MEDIUM", "HIGH"]}}}
+        },
+        {
+          "if": {"properties": {"expected_value_status": {"enum": ["NON_POSITIVE", "UNKNOWN"]}}, "required": ["expected_value_status"]},
+          "then": {"properties": {"expected_value_band": {"type": "null"}}}
+        }
+      ]
+    }
+  }
+}

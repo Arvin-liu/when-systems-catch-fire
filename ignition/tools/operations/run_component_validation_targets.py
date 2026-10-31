@@ -117,6 +117,7 @@ def run_modules(
 
     loader = unittest.defaultTestLoader
     previous_path = list(sys.path)
+    previous_modules = dict(sys.modules)
     try:
         sys.path[:0] = search_paths
         # Import origins are checked before unittest loads the modules. A module
@@ -144,6 +145,16 @@ def run_modules(
         return _run_suite(suite, modules, verbosity=verbosity)
     finally:
         sys.path[:] = previous_path
+        # A selected test may import sibling packages or legacy top-level
+        # modules (for example ``research_workflow`` and ``cli``). Restore the
+        # module table as well as sys.path so one target cannot shadow the
+        # next target's exact checkout-bound import.
+        for name in tuple(sys.modules):
+            if name not in previous_modules:
+                sys.modules.pop(name, None)
+        for name, module in previous_modules.items():
+            if sys.modules.get(name) is not module:
+                sys.modules[name] = module
 
 
 def collect_registered_test_ids(

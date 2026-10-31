@@ -1,0 +1,511 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-portable-research-episode-builder-result-r0",
+  "title": "Ignition Portable Research Episode Builder Result R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "episode",
+    "file_receipts",
+    "findings",
+    "total_bytes_read",
+    "execution_authorized",
+    "files_copied",
+    "files_written",
+    "source_authenticity",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "portable-research-episode-builder-result-r0"
+    },
+    "tool_id": {
+      "const": "collaboration.build_portable_research_episode"
+    },
+    "tool_version": {
+      "const": "0.1.0"
+    },
+    "status": {
+      "enum": [
+        "BUILD_SUCCEEDED",
+        "BUILD_FAILED",
+        "INPUT_INVALID"
+      ]
+    },
+    "episode": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/episode"
+        }
+      ]
+    },
+    "file_receipts": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "$ref": "#/$defs/fileReceipt"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "total_bytes_read": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 33554432
+    },
+    "execution_authorized": {
+      "const": false
+    },
+    "files_copied": {
+      "const": false
+    },
+    "files_written": {
+      "const": false
+    },
+    "source_authenticity": {
+      "const": "NOT_ESTABLISHED"
+    },
+    "claim_ceiling": {
+      "const": "Computes SHA-256 and byte-count observations for caller-selected regular files under an explicit ignition/ root, then builds a caller-declared portable episode manifest with resolved artifact-version references. It does not authenticate sources, actors, executions, reviews, timestamps, permissions, or science; copy/import files; execute work; validate episode semantics; or authorize actions."
+    }
+  },
+  "$defs": {
+    "nonblank": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256,
+      "pattern": "\\S"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifactRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "version_id",
+        "sha256"
+      ],
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "version_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "sha256": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "version_id",
+        "sha256",
+        "parent_ref",
+        "dependency_refs",
+        "availability",
+        "omission_reason",
+        "required",
+        "is_current"
+      ],
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "version_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "parent_ref": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/artifactRef"
+            }
+          ]
+        },
+        "dependency_refs": {
+          "type": "array",
+          "maxItems": 256,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/artifactRef"
+          }
+        },
+        "availability": {
+          "enum": [
+            "INCLUDED",
+            "OMITTED"
+          ]
+        },
+        "omission_reason": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "enum": [
+                "UNAVAILABLE_NOT_SHARED",
+                "NOT_RECORDED",
+                "REDACTED",
+                "NOT_APPLICABLE"
+              ]
+            }
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "is_current": {
+          "type": "boolean"
+        }
+      }
+    },
+    "runRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_id",
+        "attempt",
+        "evidence_ref"
+      ],
+      "properties": {
+        "run_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "attempt": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/nonblank"
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "execution_id",
+        "status",
+        "run_ref",
+        "used_artifact_refs",
+        "attached_artifact_refs",
+        "produced_artifact_refs",
+        "not_executed_reason"
+      ],
+      "properties": {
+        "execution_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "status": {
+          "enum": [
+            "PLANNED",
+            "ATTEMPTED",
+            "EXECUTED",
+            "NOT_EXECUTED",
+            "UNKNOWN"
+          ]
+        },
+        "run_ref": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/runRef"
+            }
+          ]
+        },
+        "used_artifact_refs": {
+          "type": "array",
+          "maxItems": 256,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/artifactRef"
+          }
+        },
+        "attached_artifact_refs": {
+          "type": "array",
+          "maxItems": 256,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/artifactRef"
+          }
+        },
+        "produced_artifact_refs": {
+          "type": "array",
+          "maxItems": 256,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/artifactRef"
+          }
+        },
+        "not_executed_reason": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/nonblank"
+            }
+          ]
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_id",
+        "reviewer_ref",
+        "target_ref",
+        "status",
+        "scope",
+        "reviewed_at_utc"
+      ],
+      "properties": {
+        "review_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "reviewer_ref": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "target_ref": {
+          "$ref": "#/$defs/artifactRef"
+        },
+        "status": {
+          "enum": [
+            "SUPPORTS",
+            "CONTRADICTS",
+            "LIMITED",
+            "NOT_REVIEWED",
+            "UNKNOWN"
+          ]
+        },
+        "scope": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "reviewed_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "omission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "version_id",
+        "reason",
+        "required",
+        "rationale"
+      ],
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "version_id": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/nonblank"
+            }
+          ]
+        },
+        "reason": {
+          "enum": [
+            "UNAVAILABLE_NOT_SHARED",
+            "NOT_RECORDED",
+            "REDACTED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "rationale": {
+          "$ref": "#/$defs/nonblank"
+        }
+      }
+    },
+    "forkMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entity_type",
+        "source_id",
+        "fork_id"
+      ],
+      "properties": {
+        "entity_type": {
+          "enum": [
+            "EPISODE",
+            "ARTIFACT",
+            "EXECUTION",
+            "REVIEW"
+          ]
+        },
+        "source_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "fork_id": {
+          "$ref": "#/$defs/nonblank"
+        }
+      }
+    },
+    "episode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "episode_id",
+        "package_revision",
+        "import_mode",
+        "required_artifact_ids",
+        "artifacts",
+        "executions",
+        "reviews",
+        "omissions",
+        "fork_id_mappings"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "ignition-portable-research-episode-r0"
+        },
+        "episode_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "package_revision": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "import_mode": {
+          "enum": [
+            "SOURCE_PACKAGE",
+            "READ_ONLY_FORK_PREVIEW"
+          ]
+        },
+        "required_artifact_ids": {
+          "type": "array",
+          "maxItems": 256,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonblank"
+          }
+        },
+        "artifacts": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/artifact"
+          }
+        },
+        "executions": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/execution"
+          }
+        },
+        "reviews": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/review"
+          }
+        },
+        "omissions": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/omission"
+          }
+        },
+        "fork_id_mappings": {
+          "type": "array",
+          "maxItems": 1024,
+          "items": {
+            "$ref": "#/$defs/forkMapping"
+          }
+        }
+      }
+    },
+    "fileReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "version_id",
+        "relative_path",
+        "sha256",
+        "byte_count",
+        "observation"
+      ],
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "version_id": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "relative_path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "byte_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8388608
+        },
+        "observation": {
+          "const": "LOCAL_READ_ONCE"
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "path"
+      ],
+      "properties": {
+        "code": {
+          "$ref": "#/$defs/nonblank"
+        },
+        "path": {
+          "$ref": "#/$defs/nonblank"
+        }
+      }
+    }
+  }
+}

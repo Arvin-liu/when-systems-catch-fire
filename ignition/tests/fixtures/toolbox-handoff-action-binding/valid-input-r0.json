@@ -1,0 +1,190 @@
+{
+  "schema_version": "handoff-action-binding-preflight-r0",
+  "source_receipt": {
+    "federation_task_id": "handoff-task-fixture",
+    "executor_id": "fixture.source",
+    "terminal_state": "COMPLETED_VALIDATED",
+    "claimed_actions": [
+      "read manifest"
+    ],
+    "artifact_refs": [
+      {
+        "ref": "fixture/manifest.json",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "kind": "manifest"
+      }
+    ],
+    "validation_refs": [
+      "fixture-validator-r0"
+    ],
+    "external_session_ref": null,
+    "executor_telemetry": {
+      "transport": "synthetic"
+    },
+    "unresolveds": [],
+    "handoff_eligibility": {
+      "eligible": true,
+      "reason": "synthetic action-binding fixture"
+    },
+    "receipt_digest": "6d75c5f378fd563453639ba73dbf02246a222db364712f70142575be09b09f43"
+  },
+  "handoff_bundle": {
+    "handoff_id": "handoff-fixture",
+    "federation_task_id": "handoff-task-fixture",
+    "source_executor_id": "fixture.source",
+    "goal": "Read a bounded synthetic manifest",
+    "validated_completed_work": [
+      "read manifest"
+    ],
+    "pending_work": [
+      "action-read-manifest"
+    ],
+    "allowed_capabilities": [
+      "repo.read"
+    ],
+    "workspace_refs": [
+      "fixture/"
+    ],
+    "artifact_refs": [
+      {
+        "ref": "fixture/manifest.json",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "kind": "manifest"
+      }
+    ],
+    "acceptance_criteria": [
+      "preserve exact action and artifact bindings"
+    ],
+    "operational_memory_capsule_refs": [],
+    "external_session_refs": [],
+    "unresolveds": []
+  },
+  "receiver_descriptor": {
+    "executor_id": "fixture.receiver",
+    "family": "synthetic-fixture",
+    "version": "1.0",
+    "transport_kind": [
+      "LOCAL_FIXTURE"
+    ],
+    "availability": "AVAILABLE",
+    "health": {
+      "status": "HEALTHY",
+      "checked_at": "2026-10-27T00:00:00Z",
+      "reason": "synthetic fixture only",
+      "latency_ms": null,
+      "capability_digest": null
+    },
+    "capability_tokens": [
+      "repo.read"
+    ],
+    "supported_task_granularities": [
+      "ACTION"
+    ],
+    "workspace_semantics": "caller-declared disposable fixture",
+    "permission_control_semantics": "not independently observed",
+    "structured_output_support": true,
+    "progress_support": false,
+    "cancel_support": false,
+    "native_resume_support": false,
+    "external_session_refs": [],
+    "network_semantics": "disabled",
+    "max_task_duration_seconds": 30,
+    "adapter_version": "adapter-v1",
+    "limitations": [
+      "synthetic contract fixture"
+    ]
+  },
+  "execution_packet": {
+    "run_id": "run-handoff-fixture",
+    "step_id": "step-read-manifest",
+    "action_id": "action-read-manifest",
+    "kind": "READ_FILE",
+    "required_capabilities": [
+      "repo.read"
+    ],
+    "requested_reads": [
+      "fixture/manifest.json"
+    ],
+    "requested_writes": [],
+    "argv": [],
+    "approval_class": "AUTO_ALLOWED_SAFE",
+    "expected_side_effects": [],
+    "validator_refs": [
+      "fixture-validator-r0"
+    ],
+    "timeout_seconds": 30,
+    "max_output_bytes": 1024,
+    "idempotency_key": "idem-handoff-fixture",
+    "rollback_class": "NONE",
+    "reason_summary": "Read one bounded synthetic manifest",
+    "source_plan_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "payload": {
+      "handoff_action_id": "action-read-manifest",
+      "handoff_source_revision": "fixture-source-revision-20261027",
+      "handoff_task_state_revision": "fixture-task-state-r7",
+      "handoff_authorization_ref": "decision-fixture",
+      "handoff_target_artifact_ref": "fixture/manifest.json",
+      "handoff_target_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "handoff_receiver_executor_id": "fixture.receiver",
+      "handoff_receiver_adapter_version": "adapter-v1"
+    },
+    "network_requested": false
+  },
+  "approval_request": {
+    "request_id": "request-fixture",
+    "run_id": "run-handoff-fixture",
+    "action_id": "action-read-manifest",
+    "action_digest": "566f02ff6d2331b5027a1af19569364b67abcde357f09d73524a86d4b1a3f2f5",
+    "impact_summary": "Read one synthetic fixture file",
+    "risk_class": "LOW",
+    "requested_capabilities": [
+      "repo.read"
+    ],
+    "requested_reads": [
+      "fixture/manifest.json"
+    ],
+    "requested_writes": [],
+    "expires_at": 4102444800,
+    "lease_id": "lease-fixture",
+    "status": "ALLOWED",
+    "created_at": "2026-10-27T00:00:00Z"
+  },
+  "approval_decision": {
+    "decision_id": "decision-fixture",
+    "request_id": "request-fixture",
+    "run_id": "run-handoff-fixture",
+    "action_digest": "566f02ff6d2331b5027a1af19569364b67abcde357f09d73524a86d4b1a3f2f5",
+    "decision": "ALLOW",
+    "authority_id": "synthetic-fixture-authority",
+    "authority_type": "synthetic_pilot",
+    "decided_at": "2026-10-27T00:00:01Z",
+    "reason_summary": "Synthetic record for contract testing"
+  },
+  "execution_lease": {
+    "lease_id": "lease-fixture",
+    "run_id": "run-handoff-fixture",
+    "action_id": "action-read-manifest",
+    "idempotency_key": "idem-handoff-fixture",
+    "packet_digest": "566f02ff6d2331b5027a1af19569364b67abcde357f09d73524a86d4b1a3f2f5",
+    "executor_class_id": "fixture.receiver",
+    "executor_instance_id": "fixture.receiver.instance",
+    "issued_at": 1700000000,
+    "expires_at": 4102444800,
+    "status": "ACTIVE"
+  },
+  "expected": {
+    "receiver_executor_id": "fixture.receiver",
+    "receiver_adapter_version": "adapter-v1",
+    "authorization_ref": "decision-fixture",
+    "source_revision": "fixture-source-revision-20261027",
+    "target_artifact_ref": "fixture/manifest.json",
+    "target_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "task_state_revision": "fixture-task-state-r7",
+    "receiver_observed_task_state_revision": "fixture-task-state-r7",
+    "native_resume_required": false
+  },
+  "workspace_reobserved": true,
+  "observed_artifact_refs": [
+    "fixture/manifest.json"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "episode_id": "agent-episode-binding-local-smoke-r0",
+  "binding_version": "r0",
+  "episode_permission_ceiling": {
+    "allowed_tool_ids": ["repo.read", "repo.write"],
+    "allowed_read_domains": ["draft_source", "draft"],
+    "allowed_write_domains": ["draft"]
+  },
+  "contexts": [
+    {
+      "context_id": "ctx-writer-private",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "visibility": "ROLE_PRIVATE",
+      "owner_role_id": "writer",
+      "authorized_role_ids": ["writer"]
+    },
+    {
+      "context_id": "ctx-shared",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "visibility": "SHARED_DECLARED",
+      "owner_role_id": "writer",
+      "authorized_role_ids": ["writer", "validator", "auditor"]
+    }
+  ],
+  "roles": [
+    {
+      "role_id": "writer",
+      "role_class": "EXECUTOR",
+      "responsibility": "Prepare a draft from the declared task input.",
+      "allowed_inputs": ["task_request", "draft_text", "validation_finding"],
+      "allowed_outputs": ["draft_text", "draft_revision"],
+      "allowed_tool_ids": ["repo.read", "repo.write"],
+      "allowed_read_domains": ["draft_source", "draft"],
+      "allowed_write_domains": ["draft"],
+      "context_ids": ["ctx-writer-private", "ctx-shared"],
+      "validation_obligations": [],
+      "can_change_future_inputs": false,
+      "can_signal_hard_stop": false,
+      "can_request_owner_review": false,
+      "claim_ceiling": "Draft preparation only; no correctness or publication claim."
+    },
+    {
+      "role_id": "validator",
+      "role_class": "VALIDATOR",
+      "responsibility": "Check the declared draft against supplied validation obligations.",
+      "allowed_inputs": ["draft_text"],
+      "allowed_outputs": ["validation_finding"],
+      "allowed_tool_ids": ["repo.read"],
+      "allowed_read_domains": ["draft"],
+      "allowed_write_domains": [],
+      "context_ids": ["ctx-shared"],
+      "validation_obligations": ["Report observations without rewriting executor history."],
+      "can_change_future_inputs": false,
+      "can_signal_hard_stop": false,
+      "can_request_owner_review": false,
+      "claim_ceiling": "Declared validation observations only."
+    },
+    {
+      "role_id": "auditor",
+      "role_class": "AUDITOR",
+      "responsibility": "Signal a typed protocol stop when its declared policy applies.",
+      "allowed_inputs": ["validation_finding"],
+      "allowed_outputs": ["protocol_stop"],
+      "allowed_tool_ids": ["repo.read"],
+      "allowed_read_domains": ["draft"],
+      "allowed_write_domains": [],
+      "context_ids": ["ctx-shared"],
+      "validation_obligations": ["Review the declared protocol stop condition."],
+      "can_change_future_inputs": false,
+      "can_signal_hard_stop": true,
+      "can_request_owner_review": false,
+      "claim_ceiling": "A declared protocol-stop request only; no execution authority."
+    }
+  ],
+  "feedback_edges": [
+    {
+      "channel_id": "draft-observation",
+      "source_role_id": "writer",
+      "target_role_id": "validator",
+      "channel_class": "ONE_WAY_OBSERVATION",
+      "allowed_message_kinds": ["DRAFT_OBSERVATION"],
+      "can_change_future_inputs": false,
+      "can_stop_future_work": false,
+      "can_request_owner_review": false,
+      "informational_only": true,
+      "hard_stop_policy_ref": null
+    },
+    {
+      "channel_id": "protocol-stop",
+      "source_role_id": "auditor",
+      "target_role_id": "writer",
+      "channel_class": "HARD_STOP_ONLY",
+      "allowed_message_kinds": ["PROTOCOL_HARD_STOP"],
+      "can_change_future_inputs": false,
+      "can_stop_future_work": true,
+      "can_request_owner_review": false,
+      "informational_only": false,
+      "hard_stop_policy_ref": "declared:protocol-stop-classes-r0"
+    }
+  ],
+  "write_domain_bindings": [
+    {
+      "binding_id": "draft-write",
+      "role_id": "writer",
+      "write_domain": "draft",
+      "exclusivity": "WRITE_EXCLUSIVE",
+      "effect_class": "LOCAL_WRITE",
+      "resource_intent_id": "resource:draft-worktree"
+    }
+  ],
+  "work_units": [
+    {
+      "work_unit_id": "prepare-draft",
+      "role_id": "writer",
+      "depends_on": [],
+      "context_ids": ["ctx-writer-private", "ctx-shared"],
+      "input_types": ["task_request"],
+      "output_types": ["draft_text"],
+      "effect_class": "READ_ONLY",
+      "write_binding_ids": []
+    },
+    {
+      "work_unit_id": "validate-draft",
+      "role_id": "validator",
+      "depends_on": ["prepare-draft"],
+      "context_ids": ["ctx-shared"],
+      "input_types": ["draft_text"],
+      "output_types": ["validation_finding"],
+      "effect_class": "READ_ONLY",
+      "write_binding_ids": []
+    },
+    {
+      "work_unit_id": "record-revision",
+      "role_id": "writer",
+      "depends_on": ["validate-draft"],
+      "context_ids": ["ctx-writer-private"],
+      "input_types": ["draft_text", "validation_finding"],
+      "output_types": ["draft_revision"],
+      "effect_class": "LOCAL_WRITE",
+      "write_binding_ids": ["draft-write"]
+    }
+  ],
+  "aggregation_policy": "PRESERVE_ROLE_OUTPUTS; DO_NOT_TREAT_AGREEMENT_AS_VALIDATION; KEEP_CONFLICTS_UNRESOLVED"
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "ignition.toolbox-c1-publication-metadata-comparison-evidence-r0",
+  "experiment_id": "C1-20261025-GAP001-05-CROSS-SOURCE-TITLE-YEAR-COMPARISON",
+  "observed_at_utc": "2026-10-25T12:39:43Z",
+  "candidate_base": "5940dd1e25142545e2345c0126d1384ebca6121d",
+  "compared_tool_ids": [
+    "research.verify_crossref_metadata",
+    "research.lookup_openalex_work_metadata"
+  ],
+  "same_task": {
+    "task_id": "source-record-metadata-cross-provider-work-identity-gap001-05",
+    "doi": "10.3982/ecta15732",
+    "crossref_response_sha256": "3f2f32d42cd289de9e36d00cfa5a97906e09df22fc78a1d4dba9f2241c222e1c",
+    "openalex_response_sha256": "2991ddc93727ea8ff31682a6f9aa10e10362905c42e10921857a3062396a9372",
+    "observed_fields": {
+      "crossref": {
+        "title": "Policy Learning With Observational Data",
+        "year": 2021
+      },
+      "openalex": {
+        "title": "Policy Learning With Observational Data",
+        "year": 2021
+      }
+    },
+    "comparator_status": "METADATA_FIELDS_AGREE",
+    "comparator_field_statuses": {
+      "title": "AGREE",
+      "publication_year": "AGREE"
+    }
+  },
+  "matched_negative_control": {
+    "kind": "SYNTHETIC_PROJECTED_OUTPUT_MUTATION",
+    "mutation": "Changed only the supplied OpenAlex projection publication_year from 2021 to 2020 after live retrieval; retained the original provider response digest. This mutation is intentionally not presented as an authentic provider response.",
+    "observed_status": "METADATA_DISAGREEMENT_FOUND",
+    "title_status": "AGREE",
+    "year_status": "DISAGREE",
+    "result": "The comparator reported the changed year as DISAGREE and did not select a preferred provider.",
+    "output": {
+      "schema_version": "ignition.publication-metadata-cross-source-comparison-r0",
+      "tool_id": "research.compare_publication_metadata_snapshots",
+      "tool_version": "0.1.0",
+      "requested_doi": "10.3982/ecta15732",
+      "status": "METADATA_DISAGREEMENT_FOUND",
+      "source_count": 2,
+      "source_outcomes": [
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "acquisition_status": "OK",
+          "record_status": "METADATA_ROW_RETURNED",
+          "provider_response_sha256": "3f2f32d42cd289de9e36d00cfa5a97906e09df22fc78a1d4dba9f2241c222e1c",
+          "title": "Policy Learning With Observational Data",
+          "publication_year": 2021
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "acquisition_status": "OK",
+          "record_status": "EXACT_PRIMARY_DOI_MATCH",
+          "provider_response_sha256": "2991ddc93727ea8ff31682a6f9aa10e10362905c42e10921857a3062396a9372",
+          "title": "Policy Learning With Observational Data",
+          "publication_year": 2020
+        }
+      ],
+      "field_comparisons": {
+        "title": {
+          "status": "AGREE",
+          "observations": [
+            {
+              "tool_id": "research.verify_crossref_metadata",
+              "value": "Policy Learning With Observational Data"
+            },
+            {
+              "tool_id": "research.lookup_openalex_work_metadata",
+              "value": "Policy Learning With Observational Data"
+            }
+          ]
+        },
+        "publication_year": {
+          "status": "DISAGREE",
+          "observations": [
+            {
+              "tool_id": "research.verify_crossref_metadata",
+              "value": 2021
+            },
+            {
+              "tool_id": "research.lookup_openalex_work_metadata",
+              "value": 2020
+            }
+          ]
+        }
+      },
+      "claim_ceiling": "Compares selected title/year fields in caller-supplied Crossref and OpenAlex result objects. The inputs and provider responses are not authenticated; agreement does not establish source authenticity, publication identity beyond these fields, article content, scientific truth, or retraction status."
+    }
+  },
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "basis": "The source adapters retrieve provider-specific metadata. The new local comparator adds a field-level comparison of already collected results; it makes no requests and does not cover either adapter's acquisition function.",
+    "unique_remaining_use_case": "Produce a structured Crossref/OpenAlex title/year comparison from their existing outputs without another network request.",
+    "cost": "UNKNOWN; no calibrated runtime, memory, or economic comparison was performed.",
+    "reliability_limit": "One real DOI plus a synthetic changed-projection control; no estimate of provider quality, broad accuracy, or source authenticity."
+  },
+  "claim_ceiling": "This evidence supports a specialized local comparison output for the observed task only. Adapter results and their provider response digests are caller-supplied and are not authenticated by the comparator.",
+  "implementation_sha256": {
+    "comparator": "6836748e934e6c037cd42d2100f7bd7b51ab28ecea09265a71aa591fd271eb5a",
+    "input_schema": "70c81f55c9b6114bfc21bb3a1d40d78a79d02735ebbe97a2dc500d5a24df3908",
+    "output_schema": "ae6dd80d4e88500388647a118bf90a276d8937f76485b4fe58a2914cb0321e30",
+    "focused_test": "50fad6d031951e1b413cf6f371a176d53fae72393dbb6cbb34ab4d19d4bab1a7",
+    "routing_test": "778d93d4d9ab644ba7bbf5b5e5c55253bbaf388e3a58685008dd2e81cf0fb298"
+  },
+  "route_outcome": {
+    "evidence_ref": "ignition/data/operations/toolbox-publication-metadata-cross-source-route-evidence-r0.json",
+    "catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831",
+    "default_decision": "INCOMPLETE",
+    "default_selected_tool_ids": [],
+    "explicit_opt_in_decision": "COMPLETE",
+    "explicit_opt_in_selected_tool_ids": [
+      "research.compare_publication_metadata_snapshots"
+    ],
+    "extra_candidate_scenario_selected_tool_ids": [
+      "research.compare_publication_metadata_snapshots"
+    ],
+    "allowed_network_hosts": [],
+    "execution_authorized": false,
+    "source_retrieval_stage": {
+      "default_decision": "INCOMPLETE",
+      "default_selected_tool_ids": [],
+      "minimum_sufficient_decision": "COMPLETE",
+      "minimum_sufficient_selected_tool_ids": [
+        "research.lookup_openalex_work_metadata",
+        "research.verify_crossref_metadata"
+      ],
+      "extra_options_decision": "COMPLETE",
+      "extra_options_selected_tool_ids": [
+        "research.lookup_openalex_work_metadata",
+        "research.verify_crossref_metadata"
+      ],
+      "allowed_network_hosts": [
+        "api.crossref.org",
+        "api.openalex.org"
+      ],
+      "execution_authorized": false
+    }
+  },
+  "reproducible_input": {
+    "path": "ignition/data/operations/toolbox-publication-metadata-cross-source-real-input-r0.json",
+    "sha256": "e834b04802282015fb90431c5a65f4d8a4b7629e45a0d588ddb207ddbacab540"
+  },
+  "comparison_output_sha256": "b88d13538bf6b24924c40c97bff1d2e44c4ddd35d79de69bbca4896dae1e9539",
+  "evidence_updated_at_utc": "2026-10-25T12:49:47Z",
+  "route_evidence_sha256": "615979bcd0e88ab55b2d46c0588ae6d2d7412c793b48210987abd68b545289bd"
+}

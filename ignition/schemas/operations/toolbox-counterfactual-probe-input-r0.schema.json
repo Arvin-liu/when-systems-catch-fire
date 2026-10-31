@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/toolbox-counterfactual-probe-input-r0.schema.json",
+  "title": "Bounded Counterfactual Probe Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "target_conclusion",
+    "function_spec",
+    "baseline_inputs",
+    "assumptions",
+    "probes"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-counterfactual-probe-input-r0"},
+    "target_conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conclusion_id", "statement"],
+      "properties": {
+        "conclusion_id": {"$ref": "#/$defs/identifier"},
+        "statement": {"$ref": "#/$defs/text"}
+      }
+    },
+    "function_spec": {
+      "type": "object",
+      "maxProperties": 12,
+      "required": ["function_id", "spec_version", "name", "domain", "inputs", "outputs", "preconditions", "postconditions", "effects_declared", "created_at"],
+      "properties": {
+        "function_id": {"type": "string", "pattern": "^FN-[0-9]{8}-[0-9]{4}$"},
+        "spec_version": {"type": "string", "minLength": 1, "maxLength": 64},
+        "name": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$"},
+        "domain": {"const": "symbolic"},
+        "inputs": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 16,
+          "patternProperties": {"^[A-Za-z_][A-Za-z0-9_]{0,63}$": {"enum": ["integer", "int", "float", "number", "boolean", "bool"]}},
+          "additionalProperties": false
+        },
+        "outputs": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "patternProperties": {"^[A-Za-z_][A-Za-z0-9_]{0,63}$": {"enum": ["integer", "int", "float", "number", "boolean", "bool"]}},
+          "additionalProperties": false
+        },
+        "preconditions": {"type": "array", "maxItems": 16, "items": {"$ref": "#/$defs/condition"}},
+        "postconditions": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"$ref": "#/$defs/condition"}},
+        "effects_declared": {"const": ["pure"]},
+        "created_at": {"type": "string", "maxLength": 128}
+      },
+      "additionalProperties": false
+    },
+    "baseline_inputs": {
+      "type": "object",
+      "maxProperties": 16,
+      "additionalProperties": {"type": ["boolean", "integer", "number"]}
+    },
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assumption_id", "statement", "input_names"],
+        "properties": {
+          "assumption_id": {"$ref": "#/$defs/identifier"},
+          "statement": {"$ref": "#/$defs/text"},
+          "input_names": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 16,
+            "uniqueItems": true,
+            "items": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$"}
+          }
+        }
+      }
+    },
+    "probes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["probe_id", "assumption_id", "input_name", "replacement_value", "expected_direction", "admissibility_note"],
+        "properties": {
+          "probe_id": {"$ref": "#/$defs/identifier"},
+          "assumption_id": {"$ref": "#/$defs/identifier"},
+          "input_name": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$"},
+          "replacement_value": {"type": ["boolean", "integer", "number"]},
+          "expected_direction": {"enum": ["ANY_CHANGE", "NO_CHANGE", "TRUE_TO_FALSE", "FALSE_TO_TRUE", "INCREASE", "DECREASE"]},
+          "admissibility_note": {"type": "string", "minLength": 1, "maxLength": 400}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "identifier": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "text": {"type": "string", "minLength": 1, "maxLength": 512},
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expression", "message"],
+      "properties": {
+        "expression": {"type": "string", "minLength": 1, "maxLength": 512},
+        "message": {"type": "string", "maxLength": 512}
+      }
+    }
+  }
+}

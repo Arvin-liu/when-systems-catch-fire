@@ -1,0 +1,49 @@
+{
+  "evidence_type": "REAL_TASK_OUTCOME",
+  "execution": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_merge_selected_index_search_results.py --stdin",
+    "filesystem_writes_by_new_tool": 0,
+    "input_bytes": 8971,
+    "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+    "network_requests_by_new_tool": 0,
+    "output_sha256": "d717d8ab414cc2acdb60d0316988b0ea8ae599301daad70ab0248ead44a5300a",
+    "source_receipt_refs": [
+      "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+      "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json"
+    ],
+    "source_response_sha256": [
+      "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+      "6f79220fec231f3d27f18ca0f1716cb1f7b6c8e1afbbee49d7f5555e777a8648"
+    ],
+    "tool_source_sha256": "23500d976e0c60b5e0760421880864a1fe5573f68c5129792170d729f0885ea0"
+  },
+  "experiment_id": "research.merge_selected_index_search_results.public_ai_healthcare_cross_index_r0",
+  "outcome": {
+    "claim_ceiling": "The zero-overlap result is limited to these ten rows; it does not establish that the indexes have disjoint coverage.",
+    "exact_doi_groups": 0,
+    "record_count_total": 10,
+    "sources": [
+      {
+        "acquisition_status": "OK",
+        "provider": "crossref",
+        "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+        "returned_count": 5
+      },
+      {
+        "acquisition_status": "OK",
+        "provider": "openalex",
+        "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+        "returned_count": 5
+      }
+    ],
+    "status": "COMPLETE",
+    "unclustered_record_count": 10
+  },
+  "schema_version": "toolbox-selected-index-search-result-merge-real-task-r0",
+  "task": {
+    "claim_ceiling": "Provider metadata only. The input is a bounded two-source snapshot, not a relevance review, recall estimate, source validation, scientific support, or exhaustive search.",
+    "description": "Offline grouping of the retained top-five Crossref and OpenAlex outputs from the same public artificial-intelligence-and-healthcare topic search.",
+    "provider_queries_were_same_hash": true,
+    "upstream_query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea"
+  }
+}

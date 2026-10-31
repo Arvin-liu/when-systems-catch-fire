@@ -11,16 +11,14 @@ Usage:
     python3 tools/extract_cluster_source_brief.py [CIDs...]
 Defaults to the 5 task-104 pilot clusters: C000 C001 C004 C005 C006.
 """
+import argparse
+import hashlib
 import importlib.util
 import json
 import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SPEC = importlib.util.spec_from_file_location(
-    "bcrg", os.path.join(ROOT, "tools", "build_corpus_relation_graph.py"))
-BCRG = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(BCRG)
 
 PILOT_DEFAULT = ["C000", "C001", "C004", "C005", "C006"]
 FIELDS = [
@@ -43,6 +41,44 @@ FIELDS = [
 ]
 
 
+def assert_local_source_paths(root):
+    """Reject symlinked input paths so a read-only tool stays inside its checkout."""
+    root = os.fspath(root)
+    if os.path.islink(root):
+        raise ValueError("checkout root must not be a symlink")
+    root = os.path.realpath(root)
+    relative_paths = [
+        "KNOWLEDGE/cards",
+        "analysis/corpus-relation/article_cluster_candidates.json",
+        "tools/build_corpus_relation_graph.py",
+    ]
+    for relative in relative_paths:
+        current = root
+        for part in relative.split(os.sep):
+            current = os.path.join(current, part)
+            if os.path.islink(current):
+                raise ValueError("source path contains a symlink: " + relative)
+        if os.path.commonpath([root, os.path.realpath(current)]) != root:
+            raise ValueError("source path escapes the checkout: " + relative)
+    cards_dir = os.path.join(root, "KNOWLEDGE", "cards")
+    for filename in os.listdir(cards_dir):
+        if filename.startswith("part-") and filename.endswith(".md"):
+            path = os.path.join(cards_dir, filename)
+            if os.path.islink(path) or os.path.commonpath([root, os.path.realpath(path)]) != root:
+                raise ValueError("asset-card source escapes the checkout: " + filename)
+
+
+def load_card_parser(root):
+    """Load the source-pinned parser only after validating its path boundary."""
+    parser_path = os.path.join(os.fspath(root), "tools", "build_corpus_relation_graph.py")
+    spec = importlib.util.spec_from_file_location("bcrg", parser_path)
+    if spec is None or spec.loader is None:
+        raise ValueError("asset-card parser cannot be loaded")
+    parser = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(parser)
+    return parser
+
+
 def fmt(v):
     if v is None:
         return "—"
@@ -51,51 +87,153 @@ def fmt(v):
     return str(v)
 
 
-def main():
-    cids = sys.argv[1:] or PILOT_DEFAULT
-    nodes, by_lower = BCRG.load_cards(ROOT)
-    card_by_id = {n["id"]: n for n in nodes}
-    cl = json.load(open(os.path.join(
-        ROOT, "analysis", "corpus-relation", "article_cluster_candidates.json"),
-        encoding="utf-8"))
-    clusters = {c["id"]: c for c in cl["clusters"]}
+def load_source_brief_inputs(root=ROOT):
+    """Read the governed card corpus and cluster snapshot without writing."""
+    assert_local_source_paths(root)
+    parser = load_card_parser(root)
+    nodes, by_lower = parser.load_cards(root)
+    card_by_id = {node["id"]: node for node in nodes}
+    cluster_path = os.path.join(root, "analysis", "corpus-relation", "article_cluster_candidates.json")
+    with open(cluster_path, encoding="utf-8") as handle:
+        document = json.load(handle)
+    if not isinstance(document, dict) or not isinstance(document.get("clusters"), list):
+        raise ValueError("cluster candidate source must contain a clusters array")
+    clusters = {cluster["id"]: cluster for cluster in document["clusters"] if isinstance(cluster, dict) and isinstance(cluster.get("id"), str)}
+    return card_by_id, by_lower, clusters
+
+
+def build_brief_text(cid, cluster, card_by_id, by_lower):
+    """Render one cluster as a deterministic, read-only Markdown brief."""
+    lines = []
+    lines.append("# 源资产简报 %s（%s）" % (cid, cluster["disposition"]))
+    lines.append("")
+    lines.append("> 中心问题候选：%s" % cluster.get("proposed_central_question", ""))
+    lines.append("> 主导主题：%s（比例 %.2f）｜域数 %d｜规模 %d"
+                 % (cluster.get("dominant_topic"), cluster.get("dominant_ratio", 0),
+                    cluster.get("distinct_domains", 0), cluster.get("size", 0)))
+    edge_types = cluster.get("edge_types") or []
+    if edge_types:
+        lines.append("> 簇内边类型：%s" % ", ".join(edge_types))
+    lines.append("")
+    members = sorted(cluster["members"], key=lambda member: member["id"])
+    for member in members:
+        member_id = member["id"]
+        node = card_by_id.get(member_id) or by_lower.get(member_id.lower())
+        lines.append("## %s — %s" % (member_id, member.get("title", "")))
+        if node is None:
+            lines.append("（未在主卡语料中匹配，仅簇元数据：asset_type=%s, status=%s, topics=%s）"
+                         % (member.get("asset_type"), member.get("status"),
+                            ", ".join(member.get("topics", []))))
+            lines.append("")
+            continue
+        for key, label in FIELDS:
+            lines.append("- **%s**：%s" % (label, fmt(node.get(key))))
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_briefs(cids, root=ROOT):
+    """Return briefs for known cluster IDs, rejecting the whole request on a gap."""
+    if not isinstance(cids, (list, tuple)) or not cids or any(not isinstance(cid, str) or not cid for cid in cids):
+        raise ValueError("at least one nonblank cluster ID is required")
+    if len(cids) != len(set(cids)):
+        raise ValueError("cluster IDs must be unique")
+    card_by_id, by_lower, clusters = load_source_brief_inputs(root)
+    unknown = sorted(set(cids) - set(clusters))
+    if unknown:
+        raise ValueError("unknown cluster ID(s): " + ", ".join(unknown))
+    return "\n---\n\n".join(build_brief_text(cid, clusters[cid], card_by_id, by_lower) for cid in cids)
+
+
+def render_receipt(cids, root=ROOT):
+    """Return deterministic source hashes and brief hashes for a read-only run."""
+    if not isinstance(cids, (list, tuple)) or not cids or any(not isinstance(cid, str) or not cid for cid in cids):
+        raise ValueError("at least one nonblank cluster ID is required")
+    if len(cids) != len(set(cids)):
+        raise ValueError("cluster IDs must be unique")
+    root = os.fspath(root)
+    card_by_id, by_lower, clusters = load_source_brief_inputs(root)
+    unknown = sorted(set(cids) - set(clusters))
+    if unknown:
+        raise ValueError("unknown cluster ID(s): " + ", ".join(unknown))
+    cluster_path = os.path.join(root, "analysis", "corpus-relation", "article_cluster_candidates.json")
+    with open(cluster_path, "rb") as handle:
+        cluster_sha256 = hashlib.sha256(handle.read()).hexdigest()
+    cards_dir = os.path.join(root, "KNOWLEDGE", "cards")
+    card_hashes = []
+    for filename in sorted(os.listdir(cards_dir)) if os.path.isdir(cards_dir) else []:
+        if filename.startswith("part-") and filename.endswith(".md"):
+            path = os.path.join(cards_dir, filename)
+            with open(path, "rb") as handle:
+                card_hashes.append({"path": "KNOWLEDGE/cards/" + filename, "sha256": hashlib.sha256(handle.read()).hexdigest()})
+    corpus_payload = json.dumps(card_hashes, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    parser_path = os.path.join(root, "tools", "build_corpus_relation_graph.py")
+    with open(parser_path, "rb") as handle:
+        parser_bytes = handle.read()
+    parser_blob_sha1 = hashlib.sha1(b"blob " + str(len(parser_bytes)).encode("ascii") + b"\0" + parser_bytes).hexdigest()
+    briefs = []
+    for cid in cids:
+        markdown = build_brief_text(cid, clusters[cid], card_by_id, by_lower)
+        briefs.append({
+            "cluster_id": cid,
+            "disposition": clusters[cid]["disposition"],
+            "member_count": len(clusters[cid]["members"]),
+            "markdown": markdown,
+            "output_sha256": hashlib.sha256(markdown.encode("utf-8")).hexdigest(),
+        })
+    document = {
+        "schema_version": "cluster-source-brief-output-r0",
+        "status": "REPOSITORY_SNAPSHOT_PROJECTION",
+        "source_refs": {
+            "cluster_snapshot": {"path": "ignition/analysis/corpus-relation/article_cluster_candidates.json", "sha256": cluster_sha256},
+            "knowledge_cards": {"path": "ignition/KNOWLEDGE/cards/", "tree_sha256": hashlib.sha256(corpus_payload).hexdigest(), "file_count": len(card_hashes)},
+            "parser": {"path": "ignition/tools/build_corpus_relation_graph.py", "git_blob_sha1": parser_blob_sha1},
+        },
+        "briefs": briefs,
+        "claim_ceiling": "Snapshot-derived source-card projection only; no scientific truth, proof, external evidence, or publication acceptance is inferred.",
+    }
+    canonical = json.dumps(document, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    document["receipt_sha256"] = hashlib.sha256(canonical).hexdigest()
+    return document
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Extract source-backed briefs from declared article clusters.")
+    parser.add_argument("cids", nargs="*", help="cluster IDs; defaults to the five Task104 pilot IDs")
+    parser.add_argument("--stdout", action="store_true", help="print only; do not create or overwrite any file")
+    parser.add_argument("--json", action="store_true", help="emit briefs with source and output digests; requires --stdout")
+    args = parser.parse_args(argv)
+    cids = args.cids or PILOT_DEFAULT
+    if args.json and not args.stdout:
+        parser.error("--json requires --stdout")
+    if args.stdout:
+        try:
+            if args.json:
+                sys.stdout.write(json.dumps(render_receipt(cids), ensure_ascii=False, indent=2) + "\n")
+            else:
+                sys.stdout.write(render_briefs(cids))
+        except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
+            print("SOURCE_BRIEF_NOT_AVAILABLE: %s" % exc, file=sys.stderr)
+            return 2
+        return 0
+
+    # Preserve the historical file-writing mode for existing callers. The new
+    # toolbox entrypoint uses --stdout and never reaches this branch.
+    card_by_id, by_lower, clusters = load_source_brief_inputs(ROOT)
+    unknown = sorted(set(cids) - set(clusters))
+    if unknown:
+        print("SOURCE_BRIEF_NOT_AVAILABLE: unknown cluster ID(s): %s" % ", ".join(unknown), file=sys.stderr)
+        return 2
     out_dir = os.path.join(ROOT, "analysis", "corpus-relation",
                            "cluster_source_briefs")
     os.makedirs(out_dir, exist_ok=True)
 
     for cid in cids:
         c = clusters.get(cid)
-        if not c:
-            print("WARN: no cluster %s" % cid, file=sys.stderr)
-            continue
-        lines = []
-        lines.append("# 源资产简报 %s（%s）" % (cid, c["disposition"]))
-        lines.append("")
-        lines.append("> 中心问题候选：%s" % c.get("proposed_central_question", ""))
-        lines.append("> 主导主题：%s（比例 %.2f）｜域数 %d｜规模 %d"
-                     % (c.get("dominant_topic"), c.get("dominant_ratio", 0),
-                        c.get("distinct_domains", 0), c.get("size", 0)))
-        edge_types = c.get("edge_types") or []
-        if edge_types:
-            lines.append("> 簇内边类型：%s" % ", ".join(edge_types))
-        lines.append("")
         members = sorted(c["members"], key=lambda m: m["id"])
-        for m in members:
-            mid = m["id"]
-            node = card_by_id.get(mid) or by_lower.get(mid.lower())
-            lines.append("## %s — %s" % (mid, m.get("title", "")))
-            if node is None:
-                lines.append("（未在主卡语料中匹配，仅簇元数据：asset_type=%s, status=%s, topics=%s）"
-                             % (m.get("asset_type"), m.get("status"),
-                                ", ".join(m.get("topics", []))))
-                lines.append("")
-                continue
-            for key, label in FIELDS:
-                lines.append("- **%s**：%s" % (label, fmt(node.get(key))))
-            lines.append("")
         out_path = os.path.join(out_dir, "%s.md" % cid)
         with open(out_path, "w", encoding="utf-8") as fh:
-            fh.write("\n".join(lines) + "\n")
+            fh.write(build_brief_text(cid, c, card_by_id, by_lower))
         print("wrote %s (%d cards)" % (out_path, len(members)))
 
     # also write a compact index of all requested clusters
@@ -113,4 +251,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

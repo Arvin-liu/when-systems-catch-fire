@@ -1,0 +1,14 @@
+{
+  "task_id": "noaa-co2-ch4-captured-growth-pair-2023-2025",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r0, one complete version-0.1.0 CO2 source-surface comparator output and one complete version-0.1.0 CH4 source-surface comparator output; both use the same 1984–2100 inclusive range of at most 50 years; arbitrary URLs and file paths are rejected."
+  ],
+  "required_outputs": [
+    "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic.",
+    "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

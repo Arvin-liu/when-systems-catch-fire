@@ -1,0 +1,226 @@
+{
+  "schema_version": "toolbox-pubmed-citation-matcher-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_AND_MINIMUM_SUFFICIENT_ROUTE_EXPERIMENT",
+  "tool_id": "research.match_pubmed_citation",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_path": "ignition/data/operations/toolbox-pubmed-citation-matcher-route-profile-r0.json",
+  "route_profile": {
+    "schema_version": "toolbox-pubmed-citation-matcher-route-profile-r0",
+    "task_id": "structured-citation-to-pubmed-id",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly journal_title, year, volume, first_page, and first_author; public non-sensitive citation"
+    ],
+    "required_outputs": [
+      "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "allowed_network_hosts": [
+      "eutils.ncbi.nlm.nih.gov"
+    ],
+    "route_default": "EXCLUDED",
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "catalog_replay_history": [
+      {
+        "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+        "superseded_profile_git_blob_sha1": "ecab6531f71e93067ca947f130c388f530377985",
+        "replayed_at_utc": "2026-10-26T22:44:00Z"
+      }
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "candidate_excluded_by_default",
+      "task_profile": {
+        "task_id": "structured-citation-to-pubmed-id",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with exactly journal_title, year, volume, first_page, and first_author; public non-sensitive citation"
+        ],
+        "required_outputs": [
+          "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "relevant_rejections": {
+        "research.match_pubmed_citation": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+        "research.search_pubmed_query": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls": 0,
+      "full_planner_output_sha256": "707733833bf763e24af77216206f3cdddf3bcbce25024ee599a23c57900c9590"
+    },
+    {
+      "scenario": "explicit_candidate_missing_host",
+      "task_profile": {
+        "task_id": "structured-citation-to-pubmed-id",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with exactly journal_title, year, volume, first_page, and first_author; public non-sensitive citation"
+        ],
+        "required_outputs": [
+          "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.match_pubmed_citation"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "relevant_rejections": {
+        "research.match_pubmed_citation": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+        "research.search_pubmed_query": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls": 0,
+      "full_planner_output_sha256": "8f49a0683436ad6e05afa82f8f7cd0fc9fb2da906c8cd2d067a6cb074ccc8b88"
+    },
+    {
+      "scenario": "explicit_candidate_minimum_sufficient",
+      "task_profile": {
+        "task_id": "structured-citation-to-pubmed-id",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with exactly journal_title, year, volume, first_page, and first_author; public non-sensitive citation"
+        ],
+        "required_outputs": [
+          "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.match_pubmed_citation"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.match_pubmed_citation"
+      ],
+      "relevant_rejections": {
+        "research.search_pubmed_query": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "covered_outputs": [
+        "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+      ],
+      "unmet_outputs": [],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls": 0,
+      "full_planner_output_sha256": "c571f24a988c48a05869fd0026c98581dd88fa3a693ce5b07a99831136604a22"
+    },
+    {
+      "scenario": "redundant_generic_query_also_allowlisted",
+      "task_profile": {
+        "task_id": "structured-citation-to-pubmed-id",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with exactly journal_title, year, volume, first_page, and first_author; public non-sensitive citation"
+        ],
+        "required_outputs": [
+          "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.match_pubmed_citation",
+        "research.search_pubmed_query"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.match_pubmed_citation"
+      ],
+      "relevant_rejections": {
+        "research.search_pubmed_query": "NO_INPUT_TYPE_MATCH"
+      },
+      "covered_outputs": [
+        "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+      ],
+      "unmet_outputs": [],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls": 0,
+      "full_planner_output_sha256": "83b55acec8dc3420bf32b4b0130c53b89d1b274536b355d53dcea39bdcbbbc92"
+    }
+  ],
+  "claim_ceiling": "Local route-planner proposal only; selection is default-off, caller host declarations are not authority verified, and no candidate execution is authorized by a route proposal.",
+  "catalog_replay": {
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-27T01:23:02Z",
+    "route_trials_replayed": 4,
+    "all_expected_decisions_reproduced": true,
+    "candidate_invoked": false,
+    "provider_calls": 0,
+    "execution_authorized": false,
+    "provider_calls_made": 0,
+    "replay_result_sha256": "41f6e6e5b77d6f6446ea07b80746b50f60c85642cc3fd803597cf45e330552c3",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "0c5397974190b93e16b9e410c4445700e0dc038d",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "05ae84abb8990aabb6f63518d985dd45b9237cb2",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "cc456f0350b041172a8e107881df30086589384a",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:47:07Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "cfb35203e5c6d7321daea1cbbd79d50b7c3acd1e",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:47:07Z",
+      "replayed_at_utc": "2026-10-27T01:23:02Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "b4d7dd9cb6246cbd45da8f6812ed52775f78496d",
+      "superseded_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+      "superseded_observed_at_utc": "2026-10-27T01:23:02Z",
+      "replayed_at_utc": "2026-10-29T14:14:20Z"
+    }
+  ]
+}

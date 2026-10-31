@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "claim_ceiling": "R1 checks required caller-declared expiry timestamps against the observed local system clock before reuse, then applies the same local byte-digest and caller-declared access-scope checks. Clock accuracy, source authority, current external truth, permission grant, semantic relevance, raw-evidence support, sufficiency, truth, and task completion are not established.",
+  "decision": "NO_ELIGIBLE_CONTEXT",
+  "decisions": [
+    {
+      "card_id": "pr264-check-observation-8230dc6",
+      "context_bytes": 265,
+      "decision": "INVALIDATE",
+      "evaluated_at_utc": "2026-10-27T12:55:59Z",
+      "expires_at_utc": "2026-10-26T06:33:03Z",
+      "reason": "MEMORY_CARD_EXPIRED",
+      "source_ids": [
+        "github-checkrun-snapshot-8230dc6"
+      ]
+    }
+  ],
+  "evaluated_at_utc": "2026-10-27T12:55:59Z",
+  "evidential_sufficiency": "NOT_EVALUATED",
+  "execution_authorized": false,
+  "raw_reopen_required": [],
+  "refresh_required": [
+    {
+      "current_version": "snapshot:2026-10-26T02:33:03Z",
+      "declared_current_sha256": "bf4648b531c50d2ea64ef96e97f22021b1025ae74afa0e987c3f4fa94d0bd3d6",
+      "expires_at_utc": "2026-10-26T06:33:03Z",
+      "path": "ignition/data/operations/toolbox-actions-check-observations-real-task-r0.json",
+      "reason": "MEMORY_CARD_EXPIRED",
+      "source_id": "github-checkrun-snapshot-8230dc6"
+    }
+  ],
+  "resource_observation": {
+    "context_bytes_returned": 0,
+    "cost_equivalent": "NOT_MEASURED",
+    "latency_ms": "UNKNOWN",
+    "source_bytes_read": 0,
+    "source_files_hashed": 0
+  },
+  "reused_context_cards": [],
+  "schema_version": "toolbox-reusable-context-preflight-result-r1",
+  "semantic_relevance": "NOT_EVALUATED",
+  "task_id": "TR26-02-expired-checkrun-memory-20261027",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.2.0"
+}

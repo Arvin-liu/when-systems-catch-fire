@@ -1,0 +1,257 @@
+{
+  "schema_version": "ignition.toolbox-openalex-locations-c1-evidence-r0",
+  "evidence_id": "OPENALEX-20261025-LOCATION-METADATA-C1-DOI-01",
+  "owner_policy_basis": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682#C1",
+  "candidate_revision": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "worktree_base": "eb0e988212778d65a1f2413f5dd84692071ec709",
+    "candidate_changes_committed": false
+  },
+  "task": {
+    "task_id": "exact-doi-openalex-and-europe-pmc-location-projection",
+    "doi": "10.1371/journal.pone.0005403",
+    "task_need": "Compare bounded provider-reported location metadata for one known DOI without requesting returned article URLs or downloading article content.",
+    "sensitive_input": false
+  },
+  "comparison_design": {
+    "same_task_same_doi": true,
+    "invocation_order": [
+      "research.lookup_openalex_work_metadata v0.2.0",
+      "research.resolve_europe_pmc_fulltext_locations v0.2.0"
+    ],
+    "candidate_request_count": 1,
+    "comparator_request_count": 1,
+    "time_between_invocations_seconds": 16,
+    "both_calls_used_explicit_public_network_flag": true,
+    "raw_provider_payload_retained": false,
+    "returned_article_urls_requested": false,
+    "article_content_downloaded": false,
+    "repository_files_written_by_tool_invocations": false
+  },
+  "failure_history": [
+    {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "tool_version": "0.2.0",
+      "observed_at_utc_minute": "2026-10-25T22:40Z",
+      "outcome": "NETWORK_ERROR",
+      "http_status": null,
+      "response_sha256": null,
+      "automatic_retry": false,
+      "note": "This failed invocation was followed by a separate explicit invocation; the failure is preserved and is not counted as evidence that the provider lacks the record."
+    }
+  ],
+  "candidate_invocation": {
+    "tool_id": "research.lookup_openalex_work_metadata",
+    "tool_version": "0.2.0",
+    "entrypoint": "python3 -B ignition/tools/toolbox_openalex_work_metadata.py --stdin --allow-public-network",
+    "source_path": "ignition/tools/toolbox_openalex_work_metadata.py",
+    "source_sha256": "cb34f517e68ab5c0c2ba9f70f792c0b73204fc3e337608c62eda478339c82f27",
+    "source_endpoint": "https://api.openalex.org/works",
+    "retrieval_timestamp_utc": "2026-10-25T22:41:55Z",
+    "wall_seconds_single_observation": 0.918,
+    "return_code": 0,
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "match_status": "EXACT_PRIMARY_DOI_MATCH",
+    "response_sha256": "4bfed7be4b858aafa5de23631888c1724d8c0ad2259ca3a7aa23f6bc2864f84c",
+    "work": {
+      "openalex_id": "https://openalex.org/W1977100656",
+      "doi": "10.1371/journal.pone.0005403",
+      "title": "Flotillins Interact with PSGL-1 in Neutrophils and, upon Stimulation, Rapidly Organize into Membrane Domains Subsequently Accumulating in the Uropod",
+      "publication_year": 2009,
+      "type": "article",
+      "is_retracted": false
+    },
+    "open_access_summary": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "any_repository_has_fulltext": true
+    },
+    "location_projection": {
+      "provider_reported_count": 8,
+      "returned_count": 8,
+      "truncated": false,
+      "unsafe_url_fields_omitted": 1,
+      "provider_sources_reported": [
+        "PLOS ONE",
+        "PubMed",
+        "KOPS (University of Konstanz)",
+        "PubMed Central",
+        "BORIS repository portal",
+        "University of Bern repository",
+        "DOAJ",
+        "Open Access CRIS of the University of Bern"
+      ],
+      "provider_reported_license_and_version_fields_present": true
+    },
+    "api_usage": {
+      "meta_count": 1,
+      "meta_response_time_ms": 9,
+      "meta_cost": null,
+      "rate_limit_credits_used": 1,
+      "rate_limit_limit": 1000,
+      "rate_limit_remaining": 605,
+      "rate_limit_reset_seconds": 4685
+    },
+    "returned_urls_requested": false,
+    "article_content_downloaded": false,
+    "raw_response_retained": false
+  },
+  "same_task_comparator": {
+    "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+    "tool_version": "0.2.0",
+    "entrypoint": "python3 -B ignition/tools/toolbox_europe_pmc_fulltext_locator.py --stdin --allow-public-network",
+    "source_path": "ignition/tools/toolbox_europe_pmc_fulltext_locator.py",
+    "source_sha256": "83eef8d5d455467f3c865444f04966b98f03630253592111a08c26f66c55a396",
+    "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "query_mode": "DOI:<exact caller-supplied DOI>; format=json; resultType=core; pageSize=5",
+    "retrieval_timestamp_utc": "2026-10-25T22:42:11Z",
+    "wall_seconds_single_observation": 1.886,
+    "return_code": 0,
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "response_sha256": "5d32c84fa12a05d88b4458722f940f0ac877f9224d36f0b193f0dc56fb6dff45",
+    "provider_hit_count": 1,
+    "match_status": "EXACT_RECORD_WITH_LOCATIONS",
+    "exact_provider_record": {
+      "source": "MED",
+      "id": "19404397",
+      "pmid": "19404397",
+      "pmcid": "PMC2671458",
+      "doi": "10.1371/journal.pone.0005403",
+      "is_open_access_claim": "Y"
+    },
+    "provider_reported_locations": [
+      {
+        "availability": "Subscription required",
+        "availability_code": "S",
+        "document_style": "doi",
+        "site": "DOI",
+        "license": null
+      },
+      {
+        "availability": "Open access",
+        "availability_code": "OA",
+        "document_style": "html",
+        "site": "Europe_PMC",
+        "license": null
+      },
+      {
+        "availability": "Open access",
+        "availability_code": "OA",
+        "document_style": "pdf",
+        "site": "Europe_PMC",
+        "license": null
+      }
+    ],
+    "provider_reported_location_count": 3,
+    "omitted_unsafe_location_count": 0,
+    "returned_urls_requested": false,
+    "article_content_downloaded": false,
+    "license_or_reuse_rights_verified": false,
+    "raw_response_retained": false
+  },
+  "comparison": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "matched_input": "The same DOI was submitted to both services, and each returned an exact record for it.",
+    "observed_difference": "OpenAlex returned eight Work-level location projections and an open_access summary, including provider source, version, and license fields. Europe PMC returned three fullTextUrlList entries with Europe PMC availability codes and document styles. Their provenance and output sets are provider-specific.",
+    "retained_use_cases": [
+      "Use OpenAlex when a task explicitly needs an OpenAlex Work identity, Work-level location records, or its open_access summary.",
+      "Use Europe PMC when a task explicitly needs its typed persistent-identifier match, fullTextUrlList, or Europe PMC availability codes."
+    ],
+    "replacement_candidates": [],
+    "coexistence_decision": "Retain both as optional, default-off tools for distinct provider-specific outputs. This one paired DOI supports task-specific coexistence only; it does not rank provider quality or establish broad location coverage.",
+    "not_established": [
+      "Completeness of either provider location set",
+      "Accuracy, reliability, or broad comparative quality",
+      "Availability or successful access for any returned URL",
+      "License validity or legal reuse permission",
+      "Article content, scientific support, or retraction adjudication",
+      "Stable latency, resource use, rate cost, or paid-account cost",
+      "Overall superiority or replacement of either tool"
+    ]
+  },
+  "evidence_limits": [
+    "One DOI and one successful call per provider do not estimate coverage, accuracy, reliability, or general usefulness.",
+    "Provider fields and counts are observations at retrieval time, not external ground truth.",
+    "Returned URLs were not requested or validated, and no article content was downloaded.",
+    "The providers expose different location schemas, so the counts of eight and three are not directly comparable measures of completeness.",
+    "The single successful OpenAlex invocation reported one API credit while meta.cost was null; this is not a stable cost or latency profile.",
+    "No raw provider payload was retained; response digests preserve byte-level references only for the two captured responses."
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "retirement_status": "ACTIVE_OPTIONAL_DEFAULT_OFF",
+    "basis": "The matched task demonstrates different provider-specific output roles. Keep both available for their distinct requested outputs and preserve uncertainty about completeness, quality, cost, and link validity."
+  },
+  "route_experiment": {
+    "planner_source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+    "current_ref": "WORKTREE_UNCOMMITTED_BASE_eb0e988212778d65a1f2413f5dd84692071ec709",
+    "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+    "provider_calls_during_planning": 0,
+    "task_profile": {
+      "task_id": "exact-doi-openalex-work-locations",
+      "input_types": [
+        "JSON stdin object with one to five unique bare DOI identifiers"
+      ],
+      "required_outputs": [
+        "OpenAlex-reported open-access summary, best OA location, and up to 25 sanitized location records per matched Work; provider count and truncation state remain explicit"
+      ],
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ]
+    },
+    "trials": [
+      {
+        "scenario": "default_off",
+        "include_experimental_tool_ids": [],
+        "allowed_network_hosts": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "openalex_rejection_reasons": [
+          "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        ],
+        "execution_authorized": false,
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+      },
+      {
+        "scenario": "allowlisted_without_host",
+        "include_experimental_tool_ids": [
+          "research.lookup_openalex_work_metadata"
+        ],
+        "allowed_network_hosts": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "openalex_rejection_reasons": [
+          "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        ],
+        "execution_authorized": false,
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+      },
+      {
+        "scenario": "explicit_host_and_candidate",
+        "include_experimental_tool_ids": [
+          "research.lookup_openalex_work_metadata"
+        ],
+        "allowed_network_hosts": [
+          "api.openalex.org"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.lookup_openalex_work_metadata"
+        ],
+        "openalex_rejection_reasons": [],
+        "execution_authorized": false,
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+      }
+    ],
+    "interpretation": "The experimental wrapper is excluded by default, host access is independently required, and an explicit task profile proposes exactly the OpenAlex tool for this output. Planning made no provider calls and did not authorize execution.",
+    "previous_candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
+    "observed_at_utc": "2026-10-25T22:53:36Z"
+  }
+}

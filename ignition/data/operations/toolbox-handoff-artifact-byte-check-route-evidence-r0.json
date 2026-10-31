@@ -1,0 +1,902 @@
+{
+  "schema_version": "toolbox-handoff-artifact-byte-check-route-evidence-r0",
+  "candidate_catalog_refresh": {
+    "prior_git_blob_sha1": "5aff6a5c629231a5778f61424eea770b9f6b067c",
+    "current_git_blob_sha1": "5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84",
+    "history": [
+      "933a349b5d7e34df3a9d46c42896e9ec236a9831",
+      "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
+      "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+      "00fae5794f52ef3270ede181b5ef0679e83f21dc",
+      "5d53a67cfcd3aec453485e93acda87219fd5d600",
+      "256eabb87988c6d1032a867f160aba98119dde96",
+      "f29a0fd8af346fc8548e9469383c8eacde341d45",
+      "e4f223bab0cb12d471464a07d5866046e1fe45e2",
+      "5aff6a5c629231a5778f61424eea770b9f6b067c",
+      "5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84",
+      "5aff6a5c629231a5778f61424eea770b9f6b067c",
+      "5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84"
+    ],
+    "note": "The candidate card now records one local real-task exact permission-declaration comparison and a deliberate synthetic added-write control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting only proposes the read-only tool. The route evidence was replayed after the selected-index search grouper card moved to 0.2.0; default-off behavior and the explicit byte-checker-only route were recomputed against the refreshed candidate catalog. The route was refreshed after adding the optional portable research episode builder; the default-off and byte-checker-only proposals were recomputed against the exact expanded candidate catalog. The route was refreshed after adding the portable research episode builder route evidence; default-off and byte-checker-only decisions were recomputed against this exact catalog. The route was refreshed after adding the source-section parity comparator; default-off and the explicit handoff-checker-only proposal were recomputed against this exact 73-candidate catalog. The new comparator is rejected by the planner path boundary and is not selected or invoked for the receipt task."
+  },
+  "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
+  "task": {
+    "task_id": "handoff-artifact-local-digest-check",
+    "input_types": [
+      "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
+    ],
+    "required_outputs": [
+      "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned.",
+      "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+    ],
+    "rationale": "The local-byte check is useful only when the caller needs actual receipt-referenced bytes compared; it remains excluded without an explicit experimental tool ID."
+  },
+  "route_profile": {
+    "task_id": "handoff-artifact-local-digest-check",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+    "input_types": [
+      "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
+    ],
+    "required_outputs": [
+      "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned.",
+      "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "candidate_allowlist": [
+    "collaboration.verify_handoff_artifact_files"
+  ],
+  "default_route_result": {
+    "schema_version": "ignition-tool-route-plan-r0",
+    "task_id": "handoff-artifact-local-digest-check",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+    "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+    "allowed_network_hosts": [],
+    "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+    "decision": "INCOMPLETE",
+    "selected_tools": [],
+    "required_outputs": [
+      "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned.",
+      "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+    ],
+    "covered_outputs": [],
+    "unmet_outputs": [
+      "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED.",
+      "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned."
+    ],
+    "rejected_candidates": [
+      {
+        "tool_id": "collaboration.build_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.preflight_receiver_handoff",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.select_handoff_advisories",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_agent_episode_binding",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.verify_handoff_artifact_files",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "executor.reference_conformance",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "external.live_invocation",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "foundation.batch_resolve_current_asset_references",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.read_current_asset_card",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.resolve_current_asset",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "function_os.run_bounded_symbolic_spec",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "governance.preflight_declared_permission_delta",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.adaptive_toolbox_route_planner",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.recover_current_state",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "ignition.select_bounded_thinking_operation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.assemble_context_packet",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.cluster_source_brief",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.collide_object",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.navigate_raw_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.preflight_reusable_context",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.project_results",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.read_foundation",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_claim",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_evidence_link",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "language_thought.project_bounded_meaning",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.attribute_actions_validation_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.audit_execution_state_lineage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_validation_target_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_audit_findings",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_context_packet_variants",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_source_section_bytes",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_toolbox_component_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_exact_head_check_observations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_repository",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.plan_validation_invocation_deduplication",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_execution_effect_receipt",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_failure_anchored_recovery",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_governed_improvement_transition",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_producer_consumer_semantics",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_interval_union",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_component_path_residue",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.validate_checkpoint",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "planning.compare_task_decomposition_solvability",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "reasoning.search_structural_analogies",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method",
+        "reason": "EXECUTION_MODE_NOT_ALLOWED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method_1_3",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.audit_pubmed_updates_from_doi",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.bind_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_crossref_reference_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_evidence_update_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_ch4_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_co2_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_n2o_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_sf6_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.coordinate_obligations",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_datacite_doi_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_crossref_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_pubmed_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.merge_selected_index_search_results",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_g1_goal_intake",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_grounded_ideation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.probe_counterfactual_fragility",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.reos_full",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_arxiv_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_crossref_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_europe_pmc_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_openalex_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_pubmed_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_evidence_program_snapshot",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_reos_light",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.verify_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "runtime.inspect_declared_pack_catalog",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.build_archify_derived_ir",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.render_derived_system_view",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.apply_editorial_method",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.preflight_cognitive_migration_revision",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "writing.validate_publication_surface",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      }
+    ],
+    "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+    "cost_estimate": {
+      "status": "UNKNOWN",
+      "reason": "No comparable measured cost data is declared for the candidate operations."
+    },
+    "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+    "execution_authorized": false,
+    "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+    "source_refs": {
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "experimental_candidate_catalog_git_blob_sha1": "5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84"
+    }
+  },
+  "route_result": {
+    "schema_version": "ignition-tool-route-plan-r0",
+    "task_id": "handoff-artifact-local-digest-check",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+    "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+    "allowed_network_hosts": [],
+    "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+    "decision": "COMPLETE",
+    "selected_tools": [
+      {
+        "tool_id": "collaboration.verify_handoff_artifact_files",
+        "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+        "availability": "EXPERIMENTAL_AVAILABLE",
+        "input_types": [
+          "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
+        ],
+        "output_types": [
+          "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned.",
+          "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+        ],
+        "execution_mode": "READ_ONLY_RUN",
+        "permission_mode": "READ_ONLY_BOUNDED_LOCAL_ARTIFACT_HASHING",
+        "permissions": {
+          "read_paths": [
+            "ignition/"
+          ],
+          "write_paths": [],
+          "network": false,
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        },
+        "explicit_owner_authorization_required": false,
+        "dependencies": [
+          "ignition/agent_federation/contracts.py"
+        ],
+        "declared_effect_rank": 0,
+        "pre_invocation_conditions": [
+          "A route is a proposal only; the caller separately decides whether to invoke the read-only tool, and digest match never authorizes a handoff.",
+          "Do not select for UTF-8 excerpt or obligation-mapping work covered by knowledge.assemble_context_packet, or for receipt-to-bundle and receiver-declaration checks covered by collaboration.preflight_receiver_handoff.",
+          "Every artifact reference is a safe relative POSIX path under that selected root, and each file is expected to be a regular file no larger than 8 MiB within the 32 MiB total byte budget.",
+          "Only select through an explicit experimental-tool allowlist when a task requires current bytes for receipt-referenced local artifacts under ignition/ and needs no artifact content output.",
+          "The caller accepts an unkeyed digest comparison and preserves execution_authorized=false as well as runtime_enforcement_status=NOT_EVALUATED.",
+          "The caller supplies one valid FederatedResultReceipt with 1 to 64 artifact references and an explicit workspace root under ignition/."
+        ],
+        "claim_ceiling": "Checks whether bounded bytes read from regular files under an explicit repository-local ignition/ workspace root match the SHA-256 values in a typed FederatedResultReceipt whose canonical unkeyed self-digest passes. It does not authenticate the receipt or source, prove file provenance or task correctness, observe a stable runtime workspace after reading, authorize actions, enforce runtime isolation, or establish scientific truth.",
+        "covers_required_outputs": [
+          "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED.",
+          "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned."
+        ]
+      }
+    ],
+    "required_outputs": [
+      "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned.",
+      "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+    ],
+    "covered_outputs": [
+      "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED.",
+      "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned."
+    ],
+    "unmet_outputs": [],
+    "rejected_candidates": [
+      {
+        "tool_id": "collaboration.build_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.preflight_receiver_handoff",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.select_handoff_advisories",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_agent_episode_binding",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "executor.reference_conformance",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "external.live_invocation",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "foundation.batch_resolve_current_asset_references",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.read_current_asset_card",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.resolve_current_asset",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "function_os.run_bounded_symbolic_spec",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "governance.preflight_declared_permission_delta",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.adaptive_toolbox_route_planner",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.recover_current_state",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "ignition.select_bounded_thinking_operation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.assemble_context_packet",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.cluster_source_brief",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.collide_object",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.navigate_raw_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.preflight_reusable_context",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.project_results",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.read_foundation",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_claim",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_evidence_link",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "language_thought.project_bounded_meaning",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.attribute_actions_validation_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.audit_execution_state_lineage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_validation_target_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_audit_findings",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_context_packet_variants",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_source_section_bytes",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_toolbox_component_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_exact_head_check_observations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_repository",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.plan_validation_invocation_deduplication",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_execution_effect_receipt",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_failure_anchored_recovery",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_governed_improvement_transition",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_producer_consumer_semantics",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_interval_union",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_component_path_residue",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.validate_checkpoint",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "planning.compare_task_decomposition_solvability",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "reasoning.search_structural_analogies",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method",
+        "reason": "EXECUTION_MODE_NOT_ALLOWED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method_1_3",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.audit_pubmed_updates_from_doi",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.bind_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_crossref_reference_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_evidence_update_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_ch4_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_co2_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_n2o_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_sf6_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.coordinate_obligations",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_datacite_doi_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_crossref_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_pubmed_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.merge_selected_index_search_results",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_g1_goal_intake",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_grounded_ideation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.probe_counterfactual_fragility",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.reos_full",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_arxiv_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_crossref_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_europe_pmc_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_openalex_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_pubmed_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_evidence_program_snapshot",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_reos_light",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.verify_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "runtime.inspect_declared_pack_catalog",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.build_archify_derived_ir",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.render_derived_system_view",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.apply_editorial_method",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.preflight_cognitive_migration_revision",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "writing.validate_publication_surface",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      }
+    ],
+    "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+    "cost_estimate": {
+      "status": "UNKNOWN",
+      "reason": "No comparable measured cost data is declared for the candidate operations."
+    },
+    "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+    "execution_authorized": false,
+    "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+    "source_refs": {
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "experimental_candidate_catalog_git_blob_sha1": "5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84"
+    }
+  },
+  "execution_authorized": false,
+  "interpretation": "The default route remains INCOMPLETE with no tool selected. Explicitly allowlisting collaboration.verify_handoff_artifact_files proposes only that bounded byte checker. The portable episode builder and source-section parity comparator remain unselected and are not invoked for this receipt task."
+}

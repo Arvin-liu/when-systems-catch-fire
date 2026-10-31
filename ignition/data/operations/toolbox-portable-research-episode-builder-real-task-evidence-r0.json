@@ -1,0 +1,36 @@
+{
+  "schema_version": "toolbox-portable-research-episode-builder-real-task-evidence-r0",
+  "evidence_type": "REAL_TASK_OUTCOME",
+  "tool_id": "collaboration.build_portable_research_episode",
+  "tool_version": "0.1.0",
+  "package_revision": "refs/heads/codex/toolbox-growth-20261025@9746d8e25db4277079db0dbc809a57bbc14ec37e",
+  "invocation": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_build_portable_research_episode.py --stdin --workspace-root ignition",
+    "returncode": 0,
+    "stderr_empty": true,
+    "input_path": "ignition/data/operations/toolbox-portable-research-episode-builder-real-task-input-r0.json",
+    "input_bytes": 7031,
+    "input_sha256": "d7ca203356db71b9d3fe95161cc297567bc8785e572efdacec9203a0e542602f",
+    "source_path": "ignition/tools/toolbox_build_portable_research_episode.py",
+    "source_sha256": "049d4ef755763d1e46ec2494c4170b7024fcf337bf52d6ed58d1fb382d99f542",
+    "output_path": "ignition/data/operations/toolbox-portable-research-episode-builder-real-task-output-r0.json",
+    "output_bytes": 11721,
+    "output_sha256": "ccc494331076974e2fe892b7fc218753c2ef1b18d884838a714ba80aa88cb1e4",
+    "status": "BUILD_SUCCEEDED",
+    "artifact_count": 11,
+    "receipt_count": 11,
+    "total_artifact_bytes_read": 153793,
+    "network_permission": false,
+    "tool_file_writes": false,
+    "execution_authorized": false
+  },
+  "independent_checks": {
+    "output_schema": "PASS",
+    "existing_episode_validator": "EPISODE_MANIFEST_CONSISTENT",
+    "artifact_digest_and_byte_count_recheck": "PASS",
+    "rechecked_artifact_count": 11,
+    "source_authenticity": "NOT_ESTABLISHED",
+    "episode_semantic_truth": "NOT_ESTABLISHED"
+  },
+  "claim_ceiling": "One bounded repository-local package build. The builder observed and hashed 11 caller-selected files, assembled a manifest accepted as internally consistent by the existing episode validator, and its 11 file receipts matched a separate local readback. This does not authenticate sources, actors, runs, reviews, provenance, permissions, or scientific claims, and does not establish broad reliability or cost."
+}

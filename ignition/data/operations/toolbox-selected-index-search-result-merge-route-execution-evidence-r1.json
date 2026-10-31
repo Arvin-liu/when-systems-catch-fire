@@ -1,0 +1,200 @@
+{
+  "schema_version": "toolbox-selected-index-search-result-merge-route-execution-evidence-r1",
+  "observed_at_utc": "2026-10-27T08:47:54Z",
+  "tool_id": "research.merge_selected_index_search_results",
+  "tool_version": "0.1.0",
+  "candidate_head": "9ec3b12403a0b97ff4fd042c588a3e055eba343e",
+  "task_id": "merge-bounded-multi-index-topic-search-results",
+  "task_profile_path": "ignition/data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r1.json",
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "allowlist_count": 0,
+      "exit_code": 2,
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+      ],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "wall_time_ns": 33991917,
+      "stdin_bytes": 630,
+      "stdout_bytes": 13055,
+      "stdout_sha256": "b72cda10eec199d10376fbb9e9de78843dbf1c61bd322e90ab81de01ef4a7aa0"
+    },
+    {
+      "scenario": "explicit_tool_only",
+      "allowlist_count": 1,
+      "exit_code": 0,
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.merge_selected_index_search_results"
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "wall_time_ns": 32862708,
+      "stdin_bytes": 630,
+      "stdout_bytes": 15167,
+      "stdout_sha256": "de903773134360cfad99822dad0df79f9e94ae8dff02fec55cd8f36d12057158"
+    },
+    {
+      "scenario": "broad_explicit_allowlist",
+      "allowlist_count": 71,
+      "exit_code": 0,
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.merge_selected_index_search_results"
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "wall_time_ns": 311061834,
+      "stdin_bytes": 630,
+      "stdout_bytes": 14397,
+      "stdout_sha256": "0ebe91a555e08c1aea35d79551ce57ef81cc8d522143dbc60b41d0e60feffdd4"
+    },
+    {
+      "scenario": "other_candidates_only",
+      "allowlist_count": 70,
+      "exit_code": 2,
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+      ],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "wall_time_ns": 304138666,
+      "stdin_bytes": 630,
+      "stdout_bytes": 12285,
+      "stdout_sha256": "c59f4e71c303d913cbe7739d8d392aa8f5c7c7d50c723ad93ed247867bf0e27a"
+    },
+    {
+      "scenario": "unrelated_input_even_when_allowed",
+      "allowlist_count": 1,
+      "exit_code": 2,
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+      ],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "wall_time_ns": 34942334,
+      "stdin_bytes": 445,
+      "stdout_bytes": 13038,
+      "stdout_sha256": "3bbff18b65c49d4a649cf3d25055e38fa705d823d720e0941221508545700978"
+    }
+  ],
+  "selected_execution": {
+    "route_scenario": "explicit_tool_only",
+    "entrypoint": "python3 -B ignition/tools/toolbox_merge_selected_index_search_results.py --stdin",
+    "execution_authorized_by_route_planner": false,
+    "execution_mode": "BOUNDED_OFFLINE_STDIN_PROCESS",
+    "invocation_basis": "Owner-authorized isolated development smoke and exact task validation; this does not activate general runtime routing.",
+    "exit_code": 0,
+    "input_path": "ignition/data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
+    "input_bytes": 8971,
+    "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+    "output_bytes": 4710,
+    "output_sha256": "d717d8ab414cc2acdb60d0316988b0ea8ae599301daad70ab0248ead44a5300a",
+    "stderr_bytes": 0,
+    "expected_output_semantic_match": true,
+    "summary": {
+      "status": "COMPLETE",
+      "record_count_total": 10,
+      "exact_normalized_doi_cluster_count": 0,
+      "unclustered_record_count": 10
+    },
+    "cost_observation": {
+      "status": "ONE_LOCAL_INVOCATION_OBSERVED_NOT_GENERALIZABLE",
+      "wall_time_ns": 24335458,
+      "network_calls": 0,
+      "filesystem_writes_by_tool": 0
+    }
+  },
+  "bindings": {
+    "candidate_count": 71,
+    "catalog_git_blob_sha1_at_route_time": "256eabb87988c6d1032a867f160aba98119dde96",
+    "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+    "tool_source_sha256": "23500d976e0c60b5e0760421880864a1fe5573f68c5129792170d729f0885ea0",
+    "task_profile_sha256": "9b91c70f3900ef4bbdd1ac12b760703b27bdc245cfaca06a5d284819a4066fab",
+    "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+    "expected_output_file_sha256": "d717d8ab414cc2acdb60d0316988b0ea8ae599301daad70ab0248ead44a5300a",
+    "current_ref_resolution": "CALLER_SUPPLIED_ONLY_NOT_RESOLVED_BY_PLANNER"
+  },
+  "measurement_attempt_history": [
+    {
+      "attempt": 1,
+      "tool_run_exit_code": 0,
+      "semantic_output_comparison": "PASS",
+      "evidence_summary_status": "FAILED",
+      "failure": "The first recorder queried nonexistent output key exact_doi_groups; the actual contract key is exact_normalized_doi_clusters. No repository files changed."
+    },
+    {
+      "attempt": 2,
+      "tool_run_exit_code": 0,
+      "semantic_output_comparison": "PASS",
+      "evidence_summary_status": "COMPLETE"
+    }
+  ],
+  "validation_attempt_history": [
+    {
+      "attempt": 1,
+      "focused_route_suite_exit_code": 1,
+      "findings": [
+        "The new replay test referenced an undefined REPO_ROOT constant.",
+        "The older route test incorrectly required its historical catalog hash 7112ccc706fb9ea437139ed5b0feddbcb3ccb218 to equal the evolved current catalog hash 6f597b671edc8324bf491e88318472fd545d67f5."
+      ],
+      "candidate_tool_failure": false
+    },
+    {
+      "attempt": 2,
+      "focused_route_suite_exit_code": 1,
+      "findings": [
+        "The new test executed the candidate and verified its output hash and semantic result, then referenced network_calls at the wrong evidence nesting level."
+      ],
+      "candidate_tool_failure": false
+    },
+    {
+      "attempt": 3,
+      "focused_route_suite_exit_code": 0,
+      "focused_route_suite_tests_passed": 8
+    },
+    {
+      "attempt": 4,
+      "focused_route_suite_exit_code": 1,
+      "findings": [
+        "A combined unittest invocation launched from ignition/ omitted the repository root from PYTHONPATH; test_toolbox_selected_index_search_result_merge could not import ignition.tools. The route, routing and identity-card test modules themselves completed; the suite was rerun from the repository root."
+      ],
+      "candidate_tool_failure": false
+    },
+    {
+      "attempt": 5,
+      "focused_route_suite_exit_code": 0,
+      "focused_route_suite_tests_passed": 8,
+      "adaptive_route_tests_passed": 55,
+      "identity_card_tests_passed": 21,
+      "identity_card_projection_check": "PASS",
+      "candidate_card_validator": "PASS",
+      "candidate_tool_failure": false
+    }
+  ],
+  "effect_observation": {
+    "planner_invocations": 5,
+    "candidate_tool_invocations": 1,
+    "network_requests": 0,
+    "execution_authorized_by_planner": false,
+    "candidate_general_runtime_activation": false,
+    "working_tree_was_clean_after_candidate_execution": true
+  },
+  "nonclaims": [
+    "The planner produced proposals only and did not authorize execution; the single local development invocation is separate.",
+    "The broad allowlist scenario allowed all 71 candidates but selected only the same DOI grouper; no redundant tools were invoked.",
+    "Observed one-run wall time is not a general cost estimate; the card cost estimate remains UNKNOWN.",
+    "The source and DOI grouping result are limited to these ten bounded records; zero groups does not estimate provider recall or demonstrate disjoint index coverage."
+  ]
+}

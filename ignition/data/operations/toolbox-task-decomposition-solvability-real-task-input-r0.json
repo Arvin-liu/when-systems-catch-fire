@@ -1,0 +1,199 @@
+{
+  "schema_version": "task-decomposition-solvability-input-r0",
+  "task_id": "homepage-main-release-readiness-20261026",
+  "task_revision": "source-4e1e3ae8-candidate-a081fe47-formal-main-483658e2-pr264-8230dc6c",
+  "task_input_types": [
+    "owner_source_sha",
+    "homepage_candidate_ref",
+    "formal_main_ref",
+    "formal_pr_head"
+  ],
+  "required_output_types": ["formal_main_release_readiness"],
+  "resource_budget": {
+    "max_action_count": 8,
+    "max_wall_clock_seconds": 600,
+    "max_output_bytes": 65536
+  },
+  "capability_contracts": [
+    {
+      "capability_id": "compare_owner_copy_to_candidate",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["owner_source_sha", "homepage_candidate_ref"],
+      "produced_output_types": ["homepage_copy_match_receipt"]
+    },
+    {
+      "capability_id": "run_human_front_door_targeted_suite",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["homepage_candidate_ref"],
+      "produced_output_types": ["human_front_door_test_receipt"]
+    },
+    {
+      "capability_id": "read_formal_pr_and_branch_protection",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["formal_main_ref", "formal_pr_head"],
+      "produced_output_types": ["formal_required_checks_snapshot"]
+    },
+    {
+      "capability_id": "run_required_full_foundation",
+      "availability": "UNAVAILABLE",
+      "accepted_input_types": ["formal_pr_head"],
+      "produced_output_types": ["foundation_validation_receipt"]
+    },
+    {
+      "capability_id": "evaluate_current_protected_release_contract",
+      "availability": "AVAILABLE",
+      "accepted_input_types": [
+        "homepage_copy_match_receipt",
+        "human_front_door_test_receipt",
+        "formal_required_checks_snapshot",
+        "foundation_validation_receipt"
+      ],
+      "produced_output_types": ["formal_main_release_readiness"]
+    }
+  ],
+  "validator_contracts": [
+    {
+      "validator_id": "verify_source_candidate_blob_equality",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["homepage_copy_match_receipt"],
+      "validated_output_types": ["homepage_copy_match_receipt"]
+    },
+    {
+      "validator_id": "verify_target_test_exit_and_count",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["human_front_door_test_receipt"],
+      "validated_output_types": ["human_front_door_test_receipt"]
+    },
+    {
+      "validator_id": "bind_pr_head_to_required_check_snapshot",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["formal_required_checks_snapshot"],
+      "validated_output_types": ["formal_required_checks_snapshot"]
+    },
+    {
+      "validator_id": "verify_required_foundation_status",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["foundation_validation_receipt"],
+      "validated_output_types": ["foundation_validation_receipt"]
+    },
+    {
+      "validator_id": "recompute_release_gate_from_bound_evidence",
+      "availability": "AVAILABLE",
+      "accepted_input_types": ["formal_main_release_readiness"],
+      "validated_output_types": ["formal_main_release_readiness"]
+    }
+  ],
+  "alternatives": [
+    {
+      "alternative_id": "focused_homepage_checks_only",
+      "work_units": [
+        {
+          "unit_id": "compare_copy",
+          "depends_on": [],
+          "required_input_types": ["owner_source_sha", "homepage_candidate_ref"],
+          "produced_output_types": ["homepage_copy_match_receipt"],
+          "capability_id": "compare_owner_copy_to_candidate",
+          "validator_ids": ["verify_source_candidate_blob_equality"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        },
+        {
+          "unit_id": "run_focused_homepage_tests",
+          "depends_on": [],
+          "required_input_types": ["homepage_candidate_ref"],
+          "produced_output_types": ["human_front_door_test_receipt"],
+          "capability_id": "run_human_front_door_targeted_suite",
+          "validator_ids": ["verify_target_test_exit_and_count"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        }
+      ]
+    },
+    {
+      "alternative_id": "current_protected_main_release_path",
+      "work_units": [
+        {
+          "unit_id": "compare_copy",
+          "depends_on": [],
+          "required_input_types": ["owner_source_sha", "homepage_candidate_ref"],
+          "produced_output_types": ["homepage_copy_match_receipt"],
+          "capability_id": "compare_owner_copy_to_candidate",
+          "validator_ids": ["verify_source_candidate_blob_equality"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        },
+        {
+          "unit_id": "run_focused_homepage_tests",
+          "depends_on": [],
+          "required_input_types": ["homepage_candidate_ref"],
+          "produced_output_types": ["human_front_door_test_receipt"],
+          "capability_id": "run_human_front_door_targeted_suite",
+          "validator_ids": ["verify_target_test_exit_and_count"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        },
+        {
+          "unit_id": "read_current_release_gate",
+          "depends_on": [],
+          "required_input_types": ["formal_main_ref", "formal_pr_head"],
+          "produced_output_types": ["formal_required_checks_snapshot"],
+          "capability_id": "read_formal_pr_and_branch_protection",
+          "validator_ids": ["bind_pr_head_to_required_check_snapshot"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        },
+        {
+          "unit_id": "run_full_foundation_gate",
+          "depends_on": [],
+          "required_input_types": ["formal_pr_head"],
+          "produced_output_types": ["foundation_validation_receipt"],
+          "capability_id": "run_required_full_foundation",
+          "validator_ids": ["verify_required_foundation_status"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        },
+        {
+          "unit_id": "evaluate_main_release_readiness",
+          "depends_on": [
+            "compare_copy",
+            "run_focused_homepage_tests",
+            "read_current_release_gate",
+            "run_full_foundation_gate"
+          ],
+          "required_input_types": [
+            "homepage_copy_match_receipt",
+            "human_front_door_test_receipt",
+            "formal_required_checks_snapshot",
+            "foundation_validation_receipt"
+          ],
+          "produced_output_types": ["formal_main_release_readiness"],
+          "capability_id": "evaluate_current_protected_release_contract",
+          "validator_ids": ["recompute_release_gate_from_bound_evidence"],
+          "estimated_cost": {
+            "action_count": 1,
+            "wall_clock_seconds": null,
+            "output_bytes": null
+          }
+        }
+      ]
+    }
+  ]
+}

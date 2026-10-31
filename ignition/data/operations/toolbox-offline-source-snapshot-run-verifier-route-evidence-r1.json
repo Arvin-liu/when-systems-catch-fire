@@ -1,0 +1,808 @@
+{
+  "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true,
+    "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "execution_authorized": false,
+    "observed_at_utc": "2026-10-26T03:18:22Z",
+    "previous_candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+    "provider_calls_made": 0,
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+    "replay_result_sha256": "56316e8a4723c9fd66ad8be69f4f151af038604165019783dff222fd572839e0",
+    "route_trials_replayed": 2
+  },
+  "catalog_replay_history": [
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T22:52:47Z",
+      "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:10:52Z",
+      "previous_candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:11:27Z",
+      "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:26:13Z",
+      "previous_candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "863fa8b072fb6dfdbfd58b682a7695984864e772e1661c6b5841c1aa01bbf462",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:51:22Z",
+      "previous_candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "863fa8b072fb6dfdbfd58b682a7695984864e772e1661c6b5841c1aa01bbf462",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T00:19:19Z",
+      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "2f37a3c67bdf83f566386bee0d7eb5130768c47d879f121535aae147ab71bbf7",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T00:19:19Z",
+      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T00:52:07Z",
+      "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
+      "replay_result_sha256": "df73431e2d3d641220e6e2e3154ebe863e48524913f834fd60074e84795b8c98",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:31:40Z",
+      "previous_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "863fa8b072fb6dfdbfd58b682a7695984864e772e1661c6b5841c1aa01bbf462",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:33:10Z",
+      "previous_candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "863fa8b072fb6dfdbfd58b682a7695984864e772e1661c6b5841c1aa01bbf462",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:51:05Z",
+      "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:51:05Z",
+      "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T03:11:49Z",
+      "previous_candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "56316e8a4723c9fd66ad8be69f4f151af038604165019783dff222fd572839e0",
+      "route_trials_replayed": 2
+    }
+  ],
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_trials": [
+    {
+      "execution_authorized": false,
+      "expected_decision": "INCOMPLETE",
+      "expected_execution_authorized": false,
+      "expected_selected_tool_ids": [],
+      "include_experimental_tool_ids": [],
+      "relevant_rejections": [
+        {
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+          "tool_id": "research.verify_offline_source_snapshot_run"
+        }
+      ],
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "offline-e37-run-receipt-verification",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
+        }
+      },
+      "scenario": "default_off",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "task_id": "offline-e37-run-receipt-verification"
+      }
+    },
+    {
+      "execution_authorized": false,
+      "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
+      "expected_selected_tool_ids": [
+        "research.verify_offline_source_snapshot_run"
+      ],
+      "include_experimental_tool_ids": [
+        "research.verify_offline_source_snapshot_run"
+      ],
+      "relevant_rejections": [],
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "offline-e37-run-receipt-verification",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+            ],
+            "output_types": [
+              "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "READ_ONLY_BOUNDED_CALLER_SELECTED_EXTERNAL_RUN_TREE",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_verify_offline_source_snapshot_run.py"
+              ],
+              "write_paths": [],
+              "network": false,
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [
+              "ignition/research_workflow/slot.py"
+            ],
+            "declared_effect_rank": 0,
+            "pre_invocation_conditions": [
+              "Do not select for Federation receipts, authenticated provenance, semantic/scientific review, or any action authorization; a route proposal never authorizes execution.",
+              "Remain excluded unless this exact tool ID is explicitly allowlisted for checking a fixed E37 run receipt.",
+              "The caller accepts an unkeyed SHA-256 comparison as byte-consistency evidence only.",
+              "The directory is a caller-selected canonical absolute path outside and not containing the repository checkout.",
+              "The run contains one ignition-source-binding-slot-run-v1 receipt from the fixed e37-source-snapshot-v1 adapter.",
+              "The task supplies a canonical absolute external run directory and permits READ_ONLY_RUN within the declared byte bounds."
+            ],
+            "claim_ceiling": "Checks bounded regular-file bytes and exact file membership against an E37 receipt’s unkeyed SHA-256 declarations only. It does not authenticate the receipt or source, prove capture origin, execution history, semantic support, task correctness, scientific truth, stable future state, or authorization.",
+            "covers_required_outputs": [
+              "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+            ]
+          }
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "covered_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
+        }
+      },
+      "scenario": "explicit_candidate_allowlist",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "task_id": "offline-e37-run-receipt-verification"
+      }
+    }
+  ],
+  "schema_version": "toolbox-route-evidence-r1",
+  "summary": {
+    "default_decision": "INCOMPLETE",
+    "default_selected_tool_ids": [],
+    "execution_authorized": false,
+    "explicit_allowlist_decision": "COMPLETE",
+    "explicit_allowlist_selected_tool_ids": [
+      "research.verify_offline_source_snapshot_run"
+    ],
+    "network": false,
+    "repository_write_paths": []
+  },
+  "tool_id": "research.verify_offline_source_snapshot_run"
+}

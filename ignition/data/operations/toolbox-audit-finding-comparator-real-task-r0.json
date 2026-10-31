@@ -1,0 +1,38 @@
+{
+  "schema_version": "toolbox-audit-finding-comparator-real-task-evidence-r0",
+  "task_id": "compare-records-for-exact-formal-candidate-route-preflight",
+  "input_ref": "ignition/data/operations/toolbox-audit-finding-comparator-real-task-input-r0.json",
+  "input_sha256": "4b09392226ac4313b41f242eab5874479523e1b13da43649051dd219abd9126e",
+  "tool_id": "maintenance.compare_audit_findings",
+  "tool_version": "0.1.0",
+  "output_sha256": "fcba464aa683a62944b229e6f94af871056b1387f132923248e5fc09a24e2073",
+  "comparison_status": "CALLER_DECLARED_AUDIT_RECORDS_COMPARED",
+  "target_binding": {
+    "basis": "CALLER_DECLARED_MATCHING_FIELDS_NOT_AUTHENTICATED",
+    "scope_ref": "formal-main-to-toolbox-candidate-route-eligibility",
+    "target_ref": "Arvin-liu/when-systems-catch-fire",
+    "target_revision": "213e386e0b4cbb4d7ba35ac4267b7aaa2e1c9872"
+  },
+  "reviewer_relation": "DISTINCT_CALLER_DECLARED_REVIEWER_REFERENCES_IDENTITY_UNVERIFIED",
+  "reviewer_independence_established": false,
+  "summary": {
+    "disposition_agreements": 1,
+    "disposition_disagreements": 0,
+    "evidence_reference_sets_different": 1,
+    "evidence_reference_sets_equal": 0,
+    "primary_only": 0,
+    "second_review_only": 1,
+    "shared": 1
+  },
+  "finding_relations": [
+    {
+      "finding_id": "exact-head-ci-absent",
+      "record_relation": "ONLY_IN_SECOND_REVIEW"
+    },
+    {
+      "finding_id": "unmapped-path-residue",
+      "record_relation": "DISPOSITION_AGREES"
+    }
+  ],
+  "claim_ceiling": "Comparison of two caller-supplied real project records only; the record labels are not authenticated, and no independent review, truth, CI authority, or merge eligibility is established."
+}

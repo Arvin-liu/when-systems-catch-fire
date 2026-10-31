@@ -1,0 +1,1180 @@
+{
+  "residues": [
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "TOOLBOX.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-check-observations-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-check-observations-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-check-observations-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-agent-episode-binding-c1-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-agent-episode-binding-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-agent-episode-binding-source-provenance-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-arxiv-metadata-live-task-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-audit-finding-comparator-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-audit-finding-comparator-real-task-input-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-audit-finding-comparator-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-audit-finding-comparator-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-audit-finding-comparator-route-profile-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-blueprint-reference-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-real-task-closeout-input-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-real-task-closeout-output-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-real-task-initial-input-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-real-task-initial-output-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-bounded-thinking-operation-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-c1-evidence-program-validator-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-candidate-cards-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-context-packet-c1-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-context-packet-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-context-packet-variant-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-context-packet-variant-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-context-packet-variant-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-context-packet-variant-route-profile-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-references-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-relations-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-current-asset-t2-real-task-outcome-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-europe-pmc-fulltext-locator-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-execution-pareto-frontier-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-execution-pareto-frontier-route-profile-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-execution-pareto-frontier-source-binding-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-handoff-artifact-byte-check-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-handoff-artifact-byte-check-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-handoff-artifact-byte-check-route-profile-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-identity-cards-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-noaa-co2-annual-growth-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-noaa-co2-source-review-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-offline-source-snapshot-binding-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-offline-source-snapshot-run-verifier-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-offline-source-snapshot-run-verifier-route-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-openalex-live-task-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-openalex-locations-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-portable-research-episode-c1-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-portable-research-episode-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-portable-research-episode-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-portable-research-episode-route-profile-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-producer-consumer-semantic-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-producer-consumer-semantic-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-producer-consumer-semantic-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-producer-consumer-semantic-route-profile-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-publication-metadata-cross-source-real-input-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-publication-metadata-cross-source-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-publication-metadata-cross-source-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-real-task-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-route-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-pubmed-doi-update-route-evidence-r2.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-raw-evidence-navigator-c1-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-raw-evidence-navigator-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-real-task-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-real-task-route-evidence-r1.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-receiver-handoff-preflight-c1-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-reusable-context-preflight-c1-comparison-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-reusable-context-preflight-real-task-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "data/operations/toolbox-reusable-context-preflight-route-evidence-r0.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/actions-step-timeline-summary.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/actions-validation-attribution.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/arxiv-metadata-lookup.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/execution-candidate-pareto-frontier.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/noaa-ch4-annual-growth-lookup.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/noaa-co2-annual-growth-lookup.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/portable-research-episode-preflight.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/producer-consumer-semantic-preflight.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-actions-check-observations.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-agent-episode-binding.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-audit-finding-comparator.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-bounded-thinking-operation.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-context-packet-variant-comparator.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-crossref-metadata-verifier.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-crossref-reference-metadata-comparison.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-europe-pmc-fulltext-locator.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-europe-pmc-query-search.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-handoff-artifact-byte-check.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-offline-source-snapshot-binding.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-openalex-work-metadata.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-publication-metadata-cross-source-comparison.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-receiver-handoff-preflight.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-reusable-context-preflight.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "docs/operations/toolbox-verify-offline-source-snapshot-run.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "research_os_v1/g1_goal_intake/README.md",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "research_os_v1/g1_goal_intake/__init__.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "research_os_v1/g1_goal_intake/__main__.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "research_os_v1/g1_goal_intake/fixtures/structurally-valid-proposal.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "research_os_v1/g1_goal_intake/preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/execution-candidate-pareto-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/execution-candidate-pareto-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/publication-metadata-comparison-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/publication-metadata-comparison-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/pubmed-doi-update-audit-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/pubmed-doi-update-audit-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/pubmed-update-link-inspection-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-actions-check-observations-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-actions-check-observations-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-actions-validation-attribution-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-actions-validation-attribution-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-agent-episode-binding-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-audit-finding-comparison-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-bounded-thinking-operation-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-bounded-thinking-operation-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-candidate-cards-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r1.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-europe-pmc-fulltext-locator-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-portable-research-episode-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-producer-consumer-semantic-input-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-producer-consumer-semantic-output-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-reusable-context-preflight-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/operations/toolbox-reusable-context-preflight-result-r0.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_batch_canonical_resolution_tool.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_cluster_source_brief_tool.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_research_os_v1_g1_goal_intake.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_actions_check_observations.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_actions_check_observations_routing.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_actions_repeated_step_analysis.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_actions_step_timeline.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_actions_validation_attribution.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_actions_validation_attribution_routing.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_agent_episode_binding.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_arxiv_metadata_lookup.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_audit_finding_comparator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_bounded_thinking_operation.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_bounded_thinking_operation_routing.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_build_archify_derived_ir.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_cognitive_migration_revision.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_context_packet.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_context_packet_variant_comparator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_crossref_metadata_verifier.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_crossref_reference_metadata_comparison.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_europe_pmc_fulltext_locator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_europe_pmc_query_search.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_execution_pareto_frontier.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_execution_pareto_frontier_routing.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_function_os_evaluator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_g1_goal_intake_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_handoff_artifact_file_verifier.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_identity_cards.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_noaa_ch4_annual_growth.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_noaa_co2_annual_growth.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_openalex_work_metadata.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_pack_registry_inspector.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_portable_research_episode.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_producer_consumer_semantic_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_publication_metadata_comparison.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_pubmed_doi_update_audit.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_pubmed_identifier_resolver.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_pubmed_update_link_reader.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_raw_evidence_navigator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_read_current_asset_card.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_receiver_handoff_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_reusable_context_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_routing.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_source_snapshot_binding.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_source_snapshot_run_verifier.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tests/test_toolbox_validate_evidence_program.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/extract_cluster_source_brief.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/operations/build_toolbox_identity_cards.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/operations/validate_toolbox_candidates.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_actions_check_observations.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_actions_repeated_step_analysis.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_actions_step_timeline.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_actions_validation_attribution.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_agent_episode_binding.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_arxiv_metadata_lookup.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_audit_finding_comparator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_batch_resolve_current_assets.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_bind_offline_source_snapshot_run.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_bounded_thinking_operation.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_build_archify_derived_ir.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_cluster_source_brief.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_cognitive_migration_revision.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_compare_crossref_reference_metadata.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_compare_publication_metadata.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_context_packet.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_context_packet_variant_comparator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_crossref_metadata_verifier.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_europe_pmc_fulltext_locator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_europe_pmc_query_search.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_execution_pareto_frontier.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_function_os_evaluator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_g1_goal_intake_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_noaa_ch4_annual_growth.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_noaa_co2_annual_growth.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_openalex_work_metadata.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_pack_registry_inspector.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_portable_research_episode.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_producer_consumer_semantic_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_pubmed_doi_update_audit.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_pubmed_identifier_resolver.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_pubmed_update_link_reader.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_raw_evidence_navigator.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_read_current_asset_card.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_receiver_handoff_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_reusable_context_preflight.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_validate_evidence_program.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_verify_handoff_artifact_files.py",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "tools/toolbox_verify_offline_source_snapshot_run.py",
+      "type": "unmapped_path"
+    }
+  ],
+  "schema_version": "component-path-residue-input-r0"
+}

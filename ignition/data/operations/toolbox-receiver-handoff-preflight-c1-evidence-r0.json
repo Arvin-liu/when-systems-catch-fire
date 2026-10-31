@@ -1,0 +1,75 @@
+{
+  "schema_version": "toolbox-receiver-handoff-preflight-c1-evidence-r0",
+  "subject_tool_id": "collaboration.preflight_receiver_handoff",
+  "subject_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "retention_disposition": "ACTIVE_DEFAULT_OFF",
+  "comparison_scope": {
+    "baseline": "Existing agent_federation.approval_handoff.accept_handoff evaluated the same synthetic source receipt, altered bundle, target capability declaration, and observed artifact reference.",
+    "questions_answered": [
+      "Does the existing receiver API detect when a validly shaped serialized handoff bundle changes an artifact reference from the one in its source receipt?",
+      "Does the optional preflight reject that mismatch before running receiver capability and observation preconditions?"
+    ],
+    "questions_not_answered": [
+      "Does this tool improve completion or recovery on real cross-agent tasks?",
+      "Does the unkeyed receipt digest authenticate the source or its claims?",
+      "Does any live receiver actually re-observe the workspace or enforce the declared capabilities?",
+      "Is the tool faster, cheaper, safer overall, or a replacement for another toolbox tool?"
+    ]
+  },
+  "observations": {
+    "positive_control": {
+      "source_receipt_artifact_ref": "fixture/manifest.json",
+      "handoff_bundle_artifact_ref": "fixture/manifest.json",
+      "candidate_status": "PREFLIGHT_READY_NO_AUTHORITY",
+      "execution_authorized": false
+    },
+    "shape_valid_conflict_case": {
+      "source_receipt_artifact_ref": "fixture/manifest.json",
+      "handoff_bundle_artifact_ref": "fixture/other.json",
+      "observed_artifact_ref": "fixture/other.json",
+      "existing_accept_handoff_status": "ACCEPTED",
+      "candidate_status": "SOURCE_RECEIPT_BUNDLE_MISMATCH",
+      "candidate_receiver_check": "NOT_RUN"
+    },
+    "candidate_observed_increment": "The preflight rebuilds the bundle projection from the self-digest-valid source receipt and rejects changed source-bound fields before considering receiver takeover preconditions.",
+    "focused_test_result": "7 passed; synthetic fixtures only.",
+    "limits": "This is a controlled local contract comparison, not a real task outcome, source authentication proof, live receiver test, safety proof, scientific validation, broad quality comparison, or cost study."
+  },
+  "neighboring_tool_scope": {
+    "tool_id": "collaboration.validate_agent_episode_binding",
+    "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+    "basis": "Agent Episode Binding checks caller-declared role, context, feedback, permission, write-domain, and work-unit relationships; this candidate binds a serialized Federation handoff to its public result receipt before receiver preconditions.",
+    "same_task_replacement_comparison": "NOT_ESTABLISHED"
+  },
+  "routing_experiment": {
+    "task_id": "receiver-handoff-source-binding-preflight",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "candidate_catalog_git_blob_sha1": "9809308eda1c0ec8611bc35be92d8834f37a503b",
+    "default_route": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false
+    },
+    "explicit_opt_in_route": {
+      "allowlisted_tool_id": "collaboration.preflight_receiver_handoff",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "collaboration.preflight_receiver_handoff"
+      ],
+      "selected_kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+      "execution_authorized": false,
+      "cost_estimate_status": "UNKNOWN"
+    },
+    "interpretation": "The planner excludes the candidate by default and returns a non-authorizing proposal only under explicit experimental allowlisting; it does not invoke the tool."
+  },
+  "c1_decision": "Keep this specialized preflight experimental and default-off. Do not replace or retire the existing Federation API or Agent Episode Binding tool on synthetic evidence.",
+  "evidence_refs": [
+    "ignition/agent_federation/approval_handoff.py",
+    "ignition/agent_federation/contracts.py",
+    "ignition/tests/test_approval_handoff.py",
+    "ignition/tests/test_toolbox_receiver_handoff_preflight.py",
+    "ignition/tests/fixtures/toolbox-receiver-handoff-preflight/valid-input-r0.json",
+    "ignition/tools/toolbox_receiver_handoff_preflight.py"
+  ]
+}

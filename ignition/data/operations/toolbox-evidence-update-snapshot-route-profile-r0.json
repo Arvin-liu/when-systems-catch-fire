@@ -1,0 +1,14 @@
+{
+  "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+  "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+  "input_types": [
+    "Two bounded caller-supplied evidence snapshots for the same task_id and claim_id, each with exact as-of reference/UTC time, scope and applicability digests, declared claim state/change reason, evaluator/update/stopping policy identities, acquisition-dependence mode, and up to 200 evidence records."
+  ],
+  "required_outputs": [
+    "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+    "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+    "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+  ],
+  "allowed_execution_modes": ["READ_ONLY_RUN"],
+  "allowed_network_hosts": []
+}

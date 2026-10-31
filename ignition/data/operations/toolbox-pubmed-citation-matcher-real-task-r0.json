@@ -1,0 +1,73 @@
+{
+  "schema_version": "toolbox-pubmed-citation-matcher-real-task-r0",
+  "evidence_type": "BOUNDED_PUBLIC_CITATION_INVOCATIONS_WITH_HASHED_RECEIPTS",
+  "task_id": "resolve-one-published-structured-citation-to-a-pubmed-id",
+  "source_binding": {
+    "provider": "NCBI PubMed ECitMatch",
+    "documentation_url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK25499/",
+    "official_example_fixture": "ignition/tests/fixtures/toolbox-pubmed-citation-matcher/valid-input-r0.json",
+    "fixture_sha256": "1b9c0c5f04db0af64bad37df8c8cabe30f891ff82fab46acf560228ef0b8a4ac"
+  },
+  "attempts": [
+    {
+      "attempt_id": "initial_success_before_receipt-label-precision-revision",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_citation_matcher.py --stdin --allow-public-network",
+      "request_count": 1,
+      "raw_response_retained": false,
+      "receipt": {
+        "schema_version": "ignition.pubmed-citation-matcher-r0",
+        "tool_id": "research.match_pubmed_citation",
+        "tool_version": "0.1.0",
+        "source_code_sha256": "801415af6c011a39f30140dc0ded9ff4ac18c9dc2f1385f947d36c50a7ee6c96",
+        "citation_sha256": "15eea0399167579dab7da60df98dd571715982d22519e558855b67fc383bb38d",
+        "source_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/ecitmatch.cgi",
+        "retrieval_timestamp_utc": "2026-10-26T09:09:53Z",
+        "acquisition_status": "OK",
+        "http_status": 200,
+        "request_count": 1,
+        "tool_parameter_sent": true,
+        "email_sent_to_provider": false,
+        "api_key_used": false,
+        "response_sha256": "ad7ee29c8b0c3aab5dba441d308f5282fdbf3576336a796db1b5bfbdc58488b9",
+        "response_binding_status": "EXACT_REQUEST_KEY_AND_CITATION_ECHO",
+        "match_status": "PROVIDER_MATCH_REPORTED",
+        "returned_pmid": "2014248",
+        "provider_disclaimer": "https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+        "provider_usage_policy": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+        "claim_ceiling": "Reports the PMID returned by NCBI ECitMatch for one caller-supplied structured citation. The provider match is not independently verified and does not establish source authenticity, citation correctness, article relevance, or scientific support."
+      },
+      "note": "This earlier working-tree source accepted normalized case/whitespace echoes and returned a response whose example fields in fact matched exactly. Its source hash is retained to keep the result bound to the source that produced it."
+    },
+    {
+      "attempt_id": "final-source-network-recheck",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_citation_matcher.py --stdin --allow-public-network",
+      "request_count": 1,
+      "raw_response_retained": false,
+      "receipt": {
+        "acquisition_status": "NETWORK_ERROR",
+        "api_key_used": false,
+        "citation_sha256": "15eea0399167579dab7da60df98dd571715982d22519e558855b67fc383bb38d",
+        "claim_ceiling": "Reports the PMID returned by NCBI ECitMatch for one caller-supplied structured citation. The provider match is not independently verified and does not establish source authenticity, citation correctness, article relevance, or scientific support.",
+        "email_sent_to_provider": false,
+        "http_status": null,
+        "match_status": "NOT_AVAILABLE",
+        "provider_disclaimer": "https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+        "provider_usage_policy": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+        "request_count": 1,
+        "response_binding_status": "NOT_ESTABLISHED",
+        "response_sha256": null,
+        "retrieval_timestamp_utc": "2026-10-26T09:18:20Z",
+        "returned_pmid": null,
+        "schema_version": "ignition.pubmed-citation-matcher-r0",
+        "source_code_sha256": "30f18c8bbb62dd9d64275fa80fe0a7ab9eb573210a7c372e9ecf0ec5b5ba1862",
+        "source_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/ecitmatch.cgi",
+        "tool_id": "research.match_pubmed_citation",
+        "tool_parameter_sent": true,
+        "tool_version": "0.1.0"
+      },
+      "note": "The final source version uses the more precise REQUEST_KEY_AND_NORMALIZED_CITATION_ECHO label. This one request ended with NETWORK_ERROR; no retry was issued."
+    }
+  ],
+  "current_source_code_sha256": "30f18c8bbb62dd9d64275fa80fe0a7ab9eb573210a7c372e9ecf0ec5b5ba1862",
+  "observation_limit": "One prior source version matched the official public example and reported PMID 2014248; a later request against the final source version ended in NETWORK_ERROR. Neither attempt establishes bibliographic accuracy, provider completeness, error rates, scientific relevance, general reliability, or current-source live success."
+}

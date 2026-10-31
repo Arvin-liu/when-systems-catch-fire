@@ -1,0 +1,50 @@
+{
+  "schema_version": "toolbox-bounded-thinking-operation-real-task-r0",
+  "task_id": "IGNITION-20261026-toolbox-growth-AB16",
+  "task_description": "Add and verify a default-off bounded thinking operation selector with an identity card, route experiment and negative controls on the isolated Formal toolbox branch.",
+  "source_ref": "ignition/tests/fixtures/toolbox-bounded-thinking-operation/verify-needed-r0.json",
+  "initial_decision": {
+    "input_ref": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-input-r0.json",
+    "input_sha256": "cd5c5b9cfc42b8cff22ba91d380315ac4da165cf987a13a2198a121bd70e190a",
+    "output_ref": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-output-r0.json",
+    "output_sha256": "2ef4a94edf506eff5f99e28ac33d94e8c63cc448e86bb806eba9e57c2cf1136b",
+    "selected_operation": "VERIFY",
+    "terminal_disposition": null,
+    "execution_authorized": false,
+    "authority_effect": "NONE",
+    "estimated_cost_units": 1,
+    "single_process_wall_ms_observed": 118.334125,
+    "timing_limit": "One original local process sample; descriptive only, not a benchmark or calibrated cost."
+  },
+  "follow_up_checks": {
+    "status": "PASS",
+    "checks": [
+      "Focused selector and routing tests passed; see exact-head terminal report.",
+      "Candidate-card validator passed with Current registry unchanged.",
+      "Default-off route was INCOMPLETE with no selected tool; explicit allowlist selected only this candidate.",
+      "Overinclusive Crossref route was rejected for NETWORK_HOST_NOT_EXPLICITLY_ALLOWED, then for NO_INPUT_TYPE_MATCH when caller-supplied api.crossref.org context was added.",
+      "Router provider calls=0, candidate tools invoked by router=0, execution_authorized=false.",
+      "Caller-supplied host context is not permission authority and no network request was made."
+    ]
+  },
+  "closeout_decision": {
+    "input_ref": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-input-r0.json",
+    "input_sha256": "f9be9053453103e210ffa86ab56805531baa87fb35a14bcfd4f290771a58084a",
+    "output_ref": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-output-r0.json",
+    "output_sha256": "017589a70f9fabbb8178fc2a3c138e3bcc33386c273ea126a63cb23a04b79e4b",
+    "selected_operation": "STOP",
+    "terminal_disposition": "SUFFICIENT",
+    "reason_codes": [
+      "DECLARED_REQUIREMENTS_MET"
+    ],
+    "uncertainty_refs_preserved": [
+      "uncertainty:comparative-task-quality-unknown",
+      "uncertainty:measured-cost-and-resource-use-unknown"
+    ],
+    "execution_authorized": false,
+    "authority_effect": "NONE",
+    "single_process_wall_ms_observed": 96.274458,
+    "timing_limit": "Single local process observation; not a benchmark and not a calibrated cost."
+  },
+  "result_ceiling": "One caller-state-based recommendation sequence observed during one real repository task. VERIFY was only proposed; tests and route checks were separately run by the caller. STOP/SUFFICIENT reflects caller-declared resolved obligations while comparative quality and measured cost remain unknown. No operation was executed by the selector; no authority or permission changed."
+}

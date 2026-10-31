@@ -1,0 +1,77 @@
+{
+  "claim_ceiling": "A real local CLI invocation compared bounded bytes for three checked-in candidate evidence files with digests in a locally constructed, unkeyed FederatedResultReceipt. The positive match and deliberately mismatched digest control validate only this byte-check behavior; they do not authenticate a sender or receipt, establish provenance, prove runtime task correctness, authorize a handoff, or support general performance or cost claims.",
+  "classification": "REAL_LOCAL_TOOL_RUN_WITH_CALLER_CONSTRUCTED_UNKEYED_RECEIPT",
+  "comparison_boundary": "This real task checks behavior on one local candidate evidence bundle. It does not compare task quality or cost against another toolbox component and does not change the separate C1 comparison status.",
+  "independent_reference": {
+    "implementation": "Python hashlib.sha256 over each referenced file before invocation",
+    "result": "PASS: all positive declared hashes match the independent byte digests; negative control changes only the first declared digest."
+  },
+  "input": {
+    "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-real-task-input-r0.json",
+    "receipt_digest": "560beb854c74545ccdde2465df7c1cd3344b4a0f486a9c9645c416d533da7a95",
+    "sha256": "6d45051ffa138e32c733a0427a1a7265e5be5564dcdd696196c74d971fb0d0a1"
+  },
+  "negative_control": {
+    "artifact_statuses": [
+      "DIGEST_MISMATCH",
+      "DIGEST_MATCH",
+      "DIGEST_MATCH"
+    ],
+    "deliberately_wrong_declared_digest_only": true,
+    "elapsed_ms": 115.357,
+    "exit_code": 2,
+    "input_path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-negative-control-input-r0.json",
+    "input_sha256": "0ff1036bbbcd5ad21d9cacbb8a064220ed349c59ee0f69510c5bced53fd44ffa",
+    "output_path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-negative-control-output-r0.json",
+    "output_sha256": "f38ba4c17c4a552e31fceb1010a84c6dc8b3fac658df518a997d13322b663923",
+    "receipt_digest": "333bfdf6e89c804518bb6980d3f0362bc68d642ddec3842e8855f47d21f9c7eb",
+    "status": "DIGEST_MISMATCH"
+  },
+  "output": {
+    "artifact_count": 3,
+    "artifact_statuses": [
+      "DIGEST_MATCH",
+      "DIGEST_MATCH",
+      "DIGEST_MATCH"
+    ],
+    "elapsed_ms": 110.808,
+    "exit_code": 0,
+    "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-real-task-output-r0.json",
+    "sha256": "6ecd5be60c8b02d0d08837de6b518ea984c395c3aaa926250756e426825b83e1",
+    "status": "ALL_DIGESTS_MATCH",
+    "total_bytes_read": 5375
+  },
+  "schema_version": "toolbox-handoff-artifact-byte-check-real-task-evidence-r0",
+  "source_artifacts": [
+    {
+      "bytes": 1131,
+      "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+      "role": "input",
+      "sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7"
+    },
+    {
+      "bytes": 1435,
+      "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+      "role": "output",
+      "sha256": "88e33f5db91a163cef87c04e429eba85ae6ff336ed5e770b1470d6f83ffd1816"
+    },
+    {
+      "bytes": 2809,
+      "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json",
+      "role": "evidence",
+      "sha256": "6d533edc55705e655ebfa7bc1a9722861b5773eb3040fc2c9c68756de3d3cc66"
+    }
+  ],
+  "task_ref": "local candidate evidence verification on codex/toolbox-growth-20261025 at bef6bf467320ec1b6613ad94976d4623f3d51623",
+  "tool_boundary": {
+    "execution_authorized": false,
+    "network_calls": 0,
+    "python_version": "3.9.6",
+    "receipt_authenticity": "NOT_ESTABLISHED_UNKEYED_DIGEST",
+    "runtime_enforcement_status": "NOT_EVALUATED",
+    "tool_write_effects": false,
+    "workspace_observation": "BOUNDED_LOCAL_FILE_BYTES_READ_UNDER_CALLER_ROOT"
+  },
+  "tool_id": "collaboration.verify_handoff_artifact_files",
+  "tool_version": "0.1.0"
+}

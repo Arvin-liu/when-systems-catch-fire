@@ -8,7 +8,10 @@ clone and committed as governed data so that
 ``build_knowledge_experience.py`` no longer needs to shell out to git at
 generation time. That removes the clone-depth dependence that previously
 made a shallow clone emit ``snapshot`` dates while a full clone emitted the
-real first-appearance dates (see task 102, pass 3).
+real first-appearance dates (see task 102, pass 3). Existing valid entries
+are reused because first appearance is immutable in protected append-only
+history; only newly referenced paths need a history scan. Removed ledger
+sources are pruned from the next output.
 
 Formal generation of this map REQUIRES full git history. On a shallow clone
 this script refuses, because ``git log`` would be incomplete and would
@@ -64,9 +67,34 @@ def main() -> int:
         sys.exit(f"missing ledger: {LEDGER}")
     rows = [json.loads(line) for line in LEDGER.read_text(encoding="utf-8").splitlines() if line.strip()]
     sources = sorted({row["source"] for row in rows})
+    cached_entries: dict[str, str] = {}
+    if OUT.is_file():
+        try:
+            prior = json.loads(OUT.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            prior = {}
+        prior_entries = prior.get("entries", {}) if isinstance(prior, dict) else {}
+        if (
+            isinstance(prior_entries, dict)
+            and prior.get("schema_version") == "1.0.0"
+            and prior.get("computed_from") == "git log --follow --diff-filter=A --format=%ad --date=short"
+            and prior.get("history_requirement") == "FULL"
+        ):
+            cached_entries = {
+                path: date
+                for path, date in prior_entries.items()
+                if isinstance(path, str) and isinstance(date, str) and DATE_RE.fullmatch(date)
+            }
     entries: dict[str, str] = {}
     missing = []
+    history_scans = 0
+    cache_hits = 0
     for source in sources:
+        if source in cached_entries:
+            entries[source] = cached_entries[source]
+            cache_hits += 1
+            continue
+        history_scans += 1
         date = first_seen(source)
         if date:
             entries[source] = date
@@ -89,7 +117,10 @@ def main() -> int:
         "entries": entries,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"SOURCE_FIRST_SEEN_WRITTEN entries={len(entries)} -> {OUT.relative_to(ROOT)}")
+    print(
+        f"SOURCE_FIRST_SEEN_WRITTEN entries={len(entries)} cached={cache_hits} "
+        f"history_scans={history_scans} -> {OUT.relative_to(ROOT)}"
+    )
     return 0
 
 

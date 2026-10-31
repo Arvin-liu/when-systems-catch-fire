@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:publication-metadata-comparison-output-r0",
+  "title": "Crossref and OpenAlex Metadata Comparison Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "requested_doi", "status", "source_count", "source_outcomes", "field_comparisons", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition.publication-metadata-cross-source-comparison-r0"},
+    "tool_id": {"const": "research.compare_publication_metadata_snapshots"},
+    "tool_version": {"const": "0.1.0"},
+    "requested_doi": {"type": "string", "pattern": "^10\\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+$"},
+    "status": {"enum": ["METADATA_FIELDS_AGREE", "METADATA_DISAGREEMENT_FOUND", "INSUFFICIENT_METADATA"]},
+    "source_count": {"const": 2},
+    "source_outcomes": {
+      "type": "array", "minItems": 2, "maxItems": 2,
+      "items": {"oneOf": [{"$ref": "#/$defs/crossrefOutcome"}, {"$ref": "#/$defs/openalexOutcome"}]},
+      "allOf": [
+        {"contains": {"properties": {"tool_id": {"const": "research.verify_crossref_metadata"}}, "required": ["tool_id"]}},
+        {"contains": {"properties": {"tool_id": {"const": "research.lookup_openalex_work_metadata"}}, "required": ["tool_id"]}}
+      ]
+    },
+    "field_comparisons": {
+      "type": "object", "additionalProperties": false,
+      "required": ["title", "publication_year"],
+      "properties": {
+        "title": {"$ref": "#/$defs/titleComparison"},
+        "publication_year": {"$ref": "#/$defs/yearComparison"}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256OrNull": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"type": "null"}]},
+    "titleOrNull": {"oneOf": [{"type": "string", "maxLength": 500}, {"type": "null"}]},
+    "yearOrNull": {"oneOf": [{"type": "integer", "minimum": 1000, "maximum": 9999}, {"type": "null"}]},
+    "crossrefOutcome": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tool_id", "acquisition_status", "record_status", "provider_response_sha256", "title", "publication_year"],
+      "properties": {
+        "tool_id": {"const": "research.verify_crossref_metadata"},
+        "acquisition_status": {"type": "string", "maxLength": 64},
+        "record_status": {"enum": ["METADATA_ROW_RETURNED", "NOT_AVAILABLE"]},
+        "provider_response_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "title": {"$ref": "#/$defs/titleOrNull"},
+        "publication_year": {"$ref": "#/$defs/yearOrNull"}
+      }
+    },
+    "openalexOutcome": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tool_id", "acquisition_status", "record_status", "provider_response_sha256", "title", "publication_year"],
+      "properties": {
+        "tool_id": {"const": "research.lookup_openalex_work_metadata"},
+        "acquisition_status": {"type": "string", "maxLength": 64},
+        "record_status": {"type": "string", "maxLength": 64},
+        "provider_response_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "title": {"$ref": "#/$defs/titleOrNull"},
+        "publication_year": {"$ref": "#/$defs/yearOrNull"}
+      }
+    },
+    "titleComparison": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "observations"],
+      "properties": {
+        "status": {"enum": ["AGREE", "DISAGREE", "INSUFFICIENT"]},
+        "observations": {
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["tool_id", "value"],
+            "properties": {
+              "tool_id": {"enum": ["research.verify_crossref_metadata", "research.lookup_openalex_work_metadata"]},
+              "value": {"$ref": "#/$defs/titleOrNull"}
+            }
+          }
+        }
+      }
+    },
+    "yearComparison": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "observations"],
+      "properties": {
+        "status": {"enum": ["AGREE", "DISAGREE", "INSUFFICIENT"]},
+        "observations": {
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["tool_id", "value"],
+            "properties": {
+              "tool_id": {"enum": ["research.verify_crossref_metadata", "research.lookup_openalex_work_metadata"]},
+              "value": {"$ref": "#/$defs/yearOrNull"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

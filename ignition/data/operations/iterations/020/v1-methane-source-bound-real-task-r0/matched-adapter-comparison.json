@@ -1,0 +1,54 @@
+{
+  "claim_review_statuses": [
+    "PARTIAL",
+    "PARTIAL"
+  ],
+  "e37_anchor_statuses": [
+    "EXACT_MATCH",
+    "EXACT_MATCH",
+    "EXACT_MATCH",
+    "EXACT_MATCH"
+  ],
+  "e37_capture_count": 4,
+  "episode_id": "METHANE-ANNUAL-GROWTH-SOURCE-BINDING-R1",
+  "implementation_commit": "f57713e679cfaf1adaeb777bc1f14dffaa9fc8e8",
+  "legacy_anchor_statuses": [
+    "EXACT_MATCH",
+    "EXACT_MATCH",
+    "EXACT_MATCH",
+    "EXACT_MATCH"
+  ],
+  "legacy_capture_count": 0,
+  "network_requests": [
+    0,
+    0
+  ],
+  "receipt_sha256": [
+    "190613de266bfc11efa00c5a9f4654210344a1e7413e0707771f312447d41d41",
+    "632197396b1987796a342516bf8b04d9771fa8755fee4c68f85056dd7ffa16dc"
+  ],
+  "run_statuses": [
+    "CLAIM_REVIEW_INCOMPLETE",
+    "CLAIM_REVIEW_INCOMPLETE"
+  ],
+  "same_anchor_statuses": true,
+  "same_draft_sha256": true,
+  "same_normalized_sources": true,
+  "same_source_set_digest": true,
+  "semantic_validation": [
+    "NOT_PERFORMED",
+    "NOT_PERFORMED"
+  ],
+  "source_set_sha256": "44e774ac6b3a6c897693fcb27c76af819ec580c2a17ea4f978bf036ba7c3c032",
+  "task_id": "V1-TOOLBOX-METHANE-20261031",
+  "overall_result": "NO_DELTA",
+  "net_benefit": "NOT_ESTABLISHED",
+  "narrow_observed_difference": "E37 retained four captures while legacy retained zero in the matched offline replay; both had 4/4 exact anchors.",
+  "operational_baseline": "legacy adapter",
+  "e37_router_status": "EXPERIMENTAL_DEFAULT_OFF",
+  "live_retrieval_quality_measured": false,
+  "semantic_accuracy_measured_by_pipeline": false,
+  "operator_time_measured": false,
+  "cost_measured": false,
+  "post_release_use_performed": false
+}

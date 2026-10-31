@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/toolbox-actions-check-observations-output-r0.schema.json",
+  "title": "Exact-head GitHub check-run observation result R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "expected_head_sha", "input_sha256", "tool_sha256", "check_runs_snapshot", "outcome_counts", "requested_contexts", "non_claims"],
+  "properties": {
+    "schema_version": {"const": "toolbox-actions-check-observations-output-r0"},
+    "tool_id": {"const": "maintenance.inspect_exact_head_check_observations"},
+    "tool_version": {"const": "0.1.0"},
+    "expected_head_sha": {"$ref": "#/$defs/sha40"},
+    "input_sha256": {"$ref": "#/$defs/sha64"},
+    "tool_sha256": {"$ref": "#/$defs/sha64"},
+    "check_runs_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["total_count", "supplied_count", "complete_caller_assertion"],
+      "properties": {
+        "total_count": {"type": "integer", "minimum": 0},
+        "supplied_count": {"type": "integer", "minimum": 0},
+        "complete_caller_assertion": {"type": "boolean"}
+      }
+    },
+    "outcome_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["CONTEXT_NOT_OBSERVED", "DUPLICATE_AMBIGUOUS", "OBSERVED_NON_SUCCESS", "OBSERVED_SUCCESS", "PENDING", "SNAPSHOT_INCOMPLETE", "STALE_SHA_ONLY", "UNKNOWN_PROVIDER_STATE", "WRONG_APP_ONLY"],
+      "properties": {
+        "CONTEXT_NOT_OBSERVED": {"type": "integer", "minimum": 0},
+        "DUPLICATE_AMBIGUOUS": {"type": "integer", "minimum": 0},
+        "OBSERVED_NON_SUCCESS": {"type": "integer", "minimum": 0},
+        "OBSERVED_SUCCESS": {"type": "integer", "minimum": 0},
+        "PENDING": {"type": "integer", "minimum": 0},
+        "SNAPSHOT_INCOMPLETE": {"type": "integer", "minimum": 0},
+        "STALE_SHA_ONLY": {"type": "integer", "minimum": 0},
+        "UNKNOWN_PROVIDER_STATE": {"type": "integer", "minimum": 0},
+        "WRONG_APP_ONLY": {"type": "integer", "minimum": 0}
+      }
+    },
+    "requested_contexts": {"type": "array", "minItems": 1, "maxItems": 100, "items": {"$ref": "#/$defs/observation"}},
+    "non_claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["snapshot_source_authenticated", "requested_contexts_authenticated", "branch_protection_binding", "required_check_satisfaction_interpreted", "merge_or_release_authorized", "ci_or_scientific_validity_established"],
+      "properties": {
+        "snapshot_source_authenticated": {"const": false},
+        "requested_contexts_authenticated": {"const": false},
+        "branch_protection_binding": {"const": "NOT_ESTABLISHED"},
+        "required_check_satisfaction_interpreted": {"const": false},
+        "merge_or_release_authorized": {"const": false},
+        "ci_or_scientific_validity_established": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "sha40": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha64": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "expected_app_id", "observation", "same_name_observation_count", "exact_head_sha_observation_count", "exact_name_sha_app_match_count", "matching_check_run_ids", "stale_head_shas", "app_ids_observed_on_exact_head", "observed_status", "observed_conclusion"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "expected_app_id": {"type": "integer", "minimum": 1},
+        "observation": {"enum": ["OBSERVED_SUCCESS", "OBSERVED_NON_SUCCESS", "PENDING", "UNKNOWN_PROVIDER_STATE", "SNAPSHOT_INCOMPLETE", "CONTEXT_NOT_OBSERVED", "STALE_SHA_ONLY", "WRONG_APP_ONLY", "DUPLICATE_AMBIGUOUS"]},
+        "same_name_observation_count": {"type": "integer", "minimum": 0},
+        "exact_head_sha_observation_count": {"type": "integer", "minimum": 0},
+        "exact_name_sha_app_match_count": {"type": "integer", "minimum": 0},
+        "matching_check_run_ids": {"type": "array", "items": {"type": "integer", "minimum": 1}},
+        "stale_head_shas": {"type": "array", "items": {"$ref": "#/$defs/sha40"}},
+        "app_ids_observed_on_exact_head": {"type": "array", "items": {"type": ["integer", "null"], "minimum": 1}},
+        "observed_status": {"type": ["string", "null"], "enum": ["requested", "queued", "waiting", "pending", "in_progress", "completed", null]},
+        "observed_conclusion": {"type": ["string", "null"], "enum": ["action_required", "cancelled", "failure", "neutral", "skipped", "stale", "startup_failure", "success", "timed_out", null]}
+      }
+    }
+  }
+}

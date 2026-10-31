@@ -1,0 +1,73 @@
+{
+  "schema_version": "toolbox-noaa-sf6-source-surface-comparison-c1-evidence-r0",
+  "evidence_type": "MATCHED_FUNCTION_AND_REAL_TASK_SCOPE_COMPARISON",
+  "candidate_tool_id": "research.compare_noaa_sf6_source_surfaces",
+  "observed_at_utc": "2026-10-27T00:33:11Z",
+  "same_species_task_comparison": {
+    "task": "Compare NOAA GML page and fixed raw table for 2023-2025, preserving both annual growth and uncertainty plus response receipts.",
+    "surface_comparator": {
+      "tool_id": "research.compare_noaa_sf6_source_surfaces",
+      "requests_made": 2,
+      "result_status": "COMPARED",
+      "comparison_status": "DIFFERENT",
+      "output_path": "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json",
+      "output_sha256": "97936f7731c16b3749f4d87e8f0312202203d6eda465f99ed1417099b57deaa4",
+      "page_response_sha256": "5e396c8a1a8a6609c5af5253f412e696404410d89041e98152749706c4fffcf4",
+      "raw_response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927"
+    },
+    "raw_only_lookup": {
+      "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+      "requests_made": 1,
+      "result_status": "FOUND",
+      "output_path": "data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+      "output_sha256": "0879a613c18b0dfc34fa6e0fa84f692da38466b51aeb30224a4614e90760331c",
+      "raw_response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927",
+      "observed_at_utc": "2026-10-27T00:16:53Z"
+    },
+    "raw_capture_alignment": {
+      "same_response_sha256": true,
+      "same_response_bytes": true,
+      "elapsed_between_raw_capture_times": "approximately 16 minutes; sequential captures, not an atomic run"
+    },
+    "finding": "The page/raw comparator reports 2023-2025 growth values equal in this observation and uncertainty differences of 0.004 ppt per year because the raw table prints 0.00. The raw-only lookup is sufficient when the task requests the raw table alone; it cannot supply the rendered page values or a paired comparison. The comparator uses one additional GET to supply the paired view."
+  },
+  "portfolio_comparisons": [
+    {
+      "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "reason": "One fixed raw GET is sufficient for raw-table-only tasks; it cannot return a page/raw comparison or page uncertainty precision."
+    },
+    {
+      "tool_id": "research.compare_noaa_co2_source_surfaces",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "reason": "Fixed CO2 endpoints and ppm fields do not provide SF6 values."
+    },
+    {
+      "tool_id": "research.compare_noaa_ch4_source_surfaces",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "reason": "Fixed methane endpoints and ppb fields do not provide SF6 values."
+    },
+    {
+      "tool_id": "research.compare_noaa_n2o_source_surfaces",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "reason": "Fixed N2O endpoints and ppb fields do not provide SF6 values."
+    }
+  ],
+  "redundant_composition_observation": {
+    "tools": [
+      "research.lookup_noaa_global_sf6_annual_growth",
+      "research.compare_noaa_sf6_source_surfaces"
+    ],
+    "requests_made_total": 3,
+    "raw_response_sha256_from_each_tool": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927",
+    "incremental_distinct_surface": "none in this matched observation; the lookup repeated the raw surface already present in the comparator output",
+    "basis": "Composed from two actual invocations captured 16 minutes apart; exact raw response digest and byte count match, but this is not one atomic sequential transaction."
+  },
+  "portfolio_disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "retired_tools": [],
+    "coexistence_reason": "The comparator serves page/raw audit and precision-difference tasks. The raw-only lookup remains lower-request-count and sufficient when only the raw table is needed. Other-gas comparators cannot provide SF6 data.",
+    "uncertainty": "No comparative measurement accuracy, source reliability, long-run availability, or monetary cost ranking is established. Latency was not measured."
+  }
+}

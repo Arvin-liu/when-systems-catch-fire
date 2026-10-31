@@ -1,0 +1,42 @@
+{
+  "schema_version": "ignition.crossref-reference-metadata-comparison-c1-evidence-r0",
+  "tool_id": "research.compare_crossref_reference_metadata",
+  "tool_version": "0.1.0",
+  "c1_disposition": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "retention_decision": "ACTIVE_SPECIALIZED_COEXISTENCE",
+    "replacement_candidates": [],
+    "rationale": "Existing Crossref v0.3 projects the citing Work's optional deposited reference rows; the new tool resolves a caller-selected cited DOI and compares supplied structured fields against that target Work. The scopes are complementary and no tool replaces all valuable uses of the other."
+  },
+  "matched_task_evidence": {
+    "source_work_doi": "10.1186/s12884-025-07725-7",
+    "reference_key": "7725_CR2",
+    "reference_doi": "10.1136/bjsports-2020-102955",
+    "real_task_evidence_path": "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r0.json",
+    "real_task_evidence_sha256": "0e5a097fa2acf21450358a9b9d0b7f68baa10a67c1f93c2fe71b9e608cec8e05",
+    "request_count": 1,
+    "doi_identity_status": "EXACT_DOI_MATCH",
+    "comparison_status": "FIELD_DIFFERENCES_OBSERVED",
+    "field_statuses": {
+      "first_page": "NORMALIZED_EQUAL",
+      "journal_title": "NORMALIZED_DIFFERENT",
+      "volume": "NORMALIZED_EQUAL",
+      "year": "NORMALIZED_EQUAL"
+    }
+  },
+  "compared_tool_ids": [
+    "research.verify_crossref_metadata",
+    "research.compare_publication_metadata_snapshots"
+  ],
+  "findings": [
+    "The existing Crossref verifier returns a bounded source-deposited reference projection but does not resolve referenced DOIs.",
+    "The existing publication snapshot comparator operates on already-collected Crossref/OpenAlex title/year rows and does not fetch cited Works.",
+    "The single selected DOI provides a real end-to-end capability demonstration, not an accuracy or provider-quality benchmark.",
+    "Retain both Crossref tools as default-off complementary options; do not retire existing runtime code based on this one record."
+  ],
+  "uncertainties": [
+    "General Crossref reference DOI resolution coverage and failure rate are unknown.",
+    "Metadata differences across source-deposited citations and target Work records may reflect abbreviation, version, update, or deposit choices; this tool does not adjudicate them.",
+    "Matched latency, cost, broad accuracy, and completeness comparisons were not conducted."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-datacite-doi-metadata-input-r0",
+  "title": "DataCite DOI Metadata Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["doi"],
+  "properties": {
+    "doi": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^10\\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+$",
+      "description": "Exactly one bare DOI. DOI URLs, batches, queries, and fragments are rejected."
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "toolbox-failure-anchored-recovery-input-r0",
+  "failure": {
+    "run_ref": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/40064357022/job/120784357732",
+    "run_head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "failed_step": "Validate current-state synchronization",
+    "failure_signature": "current-facts.json is stale relative to its declared canonical sources",
+    "evidence": [
+      {
+        "evidence_id": "failed-current-state-sync-log",
+        "kind": "RUN_LOG_EXCERPT",
+        "source_ref": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/40064357022/job/120784357732",
+        "excerpt": "CURRENT_STATE_SYNC_INVALID\n- current-facts.json is stale relative to its declared canonical sources",
+        "excerpt_sha256": "7c65d1bf6a1010384ff275c7e4447c4a3719d1026065f4fbf32fdc6eea9ccf5e"
+      }
+    ],
+    "preservation": {
+      "first_failure_preserved": true,
+      "evidence_append_only": true
+    }
+  },
+  "diagnoses": [
+    {
+      "diagnosis_id": "stale-current-facts-observation",
+      "classification": "OBSERVATION",
+      "statement": "current-facts.json is stale relative to its declared canonical sources",
+      "supporting_evidence_ids": [
+        "failed-current-state-sync-log"
+      ],
+      "falsifier": "An exact-head deterministic current-state sync check reports no stale current-facts projection."
+    },
+    {
+      "diagnosis_id": "projection-refresh-hypothesis",
+      "classification": "HYPOTHESIS",
+      "statement": "Regenerating the derived current-facts projection from its declared sources may resolve this failure.",
+      "supporting_evidence_ids": [
+        "failed-current-state-sync-log"
+      ],
+      "falsifier": "The exact-source generator and sync validator still report the same signature after a bounded projection refresh."
+    }
+  ],
+  "prior_attempts": [],
+  "recovery": {
+    "recovery_id": "refresh-then-verify-current-facts",
+    "instructions": [
+      "On an isolated copy of the exact failed head, run the repository's official current-facts generator in write mode and inspect the generated projection diff.",
+      "Run the exact-head current-state sync check; stop if any source or authority input changed outside the declared candidate."
+    ],
+    "diagnosis_ids": [
+      "stale-current-facts-observation",
+      "projection-refresh-hypothesis"
+    ],
+    "evidence_ids": [
+      "failed-current-state-sync-log"
+    ],
+    "permission_delta": "NONE",
+    "budget_delta": "WITHIN_DECLARED_BOUND",
+    "verification": {
+      "command": "python3 ignition/tools/generate_current_facts.py --check && python3 ignition/tools/validate_current_state_sync.py --check",
+      "success_signal": "CURRENT_STATE_SYNC_OK with the exact failed signature absent",
+      "failure_signature_to_recheck": "current-facts.json is stale relative to its declared canonical sources"
+    },
+    "stop_conditions": [
+      "Stop if the generator proposes changes outside its declared derived projections.",
+      "Stop if the same failure signature remains after one bounded refresh-and-check attempt.",
+      "Stop if resolving the failure requires wider permissions, unbounded work, or a CI-policy change."
+    ]
+  }
+}

@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.7.0",
+    "component_registry_version": "2.8.0",
     "topology_version": "1.14.0",
     "layout_version": "2.0.0"
   },
@@ -1710,9 +1710,9 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 104,
+    "registry_components": 106,
     "visible_nodes": 87,
-    "hidden_components": 17,
+    "hidden_components": 19,
     "hidden_representatives": {
       "foundation_data": "foundation",
       "historical_reports": "current_state",
@@ -1730,7 +1730,9 @@
       "openalex_adapter_r1": "research_pack_reos_light",
       "research_workflow_slot": "research_pack_reos_light",
       "crossref_verifier_r1": "research_pack_reos_light",
-      "component_validation_router": "iteration"
+      "component_validation_router": "iteration",
+      "release_transaction_protocol_r3": "iteration",
+      "toolbox_candidate_bundle": "ai_guide"
     },
     "orphan_components": []
   }

@@ -1,0 +1,62 @@
+{
+  "schema_version": "toolbox-evidence-update-snapshot-source-binding-r0",
+  "candidate_id": "research.compare_evidence_update_snapshots",
+  "source_authority": {
+    "owner_toolbox_instruction": {
+      "repository": "Arvin-liu/1111",
+      "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+      "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+      "blob_sha1": "d0e85f7baeb55ec538189e2657c33e4759d704ef",
+      "authority_limit": "Authorizes bounded implementation and lawful integration under current protection; does not change Formal Current, required checks, R2 exceptions, scientific status, or external permissions."
+    },
+    "owner_c1_replacement_instruction": {
+      "repository": "Arvin-liu/1111",
+      "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+      "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+      "blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e",
+      "authority_limit": "C1 replaces the prior keep-forever assumption with evidence-based replacement, specialization, retirement, or COMPARISON_UNKNOWN."
+    }
+  },
+  "blueprint_binding": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "snapshot_commit": "2f13848f693cd8411329fd92c4bf0735464e3677",
+    "backlog_path": "BACKLOG.md",
+    "backlog_blob_sha1": "5cd3335724d345fbf3c7b2d0f9ea0f06fb2fcf41",
+    "blueprint_id": "AB-15",
+    "recorded_status": "NEEDS_GAP_AUDIT",
+    "narrow_scope": "Predecessor/as-of binding; evidence, scope and declared-state delta; source-family delta; declared change reason; visible acquisition dependence; update/stopping policy and evaluator identity.",
+    "prior_result_path": "reviews/2026-10-05-ab03-independent-pilot-review.md",
+    "prior_result_blob_sha1": "0c5630252ba86dfe403972b1b07fada5903794f8",
+    "prior_result_limit": "The broad AB-03 synthetic pilot showed no meaningful net benefit over a bounded narrative; this candidate preserves the narrower machine-readable update-delta gap only. This source binding does not upgrade AB-15 backlog status."
+  },
+  "formal_candidate_binding": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "base_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "candidate_parent_sha": "9afa93ebfede6b75b5f7788d5fe930482ba66e5e",
+    "candidate_head_before_this_component": "c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+    "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "current_operation_count": 20,
+    "experimental_candidate_count_before": 50,
+    "generated_identity_card_count_before": 70
+  },
+  "overlap_audit": {
+    "evidence_lineage_delta": "Existing self-correction output is triggered by repository source-asset changes and carries a fixed SOURCE_ASSET_CHANGED state; it does not compare two caller-bound research acquisition snapshots, stopping policies, evaluator instruments, or acquisition dependence.",
+    "evidence_program_validator": "Validates one fixed checked-out Evidence Program tree; it does not compare temporal snapshots.",
+    "publication_metadata_comparator": "Compares selected title/year fields between Crossref and OpenAlex results for one DOI; it does not compare evidence updates for a claim across as-of snapshots.",
+    "audit_finding_comparator": "Compares caller-declared audit findings under one shared target; it does not track evidence acquisition, claim scope, update policies, or source-family deltas."
+  },
+  "implementation_boundary": {
+    "optional_default_off": true,
+    "official_current_registry_modified": false,
+    "router_rule_modified": false,
+    "filesystem_access": "stdin/stdout only; no repository or user-file reads/writes",
+    "network": false,
+    "secrets": false,
+    "billing": false,
+    "external_actions": false,
+    "truth_authority": false,
+    "rollback": "Remove the isolated candidate card, implementation, schemas, docs, fixture, tests and evidence, then regenerate the human and machine identity projections; preserve source history and validation outcomes."
+  }
+}

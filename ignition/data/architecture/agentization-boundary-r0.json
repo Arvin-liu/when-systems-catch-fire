@@ -192,6 +192,17 @@
       "reason": "supports repository generation, validation or synchronization without being domain authority"
     },
     {
+      "component_id": "ignition_operating_method",
+      "current_path": "OPERATING-METHOD.md",
+      "canonical_ref": "OPERATING-METHOD.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
       "component_id": "iteration",
       "current_path": "ITERATION.md",
       "canonical_ref": "ITERATION.md",
@@ -758,6 +769,17 @@
       "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
     },
     {
+      "component_id": "structural_governance_surface",
+      "current_path": "data/epistemic-governance/",
+      "canonical_ref": "docs/architecture/esi-human-surface-r0.md",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
       "component_id": "owner_human",
       "current_path": ".github/README.md",
       "canonical_ref": ".github/README.md#1. 项目与价值",
@@ -920,6 +942,28 @@
       "reason": "supports repository generation, validation or synchronization without being domain authority"
     },
     {
+      "component_id": "live_executor_bridge_r1",
+      "current_path": "agent_federation/live_*.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "live_observation_reconciliation_plane_r1",
+      "current_path": "agent_federation/live_observation_plane.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
       "component_id": "openclaw_adapter",
       "current_path": "agent_federation/adapters/openclaw.py",
       "canonical_ref": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
@@ -967,6 +1011,215 @@
       "component_id": "future_executors",
       "current_path": "agent_federation/contracts.py",
       "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Future executors",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "event_ledger_r1",
+      "current_path": "agent_runtime/event_ledger.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Event Ledger R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "policy_compiler_r1",
+      "current_path": "agent_runtime/policy_compiler.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "resource_arbitration_r1",
+      "current_path": "agent_runtime/resource_arbitration.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Resource Arbitration R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "bounded_scheduler_r1",
+      "current_path": "agent_runtime/scheduler.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "executor_health_lease_r1",
+      "current_path": "agent_runtime/executor_health.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Executor Health Lease R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "queue_control_r1",
+      "current_path": "agent_runtime/queue_control.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "durable_dispatch_r1",
+      "current_path": "agent_runtime/dispatch_reconciliation.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "concurrent_operational_memory_r2",
+      "current_path": "agent_runtime/concurrent_memory.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "driver_console_r1",
+      "current_path": "agent_runtime/driver_console.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Driver Console R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "durability_lifecycle_r3",
+      "current_path": "agent_runtime/durability.py",
+      "canonical_ref": "docs/architecture/os-control-plane-r2.md#Durability and Lifecycle R3",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "steering_intent_obligation_r1",
+      "current_path": "agent_runtime/steering.py",
+      "canonical_ref": "docs/architecture/os-steering-intent-r1.md#OS Steering, Intent, and Obligation R1",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "formal_task_lifecycle_r1",
+      "current_path": "data/operations/formal-task-lifecycle-r1.json",
+      "canonical_ref": "data/operations/formal-task-lifecycle-r1.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "open_obligation_registry_r1",
+      "current_path": "data/operations/open-obligation-registry-r1.json",
+      "canonical_ref": "data/operations/open-obligation-registry-r1.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "executor_admission_r1",
+      "current_path": "agent_federation/executor_admission_contract.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Provider-neutral executor admission",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "openalex_adapter_r1",
+      "current_path": "scripts/external-research/openalex_client.py",
+      "canonical_ref": "scripts/external-research/openalex_client.py",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "research_workflow_slot",
+      "current_path": "research_workflow/",
+      "canonical_ref": "research_workflow/SLOT.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "crossref_verifier_r1",
+      "current_path": "evidence-program/tools/run_crossref_verification.py",
+      "canonical_ref": "evidence-program/tools/run_crossref_verification.py",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "component_validation_router",
+      "current_path": "data/operations/component-validation-map-r1.json",
+      "canonical_ref": "tools/operations/route_component_validation.py",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "release_transaction_protocol_r3",
+      "current_path": ".github/workflows/release-transaction-protocol-validation.yml",
+      "canonical_ref": "data/operations/release-transaction-protocol-r3.json",
       "primary_role": "PLATFORM_TOOLING",
       "secondary_roles": [],
       "domain_binding": "platform",

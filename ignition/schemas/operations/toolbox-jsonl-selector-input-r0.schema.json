@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-jsonl-selector-input-r0",
+  "title": "Bounded JSONL Record Selector Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_path",
+    "json_pointer",
+    "equals",
+    "max_source_bytes",
+    "max_returned_bytes",
+    "max_matches"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-jsonl-selector-input-r0"},
+    "source_path": {
+      "type": "string",
+      "pattern": "^ignition/(?:[A-Za-z0-9._-]+/)*[A-Za-z0-9._-]+$",
+      "maxLength": 1024
+    },
+    "json_pointer": {"type": "string", "maxLength": 4096},
+    "equals": {
+      "description": "JSON scalar equality: strings compare exactly, numbers by numeric value (so 1 equals 1.0), booleans remain distinct from numbers, and null matches only null.",
+      "type": ["string", "number", "boolean", "null"]
+    },
+    "max_source_bytes": {"type": "integer", "minimum": 1, "maximum": 32000000},
+    "max_returned_bytes": {"type": "integer", "minimum": 1, "maximum": 262144},
+    "max_matches": {"type": "integer", "minimum": 1, "maximum": 100}
+  }
+}

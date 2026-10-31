@@ -1,0 +1,189 @@
+{
+  "schema_version": "toolbox-actions-validation-attribution-real-task-r0",
+  "observed_at_utc": "2026-10-25T13:41:16Z",
+  "experiment": "offline replay of one real PR #264 GitHub Actions validation run and its downloaded artifact inventory",
+  "invocation": {
+    "command": "python3 -B ignition/tools/toolbox_actions_validation_attribution.py --stdin",
+    "exit_code": 0,
+    "stderr_empty": true,
+    "stdout_sha256": "772ab7aaab899d283d25a572942ad12e8daa057cec8b5b8b0f7c36259dd75f2f"
+  },
+  "source_files": [
+    {
+      "path": "ignition/tests/fixtures/toolbox-actions-validation-attribution/input-run-40064357026-r0.json",
+      "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b",
+      "role": "normalized caller-supplied run, jobs, plan, and artifact inventory"
+    },
+    {
+      "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+      "sha256": "9ac1000a812e5abf3207a361aa5499ed61e080685a527738613fd683581a2558",
+      "role": "tool implementation"
+    },
+    {
+      "path": "ignition/tools/toolbox_actions_step_timeline.py",
+      "sha256": "8ce2a1660dbac7f41384e19b15884387b848cd7ab7cc1a780f19a5ac148e457f",
+      "role": "existing interval helper"
+    }
+  ],
+  "observed_task": {
+    "pull_request_number": 264,
+    "run_id": 40064357026,
+    "run_attempt": 1,
+    "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "workflow_status": "completed",
+    "workflow_conclusion": "cancelled",
+    "plan_mode": "FULL",
+    "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+    "selected_target_count": 11,
+    "artifact_id": 12549244084,
+    "artifact_name": "component-validation-40064357026-1",
+    "artifact_sha256": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888",
+    "supplied_complete_file_list": [
+      "component-validation-plan.json"
+    ]
+  },
+  "result": {
+    "plan_digest_valid": true,
+    "run_id_attempt_head_bound": true,
+    "base_matches_plan": "SUPPLIED_PULL_REQUEST_BASE_MATCHES_PLAN",
+    "receipt_presence": "ABSENT_FROM_SUPPLIED_COMPLETE_FILE_LIST",
+    "declared_target_result_count": 0,
+    "observed_jobs": [
+      {
+        "conclusion": "cancelled",
+        "id": 120784357661,
+        "name": "foundation-validation-route",
+        "observed_elapsed_seconds": 1949.0,
+        "status": "completed"
+      },
+      {
+        "conclusion": "cancelled",
+        "id": 120790658353,
+        "name": "Full Foundation regression",
+        "observed_elapsed_seconds": 49.0,
+        "status": "completed"
+      }
+    ],
+    "timeline_summary": {
+      "interval_sum_semantics": "SUM_OF_RECORDED_INTERVALS; PARALLEL_JOBS_MAY_OVERLAP; NOT_BILLABLE_MINUTES",
+      "job_count": 2,
+      "jobs_with_observed_elapsed": 2,
+      "step_count": 65,
+      "steps_with_observed_elapsed": 65,
+      "sum_observed_job_intervals_seconds": 1998.0,
+      "sum_observed_step_intervals_seconds": 1996.0
+    },
+    "non_claims": {
+      "billable_minutes_cost_or_savings_estimated": false,
+      "component_validation_receipt_officially_verified": false,
+      "github_source_authenticated": false,
+      "merge_or_release_authorized": false,
+      "required_check_satisfaction_interpreted": false,
+      "selected_target_success_inferred_without_receipt": false
+    },
+    "claim_ceiling": "Digest and identity alignment of caller-supplied plan, Actions snapshot, artifact file list and optional receipt only; job intervals remain source observations, target receipt claims are not official CI validation, and no billing, gate, merge or release conclusion is made."
+  },
+  "tool_output": {
+    "artifact_inventory": {
+      "artifact_id": 12549244084,
+      "artifact_sha256": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888",
+      "files": [
+        "component-validation-plan.json"
+      ],
+      "files_complete_as_supplied": true,
+      "name": "component-validation-40064357026-1",
+      "validation_receipt_presence": "ABSENT_FROM_SUPPLIED_COMPLETE_FILE_LIST"
+    },
+    "claim_ceiling": "Digest and identity alignment of caller-supplied plan, Actions snapshot, artifact file list and optional receipt only; job intervals remain source observations, target receipt claims are not official CI validation, and no billing, gate, merge or release conclusion is made.",
+    "input_sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b",
+    "non_claims": {
+      "billable_minutes_cost_or_savings_estimated": false,
+      "component_validation_receipt_officially_verified": false,
+      "github_source_authenticated": false,
+      "merge_or_release_authorized": false,
+      "required_check_satisfaction_interpreted": false,
+      "selected_target_success_inferred_without_receipt": false
+    },
+    "observed_jobs": [
+      {
+        "conclusion": "cancelled",
+        "id": 120784357661,
+        "name": "foundation-validation-route",
+        "observed_elapsed_seconds": 1949.0,
+        "status": "completed"
+      },
+      {
+        "conclusion": "cancelled",
+        "id": 120790658353,
+        "name": "Full Foundation regression",
+        "observed_elapsed_seconds": 49.0,
+        "status": "completed"
+      }
+    ],
+    "plan_binding": {
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "digest_valid": true,
+      "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+      "mode": "FULL",
+      "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+      "selected_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_operating_method_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "validation_map_sha256": "c5f6bf9905505c9dc7bbd0d7d45675250cf0954c268f3501e076c1ac23248f9c",
+      "validation_sha": "91c02e7407507bae2c5b64e7e04b35f6dfb5d43d",
+      "validation_sha_scope": "PLAN_ONLY_NOT_COMPARED_TO_WORKFLOW_RUN_HEAD"
+    },
+    "schema_version": "toolbox-actions-validation-attribution-output-r0",
+    "snapshot_completeness": {
+      "complete": true,
+      "declared_total_job_count": 2,
+      "job_list_complete": true,
+      "supplied_job_count": 2,
+      "time_coverage_complete": true
+    },
+    "source_binding": "CALLER_SUPPLIED_UNAUTHENTICATED_JSON",
+    "timeline_helper_sha256": "8ce2a1660dbac7f41384e19b15884387b848cd7ab7cc1a780f19a5ac148e457f",
+    "timeline_summary": {
+      "interval_sum_semantics": "SUM_OF_RECORDED_INTERVALS; PARALLEL_JOBS_MAY_OVERLAP; NOT_BILLABLE_MINUTES",
+      "job_count": 2,
+      "jobs_with_observed_elapsed": 2,
+      "step_count": 65,
+      "steps_with_observed_elapsed": 65,
+      "sum_observed_job_intervals_seconds": 1998.0,
+      "sum_observed_step_intervals_seconds": 1996.0
+    },
+    "tool_id": "maintenance.attribute_actions_validation_evidence",
+    "tool_sha256": "9ac1000a812e5abf3207a361aa5499ed61e080685a527738613fd683581a2558",
+    "validation_receipt": {
+      "binding_status": "NO_RECEIPT_CONTENT",
+      "declared_target_results": [],
+      "receipt_sha256": null,
+      "target_result_trust": "NO_TARGET_RESULT_CLAIM"
+    },
+    "workflow_binding": {
+      "base_sha_binding": "SUPPLIED_PULL_REQUEST_BASE_MATCHES_PLAN",
+      "conclusion": "cancelled",
+      "event": "pull_request",
+      "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+      "head_sha_matches_plan": true,
+      "run_attempt": 1,
+      "run_id": 40064357026,
+      "status": "completed"
+    }
+  },
+  "provenance_limits": [
+    "The fixture preserves GitHub run/jobs and artifact readbacks captured for this real task; this local tool consumes caller-supplied data and does not authenticate GitHub or the artifact.",
+    "A complete supplied file list omitting the receipt establishes only absence from that supplied list. No target failure, target success, required-check satisfaction, billing, savings, merge, or release conclusion is inferred."
+  ]
+}
