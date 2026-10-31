@@ -1,0 +1,46 @@
+{
+  "schema_version": "toolbox-crossref-query-search-real-task-evidence-r0",
+  "evidence_type": "PRESERVED_FAILED_FINAL_SOURCE_ATTEMPT",
+  "experiment_id": "research.search_crossref_query.public_ai_healthcare.first_source_attempt",
+  "task": {
+    "description": "Retrieve at most five Crossref Works metadata rows for the same public artificial-intelligence-and-healthcare topic used in the OpenAlex source comparison.",
+    "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+    "query_was_public_and_non_sensitive": true,
+    "max_results": 5,
+    "raw_query_retained": false
+  },
+  "execution": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_crossref_query_search.py --stdin --allow-public-network",
+    "permission": "One explicit public read-only GET to api.crossref.org/v1/works; no email, API key, billing credential, file write, redirect, or retry.",
+    "request_count": 1,
+    "raw_response_retained": false,
+    "response_budget_bytes": 524288,
+    "response_budget_seconds": 7
+  },
+  "tool_receipt": {
+    "schema_version": "ignition.crossref-query-search-r0",
+    "tool_id": "research.search_crossref_query",
+    "tool_version": "0.1.0",
+    "status": "FAILED",
+    "acquisition_status": "INVALID_RESPONSE",
+    "http_status": 200,
+    "source_endpoint": "https://api.crossref.org/v1/works",
+    "retrieval_timestamp_utc": "2026-10-26T05:29:19.899447Z",
+    "max_results": 5,
+    "request_count": 1,
+    "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+    "request_sha256": "e1f98a53b061986b8640898a9267ac3328ff27d94bf87fdac5f38488d449603b",
+    "response_sha256": "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+    "response_bytes": 2484,
+    "source_code_sha256": "35ee5fc2f2fc1502c6a8b7e03c75bb5677c84a70eae15c7328c576775fddbeb6",
+    "provider_hit_count": null,
+    "returned_count": 0,
+    "usage_headers": {
+      "x-rate-limit-limit": "1",
+      "x-rate-limit-interval": "1s"
+    },
+    "records": [],
+    "claim_ceiling": "An HTTP-200 provider response was received, but the first parser version rejected it and returned no metadata."
+  },
+  "repair_note": "A later bounded observation of the same query exposed a provider result with issued.date-parts=[[null]]. The parser now treats a null year as unreported. The final successful run has the same response SHA-256 as this failed run, so the failure is preserved and the same response bytes are now parsed without inventing a year."
+}

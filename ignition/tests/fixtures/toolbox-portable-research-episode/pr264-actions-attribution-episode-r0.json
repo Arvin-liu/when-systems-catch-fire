@@ -1,0 +1,67 @@
+{
+  "schema_version": "ignition-portable-research-episode-r0",
+  "episode_id": "pr264-actions-attribution-episode",
+  "package_revision": "fd5b287d83584517909114b1f045e223ac77b0a8",
+  "import_mode": "SOURCE_PACKAGE",
+  "required_artifact_ids": ["attribution-input", "attribution-result"],
+  "artifacts": [
+    {
+      "artifact_id": "attribution-input",
+      "version_id": "run-40064357026-attempt-1",
+      "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b",
+      "parent_ref": null,
+      "dependency_refs": [],
+      "availability": "INCLUDED",
+      "omission_reason": null,
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "attribution-result",
+      "version_id": "r0",
+      "sha256": "453e9ef805bf81d9df7fc1b123a1e4ef853d68ff96f110b52c68a8d4d458bbd2",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "attribution-input",
+          "version_id": "run-40064357026-attempt-1",
+          "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b"
+        }
+      ],
+      "availability": "INCLUDED",
+      "omission_reason": null,
+      "required": true,
+      "is_current": true
+    }
+  ],
+  "executions": [
+    {
+      "execution_id": "offline-attribution-replay-40064357026",
+      "status": "EXECUTED",
+      "run_ref": {
+        "run_id": "offline-attribution-replay-40064357026",
+        "attempt": 1,
+        "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json#/invocation"
+      },
+      "used_artifact_refs": [
+        {
+          "artifact_id": "attribution-input",
+          "version_id": "run-40064357026-attempt-1",
+          "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b"
+        }
+      ],
+      "attached_artifact_refs": [],
+      "produced_artifact_refs": [
+        {
+          "artifact_id": "attribution-result",
+          "version_id": "r0",
+          "sha256": "453e9ef805bf81d9df7fc1b123a1e4ef853d68ff96f110b52c68a8d4d458bbd2"
+        }
+      ],
+      "not_executed_reason": null
+    }
+  ],
+  "reviews": [],
+  "omissions": [],
+  "fork_id_mappings": []
+}

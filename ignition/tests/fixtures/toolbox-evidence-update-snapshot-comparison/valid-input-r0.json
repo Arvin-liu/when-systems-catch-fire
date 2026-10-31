@@ -1,0 +1,44 @@
+{
+  "schema_version": "ignition.toolbox-evidence-update-snapshot-comparison-input-r0",
+  "comparison_id": "ab15-demo-update-001",
+  "baseline_snapshot": {
+    "snapshot_id": "snapshot-2026-10-01",
+    "task_ref": {"task_id": "claim-update-review-001", "revision_digest": "1111111111111111111111111111111111111111111111111111111111111111"},
+    "claim_id": "CLAIM-DEMO-001",
+    "as_of": {"reference": "snapshot:baseline-001", "observed_at_utc": "2026-10-01T00:00:00Z"},
+    "scope_digest": "2222222222222222222222222222222222222222222222222222222222222222",
+    "applicability_digest": "3333333333333333333333333333333333333333333333333333333333333333",
+    "declared_claim_state": "OPEN",
+    "change_reason": {"code": "INITIAL_SNAPSHOT", "reference": "task:claim-update-review-001"},
+    "evaluation_instrument": {"identity": "review-instrument-v1", "revision_digest": "4444444444444444444444444444444444444444444444444444444444444444"},
+    "update_policy": {"identity": "update-policy-v1", "revision_digest": "5555555555555555555555555555555555555555555555555555555555555555"},
+    "stopping_policy": {"identity": "stopping-policy-v1", "revision_digest": "6666666666666666666666666666666666666666666666666666666666666666"},
+    "acquisition_dependence": "PRIOR_SYNTHESIS_VISIBLE",
+    "evidence_items": [
+      {"evidence_id": "EVIDENCE-001", "source_family": "PRIMARY", "record_state": "LINKED", "record_sha256": "7777777777777777777777777777777777777777777777777777777777777777"},
+      {"evidence_id": "EVIDENCE-002", "source_family": "SECONDARY", "record_state": "LINKED", "record_sha256": "8888888888888888888888888888888888888888888888888888888888888888"},
+      {"evidence_id": "EVIDENCE-003", "source_family": "PRIMARY", "record_state": "LINKED", "record_sha256": "9999999999999999999999999999999999999999999999999999999999999999"},
+      {"evidence_id": "EVIDENCE-005", "source_family": "SECONDARY", "record_state": "LINKED", "record_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+    ]
+  },
+  "candidate_snapshot": {
+    "snapshot_id": "snapshot-2026-10-02",
+    "task_ref": {"task_id": "claim-update-review-001", "revision_digest": "1111111111111111111111111111111111111111111111111111111111111111"},
+    "claim_id": "CLAIM-DEMO-001",
+    "as_of": {"reference": "snapshot:candidate-001", "observed_at_utc": "2026-10-02T00:00:00Z"},
+    "scope_digest": "2222222222222222222222222222222222222222222222222222222222222222",
+    "applicability_digest": "3333333333333333333333333333333333333333333333333333333333333333",
+    "declared_claim_state": "CONTESTED",
+    "change_reason": {"code": "FOLLOW_UP_SOURCE_REVIEW", "reference": "task:claim-update-review-001#follow-up"},
+    "evaluation_instrument": {"identity": "review-instrument-v1", "revision_digest": "4444444444444444444444444444444444444444444444444444444444444444"},
+    "update_policy": {"identity": "update-policy-v1", "revision_digest": "5555555555555555555555555555555555555555555555555555555555555555"},
+    "stopping_policy": {"identity": "stopping-policy-v1", "revision_digest": "6666666666666666666666666666666666666666666666666666666666666666"},
+    "acquisition_dependence": "PRIOR_SYNTHESIS_VISIBLE",
+    "evidence_items": [
+      {"evidence_id": "EVIDENCE-001", "source_family": "PRIMARY", "record_state": "LINKED", "record_sha256": "7777777777777777777777777777777777777777777777777777777777777777"},
+      {"evidence_id": "EVIDENCE-002", "source_family": "SECONDARY", "record_state": "LINKED", "record_sha256": "8888888888888888888888888888888888888888888888888888888888888888"},
+      {"evidence_id": "EVIDENCE-003", "source_family": "PRIMARY", "record_state": "WITHDRAWN", "record_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"},
+      {"evidence_id": "EVIDENCE-004", "source_family": "TERTIARY", "record_state": "LINKED", "record_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"}
+    ]
+  }
+}

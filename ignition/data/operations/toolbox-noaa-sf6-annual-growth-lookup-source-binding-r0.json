@@ -1,0 +1,53 @@
+{
+  "schema_version": "toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0",
+  "observed_at_utc": "2026-10-27T00:18:50Z",
+  "provider": "NOAA Global Monitoring Laboratory",
+  "page_source": {
+    "url": "https://gml.noaa.gov/ccgg/trends_sf6/",
+    "observed_via": "web retrieval of official page",
+    "page_reported_last_updated": "2026-10-09",
+    "page_reports_global_marine_surface_annual_growth": true,
+    "annual_growth_definition": "Increase from January 1 of one year through January 1 of the next after seasonal cycle removal.",
+    "values_2025": {
+      "annual_increase_ppt": "0.48",
+      "uncertainty_ppt": "0.004"
+    },
+    "page_bytes_retained": false,
+    "page_response_digest_available": false
+  },
+  "raw_source": {
+    "url": "https://gml.noaa.gov/webdata/ccgg/trends/sf6/sf6_gr_gl.txt",
+    "retrieved_at_utc": "2026-10-27T00:16:53Z",
+    "http_status": 200,
+    "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+    "response_bytes": 3002,
+    "response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927",
+    "records": [
+      {
+        "annual_increase_ppt": "0.41",
+        "uncertainty_ppt": "0.00",
+        "year": 2023
+      },
+      {
+        "annual_increase_ppt": "0.40",
+        "uncertainty_ppt": "0.00",
+        "year": 2024
+      },
+      {
+        "annual_increase_ppt": "0.48",
+        "uncertainty_ppt": "0.00",
+        "year": 2025
+      }
+    ],
+    "raw_response_retained": false
+  },
+  "same_year_comparison": {
+    "year": 2025,
+    "page_annual_increase_ppt": "0.48",
+    "raw_annual_increase_ppt": "0.48",
+    "page_uncertainty_ppt": "0.004",
+    "raw_uncertainty_ppt": "0.00",
+    "disposition": "RAW_UNCERTAINTY_PRECISION_LIMITATION_RECORDED"
+  },
+  "source_limit": "This source binding preserves a page observation and the tool's exact raw response digest. It is not a full-byte paired capture, source authentication, or independent measurement validation."
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "profile_contract",
+    "parent_profile",
+    "authorization",
+    "entry_count",
+    "active_current_ordinals",
+    "historical_entry_count",
+    "legacy_profile_count",
+    "profiles",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "state-changelog-profile-r4"
+    },
+    "profile_contract": {
+      "const": "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_OWNER_AUTHORIZED_SUCCESSOR_CHAIN"
+    },
+    "parent_profile": {
+      "type": "object",
+      "required": [
+        "path",
+        "schema_version",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "const": "data/operations/state-changelog-profile-r3.json"
+        },
+        "schema_version": {
+          "const": "state-changelog-profile-r3"
+        },
+        "sha256": {
+          "const": "b52f2c3886f09b91fcf677c18ca1d9dc8ae658e2d233bcad357965cb649e4d2d"
+        }
+      },
+      "additionalProperties": false
+    },
+    "authorization": {
+      "type": "object",
+      "required": [
+        "owner",
+        "repository",
+        "commit",
+        "path",
+        "blob_sha1",
+        "append_profile"
+      ],
+      "properties": {
+        "owner": {
+          "const": "Arvin-liu"
+        },
+        "repository": {
+          "const": "Arvin-liu/1111"
+        },
+        "commit": {
+          "const": "ea631933be075684ef8de663e202db2ea9523221"
+        },
+        "path": {
+          "const": "instructions/goal-mode/IGNITION-2026-10-30-ONE-TIME-R3-V1-CLOSEOUT-EXECUTION-DELEGATION-R0.json"
+        },
+        "blob_sha1": {
+          "const": "e93a53eabe7007a2447c9677f9a8d7b7f2428646"
+        },
+        "append_profile": {
+          "const": "task20-v1-homepage-r1"
+        }
+      },
+      "additionalProperties": false
+    },
+    "entry_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "active_current_ordinals": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "historical_entry_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "legacy_profile_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "profiles": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "ordinal",
+          "date",
+          "label",
+          "profile",
+          "section_sha256"
+        ],
+        "properties": {
+          "ordinal": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "profile": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

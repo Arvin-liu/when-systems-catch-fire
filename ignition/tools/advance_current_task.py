@@ -20,7 +20,11 @@ HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 STATUS_PATH = ROOT / "data/operations/current-task-lineage-status.json"
+IDENTITY_MODEL_PATH = ROOT / "data/operations/task-identity-model-r1.json"
 TASK_ID_RE = re.compile(r"^IGNITION-(?:(?P<date>\d{8})-)?(?P<number>\d+)$")
+EXECUTION_CONTRACT_PATH_RE = re.compile(
+    r"^ignition/data/operations/iterations/(?P<ordinal>[0-9]+)/execution-contract-r1\.json$"
+)
 CLAIM_CEILING = "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
 
 
@@ -209,6 +213,34 @@ def validate_state(document: dict[str, Any]) -> list[str]:
     return errors
 
 
+def resolve_contract_path(identity_model: dict[str, Any], repo_root: Path = REPO_ROOT) -> Path:
+    """Resolve the release candidate contract from its canonical role binding.
+
+    The numeric suffix in a task ID is not a reliable "next task" selector:
+    formal ordinals can be explicitly registered and need not be current + 1.
+    The identity model's release-candidate source is the sole selection source.
+    """
+    binding = identity_model.get("role_bindings", {}).get("release_candidate_task", {})
+    source_path = binding.get("source_path")
+    match = EXECUTION_CONTRACT_PATH_RE.fullmatch(source_path) if isinstance(source_path, str) else None
+    if not match:
+        raise AdvancementError("release_candidate_task must bind an exact iterations/<ordinal>/execution-contract-r1.json source")
+    candidate = (repo_root / source_path).resolve()
+    try:
+        candidate.relative_to(repo_root.resolve())
+    except ValueError as exc:
+        raise AdvancementError("release-candidate execution contract escapes the repository root") from exc
+    if not candidate.is_file():
+        raise AdvancementError(f"registered release-candidate execution contract is missing: {source_path}")
+    contract = load_json(candidate)
+    task_id = contract.get("task_id")
+    if task_id != contract.get("identity_expectations", {}).get("release_candidate_task"):
+        raise AdvancementError("registered execution contract task_id differs from its release-candidate identity")
+    if task_order(task_id)[1] != int(match.group("ordinal")):
+        raise AdvancementError("registered execution-contract path ordinal differs from its task identity")
+    return candidate
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     mode = parser.add_mutually_exclusive_group(required=True)
@@ -216,16 +248,12 @@ def main() -> int:
     mode.add_argument("--write", action="store_true")
     args = parser.parse_args()
     document = load_json(STATUS_PATH)
-    current_task = document["task_identity"]["current_formal_task"] if document.get("task_identity") else None
-    ordinal = int(current_task.rsplit("-", 1)[1]) + 1 if current_task else 1
-    next_contract_path = ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json"
-    if next_contract_path.is_file():
-        contract_path = next_contract_path
-    else:
-        recorded_path = document.get("task_identity", {}).get("advancement", {}).get("execution_contract_path")
-        if not recorded_path:
-            raise AdvancementError("no next execution contract or recorded current execution contract is available")
-        contract_path = REPO_ROOT / recorded_path
+    identity_model = load_json(IDENTITY_MODEL_PATH)
+    try:
+        contract_path = resolve_contract_path(identity_model)
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"CANONICAL_CURRENT_ADVANCEMENT_INVALID: {exc}", file=sys.stderr)
+        return 1
     contract = load_json(contract_path)
     try:
         updated, changed = advance_document(document, contract)

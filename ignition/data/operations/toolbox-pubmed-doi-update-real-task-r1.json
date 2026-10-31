@@ -1,0 +1,107 @@
+{
+  "schema_version": "ignition.toolbox-pubmed-doi-update-real-task-r1",
+  "task": {
+    "doi": "10.1016/j.ajhg.2010.04.006",
+    "goal": "Resolve this public DOI and require same-response DOI identity in PubMed EFetch before returning raw relation rows.",
+    "mode": "READ_ONLY_RUN",
+    "permission": {
+      "explicit_cli_flag": "--allow-public-network",
+      "hosts": [
+        "pmc.ncbi.nlm.nih.gov",
+        "eutils.ncbi.nlm.nih.gov"
+      ],
+      "writes": false,
+      "secrets": false,
+      "billing": false
+    }
+  },
+  "invocation": {
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-B",
+      "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+      "--stdin",
+      "--allow-public-network"
+    ],
+    "request_json": {
+      "dois": [
+        "10.1016/j.ajhg.2010.04.006"
+      ]
+    },
+    "started_at_utc": "2026-10-25T20:13:14.227Z",
+    "completed_at_utc": "2026-10-25T20:13:16.417Z",
+    "returncode": 0,
+    "process_wall_ms": 2189.95,
+    "stderr": "",
+    "stdout_json": {
+      "claim_ceiling": "One DOI-to-PMID resolution response followed, only when an exact PMID is returned, by raw PubMed Comments/Corrections fields for that exact record and the same EFetch response reports exactly the input DOI. An absent PMID, unavailable response, or empty relation list does not establish that no update exists; no source authenticity, completeness, retraction-status, article-content, or scientific-validity claim is made.",
+      "doi": "10.1016/j.ajhg.2010.04.006",
+      "identifier_resolution": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup in the live PMC ID Converter response only; no article-content, bibliographic-accuracy, source-authenticity, scientific-validity, or completeness claim is established.",
+        "doi_count": 1,
+        "resolved_count": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "doi": "10.1016/j.ajhg.2010.04.006",
+            "http_status": 200,
+            "identifier_status": "IDENTIFIER_RESOLVED",
+            "matched_doi": "10.1016/j.ajhg.2010.04.006",
+            "pmcid": "PMC2869000",
+            "pmid": "20466091",
+            "response_sha256": "7ae97ebbd89ed995841c390ed9a2d49fde8bd2251a933d3c4a8de16ad26b7daa",
+            "retrieval_timestamp_utc": "2026-10-25T20:13:14Z",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.1016%2Fj.ajhg.2010.04.006&format=json"
+          }
+        ],
+        "schema_version": "ignition.pubmed-identifier-resolution-r0",
+        "source_code_sha256": {
+          "wrapper": "05b89735fabd074f1ff79daf14fbc04af0b18a7d7ca6fb03d074306f9d6a05eb"
+        },
+        "status": "IDENTIFIERS_RESOLVED",
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "tool_version": "0.1.1"
+      },
+      "schema_version": "ignition.pubmed-doi-update-audit-r0",
+      "source_code_sha256": {
+        "composition_wrapper": "91eec6b680cb7b2a9d5f12a14fc3253e359541e4d4e888255af10470135a3ec1",
+        "identifier_resolver": "05b89735fabd074f1ff79daf14fbc04af0b18a7d7ca6fb03d074306f9d6a05eb",
+        "update_link_reader": "e66e2083327b86be30f1c0d9b00c65e079d3b65e9be0ac0015930ee5baa7647f"
+      },
+      "status": "COMPLETED_WITH_EXPLICIT_STAGE_OUTCOMES",
+      "tool_id": "research.audit_pubmed_updates_from_doi",
+      "tool_version": "0.2.0",
+      "update_link_inspection": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "Raw Comments/Corrections relation fields returned for exact PubMed records at retrieval time only. When an expected DOI is supplied by a composing caller, relations are returned only if the same EFetch record reports exactly that DOI; this does not authenticate the source. No completeness claim is made and an empty relation list does not prove that no correction, expression of concern, or retraction exists.",
+        "pmid_count": 1,
+        "records_found": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "doi_binding_status": "EXACT_MATCH",
+            "expected_doi": "10.1016/j.ajhg.2010.04.006",
+            "http_status": 200,
+            "pmid": "20466091",
+            "pubmed_record_url": "https://pubmed.ncbi.nlm.nih.gov/20466091/",
+            "record_status": "RECORD_FOUND_NO_RECORDED_RELATIONS",
+            "relations": [],
+            "relations_truncated": false,
+            "response_sha256": "5c2c7c69e8b1e220f67176bd4c9d56ea61aa578d29b2b1da25b97722fd224b42",
+            "retrieval_timestamp_utc": "2026-10-25T20:13:14Z",
+            "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20466091&retmode=xml&tool=IgnitionToolbox"
+          }
+        ],
+        "schema_version": "ignition.pubmed-update-link-inspection-r0",
+        "source_code_sha256": {
+          "wrapper": "e66e2083327b86be30f1c0d9b00c65e079d3b65e9be0ac0015930ee5baa7647f"
+        },
+        "status": "RECORDS_INSPECTED",
+        "tool_id": "research.inspect_pubmed_update_links",
+        "tool_version": "0.2.0"
+      },
+      "update_link_status": "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"
+    }
+  }
+}

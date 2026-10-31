@@ -1,0 +1,169 @@
+{
+  "admissibility_ceiling": "Caller-declared model admissibility note; the tool does not verify real-world admissibility.",
+  "baseline": {
+    "artifact_integrity_valid": true,
+    "case_id": "BASELINE",
+    "case_input_sha256": "6f2981e571f4184ac81624395a51a543b17aeec16951fa86496e8264e355a249",
+    "evaluable": true,
+    "evaluation_error": null,
+    "execution_status": "OK",
+    "n7_status": "PASS",
+    "output_name": "eligible",
+    "output_value": false,
+    "policy_status": "OK",
+    "trace_sha256": "eba6df67f44e1d453b3c25d33e8f9b8a41a66e091df1c888ea7436fb042afb9d"
+  },
+  "claim_ceiling": "Sensitivity of a caller-declared bounded pure symbolic model under independent caller-declared input edits. Results do not establish actual-world evidence, causal identification, model validity, scientific truth, admissible real-world interventions, or a proof. Matching a predicted direction is not confirmation; a mismatched or failed probe remains visible as a disconfirming or unassessable model result.",
+  "counterfactual_edit_is_actual_world_evidence": false,
+  "each_probe_starts_from_baseline": true,
+  "evaluation_count": 4,
+  "external_action_taken": false,
+  "function_os_source_refs": [
+    {
+      "path": "ignition/tools/toolbox_function_os_evaluator.py",
+      "sha256": "dd599145061c417a0cbd0d06c7d6c90b00770a71e2cdbc1fbd8714422d611fdc"
+    },
+    {
+      "file_count": 14,
+      "hash_kind": "SHA256_FILE_TREE_R0",
+      "path": "ignition/function-os-candidate/v0.2/function_os",
+      "sha256": "62df343204d6c15c3b6a996dfc9b84508a102241a9632428a33bfcf1b5b3b72e"
+    },
+    {
+      "path": "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+      "sha256": "cfb6e797bb0bffd6a2b0e72a832e861b350eadd6b7ef3a57d035afaa631d78d2"
+    },
+    {
+      "path": "ignition/function-os-candidate/v0.2/pyproject.toml",
+      "sha256": "9558fececaff2582f166960fc08ecf12300a28e48fb7beb71ae1d52c3f07a688"
+    }
+  ],
+  "invariants_applied": [
+    "COUNTERFACTUAL_EDIT_IS_NOT_EVIDENCE_OF_ACTUAL_WORLD",
+    "COUNTERFACTUAL_CHANGE_MUST_BIND_TARGET_ASSUMPTION",
+    "DISCONFIRMATION_HAS_PRIORITY_OVER_SELF_CONFIRMING_REPETITION",
+    "FAILED_COUNTERFACTUAL_DOES_NOT_REWRITE_SOURCE_EVIDENCE"
+  ],
+  "model_binding": {
+    "function_id": "FN-20261026-0002",
+    "function_os_version": "0.2.1rc0-candidate",
+    "function_spec_sha256": "d3db8f6eadc4af3279a3e9b2e5a672e4781f986b445c82e24dbcb24cf76a192d",
+    "output_name": "eligible",
+    "output_type": "boolean"
+  },
+  "probes": [
+    {
+      "admissibility": {
+        "note": "One-variable hypothetical gate edit only; no check is run and no repository state changes.",
+        "status": "CALLER_DECLARED_NOT_VERIFIED"
+      },
+      "assumption_id": "foundation-required-check-passes",
+      "assumption_statement": "The exact-head foundation-validation required status is successful.",
+      "conclusion_stability": "STABLE_WITHIN_DECLARED_MODEL",
+      "disconfirmation_status": "EXPECTED_DIRECTION_OBSERVED_NOT_CONFIRMATORY",
+      "expected_direction": "NO_CHANGE",
+      "expected_direction_match": true,
+      "intervention": {
+        "baseline_value": false,
+        "input_name": "foundation_validation_passed",
+        "replacement_value": true
+      },
+      "observed_direction": "NO_CHANGE",
+      "observed_or_simulated_result": {
+        "artifact_integrity_valid": true,
+        "case_id": "foundation-status-alone-does-not-open-main",
+        "case_input_sha256": "b6359fd9d28c68ce7611347d0c21cc07bdbb3415b280e3ee48f485e0bc5b2f29",
+        "evaluable": true,
+        "evaluation_error": null,
+        "execution_status": "OK",
+        "n7_status": "PASS",
+        "output_name": "eligible",
+        "output_value": false,
+        "policy_status": "OK",
+        "trace_sha256": "a23919f433e1c86d49cf4c502325f9f61af0ef929be1d26f00711e1ab4931d84"
+      },
+      "probe_id": "foundation-status-alone-does-not-open-main",
+      "target_conclusion_id": "a081-formal-main-eligible-under-declared-gates"
+    },
+    {
+      "admissibility": {
+        "note": "One-variable hypothetical gate edit only; no PR is created and no repository state changes.",
+        "status": "CALLER_DECLARED_NOT_VERIFIED"
+      },
+      "assumption_id": "formal-pr-exists",
+      "assumption_statement": "A Formal PR for this exact candidate exists.",
+      "conclusion_stability": "STABLE_WITHIN_DECLARED_MODEL",
+      "disconfirmation_status": "EXPECTED_DIRECTION_OBSERVED_NOT_CONFIRMATORY",
+      "expected_direction": "NO_CHANGE",
+      "expected_direction_match": true,
+      "intervention": {
+        "baseline_value": false,
+        "input_name": "formal_pr_open",
+        "replacement_value": true
+      },
+      "observed_direction": "NO_CHANGE",
+      "observed_or_simulated_result": {
+        "artifact_integrity_valid": true,
+        "case_id": "pr-alone-does-not-open-main",
+        "case_input_sha256": "a27de3795c04fdd6e689f4bb1552a3f848c6c521b529bb4d9e7a5fb36f4750e2",
+        "evaluable": true,
+        "evaluation_error": null,
+        "execution_status": "OK",
+        "n7_status": "PASS",
+        "output_name": "eligible",
+        "output_value": false,
+        "policy_status": "OK",
+        "trace_sha256": "2a005a13d4192cae0c6717dc7ded7a7b6d3131572551e781031e5df645376130"
+      },
+      "probe_id": "pr-alone-does-not-open-main",
+      "target_conclusion_id": "a081-formal-main-eligible-under-declared-gates"
+    },
+    {
+      "admissibility": {
+        "note": "One-variable hypothetical permission edit only; no Foundation run is started and no authorization is inferred.",
+        "status": "CALLER_DECLARED_NOT_VERIFIED"
+      },
+      "assumption_id": "foundation-is-permitted-this-turn",
+      "assumption_statement": "Owner permits the Full Foundation run required by the exact route during this turn.",
+      "conclusion_stability": "STABLE_WITHIN_DECLARED_MODEL",
+      "disconfirmation_status": "EXPECTED_DIRECTION_OBSERVED_NOT_CONFIRMATORY",
+      "expected_direction": "NO_CHANGE",
+      "expected_direction_match": true,
+      "intervention": {
+        "baseline_value": false,
+        "input_name": "full_foundation_allowed_this_turn",
+        "replacement_value": true
+      },
+      "observed_direction": "NO_CHANGE",
+      "observed_or_simulated_result": {
+        "artifact_integrity_valid": true,
+        "case_id": "foundation-permission-alone-does-not-open-main",
+        "case_input_sha256": "9d4ee2e3b26e37f87e10077f5c141087c312e37a39d73478b419e27c7d7d70a2",
+        "evaluable": true,
+        "evaluation_error": null,
+        "execution_status": "OK",
+        "n7_status": "PASS",
+        "output_name": "eligible",
+        "output_value": false,
+        "policy_status": "OK",
+        "trace_sha256": "052f6f92da3484f0637e24f70649597066a71a410e5a81778eb4951536748f93"
+      },
+      "probe_id": "foundation-permission-alone-does-not-open-main",
+      "target_conclusion_id": "a081-formal-main-eligible-under-declared-gates"
+    }
+  ],
+  "request_sha256": "e370e08c547c41c0689147cea4b6613c8b8651e9c66ee866048fe203c065c263",
+  "schema_version": "toolbox-counterfactual-probe-output-r0",
+  "source_evidence_mutated": false,
+  "status": "COUNTERFACTUAL_PROBE_REPORTED",
+  "target_conclusion": {
+    "conclusion_id": "a081-formal-main-eligible-under-declared-gates",
+    "statement": "Under the explicitly declared release-gate conjunction, homepage candidate a081fe47 is eligible to merge into Formal main this turn."
+  },
+  "tool_id": "research.probe_counterfactual_fragility",
+  "tool_version": "0.1.0",
+  "wrapper_source": {
+    "path": "ignition/tools/toolbox_counterfactual_probe.py",
+    "sha256": "b9c240dc7c32ade9cfa734b6df0a532b98299e338be102f57c57dd4a6e2228c3"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "comparison_method": "LIVE_SAME_RANGE_RAW_ONLY_LOOKUP_VS_TWO_SURFACE_COMPARATOR_PLUS_FIXED_SPECIES_SCOPE_REVIEW",
+  "disposition": {
+    "decision": "COEXIST_BY_TASK_SCOPE",
+    "retired_tools": [],
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "uncertainties": [
+      "Request count is observable from the fixed implementations; monetary cost, stable latency, availability, and long-run parser reliability were not compared.",
+      "A same-range live match does not authenticate NOAA, establish measurement validity, or support an emissions or causal claim.",
+      "The existing comparator can provide raw values as part of a broader result, but requires an extra page request that raw-only tasks do not need."
+    ]
+  },
+  "execution_boundary": {
+    "actual_invocation_requires_flag": "--allow-public-network",
+    "default_route_selectable": false,
+    "raw_response_bodies_retained": false,
+    "route_planning_authorizes_execution": false
+  },
+  "functional_findings": [
+    "For the same 2023–2025 raw-only task, the new tool returned the three declared N2O values and uncertainties from one fixed raw-table GET. The existing N2O comparator used two requests and also returned the rendered-page values and comparison output.",
+    "The raw response digest and selected raw rows matched between the near-contemporaneous captures; the comparator additionally found an exact page/raw match for these three years. This is one matched observation, not long-run agreement or measurement validation.",
+    "The raw-only lookup is minimum-sufficient when the task needs only the fixed raw N2O table; it is insufficient when both current surfaces or their differences are required.",
+    "The existing CO2 and CH4 lookup/comparator tools have distinct fixed source species and remain useful; no existing candidate is replaced or retired."
+  ],
+  "observed_at_utc": "2026-10-26T22:31:00Z",
+  "same_range_live_outcomes": {
+    "existing_two_surface_comparator": {
+      "comparison_status": "EXACT_MATCH",
+      "output_sha256": "f6b6bdf0a0390d717bf9dab7271c2ce7a75374a63a084d8309a410bb02f2e33c",
+      "page_response_sha256": "26224346d22b2e37312df032566be078fb8ea3af25092e164ac54cda5885e2db",
+      "page_values_ppb": [
+        "1.01",
+        "1.02",
+        "1.23"
+      ],
+      "raw_response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+      "raw_values_ppb": [
+        "1.01",
+        "1.02",
+        "1.23"
+      ],
+      "requests_made": 2,
+      "retrieval_times_utc": [
+        "2026-10-26T22:30:59Z",
+        "2026-10-26T22:31:00Z"
+      ],
+      "status": "COMPARED",
+      "tool_id": "research.compare_noaa_n2o_source_surfaces",
+      "uncertainties_ppb": [
+        "0.02",
+        "0.01",
+        "0.01"
+      ]
+    },
+    "new_raw_only_lookup": {
+      "output_sha256": "7f8333380019e054bc818ddd21b3ca28c52b21377c4cbf5c65fac8baf4020d31",
+      "raw_table_values_ppb": [
+        "1.01",
+        "1.02",
+        "1.23"
+      ],
+      "requests_made": 1,
+      "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+      "retrieved_at_utc": "2026-10-26T22:30:45Z",
+      "status": "FOUND",
+      "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+      "uncertainties_ppb": [
+        "0.02",
+        "0.01",
+        "0.01"
+      ]
+    }
+  },
+  "schema_version": "toolbox-noaa-n2o-annual-growth-lookup-c1-evidence-r0",
+  "task": {
+    "comparator_input_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-comparison-raw-only-paired-input-r0.json",
+    "comparator_output_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-comparison-raw-only-paired-output-r0.json",
+    "range": {
+      "end_year": 2025,
+      "start_year": 2023
+    },
+    "raw_lookup_input_path": "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-input-r0.json",
+    "raw_lookup_output_path": "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-output-r0.json",
+    "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025"
+  },
+  "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+  "tool_version": "0.1.0"
+}

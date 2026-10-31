@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-pubmed-query-search-output-r0",
+  "title": "Bounded PubMed Query Search Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_id", "tool_version", "source_code_sha256", "query_sha256",
+    "source_endpoints", "retrieval_timestamp_utc", "max_results", "contact_email_sent_to_provider",
+    "contact_email_retained", "acquisition_status", "http_status", "response_sha256",
+    "request_count", "search_status", "status", "hit_count", "search_returned_pmids",
+    "returned_count", "missing_summary_pmids", "records", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition.pubmed-query-search-r0"},
+    "tool_id": {"const": "research.search_pubmed_query"},
+    "tool_version": {"type": "string", "const": "0.1.0"},
+    "source_code_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "query_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_endpoints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["esearch", "esummary"],
+      "properties": {
+        "esearch": {"const": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"},
+        "esummary": {"const": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"}
+      }
+    },
+    "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+    "max_results": {"type": "integer", "minimum": 1, "maximum": 10},
+    "contact_email_sent_to_provider": {"type": "boolean"},
+    "contact_email_retained": {"const": false},
+    "acquisition_status": {
+      "enum": [
+        "NOT_AVAILABLE", "OK", "NETWORK_ERROR", "RATE_LIMITED", "HTTP_ERROR",
+        "REDIRECT_BLOCKED", "NON_JSON_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE",
+        "INVALID_ESEARCH_RESPONSE", "ESUMMARY_NETWORK_ERROR", "ESUMMARY_RATE_LIMITED",
+        "ESUMMARY_HTTP_ERROR", "ESUMMARY_REDIRECT_BLOCKED", "ESUMMARY_NON_JSON_RESPONSE",
+        "ESUMMARY_RESPONSE_TIMEOUT", "ESUMMARY_RESPONSE_TOO_LARGE", "INVALID_ESUMMARY_RESPONSE"
+      ]
+    },
+    "http_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["esearch", "esummary"],
+      "properties": {
+        "esearch": {"type": ["integer", "null"]},
+        "esummary": {"type": ["integer", "null"]}
+      }
+    },
+    "response_sha256": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["esearch", "esummary"],
+      "properties": {
+        "esearch": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "esummary": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "request_count": {"type": "integer", "minimum": 0, "maximum": 2},
+    "search_status": {"enum": ["NOT_AVAILABLE", "FOUND", "NO_MATCH"]},
+    "status": {"enum": ["NOT_AVAILABLE", "FOUND", "NO_MATCH", "PARTIAL"]},
+    "hit_count": {"type": ["integer", "null"], "minimum": 0},
+    "search_returned_pmids": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {"type": "string", "pattern": "^[0-9]{1,12}$"}
+    },
+    "returned_count": {"type": "integer", "minimum": 0, "maximum": 10},
+    "missing_summary_pmids": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {"type": "string", "pattern": "^[0-9]{1,12}$"}
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["pmid", "doi", "title", "author_names", "author_count", "authors_truncated", "journal_title", "publication_date"],
+        "properties": {
+          "pmid": {"type": "string", "pattern": "^[0-9]{1,12}$"},
+          "doi": {"type": ["string", "null"], "maxLength": 512},
+          "title": {"type": ["string", "null"], "maxLength": 4096},
+          "author_names": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 256}},
+          "author_count": {"type": ["integer", "null"], "minimum": 0},
+          "authors_truncated": {"type": "boolean"},
+          "journal_title": {"type": ["string", "null"], "maxLength": 4096},
+          "publication_date": {"type": ["string", "null"], "maxLength": 128}
+        }
+      }
+    },
+    "claim_ceiling": {"type": "string"}
+  }
+}

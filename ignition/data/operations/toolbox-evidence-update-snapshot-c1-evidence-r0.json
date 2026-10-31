@@ -1,0 +1,47 @@
+{
+  "schema_version": "toolbox-evidence-update-snapshot-c1-evidence-r0",
+  "candidate_id": "research.compare_evidence_update_snapshots",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "comparison_scope": "Contract-level overlap check against the closest current evidence, publication-metadata, and review-record tools. No matched same-task outcome, cost, reliability, or maintenance-burden trial has been run.",
+  "compared_tools": [
+    {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "evidence_ref": "ignition/tools/toolbox_validate_evidence_program.py",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "observed_contract": "Validates one fixed evidence-program tree, preregistration ordering, provenance fields, threshold consistency and metric leakage; it does not compare successive claim-evidence snapshots or acquisition dependence."
+    },
+    {
+      "tool_id": "research.compare_publication_metadata_snapshots",
+      "evidence_ref": "ignition/tools/toolbox_compare_publication_metadata.py",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "observed_contract": "Compares title and publication year across one Crossref and one OpenAlex result for the same DOI; it does not report claim-scope, evidence-item, stopping-policy, evaluator or source-family changes across time."
+    },
+    {
+      "tool_id": "maintenance.compare_audit_findings",
+      "evidence_ref": "ignition/tools/toolbox_audit_finding_comparator.py",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "observed_contract": "Compares two audit finding sets under the same scope, target and target revision; it does not compare scientific evidence acquisition histories or update policies."
+    },
+    {
+      "tool_id": "Current self-correction evidence-lineage projection",
+      "evidence_ref": "ignition/data/governance/self-correction/evidence-lineage-delta.jsonl",
+      "relationship": "ADJACENT_EXISTING_CURRENT_OUTPUT_NOT_A_TOOLBOX_OPERATION",
+      "observed_contract": "Repository change-triggered source-asset lineage uses a fixed SOURCE_ASSET_CHANGED state and re-review limitation; it is not a task-paired update snapshot comparator and does not bind acquisition/stopping/evaluator controls."
+    }
+  ],
+  "distinct_function": [
+    "Compares two bounded caller-supplied snapshots for one stable task ID and claim ID, preserving predecessor/as-of identity.",
+    "Reports exact evidence-ID additions, absences, retained record digests, declared record-state changes and source-family count deltas.",
+    "Surfaces scope/applicability changes, task revision drift, evaluator/update/stopping-policy drift and acquisition dependence; missing controls produce COMPARISON_UNKNOWN.",
+    "Provides EXPLICIT_NO_CHANGE only when all compared metadata is present and equal. Unknown metadata produces NO_CHANGE_NOT_ESTABLISHED rather than an empty success.",
+    "Reports explicit caller-declared withdrawal/retraction transitions as review triggers; absence from a later snapshot is not treated as withdrawal."
+  ],
+  "claim_ceiling": "Structural caller-record comparison only. No source authentication, evidence-quality judgment, claim-truth decision, downgrade inference, accumulation-bias measurement, scientific acceptance, or state mutation.",
+  "same_task_comparison": "NOT_RUN",
+  "measured_cost": "UNKNOWN",
+  "replacement_candidates": [],
+  "unique_remaining_use_cases": [
+    "Produce an explicit, machine-readable as-of evidence update trace for one claim while keeping source-family, scope, evaluator, stopping-policy, acquisition-dependence, and uncertainty changes visible."
+  ],
+  "retirement_decision": "NONE. Current neighbors cover different input/output contracts. No evidence supports retiring or replacing any operation; preserve COMPARISON_UNKNOWN pending a low-cost matched-task trial."
+}

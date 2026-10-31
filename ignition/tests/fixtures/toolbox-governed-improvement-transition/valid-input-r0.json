@@ -1,0 +1,49 @@
+{
+  "schema_version": "governed-improvement-transition-r0",
+  "transition_id": "synthetic-ab19-transition-001",
+  "predecessor": {
+    "system_ref": "synthetic://system/predecessor",
+    "system_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "successor_candidate": {
+    "system_ref": "synthetic://system/successor-candidate",
+    "system_sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "changed_mechanisms": ["bounded experiment-freeze validation"],
+  "preregistration": {
+    "ref": "synthetic://preregistration/ab19-001",
+    "sha256": "3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "evaluation_bindings": {
+    "predecessor": {
+      "evaluator_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "benchmark_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "heldout_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    "successor": {
+      "evaluator_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "benchmark_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "heldout_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    "successor_on_predecessor_anchor": {"status": "NOT_RUN", "evaluation_binding": null, "metrics": []}
+  },
+  "quality_metrics": [
+    {"metric_id": "frozen_experiment_success_rate", "unit": "fraction", "direction": "HIGHER_IS_BETTER", "predecessor_value": 0.6, "successor_value": 0.8}
+  ],
+  "cost_metrics": [
+    {"metric_id": "compute_seconds", "unit": "seconds", "predecessor_value": 100, "successor_value": 110, "max_allowed_increase": 20}
+  ],
+  "failure_deltas": [
+    {"failure_class": "protocol_invalidation", "predecessor_count": 2, "successor_count": 1, "max_allowed_increase": 0}
+  ],
+  "authority_scopes": {
+    "predecessor": ["local-read-only"],
+    "successor": ["local-read-only"]
+  },
+  "rollback": {
+    "target_system_ref": "synthetic://system/predecessor",
+    "target_system_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "exercise_status": "PASS"
+  },
+  "next_round_rnd_gain": {"status": "NOT_MEASURED", "metric": null}
+}

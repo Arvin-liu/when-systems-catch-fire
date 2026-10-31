@@ -1,0 +1,131 @@
+{
+  "schema_version": "toolbox-actions-check-observations-real-task-r0",
+  "tool_id": "maintenance.inspect_exact_head_check_observations",
+  "tool_version": "0.1.0",
+  "observed_at_utc": "2026-10-26T02:33:03Z",
+  "blueprint_binding": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 85,
+    "head": "77d308ea132a4952d151cab1d81f9f9c9f44f55c",
+    "state_at_review": "OPEN_DRAFT_UNMERGED",
+    "work_item": "G-FOUNDATION-ECONOMICS-R0"
+  },
+  "task": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "task_id": "inspect-pr264-exact-head-check-name-and-app-observations",
+    "candidate_head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "formal_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+  },
+  "source_observations": {
+    "check_runs_endpoint": "GET /repos/Arvin-liu/when-systems-catch-fire/commits/8230dc6c13ec12c57f9c81f81994ee775ebb2ce8/check-runs",
+    "check_runs_payload_sha256": "bafe41c31f62e6f7263ece633b7ec44422881a015e7fa9f3781c75507baaa753",
+    "check_runs_total_count": 11,
+    "check_runs_complete_across_returned_pages": true,
+    "current_main_branch_protection_endpoint": "GET /repos/Arvin-liu/when-systems-catch-fire/branches/main/protection",
+    "branch_protection_payload_sha256": "3e7aa6995ad9e0e1dd441e4556e3ae0cde532e5972cd31d3015e8c1f6b6a1140",
+    "expected_contexts_copied_from_live_protection_read": [
+      {
+        "name": "foundation-validation",
+        "app_id": 15368
+      },
+      {
+        "name": "release-transaction-protocol-validation",
+        "app_id": 15368
+      },
+      {
+        "name": "repository-path-accounting-preflight",
+        "app_id": 15368
+      }
+    ],
+    "capture_note": "The tool accepts these expectations and records as caller-supplied input; it does not authenticate either API payload or the required-check binding."
+  },
+  "input_fixture": "ignition/tests/fixtures/toolbox-actions-check-observations/pr264-8230dc6-check-runs-r0.json",
+  "tool_output": {
+    "check_runs_snapshot": {
+      "complete_caller_assertion": true,
+      "supplied_count": 11,
+      "total_count": 11
+    },
+    "expected_head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "input_sha256": "23786090d8142a08232d0d08d607d8d8c5858f68c81948f49ccbc20836fde11c",
+    "non_claims": {
+      "branch_protection_binding": "NOT_ESTABLISHED",
+      "ci_or_scientific_validity_established": false,
+      "merge_or_release_authorized": false,
+      "requested_contexts_authenticated": false,
+      "required_check_satisfaction_interpreted": false,
+      "snapshot_source_authenticated": false
+    },
+    "outcome_counts": {
+      "CONTEXT_NOT_OBSERVED": 1,
+      "DUPLICATE_AMBIGUOUS": 0,
+      "OBSERVED_NON_SUCCESS": 0,
+      "OBSERVED_SUCCESS": 2,
+      "PENDING": 0,
+      "SNAPSHOT_INCOMPLETE": 0,
+      "STALE_SHA_ONLY": 0,
+      "UNKNOWN_PROVIDER_STATE": 0,
+      "WRONG_APP_ONLY": 0
+    },
+    "requested_contexts": [
+      {
+        "app_ids_observed_on_exact_head": [],
+        "exact_head_sha_observation_count": 0,
+        "exact_name_sha_app_match_count": 0,
+        "expected_app_id": 15368,
+        "matching_check_run_ids": [],
+        "name": "foundation-validation",
+        "observation": "CONTEXT_NOT_OBSERVED",
+        "observed_conclusion": null,
+        "observed_status": null,
+        "same_name_observation_count": 0,
+        "stale_head_shas": []
+      },
+      {
+        "app_ids_observed_on_exact_head": [
+          15368
+        ],
+        "exact_head_sha_observation_count": 1,
+        "exact_name_sha_app_match_count": 1,
+        "expected_app_id": 15368,
+        "matching_check_run_ids": [
+          120784357371
+        ],
+        "name": "release-transaction-protocol-validation",
+        "observation": "OBSERVED_SUCCESS",
+        "observed_conclusion": "success",
+        "observed_status": "completed",
+        "same_name_observation_count": 1,
+        "stale_head_shas": []
+      },
+      {
+        "app_ids_observed_on_exact_head": [
+          15368
+        ],
+        "exact_head_sha_observation_count": 1,
+        "exact_name_sha_app_match_count": 1,
+        "expected_app_id": 15368,
+        "matching_check_run_ids": [
+          120784357482
+        ],
+        "name": "repository-path-accounting-preflight",
+        "observation": "OBSERVED_SUCCESS",
+        "observed_conclusion": "success",
+        "observed_status": "completed",
+        "same_name_observation_count": 1,
+        "stale_head_shas": []
+      }
+    ],
+    "schema_version": "toolbox-actions-check-observations-output-r0",
+    "tool_id": "maintenance.inspect_exact_head_check_observations",
+    "tool_sha256": "93fddeda3e927ef10ffa846b60d6abed217c8599129656e09552214a7d0eb3c8",
+    "tool_version": "0.1.0"
+  },
+  "observed_findings": [
+    "Two supplied context/App pairs had one exact-head success observation: release-transaction-protocol-validation and repository-path-accounting-preflight.",
+    "No check-run with the supplied name foundation-validation was observed on this SHA. A differently named Full Foundation regression record was cancelled; this tool does not equate the two names.",
+    "These observations do not establish CI sufficiency, reusability, branch-protection satisfaction, merge authorization, or release authorization."
+  ],
+  "measured_cost_savings": "UNKNOWN_NOT_MEASURED",
+  "claim_ceiling": "A locally computed classification of the captured caller-supplied check-run rows against the supplied SHA/name/App ID pairs. No authenticity, requiredness, CI sufficiency, permission, or savings is inferred."
+}

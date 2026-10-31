@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolbox-selected-index-search-result-merge-output-r0.schema.json",
+  "title": "Selected-index search result merge receipt R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "status", "source_results", "record_count_total", "exact_normalized_doi_clusters", "unclustered_record_count", "match_basis", "input_sha256", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition.selected-index-search-result-merge-r0"},
+    "tool_id": {"const": "research.merge_selected_index_search_results"},
+    "tool_version": {"type": "string", "minLength": 1, "maxLength": 32},
+    "status": {"enum": ["COMPLETE", "PARTIAL", "FAILED"]},
+    "source_results": {"type": "array", "minItems": 2, "maxItems": 3, "items": {"$ref": "#/$defs/sourceSummary"}},
+    "record_count_total": {"type": "integer", "minimum": 0, "maximum": 30},
+    "exact_normalized_doi_clusters": {"type": "array", "maxItems": 30, "items": {"$ref": "#/$defs/doiCluster"}},
+    "unclustered_record_count": {"type": "integer", "minimum": 0, "maximum": 30},
+    "match_basis": {"const": "EXACT_NORMALIZED_DOI_ONLY"},
+    "input_sha256": {"$ref": "#/$defs/sha256"},
+    "claim_ceiling": {"type": "string", "minLength": 1, "maxLength": 2048}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "record_index", "provider_record_id", "doi", "normalized_doi", "title", "publication_year"],
+      "properties": {
+        "provider": {"enum": ["crossref", "openalex", "europe_pmc"]},
+        "record_index": {"type": "integer", "minimum": 0, "maximum": 9},
+        "provider_record_id": {"type": "string", "minLength": 1, "maxLength": 1200},
+        "doi": {"type": ["string", "null"], "maxLength": 1200},
+        "normalized_doi": {"type": ["string", "null"], "maxLength": 1200},
+        "title": {"type": ["string", "null"], "maxLength": 4096},
+        "publication_year": {"type": ["integer", "null"], "minimum": 0, "maximum": 3000}
+      }
+    },
+    "sourceSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "adapter_tool_id", "adapter_version", "adapter_status", "acquisition_status", "source_endpoint", "retrieval_timestamp_utc", "max_results", "query_sha256", "response_sha256", "provider_hit_count", "returned_count", "records"],
+      "properties": {
+        "provider": {"enum": ["crossref", "openalex", "europe_pmc"]},
+        "adapter_tool_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "adapter_version": {"type": "string", "minLength": 1, "maxLength": 32},
+        "adapter_status": {"type": "string", "minLength": 1, "maxLength": 64},
+        "acquisition_status": {"type": "string", "minLength": 1, "maxLength": 64},
+        "source_endpoint": {"type": "string", "format": "uri", "maxLength": 512},
+        "retrieval_timestamp_utc": {"type": "string", "format": "date-time", "maxLength": 64},
+        "max_results": {"type": "integer", "minimum": 1, "maximum": 10},
+        "query_sha256": {"$ref": "#/$defs/sha256"},
+        "response_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "provider_hit_count": {"type": ["integer", "null"], "minimum": 0},
+        "returned_count": {"type": "integer", "minimum": 0, "maximum": 10},
+        "records": {"type": "array", "maxItems": 10, "items": {"$ref": "#/$defs/record"}}
+      }
+    },
+    "doiCluster": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["normalized_doi", "members"],
+      "properties": {
+        "normalized_doi": {"type": "string", "minLength": 1, "maxLength": 1200},
+        "members": {"type": "array", "minItems": 2, "maxItems": 30, "items": {"type": "object", "additionalProperties": false, "required": ["provider", "record_index", "provider_record_id"], "properties": {"provider": {"enum": ["crossref", "openalex", "europe_pmc"]}, "record_index": {"type": "integer", "minimum": 0, "maximum": 9}, "provider_record_id": {"type": "string", "minLength": 1, "maxLength": 1200}}}}
+      }
+    }
+  }
+}

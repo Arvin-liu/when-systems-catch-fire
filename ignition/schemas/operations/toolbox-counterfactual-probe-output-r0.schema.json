@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/toolbox-counterfactual-probe-output-r0.schema.json",
+  "title": "Bounded Counterfactual Probe Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "request_sha256",
+    "target_conclusion",
+    "model_binding",
+    "baseline",
+    "probes",
+    "evaluation_count",
+    "each_probe_starts_from_baseline",
+    "counterfactual_edit_is_actual_world_evidence",
+    "source_evidence_mutated",
+    "external_action_taken",
+    "admissibility_ceiling",
+    "invariants_applied",
+    "wrapper_source",
+    "function_os_source_refs",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-counterfactual-probe-output-r0"},
+    "tool_id": {"const": "research.probe_counterfactual_fragility"},
+    "tool_version": {"const": "0.1.0"},
+    "status": {"enum": ["COUNTERFACTUAL_PROBE_REPORTED", "COUNTERFACTUAL_PROBE_WITH_FAILURES_RETAINED"]},
+    "request_sha256": {"$ref": "#/$defs/sha256"},
+    "target_conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conclusion_id", "statement"],
+      "properties": {
+        "conclusion_id": {"type": "string"},
+        "statement": {"type": "string"}
+      }
+    },
+    "model_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["function_id", "function_spec_sha256", "output_name", "output_type", "function_os_version"],
+      "properties": {
+        "function_id": {"type": ["string", "null"]},
+        "function_spec_sha256": {"$ref": "#/$defs/sha256"},
+        "output_name": {"type": "string"},
+        "output_type": {"type": "string"},
+        "function_os_version": {"const": "0.2.1rc0-candidate"}
+      }
+    },
+    "baseline": {"$ref": "#/$defs/case"},
+    "probes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["probe_id", "target_conclusion_id", "assumption_id", "assumption_statement", "intervention", "expected_direction", "observed_direction", "expected_direction_match", "disconfirmation_status", "admissibility", "observed_or_simulated_result", "conclusion_stability"],
+        "properties": {
+          "probe_id": {"type": "string"},
+          "target_conclusion_id": {"type": "string"},
+          "assumption_id": {"type": "string"},
+          "assumption_statement": {"type": "string"},
+          "intervention": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["input_name", "baseline_value", "replacement_value"],
+            "properties": {
+              "input_name": {"type": "string"},
+              "baseline_value": {"type": ["boolean", "integer", "number", "null"]},
+              "replacement_value": {"type": ["boolean", "integer", "number"]}
+            }
+          },
+          "expected_direction": {"type": "string"},
+          "observed_direction": {"type": ["string", "null"]},
+          "expected_direction_match": {"type": ["boolean", "null"]},
+          "disconfirmation_status": {"type": "string"},
+          "admissibility": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "note"],
+            "properties": {
+              "status": {"const": "CALLER_DECLARED_NOT_VERIFIED"},
+              "note": {"type": "string"}
+            }
+          },
+          "observed_or_simulated_result": {"$ref": "#/$defs/case"},
+          "conclusion_stability": {"enum": ["STABLE_WITHIN_DECLARED_MODEL", "FRAGILE_WITHIN_DECLARED_MODEL", "NOT_ASSESSABLE"]}
+        }
+      }
+    },
+    "evaluation_count": {"type": "integer", "minimum": 2, "maximum": 9},
+    "each_probe_starts_from_baseline": {"const": true},
+    "counterfactual_edit_is_actual_world_evidence": {"const": false},
+    "source_evidence_mutated": {"const": false},
+    "external_action_taken": {"const": false},
+    "admissibility_ceiling": {"type": "string"},
+    "invariants_applied": {"type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": {"type": "string"}},
+    "wrapper_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "function_os_source_refs": {"type": "array", "items": {"type": "object"}},
+    "claim_ceiling": {"type": "string"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_id", "case_input_sha256", "execution_status", "policy_status", "n7_status", "artifact_integrity_valid", "evaluable", "output_name", "output_value", "trace_sha256", "evaluation_error"],
+      "properties": {
+        "case_id": {"type": "string"},
+        "case_input_sha256": {"$ref": "#/$defs/sha256"},
+        "execution_status": {"type": "string"},
+        "policy_status": {"type": "string"},
+        "n7_status": {"type": "string"},
+        "artifact_integrity_valid": {"type": "boolean"},
+        "evaluable": {"type": "boolean"},
+        "output_name": {"type": "string"},
+        "output_value": {"type": ["boolean", "integer", "number", "null"]},
+        "trace_sha256": {"type": ["string", "null"]},
+        "evaluation_error": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

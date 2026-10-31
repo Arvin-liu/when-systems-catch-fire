@@ -1,0 +1,56 @@
+{
+  "schema_version": "toolbox-component-comparison-source-binding-r0",
+  "tool_id": "maintenance.compare_toolbox_component_coverage",
+  "version": "0.1.0",
+  "owner_principle_ref": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682 instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md#C1",
+  "function": "Compare two tools by declared valuable-use-case coverage, exact contract digests and matched outcomes; preserve uncertainty when matched evidence or cost is incomplete.",
+  "source_files": [
+    {
+      "path": "ignition/tools/toolbox_component_comparison.py",
+      "sha256": "5ad5186643c7296f29d8f39e216ca34632123e661454139ff889ef2ecfa02797"
+    },
+    {
+      "path": "ignition/schemas/operations/toolbox-component-comparison-input-r0.schema.json",
+      "sha256": "6ebe4f7359b18a26f9c2c70b5c7ed67fd43247b7457bb395c487684e48753cdd"
+    },
+    {
+      "path": "ignition/schemas/operations/toolbox-component-comparison-output-r0.schema.json",
+      "sha256": "19641a8d81b903049b6e54a9516643563027ba936d4207e3f22f9088822b9436"
+    }
+  ],
+  "comparison_input": {
+    "path": "ignition/tests/fixtures/toolbox-component-comparison/pr264-actions-tool-scope-r0.json",
+    "sha256": "ee6e6245e82eba764bc82f95a1a399edb3a789958b2afef433e111d148b33516"
+  },
+  "prior_evidence_refs": [
+    {
+      "path": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+      "sha256": "dd76599b5ef4da8bb75df38355d4b045390b3786d938413aaa5709407cea92f4"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json",
+      "sha256": "74ec658a68d92b836d1e2cc79651caae029937919b4742b25f6f33c040356e92"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+      "sha256": "453e9ef805bf81d9df7fc1b123a1e4ef853d68ff96f110b52c68a8d4d458bbd2"
+    },
+    {
+      "path": "ignition/tests/fixtures/toolbox-actions-step-timeline/actions-run-40064357026.json",
+      "sha256": "bf3aeff00faa3a6927f1a856aff36516240254acc79a9b230b9119bb17bd6a4c"
+    },
+    {
+      "path": "ignition/tests/fixtures/toolbox-actions-validation-attribution/input-run-40064357026-r0.json",
+      "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b"
+    }
+  ],
+  "non_goals": [
+    "Do not authenticate caller evidence or source identities.",
+    "Do not choose a route, retire runtime code, mutate registry cards, change permissions, or claim scientific validity."
+  ],
+  "real_task_disposition": {
+    "scope": "COEXIST_DISTINCT_SCOPE",
+    "performance": "COMPARISON_UNKNOWN"
+  },
+  "claim_ceiling": "Deterministic caller-supplied comparison analysis only; same-task, environment, evaluator, metric and scope declarations remain unverified unless a pinned matched record is supplied."
+}

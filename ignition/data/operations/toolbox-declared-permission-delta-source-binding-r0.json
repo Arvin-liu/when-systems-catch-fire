@@ -1,0 +1,46 @@
+{
+  "schema_version": "toolbox-declared-permission-delta-source-binding-r0",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0",
+  "blueprint_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 86,
+    "commit": "1c8542328f482f39986a0a79ce1e0514aa14b398",
+    "path": "sources/GITHUB-TRENDING-2026-10-24-WEEK-MONTH-QUEUE-R0.json",
+    "blob_sha1": "41603a958cc1810e6fc4c2464e1d1059a797053d",
+    "candidate_key": "TR26-05",
+    "authority": "WORKBENCH_ONLY_NONCANONICAL"
+  },
+  "inspiration_source": {
+    "repository": "NVIDIA/OpenShell",
+    "commit": "c4688aa8715ea75d6c39fe468361dbbc16c691fa",
+    "readme_blob_sha1": "e0aaa43641b41a8e7cd4a2f8ffcb345a356e754b",
+    "license_metadata": "Apache-2.0",
+    "source_code_imported": false,
+    "runtime_dependency_added": false,
+    "source_claims_independently_reproduced": false
+  },
+  "owner_direction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "c1_update_commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "scope": "Implement only optional, bounded components whose dependencies and rollback remain local; keep comparisons evidence-calibrated and preserve unknown status where paired outcomes are absent."
+  },
+  "implementation_scope": {
+    "kind": "OFFLINE_EXACT_DECLARATION_SET_COMPARISON",
+    "does_not_implement": [
+      "OpenShell installation, sandboxing, kernel rules, syscall monitoring, or policy enforcement",
+      "Inheritance resolution, wildcard expansion, path containment, host reachability, or effective-permission calculation",
+      "Snapshot authentication, permission grant, approval, or external action"
+    ],
+    "external_code_or_data_imported": false,
+    "network_used": false,
+    "claim_ceiling": "Exact string-set differences between two matching caller-supplied declarations only."
+  },
+  "source_constraints": [
+    "Workbench PR #86 marks TR26-05 as a recorded candidate, NOT_EXECUTED, and permits only optional isolated no-secret permission-policy tests without live access changes.",
+    "This implementation compares synthetic or caller-provided declarations and does not reproduce OpenShell behavior or establish a concrete security outcome.",
+    "The planner route is proposal-only, default-off, and does not invoke the candidate or apply a policy."
+  ]
+}

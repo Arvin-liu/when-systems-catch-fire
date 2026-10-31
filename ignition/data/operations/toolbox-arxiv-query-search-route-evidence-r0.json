@@ -1,0 +1,42 @@
+{
+  "schema_version": "toolbox-arxiv-query-search-route-evidence-r0",
+  "experiment_id": "research.search_arxiv_query.default_off_exact_host",
+  "profile_ref": "ignition/data/operations/toolbox-arxiv-query-search-route-profile-r0.json",
+  "candidate_id": "research.search_arxiv_query",
+  "candidate_version": "0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_selection_is_not_execution_authority": true,
+  "trials": [
+    {
+      "scenario": "default_opt_out",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_rejection": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+      "allowed_network_hosts": [],
+      "execution_authorized": false
+    },
+    {
+      "scenario": "candidate_included_without_exact_host",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_rejection": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+      "allowed_network_hosts": [],
+      "execution_authorized": false
+    },
+    {
+      "scenario": "candidate_and_exact_host_with_alternatives_offered",
+      "decision": "COMPLETE",
+      "selected_tool_ids": ["research.search_arxiv_query"],
+      "rejected_alternatives": {
+        "research.search_pubmed_query": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+        "research.search_europe_pmc_query": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+        "research.lookup_arxiv_paper_metadata": "NO_INPUT_TYPE_MATCH"
+      },
+      "allowed_network_hosts": ["export.arxiv.org"],
+      "execution_authorized": false
+    }
+  ],
+  "focused_test": "ignition.tests.test_toolbox_routing.AdaptiveToolRouteTests.test_arxiv_query_search_is_default_off_and_requires_exact_host_allowlist",
+  "claim_ceiling": "Local typed route-planner proposal only. Caller-supplied ref and host list are not authority-verified, and no external invocation or permission grant follows from selection."
+}

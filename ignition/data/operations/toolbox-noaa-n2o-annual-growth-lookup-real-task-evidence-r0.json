@@ -1,0 +1,63 @@
+{
+  "candidate_tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+  "candidate_tool_version": "0.1.0",
+  "claim_ceiling": "Provider-reported NOAA GML global annual atmospheric N2O mole-fraction increases and stated uncertainties from the fixed raw table for selected years only. This is not an emissions estimate, source attribution, causal explanation, source authentication, independent validation, or scientific conclusion.",
+  "evidence_type": "LIVE_FIXED_HOST_ONE_REQUEST_RAW_N2O_READ_ONLY_RUN",
+  "implementation_sha256": "4163298a9709dd82c0956c4882091dd541a895194a74b472718593f74ac5629b",
+  "input_path": "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-input-r0.json",
+  "input_sha256": "05e105d1e71e29a003eb5231d093c5022d65f7e9c17b22fda4bf7b24b841b8fb",
+  "interpretation_limit": "One live NOAA GML raw-table observation for 2023–2025. The digest binds bytes received; it does not authenticate NOAA, establish data validity, estimate emissions, or support a scientific conclusion.",
+  "observed_at_utc": "2026-10-26T22:30:45Z",
+  "output_path": "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-output-r0.json",
+  "output_sha256": "7f8333380019e054bc818ddd21b3ca28c52b21377c4cbf5c65fac8baf4020d31",
+  "output_status": "FOUND",
+  "request_count": 1,
+  "schema_version": "toolbox-noaa-n2o-annual-growth-lookup-real-task-evidence-r0",
+  "selected_rows": [
+    {
+      "annual_increase_ppb": "1.01",
+      "uncertainty_ppb": "0.02",
+      "year": 2023
+    },
+    {
+      "annual_increase_ppb": "1.02",
+      "uncertainty_ppb": "0.01",
+      "year": 2024
+    },
+    {
+      "annual_increase_ppb": "1.23",
+      "uncertainty_ppb": "0.01",
+      "year": 2025
+    }
+  ],
+  "shared_core_sha256": "a15650c0e38a84adbe8f0d68de15e9c005379a7461d46a7c07f08892d240abe7",
+  "source_receipt": {
+    "acquisition_status": "OK",
+    "etag": "\"b5d-65d6d473c6dee\"",
+    "http_status": 200,
+    "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+    "parse_status": "FOUND",
+    "raw_response_retained": false,
+    "records": [
+      {
+        "annual_increase_ppb": "1.01",
+        "uncertainty_ppb": "0.02",
+        "year": 2023
+      },
+      {
+        "annual_increase_ppb": "1.02",
+        "uncertainty_ppb": "0.01",
+        "year": 2024
+      },
+      {
+        "annual_increase_ppb": "1.23",
+        "uncertainty_ppb": "0.01",
+        "year": 2025
+      }
+    ],
+    "response_bytes": 2909,
+    "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+    "retrieved_at_utc": "2026-10-26T22:30:45Z",
+    "url": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt"
+  }
+}

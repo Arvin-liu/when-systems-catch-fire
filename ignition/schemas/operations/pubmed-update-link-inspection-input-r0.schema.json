@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:pubmed-update-link-inspection-input-r0",
+  "title": "Bounded PubMed Update Link Inspection Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pmids"],
+  "properties": {
+    "pmids": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[1-9][0-9]{0,11}$"}
+    },
+    "expected_doi": {"type": "string", "maxLength": 128, "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"}
+  },
+  "allOf": [
+    {
+      "if": {"required": ["expected_doi"]},
+      "then": {"properties": {"pmids": {"maxItems": 1}}}
+    }
+  ]
+}

@@ -1,0 +1,2057 @@
+{
+  "schema_version": "toolbox-pubmed-query-search-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_TYPED_ROUTE_EXPERIMENT",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "candidate_catalog_refresh": {
+    "current_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "replayed_at_utc": "2026-10-27T01:23:02Z",
+    "replayed_without_tool_execution": true
+  },
+  "route_profile": {
+    "schema_version": "toolbox-pubmed-query-search-route-profile-r0",
+    "task_id": "pubmed-native-bounded-query-discovery",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+    ],
+    "required_outputs": [
+      "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+      "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "allowed_network_hosts": [
+      "eutils.ncbi.nlm.nih.gov"
+    ],
+    "route_default": "EXCLUDED",
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "catalog_replay_history": [
+      {
+        "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+        "replayed_at_utc": "2026-10-26T21:11:36Z"
+      },
+      {
+        "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+        "superseded_profile_git_blob_sha1": "10db980f9497b199fde01f52deaba992c83aaa78",
+        "replayed_at_utc": "2026-10-26T22:44:00Z"
+      }
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "candidate_excluded_by_default",
+      "task_profile": {
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+        ],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+        }
+      },
+      "decision": "INCOMPLETE"
+    },
+    {
+      "scenario": "explicit_candidate_without_exact_host",
+      "task_profile": {
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+        ],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.search_pubmed_query"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.search_pubmed_query",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+        }
+      },
+      "decision": "INCOMPLETE"
+    },
+    {
+      "scenario": "explicit_pubmed_route",
+      "task_profile": {
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+        ],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.search_pubmed_query"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.search_pubmed_query"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.search_pubmed_query",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+            ],
+            "output_types": [
+              "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+              "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "READ_ONLY_FIXED_HOST_NCBI_QUERY_AND_SUMMARY",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_pubmed_query_search.py"
+              ],
+              "write_paths": [],
+              "network": true,
+              "network_hosts": [
+                "eutils.ncbi.nlm.nih.gov"
+              ],
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [],
+            "declared_effect_rank": 1,
+            "pre_invocation_conditions": [
+              "Each actual invocation requires a task decision to send the non-sensitive query and contact email and the --allow-public-network flag.",
+              "PubMed-specific source/indexing requirements matter and local checked-out source navigation does not already satisfy the bounded task.",
+              "Remain excluded unless the caller explicitly allowlists research.search_pubmed_query for a PubMed query-to-record task.",
+              "The caller explicitly permits sending the query and contact email to eutils.ncbi.nlm.nih.gov.",
+              "The caller explicitly selects this experimental candidate, permits the exact network host, and passes --allow-public-network for this invocation.",
+              "The caller supplies a public, non-sensitive PubMed/Entrez query of at most 512 characters, a result cap of one through ten, and a contact email suitable for NCBI.",
+              "The typed route profile must separately permit eutils.ncbi.nlm.nih.gov; the planner echoes this caller declaration but does not validate authority."
+            ],
+            "claim_ceiling": "One source-returned PubMed hit count, ordered PMID list and bounded metadata projection at retrieval time, with response hashes. No source authenticity, relevance, recall, completeness, scientific support, article content, current correction/retraction status, provider superiority, or execution authorization is established.",
+            "covers_required_outputs": [
+              "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+              "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+            ]
+          }
+        ],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "covered_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+        }
+      },
+      "decision": "COMPLETE"
+    },
+    {
+      "scenario": "offered_europe_pmc_as_redundant_candidate",
+      "task_profile": {
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+        ],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov",
+          "www.ebi.ac.uk"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.search_pubmed_query",
+        "research.search_europe_pmc_query"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.search_pubmed_query"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "pubmed-native-bounded-query-discovery",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov",
+          "www.ebi.ac.uk"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.search_pubmed_query",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+            ],
+            "output_types": [
+              "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+              "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "READ_ONLY_FIXED_HOST_NCBI_QUERY_AND_SUMMARY",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_pubmed_query_search.py"
+              ],
+              "write_paths": [],
+              "network": true,
+              "network_hosts": [
+                "eutils.ncbi.nlm.nih.gov"
+              ],
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [],
+            "declared_effect_rank": 1,
+            "pre_invocation_conditions": [
+              "Each actual invocation requires a task decision to send the non-sensitive query and contact email and the --allow-public-network flag.",
+              "PubMed-specific source/indexing requirements matter and local checked-out source navigation does not already satisfy the bounded task.",
+              "Remain excluded unless the caller explicitly allowlists research.search_pubmed_query for a PubMed query-to-record task.",
+              "The caller explicitly permits sending the query and contact email to eutils.ncbi.nlm.nih.gov.",
+              "The caller explicitly selects this experimental candidate, permits the exact network host, and passes --allow-public-network for this invocation.",
+              "The caller supplies a public, non-sensitive PubMed/Entrez query of at most 512 characters, a result cap of one through ten, and a contact email suitable for NCBI.",
+              "The typed route profile must separately permit eutils.ncbi.nlm.nih.gov; the planner echoes this caller declaration but does not validate authority."
+            ],
+            "claim_ceiling": "One source-returned PubMed hit count, ordered PMID list and bounded metadata projection at retrieval time, with response hashes. No source authenticity, relevance, recall, completeness, scientific support, article content, current correction/retraction status, provider superiority, or execution authorization is established.",
+            "covers_required_outputs": [
+              "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+              "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+            ]
+          }
+        ],
+        "required_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "covered_outputs": [
+          "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+          "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+        }
+      },
+      "decision": "COMPLETE"
+    }
+  ],
+  "summary": {
+    "default_decision": "INCOMPLETE",
+    "default_selected_tool_ids": [],
+    "explicit_route_decision": "COMPLETE",
+    "explicit_route_selected_tool_ids": [
+      "research.search_pubmed_query"
+    ],
+    "redundant_candidate_rejected": [
+      {
+        "tool_id": "collaboration.preflight_receiver_handoff",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_agent_episode_binding",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.verify_handoff_artifact_files",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "executor.reference_conformance",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "external.live_invocation",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "foundation.batch_resolve_current_asset_references",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.read_current_asset_card",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.resolve_current_asset",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "function_os.run_bounded_symbolic_spec",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.adaptive_toolbox_route_planner",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.recover_current_state",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "ignition.select_bounded_thinking_operation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.assemble_context_packet",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.cluster_source_brief",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.collide_object",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.navigate_raw_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.preflight_reusable_context",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.project_results",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.read_foundation",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_claim",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_evidence_link",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "language_thought.project_bounded_meaning",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.attribute_actions_validation_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_audit_findings",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_context_packet_variants",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_exact_head_check_observations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_repository",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.preflight_producer_consumer_semantics",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_interval_union",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_component_path_residue",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.validate_checkpoint",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method",
+        "reason": "EXECUTION_MODE_NOT_ALLOWED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method_1_3",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.audit_pubmed_updates_from_doi",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.bind_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_crossref_reference_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.coordinate_obligations",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_g1_goal_intake",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.reos_full",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_europe_pmc_query",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.validate_evidence_program_snapshot",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_reos_light",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.verify_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "runtime.inspect_declared_pack_catalog",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.build_archify_derived_ir",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.render_derived_system_view",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.apply_editorial_method",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.preflight_cognitive_migration_revision",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "writing.validate_publication_surface",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      }
+    ],
+    "execution_authorized": false,
+    "router_rule_modified": false
+  },
+  "claim_ceiling": "Typed local route proposal only. Candidate selection remains default-off; caller-declared host permission is not authenticated, no invocation or network authority is granted, and no relevance or scientific result is established.",
+  "catalog_replay": {
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-27T01:23:02Z",
+    "route_trials_replayed": 4,
+    "all_expected_decisions_reproduced": true,
+    "candidate_invoked": false,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "replay_result_sha256": "ceef239390b1f6371365b9317894bfffe29e318938dc1f53cd838d655b1a6d37",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "1027ac4614ecd950c1d385299da4373421b57d0c",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "90f81b2142ef97b31e9d1606055abbd427af8dbf",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "c4a4cb01f83dfbb5a4beb5aa36f3daa25facb6a9",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:47:07Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "eee514fdaab6adad9e10f91350b866c2ac9ef8ed",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:47:07Z",
+      "replayed_at_utc": "2026-10-27T01:23:02Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "6ac30ab945d36520267c6b03b5e07da1f3906a3c",
+      "superseded_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+      "superseded_observed_at_utc": "2026-10-27T01:23:02Z",
+      "replayed_at_utc": "2026-10-29T14:14:20Z"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "claim_ceiling": "A functional distinction and one bounded real-data outcome only. No general reliability, bibliographic correctness, retrieval-quality, efficiency, cost, or scientific claim is established.",
+  "compared_tool_ids": [
+    "research.search_crossref_query",
+    "research.search_openalex_query",
+    "research.search_europe_pmc_query",
+    "research.compare_publication_metadata_snapshots"
+  ],
+  "comparison_scope": "One offline exact-DOI grouping task on existing Crossref and OpenAlex receipts, with contract comparison against the two single-provider topic search adapters and the known-DOI publication metadata comparator. No same-task accuracy, latency, analyst-time, or cost benchmark was performed.",
+  "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r0.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-source-binding-r0.json",
+    "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+    "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json"
+  ],
+  "evidence_type": "FUNCTIONAL_SCOPE_AND_ONE_REAL_TASK_COMPARISON",
+  "functional_distinction": "This tool consumes already captured provider search receipts, preserves each source summary, and groups exact normalized DOI matches across result sets. Individual search adapters retrieve one provider’s topic results; the existing publication metadata comparator compares selected fields for one known DOI pair.",
+  "real_task_observation": {
+    "exact_doi_groups": 0,
+    "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+    "interpretation": "The ten observed top-ranked rows shared no DOI across these two captured provider snapshots. This does not establish disjoint index coverage, provider precision, recall, relevance, or metadata correctness.",
+    "output_sha256": "d717d8ab414cc2acdb60d0316988b0ea8ae599301daad70ab0248ead44a5300a",
+    "records": 10,
+    "source_count": 2,
+    "unclustered_records": 10
+  },
+  "replacement_and_retirement": {
+    "decision": "Keep the provider-specific adapters and known-DOI comparator; allow this specialized offline composition to coexist. Reassess only with additional matched task evidence.",
+    "replacement_candidates": [],
+    "retired_tools": []
+  },
+  "schema_version": "toolbox-selected-index-search-result-merge-c1-evidence-r0",
+  "tool_id": "research.merge_selected_index_search_results"
+}

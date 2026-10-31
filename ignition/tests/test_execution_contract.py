@@ -7,8 +7,14 @@ from tools import validate_execution_contract as validator
 
 
 class ExecutionContractTests(unittest.TestCase):
-    def test_task137_contract_is_fixed(self) -> None:
+    def test_current_task_contract_is_valid(self) -> None:
         self.assertEqual(validator.validate(), [])
+
+    def test_current_task_allows_ready_pr_but_keeps_owner_authorization_gate(self) -> None:
+        contract = validator.load_json(validator.CONTRACT_PATH)
+        self.assertFalse(contract["draft_pr_only"])
+        self.assertTrue(contract["owner_authorization_required_for_ready_merge_or_close"])
+        self.assertEqual(validator.validate(contract), [])
 
     def test_wrong_baseline_is_rejected(self) -> None:
         contract = copy.deepcopy(validator.load_json(validator.CONTRACT_PATH))
@@ -20,13 +26,13 @@ class ExecutionContractTests(unittest.TestCase):
         contract["no_owner_intermediate"] = False
         self.assertTrue(validator.validate(contract))
 
-    def test_presentation_only_task_keeps_architecture_identity_distinct(self) -> None:
+    def test_current_task_keeps_architecture_identity_distinct(self) -> None:
         contract = validator.load_json(validator.CONTRACT_PATH)
         self.assertNotEqual(
             contract["identity_expectations"]["current_formal_task"],
             contract["identity_expectations"]["latest_architecture_changing_task"],
         )
-        self.assertEqual(contract["identity_impact"], "PRESENTATION_ONLY")
+        self.assertEqual(contract["identity_impact"], "NONE")
 
 
 if __name__ == "__main__":

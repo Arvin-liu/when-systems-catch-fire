@@ -1,0 +1,108 @@
+{
+  "schema_version": "toolbox-executed-experience-c1-comparison-r1",
+  "tool_id": "knowledge.preflight_executed_experience_reuse",
+  "tool_version": "0.2.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "replacement_candidates": [],
+  "unique_remaining_use_cases": [
+    "R0 keeps the original receipt-and-scope request/result contract for existing callers with lower local read cost.",
+    "R1 checks actual source, input, and output bytes before presenting a reference, and binds preserved failure bytes for negative outcomes."
+  ],
+  "blueprint_binding": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 87,
+    "head": "d4edff701a41aec1bd224def9c8ee54af70e63d5",
+    "work_item": "AB-19-ROBOSKILL-R0 / RS-A"
+  },
+  "comparators": [
+    {
+      "tool_id": "maintenance.preflight_execution_effect_receipt",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "exact_task_finding": "It validates a caller-declared execution/effect receipt and may reread selected repository files, but does not compare a later-task scope or require byte bindings for the original run source/input/output."
+    },
+    {
+      "tool_id": "knowledge.preflight_reusable_context",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "exact_task_finding": "It checks derived-context source bytes, access scope, and expiry; it does not classify execution outcomes or bind execution source/input/output bytes."
+    },
+    {
+      "tool_id": "maintenance.preflight_failure_anchored_recovery",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "exact_task_finding": "It evaluates a caller-authored recovery proposal after failure rather than verifying prior experience artifact bindings."
+    }
+  ],
+  "same_task_evidence": {
+    "source_task": "pr264:four-run-target-coverage-local-replay",
+    "source_artifact": {
+      "path": "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+      "sha256": "16c7120654937385e1c624976488f4b8d20e65d72f98391d2b5bf601550d9940",
+      "bytes": 6979
+    },
+    "r0_request": {
+      "path": "ignition/data/operations/toolbox-executed-experience-real-task-input-r0.json",
+      "sha256": "c44743c376bd414659656e31660a1f3ac8df901a9fe7b6729eccde9ae95cb193",
+      "bytes": 1315
+    },
+    "r0_result": {
+      "path": "ignition/data/operations/toolbox-executed-experience-real-task-output-r0.json",
+      "sha256": "5951b834a7878a258d967fef3c85846002e9098e0b66d53e2bc2a0260dc4334a",
+      "bytes": 1134
+    },
+    "r0_observed_decision": "OPTIONAL_REFERENCE_ONLY",
+    "r0_output_byte_identical_to_saved_result": true,
+    "r0_receipt_bytes_read": 6979,
+    "r1_request": {
+      "path": "ignition/data/operations/toolbox-executed-experience-real-task-input-r1.json",
+      "sha256": "7ddd1889d736f06c35d6be30ee5930a709912a22e75992c243dc44491a126e83",
+      "bytes": 2019
+    },
+    "r1_result": {
+      "path": "ignition/data/operations/toolbox-executed-experience-real-task-output-r1.json",
+      "sha256": "cbd2454f8e1c14d6a4e14f4f0dcc57676cb31c9179b0cccf9b5811d0eb1678d8",
+      "bytes": 1321
+    },
+    "r1_observed_decision": "OPTIONAL_REFERENCE_ONLY",
+    "r1_artifact_binding_status": {
+      "failure": "NOT_REQUIRED",
+      "input": "MATCHED",
+      "output": "MATCHED",
+      "source": "MATCHED"
+    },
+    "r1_artifact_bytes_read": 891989,
+    "r1_artifact_read_budget_bytes": 8388608,
+    "bound_source_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+    "bound_input_sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372",
+    "bound_output_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+    "replay_output": {
+      "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-replay-output-20261027-r0.json",
+      "sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+      "bytes": 29294
+    },
+    "replay_provenance": {
+      "path": "ignition/data/operations/toolbox-executed-experience-r1-replay-provenance-r0.json",
+      "sha256": "4624a2d1ae68d2755fc52eb99dcda0573e955b7ff90d678d8e98a1c4ee32d025",
+      "bytes": 2616
+    },
+    "historical_output_bytes_preserved": false,
+    "execution_authorized": false,
+    "reuse_authorized": false,
+    "candidate_source": "ignition/tools/toolbox_executed_experience_preflight.py",
+    "candidate_source_sha256": "8ddb70d156670407e2522971ed3ed039419b2533dd5fa64a01a758f5d8fe87a7"
+  },
+  "findings": [
+    "On the same PR264 task R0 and R1 both returned OPTIONAL_REFERENCE_ONLY; the R0 result is byte-for-byte unchanged and both contracts keep execution_authorized=false and reuse_authorized=false.",
+    "R1 returned an optional reference only after the receipt-observed source path and local source, input, and replay-output bytes matched the receipt digests. Negative controls withhold missing or changed bytes, and preserved negative outcomes require matching failure bytes.",
+    "The original output bytes were not preserved. A fresh Python 3.9.6 local replay produced bytes matching the digest declared in the prior receipt; this does not authenticate the historical run.",
+    "R0 retains a lower-read compatibility use; R1 adds byte-complete verification with higher local read volume. No replacement or retirement is supported, and no default route or permission changes.",
+    "Portfolio-level comparison remains COMPARISON_UNKNOWN because task-quality, reliability, latency, and monetary cost were not matched or measured."
+  ],
+  "negative_controls": [
+    "R0 request result remains byte-for-byte stable.",
+    "R1 rejects source/input/output digest mismatches and missing output bytes.",
+    "R1 rejects a source path not recorded by the execution receipt and receipt observation hashes that disagree with execution identity.",
+    "R1 expiry and task scope mismatch occur before artifact reads.",
+    "R1 rejects path traversal, symlinks, missing preserved failure bytes, and requests exceeding the aggregate 8 MiB read budget.",
+    "All decisions set can_execute=false, can_authorize=false, execution_authorized=false, and reuse_authorized=false."
+  ],
+  "claim_ceiling": "A same-task local comparison of R0 and R1 behavior with exact digest matches and fail-closed controls. It does not authenticate the original run, receipt, actors, environment, scientific result, effect causality, or transferable performance, and it does not establish portfolio-wide benefit."
+}

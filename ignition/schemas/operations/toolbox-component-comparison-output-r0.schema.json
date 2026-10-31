@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-component-comparison-output-r0",
+  "title": "Toolbox Component Comparison Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "comparison_id", "tools", "scope_disposition",
+    "performance_comparison_status", "scope", "paired_result_summary",
+    "evidence_refs", "next_low_cost_comparison", "governance_boundary",
+    "claim_ceiling", "input_sha256", "tool_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-component-comparison-output-r0"},
+    "comparison_id": {"type": "string"},
+    "tools": {
+      "type": "object", "required": ["incumbent", "proposed_successor"], "additionalProperties": false,
+      "properties": {
+        "incumbent": {"$ref": "#/$defs/tool"},
+        "proposed_successor": {"$ref": "#/$defs/tool"}
+      }
+    },
+    "scope_disposition": {
+      "enum": [
+        "REPLACEMENT_SUPPORTED_AS_DECLARED", "COEXIST_DISTINCT_SCOPE",
+        "RETAIN_BOTH_NO_DOMINANCE", "RETAIN_INCUMBENT_NO_SUCCESSOR_ADVANTAGE",
+        "COMPARISON_UNKNOWN"
+      ]
+    },
+    "performance_comparison_status": {"enum": ["COMPARABLE_AS_DECLARED", "COMPARISON_UNKNOWN"]},
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["shared_use_case_ids", "incumbent_unique_use_case_ids", "successor_unique_use_case_ids", "same_id_contract_mismatch_use_case_ids"],
+      "properties": {
+        "shared_use_case_ids": {"$ref": "#/$defs/idList"},
+        "incumbent_unique_use_case_ids": {"$ref": "#/$defs/idList"},
+        "successor_unique_use_case_ids": {"$ref": "#/$defs/idList"},
+        "same_id_contract_mismatch_use_case_ids": {"$ref": "#/$defs/idList"}
+      }
+    },
+    "paired_result_summary": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "matched_pair_count", "missing_pair_use_case_ids", "incomparable_or_unknown_use_case_ids",
+        "missing_cost_use_case_ids", "case_results", "incumbent_advantage_use_case_ids",
+        "successor_advantage_use_case_ids", "resource_metric"
+      ],
+      "properties": {
+        "matched_pair_count": {"type": "integer", "minimum": 0},
+        "missing_pair_use_case_ids": {"$ref": "#/$defs/idList"},
+        "incomparable_or_unknown_use_case_ids": {"$ref": "#/$defs/idList"},
+        "missing_cost_use_case_ids": {"$ref": "#/$defs/idList"},
+        "case_results": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["use_case_id", "status", "evidence_ref", "outcome_pair", "quality_score_pair", "resource_cost_pair", "permission_rank_pair"],
+            "properties": {
+              "use_case_id": {"$ref": "#/$defs/id"},
+              "status": {"enum": ["COMPARISON_UNKNOWN", "INCUMBENT_ADVANTAGE", "SUCCESSOR_ADVANTAGE", "NO_STRICT_DIFFERENCE"]},
+              "evidence_ref": {"type": "string"},
+              "outcome_pair": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"enum": ["PASS", "FAIL", "UNKNOWN"]}},
+              "quality_score_pair": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": ["integer", "null"]}},
+              "resource_cost_pair": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": ["string", "null"]}},
+              "permission_rank_pair": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer"}}
+            }
+          }
+        },
+        "incumbent_advantage_use_case_ids": {"$ref": "#/$defs/idList"},
+        "successor_advantage_use_case_ids": {"$ref": "#/$defs/idList"},
+        "resource_metric": {
+          "type": "object", "additionalProperties": false,
+          "required": ["metric_id", "unit"],
+          "properties": {"metric_id": {"$ref": "#/$defs/id"}, "unit": {"type": "string"}}
+        }
+      }
+    },
+    "evidence_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "next_low_cost_comparison": {"type": "string"},
+    "governance_boundary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["caller_evidence_authenticated", "use_case_value_independently_verified", "tool_retired_or_registry_changed", "route_selected", "execution_authorized", "permission_changed"],
+      "properties": {
+        "caller_evidence_authenticated": {"const": false},
+        "use_case_value_independently_verified": {"const": false},
+        "tool_retired_or_registry_changed": {"const": false},
+        "route_selected": {"const": false},
+        "execution_authorized": {"const": false},
+        "permission_changed": {"const": false}
+      }
+    },
+    "claim_ceiling": {"type": "string"},
+    "input_sha256": {"$ref": "#/$defs/sha256"},
+    "tool_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,95}$"},
+    "idList": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tool": {
+      "type": "object", "additionalProperties": false, "required": ["tool_id", "version"],
+      "properties": {"tool_id": {"$ref": "#/$defs/id"}, "version": {"type": "string"}}
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-execution-state-lineage-input-r0",
+  "title": "Toolbox Execution State Lineage Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_ref",
+    "checkpoints",
+    "active_checkpoint_id",
+    "declared_inactive_tip_checkpoint_ids",
+    "resume_capsules",
+    "rollback_records"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-execution-state-lineage-input-r0"},
+    "task_ref": {"$ref": "#/$defs/nonblank"},
+    "checkpoints": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "items": {"$ref": "#/$defs/checkpoint"}
+    },
+    "active_checkpoint_id": {"$ref": "#/$defs/id"},
+    "declared_inactive_tip_checkpoint_ids": {
+      "type": "array",
+      "maxItems": 256,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/id"}
+    },
+    "declared_active_path_checkpoint_ids": {
+      "type": "array",
+      "maxItems": 256,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/id"}
+    },
+    "resume_capsules": {
+      "type": "array",
+      "maxItems": 256,
+      "items": {"$ref": "#/$defs/resumeCapsuleProjection"}
+    },
+    "rollback_records": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {"$ref": "#/$defs/rollback"}
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "maxLength": 512, "pattern": "\\S"},
+    "id": {"type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "checkpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "checkpoint_id",
+        "run_id",
+        "phase",
+        "state_ref",
+        "state_sha256",
+        "event_count",
+        "created_by",
+        "parent_checkpoint_id",
+        "reason_summary"
+      ],
+      "properties": {
+        "checkpoint_id": {"$ref": "#/$defs/id"},
+        "run_id": {"$ref": "#/$defs/id"},
+        "phase": {"enum": ["OBSERVE", "FRAME", "PLAN", "AUTHORIZE", "ACT", "VALIDATE", "REMEMBER", "CONTINUE", "STOP"]},
+        "state_ref": {"$ref": "#/$defs/nonblank"},
+        "state_sha256": {"$ref": "#/$defs/sha256"},
+        "event_count": {"type": "integer", "minimum": 0},
+        "created_by": {"$ref": "#/$defs/id"},
+        "parent_checkpoint_id": {"oneOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
+        "reason_summary": {"type": "string", "maxLength": 2000}
+      }
+    },
+    "resumeCapsuleProjection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capsule_id",
+        "run_id",
+        "checkpoint_id",
+        "state_ref",
+        "state_sha256",
+        "from_executor_id",
+        "to_executor_id"
+      ],
+      "properties": {
+        "capsule_id": {"$ref": "#/$defs/id"},
+        "run_id": {"$ref": "#/$defs/id"},
+        "checkpoint_id": {"$ref": "#/$defs/id"},
+        "state_ref": {"$ref": "#/$defs/nonblank"},
+        "state_sha256": {"$ref": "#/$defs/sha256"},
+        "from_executor_id": {"$ref": "#/$defs/id"},
+        "to_executor_id": {"$ref": "#/$defs/id"}
+      }
+    },
+    "rollback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rollback_id", "from_checkpoint_id", "to_checkpoint_id"],
+      "properties": {
+        "rollback_id": {"$ref": "#/$defs/id"},
+        "from_checkpoint_id": {"$ref": "#/$defs/id"},
+        "to_checkpoint_id": {"$ref": "#/$defs/id"}
+      }
+    }
+  }
+}

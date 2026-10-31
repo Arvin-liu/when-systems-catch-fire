@@ -1,0 +1,89 @@
+{
+  "schema_version": "toolbox-producer-consumer-semantic-real-task-r0",
+  "candidate_tool_id": "maintenance.preflight_producer_consumer_semantics",
+  "observed_at_utc": "2026-10-25T15:23:46Z",
+  "task_binding": {
+    "task_id": "frozen-b2-handoff-consumer-static-preflight",
+    "task": "Statically check the frozen B2 consumer's constant required regex patterns against its frozen A-handoff producer text.",
+    "source_repository": "Arvin-liu/ignition-architecture-workbench",
+    "source_commit": "a10d0dd2bc6ddd3cb81fb2eb6221064b286ebf5c",
+    "consumer_source": {
+      "path": "pilots/object-state-chain-b2-v3-r3/tools/b2_engine_r2.py",
+      "git_blob_sha1": "ef05dc78203347acc8574f916dc6e1f677102574",
+      "selected_function": "parse_a_handoff",
+      "function_lines": "146-168",
+      "import_re_line": 5,
+      "assembled_excerpt_sha256": "6b7f8f878a6ca2c4d659e58d6b61a110f70b18ff29fe6c882432d48c33fc33d3"
+    },
+    "producer_text": {
+      "path": "pilots/object-state-chain-b2-v3-r3/A-text-handoff-B2.md",
+      "git_blob_sha1": "a9996b7840d1b8d08f8fdaf1ffcfbdf6df16bc50",
+      "text_sha256": "2f528cad60cb6ddd70cf9f656cb5da0e11b5158e705526073418c34e5300c957"
+    },
+    "related_read_only_audit": {
+      "pull_request": 76,
+      "head": "4e76df0ff83d0727b4ff2d8c996c3bf64fe50e4b",
+      "state": "OPEN_DRAFT",
+      "documented_root_cause": "The frozen P2 handoff omitted parser-required focused_repair_checker_pass; the independent audit says no old freeze, source, output, arm, watchdog, or scorer was changed or run."
+    },
+    "source_license_probe": {
+      "path": "LICENSE",
+      "ref": "a10d0dd2bc6ddd3cb81fb2eb6221064b286ebf5c",
+      "result": "NOT_FOUND_404",
+      "handling": "No Workbench implementation code was copied into this repository; only caller-supplied source text was analyzed in a local static invocation."
+    }
+  },
+  "environment": {
+    "python_version": "3.9.6",
+    "jsonschema_version": "4.25.1",
+    "invocation_mode": "LOCAL_READ_ONLY_CLI",
+    "network_requested_by_invocation": false
+  },
+  "input_binding": {
+    "stdin_bytes": 3313,
+    "stdin_sha256": "92681bce49ba366d4e1d33fcfaa7ce866e9094bc5fa9b17300886e309be4f83b",
+    "consumer_source_sha256_expected_and_observed": "6b7f8f878a6ca2c4d659e58d6b61a110f70b18ff29fe6c882432d48c33fc33d3",
+    "producer_text_sha256_expected_and_observed": "2f528cad60cb6ddd70cf9f656cb5da0e11b5158e705526073418c34e5300c957",
+    "source_bindings": "MATCH"
+  },
+  "invocation": {
+    "command": "python3 -B ignition/tools/toolbox_producer_consumer_semantic_preflight.py --stdin",
+    "observed_repetitions": 2,
+    "exit_code": 1,
+    "stdout_bytes": 3732,
+    "stdout_sha256": "11fce037cfc383f8c230789d51703f0d64ab99f74a322225c0b88a7d11e5c9f3",
+    "output_schema_valid": true,
+    "analysis_status": "EVALUATED",
+    "contract_status": "STATIC_REQUIRED_PATTERN_MISMATCH",
+    "check_statuses": {
+      "m2": "PRESENT",
+      "p2": "MALFORMED_OR_REORDERED"
+    },
+    "p2_field_statuses": {
+      "expected": "PRESENT_UNVALIDATED",
+      "original_match_count": "PRESENT_UNVALIDATED",
+      "original_total_count": "PRESENT_UNVALIDATED",
+      "first_observed": "PRESENT_UNVALIDATED",
+      "focused_repair": "PRESENT_UNVALIDATED",
+      "focused_repair_checker_pass": "ABSENT",
+      "remaining_mismatch_ids": "PRESENT_UNVALIDATED"
+    },
+    "claim_flags": {
+      "consumer_code_executed": false,
+      "source_provenance_authenticated": false,
+      "consumer_acceptance_proven": false,
+      "semantic_equivalence_proven": false,
+      "external_truth_verified": false,
+      "execution_authorized": false
+    }
+  },
+  "interpretation": {
+    "observed": "The M2 required pattern matched. The P2 required regex did not match the frozen producer line; the focused_repair_checker_pass field is absent, consistent with the separately recorded audit root cause.",
+    "limits": [
+      "This is a static check of caller-supplied text against a supported subset of source-level regex contracts.",
+      "A mismatch does not prove how the full consumer would behave at runtime and does not establish scientific or task truth.",
+      "The consumer function, experiment, old freeze, output, arm, watchdog, and scorer were not executed or changed.",
+      "The source text and hashes were fetched from exact repository refs, but the tool itself does not authenticate GitHub provenance or the caller's authority."
+    ]
+  }
+}

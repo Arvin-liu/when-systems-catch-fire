@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:crossref-citation-matcher-output-r0",
+  "title": "Crossref Citation Matcher Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_id", "tool_version", "source_code_sha256", "citation_sha256",
+    "source_endpoint", "retrieval_timestamp_utc", "status", "acquisition_status", "http_status",
+    "request_count", "request_sha256", "response_sha256", "response_bytes", "provider_hit_count",
+    "returned_count", "top_two_score_status", "usage_headers", "candidates", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition.crossref-citation-matcher-r0"},
+    "tool_id": {"const": "research.match_crossref_citation"},
+    "tool_version": {"const": "0.1.0"},
+    "source_code_sha256": {"$ref": "#/$defs/sha256"},
+    "citation_sha256": {"$ref": "#/$defs/sha256"},
+    "source_endpoint": {"const": "https://api.crossref.org/v1/works"},
+    "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["UNAVAILABLE", "INVALID_RESPONSE", "CANDIDATES_REPORTED", "NO_CANDIDATE_REPORTED"]},
+    "acquisition_status": {"enum": ["OK", "HTTP_ERROR", "RATE_LIMITED", "REDIRECT_BLOCKED", "NON_JSON_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "NETWORK_ERROR", "INVALID_RESPONSE"]},
+    "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "request_count": {"const": 1},
+    "request_sha256": {"$ref": "#/$defs/sha256"},
+    "response_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "response_bytes": {"type": "integer", "minimum": 0, "maximum": 131072},
+    "provider_hit_count": {"type": ["integer", "null"], "minimum": 0},
+    "returned_count": {"type": "integer", "minimum": 0, "maximum": 2},
+    "top_two_score_status": {"enum": ["NOT_EVALUATED", "INSUFFICIENT_CANDIDATES", "SCORE_NOT_RETURNED", "TOP_SCORES_EQUAL_AS_REPORTED", "TOP_SCORES_DIFFER_AS_REPORTED"]},
+    "usage_headers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "x-rate-limit-limit": {"type": "string", "maxLength": 64},
+        "x-rate-limit-interval": {"type": "string", "maxLength": 64},
+        "x-rate-limit-type": {"type": "string", "maxLength": 64}
+      }
+    },
+    "candidates": {"type": "array", "maxItems": 2, "items": {"$ref": "#/$defs/candidate"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "shortText": {"type": ["string", "null"], "maxLength": 2048},
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider_rank", "doi", "title", "publication_year", "type", "publisher", "container_title",
+        "volume", "issue", "page", "author_names", "author_count", "authors_truncated", "crossref_relevance_score"
+      ],
+      "properties": {
+        "provider_rank": {"type": "integer", "enum": [1, 2]},
+        "doi": {"type": ["string", "null"], "maxLength": 1100, "pattern": "^10\\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+$"},
+        "title": {"$ref": "#/$defs/shortText"},
+        "publication_year": {"type": ["integer", "null"], "minimum": 0, "maximum": 3000},
+        "type": {"type": ["string", "null"], "maxLength": 256},
+        "publisher": {"type": ["string", "null"], "maxLength": 512},
+        "container_title": {"$ref": "#/$defs/shortText"},
+        "volume": {"type": ["string", "null"], "maxLength": 128},
+        "issue": {"type": ["string", "null"], "maxLength": 128},
+        "page": {"type": ["string", "null"], "maxLength": 256},
+        "author_names": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 512}},
+        "author_count": {"type": "integer", "minimum": 0, "maximum": 10000},
+        "authors_truncated": {"type": "boolean"},
+        "crossref_relevance_score": {"type": ["number", "null"]}
+      }
+    }
+  }
+}

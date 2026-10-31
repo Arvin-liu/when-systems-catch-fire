@@ -1,0 +1,2325 @@
+{
+  "schema_version": "toolbox-selected-index-search-result-merge-route-evidence-r1",
+  "tool_id": "research.merge_selected_index_search_results",
+  "tool_version": "0.2.0",
+  "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+  "candidate_catalog_git_blob_sha1": "db90ad50c7edde8b4cacfccab5faab1c36e4da39",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-profile-r2.json",
+  "route_profile_sha256": "8037024fdd9d6d30c6f85dae5e2a2f9949e61368aa92b7f0efc3c347853cd77d",
+  "scenarios": [
+    {
+      "scenario": "default_off",
+      "allowlist_tool_ids": null,
+      "task_profile": {
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "input_types": [
+          "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "plan_sha256": "d4776c9d8318c23eaeacbb919b5176a813f6c0d35eabdad8856c7f874c219b73",
+      "plan": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.audit_execution_state_lineage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.plan_validation_invocation_deduplication",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.merge_selected_index_search_results",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "db90ad50c7edde8b4cacfccab5faab1c36e4da39"
+        }
+      }
+    },
+    {
+      "scenario": "tool_only",
+      "allowlist_tool_ids": [
+        "research.merge_selected_index_search_results"
+      ],
+      "task_profile": {
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "input_types": [
+          "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "plan_sha256": "5665c0ed4466a82f991767b5b9d420ae121844b7327e5cd9a7af2b54fe2d479f",
+      "plan": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.merge_selected_index_search_results",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+            ],
+            "output_types": [
+              "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+              "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "BOUNDED_OFFLINE_STDIN_PROCESS",
+            "permissions": {
+              "billing": false,
+              "external_actions": false,
+              "network": false,
+              "network_hosts": [],
+              "read_paths": [
+                "ignition/tools/toolbox_merge_selected_index_search_results.py"
+              ],
+              "secrets": false,
+              "write_paths": []
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [],
+            "declared_effect_rank": 0,
+            "pre_invocation_conditions": [
+              "A single provider adapter is insufficient for the requested cross-index view.",
+              "Caller supplies all source receipts explicitly; the router does not retrieve provider results or grant network permission.",
+              "Every input is a bounded receipt from one of the supported fixed-endpoint adapters and preserves its query and response fingerprints.",
+              "Only when the declared task requires two or more provider topic-search results to be grouped or checked for exact-title/different-DOI cases.",
+              "The task explicitly needs two or more provider topic-search result sets grouped or needs exact-title/different-DOI cases surfaced for review."
+            ],
+            "claim_ceiling": "This deterministic offline tool reports exact normalized DOI overlap among caller-supplied bounded provider receipts and flags identical normalized titles carrying multiple distinct DOI values for human review without merging them. It does not establish query equivalence, source authenticity, relevance, completeness, bibliographic correctness, duplicate identity, article status, scientific support, or scientific validity.",
+            "covers_required_outputs": [
+              "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+              "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+            ]
+          }
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "covered_outputs": [
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.audit_execution_state_lineage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.plan_validation_invocation_deduplication",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "db90ad50c7edde8b4cacfccab5faab1c36e4da39"
+        }
+      }
+    },
+    {
+      "scenario": "broad_allowlist",
+      "allowlist_tool_ids": [
+        "collaboration.preflight_receiver_handoff",
+        "collaboration.select_handoff_advisories",
+        "collaboration.validate_agent_episode_binding",
+        "collaboration.validate_portable_research_episode",
+        "collaboration.verify_handoff_artifact_files",
+        "foundation.batch_resolve_current_asset_references",
+        "foundation.read_current_asset_card",
+        "function_os.run_bounded_symbolic_spec",
+        "governance.preflight_declared_permission_delta",
+        "ignition.adaptive_toolbox_route_planner",
+        "ignition.select_bounded_thinking_operation",
+        "knowledge.assemble_context_packet",
+        "knowledge.cluster_source_brief",
+        "knowledge.navigate_raw_evidence",
+        "knowledge.preflight_reusable_context",
+        "maintenance.attribute_actions_validation_evidence",
+        "maintenance.audit_execution_state_lineage",
+        "maintenance.compare_actions_repeated_step_sequences",
+        "maintenance.compare_actions_validation_target_coverage",
+        "maintenance.compare_audit_findings",
+        "maintenance.compare_context_packet_variants",
+        "maintenance.compare_toolbox_component_coverage",
+        "maintenance.inspect_exact_head_check_observations",
+        "maintenance.plan_validation_invocation_deduplication",
+        "maintenance.preflight_execution_effect_receipt",
+        "maintenance.preflight_failure_anchored_recovery",
+        "maintenance.preflight_governed_improvement_transition",
+        "maintenance.preflight_producer_consumer_semantics",
+        "maintenance.summarize_actions_interval_union",
+        "maintenance.summarize_actions_step_timeline",
+        "maintenance.summarize_component_path_residue",
+        "maintenance.summarize_execution_candidate_pareto_frontier",
+        "planning.compare_task_decomposition_solvability",
+        "reasoning.search_structural_analogies",
+        "research.audit_pubmed_updates_from_doi",
+        "research.bind_offline_source_snapshot_run",
+        "research.compare_crossref_reference_metadata",
+        "research.compare_evidence_update_snapshots",
+        "research.compare_noaa_ch4_source_surfaces",
+        "research.compare_noaa_co2_source_surfaces",
+        "research.compare_noaa_n2o_source_surfaces",
+        "research.compare_noaa_sf6_source_surfaces",
+        "research.compare_publication_metadata_snapshots",
+        "research.inspect_pubmed_update_links",
+        "research.lookup_arxiv_paper_metadata",
+        "research.lookup_datacite_doi_metadata",
+        "research.lookup_noaa_global_ch4_annual_growth",
+        "research.lookup_noaa_global_co2_annual_growth",
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.lookup_noaa_global_sf6_annual_growth",
+        "research.lookup_openalex_work_metadata",
+        "research.match_crossref_citation",
+        "research.match_pubmed_citation",
+        "research.merge_selected_index_search_results",
+        "research.pair_noaa_co2_ch4_growth_by_year",
+        "research.preflight_g1_goal_intake",
+        "research.preflight_grounded_ideation",
+        "research.probe_counterfactual_fragility",
+        "research.resolve_europe_pmc_fulltext_locations",
+        "research.resolve_pubmed_identifiers",
+        "research.search_arxiv_query",
+        "research.search_crossref_query",
+        "research.search_europe_pmc_query",
+        "research.search_openalex_query",
+        "research.search_pubmed_query",
+        "research.validate_evidence_program_snapshot",
+        "research.verify_crossref_metadata",
+        "research.verify_offline_source_snapshot_run",
+        "runtime.inspect_declared_pack_catalog",
+        "visualization.build_archify_derived_ir",
+        "writing.preflight_cognitive_migration_revision"
+      ],
+      "task_profile": {
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "input_types": [
+          "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "plan_sha256": "b8471887352acddbaff7a5df3a051cf77a3b7976d407c40401de94f0537a2166",
+      "plan": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.merge_selected_index_search_results",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+            ],
+            "output_types": [
+              "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+              "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "BOUNDED_OFFLINE_STDIN_PROCESS",
+            "permissions": {
+              "billing": false,
+              "external_actions": false,
+              "network": false,
+              "network_hosts": [],
+              "read_paths": [
+                "ignition/tools/toolbox_merge_selected_index_search_results.py"
+              ],
+              "secrets": false,
+              "write_paths": []
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [],
+            "declared_effect_rank": 0,
+            "pre_invocation_conditions": [
+              "A single provider adapter is insufficient for the requested cross-index view.",
+              "Caller supplies all source receipts explicitly; the router does not retrieve provider results or grant network permission.",
+              "Every input is a bounded receipt from one of the supported fixed-endpoint adapters and preserves its query and response fingerprints.",
+              "Only when the declared task requires two or more provider topic-search results to be grouped or checked for exact-title/different-DOI cases.",
+              "The task explicitly needs two or more provider topic-search result sets grouped or needs exact-title/different-DOI cases surfaced for review."
+            ],
+            "claim_ceiling": "This deterministic offline tool reports exact normalized DOI overlap among caller-supplied bounded provider receipts and flags identical normalized titles carrying multiple distinct DOI values for human review without merging them. It does not establish query equivalence, source authenticity, relevance, completeness, bibliographic correctness, duplicate identity, article status, scientific support, or scientific validity.",
+            "covers_required_outputs": [
+              "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+              "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+            ]
+          }
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "covered_outputs": [
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "ROUTE_PLANNER_IS_NOT_A_TASK_OPERATION"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.audit_execution_state_lineage",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.plan_validation_invocation_deduplication",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "PERMISSION_PATH_UNAVAILABLE_OR_UNSAFE"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "db90ad50c7edde8b4cacfccab5faab1c36e4da39"
+        }
+      }
+    },
+    {
+      "scenario": "other_candidates_only",
+      "allowlist_tool_ids": [
+        "collaboration.preflight_receiver_handoff",
+        "collaboration.select_handoff_advisories",
+        "collaboration.validate_agent_episode_binding",
+        "collaboration.validate_portable_research_episode",
+        "collaboration.verify_handoff_artifact_files",
+        "foundation.batch_resolve_current_asset_references",
+        "foundation.read_current_asset_card",
+        "function_os.run_bounded_symbolic_spec",
+        "governance.preflight_declared_permission_delta",
+        "ignition.adaptive_toolbox_route_planner",
+        "ignition.select_bounded_thinking_operation",
+        "knowledge.assemble_context_packet",
+        "knowledge.cluster_source_brief",
+        "knowledge.navigate_raw_evidence",
+        "knowledge.preflight_reusable_context",
+        "maintenance.attribute_actions_validation_evidence",
+        "maintenance.audit_execution_state_lineage",
+        "maintenance.compare_actions_repeated_step_sequences",
+        "maintenance.compare_actions_validation_target_coverage",
+        "maintenance.compare_audit_findings",
+        "maintenance.compare_context_packet_variants",
+        "maintenance.compare_toolbox_component_coverage",
+        "maintenance.inspect_exact_head_check_observations",
+        "maintenance.plan_validation_invocation_deduplication",
+        "maintenance.preflight_execution_effect_receipt",
+        "maintenance.preflight_failure_anchored_recovery",
+        "maintenance.preflight_governed_improvement_transition",
+        "maintenance.preflight_producer_consumer_semantics",
+        "maintenance.summarize_actions_interval_union",
+        "maintenance.summarize_actions_step_timeline",
+        "maintenance.summarize_component_path_residue",
+        "maintenance.summarize_execution_candidate_pareto_frontier",
+        "planning.compare_task_decomposition_solvability",
+        "reasoning.search_structural_analogies",
+        "research.audit_pubmed_updates_from_doi",
+        "research.bind_offline_source_snapshot_run",
+        "research.compare_crossref_reference_metadata",
+        "research.compare_evidence_update_snapshots",
+        "research.compare_noaa_ch4_source_surfaces",
+        "research.compare_noaa_co2_source_surfaces",
+        "research.compare_noaa_n2o_source_surfaces",
+        "research.compare_noaa_sf6_source_surfaces",
+        "research.compare_publication_metadata_snapshots",
+        "research.inspect_pubmed_update_links",
+        "research.lookup_arxiv_paper_metadata",
+        "research.lookup_datacite_doi_metadata",
+        "research.lookup_noaa_global_ch4_annual_growth",
+        "research.lookup_noaa_global_co2_annual_growth",
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.lookup_noaa_global_sf6_annual_growth",
+        "research.lookup_openalex_work_metadata",
+        "research.match_crossref_citation",
+        "research.match_pubmed_citation",
+        "research.pair_noaa_co2_ch4_growth_by_year",
+        "research.preflight_g1_goal_intake",
+        "research.preflight_grounded_ideation",
+        "research.probe_counterfactual_fragility",
+        "research.resolve_europe_pmc_fulltext_locations",
+        "research.resolve_pubmed_identifiers",
+        "research.search_arxiv_query",
+        "research.search_crossref_query",
+        "research.search_europe_pmc_query",
+        "research.search_openalex_query",
+        "research.search_pubmed_query",
+        "research.validate_evidence_program_snapshot",
+        "research.verify_crossref_metadata",
+        "research.verify_offline_source_snapshot_run",
+        "runtime.inspect_declared_pack_catalog",
+        "visualization.build_archify_derived_ir",
+        "writing.preflight_cognitive_migration_revision"
+      ],
+      "task_profile": {
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "input_types": [
+          "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "plan_sha256": "e41b957d9fc87e49cd8551d11076d6080590d0996191d7b8205c20ac7e4441f0",
+      "plan": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "ROUTE_PLANNER_IS_NOT_A_TASK_OPERATION"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.audit_execution_state_lineage",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.plan_validation_invocation_deduplication",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.merge_selected_index_search_results",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "PERMISSION_PATH_UNAVAILABLE_OR_UNSAFE"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "db90ad50c7edde8b4cacfccab5faab1c36e4da39"
+        }
+      }
+    },
+    {
+      "scenario": "unrelated_input",
+      "allowlist_tool_ids": [
+        "research.merge_selected_index_search_results"
+      ],
+      "task_profile": {
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review-unrelated-input-negative-control",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "input_types": [
+          "application/x-unrelated-input"
+        ],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "plan_sha256": "f855c1e763a8310ecaefa85dd97f16f790ab8caf4057cdf0473901c5495c01bc",
+      "plan": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review-unrelated-input-negative-control",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups.",
+          "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.audit_execution_state_lineage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.plan_validation_invocation_deduplication",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.merge_selected_index_search_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "db90ad50c7edde8b4cacfccab5faab1c36e4da39"
+        }
+      }
+    }
+  ],
+  "safety_boundary": {
+    "execution_authorized": false,
+    "tool_invocations_by_planner": 0,
+    "network_hosts_allowed": [],
+    "permission_grants": 0,
+    "claim_ceiling": "Route proposals only; no candidate was invoked or authorized by the planner."
+  },
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "tool_source_sha256": "c9d9ef87b7dc9c8afe1c0b8f8dd0a4b4b9c437522e98537d7b9b45af4e76ebc2",
+  "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+  "expected_output_sha256": "af25dcfac9dbee1edb54ff69fe17da8ed6a2130d3d02a59139510fb8e2676f8d",
+  "candidate_count": 71
+}

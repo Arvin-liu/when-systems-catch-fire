@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "claim_ceiling": "Caller-selected derived context may be reused only after exact local byte-digest and caller-declared access-scope checks. No source authority, permission grant, semantic relevance, raw-evidence support, sufficiency, truth, or task completion is established.",
+  "decision": "CONTEXT_REUSED",
+  "decisions": [
+    {
+      "card_id": "pr264-check-observation-8230dc6",
+      "context_bytes": 265,
+      "decision": "REUSE",
+      "reason": "SOURCE_BYTES_AND_CALLER_DECLARED_ACCESS_SCOPE_MATCH"
+    }
+  ],
+  "evidential_sufficiency": "NOT_EVALUATED",
+  "execution_authorized": false,
+  "raw_reopen_required": [],
+  "refresh_required": [],
+  "resource_observation": {
+    "context_bytes_returned": 265,
+    "cost_equivalent": "NOT_MEASURED",
+    "latency_ms": "UNKNOWN",
+    "source_bytes_read": 5554,
+    "source_files_hashed": 1
+  },
+  "reused_context_cards": [
+    {
+      "card_id": "pr264-check-observation-8230dc6",
+      "context_kind": "DERIVED_CONTEXT_ONLY",
+      "derived_context": "Historical supplied check-run snapshot for PR #264 head 8230dc6: two named contexts had exact-head success observations; foundation-validation was not observed. This snapshot does not prove current CI sufficiency, branch protection, merge, or release authorization.",
+      "source_bindings": [
+        {
+          "access_scope_id": "formal-repository:read-only",
+          "path": "ignition/data/operations/toolbox-actions-check-observations-real-task-r0.json",
+          "sha256": "bf4648b531c50d2ea64ef96e97f22021b1025ae74afa0e987c3f4fa94d0bd3d6",
+          "source_id": "github-checkrun-snapshot-8230dc6",
+          "version": "snapshot:2026-10-26T02:33:03Z"
+        }
+      ]
+    }
+  ],
+  "schema_version": "toolbox-reusable-context-preflight-result-r0",
+  "semantic_relevance": "NOT_EVALUATED",
+  "task_id": "TR26-02-expired-checkrun-memory-20261027",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.1.0"
+}

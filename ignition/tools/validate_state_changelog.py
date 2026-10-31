@@ -13,12 +13,62 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = ROOT.parent
 PATH = ROOT / "STATE-CHANGELOG.md"
-PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
-PROFILE_SCHEMA_VERSION = "state-changelog-profile-r1"
-EXPECTED_ENTRY_COUNT = 56
-EXPECTED_CURRENT_ORDINALS = list(range(27, 55))
-EXPECTED_HISTORICAL_COUNT = 28
-EXPECTED_LEGACY_COUNT = 6
+PROFILE_PATH_R1 = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
+PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r2.json"
+PROFILE_PATH_R3 = ROOT / "data" / "operations" / "state-changelog-profile-r3.json"
+PROFILE_PATH_R4 = ROOT / "data" / "operations" / "state-changelog-profile-r4.json"
+PROFILE_PATH_R5 = ROOT / "data" / "operations" / "state-changelog-profile-r5.json"
+R1_PROFILE_SHA256 = "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c"
+R2_PROFILE_SHA256 = "5b866d55e04ffc0fae8e89b19552084f04846df96b310eccbc24ffe7a2acd235"
+R3_PROFILE_SHA256 = "b52f2c3886f09b91fcf677c18ca1d9dc8ae658e2d233bcad357965cb649e4d2d"
+R4_PROFILE_SHA256 = "32097d8a25ad66d6089bdb8e7c1898237152d189df8792f79505fc08ba047993"
+R5_PROFILE_SHA256 = "9427149ec9cf671ce28824b4a82711511496ca8140b431926a980b489aa9db8e"
+R1_SCHEMA_VERSION = "state-changelog-profile-r1"
+R2_SCHEMA_VERSION = "state-changelog-profile-r2"
+R3_SCHEMA_VERSION = "state-changelog-profile-r3"
+R4_SCHEMA_VERSION = "state-changelog-profile-r4"
+R5_SCHEMA_VERSION = "state-changelog-profile-r5"
+R1_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED"
+R2_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR"
+R3_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR_CHAIN"
+R4_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_OWNER_AUTHORIZED_SUCCESSOR_CHAIN"
+R5_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_OWNER_AUTHORIZED_SUCCESSOR_CHAIN"
+R2_APPEND_PROFILE = "current-governance-self-repair-r1"
+R3_APPEND_PROFILE = "task20-current-lineage-r1"
+R4_APPEND_PROFILE = "task20-v1-homepage-r1"
+R5_APPEND_PROFILE = "task20-v1-research-closeout-r0"
+R2_AUTHORIZATION = {
+    "owner": "Arvin-liu",
+    "repository": "Arvin-liu/1111",
+    "commit": "bd5ec8280a8b5a2a682c7fd97f3cec6c1eec3527",
+    "path": "instructions/goal-mode/IGNITION-2026-10-12-governance-self-repair-r1.md",
+    "blob_sha1": "ec3c1d9781ead374679e334680a4f969f210a46e",
+    "append_profile": R2_APPEND_PROFILE,
+}
+R3_AUTHORIZATION = {
+    "owner": "Arvin-liu",
+    "repository": "Arvin-liu/1111",
+    "commit": "44de013f09b63535fe16b1e38cab7eff4d68ae66",
+    "path": "instructions/goal-mode/IGNITION-2026-10-24-SIGNED-OWNER-WEB-MERGE-REGISTRATION-COMPATIBILITY-R0.md",
+    "blob_sha1": "6a5d36cb6c40170c1b85440047eaceda097cee8b",
+    "append_profile": R3_APPEND_PROFILE,
+}
+R4_AUTHORIZATION = {
+    "owner": "Arvin-liu",
+    "repository": "Arvin-liu/1111",
+    "commit": "ea631933be075684ef8de663e202db2ea9523221",
+    "path": "instructions/goal-mode/IGNITION-2026-10-30-ONE-TIME-R3-V1-CLOSEOUT-EXECUTION-DELEGATION-R0.json",
+    "blob_sha1": "e93a53eabe7007a2447c9677f9a8d7b7f2428646",
+    "append_profile": R4_APPEND_PROFILE,
+}
+R5_AUTHORIZATION = {
+    "owner": "Arvin-liu",
+    "repository": "Arvin-liu/1111",
+    "commit": "6505d83ca2498ff0e8e3bf1e99129c5ee7dabf6c",
+    "path": "instructions/goal-mode/IGNITION-2026-10-30-PHASE1-CLOSEOUT-FOCUS-ADDENDUM-R0.json",
+    "blob_sha1": "6a469d285cdf949462b7c68e3cd489b7b12d7681",
+    "append_profile": R5_APPEND_PROFILE,
+}
 STRICT_FIELDS = [
     "main_state",
     "delta",
@@ -37,19 +87,8 @@ def _section(text: str, start: int, end: int) -> str:
     return text[start:end]
 
 
-def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
-    if profile.get("entry_count") != EXPECTED_ENTRY_COUNT:
-        errors.append("validation profile entry_count is not the sealed current contract")
-    if profile.get("active_current_ordinals") != EXPECTED_CURRENT_ORDINALS:
-        errors.append("validation profile current ordinals are not the sealed current contract")
-    if profile.get("historical_entry_count") != EXPECTED_HISTORICAL_COUNT:
-        errors.append("validation profile historical count is not the sealed current contract")
-    if profile.get("legacy_profile_count") != EXPECTED_LEGACY_COUNT:
-        errors.append("validation profile legacy count is not the sealed current contract")
-    profiles = profile.get("profiles")
-    if not isinstance(profiles, dict):
-        return
-    expected_profiles = {
+def _r1_profile_definitions() -> dict[str, tuple[str, list[str], bool]]:
+    return {
         "current-r1": ("current", STRICT_FIELDS, True),
         "current-human-front-door-r1": (
             "current",
@@ -69,22 +108,24 @@ def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
         "historical-current-r0": ("historical", STRICT_FIELDS, True),
         "historical-legacy-r0": ("historical", [], False),
     }
-    for name, (kind, required_fields, base_sha_required) in expected_profiles.items():
-        definition = profiles.get(name)
-        if not isinstance(definition, dict):
-            errors.append(f"validation profile definition is missing: {name}")
-            continue
-        if definition.get("kind") != kind:
-            errors.append(f"validation profile kind is invalid: {name}")
-        if definition.get("required_fields") != required_fields:
-            errors.append(f"validation profile required fields are invalid: {name}")
-        if definition.get("base_sha_required") is not base_sha_required:
-            errors.append(f"validation profile base SHA rule is invalid: {name}")
+
+
+def _profile_definitions() -> dict[str, dict]:
+    return {
+        name: {"kind": kind, "required_fields": required_fields, "base_sha_required": base_sha_required}
+        for name, (kind, required_fields, base_sha_required) in _r1_profile_definitions().items()
+    }
+
+
+def _validate_profile_counts(profile: dict, errors: list[str]) -> None:
+    profiles = profile.get("profiles")
     entries = profile.get("entries")
-    if not isinstance(entries, list):
+    if not isinstance(profiles, dict) or not isinstance(entries, list):
         return
+    if profile.get("entry_count") != len(entries):
+        errors.append("validation profile entry_count does not match its sealed entry set")
     ordinals = [item.get("ordinal") for item in entries if isinstance(item, dict)]
-    if ordinals != list(range(1, EXPECTED_ENTRY_COUNT + 1)):
+    if ordinals != list(range(1, len(entries) + 1)):
         errors.append("validation profile ordinals are not a complete ordered seal")
     current = [
         item.get("ordinal")
@@ -95,31 +136,267 @@ def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
     ]
     historical = [item for item in entries if isinstance(item, dict) and str(item.get("profile", "")).startswith("historical-")]
     legacy = [item for item in entries if isinstance(item, dict) and item.get("profile") == "historical-legacy-r0"]
-    if current != EXPECTED_CURRENT_ORDINALS:
-        errors.append("validation profile does not keep the sealed Current entries strict")
-    if len(historical) != EXPECTED_HISTORICAL_COUNT:
-        errors.append("validation profile historical entry set has drifted")
-    if len(legacy) != EXPECTED_LEGACY_COUNT:
-        errors.append("validation profile legacy entry set has drifted")
+    if profile.get("active_current_ordinals") != current:
+        errors.append("validation profile current ordinals do not match its entry definitions")
+    if profile.get("historical_entry_count") != len(historical):
+        errors.append("validation profile historical entry count does not match its entry set")
+    if profile.get("legacy_profile_count") != len(legacy):
+        errors.append("validation profile legacy entry count does not match its entry set")
+
+
+def _validate_profile_contract(profile: dict, errors: list[str], schema_version: str) -> None:
+    expected_profiles = _profile_definitions()
+    if schema_version == R1_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R1_PROFILE_CONTRACT:
+            errors.append("R1 validation profile contract is unknown")
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R1 validation profile definitions differ from the sealed contract")
+    elif schema_version == R2_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R2_PROFILE_CONTRACT:
+            errors.append("R2 validation profile contract is unknown")
+        parent = profile.get("parent_profile")
+        expected_parent = {
+            "path": "data/operations/state-changelog-profile-r1.json",
+            "schema_version": R1_SCHEMA_VERSION,
+            "sha256": R1_PROFILE_SHA256,
+        }
+        if parent != expected_parent:
+            errors.append("R2 validation profile does not bind the exact sealed R1 parent")
+        if profile.get("authorization") != R2_AUTHORIZATION:
+            errors.append("R2 validation profile lacks the exact authorized append source")
+        parent_bytes: bytes | None = None
+        try:
+            parent_bytes = PROFILE_PATH_R1.read_bytes()
+            parent_profile = json.loads(parent_bytes)
+        except (OSError, json.JSONDecodeError) as exc:
+            parent_profile = {}
+            errors.append(f"cannot load sealed R1 parent profile: {exc}")
+        if parent_bytes is None or hashlib.sha256(parent_bytes).hexdigest() != R1_PROFILE_SHA256:
+            errors.append("R1 parent profile bytes differ from their sealed digest")
+        parent_entries = parent_profile.get("entries", [])
+        r2_profile_definition = {
+            "kind": "current",
+            "required_fields": STRICT_FIELDS + ["claim_ceiling"],
+            "base_sha_required": True,
+        }
+        expected_profiles.update({R2_APPEND_PROFILE: r2_profile_definition})
+        entries = profile.get("entries")
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R2 profile definitions are not exactly R1 plus its authorized append profile")
+        if not isinstance(entries, list) or not isinstance(parent_entries, list):
+            errors.append("R2 profile entries or R1 parent entries are malformed")
+        else:
+            if len(entries) != len(parent_entries) + 1:
+                errors.append("R2 profile must append exactly one record to its R1 parent")
+            if entries[:len(parent_entries)] != parent_entries:
+                errors.append("R2 profile rewrites or reorders the sealed R1 entry prefix")
+            if len(entries) > len(parent_entries):
+                added = entries[len(parent_entries)]
+                if not isinstance(added, dict) or added.get("ordinal") != len(parent_entries) + 1 or added.get("profile") != R2_APPEND_PROFILE:
+                    errors.append("R2 appended entry is not the authorized next current profile")
+        if profile.get("historical_entry_count") != parent_profile.get("historical_entry_count"):
+            errors.append("R2 profile changes the R1 historical entry count")
+        if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
+            errors.append("R2 profile changes the R1 legacy profile count")
+    elif schema_version == R3_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R3_PROFILE_CONTRACT:
+            errors.append("R3 validation profile contract is unknown")
+        parent = profile.get("parent_profile")
+        expected_parent = {
+            "path": "data/operations/state-changelog-profile-r2.json",
+            "schema_version": R2_SCHEMA_VERSION,
+            "sha256": R2_PROFILE_SHA256,
+        }
+        if parent != expected_parent:
+            errors.append("R3 validation profile does not bind the exact sealed R2 parent")
+        if profile.get("authorization") != R3_AUTHORIZATION:
+            errors.append("R3 validation profile lacks the exact Task20 Owner authorization")
+        parent_bytes: bytes | None = None
+        try:
+            parent_bytes = PROFILE_PATH.read_bytes()
+            parent_profile = json.loads(parent_bytes)
+        except (OSError, json.JSONDecodeError) as exc:
+            parent_profile = {}
+            errors.append(f"cannot load sealed R2 parent profile: {exc}")
+        if parent_bytes is None or hashlib.sha256(parent_bytes).hexdigest() != R2_PROFILE_SHA256:
+            errors.append("R2 parent profile bytes differ from their sealed digest")
+        expected_profiles = parent_profile.get("profiles", {})
+        expected_profiles = json.loads(json.dumps(expected_profiles))
+        expected_profiles[R3_APPEND_PROFILE] = {
+            "kind": "current",
+            "required_fields": STRICT_FIELDS + ["claim_ceiling"],
+            "base_sha_required": True,
+        }
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R3 profile definitions are not exactly R2 plus its authorized Task20 append profile")
+        entries = profile.get("entries")
+        parent_entries = parent_profile.get("entries", [])
+        if not isinstance(entries, list) or not isinstance(parent_entries, list):
+            errors.append("R3 profile entries or R2 parent entries are malformed")
+        else:
+            if len(entries) != len(parent_entries) + 1:
+                errors.append("R3 profile must append exactly one record to its sealed R2 parent")
+            if entries[:len(parent_entries)] != parent_entries:
+                errors.append("R3 profile rewrites or reorders the sealed R2 entry prefix")
+            if len(entries) > len(parent_entries):
+                added = entries[len(parent_entries)]
+                if not isinstance(added, dict) or added.get("ordinal") != len(parent_entries) + 1 or added.get("profile") != R3_APPEND_PROFILE:
+                    errors.append("R3 appended entry is not the authorized next Task20 current profile")
+        if profile.get("historical_entry_count") != parent_profile.get("historical_entry_count"):
+            errors.append("R3 profile changes the R2 historical entry count")
+        if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
+            errors.append("R3 profile changes the R2 legacy profile count")
+    elif schema_version == R4_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R4_PROFILE_CONTRACT:
+            errors.append("R4 validation profile contract is unknown")
+        parent = profile.get("parent_profile")
+        expected_parent = {
+            "path": "data/operations/state-changelog-profile-r3.json",
+            "schema_version": R3_SCHEMA_VERSION,
+            "sha256": R3_PROFILE_SHA256,
+        }
+        if parent != expected_parent:
+            errors.append("R4 validation profile does not bind the exact sealed R3 parent")
+        if profile.get("authorization") != R4_AUTHORIZATION:
+            errors.append("R4 validation profile lacks the exact signed V1 closeout delegation")
+        parent_bytes: bytes | None = None
+        try:
+            parent_bytes = PROFILE_PATH_R3.read_bytes()
+            parent_profile = json.loads(parent_bytes)
+        except (OSError, json.JSONDecodeError) as exc:
+            parent_profile = {}
+            errors.append(f"cannot load sealed R3 parent profile: {exc}")
+        if parent_bytes is None or hashlib.sha256(parent_bytes).hexdigest() != R3_PROFILE_SHA256:
+            errors.append("R3 parent profile bytes differ from their sealed digest")
+        expected_profiles = parent_profile.get("profiles", {})
+        expected_profiles = json.loads(json.dumps(expected_profiles))
+        expected_profiles[R4_APPEND_PROFILE] = {
+            "kind": "current",
+            "required_fields": [
+                "main_state",
+                "delta",
+                "homepage_boundary",
+                "architecture_language",
+                "task_lineage",
+                "obligations",
+                "epistemic_state",
+                "claim_ceiling",
+            ],
+            "base_sha_required": True,
+        }
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R4 profile definitions are not exactly R3 plus its Owner-authorized V1 homepage profile")
+        entries = profile.get("entries")
+        parent_entries = parent_profile.get("entries", [])
+        if not isinstance(entries, list) or not isinstance(parent_entries, list):
+            errors.append("R4 profile entries or R3 parent entries are malformed")
+        else:
+            if len(entries) != len(parent_entries) + 1:
+                errors.append("R4 profile must append exactly one record to its sealed R3 parent")
+            if entries[:len(parent_entries)] != parent_entries:
+                errors.append("R4 profile rewrites or reorders the sealed R3 entry prefix")
+            if len(entries) > len(parent_entries):
+                added = entries[len(parent_entries)]
+                if not isinstance(added, dict) or added.get("ordinal") != len(parent_entries) + 1 or added.get("profile") != R4_APPEND_PROFILE:
+                    errors.append("R4 appended entry is not the authorized next V1 homepage profile")
+        if profile.get("historical_entry_count") != parent_profile.get("historical_entry_count"):
+            errors.append("R4 profile changes the R3 historical entry count")
+        if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
+            errors.append("R4 profile changes the R3 legacy profile count")
+    elif schema_version == R5_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R5_PROFILE_CONTRACT:
+            errors.append("R5 validation profile contract is unknown")
+        parent = profile.get("parent_profile")
+        expected_parent = {
+            "path": "data/operations/state-changelog-profile-r4.json",
+            "schema_version": R4_SCHEMA_VERSION,
+            "sha256": R4_PROFILE_SHA256,
+        }
+        if parent != expected_parent:
+            errors.append("R5 validation profile does not bind the exact sealed R4 parent")
+        if profile.get("authorization") != R5_AUTHORIZATION:
+            errors.append("R5 validation profile lacks the exact merged Owner V1 closeout directive")
+        parent_bytes: bytes | None = None
+        try:
+            parent_bytes = PROFILE_PATH_R4.read_bytes()
+            parent_profile = json.loads(parent_bytes)
+        except (OSError, json.JSONDecodeError) as exc:
+            parent_profile = {}
+            errors.append(f"cannot load sealed R4 parent profile: {exc}")
+        if parent_bytes is None or hashlib.sha256(parent_bytes).hexdigest() != R4_PROFILE_SHA256:
+            errors.append("R4 parent profile bytes differ from their sealed digest")
+        expected_profiles = parent_profile.get("profiles", {})
+        expected_profiles = json.loads(json.dumps(expected_profiles))
+        expected_profiles[R5_APPEND_PROFILE] = {
+            "kind": "current",
+            "required_fields": STRICT_FIELDS + [
+                "claim_ceiling",
+                "task_lineage",
+                "research_evidence",
+                "research_limitations",
+            ],
+            "base_sha_required": True,
+        }
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R5 profile definitions are not exactly R4 plus its Owner-authorized V1 research profile")
+        entries = profile.get("entries")
+        parent_entries = parent_profile.get("entries", [])
+        if not isinstance(entries, list) or not isinstance(parent_entries, list):
+            errors.append("R5 profile entries or R4 parent entries are malformed")
+        else:
+            if len(entries) != len(parent_entries) + 1:
+                errors.append("R5 profile must append exactly one record to its sealed R4 parent")
+            if entries[:len(parent_entries)] != parent_entries:
+                errors.append("R5 profile rewrites or reorders the sealed R4 entry prefix")
+            if len(entries) > len(parent_entries):
+                added = entries[len(parent_entries)]
+                if (
+                    not isinstance(added, dict)
+                    or added.get("ordinal") != len(parent_entries) + 1
+                    or added.get("profile") != R5_APPEND_PROFILE
+                ):
+                    errors.append("R5 appended entry is not the authorized next V1 research profile")
+        if profile.get("historical_entry_count") != parent_profile.get("historical_entry_count"):
+            errors.append("R5 profile changes the R4 historical entry count")
+        if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
+            errors.append("R5 profile changes the R4 legacy profile count")
+    else:
+        errors.append(f"unsupported validation profile schema: {schema_version}")
+    _validate_profile_counts(profile, errors)
 
 
 def _load_profile(profile_path: Path) -> tuple[dict, list[str]]:
     try:
-        profile = json.loads(profile_path.read_text(encoding="utf-8"))
+        raw = profile_path.read_bytes()
+        profile = json.loads(raw)
     except (OSError, json.JSONDecodeError) as exc:
         return {}, [f"cannot load validation profile: {exc}"]
     if not isinstance(profile, dict):
         return {}, ["validation profile must be a JSON object"]
     errors: list[str] = []
-    if profile.get("schema_version") != PROFILE_SCHEMA_VERSION:
-        errors.append("validation profile schema_version is unknown")
-    if profile.get("profile_contract") != "CURRENT_STRICT_HISTORICAL_VERSIONED":
-        errors.append("validation profile contract is unknown")
+    resolved_path = profile_path.resolve()
+    authorized_profiles = {
+        PROFILE_PATH_R1.resolve(): (R1_SCHEMA_VERSION, R1_PROFILE_SHA256),
+        PROFILE_PATH.resolve(): (R2_SCHEMA_VERSION, R2_PROFILE_SHA256),
+        PROFILE_PATH_R3.resolve(): (R3_SCHEMA_VERSION, R3_PROFILE_SHA256),
+        PROFILE_PATH_R4.resolve(): (R4_SCHEMA_VERSION, R4_PROFILE_SHA256),
+        PROFILE_PATH_R5.resolve(): (R5_SCHEMA_VERSION, R5_PROFILE_SHA256),
+    }
+    authorized = authorized_profiles.get(resolved_path)
+    if authorized is None:
+        errors.append("validation profile path is not an authorized versioned profile")
+        schema_version = str(profile.get("schema_version", ""))
+    else:
+        schema_version, expected_sha256 = authorized
+        if hashlib.sha256(raw).hexdigest() != expected_sha256:
+            errors.append("validation profile bytes differ from the authorized versioned seal")
+    if profile.get("schema_version") != schema_version:
+        errors.append("validation profile schema_version is unknown for its path")
     if not isinstance(profile.get("profiles"), dict):
         errors.append("validation profile profiles must be an object")
     if not isinstance(profile.get("entries"), list):
         errors.append("validation profile entries must be an array")
-    _validate_profile_contract(profile, errors)
+    _validate_profile_contract(profile, errors, schema_version)
     return profile, errors
 
 
@@ -193,7 +470,7 @@ def _validate_links(text: str, path: Path, errors: list[str]) -> None:
             errors.append(f"broken repository link: {target}")
 
 
-def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH) -> list[str]:
+def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH_R5) -> list[str]:
     errors: list[str] = []
     if not path.is_file():
         return [f"missing {path.relative_to(ROOT)}"]
@@ -267,7 +544,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    profile, _ = _load_profile(PROFILE_PATH)
+    profile, _ = _load_profile(PROFILE_PATH_R5)
     entries = profile.get("entries", [])
     definitions = profile.get("profiles", {})
     current = sum(

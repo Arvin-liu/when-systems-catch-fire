@@ -1,0 +1,37 @@
+{
+  "schema_version": "toolbox-validation-invocation-dedup-source-binding-r0",
+  "tool_id": "maintenance.plan_validation_invocation_deduplication",
+  "tool_version": "0.1.0",
+  "workbench_source_ref": "Arvin-liu/1111@b465b570e11ac4d2cdc3dc99e8efc0757e693456:reports/operations/IGNITION-20261024-264-CANDIDATE-CI-AND-WORKBENCH86-AUDIT-R0.md",
+  "workbench_source_blob_sha1": "75eabf1f1e34f07cafe78f90a538368aa79ebede",
+  "workbench_finding": {
+    "blueprint": "Workbench #85 P0 validation economics",
+    "source_scope": "The pinned profile loop declared eight validation profiles, ran five exact argv groups from one checkout with a shared cwd and inherited environment, and asserted returncode zero per profile. Source review identified two repeated read-only command groups with three duplicate invocations in that test method.",
+    "boundary": "This tool operationalizes an offline exact-signature grouping task only. It does not implement the proposed CI dispatcher, alter tests or workflows, run a validator, or claim measured savings."
+  },
+  "formal_snapshot": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "commit": "64d26f9387eb2b63611e6eb1d4336a83382f84b5",
+    "tree": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+    "component_execution_profiles_sha256": "c17bbd243cbf4afb2bbac484cb59cff57d924ad1a582abcccbc64c9df5255bb4",
+    "validate_human_front_door_sha256": "4f986b8150fb9b57dc68a27413c8c0d62b7432bd2d327050c8c7bab5f750c691",
+    "generate_interactive_system_map_sha256": "122e95dd185714174ea67c7b4c4616d0582d3d1484a70bfe239bbb6992b5d7eb"
+  },
+  "source_review": [
+    {
+      "argv": ["python3", "tools/validate_human_front_door.py"],
+      "profile_ids": ["no_l7", "no_totality_proof", "no_truth_upgrade"],
+      "effect_boundary": "READ_ONLY_VALIDATION",
+      "basis": "The validator parses repository inputs and emits a JSON receipt; it has no file-write, network, subprocess, or external-action branch.",
+      "source_sha256": "4f986b8150fb9b57dc68a27413c8c0d62b7432bd2d327050c8c7bab5f750c691"
+    },
+    {
+      "argv": ["python3", "tools/generate_interactive_system_map.py", "--check"],
+      "profile_ids": ["system_map", "system_map_projection"],
+      "effect_boundary": "READ_ONLY_VALIDATION",
+      "basis": "The --check branch validates materialized files and returns before the generator's mkdir/write branch.",
+      "source_sha256": "122e95dd185714174ea67c7b4c4616d0582d3d1484a70bfe239bbb6992b5d7eb"
+    }
+  ],
+  "claim_ceiling": "The profile and source references are caller-bound. This is a source-scoped planner and two exact command smoke results, not an authenticated CI result, proof of profile semantic equivalence, dispatch authorization, process-count reduction in a workflow, runtime/cost savings, or permission to change required checks."
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "toolbox-agent-episode-binding-c1-comparison-r0",
+  "subject_tool_id": "collaboration.validate_agent_episode_binding",
+  "subject_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "retention_disposition": "ACTIVE_DEFAULT_OFF",
+  "comparison_scope": {
+    "baseline": "Draft 2020-12 JSON Schema validation of the same valid fixture and seven shape-valid contradictory plan mutations.",
+    "questions_answered": [
+      "Does the candidate add cross-record checks beyond schema shape validation?"
+    ],
+    "questions_not_answered": [
+      "Does it improve task outcomes against another tool on matched real tasks?",
+      "Are runtime enforcement, live isolation, real-agent behavior, or concurrency safety improved?",
+      "Is the total cost lower than or preferable to another toolbox tool?"
+    ]
+  },
+  "observations": {
+    "positive_control": "The unmodified fixture passes both schema validation and candidate consistency checks.",
+    "shape_valid_conflict_cases": [
+      {
+        "case_id": "DUPLICATE_ROLE_ID",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      },
+      {
+        "case_id": "ROLE_PERMISSION_WIDENING",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      },
+      {
+        "case_id": "PRIVATE_CONTEXT_CROSS_ROLE",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      },
+      {
+        "case_id": "INFORMATION_EDGE_CONTROL_EFFECT",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      },
+      {
+        "case_id": "UNAUTHORIZED_HARD_STOP",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      },
+      {
+        "case_id": "DEPENDENCY_CYCLE",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      },
+      {
+        "case_id": "UNORDERED_EXCLUSIVE_WRITERS",
+        "schema_only_accepts": true,
+        "candidate_rejects": true
+      }
+    ],
+    "candidate_observed_increment": "Seven caller-declared cross-field conflicts pass schema-shape validation and are rejected by the candidate semantic layer.",
+    "limits": "This is a local synthetic contract comparison, not a matched real-task outcome, runtime test, safety proof, scientific validation, cost study, or evidence for replacing an existing tool."
+  },
+  "neighboring_tool_scope": {
+    "tool_id": "research.preflight_g1_goal_intake",
+    "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+    "basis": "That candidate preflights Intent, Goal, Completion Contract, version, parent, and objective-digest bindings. This candidate preflights roles, context access, feedback/control declarations, work-unit DAG, and exclusive write-domain ordering. Neither is shown to cover the other contract.",
+    "same_task_replacement_comparison": "NOT_ESTABLISHED"
+  },
+  "c1_decision": "Keep the candidate available only as an explicit opt-in and retain COMPARISON_UNKNOWN; do not replace, retire, or promote any existing tool on this evidence.",
+  "evidence_refs": [
+    "ignition/tests/test_toolbox_agent_episode_binding.py",
+    "ignition/tests/fixtures/toolbox-agent-episode-binding/valid-plan-r0.json",
+    "ignition/tools/validate_steering_episode_binding.py",
+    "ignition/tests/test_steering_episode_binding.py",
+    "ignition/data/operations/toolbox-agent-episode-binding-source-provenance-r0.json"
+  ]
+}

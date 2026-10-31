@@ -1,0 +1,47 @@
+{
+  "schema_version": "toolbox-executed-experience-provenance-r0",
+  "blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 87,
+    "head": "d4edff701a41aec1bd224def9c8ee54af70e63d5",
+    "state_at_review": "CLOSED_DRAFT_NONCANONICAL"
+  },
+  "work_item": {
+    "id": "AB-19-ROBOSKILL-R0",
+    "hypothesis": "RS-C: transfer, revise, or reject prior executed skill experience nonmonotonically by task/environment/source scope; preserve failed trajectories and do not equate API-call completion with task success."
+  },
+  "source_pins": [
+    {
+      "source": "Fudan, Explore, Execute, Evolve",
+      "url": "https://arxiv.org/html/2609.37810v1",
+      "version": "2609.37810v1",
+      "role": "paper source summarized by the pinned Workbench blueprint; author-reported robotics results are not Ignition evidence"
+    },
+    {
+      "source": "SII-dannyXSC/RoboSkill",
+      "commit": "5c351d2db7c1f366a800812a8319b75cb7b5e8a9",
+      "license": "MIT",
+      "role": "author repository source pin; no code imported or executed"
+    }
+  ],
+  "implemented_slice": "Offline optional reuse preflight over caller-selected execution-effect receipt artifacts. It preserves a matched positive as an optional reference, a preserved negative as a counterexample, and requires review for scope transfer.",
+  "known_overlap": [
+    {
+      "tool_id": "maintenance.preflight_execution_effect_receipt",
+      "coverage": "Checks the structure and binding of one caller-declared run/effect receipt; does not evaluate its suitability for a later task scope."
+    },
+    {
+      "tool_id": "knowledge.preflight_reusable_context",
+      "coverage": "Checks derived-context source bytes, caller-attested access scope, and expiry; does not classify actual execution outcomes or preserve failed procedures as counterexamples."
+    },
+    {
+      "tool_id": "maintenance.preflight_failure_anchored_recovery",
+      "coverage": "Checks a caller-authored recovery proposal against a failed run; does not select prior experience for later task reference."
+    }
+  ],
+  "nonclaims": [
+    "No RoboSkill code, robotics runtime, model, or paper benchmark was imported or reproduced.",
+    "The run, actor, environment, effect, source authority, permission, and outcome truth remain unauthenticated caller/repository declarations.",
+    "The tool does not execute, authorize, persist, or automatically transfer a procedure."
+  ]
+}

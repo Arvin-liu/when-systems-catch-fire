@@ -1,0 +1,102 @@
+{
+  "schema_version": "ignition.toolbox-noaa-ch4-annual-growth-live-task-evidence-r0",
+  "experiment_id": "REAL-TASK-20261025-NOAA-GML-CH4-GROWTH-2023-2025",
+  "observed_at_utc": "2026-10-25T08:23:33Z",
+  "candidate_revision": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "observed_head": "fd004c0eba3972b2ac7c260978ecc2c849bc0a54",
+    "formal_main": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_catalog_git_blob_sha1_at_route_time": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb"
+  },
+  "task": {
+    "task_id": "noaa-global-ch4-annual-growth-bounded-2023-2025",
+    "intent": "Retrieve NOAA GML provider-reported global annual atmospheric CH4 increments and uncertainties for 2023 through 2025.",
+    "request": {
+      "start_year": 2023,
+      "end_year": 2025
+    },
+    "claim_ceiling": "Provider-reported NOAA GML global annual atmospheric CH4 increments and stated uncertainties for the requested years only; no emissions estimate, source attribution, causal explanation, source authentication, or scientific adjudication."
+  },
+  "route_proposal": {
+    "evidence_path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
+    "decision": "COMPLETE",
+    "selected_tool_ids": [
+      "research.lookup_noaa_global_ch4_annual_growth"
+    ],
+    "allowed_network_hosts": [
+      "gml.noaa.gov"
+    ],
+    "execution_authorized": false,
+    "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+    "cost_estimate_status": "UNKNOWN"
+  },
+  "tool_invocation": {
+    "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+    "entrypoint": "python3 -B ignition/tools/toolbox_noaa_ch4_annual_growth.py --stdin --allow-public-network",
+    "public_network_flag_passed_for_this_invocation": true,
+    "request_count": 1,
+    "exit_code": 0,
+    "tool_source_sha256": "c3ff7c134627f3b83fc869001d38f8911c70087d5d36e820ea22e85dbd069be0",
+    "receipt": {
+      "schema_version": "toolbox-noaa-ch4-annual-growth-lookup-r0",
+      "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+      "tool_version": "0.1.0",
+      "status": "FOUND",
+      "request_url": "https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4_gr_gl.txt",
+      "requested_range": {
+        "start_year": 2023,
+        "end_year": 2025
+      },
+      "http_status": 200,
+      "etag": "\"d6c-65d6d473a0edb\"",
+      "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+      "retrieved_at_utc": "2026-10-25T08:23:33Z",
+      "request_sha256": "c34cfba1665f025e497ec65a9ea574752d5a84ef0247cc82835f3aa9b5a73287",
+      "response_bytes": 3436,
+      "response_sha256": "0501e15f5ffea518f8dfb90477ad28a7dbcdb26285c2792118f49b3a71e076eb",
+      "records": [
+        {
+          "year": 2023,
+          "annual_increase_ppb": 8.29,
+          "uncertainty_ppb": 0.82
+        },
+        {
+          "year": 2024,
+          "annual_increase_ppb": 8.04,
+          "uncertainty_ppb": 0.43
+        },
+        {
+          "year": 2025,
+          "annual_increase_ppb": 4.77,
+          "uncertainty_ppb": 0.43
+        }
+      ],
+      "units": {
+        "annual_increase": "ppb",
+        "uncertainty": "ppb"
+      },
+      "source_attribution": "NOAA Global Monitoring Laboratory, Trends in Atmospheric Methane, global annual increase table.",
+      "source_caveats": [
+        "NOAA may revise its latest year after reference-gas recalibration and quality-control procedures; earlier rows can also change.",
+        "Annual increase sums methane added to and removed from the atmosphere; it is not an emissions inventory or source attribution.",
+        "Provider-reported values and uncertainty are returned without independent scientific validation."
+      ],
+      "non_claims": [
+        "The lookup does not estimate emissions, attribute changes to a source, explain causes, or establish a scientific conclusion.",
+        "The response digest binds received bytes but does not independently authenticate NOAA or certify the data.",
+        "The response body is not retained; this is one captured invocation, not evidence of repeatability."
+      ],
+      "claim_ceiling": "Selected provider-reported NOAA GML global annual atmospheric methane mole-fraction increments and stated uncertainties only. The result is not an emissions estimate, source attribution, causal explanation, or scientific adjudication."
+    },
+    "raw_response_retained": false
+  },
+  "formal_state": {
+    "formal_main_written": false,
+    "foundation_dispatched": false,
+    "required_checks_changed": false,
+    "current_registry_changed": false,
+    "current_route_defaults_changed": false
+  }
+}

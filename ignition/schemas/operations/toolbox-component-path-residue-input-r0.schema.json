@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/toolbox-component-path-residue-input-r0.schema.json",
+  "title": "Component path residue grouping input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "residues"],
+  "properties": {
+    "schema_version": {"const": "component-path-residue-input-r0"},
+    "residues": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5000,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "path"],
+        "properties": {
+          "type": {"const": "unmapped_path"},
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 512,
+            "pattern": "^(?!/).+$"
+          },
+          "message": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years)."
+  ],
+  "required_outputs": [
+    "Provider-reported annual atmospheric N2O mole-fraction increases and stated uncertainties in ppb from the fixed raw table only, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status.",
+    "One fixed raw-table receipt with retrieval time, HTTP metadata, response byte count and SHA-256, explicit request count, and claim ceiling; raw response is not retained."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": [
+    "gml.noaa.gov"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20261024-020",
+  "formal_ordinal": 20,
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/main",
+    "commit": "44de013f09b63535fe16b1e38cab7eff4d68ae66",
+    "command_path": "instructions/goal-mode/IGNITION-2026-10-24-SIGNED-OWNER-WEB-MERGE-REGISTRATION-COMPATIBILITY-R0.md",
+    "command_record_commit": "44de013f09b63535fe16b1e38cab7eff4d68ae66"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+  },
+  "successor_registration": {
+    "commit_sha": "5955ddd321c4fa638f58095d1890bb45af7f5827",
+    "file_sha256": "f61a5ea14475457c97f9d307c28577a45d798a54daff824c2577a2ca4081021f",
+    "registration_nonce": "d61844f8d543b93c4b3e2069a0882fcf",
+    "parent_shas": [
+      "67e9ccad086871fb169ddb21932848a4d3e5363d",
+      "3b81551500686c5d09074456152ff5f4a9b04b59"
+    ]
+  },
+  "expected_task_branch": "codex/r3-forward-20261022",
+  "expected_receipt_branch": "relay/receipts/IGNITION-20261024-020-r3-transition",
+  "required_release_ref": "refs/heads/main",
+  "draft_pr_only": false,
+  "owner_authorization_required_for_ready_merge_or_close": true,
+  "no_owner_intermediate": true,
+  "identity_impact": "NONE",
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20261024-020",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260829-148",
+    "previous_formal_task": "IGNITION-20260829-148",
+    "release_candidate_task": "IGNITION-20261024-020",
+    "publication_witness_task": "IGNITION-20261024-020"
+  },
+  "claim_ceiling": "Task20 repository-local R3 candidate verifier and signed successor-identity repair only; Owner authority is provided solely by the exact one-time 1111 control record, and R2 remains effective until the protected merge and independent postpublication witness validate. No external truth, production readiness, research-result advancement, live completion or epistemic acceptance is inferred."
+}

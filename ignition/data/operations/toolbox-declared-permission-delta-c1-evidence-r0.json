@@ -1,0 +1,41 @@
+{
+  "schema_version": "toolbox-declared-permission-delta-c1-evidence-r0",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "comparison_scope": "Low-cost input/output contract review against the local route planner and audit-finding comparator. No same-task outcome, security efficacy, or cost comparison was run.",
+  "candidate_function": "Report exact string-set additions and removals between two caller-supplied declared grant snapshots bound to the same policy and subject.",
+  "adjacent_existing_tools": [
+    {
+      "tool_id": "ignition.adaptive_toolbox_route_planner",
+      "implementation": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "observed_contract": "Proposes a sufficient set of operation IDs from exact task input/output types and caller allowlists; validates candidate permission-card shape but does not compare two policy snapshots.",
+      "relationship": "ADJACENT_DIFFERENT_INPUT_AND_OUTPUT",
+      "not_a_replacement_because": "A task route proposal does not report before/after declared grant additions and removals or inspect an effective sandbox."
+    },
+    {
+      "tool_id": "maintenance.compare_audit_findings",
+      "implementation": "ignition/tools/toolbox_audit_finding_comparator.py",
+      "observed_contract": "Compares two caller-declared audit finding sets under a shared target binding.",
+      "relationship": "ADJACENT_DIFFERENT_INPUT_AND_OUTPUT",
+      "not_a_replacement_because": "It compares review findings, not exact capability/scope grant declarations."
+    }
+  ],
+  "paired_same_task_trial": {
+    "status": "NOT_RUN",
+    "reason": "The neighboring tools take typed task-route or audit-finding inputs, not a pair of policy declarations; coercing them would not be a fair same-task comparison.",
+    "next_low_cost_comparison": "If a real non-sensitive policy review uses both declarations and audit findings, record which distinct reviewer questions each answers and any human rework."
+  },
+  "retirement_decision": {
+    "status": "NONE",
+    "replacement_candidates": [],
+    "reason": "No paired outcome supports superiority, replacement, or retirement; keep the optional tool default-off and preserve uncertainty."
+  },
+  "negative_controls": [
+    "Unknown capabilities, duplicate grants, duplicate JSON keys, mismatched policy/subject bindings, extra fields, and oversized inputs fail closed.",
+    "A new declaration is labeled for review; the comparator does not decide whether a grant is semantically broader or acceptable.",
+    "A removed declaration is not called safe automatically; a literal wildcard marker is compared as an uninterpreted exact string.",
+    "No result is described as effective sandbox state, enforcement, permission, approval, or security assurance."
+  ],
+  "claim_ceiling": "Synthetic contract and exact set-difference behavior only; no sandbox efficacy, actual security improvement, or relative cost benefit is established."
+}

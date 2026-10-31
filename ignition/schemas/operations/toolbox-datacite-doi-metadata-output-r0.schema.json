@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-datacite-doi-metadata-output-r0",
+  "title": "DataCite DOI Metadata Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "requested_doi", "retrieved_at_utc", "request_count", "acquisition_status", "http_status", "content_type", "response_bytes", "response_sha256", "status", "record", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "toolbox-datacite-doi-metadata-output-r0"},
+    "tool_id": {"const": "research.lookup_datacite_doi_metadata"},
+    "tool_version": {"const": "0.1.0"},
+    "requested_doi": {"type": "string", "pattern": "^10\\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+$"},
+    "retrieved_at_utc": {"type": "string", "format": "date-time"},
+    "request_count": {"const": 1},
+    "acquisition_status": {"enum": ["OK", "NOT_FOUND", "RATE_LIMITED", "REDIRECT_BLOCKED", "HTTP_ERROR", "NETWORK_ERROR", "RESPONSE_TIMEOUT", "RESPONSE_READ_ERROR", "RESPONSE_TOO_LARGE", "NON_JSON_RESPONSE", "INVALID_DATACITE_RESPONSE"]},
+    "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "content_type": {"type": ["string", "null"], "maxLength": 128},
+    "response_bytes": {"type": ["integer", "null"], "minimum": 0},
+    "response_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "status": {"enum": ["EXACT_DOI_MATCH", "NO_FINDABLE_DATACITE_RECORD", "UNRESOLVED"]},
+    "record": {"anyOf": [{"$ref": "#/$defs/record"}, {"type": "null"}]},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "nullableText": {"type": ["string", "null"]},
+    "stringArray": {"type": "array", "items": {"type": "string"}},
+    "count": {"type": ["integer", "null"], "minimum": 0},
+    "projectedCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reported_count", "omitted_count", "invalid_count"],
+      "properties": {"reported_count": {"$ref": "#/$defs/count"}, "omitted_count": {"type": "integer", "minimum": 0}, "invalid_count": {"type": "integer", "minimum": 0}}
+    },
+    "fieldCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["titles", "creators", "rightsList", "relatedIdentifiers", "identifiers", "dates"],
+      "properties": {
+        "titles": {"$ref": "#/$defs/projectedCount"},
+        "creators": {"$ref": "#/$defs/projectedCount"},
+        "rightsList": {"$ref": "#/$defs/projectedCount"},
+        "relatedIdentifiers": {"$ref": "#/$defs/projectedCount"},
+        "identifiers": {"$ref": "#/$defs/projectedCount"},
+        "dates": {"$ref": "#/$defs/projectedCount"}
+      }
+    },
+    "fieldStatuses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["titles", "creators", "rightsList", "relatedIdentifiers", "identifiers", "dates"],
+      "properties": {"titles": {"$ref": "#/$defs/status"}, "creators": {"$ref": "#/$defs/status"}, "rightsList": {"$ref": "#/$defs/status"}, "relatedIdentifiers": {"$ref": "#/$defs/status"}, "identifiers": {"$ref": "#/$defs/status"}, "dates": {"$ref": "#/$defs/status"}}
+    },
+    "status": {"enum": ["REPORTED", "NOT_REPORTED", "MALFORMED"]},
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doi", "state", "schema_version", "publisher", "publication_year", "resource_type_general", "resource_type", "titles", "creators", "rights", "related_identifiers", "identifiers", "dates", "field_statuses", "field_counts"],
+      "properties": {
+        "doi": {"type": "string"},
+        "state": {"$ref": "#/$defs/nullableText"},
+        "schema_version": {"$ref": "#/$defs/nullableText"},
+        "publisher": {"$ref": "#/$defs/nullableText"},
+        "publication_year": {"type": ["integer", "null"]},
+        "resource_type_general": {"$ref": "#/$defs/nullableText"},
+        "resource_type": {"$ref": "#/$defs/nullableText"},
+        "titles": {"type": "array", "maxItems": 10, "items": {"type": "object", "additionalProperties": false, "required": ["title", "lang"], "properties": {"title": {"type": "string"}, "lang": {"$ref": "#/$defs/nullableText"}}}},
+        "creators": {"type": "array", "maxItems": 20, "items": {"type": "object", "additionalProperties": false, "required": ["name", "name_type"], "properties": {"name": {"type": "string"}, "name_type": {"$ref": "#/$defs/nullableText"}}}},
+        "rights": {"type": "array", "maxItems": 20, "items": {"type": "object", "additionalProperties": false, "required": ["rights", "rights_uri", "rights_identifier", "rights_identifier_scheme"], "properties": {"rights": {"$ref": "#/$defs/nullableText"}, "rights_uri": {"$ref": "#/$defs/nullableText"}, "rights_identifier": {"$ref": "#/$defs/nullableText"}, "rights_identifier_scheme": {"$ref": "#/$defs/nullableText"}}}},
+        "related_identifiers": {"type": "array", "maxItems": 25, "items": {"type": "object", "additionalProperties": false, "required": ["related_identifier", "related_identifier_type", "relation_type", "related_metadata_scheme"], "properties": {"related_identifier": {"type": "string"}, "related_identifier_type": {"$ref": "#/$defs/nullableText"}, "relation_type": {"$ref": "#/$defs/nullableText"}, "related_metadata_scheme": {"$ref": "#/$defs/nullableText"}}}},
+        "identifiers": {"type": "array", "maxItems": 25, "items": {"type": "object", "additionalProperties": false, "required": ["identifier", "identifier_type"], "properties": {"identifier": {"type": "string"}, "identifier_type": {"$ref": "#/$defs/nullableText"}}}},
+        "dates": {"type": "array", "maxItems": 25, "items": {"type": "object", "additionalProperties": false, "required": ["date", "date_type"], "properties": {"date": {"type": "string"}, "date_type": {"$ref": "#/$defs/nullableText"}}}},
+        "field_statuses": {"$ref": "#/$defs/fieldStatuses"},
+        "field_counts": {"$ref": "#/$defs/fieldCounts"}
+      }
+    }
+  }
+}

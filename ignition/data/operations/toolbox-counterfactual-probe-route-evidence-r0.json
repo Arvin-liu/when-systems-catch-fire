@@ -1,0 +1,295 @@
+{
+  "schema_version": "toolbox-counterfactual-probe-route-evidence-r0",
+  "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
+  "candidate_tool_id": "research.probe_counterfactual_fragility",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "task_profile": {
+    "task_id": "counterfactual-model-sensitivity-probe-route",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin object conforming to toolbox-counterfactual-probe-input-r0: one bounded pure FunctionSpec, exact baseline inputs, declared assumption bindings, and 1 to 8 single-input probes."
+    ],
+    "required_outputs": [
+      "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+      "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note.",
+      "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "trials": [
+    {
+      "trial_id": "DEFAULT_OFF",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "selected_tools": [],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling.",
+        "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+        "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note."
+      ],
+      "candidate_rejection_reasons": {
+        "function_os.run_bounded_symbolic_spec": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+        "research.probe_counterfactual_fragility": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+      },
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+    },
+    {
+      "trial_id": "EXPLICIT_NEW_TOOL",
+      "include_experimental_tool_ids": [
+        "research.probe_counterfactual_fragility"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.probe_counterfactual_fragility"
+      ],
+      "selected_tools": [
+        {
+          "tool_id": "research.probe_counterfactual_fragility",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "UTF-8 JSON stdin object conforming to toolbox-counterfactual-probe-input-r0: one bounded pure FunctionSpec, exact baseline inputs, declared assumption bindings, and 1 to 8 single-input probes."
+          ],
+          "output_types": [
+            "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+            "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note.",
+            "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling."
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "READ_ONLY_REPOSITORY_SOURCE_AND_STDIN",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_counterfactual_probe.py",
+              "ignition/tools/toolbox_function_os_evaluator.py",
+              "ignition/function-os-candidate/v0.2/function_os/",
+              "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+              "ignition/function-os-candidate/v0.2/pyproject.toml"
+            ],
+            "write_paths": [],
+            "network": false,
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [
+            "ignition/tools/toolbox_counterfactual_probe.py",
+            "ignition/tools/toolbox_function_os_evaluator.py",
+            "ignition/function-os-candidate/v0.2/function_os/",
+            "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+            "ignition/function-os-candidate/v0.2/pyproject.toml"
+          ],
+          "declared_effect_rank": 0,
+          "pre_invocation_conditions": [
+            "A route proposal never invokes the tool; a caller separately supplies the complete validated request to the CLI.",
+            "Each proposed edit changes exactly one declared input from the same baseline and the caller supplies its expected direction and an unverified admissibility note.",
+            "Never select for empirical evidence, real-world intervention admissibility, causal identification, proof, scientific truth, or autonomous external action.",
+            "Python 3.10 or newer and the checked-in Function OS evaluator and v0.2 source tree are available and intact.",
+            "Select only after explicit experimental-tool allowlisting when the task supplies a bounded pure FunctionSpec and asks for model-conditional baseline versus assumption-bound one-input probe results.",
+            "The UTF-8 JSON request is at most 64 KiB and the embedded FunctionSpec is at most 16 KiB.",
+            "The caller supplies a single-output pure numeric or boolean FunctionSpec, exact baseline inputs, explicit input-to-assumption bindings, and one to eight finite scalar edits."
+          ],
+          "claim_ceiling": "A local comparison of one caller-declared pure symbolic model baseline with independently edited, caller-declared assumptions. It can report model-output stability, instability, expected-direction match or mismatch, and retained failures only; it does not establish actual-world evidence, causal identification, model validity, admissible real-world interventions, scientific truth, proof, or security isolation.",
+          "covers_required_outputs": [
+            "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling.",
+            "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+            "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note."
+          ]
+        }
+      ],
+      "covered_outputs": [
+        "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling.",
+        "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+        "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note."
+      ],
+      "unmet_outputs": [],
+      "candidate_rejection_reasons": {
+        "function_os.run_bounded_symbolic_spec": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+      },
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+    },
+    {
+      "trial_id": "LEGACY_SINGLE_CASE_ONLY",
+      "include_experimental_tool_ids": [
+        "function_os.run_bounded_symbolic_spec"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "selected_tools": [],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling.",
+        "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+        "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note."
+      ],
+      "candidate_rejection_reasons": {
+        "function_os.run_bounded_symbolic_spec": "NO_INPUT_TYPE_MATCH",
+        "research.probe_counterfactual_fragility": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+      },
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+    },
+    {
+      "trial_id": "NEW_AND_LEGACY",
+      "include_experimental_tool_ids": [
+        "research.probe_counterfactual_fragility",
+        "function_os.run_bounded_symbolic_spec"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.probe_counterfactual_fragility"
+      ],
+      "selected_tools": [
+        {
+          "tool_id": "research.probe_counterfactual_fragility",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "UTF-8 JSON stdin object conforming to toolbox-counterfactual-probe-input-r0: one bounded pure FunctionSpec, exact baseline inputs, declared assumption bindings, and 1 to 8 single-input probes."
+          ],
+          "output_types": [
+            "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+            "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note.",
+            "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling."
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "READ_ONLY_REPOSITORY_SOURCE_AND_STDIN",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_counterfactual_probe.py",
+              "ignition/tools/toolbox_function_os_evaluator.py",
+              "ignition/function-os-candidate/v0.2/function_os/",
+              "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+              "ignition/function-os-candidate/v0.2/pyproject.toml"
+            ],
+            "write_paths": [],
+            "network": false,
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [
+            "ignition/tools/toolbox_counterfactual_probe.py",
+            "ignition/tools/toolbox_function_os_evaluator.py",
+            "ignition/function-os-candidate/v0.2/function_os/",
+            "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+            "ignition/function-os-candidate/v0.2/pyproject.toml"
+          ],
+          "declared_effect_rank": 0,
+          "pre_invocation_conditions": [
+            "A route proposal never invokes the tool; a caller separately supplies the complete validated request to the CLI.",
+            "Each proposed edit changes exactly one declared input from the same baseline and the caller supplies its expected direction and an unverified admissibility note.",
+            "Never select for empirical evidence, real-world intervention admissibility, causal identification, proof, scientific truth, or autonomous external action.",
+            "Python 3.10 or newer and the checked-in Function OS evaluator and v0.2 source tree are available and intact.",
+            "Select only after explicit experimental-tool allowlisting when the task supplies a bounded pure FunctionSpec and asks for model-conditional baseline versus assumption-bound one-input probe results.",
+            "The UTF-8 JSON request is at most 64 KiB and the embedded FunctionSpec is at most 16 KiB.",
+            "The caller supplies a single-output pure numeric or boolean FunctionSpec, exact baseline inputs, explicit input-to-assumption bindings, and one to eight finite scalar edits."
+          ],
+          "claim_ceiling": "A local comparison of one caller-declared pure symbolic model baseline with independently edited, caller-declared assumptions. It can report model-output stability, instability, expected-direction match or mismatch, and retained failures only; it does not establish actual-world evidence, causal identification, model validity, admissible real-world interventions, scientific truth, proof, or security isolation.",
+          "covers_required_outputs": [
+            "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling.",
+            "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+            "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note."
+          ]
+        }
+      ],
+      "covered_outputs": [
+        "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling.",
+        "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+        "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note."
+      ],
+      "unmet_outputs": [],
+      "candidate_rejection_reasons": {
+        "function_os.run_bounded_symbolic_spec": "NO_INPUT_TYPE_MATCH"
+      },
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+      },
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+    }
+  ],
+  "interpretation": {
+    "default_behavior": "The candidate is omitted unless explicitly included; route planning never executes it.",
+    "minimum_sufficient_route": "The explicit candidate alone covers every required output with READ_ONLY_RUN and no added network, write, secret, billing, or external-action permission.",
+    "comparison": "The legacy single-case Function OS runner alone cannot satisfy this paired probe-report contract; including both selects only the new incremental capability.",
+    "execution_count": 0,
+    "scientific_or_actual_world_claim": "NOT_ESTABLISHED"
+  },
+  "router_source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "route_test_path": "ignition/tests/test_toolbox_counterfactual_probe_routing.py",
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "178d4e454918ad338bf82bb001f416bb2448e631",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "300bff1e906e255a7ed1a2dddc3cd82216231974",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "dba023586c01eec170c540ad14ad935467bced16",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "706c70ee6eeccd144bac443a9f8c356988a8854f",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T01:22:31Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "a3842aa8cca491e505813f105ccd0dec8d7b7438",
+      "superseded_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+      "superseded_observed_at_utc": "2026-10-27T01:22:31Z",
+      "replayed_at_utc": "2026-10-29T14:14:20Z"
+    }
+  ],
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-27T01:22:31Z",
+    "route_trials_replayed": 4,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "replay_result_sha256": "0f7cc685af2e0f11e808dd31886749aba764aa3d193d0600453637ddc282ed04",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a"
+  },
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+}

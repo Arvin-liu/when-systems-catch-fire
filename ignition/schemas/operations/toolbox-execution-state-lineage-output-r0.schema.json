@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-execution-state-lineage-output-r0",
+  "title": "Toolbox Execution State Lineage Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "task_ref",
+    "status",
+    "result_code",
+    "active_checkpoint_id",
+    "active_path_checkpoint_ids",
+    "leaf_checkpoint_ids",
+    "expected_inactive_tip_checkpoint_ids",
+    "declared_inactive_tip_checkpoint_ids",
+    "branch_points",
+    "checkpoint_count",
+    "resume_capsule_count",
+    "rollback_record_count",
+    "findings",
+    "source_authentication",
+    "caller_declarations_authenticated",
+    "checkpoint_state_bytes_read",
+    "network_calls",
+    "write_effects",
+    "execution_authorized",
+    "claim_ceiling",
+    "input_sha256",
+    "tool_source_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-execution-state-lineage-output-r0"},
+    "tool_id": {"const": "maintenance.audit_execution_state_lineage"},
+    "tool_version": {"const": "0.1.0"},
+    "task_ref": {"type": "string", "minLength": 1},
+    "status": {"enum": ["PASS", "FAIL"]},
+    "result_code": {"enum": ["CHECKPOINT_LINEAGE_VALID", "CHECKPOINT_LINEAGE_INVALID"]},
+    "active_checkpoint_id": {"type": ["string", "null"]},
+    "active_path_checkpoint_ids": {"type": "array", "items": {"type": "string"}},
+    "leaf_checkpoint_ids": {"type": "array", "items": {"type": "string"}},
+    "expected_inactive_tip_checkpoint_ids": {"type": "array", "items": {"type": "string"}},
+    "declared_inactive_tip_checkpoint_ids": {"type": "array", "items": {"type": "string"}},
+    "branch_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["parent_checkpoint_id", "child_checkpoint_ids"],
+        "properties": {
+          "parent_checkpoint_id": {"type": "string"},
+          "child_checkpoint_ids": {"type": "array", "minItems": 2, "items": {"type": "string"}}
+        }
+      }
+    },
+    "checkpoint_count": {"type": "integer", "minimum": 0},
+    "resume_capsule_count": {"type": "integer", "minimum": 0},
+    "rollback_record_count": {"type": "integer", "minimum": 0},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "path"],
+        "properties": {
+          "code": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "source_authentication": {"const": "NOT_PERFORMED"},
+    "caller_declarations_authenticated": {"const": false},
+    "checkpoint_state_bytes_read": {"const": false},
+    "network_calls": {"const": 0},
+    "write_effects": {"const": false},
+    "execution_authorized": {"const": false},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tool_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

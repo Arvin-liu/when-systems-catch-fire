@@ -1,0 +1,43 @@
+{
+  "schema_version": "ignition.toolbox-noaa-co2-source-review-r0",
+  "reviewed_on": "2026-10-25",
+  "status": "PRIMARY_SOURCE_PAGE_REVIEW_NOT_TOOL_INVOCATION",
+  "sources": {
+    "global_growth_page": {
+      "url": "https://gml.noaa.gov/ccgg/trends/gl_gr.html",
+      "observed_page_version": "2026-09-08",
+      "product": "Annual growth based on globally averaged marine-surface CO2 data",
+      "displayed_values_ppm": {
+        "2023": {"annual_increase": 2.70, "uncertainty": 0.13},
+        "2024": {"annual_increase": 3.76, "uncertainty": 0.11},
+        "2025": {"annual_increase": 2.06, "uncertainty": 0.08}
+      }
+    },
+    "fixed_raw_table": {
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_gl.txt",
+      "file_creation_header": "Fri Oct  9 13:08:01 2026",
+      "definition": "Annual CO2 mole fraction increase (ppm) from Jan 1 through Dec 31.",
+      "uncertainty_note": "The source says the last one or two listed years may have preliminary uncertainties and values can change after recalibration or quality control.",
+      "raw_table_values_ppm": {
+        "2023": {"annual_increase": 2.69, "uncertainty": 0.13},
+        "2024": {"annual_increase": 3.76, "uncertainty": 0.11},
+        "2025": {"annual_increase": 2.06, "uncertainty": 0.08}
+      }
+    }
+  },
+  "observed_difference": {
+    "field": "2023 annual_increase",
+    "global_page_value_ppm": 2.70,
+    "raw_table_value_ppm": 2.69,
+    "disposition": "UNRECONCILED_SOURCE_SURFACE_DIFFERENCE",
+    "claim_ceiling": "The candidate reads only the fixed raw table and returns a digest of the bytes it receives. This page review does not determine why the rendered page and raw table differ, which value is scientifically preferred, or whether either value is the latest future value."
+  },
+  "candidate_tool_execution": {
+    "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+    "status": "NOT_RUN",
+    "network_call_made_by_candidate": false,
+    "execution_authorized": false,
+    "raw_response_retained": false
+  },
+  "claim_ceiling": "A source-page review using NOAA GML material only. It is not a live invocation of the candidate tool, source authentication, scientific validation, emissions estimate, attribution, or causal finding."
+}

@@ -1,0 +1,291 @@
+{
+  "schema_version": "toolbox-real-task-route-evidence-r2",
+  "experiment_id": "REAL-TASK-20261026-GAP001-02-ROUTED-REPLAY-R2",
+  "observed_at_utc": "2026-10-26T07:03:28+00:00",
+  "router_candidate_revision": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "head": "e0c956938d354dca6144f0a4d4321b4721617f06",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_cards_git_blob_sha1": "d3e39d4426ed62db66a80f5717255cd3642c687b"
+  },
+  "task": {
+    "task_id": "source-record-metadata-and-pubmed-id-refresh-gap001-02-r2",
+    "intent": "Refresh one pinned DOI against Crossref for title/year and bounded deposited-reference metadata, then ask the fixed PMC ID Converter endpoint whether it returns a PMID or PMCID for the same DOI.",
+    "source_record": {
+      "path": "ignition/evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl",
+      "source_id": "GAP001-02",
+      "doi": "10.1146/annurev-biodatasci-103123-095750",
+      "expected_title": "From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect",
+      "expected_year": 2025,
+      "prior_crossref_response_sha256": "d532f1631eb1ce0e81614acb8c8127c4ec408a84fdc5c2fd97578bc9f85c44d8",
+      "prior_pubmed_converter_response_sha256": "640c3d0379f20a4a52eb84f3feb14f72d41b7faebd974ec8cc6f126605bfae44"
+    }
+  },
+  "route_profile": {
+    "task_id": "source-record-metadata-and-pubmed-id-refresh-gap001-02-r2",
+    "current_ref": "Arvin-liu/when-systems-catch-fire@e0c956938d354dca6144f0a4d4321b4721617f06",
+    "input_types": [
+      "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records",
+      "JSON stdin object with one to ten unique bare DOI identifiers"
+    ],
+    "required_outputs": [
+      "input-ordered Crossref metadata comparison rows",
+      "input-ordered PubMed/PMC identifier resolution rows"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "allowed_network_hosts": [
+      "api.crossref.org",
+      "pmc.ncbi.nlm.nih.gov"
+    ],
+    "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+  },
+  "planner_input_correction": {
+    "result": "REJECTED_BEFORE_ROUTING",
+    "error_type": "RunPlanningError",
+    "message": "task profile keys must be exactly ['allowed_execution_modes', 'current_ref', 'input_types', 'required_outputs', 'task_id'] with optional allowed_network_hosts",
+    "network_calls": 0
+  },
+  "route_trials": [
+    {
+      "scenario": "default_light",
+      "allowlist": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "input-ordered PubMed/PMC identifier resolution rows"
+      ],
+      "relevant_rejections": [],
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 2.83,
+      "serialized_result_bytes": 8153,
+      "cost_estimate_status": "UNKNOWN",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d3e39d4426ed62db66a80f5717255cd3642c687b"
+      }
+    },
+    {
+      "scenario": "crossref_only",
+      "allowlist": [
+        "research.verify_crossref_metadata"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [
+        "research.verify_crossref_metadata"
+      ],
+      "unmet_outputs": [
+        "input-ordered PubMed/PMC identifier resolution rows"
+      ],
+      "relevant_rejections": [],
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 3.253,
+      "serialized_result_bytes": 10645,
+      "cost_estimate_status": "UNKNOWN",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d3e39d4426ed62db66a80f5717255cd3642c687b"
+      }
+    },
+    {
+      "scenario": "sufficient_pair",
+      "allowlist": [
+        "research.verify_crossref_metadata",
+        "research.resolve_pubmed_identifiers"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.resolve_pubmed_identifiers",
+        "research.verify_crossref_metadata"
+      ],
+      "unmet_outputs": [],
+      "relevant_rejections": [],
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 3.488,
+      "serialized_result_bytes": 12515,
+      "cost_estimate_status": "UNKNOWN",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d3e39d4426ed62db66a80f5717255cd3642c687b"
+      }
+    },
+    {
+      "scenario": "redundant_options",
+      "allowlist": [
+        "research.verify_crossref_metadata",
+        "research.resolve_pubmed_identifiers",
+        "research.inspect_pubmed_update_links",
+        "knowledge.cluster_source_brief"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.resolve_pubmed_identifiers",
+        "research.verify_crossref_metadata"
+      ],
+      "unmet_outputs": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 4.672,
+      "serialized_result_bytes": 12497,
+      "cost_estimate_status": "UNKNOWN",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d3e39d4426ed62db66a80f5717255cd3642c687b"
+      }
+    }
+  ],
+  "invocation_decision": {
+    "planner_execution_authorized": false,
+    "per_invocation_authorization": "Only the two tools in the sufficient pair were invoked, each with an explicit --allow-public-network flag. The planner does not grant network authority.",
+    "network_calls_in_recorded_pair": 2,
+    "calls_per_host": {
+      "api.crossref.org": 1,
+      "pmc.ncbi.nlm.nih.gov": 1
+    },
+    "credentials_secrets_billing_writes_or_full_text_retrieval": false
+  },
+  "invocations": [
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "tool_version": "0.3.0",
+      "api_host": "api.crossref.org",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+      "request_sha256": "037aaa4fea9479939fe4ee56ad348e1be77fcf6f33200099f9636721b4b6d0c5",
+      "tool_source_sha256": "12a2803c6c5414954f9a9cd895d7d45966e9214404e887a6b97e5b486f17f11a",
+      "exit_code": 0,
+      "status": "ALL_METADATA_MATCHED",
+      "retrieval_timestamp_utc": "2026-10-26T07:03:26Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "response_sha256": "d532f1631eb1ce0e81614acb8c8127c4ec408a84fdc5c2fd97578bc9f85c44d8",
+      "stdout_bytes": 7564,
+      "stdout_sha256": "1b8de5fd1047fe2ddc96ad12f274988fe19480f5ed383d47a2cff615c67f946b",
+      "stderr_bytes": 0,
+      "stderr": "",
+      "observed_process_wall_ms": 1385.881,
+      "observed_child_cpu_ms": 71.827,
+      "row": {
+        "source_id": "GAP001-02",
+        "canonical_identifier": "10.1146/annurev-biodatasci-103123-095750",
+        "observed_title": "From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect",
+        "observed_year": 2025,
+        "title_match": true,
+        "year_match": true,
+        "full_match": true,
+        "retraction_signal": "NONE",
+        "acquisition_status": "OK",
+        "http_status": 200,
+        "response_sha256": "d532f1631eb1ce0e81614acb8c8127c4ec408a84fdc5c2fd97578bc9f85c44d8",
+        "retrieval_timestamp_utc": "2026-10-26T07:03:26Z",
+        "crossref_reference_metadata_summary": {
+          "field_status": "PRESENT_NONEMPTY",
+          "invalid_entry_count": 0,
+          "omitted_count": 104,
+          "reported_count": 129,
+          "truncated": true
+        }
+      }
+    },
+    {
+      "tool_id": "research.resolve_pubmed_identifiers",
+      "tool_version": "0.1.1",
+      "api_host": "pmc.ncbi.nlm.nih.gov",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_identifier_resolver.py --stdin --allow-public-network",
+      "request_sha256": "b8ed6656941000264d8c7674cf6dc50ba727fbadf9be157427f351488efa1bf7",
+      "tool_source_sha256": "05b89735fabd074f1ff79daf14fbc04af0b18a7d7ca6fb03d074306f9d6a05eb",
+      "exit_code": 0,
+      "status": "NO_IDENTIFIERS_RESOLVED",
+      "retrieval_timestamp_utc": "2026-10-26T07:03:28Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "response_sha256": "029157493bc75aacb2302741c1ab0bf7b99791cd9ecad51adf1f38376d904380",
+      "stdout_bytes": 1061,
+      "stdout_sha256": "3083a676151df4e9fb9c4672060bdbb7f3aa76f68b9d200979c3c15212f1d1fe",
+      "stderr_bytes": 0,
+      "stderr": "",
+      "observed_process_wall_ms": 604.378,
+      "observed_child_cpu_ms": 76.291,
+      "row": {
+        "acquisition_status": "OK",
+        "http_status": 200,
+        "response_sha256": "029157493bc75aacb2302741c1ab0bf7b99791cd9ecad51adf1f38376d904380",
+        "identifier_status": "MATCHED_WITHOUT_PUBMED_OR_PMC_ID",
+        "matched_doi": "10.1146/annurev-biodatasci-103123-095750",
+        "pmid": null,
+        "pmcid": null,
+        "retrieval_timestamp_utc": "2026-10-26T07:03:28Z"
+      }
+    }
+  ],
+  "observed_costs": {
+    "recorded_pair_process_wall_ms": 1990.259,
+    "recorded_pair_child_cpu_ms": 148.118,
+    "recorded_pair_stdout_bytes": 8625,
+    "billed_cost": "UNKNOWN_NOT_REPORTED_BY_PROVIDERS",
+    "raw_http_bytes": "UNKNOWN_NOT_RETAINED_BY_TOOL",
+    "scope": "Single sequential replay of the sufficient pair; includes Python startup, DNS/TLS, HTTP handling, and output serialization. One observation, not a stable latency or cost estimate."
+  },
+  "capture_attempt_history": [
+    {
+      "attempt": "route_input_shape",
+      "result": "REJECTED_BEFORE_ROUTING",
+      "detail": "An evidence-only network_authority_binding field was accidentally passed to the planner profile. The exact planner contract rejected it before planning; no provider calls occurred."
+    },
+    {
+      "attempt": "provider_output_capture",
+      "observed_at_utc": "2026-10-26T07:02:05+00:00",
+      "result": "REQUESTS_SUCCEEDED_BUT_ROW_FIELDS_WERE_NOT_EXTRACTED",
+      "detail": "A first output summarizer read status fields but looked for rows under the wrong top-level keys. The two explicit public GETs were successful; this attempt is retained as a capture error, not used for the recorded outcome.",
+      "calls": [
+        {
+          "api_host": "api.crossref.org",
+          "exit_code": 0,
+          "status": "ALL_METADATA_MATCHED",
+          "stdout_bytes": 7564,
+          "stdout_sha256": "4e91fd291e6f0d739660e02ae096513e6fef5ab09432580f5174fee318c81b12",
+          "response_sha256": "NOT_CAPTURED_BY_SUMMARIZER",
+          "observed_process_wall_ms": 1553.191
+        },
+        {
+          "api_host": "pmc.ncbi.nlm.nih.gov",
+          "exit_code": 0,
+          "status": "NO_IDENTIFIERS_RESOLVED",
+          "stdout_bytes": 1061,
+          "stdout_sha256": "8f4cd34d9c1985af729995212d51bbcb6e01904a03b5b36e78bcce11144efb8b",
+          "response_sha256": "NOT_CAPTURED_BY_SUMMARIZER",
+          "observed_process_wall_ms": 642.165
+        }
+      ]
+    }
+  ],
+  "task_outcome": "Crossref returned HTTP 200; the pinned title and year matched. Its response reported 129 deposited references; the tool returned 25, omitted 104, and marked the projection truncated. This is provider-deposited metadata only. PMC ID Converter returned HTTP 200, matched the DOI, and returned neither PMID nor PMCID. That endpoint result does not establish global absence.",
+  "temporal_comparison_with_prior_r1": {
+    "crossref_response_sha256_unchanged": true,
+    "crossref_response_sha256": "d532f1631eb1ce0e81614ac8b8127c4ec408a84fdc5c2fd97578bc9f85c44d8",
+    "pmc_response_sha256_changed": true,
+    "prior_pmc_response_sha256": "640c3d0379f20a4a52eb84f3feb14f72d41b7faebd974ec8cc6f126605bfae44",
+    "current_pmc_response_sha256": "029157493bc75aacb2302741c1ab0bf7b99791cd9ecad51adf1f38376d904380",
+    "identifier_status_unchanged": "MATCHED_WITHOUT_PUBMED_OR_PMC_ID",
+    "interpretation_limit": "One additional observation: PMC response bytes changed while the returned identifier status remained the same; no stability, completeness, or global-absence claim follows."
+  },
+  "claim_ceiling": "One exact-head real route replay and one recorded invocation pair for one DOI. The provider fields and costs describe these responses only; no article-content review, scientific validity, complete bibliography, global PubMed/PMC absence, stable reliability, comparative quality optimum, or billing cost is established.",
+  "limits": [
+    "Default and crossref-only routes were not invoked because their plans were incomplete.",
+    "The redundant route did not invoke the rejected candidates.",
+    "Planner execution_authorized remained false; explicit invocation flags were a separate step.",
+    "The one DOI and one additional response replay do not establish general performance.",
+    "Provider billing and raw HTTP body byte counts are unknown."
+  ]
+}

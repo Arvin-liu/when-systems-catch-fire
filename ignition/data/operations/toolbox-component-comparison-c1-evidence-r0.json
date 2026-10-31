@@ -1,0 +1,28 @@
+{
+  "schema_version": "toolbox-component-comparison-c1-evidence-r0",
+  "tool_id": "maintenance.compare_toolbox_component_coverage",
+  "status": "COMPARISON_UNKNOWN",
+  "scope": "The new component compares tool-level valuable-use-case inventories and pairwise outputs, whereas the existing execution Pareto analyzer computes pass-rate and resource-cost frontiers over matched candidate executions.",
+  "compared_tool_ids": [
+    "maintenance.summarize_execution_candidate_pareto_frontier"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_execution_pareto_frontier.py"
+  ],
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+    "ignition/data/operations/toolbox-component-comparison-real-task-r0.json",
+    "ignition/docs/operations/toolbox-component-comparison.md"
+  ],
+  "findings": [
+    "The existing Pareto analyzer has no incumbent/successor tool identity or valuable-use-case coverage input.",
+    "The new analyzer does not aggregate repeated trials into a pass-rate frontier.",
+    "The output contracts are different and no same-task quality/cost trial compares these two analyzers; no replacement decision is made."
+  ],
+  "replacement_candidates": [],
+  "unique_remaining_use_cases": [
+    "Assess whether a proposed tool covers all caller-declared incumbent use cases while preserving task-specific advantages, permission/risk deltas and explicit uncertainty."
+  ],
+  "retirement_decision": "NONE",
+  "next_low_cost_comparison": "Reuse the same tool comparison dossier and check whether the Pareto output can satisfy the tool-scope disposition contract without losing use-case coverage or risk information; do not duplicate repeated-trial aggregation."
+}

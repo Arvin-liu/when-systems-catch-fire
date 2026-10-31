@@ -19,8 +19,9 @@ LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 _lineage = json.loads(LINEAGE_PATH.read_text(encoding="utf-8"))
 TASK_ID = _lineage["task_identity"]["current_formal_task"]
 ORDINAL = int(TASK_ID.rsplit("-", 1)[1])
-REPORT_PATH = ROOT / f"data/operations/iterations/{ORDINAL}/step15-deterministic-current-surface-r1.json"
-REPORT_SCHEMA = f"ignition-{ORDINAL}-step15-deterministic-current-surface-r1"
+ORDINAL_TEXT = f"{ORDINAL:03d}"
+REPORT_PATH = ROOT / f"data/operations/iterations/{ORDINAL_TEXT}/step15-deterministic-current-surface-r1.json"
+REPORT_SCHEMA = f"ignition-{ORDINAL_TEXT}-step15-deterministic-current-surface-r1"
 OUTPUTS = [
     "ignition/data/architecture/current-facts.json",
     "ignition/docs/architecture/current-facts.md",
@@ -29,7 +30,7 @@ OUTPUTS = [
     "ignition/data/operations/current-task-lineage-status.json",
     "ignition/data/operations/task-identity-model-r1.json",
     "ignition/data/operations/current-volatile-fact-registry-r1.json",
-    f"ignition/data/operations/iterations/{ORDINAL}/execution-contract-r1.json",
+    f"ignition/data/operations/iterations/{ORDINAL_TEXT}/execution-contract-r1.json",
     ".github/README.md",
     "ignition/docs/project-current-state.md",
     "ignition/AI-START-HERE.md",

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arvin-liu.github.io/ignition/schemas/operations/toolbox-noaa-sf6-source-surface-comparison-input-r0.schema.json",
+  "title": "NOAA SF6 Source-Surface Comparison Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "start_year", "end_year"],
+  "properties": {
+    "schema_version": {
+      "const": "toolbox-noaa-sf6-source-surface-comparison-input-r0"
+    },
+    "start_year": {
+      "type": "integer",
+      "minimum": 1998,
+      "maximum": 2100
+    },
+    "end_year": {
+      "type": "integer",
+      "minimum": 1998,
+      "maximum": 2100
+    }
+  },
+  "description": "The implementation additionally requires start_year <= end_year and a requested range of at most 50 years."
+}

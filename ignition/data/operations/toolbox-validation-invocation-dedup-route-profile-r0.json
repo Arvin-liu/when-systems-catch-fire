@@ -1,0 +1,13 @@
+{
+  "task_id": "plan-exact-read-only-validation-invocation-reuse",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON conforming to validation-invocation-dedup-input-r0; 1–32 profile records; maximum 262144 bytes; command arguments are arrays and are never interpreted by a shell."
+  ],
+  "required_outputs": [
+    "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

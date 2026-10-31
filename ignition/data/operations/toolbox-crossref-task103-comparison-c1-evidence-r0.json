@@ -1,0 +1,123 @@
+{
+  "schema_version": "ignition.toolbox-c1-crossref-task103-comparison-evidence-r0",
+  "experiment_id": "C1-20261025-GAP001-01-CROSSREF-WRAPPER-VS-TASK103-RUNNER",
+  "owner_policy_basis": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682#C1",
+  "candidate_revision": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "head": "885da136d5bff654dd3ca85c58c1572f6cac8922"
+  },
+  "observed_at_utc": {
+    "candidate": "2026-10-25T18:00:16Z",
+    "task103_runner": "2026-10-25T18:00:17Z"
+  },
+  "task": {
+    "task_id": "source-record-metadata-recheck-gap001-01",
+    "source_registry_path": "ignition/data/external-research/104-source-registry.jsonl",
+    "source_id": "GAP001-01",
+    "doi": "10.1007/s10489-024-05338-9",
+    "expected_title": "Causal inference in the medical domain: a survey",
+    "expected_year": 2024,
+    "scope": "One live Crossref bibliographic metadata re-check; no article content or scientific claim review."
+  },
+  "comparison_design": {
+    "same_input_record_and_expected_fields": true,
+    "same_public_provider": "https://api.crossref.org",
+    "same_runtime_python": "3.9.6",
+    "invocation_order": [
+      "research.verify_crossref_metadata",
+      "ignition/evidence-program/tools/run_crossref_verification.py"
+    ],
+    "candidate_request_count": 1,
+    "task103_request_count": "NOT_INSTRUMENTED; runner permits up to four attempts per DOI",
+    "raw_provider_payload_retained": false,
+    "repository_files_written": false,
+    "temporary_reference_output": "Task103 wrote one manifest row to a temporary directory outside the repository; the temporary directory was removed after comparison."
+  },
+  "candidate": {
+    "tool_id": "research.verify_crossref_metadata",
+    "tool_version": "0.1.0",
+    "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+    "source_sha256": "cb2b96418cdb07ba1533bee20e9652079d7085db471e61c4304435a5fc2770c1",
+    "return_code": 0,
+    "wall_seconds_single_observation": 1.532,
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "observed_title": "Causal inference in the medical domain: a survey",
+    "observed_year": 2024,
+    "title_match": true,
+    "year_match": true,
+    "full_match": true,
+    "response_sha256": "04210178ba97ab59cbc942e85d16a2d89745fe3fe6c6cbc27646d46de56e37f7"
+  },
+  "reference_implementation": {
+    "identity": "Task 103 Crossref verification runner; source script, not a registered toolbox tool identity",
+    "path": "ignition/evidence-program/tools/run_crossref_verification.py",
+    "source_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51",
+    "entrypoint": "python3 -B ignition/evidence-program/tools/run_crossref_verification.py --registry <temporary-one-record-registry> --out <temporary-manifest> --limit 1",
+    "return_code": 0,
+    "wall_seconds_single_observation": 1.626,
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "observed_title": "Causal inference in the medical domain: a survey",
+    "observed_year": 2024,
+    "title_match": true,
+    "year_match": true,
+    "full_match": true,
+    "response_sha256": "04210178ba97ab59cbc942e85d16a2d89745fe3fe6c6cbc27646d46de56e37f7",
+    "single_record_summary": {
+      "total_records": 1,
+      "resolved_ok": 1,
+      "full_match": 1,
+      "intra_registry_duplicate_dois": 0,
+      "verification_match_rate": 1.0
+    }
+  },
+  "paired_result": {
+    "fields_compared": [
+      "observed_title",
+      "observed_year",
+      "title_match",
+      "year_match",
+      "full_match",
+      "response_sha256"
+    ],
+    "all_fields_equal": true,
+    "interpretation": "Both implementations returned the same title/year result and the same response digest for this one DOI. The single-record runner summary is not an estimate of general accuracy or reliability.",
+    "timing_interpretation": "One wall-time observation per implementation; the 1.532s and 1.626s observations do not establish a stable latency or cost difference."
+  },
+  "observed_contract_differences": {
+    "candidate": [
+      "Accepts one to ten caller-selected unique bare DOI records with expected title/year.",
+      "Writes JSON to stdout only and does not modify repository files.",
+      "Uses a fixed HTTPS host, blocks redirects, caps response size and read duration, and reports explicit failures."
+    ],
+    "task103_runner": [
+      "Normally processes the source registry, detects duplicate DOIs, computes aggregate metrics, and writes a JSONL source manifest.",
+      "Uses a 30-second socket timeout and up to four attempts per DOI; actual attempt count was not instrumented in this run."
+    ]
+  },
+  "related_registered_provider_evidence": {
+    "evidence_ref": "ignition/data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
+    "task_id": "source-record-metadata-cross-provider-work-identity-gap001-05",
+    "compared_tool_ids": [
+      "research.verify_crossref_metadata",
+      "research.lookup_openalex_work_metadata"
+    ],
+    "scope": "One other DOI had matching live Crossref/OpenAlex title/year fields plus a synthetic changed-year negative control; it does not establish broad provider quality or replacement."
+  },
+  "limitations": [
+    "One DOI and one invocation per implementation do not estimate correct-completion rate, broad applicability, availability, reliability, maintainability, or risk.",
+    "No external ground-truth source was used; matching provider responses are not proof of metadata correctness or source authenticity.",
+    "Retry count for the Task 103 runner was not instrumented, so its exact request count is unknown.",
+    "The two wall-time values are single observations and do not establish a stable latency, resource, or economic-cost advantage.",
+    "Raw provider response bytes were not retained; only their shared SHA-256 digest was recorded."
+  ],
+  "disposition": {
+    "status": "COMPARISON_UNKNOWN",
+    "replacement_candidates": [],
+    "unique_remaining_use_cases": [],
+    "retirement_status": "ACTIVE_OPTIONAL_DEFAULT_OFF",
+    "basis": "The paired result confirms one matching outcome but is too narrow to establish replacement or retirement. The wrapper and Task 103 runner have different task and side-effect contracts; preserve uncertainty and the current optional default-off entry pending additional consumer-relevant same-task evidence."
+  }
+}

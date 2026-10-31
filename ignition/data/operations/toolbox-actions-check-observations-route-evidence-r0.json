@@ -1,0 +1,120 @@
+{
+  "schema_version": "toolbox-actions-check-observations-route-evidence-r0",
+  "observed_at_utc": "2026-10-26T02:30:05Z",
+  "scenario": "READ_ONLY_RUN route planner proposals; no tool invocation",
+  "current_main_ref_used": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "task_profile": {
+    "task_id": "classify-pr264-exact-head-check-name-and-app-observations",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin with expected commit SHA, caller-supplied check name/App-ID pairs, caller-asserted snapshot completeness, and a bounded GitHub check-runs response."
+    ],
+    "required_outputs": [
+      "Deterministic JSON receipt with exact name/SHA/App observations, duplicate and stale matches, incomplete-state handling, source/tool digests, and explicit non-claims."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "source_files": [
+    {
+      "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "sha256": "d2aae81c86961571d2d8747357e1564991df27ccbf22f076c0e6755dd9a580f8"
+    },
+    {
+      "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "sha256": "ec285324bbdff4a718f7ffd761a61f8d393b77b8e15967bfd2e207a6d9950ea4"
+    }
+  ],
+  "route_trials": [
+    {
+      "scenario": "default_opt_out",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "selected_permissions": null,
+      "rejected_candidates": [
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "minimum_sufficient_explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.inspect_exact_head_check_observations"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.inspect_exact_head_check_observations"
+      ],
+      "execution_authorized": false,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_check_observations.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "rejected_candidates": [
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "neighbors_also_allowlisted",
+      "include_experimental_tool_ids": [
+        "maintenance.inspect_exact_head_check_observations",
+        "maintenance.summarize_actions_step_timeline",
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.inspect_exact_head_check_observations"
+      ],
+      "execution_authorized": false,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_check_observations.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "rejected_candidates": [
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ]
+    }
+  ],
+  "claim_ceiling": "Route-planner proposals only. The tool was not invoked in these trials; no snapshot is authenticated and no permissions, CI sufficiency, reuse, merge, or release authority is granted."
+}

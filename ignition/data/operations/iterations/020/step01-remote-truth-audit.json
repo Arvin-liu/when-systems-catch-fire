@@ -1,0 +1,17 @@
+{
+  "schema_version": "task20-registered-main-baseline-reuse-r1",
+  "task_id": "IGNITION-20261024-020",
+  "record_status": "REUSED_EXACT_REGISTERED_BASELINE",
+  "baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "expected_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "observed_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "observation_source": "GitHub REST read of the exact public repository main branch during this run",
+    "registered_base_source": "Arvin-liu/1111 instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R1.json at signed merge 2709651e63238ee6e1bd812e3f7bc692c10f0acc",
+    "result": "MATCH",
+    "observed_at": "2026-10-24T02:51:35.322598Z"
+  },
+  "reuse_boundary": "This preserves the registered formal-main baseline and avoids restarting S0. It is not a full Foundation regression; only focused validation is run for the current source repair.",
+  "claim_ceiling": "Exact registered formal-main baseline reuse and current readback only; no full Foundation result, publication, merge, R3 activation or epistemic acceptance is inferred."
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-arxiv-query-search-output-r0",
+  "title": "Bounded arXiv Query Search Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_id", "tool_version", "source_code_sha256", "query_sha256",
+    "source_endpoint", "retrieval_timestamp_utc", "max_results", "request_count", "acquisition_status",
+    "http_status", "response_sha256", "response_bytes", "status", "hit_count",
+    "returned_count", "records", "claim_ceiling", "rate_limit_note", "request_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition.arxiv-query-search-r0"},
+    "tool_id": {"const": "research.search_arxiv_query"},
+    "tool_version": {"const": "0.1.0"},
+    "source_code_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "query_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_endpoint": {"const": "https://export.arxiv.org/api/query"},
+    "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+    "max_results": {"type": "integer", "minimum": 1, "maximum": 10},
+    "request_count": {"type": "integer", "minimum": 0, "maximum": 1},
+    "acquisition_status": {
+      "enum": [
+        "NOT_AVAILABLE", "OK", "NETWORK_ERROR", "RATE_LIMITED", "HTTP_ERROR",
+        "REDIRECT_BLOCKED", "NON_ATOM_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE",
+        "INVALID_XML_RESPONSE", "INVALID_PROVIDER_RESPONSE", "PROVIDER_ERROR_ENTRY"
+      ]
+    },
+    "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "response_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "response_bytes": {"type": ["integer", "null"], "minimum": 0, "maximum": 524288},
+    "status": {
+      "enum": [
+        "NOT_AVAILABLE", "FOUND", "NO_MATCH", "NETWORK_ERROR", "RATE_LIMITED", "HTTP_ERROR",
+        "REDIRECT_BLOCKED", "NON_ATOM_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE",
+        "INVALID_XML_RESPONSE", "INVALID_PROVIDER_RESPONSE", "PROVIDER_ERROR_ENTRY"
+      ]
+    },
+    "hit_count": {"type": ["integer", "null"], "minimum": 0},
+    "returned_count": {"type": "integer", "minimum": 0, "maximum": 10},
+    "records": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "arxiv_id", "entry_id", "title", "author_names", "author_count", "authors_truncated",
+          "published", "updated", "primary_category", "categories", "journal_ref", "doi"
+        ],
+        "properties": {
+          "arxiv_id": {"type": "string", "maxLength": 64},
+          "entry_id": {"type": "string", "maxLength": 512},
+          "title": {"type": "string", "minLength": 1, "maxLength": 2048},
+          "author_names": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 256}},
+          "author_count": {"type": "integer", "minimum": 0},
+          "authors_truncated": {"type": "boolean"},
+          "published": {"type": "string", "maxLength": 64},
+          "updated": {"type": "string", "maxLength": 64},
+          "primary_category": {"type": ["string", "null"], "maxLength": 128},
+          "categories": {"type": "array", "maxItems": 32, "items": {"type": "string", "maxLength": 128}},
+          "journal_ref": {"type": ["string", "null"], "maxLength": 1024},
+          "doi": {"type": ["string", "null"], "maxLength": 512}
+        }
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "rate_limit_note": {"type": "string", "minLength": 1},
+    "request_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

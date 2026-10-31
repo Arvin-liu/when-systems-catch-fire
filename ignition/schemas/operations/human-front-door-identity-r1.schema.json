@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "identity_id", "source_status", "text"],
+  "properties": {
+    "schema_version": {"const": "human-front-door-identity-r1"},
+    "identity_id": {"const": "IGNITION_OWNER_HUMAN_FRONT_DOOR_IDENTITY_R1"},
+    "source_status": {"const": "CURRENT_MAIN_INPUT"},
+    "text": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

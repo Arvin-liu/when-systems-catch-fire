@@ -1,0 +1,1127 @@
+{
+  "schema_version": "toolbox-openalex-query-search-route-evidence-r0",
+  "experiment_id": "research.search_openalex_query.default_off_exact_host_minimality",
+  "profile_ref": "ignition/data/operations/toolbox-openalex-query-search-route-profile-r0.json",
+  "candidate_id": "research.search_openalex_query",
+  "candidate_version": "0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "experimental_candidate_catalog_blob_sha1": "d2e23092d5dbe337e6b00baf1ad8bda7781bc04e",
+  "route_profile": {
+    "task_id": "openalex-public-topic-discovery",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly a public query string (1-512 characters, at most 2048 UTF-8 bytes) and integer max_results (1-10)"
+    ],
+    "required_outputs": [
+      "At most ten OpenAlex Works metadata rows with Work ID, DOI when present, title, publication year, type, up to ten author names with count/truncation, primary venue, and provider relevance score; abstracts and full text are omitted.",
+      "Provider hit count, retrieval timestamp, source/response bytes, query/request/response SHA-256 values, HTTP/acquisition outcome, usage headers, and bounded claim ceiling."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_selection_is_not_execution_authority": true,
+  "route_trials": [
+    {
+      "scenario": "default_opt_out",
+      "include_experimental_tool_ids": [],
+      "allowed_network_hosts": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "ignition.select_bounded_thinking_operation",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.preflight_reusable_context",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_audit_findings",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_context_packet_variants",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_exact_head_check_observations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.preflight_producer_consumer_semantics",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_interval_union",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_component_path_residue",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.audit_pubmed_updates_from_doi",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.bind_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_arxiv_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_openalex_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_pubmed_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "router_provider_calls": 0
+    },
+    {
+      "scenario": "candidate_included_without_exact_host",
+      "include_experimental_tool_ids": [
+        "research.search_openalex_query"
+      ],
+      "allowed_network_hosts": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "ignition.select_bounded_thinking_operation",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.preflight_reusable_context",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_audit_findings",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_context_packet_variants",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_exact_head_check_observations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.preflight_producer_consumer_semantics",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_interval_union",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_component_path_residue",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.audit_pubmed_updates_from_doi",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.bind_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_arxiv_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_openalex_query",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.search_pubmed_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "router_provider_calls": 0
+    },
+    {
+      "scenario": "exact_host_minimum_route",
+      "include_experimental_tool_ids": [
+        "research.search_openalex_query"
+      ],
+      "allowed_network_hosts": [
+        "api.openalex.org"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.search_openalex_query"
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "ignition.select_bounded_thinking_operation",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.preflight_reusable_context",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_audit_findings",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_context_packet_variants",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_exact_head_check_observations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.preflight_producer_consumer_semantics",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_interval_union",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_component_path_residue",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.audit_pubmed_updates_from_doi",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.bind_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_arxiv_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_pubmed_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "router_provider_calls": 0
+    },
+    {
+      "scenario": "all_query_providers_offered_but_only_openalex_outputs_required",
+      "include_experimental_tool_ids": [
+        "research.search_openalex_query",
+        "research.search_arxiv_query",
+        "research.search_europe_pmc_query"
+      ],
+      "allowed_network_hosts": [
+        "api.openalex.org",
+        "export.arxiv.org",
+        "www.ebi.ac.uk"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.search_openalex_query"
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "ignition.select_bounded_thinking_operation",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.preflight_reusable_context",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_audit_findings",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.compare_context_packet_variants",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_exact_head_check_observations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.preflight_producer_consumer_semantics",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_interval_union",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_component_path_residue",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.audit_pubmed_updates_from_doi",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.bind_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.search_arxiv_query",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.search_pubmed_query",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "router_provider_calls": 0
+    }
+  ],
+  "focused_test": "ignition.tests.test_toolbox_routing.AdaptiveToolRouteTests.test_openalex_query_search_is_default_off_and_selects_only_for_its_required_outputs",
+  "claim_ceiling": "Local typed route-planner proposal only. Caller-supplied ref and host list are not authority-verified; no provider request, invocation, or permission grant follows from route selection."
+}

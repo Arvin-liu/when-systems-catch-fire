@@ -1,0 +1,92 @@
+{
+  "schema_version": "toolbox-source-section-parity-route-evidence-r1",
+  "observed_at_utc": "2026-10-27T15:13:40Z",
+  "tool_id": "maintenance.compare_source_section_bytes",
+  "tool_version": "0.1.0",
+  "candidate_document_ref": "refs/heads/codex/toolbox-growth-20261025@8df917e3948c9fe5643a0897a5824c0cad943930",
+  "task_profile": {
+    "task_id": "homepage-first-component-parity",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@8df917e3948c9fe5643a0897a5824c0cad943930",
+    "input_types": [
+      "One UTF-8 JSON object conforming to toolbox-source-section-parity-input-r0 on stdin, at most 512,000 bytes; includes caller-supplied source text, asserted source SHA-256/ref, candidate path and unique exact markers."
+    ],
+    "required_outputs": [
+      "One deterministic JSON result with source/candidate document and section SHA-256 values, byte counts, byte offsets, exact-match status, and typed failure findings; no document text is returned."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_policy_source_ref": "current local worktree, source hash pinned below",
+  "route_policy_source_sha256": "e3cf2e32e241d6e908c92d148a9b0ac5ba52940953def0b554ba7acc28cc3fb3",
+  "tool_source_sha256": "41ca8c184c83161faeed66062d77eb4e102d0cd3900eafb2abbccc6adab770d1",
+  "route_test_source_sha256": "ced7ebd2741ff94ca90b8ff6e33e38ba31bc72ae4d60ef05a0740d08a35588c9",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "historical_r0_route_evidence_sha256": "ae5ae5a66f9492e8ff655bd1f6ec7a9907707783388f2aaf00e40f94083a8f80",
+  "declared_permission_scope": {
+    "read_paths": [
+      ".github/",
+      "ignition/"
+    ],
+    "write_paths": [],
+    "network": false,
+    "network_hosts": [],
+    "secrets": false,
+    "billing": false,
+    "external_actions": false
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "input_types_override": null,
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejection_reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+      "plan_sha256": "9211d92f424dab783c545bea60e9540ba3605c1631977438ee2e4281616a71fb",
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "candidate_invoked": false
+    },
+    {
+      "scenario": "explicit_tool_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.compare_source_section_bytes"
+      ],
+      "input_types_override": null,
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.compare_source_section_bytes"
+      ],
+      "rejection_reason": null,
+      "plan_sha256": "a8eca7bd2c1d9a9c596d2375ab441c39c32ac8653a4117427613ca480fbf0697",
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "candidate_invoked": false
+    },
+    {
+      "scenario": "unrelated_input",
+      "include_experimental_tool_ids": [
+        "maintenance.compare_source_section_bytes"
+      ],
+      "input_types_override": [
+        "Unrelated prose document"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejection_reason": "NO_INPUT_TYPE_MATCH",
+      "plan_sha256": "fcda592d76a497381865f16167d2ac6c5faa15c70524119688cf3f5695cfff9a",
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "candidate_invoked": false
+    }
+  ],
+  "safety_boundary": {
+    "tool_invocations_by_planner": 0,
+    "candidate_document_reads_by_planner": 0,
+    "execution_authorized": false,
+    "network_calls_by_planner": 0,
+    "permission_granted": false
+  },
+  "claim_ceiling": "Local route proposal behavior only. Default routing excludes the candidate; explicit ID plus matching typed input/output proposes it. No comparator invocation, candidate-document read, authorization, or release decision is established."
+}

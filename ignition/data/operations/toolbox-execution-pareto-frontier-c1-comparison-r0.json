@@ -1,0 +1,47 @@
+{
+  "schema_version": "execution-candidate-pareto-c1-comparison-r0",
+  "candidate_tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+  "status": "COMPARISON_UNKNOWN",
+  "comparison_scope": "Static input/output contract comparison against three existing analyzers plus one real task analyzed by this candidate across route variants. No apples-to-apples task has been run through this candidate and an existing comparator.",
+  "compared_tool_ids": [
+    "maintenance.compare_actions_repeated_step_sequences",
+    "maintenance.attribute_actions_validation_evidence",
+    "maintenance.compare_context_packet_variants"
+  ],
+  "functional_differences": [
+    {
+      "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+      "observed_contract": "Groups repeated GitHub Actions job/step names and intervals across source-supplied workflow runs.",
+      "difference": "Does not accept paired task pass outcomes plus a common resource metric or compute nondominance."
+    },
+    {
+      "tool_id": "maintenance.attribute_actions_validation_evidence",
+      "observed_contract": "Attributes supplied Actions runs/jobs/artifacts to a validation plan and target identity.",
+      "difference": "Does not compare implementation candidates on the same task/evaluator/environment set or calculate an outcome-resource frontier."
+    },
+    {
+      "tool_id": "maintenance.compare_context_packet_variants",
+      "observed_contract": "Compares supplied context packet structure and declared obligation sets.",
+      "difference": "Does not consume execution outcomes or measured resource observations."
+    }
+  ],
+  "paired_real_task_comparison": "NOT_RUN_FOR_EXISTING_COMPARATORS; one captured Crossref route task was analyzed by this tool, but the task did not exercise the three existing comparator implementations.",
+  "disposition": "KEEP_NEW_TOOL_EXPERIMENTAL_AND_DEFAULT_OFF; KEEP_EXISTING_COMPARATORS; RETIRE_NO_TOOL",
+  "findings": [
+    "One captured Crossref task supplied paired route outcomes and request counts to this candidate, but the compared candidates were route variants rather than competing analyzer tools.",
+    "The candidate's bounded contract is distinct from the three inspected implementations; no apples-to-apples comparator result establishes relative task quality, cost, reliability, or broad non-replacement.",
+    "Do not claim the HarnessPro paper's benchmark gains for this implementation.",
+    "Compare only directly overlapping use cases. Retire an incumbent only if a newer candidate is better and covers every valuable incumbent use case; otherwise keep task-specific coexistence."
+  ],
+  "evidence_refs": [
+    "ignition/docs/operations/execution-candidate-pareto-frontier.md",
+    "ignition/tools/toolbox_execution_pareto_frontier.py",
+    "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+    "ignition/tools/toolbox_actions_validation_attribution.py",
+    "ignition/tools/toolbox_context_packet_variant_comparator.py",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-evaluator-r0.json",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-input-r0.json",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-output-r0.json",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-route-evidence-r0.json"
+  ]
+}

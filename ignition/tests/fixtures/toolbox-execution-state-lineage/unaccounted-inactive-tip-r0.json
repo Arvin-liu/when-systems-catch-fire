@@ -1,0 +1,47 @@
+{
+  "schema_version": "toolbox-execution-state-lineage-input-r0",
+  "task_ref": "local-episode-compare",
+  "checkpoints": [
+    {
+      "checkpoint_id": "cp-root",
+      "run_id": "run-1",
+      "phase": "ACT",
+      "state_ref": "local-state://root",
+      "state_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event_count": 2,
+      "created_by": "executor-a",
+      "parent_checkpoint_id": null,
+      "reason_summary": "Initial checkpoint"
+    },
+    {
+      "checkpoint_id": "cp-active",
+      "run_id": "run-1",
+      "phase": "CONTINUE",
+      "state_ref": "local-state://active",
+      "state_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "event_count": 4,
+      "created_by": "executor-b",
+      "parent_checkpoint_id": "cp-root",
+      "reason_summary": "Selected continuation"
+    },
+    {
+      "checkpoint_id": "cp-alternative",
+      "run_id": "run-1",
+      "phase": "PLAN",
+      "state_ref": "local-state://alternative",
+      "state_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "event_count": 3,
+      "created_by": "executor-c",
+      "parent_checkpoint_id": "cp-root",
+      "reason_summary": "Preserved alternative branch"
+    }
+  ],
+  "active_checkpoint_id": "cp-active",
+  "declared_active_path_checkpoint_ids": [
+    "cp-root",
+    "cp-active"
+  ],
+  "declared_inactive_tip_checkpoint_ids": [],
+  "resume_capsules": [],
+  "rollback_records": []
+}

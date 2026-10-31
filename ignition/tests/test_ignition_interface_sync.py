@@ -4,8 +4,11 @@ import unittest
 from tools.operations.validate_ignition_interface_sync import (
     ADDITIONAL_LOCATORS,
     InterfaceSyncError,
+    REGISTERED_SUCCESSOR_BINDINGS,
+    ROOT,
     RECEIPT_PATH,
     REGISTRY_PATH,
+    _registered_successor_contract_matches,
     historical_rewrite_violations,
     load_json,
     markdown_visible_text,
@@ -96,6 +99,45 @@ class IgnitionInterfaceSyncTests(unittest.TestCase):
             ),
             ["ignition/data/operations/iterations/149/historical/new.json"],
         )
+
+    def test_owner_registered_nonmonotonic_successor_allows_only_new_task20_evidence(self):
+        ordinal = 20
+        binding = REGISTERED_SUCCESSOR_BINDINGS[ordinal]
+        contract = load_json(ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json")
+        self.assertTrue(_registered_successor_contract_matches(contract, ordinal))
+
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/020/new-evidence.json\n"
+            ),
+            [],
+        )
+        for status in ("M", "D", "R100"):
+            with self.subTest(status=status):
+                self.assertEqual(
+                    historical_rewrite_violations(
+                        f"{status}\tignition/data/operations/iterations/020/existing-evidence.json\n"
+                    ),
+                    ["ignition/data/operations/iterations/020/existing-evidence.json"],
+                )
+
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/019/unregistered-evidence.json\n"
+            ),
+            ["ignition/data/operations/iterations/019/unregistered-evidence.json"],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/020/historical/new.json\n"
+            ),
+            ["ignition/data/operations/iterations/020/historical/new.json"],
+        )
+
+        altered = copy.deepcopy(contract)
+        altered["successor_registration"]["registration_nonce"] = "not-the-registered-nonce"
+        self.assertFalse(_registered_successor_contract_matches(altered, ordinal))
+        self.assertEqual(binding["task_id"], contract["task_id"])
 
 
 if __name__ == "__main__":

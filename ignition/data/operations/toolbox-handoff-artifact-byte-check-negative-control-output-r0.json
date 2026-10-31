@@ -1,0 +1,43 @@
+{
+  "artifact_count": 3,
+  "artifacts": [
+    {
+      "artifact_index": 0,
+      "bytes_read": 1131,
+      "expected_sha256": "174299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7",
+      "kind": "json_evidence",
+      "observed_sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7",
+      "ref": "data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+      "status": "DIGEST_MISMATCH"
+    },
+    {
+      "artifact_index": 1,
+      "bytes_read": 1435,
+      "expected_sha256": "88e33f5db91a163cef87c04e429eba85ae6ff336ed5e770b1470d6f83ffd1816",
+      "kind": "json_evidence",
+      "observed_sha256": "88e33f5db91a163cef87c04e429eba85ae6ff336ed5e770b1470d6f83ffd1816",
+      "ref": "data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+      "status": "DIGEST_MATCH"
+    },
+    {
+      "artifact_index": 2,
+      "bytes_read": 2809,
+      "expected_sha256": "6d533edc55705e655ebfa7bc1a9722861b5773eb3040fc2c9c68756de3d3cc66",
+      "kind": "json_evidence",
+      "observed_sha256": "6d533edc55705e655ebfa7bc1a9722861b5773eb3040fc2c9c68756de3d3cc66",
+      "ref": "data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json",
+      "status": "DIGEST_MATCH"
+    }
+  ],
+  "claim_ceiling": "Checks whether bounded bytes read from regular files under an explicit repository-local ignition/ workspace root match the SHA-256 values in a typed FederatedResultReceipt whose canonical unkeyed self-digest passes. It does not authenticate the receipt or source, prove file provenance or task correctness, observe a stable runtime workspace after reading, authorize actions, enforce runtime isolation, or establish scientific truth.",
+  "execution_authorized": false,
+  "receipt_authenticity": "NOT_ESTABLISHED_UNKEYED_DIGEST",
+  "runtime_enforcement_status": "NOT_EVALUATED",
+  "schema_version": "handoff-artifact-byte-check-result-r0",
+  "source_receipt_canonical_digest": "PASS",
+  "status": "DIGEST_MISMATCH",
+  "tool_id": "collaboration.verify_handoff_artifact_files",
+  "tool_version": "0.1.0",
+  "total_bytes_read": 5375,
+  "workspace_observation": "BOUNDED_LOCAL_FILE_BYTES_READ_UNDER_CALLER_ROOT"
+}

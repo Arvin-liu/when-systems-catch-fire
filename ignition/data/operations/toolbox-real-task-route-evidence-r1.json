@@ -1,0 +1,208 @@
+{
+  "schema_version": "ignition.toolbox-real-task-route-evidence-r1",
+  "experiment_id": "REAL-TASK-20261026-GAP001-02-ROUTED-REPLAY-R1",
+  "observed_at_utc": "2026-10-25T18:58:47Z",
+  "router_candidate_revision": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "head": "98ddf70b8f48262890ca286c505e9badec5ddd81",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_cards_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
+  },
+  "task": {
+    "task_id": "source-record-metadata-and-pubmed-id-refresh-gap001-02-r1",
+    "intent": "Refresh one pinned source-record DOI against Crossref for title/year metadata and ask the fixed PMC ID Converter endpoint whether it returns a PMID or PMCID for the same DOI.",
+    "source_record": {
+      "path": "ignition/evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl",
+      "source_id": "GAP001-02",
+      "doi": "10.1146/annurev-biodatasci-103123-095750",
+      "expected_title": "From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect",
+      "expected_year": 2025,
+      "prior_crossref_response_sha256": "d532f1631eb1ce0e81614acb8c8127c4ec408a84fdc5c2fd97578bc9f85c44d8",
+      "prior_pubmed_converter_response_sha256": "d85997fdf2ef1a1da823683f81b5ec01459a0a7a990770b816599b417775ab04"
+    }
+  },
+  "route_profile": {
+    "input_types": [
+      "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records",
+      "JSON stdin object with one to ten unique bare DOI identifiers"
+    ],
+    "required_outputs": [
+      "input-ordered Crossref metadata comparison rows",
+      "input-ordered PubMed/PMC identifier resolution rows"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "allowed_network_hosts": [
+      "api.crossref.org",
+      "pmc.ncbi.nlm.nih.gov"
+    ],
+    "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+  },
+  "route_trials": [
+    {
+      "scenario": "default_light",
+      "allowlist": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "input-ordered PubMed/PMC identifier resolution rows"
+      ],
+      "relevant_rejections": {
+        "research.verify_crossref_metadata": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+        "research.resolve_pubmed_identifiers": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 1.821,
+      "serialized_result_bytes": 6383,
+      "cost_estimate_status": "UNKNOWN"
+    },
+    {
+      "scenario": "crossref_only",
+      "allowlist": [
+        "research.verify_crossref_metadata"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [
+        "research.verify_crossref_metadata"
+      ],
+      "unmet_outputs": [
+        "input-ordered PubMed/PMC identifier resolution rows"
+      ],
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 2.39,
+      "serialized_result_bytes": 8394,
+      "cost_estimate_status": "UNKNOWN"
+    },
+    {
+      "scenario": "sufficient_pair",
+      "allowlist": [
+        "research.verify_crossref_metadata",
+        "research.resolve_pubmed_identifiers"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.resolve_pubmed_identifiers",
+        "research.verify_crossref_metadata"
+      ],
+      "unmet_outputs": [],
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 2.327,
+      "serialized_result_bytes": 10264,
+      "cost_estimate_status": "UNKNOWN"
+    },
+    {
+      "scenario": "redundant_options",
+      "allowlist": [
+        "research.verify_crossref_metadata",
+        "research.resolve_pubmed_identifiers",
+        "research.inspect_pubmed_update_links",
+        "knowledge.cluster_source_brief"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.resolve_pubmed_identifiers",
+        "research.verify_crossref_metadata"
+      ],
+      "unmet_outputs": [],
+      "relevant_rejections": {
+        "knowledge.cluster_source_brief": "NO_INPUT_TYPE_MATCH",
+        "research.inspect_pubmed_update_links": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+      },
+      "execution_authorized": false,
+      "planner_wall_ms_observed": 3.341,
+      "serialized_result_bytes": 10246,
+      "cost_estimate_status": "UNKNOWN"
+    }
+  ],
+  "invocation_decision": {
+    "planner_execution_authorized": false,
+    "per_invocation_authorization": "Each invoked CLI was separately run with its explicit --allow-public-network flag; source code pins one HTTPS host per tool and disables redirects.",
+    "network_calls": 2,
+    "calls_per_host": {
+      "api.crossref.org": 1,
+      "pmc.ncbi.nlm.nih.gov": 1
+    },
+    "credentials_secrets_billing_writes_or_full_text_retrieval": false
+  },
+  "invocations": [
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "tool_version": "0.1.0",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+      "input_payload_sha256": "037aaa4fea9479939fe4ee56ad348e1be77fcf6f33200099f9636721b4b6d0c5",
+      "api_host": "api.crossref.org",
+      "retrieval_timestamp_utc": "2026-10-25T18:58:00Z",
+      "http_status": 200,
+      "response_sha256": "d532f1631eb1ce0e81614acb8c8127c4ec408a84fdc5c2fd97578bc9f85c44d8",
+      "wrapper_sha256": "cb2b96418cdb07ba1533bee20e9652079d7085db471e61c4304435a5fc2770c1",
+      "upstream_helper_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51",
+      "exit_code": 0,
+      "stdout_bytes": 1523,
+      "stdout_sha256": "2c390e1da1f2feffb166099968869d7fad5021d524e02c62b589acbd72ff4fcb",
+      "stderr_bytes": 0,
+      "observed_process_wall_ms": 1547.352,
+      "observed_child_cpu_ms": 68.352,
+      "tool_status": "ALL_METADATA_MATCHED",
+      "result": {
+        "title_match": true,
+        "year_match": true,
+        "full_match": true,
+        "observed_title": "From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect",
+        "observed_year": 2025,
+        "retraction_signal": "NONE"
+      }
+    },
+    {
+      "tool_id": "research.resolve_pubmed_identifiers",
+      "tool_version": "0.1.0",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_identifier_resolver.py --stdin --allow-public-network",
+      "input_payload_sha256": "b8ed6656941000264d8c7674cf6dc50ba727fbadf9be157427f351488efa1bf7",
+      "api_host": "pmc.ncbi.nlm.nih.gov",
+      "retrieval_timestamp_utc": "2026-10-25T18:58:02Z",
+      "http_status": 200,
+      "response_sha256": "640c3d0379f20a4a52eb84f3feb14f72d41b7faebd974ec8cc6f126605bfae44",
+      "wrapper_sha256": "ade1e10f4b0e3bab11ea21ee2ab76b74f28b4e0af671d77a6ea1eef8a69dcebc",
+      "exit_code": 0,
+      "stdout_bytes": 1061,
+      "stdout_sha256": "47f357291011e4d7cb0e17d089b53d1af18a998f05205da9bf5df9d2b33dd1c4",
+      "stderr_bytes": 0,
+      "observed_process_wall_ms": 622.937,
+      "observed_child_cpu_ms": 71.6,
+      "tool_status": "NO_IDENTIFIERS_RESOLVED",
+      "result": {
+        "acquisition_status": "OK",
+        "identifier_status": "MATCHED_WITHOUT_PUBMED_OR_PMC_ID",
+        "matched_doi": "10.1146/annurev-biodatasci-103123-095750",
+        "pmid": null,
+        "pmcid": null
+      }
+    }
+  ],
+  "observed_costs": {
+    "sum_of_two_process_wall_ms": 2170.289,
+    "sum_of_two_child_cpu_ms": 139.952,
+    "billed_cost": "UNKNOWN_NOT_REPORTED_BY_PROVIDERS",
+    "bytes_sent_received": "UNKNOWN_RAW_HTTP_BODY_SIZES_NOT_RETAINED",
+    "scope": "One sequential run per selected tool including Python startup, DNS/TLS, HTTP response handling, and output serialization; not a stable latency or provider-cost estimate."
+  },
+  "task_outcome": "Crossref returned HTTP 200 and the pinned title/year matched. The PMC ID Converter returned HTTP 200, matched the DOI, and supplied neither PMID nor PMCID. This is an endpoint result only and does not imply global absence.",
+  "temporal_comparison_with_prior_r0": {
+    "crossref_response_sha256_unchanged": true,
+    "pubmed_converter_response_sha256_changed": true,
+    "pubmed_converter_prior_sha256": "d85997fdf2ef1a1da823683f81b5ec01459a0a7a990770b816599b417775ab04",
+    "pubmed_converter_current_sha256": "640c3d0379f20a4a52eb84f3feb14f72d41b7faebd974ec8cc6f126605bfae44",
+    "observed_identifier_status_unchanged": "MATCHED_WITHOUT_PUBMED_OR_PMC_ID",
+    "interpretation_limit": "One repeat observation: response bytes changed while the returned identifier status remained the same; no stability, completeness, or absence claim follows."
+  },
+  "claim_ceiling": "One real, bounded route-and-invocation replay for a single bibliographic identifier. Metadata and identifier outcomes reflect the two provider responses only; no article-content review, source-authenticity judgment, scientific truth, global PubMed/PMC absence, stable reliability, comparative quality, or cost optimum is established.",
+  "limits": [
+    "Route planning itself keeps execution_authorized=false; explicit invocation flags are a separate step.",
+    "Default and crossref-only routes were not invoked because they were incomplete.",
+    "The redundant route did not invoke the rejected candidates.",
+    "Wall and child CPU values are single observations; billing and raw HTTP byte counts are unknown.",
+    "No repository files were changed by the tool invocations."
+  ]
+}

@@ -179,6 +179,14 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         reason = next(x for x in result["full_regression_reasons"] if x["kind"] == "validation_target_changed")
         self.assertEqual(reason["paths"], ["research_workflow/test_pluggable_slot.py"])
 
+    def test_release_candidate_task_identity_test_routes_to_release_controls(self):
+        result = self.plan(["tests/test_release_candidate_task_identity.py"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], [])
+        self.assertEqual(result["selected_target_ids"], ["g_component_release_controls"])
+        self.assertEqual(result["changed_validation_test_targets"], ["g_component_release_controls"])
+        self.assertEqual(result["domains"], ["G"])
+
     def test_registered_consumer_test_alone_routes_to_full_without_unknown_path(self):
         result = self.plan(["research_workflow/test_research_workflow.py"])
         self.assertEqual(result["mode"], "FULL")
@@ -229,9 +237,19 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertIn("component_validation_router", result["affected_component_closure"])
 
     def test_shared_workflow_change_requires_full_regression(self):
-        result = self.plan([".github/workflows/foundation-validation.yml"])
-        self.assertEqual(result["mode"], "FULL")
-        self.assertTrue(any(x["kind"] == "validation_authority_changed" for x in result["full_regression_reasons"]))
+        for path in (
+            ".github/workflows/foundation-validation.yml",
+            ".github/workflows/repository-path-accounting-preflight.yml",
+        ):
+            with self.subTest(path=path):
+                self.assertIn(path, FULL_REGRESSION_PATHS)
+                result = self.plan([path])
+                self.assertEqual(result["mode"], "FULL")
+                self.assertTrue(any(
+                    x["kind"] == "validation_authority_changed"
+                    and path in x["paths"]
+                    for x in result["full_regression_reasons"]
+                ))
 
     def test_unknown_path_blocks_instead_of_running_zero_targets(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
@@ -545,35 +563,42 @@ class ComponentValidationRoutingTest(unittest.TestCase):
 
     def test_nested_ignition_import_roots_load_pr259_consumer_layout(self):
         with tempfile.TemporaryDirectory() as temp:
-            repo_root = Path(temp)
-            package = repo_root / "ignition/research_workflow"
-            package.mkdir(parents=True)
-            (package / "__init__.py").write_text("", encoding="utf-8")
-            (package / "cli.py").write_text("VALUE = 43\n", encoding="utf-8")
-            consumer_source = "\n".join([
-                "import cli",
-                "import unittest",
-                "class ConsumerTest(unittest.TestCase):",
-                "    def test_script_style_import(self):",
-                "        self.assertEqual(cli.VALUE, 43)",
-                "",
-            ])
-            (package / "test_nested_consumer.py").write_text(consumer_source, encoding="utf-8")
+            repo_roots = [Path(temp) / "first", Path(temp) / "second"]
+            for repo_root, value in zip(repo_roots, (43, 47)):
+                package = repo_root / "ignition/research_workflow"
+                package.mkdir(parents=True)
+                (package / "__init__.py").write_text("", encoding="utf-8")
+                (package / "cli.py").write_text(f"VALUE = {value}\n", encoding="utf-8")
+                consumer_source = "\n".join([
+                    "import cli",
+                    "import unittest",
+                    "class ConsumerTest(unittest.TestCase):",
+                    "    def test_script_style_import(self):",
+                    f"        self.assertEqual(cli.VALUE, {value})",
+                    "",
+                ])
+                (package / "test_nested_consumer.py").write_text(consumer_source, encoding="utf-8")
             for module_name in [
                 name for name in sys.modules
                 if name == "cli" or name == "research_workflow" or name.startswith("research_workflow.")
             ]:
                 sys.modules.pop(module_name, None)
-            result = run_modules(
-                ["research_workflow.test_nested_consumer"],
-                repo_root=repo_root,
-                import_roots=["ignition", "ignition/research_workflow"],
-                verbosity=0,
-            )
-        self.assertEqual(result["tests_executed"], 1)
-        self.assertEqual(result["failures"], 0)
-        self.assertEqual(result["errors"], 0)
-        self.assertTrue(result["successful"])
+            results = [
+                run_modules(
+                    ["research_workflow.test_nested_consumer"],
+                    repo_root=repo_root,
+                    import_roots=["ignition", "ignition/research_workflow"],
+                    verbosity=0,
+                )
+                for repo_root in repo_roots
+            ]
+            self.assertNotIn("research_workflow", sys.modules)
+            self.assertNotIn("cli", sys.modules)
+        for result in results:
+            self.assertEqual(result["tests_executed"], 1)
+            self.assertEqual(result["failures"], 0)
+            self.assertEqual(result["errors"], 0)
+            self.assertTrue(result["successful"])
 
     def test_plan_hash_tampering_blocks_target_execution(self):
         plan = self.plan(["data/governance/history-remediation-register.json"])

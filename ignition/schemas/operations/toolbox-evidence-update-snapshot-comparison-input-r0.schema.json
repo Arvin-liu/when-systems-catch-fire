@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/toolbox-evidence-update-snapshot-comparison-input-r0.schema.json",
+  "title": "Evidence update snapshot comparison input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "comparison_id", "baseline_snapshot", "candidate_snapshot"],
+  "properties": {
+    "schema_version": {"const": "ignition.toolbox-evidence-update-snapshot-comparison-input-r0"},
+    "comparison_id": {"$ref": "#/$defs/identifier"},
+    "baseline_snapshot": {"$ref": "#/$defs/snapshot"},
+    "candidate_snapshot": {"$ref": "#/$defs/snapshot"}
+  },
+  "$defs": {
+    "identifier": {"type": "string", "minLength": 1, "maxLength": 160, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/@_+#-]{0,159}$"},
+    "digestOrNull": {"oneOf": [{"type": "null"}, {"type": "string", "pattern": "^[0-9a-f]{64}$"}]},
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "revision_digest"],
+      "properties": {"identity": {"$ref": "#/$defs/identifier"}, "revision_digest": {"$ref": "#/$defs/digestOrNull"}}
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["snapshot_id", "task_ref", "claim_id", "as_of", "scope_digest", "applicability_digest", "declared_claim_state", "change_reason", "evaluation_instrument", "update_policy", "stopping_policy", "acquisition_dependence", "evidence_items"],
+      "properties": {
+        "snapshot_id": {"$ref": "#/$defs/identifier"},
+        "task_ref": {
+          "type": "object", "additionalProperties": false, "required": ["task_id", "revision_digest"],
+          "properties": {"task_id": {"$ref": "#/$defs/identifier"}, "revision_digest": {"$ref": "#/$defs/digestOrNull"}}
+        },
+        "claim_id": {"$ref": "#/$defs/identifier"},
+        "as_of": {
+          "type": "object", "additionalProperties": false, "required": ["reference", "observed_at_utc"],
+          "properties": {
+            "reference": {"type": "string", "minLength": 1, "maxLength": 240},
+            "observed_at_utc": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"}
+          }
+        },
+        "scope_digest": {"$ref": "#/$defs/digestOrNull"},
+        "applicability_digest": {"$ref": "#/$defs/digestOrNull"},
+        "declared_claim_state": {"$ref": "#/$defs/identifier"},
+        "change_reason": {
+          "type": "object", "additionalProperties": false, "required": ["code", "reference"],
+          "properties": {"code": {"$ref": "#/$defs/identifier"}, "reference": {"type": ["string", "null"], "maxLength": 240}}
+        },
+        "evaluation_instrument": {"$ref": "#/$defs/policy"},
+        "update_policy": {"$ref": "#/$defs/policy"},
+        "stopping_policy": {"$ref": "#/$defs/policy"},
+        "acquisition_dependence": {"enum": ["INDEPENDENT", "PRIOR_SYNTHESIS_VISIBLE", "MIXED", "UNKNOWN"]},
+        "evidence_items": {
+          "type": "array", "maxItems": 200, "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["evidence_id", "source_family", "record_state", "record_sha256"],
+            "properties": {
+              "evidence_id": {"$ref": "#/$defs/identifier"},
+              "source_family": {"type": "string", "minLength": 1, "maxLength": 64, "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,63}$"},
+              "record_state": {"enum": ["LINKED", "WITHDRAWN", "RETRACTED", "SUPERSEDED", "UNAVAILABLE", "UNKNOWN"]},
+              "record_sha256": {"$ref": "#/$defs/digestOrNull"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

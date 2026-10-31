@@ -3,15 +3,38 @@
     {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
+        "charter",
+        "charter_system_r1",
+        "copyright_governance_jurisdiction_registry",
+        "copyright_governance_source_rights",
+        "copyright_governance_material_classification",
+        "copyright_governance_non_republication_principle",
+        "copyright_governance_publication_gate_validator",
+        "copyright_governance_history_remediation",
+        "copyright_governance_tests",
+        "epistemic_governance_kernel",
+        "human_knowledge_surfaces",
+        "licensing",
         "foundation",
+        "ignition_operating_method",
+        "l5",
+        "l4",
         "l1",
         "l2",
         "l3"
       ],
       "path_patterns": [
+        "data/governance/",
+        "schemas/governance/",
+        "tools/governance/",
+        "tests/test_q33_governance_infrastructure.py",
+        "docs/governance/",
+        "tests/foundation/",
+        "tools/foundation/",
+        "formal/",
         "data/foundation/"
       ],
-      "reason": "Foundation spans L0-L6; data/foundation/ contains layer-specific and cross-layer files owned by foundation and l1/l2/l3."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     },
     {
       "authority_source": ".github/README.md",
@@ -23,30 +46,6 @@
         ".github/README.md"
       ],
       "reason": "Owner/Human authority and the existing README front door share one homepage; the overlap is explicit and does not create a second publication surface."
-    },
-    {
-      "authority_source": "FOUNDATION.md",
-      "component_ids": [
-        "foundation",
-        "l4"
-      ],
-      "path_patterns": [
-        "formal/"
-      ],
-      "reason": "Foundation includes formal/lean/ for formal proofs; L4 owns formal/ for general math models."
-    },
-    {
-      "authority_source": "FOUNDATION.md",
-      "component_ids": [
-        "foundation",
-        "ignition_operating_method",
-        "l5"
-      ],
-      "path_patterns": [
-        "tests/foundation/",
-        "tools/foundation/"
-      ],
-      "reason": "Foundation includes tests/foundation/ and tools/foundation/ for cross-layer validation; L5 owns them for evaluation methodology."
     },
     {
       "authority_source": "OPERATING-METHOD.md",
@@ -106,31 +105,6 @@
       "reason": "human_knowledge_surfaces owns readable repository navigation while system_map_projection owns the generated SVG under docs/generated/."
     },
     {
-      "authority_source": "FOUNDATION.md",
-      "component_ids": [
-        "charter",
-        "charter_system_r1",
-        "copyright_governance_jurisdiction_registry",
-        "copyright_governance_source_rights",
-        "copyright_governance_material_classification",
-        "copyright_governance_non_republication_principle",
-        "copyright_governance_publication_gate_validator",
-        "copyright_governance_history_remediation",
-        "copyright_governance_tests",
-        "epistemic_governance_kernel",
-        "human_knowledge_surfaces",
-        "licensing"
-      ],
-      "path_patterns": [
-        "data/governance/",
-        "schemas/governance/",
-        "tools/governance/",
-        "tests/test_q33_governance_infrastructure.py",
-        "docs/governance/"
-      ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
-    },
-    {
       "authority_source": "docs/operations/stage-snapshot-publication.md",
       "component_ids": [
         "iteration",
@@ -159,6 +133,17 @@
         "docs/architecture/external-agent-federation-r1.md"
       ],
       "reason": "Federation remains the protocol umbrella while the Live External Executor Bridge owns the bounded OS dispatch implementation and Task136 evidence within the shared executor boundary."
+    },
+    {
+      "authority_source": ".github/workflows/release-transaction-protocol-validation.yml",
+      "component_ids": [
+        "component_validation_router",
+        "release_transaction_protocol_r3"
+      ],
+      "path_patterns": [
+        ".github/workflows/release-transaction-protocol-validation.yml"
+      ],
+      "reason": "This workflow is both the R2/R3 release-protocol validator and part of the shared component-validation route; keeping both owners makes both route and release-protocol checks run for changes to this exact workflow."
     }
   ],
   "components": [
@@ -316,6 +301,11 @@
         "data/operations/current-release-lifecycle-r1.json",
         "data/operations/current-snapshot-r1.json",
         "data/operations/state-changelog-profile-r1.json",
+        "data/operations/state-changelog-profile-r2.json",
+        "data/operations/state-changelog-profile-r3.json",
+        "data/operations/state-changelog-profile-r4.json",
+        "data/operations/state-changelog-profile-r5.json",
+        "data/operations/human-front-door-identity-r1.json",
         "data/operations/current-task-lineage-status.json",
         "data/operations/current-volatile-fact-registry-r1.json",
         "data/operations/task-identity-model-r1.json",
@@ -323,6 +313,10 @@
         "schemas/architecture/current-facts.schema.json",
         "schemas/architecture/current-system-identity.schema.json",
         "schemas/operations/current-snapshot-r1.schema.json",
+        "schemas/operations/human-front-door-identity-r1.schema.json",
+        "schemas/operations/state-changelog-profile-r2.schema.json",
+        "schemas/operations/state-changelog-profile-r3.schema.json",
+        "schemas/operations/state-changelog-profile-r4.schema.json",
         "tests/test_current_state_sync.py",
         "tests/test_current_surface_compiler.py",
         "tests/test_state_changelog.py",
@@ -330,7 +324,18 @@
         "tools/current_surface_compiler.py",
         "tools/generate_current_facts.py",
         "tools/validate_current_state_sync.py",
-        "tools/validate_state_changelog.py"
+        "tools/validate_state_changelog.py",
+        "schemas/operations/state-changelog-profile-r1.schema.json",
+        "tools/build_publication_witness.py",
+        "tools/record_current_surface_determinism.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py",
+        "tools/validate_task_identity_model.py",
+        "tests/test_current_task_advancement.py",
+        "tools/advance_current_task.py",
+        "tools/validate_execution_contract.py",
+        "tools/validate_iteration_ordinal_binding.py"
       ]
     },
     {
@@ -390,13 +395,14 @@
         "group": "core",
         "visible": true
       },
-    "path_patterns": [
-      "FOUNDATION.md",
-      "data/foundation/",
-      "docs/foundation/",
-      "tools/foundation/",
-      "tests/foundation/",
-      "formal/lean/"
+      "path_patterns": [
+        "FOUNDATION.md",
+        "data/foundation/",
+        "docs/foundation/",
+        "tools/foundation/",
+        "tests/foundation/",
+        "tests/test_knowledge_corpus_admission.py",
+        "formal/lean/"
       ]
     },
     {
@@ -785,7 +791,8 @@
       },
       "path_patterns": [
         "tests/foundation/",
-        "tools/foundation/"
+        "tools/foundation/",
+        ".github/workflows/repository-path-accounting-preflight.yml"
       ]
     },
     {
@@ -804,11 +811,11 @@
         "group": "layers",
         "visible": true
       },
-    "path_patterns": [
-      "docs/publication/",
-      "reports/publication/",
-      "data/publication/fire-seeds/"
-    ]
+      "path_patterns": [
+        "docs/publication/",
+        "reports/publication/",
+        "data/publication/fire-seeds/"
+      ]
     },
     {
       "authority": "canonical",
@@ -956,6 +963,7 @@
         "HUMAN-READING.md",
         "KNOWLEDGE/",
         "RESULTS/",
+        "reports/external-research/",
         "data/governance/human-results/",
         "data/governance/human-surface/materiality-manifest.json",
         "data/governance/knowledge-experience/",
@@ -1053,7 +1061,8 @@
         "tools/operations/validate_generated_output_authority.py",
         "tools/propagation/",
         "schemas/operations/agent-platform-r2-propagation-contract.schema.json",
-        ".gitignore"
+        ".gitignore",
+        ".github/workflows/repository-path-accounting-preflight.yml"
       ]
     },
     {
@@ -1414,11 +1423,13 @@
         "docs/generated/ignition-system-architecture.svg",
         "docs/generated/ignition-system-architecture.html",
         "tools/generate_interactive_system_map.py",
-      "tools/validate_human_front_door.py",
-      "tests/test_human_front_door.py",
-      "tests/test_overall_architecture.py",
-      "tests/test_generated_output_authority.py",
-        "docs/architecture/interactive-system-map.md"
+        "tools/validate_human_front_door.py",
+        "tests/test_human_front_door.py",
+        "tests/test_overall_architecture.py",
+        "tests/test_generated_output_authority.py",
+        "docs/architecture/interactive-system-map.md",
+        "tools/validate_homepage_architecture_projection.py",
+        "tests/test_homepage_architecture_projection.py"
       ]
     },
     {
@@ -1606,7 +1617,10 @@
         "visible": true
       },
       "path_patterns": [
-        "tests/test_q33_governance_infrastructure.py"
+        ".github/workflows/q33-governance-validation.yml",
+        "requirements-q33.txt",
+        "tests/test_q33_governance_infrastructure.py",
+        "tests/test_q33_workflow_trigger_coverage.py"
       ]
     },
     {
@@ -1693,9 +1707,18 @@
       "description": "Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。",
       "label": "Owner / Human",
       "layer_or_overlay": "governance",
-      "lifecycle": {"source": ".github/README.md", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": [".github/README.md"]
+      "lifecycle": {
+        "source": ".github/README.md",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        ".github/README.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1705,9 +1728,22 @@
       "description": "Agentization Boundary R0 的领域切割、依赖方向与不迁移处置。",
       "label": "智能体化边界 R0",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/architecture/agentization-boundary-r0.json", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/architecture/agentization-boundary-r0.json", "schemas/architecture/agentization-boundary-r0.schema.json", "docs/architecture/agentization-boundary-r0.md", "tools/generate_agentization_boundary.py", "tools/validate_agentization_boundary.py"]
+      "lifecycle": {
+        "source": "data/architecture/agentization-boundary-r0.json",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/architecture/agentization-boundary-r0.json",
+        "schemas/architecture/agentization-boundary-r0.schema.json",
+        "docs/architecture/agentization-boundary-r0.md",
+        "tools/generate_agentization_boundary.py",
+        "tools/validate_agentization_boundary.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1717,9 +1753,19 @@
       "description": "领域无关的身份、权限、状态、审计、checkpoint、handoff 和不变量契约。",
       "label": "Ignition Generic Kernel R0",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_kernel/", "status": "current", "version": "CURRENT_BOUNDED_R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_kernel/", "schemas/agent-runtime/"]
+      "lifecycle": {
+        "source": "agent_kernel/",
+        "status": "current",
+        "version": "CURRENT_BOUNDED_R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_kernel/",
+        "schemas/agent-runtime/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1729,9 +1775,23 @@
       "description": "R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。",
       "label": "Agent Runtime R2 (R0 base)",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_R2_WITH_OPEN_OBLIGATIONS"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/", "data/agent-runtime/pilots/r1-real-local/", "docs/architecture/agent-runtime-r1.md", "tools/validate_agent_runtime_boundary.py", "tests/test_agent_runtime_r0.py", "tests/test_agent_runtime_r1.py"]
+      "lifecycle": {
+        "source": "agent_runtime/",
+        "status": "current",
+        "version": "EXPERIMENTAL_RUNTIME_R2_WITH_OPEN_OBLIGATIONS"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/",
+        "data/agent-runtime/pilots/r1-real-local/",
+        "docs/architecture/agent-runtime-r1.md",
+        "tools/validate_agent_runtime_boundary.py",
+        "tests/test_agent_runtime_r0.py",
+        "tests/test_agent_runtime_r1.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1741,9 +1801,21 @@
       "description": "可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。",
       "label": "Agent Profile R0",
       "layer_or_overlay": "governance",
-      "lifecycle": {"source": "schemas/agent-runtime/agent-profile.schema.json", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/agent-runtime/agent-profile-r0.json", "data/agent-runtime/agent-profiles-r1.json", "schemas/agent-runtime/agent-profile.schema.json", "schemas/agent-runtime/agent-profile-r1.schema.json"]
+      "lifecycle": {
+        "source": "schemas/agent-runtime/agent-profile.schema.json",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/agent-runtime/agent-profile-r0.json",
+        "data/agent-runtime/agent-profiles-r1.json",
+        "schemas/agent-runtime/agent-profile.schema.json",
+        "schemas/agent-runtime/agent-profile-r1.schema.json"
+      ]
     },
     {
       "authority": "canonical",
@@ -1753,9 +1825,19 @@
       "description": "Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。",
       "label": "Environment / Tools / Executors",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "docs/architecture/agent-runtime-r0.md", "status": "current", "version": "R0"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["docs/architecture/agent-runtime-r0.md", "agent_runtime/protocols.py"]
+      "lifecycle": {
+        "source": "docs/architecture/agent-runtime-r0.md",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/architecture/agent-runtime-r0.md",
+        "agent_runtime/protocols.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1765,9 +1847,19 @@
       "description": "Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。",
       "label": "Feedback / Memory / Correction Loop",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/runtime.py", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/runtime.py", "schemas/agent-runtime/runtime-state.schema.json"]
+      "lifecycle": {
+        "source": "agent_runtime/runtime.py",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/runtime.py",
+        "schemas/agent-runtime/runtime-state.schema.json"
+      ]
     },
     {
       "authority": "canonical",
@@ -1777,9 +1869,19 @@
       "description": "Domain Pack manifest 与禁止权力升级的挂接契约。",
       "label": "Domain Pack Contract",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_kernel/domain_pack.py", "status": "current", "version": "R0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["agent_kernel/domain_pack.py", "schemas/agent-runtime/domain-pack-manifest.schema.json"]
+      "lifecycle": {
+        "source": "agent_kernel/domain_pack.py",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_kernel/domain_pack.py",
+        "schemas/agent-runtime/domain-pack-manifest.schema.json"
+      ]
     },
     {
       "authority": "canonical",
@@ -1789,9 +1891,19 @@
       "description": "现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。",
       "label": "Knowledge Domain Pack",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "packs/knowledge/manifest.json", "status": "current", "version": "ref-only-R0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["packs/knowledge/manifest.json", "packs/knowledge/README.md"]
+      "lifecycle": {
+        "source": "packs/knowledge/manifest.json",
+        "status": "current",
+        "version": "ref-only-R0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "packs/knowledge/manifest.json",
+        "packs/knowledge/README.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1801,9 +1913,19 @@
       "description": "REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。",
       "label": "Research Pack / REOS LIGHT",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "docs/architecture/reos-vnext-light.md", "status": "current", "version": "bounded-pack"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["docs/architecture/reos-vnext-light.md", "reos_vnext/"]
+      "lifecycle": {
+        "source": "docs/architecture/reos-vnext-light.md",
+        "status": "current",
+        "version": "bounded-pack"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/architecture/reos-vnext-light.md",
+        "reos_vnext/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1813,9 +1935,19 @@
       "description": "之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。",
       "label": "Writing Pack / 之元写作法",
       "layer_or_overlay": "publication",
-      "lifecycle": {"source": "docs/publication/zhiyuan-writing-method.md", "status": "current", "version": "0.5.0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["docs/publication/zhiyuan-writing-method.md", "templates/publication/zhiyuan-writing-spec.md"]
+      "lifecycle": {
+        "source": "docs/publication/zhiyuan-writing-method.md",
+        "status": "current",
+        "version": "0.5.0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/publication/zhiyuan-writing-method.md",
+        "templates/publication/zhiyuan-writing-spec.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1825,9 +1957,20 @@
       "description": "最小仓库维护 Pack 的 manifest；由 Pack Registry 声明能力，不获得通用 Owner、truth 或远端写权限。",
       "label": "Maintenance Pack",
       "layer_or_overlay": "infrastructure",
-      "lifecycle": {"source": "packs/maintenance/manifest.json", "status": "current", "version": "bounded-pack"},
-      "map_projection": {"represented_by": "domain_pack_contract", "no_change_reason": "Maintenance Pack is a bounded manifest projection represented by the visible Domain Pack Contract node.", "visible": false},
-      "path_patterns": ["packs/maintenance/manifest.json", "packs/maintenance/README.md"]
+      "lifecycle": {
+        "source": "packs/maintenance/manifest.json",
+        "status": "current",
+        "version": "bounded-pack"
+      },
+      "map_projection": {
+        "represented_by": "domain_pack_contract",
+        "no_change_reason": "Maintenance Pack is a bounded manifest projection represented by the visible Domain Pack Contract node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "packs/maintenance/manifest.json",
+        "packs/maintenance/README.md"
+      ]
     },
     {
       "authority": "derived",
@@ -1837,9 +1980,20 @@
       "description": "不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。",
       "label": "Non-knowledge Runtime Pilot",
       "layer_or_overlay": "infrastructure",
-      "lifecycle": {"source": "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "status": "current", "version": "R0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["agent_runtime/pilots/non_knowledge_manifest.py", "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "tests/test_agent_runtime_r0.py"]
+      "lifecycle": {
+        "source": "data/agent-runtime/pilots/non-knowledge-manifest-r0/",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/pilots/non_knowledge_manifest.py",
+        "data/agent-runtime/pilots/non-knowledge-manifest-r0/",
+        "tests/test_agent_runtime_r0.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1849,9 +2003,23 @@
       "description": "点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。",
       "label": "External Agent Federation R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/agent-federation/", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/", "schemas/agent-federation/", "data/agent-federation/", "docs/architecture/external-agent-federation-r1.md", "tests/test_federation*", "tools/validate_federation*"]
+      "lifecycle": {
+        "source": "data/agent-federation/",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/",
+        "schemas/agent-federation/",
+        "data/agent-federation/",
+        "docs/architecture/external-agent-federation-r1.md",
+        "tests/test_federation*",
+        "tools/validate_federation*"
+      ]
     },
     {
       "authority": "canonical",
@@ -1861,9 +2029,22 @@
       "description": "OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.",
       "label": "Live External Executor Bridge R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/live_bridge.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/live_*.py", "schemas/agent-federation/live-*.json", "data/operations/iterations/136/", "tests/test_live_*.py", "docs/architecture/external-agent-federation-r1.md"]
+      "lifecycle": {
+        "source": "agent_federation/live_bridge.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/live_*.py",
+        "schemas/agent-federation/live-*.json",
+        "data/operations/iterations/136/",
+        "tests/test_live_*.py",
+        "docs/architecture/external-agent-federation-r1.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1873,9 +2054,24 @@
       "description": "OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.",
       "label": "Live Observation / Reconciliation Plane R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/live_observation_plane.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/live_observation_plane.py", "agent_federation/live_attempt_ledger.py", "agent_federation/live_current_projection.py", "schemas/operations/live-*.json", "data/operations/iterations/140/", "tests/test_live_observation_*.py", "docs/architecture/external-agent-federation-r1.md"]
+      "lifecycle": {
+        "source": "agent_federation/live_observation_plane.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/live_observation_plane.py",
+        "agent_federation/live_attempt_ledger.py",
+        "agent_federation/live_current_projection.py",
+        "schemas/operations/live-*.json",
+        "data/operations/iterations/140/",
+        "tests/test_live_observation_*.py",
+        "docs/architecture/external-agent-federation-r1.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1885,9 +2081,19 @@
       "description": "OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。",
       "label": "OpenClaw Adapter",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/adapters/openclaw.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/adapters/openclaw.py", "tests/test_openclaw_adapter.py"]
+      "lifecycle": {
+        "source": "agent_federation/adapters/openclaw.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/adapters/openclaw.py",
+        "tests/test_openclaw_adapter.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1897,9 +2103,19 @@
       "description": "Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。",
       "label": "Hermes Adapter",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/adapters/hermes.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/adapters/hermes.py", "tests/test_hermes_adapter.py"]
+      "lifecycle": {
+        "source": "agent_federation/adapters/hermes.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/adapters/hermes.py",
+        "tests/test_hermes_adapter.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1909,9 +2125,19 @@
       "description": "Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。",
       "label": "Codex Adapter",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/adapters/codex.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/adapters/codex.py", "tests/test_codex_adapter.py"]
+      "lifecycle": {
+        "source": "agent_federation/adapters/codex.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/adapters/codex.py",
+        "tests/test_codex_adapter.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1921,9 +2147,21 @@
       "description": "现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。",
       "label": "Reference Executor",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/pilots.py", "status": "current", "version": "R1-FROZEN"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/pilots.py", "agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "tests/test_federation_pilots.py"]
+      "lifecycle": {
+        "source": "agent_federation/pilots.py",
+        "status": "current",
+        "version": "R1-FROZEN"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/pilots.py",
+        "agent_runtime/actions.py",
+        "agent_runtime/r1_runtime.py",
+        "tests/test_federation_pilots.py"
+      ]
     },
     {
       "authority": "declarative",
@@ -1933,9 +2171,19 @@
       "description": "未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。",
       "label": "Future Executors",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/contracts.py", "status": "current", "version": "deferred"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/contracts.py", "schemas/agent-federation/"]
+      "lifecycle": {
+        "source": "agent_federation/contracts.py",
+        "status": "current",
+        "version": "deferred"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/contracts.py",
+        "schemas/agent-federation/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1945,9 +2193,20 @@
       "description": "Append-only typed event ledger with aggregate CAS, hash-chain integrity, deterministic replay and snapshot-tail recovery.",
       "label": "Event Ledger R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/event_ledger.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/event_ledger.py", "tests/test_event_ledger.py", "tools/validate_event_ledger.py"]
+      "lifecycle": {
+        "source": "agent_runtime/event_ledger.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/event_ledger.py",
+        "tests/test_event_ledger.py",
+        "tools/validate_event_ledger.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1957,9 +2216,20 @@
       "description": "Digest-bound effective-policy compiler whose intersections, minima, expiry and prohibitions can only narrow authority.",
       "label": "Monotonic Policy Compiler R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/policy_compiler.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/policy_compiler.py", "tests/test_policy_compiler.py", "tools/validate_policy_compiler.py"]
+      "lifecycle": {
+        "source": "agent_runtime/policy_compiler.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/policy_compiler.py",
+        "tests/test_policy_compiler.py",
+        "tools/validate_policy_compiler.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1969,9 +2239,20 @@
       "description": "Hierarchical typed resource-intent arbitration with atomic acquire-many, expiring leases and conservative unknown-side-effect serialization.",
       "label": "Resource Arbitration R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/resource_arbitration.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/resource_arbitration.py", "tests/test_resource_arbitration.py", "tools/validate_resource_arbitration.py"]
+      "lifecycle": {
+        "source": "agent_runtime/resource_arbitration.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/resource_arbitration.py",
+        "tests/test_resource_arbitration.py",
+        "tools/validate_resource_arbitration.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1981,9 +2262,20 @@
       "description": "Bounded concurrent dependency-DAG scheduler with deterministic readiness, resource leases, budgets, cancellation, deadlines and checkpoint/resume.",
       "label": "Bounded Concurrent Scheduler R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/scheduler.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/scheduler.py", "tests/test_scheduler.py", "tools/validate_scheduler.py"]
+      "lifecycle": {
+        "source": "agent_runtime/scheduler.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/scheduler.py",
+        "tests/test_scheduler.py",
+        "tools/validate_scheduler.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1993,9 +2285,20 @@
       "description": "Digest-bound executor capability and health lease with expiry, cooldown, stale rejection and deterministic route candidates.",
       "label": "Executor Health Lease R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/executor_health.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/executor_health.py", "tests/test_executor_health.py", "tools/validate_executor_health.py"]
+      "lifecycle": {
+        "source": "agent_runtime/executor_health.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/executor_health.py",
+        "tests/test_executor_health.py",
+        "tools/validate_executor_health.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2005,9 +2308,20 @@
       "description": "Durable bounded queue with quota/backpressure, priority and aging, deadline, pause and cancellation boundaries.",
       "label": "Queue and Backpressure R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/queue_control.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/queue_control.py", "tests/test_queue_control.py", "tools/validate_queue_control.py"]
+      "lifecycle": {
+        "source": "agent_runtime/queue_control.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/queue_control.py",
+        "tests/test_queue_control.py",
+        "tools/validate_queue_control.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2017,9 +2331,20 @@
       "description": "Durable external dispatch, idempotent acknowledgement/progress and conservative receipt reconciliation with forged-record rejection.",
       "label": "Durable Dispatch and Reconciliation R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/dispatch_reconciliation.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/dispatch_reconciliation.py", "tests/test_dispatch_reconciliation.py", "tools/validate_dispatch_reconciliation.py"]
+      "lifecycle": {
+        "source": "agent_runtime/dispatch_reconciliation.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/dispatch_reconciliation.py",
+        "tests/test_dispatch_reconciliation.py",
+        "tools/validate_dispatch_reconciliation.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2029,9 +2354,20 @@
       "description": "Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.",
       "label": "Concurrent Operational Memory R2",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/concurrent_memory.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/concurrent_memory.py", "tests/test_concurrent_memory.py", "tools/validate_concurrent_memory.py"]
+      "lifecycle": {
+        "source": "agent_runtime/concurrent_memory.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/concurrent_memory.py",
+        "tests/test_concurrent_memory.py",
+        "tools/validate_concurrent_memory.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2041,9 +2377,20 @@
       "description": "Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.",
       "label": "Driver Console R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/driver_console.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/driver_console.py", "tools/driver_console.py", "tests/test_driver_console.py"]
+      "lifecycle": {
+        "source": "agent_runtime/driver_console.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/driver_console.py",
+        "tools/driver_console.py",
+        "tests/test_driver_console.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2053,9 +2400,25 @@
       "description": "Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.",
       "label": "Durability / Lifecycle R3",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/operations/durability/continuity-pilot-r1.json", "status": "current", "version": "R3"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/durability.py", "agent_runtime/recovery.py", "agent_runtime/dr_bundle.py", "agent_runtime/pilots/durability_lifecycle_127.py", "data/operations/durability/", "schemas/operations/durability-", "tools/validate_durability_", "tests/test_durability_"]
+      "lifecycle": {
+        "source": "data/operations/durability/continuity-pilot-r1.json",
+        "status": "current",
+        "version": "R3"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/durability.py",
+        "agent_runtime/recovery.py",
+        "agent_runtime/dr_bundle.py",
+        "agent_runtime/pilots/durability_lifecycle_127.py",
+        "data/operations/durability/",
+        "schemas/operations/durability-",
+        "tools/validate_durability_",
+        "tests/test_durability_"
+      ]
     },
     {
       "authority": "canonical",
@@ -2065,9 +2428,26 @@
       "description": "Repository-local steering spine for provenance-aware intents, goal lifecycle, independent completion contracts, commitments, temporal windows, dependency-aware priority, conflict arbitration, explainable why-next traces, drift guards, memory/profile boundaries, namespace isolation and federation capsules; it cannot infer Owner intent or completion.",
       "label": "Steering / Intent / Goal / Obligation R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/steering.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/steering.py", "agent_runtime/driver_console.py", "agent_runtime/event_ledger.py", "agent_runtime/pilots/steering_portfolio_129.py", "agent_runtime/pilots/steering_adversarial_129.py", "data/operations/steering/", "data/operations/iterations/129/fixtures/steering-", "tools/validate_steering_", "tests/test_steering_"]
+      "lifecycle": {
+        "source": "agent_runtime/steering.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/steering.py",
+        "agent_runtime/driver_console.py",
+        "agent_runtime/event_ledger.py",
+        "agent_runtime/pilots/steering_portfolio_129.py",
+        "agent_runtime/pilots/steering_adversarial_129.py",
+        "data/operations/steering/",
+        "data/operations/iterations/129/fixtures/steering-",
+        "tools/validate_steering_",
+        "tests/test_steering_"
+      ]
     },
     {
       "authority": "canonical",
@@ -2077,9 +2457,23 @@
       "description": "Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.",
       "label": "Formal Task Lifecycle R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/operations/formal-task-lifecycle-r1.json", "status": "current", "version": "R1"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "schemas/operations/execution-contract-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py"]
+      "lifecycle": {
+        "source": "data/operations/formal-task-lifecycle-r1.json",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/operations/formal-task-lifecycle-r1.json",
+        "schemas/operations/formal-task-lifecycle-r1.schema.json",
+        "schemas/operations/execution-contract-r1.schema.json",
+        "tools/validate_formal_task_lifecycle.py",
+        "tools/validate_task142_obligation_adjudication.py",
+        "tests/test_formal_task_lifecycle.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2089,9 +2483,22 @@
       "description": "Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.",
       "label": "Open Obligation Registry R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/operations/open-obligation-registry-r1.json", "status": "current", "version": "R1"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/operations/open-obligation-registry-r1.json", "schemas/operations/open-obligation-registry-r1.schema.json", "tools/validate_open_obligation_registry.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_open_obligation_registry.py"]
+      "lifecycle": {
+        "source": "data/operations/open-obligation-registry-r1.json",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/operations/open-obligation-registry-r1.json",
+        "schemas/operations/open-obligation-registry-r1.schema.json",
+        "tools/validate_open_obligation_registry.py",
+        "tools/validate_task142_obligation_adjudication.py",
+        "tests/test_open_obligation_registry.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2101,53 +2508,67 @@
       "description": "Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.",
       "label": "Executor Admission R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/executor_admission_contract.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/executor_admission_contract.py", "schemas/operations/executor-admission-contract-r1.schema.json", "data/operations/executor-admission-contract-r1.json", "tools/validate_executor_admission_contract.py", "data/operations/iterations/142/local-executor-census-r2.json", "tests/test_executor_admission_contract.py"]
+      "lifecycle": {
+        "source": "agent_federation/executor_admission_contract.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/executor_admission_contract.py",
+        "schemas/operations/executor-admission-contract-r1.schema.json",
+        "data/operations/executor-admission-contract-r1.json",
+        "tools/validate_executor_admission_contract.py",
+        "data/operations/iterations/142/local-executor-census-r2.json",
+        "tests/test_executor_admission_contract.py"
+      ]
     },
     {
-        "authority": "canonical",
-        "canonical_target": "scripts/external-research/openalex_client.py",
-        "component_id": "openalex_adapter_r1",
-        "component_type": "operation_control",
-        "description": "PR #259 candidate OpenAlex adapter used by the research workflow slot; this component declaration grants no source access or publication authority.",
-        "label": "OpenAlex Research Adapter R1",
-        "layer_or_overlay": "infrastructure",
-        "lifecycle": {
-            "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
-            "status": "draft_candidate",
-            "version": "R1"
-        },
-        "map_projection": {
-            "represented_by": "research_pack_reos_light",
-            "no_change_reason": "The candidate adapter is an implementation detail of the visible research pack and does not add an architecture node.",
-            "visible": false
-        },
-        "path_patterns": [
-            "scripts/external-research/openalex_client.py"
-        ]
+      "authority": "canonical",
+      "canonical_target": "scripts/external-research/openalex_client.py",
+      "component_id": "openalex_adapter_r1",
+      "component_type": "operation_control",
+      "description": "PR #259 candidate OpenAlex adapter used by the research workflow slot; this component declaration grants no source access or publication authority.",
+      "label": "OpenAlex Research Adapter R1",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "research_pack_reos_light",
+        "no_change_reason": "The candidate adapter is an implementation detail of the visible research pack and does not add an architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "scripts/external-research/openalex_client.py"
+      ]
     },
     {
-        "authority": "canonical",
-        "canonical_target": "research_workflow/SLOT.md",
-        "component_id": "research_workflow_slot",
-        "component_type": "operation_control",
+      "authority": "canonical",
+      "canonical_target": "research_workflow/SLOT.md",
+      "component_id": "research_workflow_slot",
+      "component_type": "operation_control",
       "description": "PR #259 candidate research workflow package, including the live CLI and source-binding slot; it does not acquire authority to alter review or release decisions.",
       "label": "Research Workflow R1",
-        "layer_or_overlay": "infrastructure",
-        "lifecycle": {
-            "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
-            "status": "draft_candidate",
-            "version": "R1"
-        },
-        "map_projection": {
-            "represented_by": "research_pack_reos_light",
-            "no_change_reason": "The workflow slot is an implementation detail of the visible research pack and does not add an architecture node.",
-            "visible": false
-        },
-        "path_patterns": [
-            "research_workflow/"
-        ]
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "research_pack_reos_light",
+        "no_change_reason": "The workflow slot is an implementation detail of the visible research pack and does not add an architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "research_workflow/"
+      ]
     },
     {
       "authority": "canonical",
@@ -2172,43 +2593,704 @@
       ]
     },
     {
-        "authority": "canonical",
-        "canonical_target": "tools/operations/route_component_validation.py",
-        "component_id": "component_validation_router",
-        "component_type": "operation_control",
-        "description": "G-domain controls for causal component impact closure, exact consumer validation evidence, deterministic component releases, and final protected-main SHA witnesses.",
-        "label": "Component Validation Router",
-        "layer_or_overlay": "infrastructure",
-        "lifecycle": {
-            "source": "formal G-domain implementation candidate",
-            "status": "draft_candidate",
-            "version": "R1"
-        },
-        "map_projection": {
-            "represented_by": "iteration",
-            "no_change_reason": "The component validation router extends the existing incremental execution operation and does not add a separate architecture node.",
-            "visible": false
-        },
-        "path_patterns": [
-            "data/operations/component-validation-map-r1.json",
-            "data/operations/component-release-policy-r1.json",
-            "schemas/operations/component-validation-map-r1.schema.json",
-            "schemas/operations/component-release-policy-r1.schema.json",
-            "schemas/operations/component-release-manifest-r1.schema.json",
-            "tools/operations/route_component_validation.py",
-            "tools/operations/run_component_validation_targets.py",
-            "tools/operations/verify_component_validation_evidence.py",
-            "tools/operations/write_final_main_witness.py",
-            "tools/operations/prepare_component_release.py",
-            "tools/operations/release_authorization.py",
-            "tests/test_component_validation_routing.py",
-            "tests/test_component_validation_evidence.py",
-            "tests/test_component_release_preparation.py",
-            "tests/test_component_release_authorization.py",
-            "tests/test_history_remediation_contract.py"
-        ]
+      "authority": "canonical",
+      "canonical_target": "tools/operations/route_component_validation.py",
+      "component_id": "component_validation_router",
+      "component_type": "operation_control",
+      "description": "G-domain controls for causal component impact closure, exact consumer validation evidence, deterministic component releases, and final protected-main SHA witnesses.",
+      "label": "Component Validation Router",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "formal G-domain implementation candidate",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "iteration",
+        "no_change_reason": "The component validation router extends the existing incremental execution operation and does not add a separate architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "data/operations/component-validation-map-r1.json",
+        "data/operations/component-release-policy-r1.json",
+        "schemas/operations/component-validation-map-r1.schema.json",
+        "schemas/operations/component-release-policy-r1.schema.json",
+        "schemas/operations/component-release-manifest-r1.schema.json",
+        "tools/operations/route_component_validation.py",
+        "tools/operations/run_component_validation_targets.py",
+        "tools/operations/verify_component_validation_evidence.py",
+        "tools/operations/write_final_main_witness.py",
+        "tools/operations/prepare_component_release.py",
+        "tools/operations/release_authorization.py",
+        "tests/test_component_validation_routing.py",
+        "tests/test_component_validation_evidence.py",
+        "tests/test_component_release_preparation.py",
+        "tests/test_component_release_authorization.py",
+        "tests/test_history_remediation_contract.py",
+        ".github/workflows/release-transaction-protocol-validation.yml"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/operations/release-transaction-protocol-r3.json",
+      "component_id": "release_transaction_protocol_r3",
+      "component_type": "operation_control",
+      "description": "Versioned protected-PR merge and post-merge witness contract; candidate only until separately authorized and witnessed.",
+      "label": "Release transaction protocol R3 candidate",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "data/operations/release-transaction-protocol-r3.json",
+        "status": "draft_candidate",
+        "version": "3.0.0-candidate"
+      },
+      "map_projection": {
+        "represented_by": "iteration",
+        "no_change_reason": "This release-governance candidate uses the existing protected PR and iteration process; it adds no runtime capability or architecture layer.",
+        "visible": false
+      },
+      "path_patterns": [
+        ".github/workflows/release-transaction-protocol-validation.yml",
+        "data/operations/release-transaction-protocol-r2.json",
+        "data/operations/release-transaction-protocol-r3.json",
+        "data/operations/release-transaction-recovery-state-r1.json",
+        "schemas/operations/release-transaction-protocol-r2.schema.json",
+        "schemas/operations/release-transaction-protocol-r3.schema.json",
+        "tests/test_release_transaction_protocol.py",
+        "tests/test_release_transaction_protocol_r3.py",
+        "tools/validate_release_transaction_protocol.py",
+        "tools/validate_release_transaction_protocol_r3.py"
+      ]
+    },
+    {
+      "authority": "declarative",
+      "canonical_target": "data/operations/toolbox-candidate-cards-r0.json",
+      "component_id": "toolbox_candidate_bundle",
+      "component_type": "operation_control",
+      "description": "Candidate toolbox implementations, identity cards, route evidence, schemas, documentation, and fixtures. Every candidate remains Experimental/default-off; registration adds no invocation permission, permission scope, scientific acceptance, or publication authority.",
+      "label": "点火工具箱候选集成",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "data/operations/toolbox-candidate-cards-r0.json",
+        "status": "draft_candidate",
+        "version": "r0"
+      },
+      "map_projection": {
+        "visible": false,
+        "represented_by": "ai_guide",
+        "no_change_reason": "Experimental/default-off toolbox candidates remain hidden under the existing AI Guide use surface and do not change Current capability or permissions."
+      },
+      "path_patterns": [
+        "TOOLBOX.md",
+        "data/operations/toolbox-actions-adaptive-routing-real-task-experiment-r0.json",
+        "data/operations/toolbox-actions-check-observations-c1-evidence-r0.json",
+        "data/operations/toolbox-actions-check-observations-real-task-r0.json",
+        "data/operations/toolbox-actions-check-observations-route-evidence-r0.json",
+        "data/operations/toolbox-actions-interval-union-c1-evidence-r0.json",
+        "data/operations/toolbox-actions-interval-union-real-task-r0.json",
+        "data/operations/toolbox-actions-interval-union-route-evidence-r0.json",
+        "data/operations/toolbox-actions-interval-union-route-profile-r0.json",
+        "data/operations/toolbox-actions-interval-union-source-binding-r0.json",
+        "data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+        "data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+        "data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+        "data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json",
+        "data/operations/toolbox-actions-validation-target-coverage-c1-evidence-r0.json",
+        "data/operations/toolbox-actions-validation-target-coverage-real-task-r0.json",
+        "data/operations/toolbox-actions-validation-target-coverage-replay-output-20261027-r0.json",
+        "data/operations/toolbox-actions-validation-target-coverage-route-evidence-r0.json",
+        "data/operations/toolbox-actions-validation-target-coverage-route-profile-r0.json",
+        "data/operations/toolbox-actions-validation-target-coverage-source-binding-r0.json",
+        "data/operations/toolbox-agent-episode-binding-c1-comparison-r0.json",
+        "data/operations/toolbox-agent-episode-binding-route-evidence-r0.json",
+        "data/operations/toolbox-agent-episode-binding-source-provenance-r0.json",
+        "data/operations/toolbox-arxiv-metadata-live-task-evidence-r0.json",
+        "data/operations/toolbox-arxiv-query-search-c1-evidence-r0.json",
+        "data/operations/toolbox-arxiv-query-search-c1-evidence-r1.json",
+        "data/operations/toolbox-arxiv-query-search-real-task-evidence-r0.json",
+        "data/operations/toolbox-arxiv-query-search-real-task-evidence-r1.json",
+        "data/operations/toolbox-arxiv-query-search-route-evidence-r0.json",
+        "data/operations/toolbox-arxiv-query-search-route-profile-r0.json",
+        "data/operations/toolbox-arxiv-query-search-source-binding-r0.json",
+        "data/operations/toolbox-audit-finding-comparator-c1-evidence-r0.json",
+        "data/operations/toolbox-audit-finding-comparator-real-task-input-r0.json",
+        "data/operations/toolbox-audit-finding-comparator-real-task-r0.json",
+        "data/operations/toolbox-audit-finding-comparator-route-evidence-r0.json",
+        "data/operations/toolbox-audit-finding-comparator-route-profile-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-blueprint-reference-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-c1-evidence-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-real-task-closeout-input-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-real-task-closeout-output-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-real-task-initial-input-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-real-task-initial-output-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-real-task-r0.json",
+        "data/operations/toolbox-bounded-thinking-operation-route-evidence-r0.json",
+        "data/operations/toolbox-c1-evidence-program-validator-comparison-r0.json",
+        "data/operations/toolbox-candidate-cards-r0.json",
+        "data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
+        "data/operations/toolbox-component-comparison-c1-evidence-r0.json",
+        "data/operations/toolbox-component-comparison-real-task-r0.json",
+        "data/operations/toolbox-component-comparison-route-evidence-r0.json",
+        "data/operations/toolbox-component-comparison-route-profile-r0.json",
+        "data/operations/toolbox-component-comparison-source-binding-r0.json",
+        "data/operations/toolbox-component-path-residue-c1-evidence-r0.json",
+        "data/operations/toolbox-component-path-residue-real-task-evidence-r0.json",
+        "data/operations/toolbox-component-path-residue-real-task-input-r0.json",
+        "data/operations/toolbox-component-path-residue-real-task-output-r0.json",
+        "data/operations/toolbox-component-path-residue-route-evidence-r0.json",
+        "data/operations/toolbox-component-path-residue-route-profile-r0.json",
+        "data/operations/toolbox-component-path-residue-source-binding-r0.json",
+        "data/operations/toolbox-context-packet-c1-comparison-r0.json",
+        "data/operations/toolbox-context-packet-route-evidence-r0.json",
+        "data/operations/toolbox-context-packet-variant-c1-evidence-r0.json",
+        "data/operations/toolbox-context-packet-variant-real-task-r0.json",
+        "data/operations/toolbox-context-packet-variant-route-evidence-r0.json",
+        "data/operations/toolbox-context-packet-variant-route-profile-r0.json",
+        "data/operations/toolbox-counterfactual-probe-c1-evidence-r0.json",
+        "data/operations/toolbox-counterfactual-probe-real-task-input-r0.json",
+        "data/operations/toolbox-counterfactual-probe-real-task-output-r0.json",
+        "data/operations/toolbox-counterfactual-probe-route-evidence-r0.json",
+        "data/operations/toolbox-counterfactual-probe-source-binding-r0.json",
+        "data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json",
+        "data/operations/toolbox-crossref-citation-matcher-real-task-evidence-r0.json",
+        "data/operations/toolbox-crossref-citation-matcher-route-evidence-r0.json",
+        "data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json",
+        "data/operations/toolbox-crossref-query-search-c1-evidence-r0.json",
+        "data/operations/toolbox-crossref-query-search-real-task-evidence-r0.json",
+        "data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+        "data/operations/toolbox-crossref-query-search-route-evidence-r0.json",
+        "data/operations/toolbox-crossref-query-search-route-profile-r0.json",
+        "data/operations/toolbox-crossref-query-search-source-binding-r0.json",
+        "data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r0.json",
+        "data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r1.json",
+        "data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r0.json",
+        "data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r1.json",
+        "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r0.json",
+        "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r1.json",
+        "data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+        "data/operations/toolbox-crossref-references-route-evidence-r0.json",
+        "data/operations/toolbox-crossref-relations-evidence-r0.json",
+        "data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
+        "data/operations/toolbox-current-asset-full-record-c1-comparison-r0.json",
+        "data/operations/toolbox-current-asset-t2-real-task-outcome-r1.json",
+        "data/operations/toolbox-datacite-doi-metadata-c1-comparison-r0.json",
+        "data/operations/toolbox-datacite-doi-metadata-route-evidence-r0.json",
+        "data/operations/toolbox-datacite-doi-metadata-route-profile-r0.json",
+        "data/operations/toolbox-datacite-doi-metadata-source-binding-r0.json",
+        "data/operations/toolbox-declared-permission-delta-c1-evidence-r0.json",
+        "data/operations/toolbox-declared-permission-delta-negative-control-input-r0.json",
+        "data/operations/toolbox-declared-permission-delta-negative-control-output-r0.json",
+        "data/operations/toolbox-declared-permission-delta-real-task-evidence-r0.json",
+        "data/operations/toolbox-declared-permission-delta-real-task-input-r0.json",
+        "data/operations/toolbox-declared-permission-delta-real-task-output-r0.json",
+        "data/operations/toolbox-declared-permission-delta-route-evidence-r0.json",
+        "data/operations/toolbox-declared-permission-delta-route-profile-r0.json",
+        "data/operations/toolbox-declared-permission-delta-smoke-evidence-r0.json",
+        "data/operations/toolbox-declared-permission-delta-source-binding-r0.json",
+        "data/operations/toolbox-europe-pmc-fulltext-locator-evidence-r0.json",
+        "data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-c1-evidence-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-real-task-evidence-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-real-task-input-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-real-task-output-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-route-evidence-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-smoke-evidence-r0.json",
+        "data/operations/toolbox-evidence-update-snapshot-source-binding-r0.json",
+        "data/operations/toolbox-executed-experience-c1-comparison-r0.json",
+        "data/operations/toolbox-executed-experience-c1-comparison-r1.json",
+        "data/operations/toolbox-executed-experience-provenance-r0.json",
+        "data/operations/toolbox-executed-experience-r1-replay-provenance-r0.json",
+        "data/operations/toolbox-executed-experience-real-task-input-r0.json",
+        "data/operations/toolbox-executed-experience-real-task-input-r1.json",
+        "data/operations/toolbox-executed-experience-real-task-output-r0.json",
+        "data/operations/toolbox-executed-experience-real-task-output-r1.json",
+        "data/operations/toolbox-executed-experience-route-evidence-r0.json",
+        "data/operations/toolbox-executed-experience-route-evidence-r1.json",
+        "data/operations/toolbox-executed-experience-route-profile-r0.json",
+        "data/operations/toolbox-executed-experience-route-profile-r1.json",
+        "data/operations/toolbox-execution-effect-receipt-c1-evidence-r0.json",
+        "data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+        "data/operations/toolbox-execution-effect-receipt-route-evidence-r0.json",
+        "data/operations/toolbox-execution-effect-receipt-route-profile-r0.json",
+        "data/operations/toolbox-execution-pareto-crossref-evaluator-r0.json",
+        "data/operations/toolbox-execution-pareto-crossref-input-r0.json",
+        "data/operations/toolbox-execution-pareto-crossref-output-r0.json",
+        "data/operations/toolbox-execution-pareto-crossref-route-evidence-r0.json",
+        "data/operations/toolbox-execution-pareto-crossref-route-profile-r0.json",
+        "data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+        "data/operations/toolbox-execution-pareto-frontier-route-evidence-r0.json",
+        "data/operations/toolbox-execution-pareto-frontier-route-profile-r0.json",
+        "data/operations/toolbox-execution-pareto-frontier-source-binding-r0.json",
+        "data/operations/toolbox-execution-state-lineage-c1-evidence-r0.json",
+        "data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json",
+        "data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+        "data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+        "data/operations/toolbox-execution-state-lineage-route-evidence-r0.json",
+        "data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
+        "data/operations/toolbox-failure-anchored-recovery-c1-evidence-r0.json",
+        "data/operations/toolbox-failure-anchored-recovery-real-task-r0.json",
+        "data/operations/toolbox-failure-anchored-recovery-route-evidence-r0.json",
+        "data/operations/toolbox-failure-anchored-recovery-route-profile-r0.json",
+        "data/operations/toolbox-governed-improvement-transition-c1-evidence-r0.json",
+        "data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json",
+        "data/operations/toolbox-governed-improvement-transition-provenance-r0.json",
+        "data/operations/toolbox-governed-improvement-transition-route-evidence-r0.json",
+        "data/operations/toolbox-governed-improvement-transition-route-profile-r0.json",
+        "data/operations/toolbox-governed-improvement-transition-smoke-r0.json",
+        "data/operations/toolbox-grounded-ideation-preflight-c1-evidence-r0.json",
+        "data/operations/toolbox-grounded-ideation-preflight-route-evidence-r0.json",
+        "data/operations/toolbox-grounded-ideation-preflight-route-profile-r0.json",
+        "data/operations/toolbox-grounded-ideation-preflight-smoke-evidence-r0.json",
+        "data/operations/toolbox-grounded-ideation-preflight-source-binding-r0.json",
+        "data/operations/toolbox-handoff-action-binding-c1-evidence-r0.json",
+        "data/operations/toolbox-handoff-action-binding-route-evidence-r0.json",
+        "data/operations/toolbox-handoff-action-binding-source-binding-r0.json",
+        "data/operations/toolbox-handoff-advisory-selection-c1-evidence-r0.json",
+        "data/operations/toolbox-handoff-advisory-selection-route-evidence-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-c1-evidence-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-negative-control-input-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-negative-control-output-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-real-task-evidence-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-real-task-input-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-real-task-output-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-route-evidence-r0.json",
+        "data/operations/toolbox-handoff-artifact-byte-check-route-profile-r0.json",
+        "data/operations/toolbox-identity-cards-r0.json",
+        "data/operations/toolbox-jsonl-selector-c1-evidence-r0.json",
+        "data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
+        "data/operations/toolbox-jsonl-selector-real-task-input-r0.json",
+        "data/operations/toolbox-jsonl-selector-real-task-r0.json",
+        "data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-c1-raw-only-input-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-c1-raw-only-output-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-route-profile-r0.json",
+        "data/operations/toolbox-noaa-ch4-source-surface-source-binding-r0.json",
+        "data/operations/toolbox-noaa-co2-annual-growth-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-evidence-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-input-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-output-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-input-r2.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-output-r2.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-route-evidence-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-route-evidence-r2.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-route-profile-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-route-profile-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-source-binding-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-2-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-2-real-task-output-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-3-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-3-n2o-extension-real-task-output-r2.json",
+        "data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-3-two-gas-real-task-output-r2.json",
+        "data/operations/toolbox-noaa-co2-ch4-n2o-growth-pair-route-profile-r1.json",
+        "data/operations/toolbox-noaa-co2-ch4-n2o-sf6-growth-pair-route-profile-r2.json",
+        "data/operations/toolbox-noaa-co2-ch4-n2o-sf6-pair-real-task-evidence-r2.json",
+        "data/operations/toolbox-noaa-co2-source-review-r0.json",
+        "data/operations/toolbox-noaa-co2-source-surface-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-co2-source-surface-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-co2-source-surface-route-profile-r0.json",
+        "data/operations/toolbox-noaa-co2-source-surface-source-binding-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-route-profile-r0.json",
+        "data/operations/toolbox-noaa-n2o-annual-growth-lookup-source-binding-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-comparison-raw-only-paired-input-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-comparison-raw-only-paired-output-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-comparison-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-comparison-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-real-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-route-profile-r0.json",
+        "data/operations/toolbox-noaa-n2o-source-surface-source-binding-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
+        "data/operations/toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0.json",
+        "data/operations/toolbox-noaa-sf6-route-choice-real-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-c1-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-input-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-route-evidence-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-route-profile-r0.json",
+        "data/operations/toolbox-noaa-sf6-source-surface-comparison-source-binding-r0.json",
+        "data/operations/toolbox-offline-source-snapshot-binding-c1-evidence-r0.json",
+        "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r0.json",
+        "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r1.json",
+        "data/operations/toolbox-offline-source-snapshot-run-verifier-route-evidence-r0.json",
+        "data/operations/toolbox-offline-source-snapshot-run-verifier-route-evidence-r1.json",
+        "data/operations/toolbox-openalex-live-task-evidence-r0.json",
+        "data/operations/toolbox-openalex-locations-c1-evidence-r0.json",
+        "data/operations/toolbox-openalex-query-search-real-task-evidence-r0.json",
+        "data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+        "data/operations/toolbox-openalex-query-search-route-evidence-r0.json",
+        "data/operations/toolbox-openalex-query-search-route-profile-r0.json",
+        "data/operations/toolbox-openalex-query-search-source-binding-r0.json",
+        "data/operations/toolbox-openalex-query-search-source-binding-r1.json",
+        "data/operations/toolbox-portable-research-episode-builder-c1-evidence-r0.json",
+        "data/operations/toolbox-portable-research-episode-builder-real-task-evidence-r0.json",
+        "data/operations/toolbox-portable-research-episode-builder-real-task-input-r0.json",
+        "data/operations/toolbox-portable-research-episode-builder-real-task-output-r0.json",
+        "data/operations/toolbox-portable-research-episode-builder-route-evidence-r0.json",
+        "data/operations/toolbox-portable-research-episode-builder-route-execution-evidence-r0.json",
+        "data/operations/toolbox-portable-research-episode-builder-route-profile-r0.json",
+        "data/operations/toolbox-portable-research-episode-c1-comparison-r0.json",
+        "data/operations/toolbox-portable-research-episode-real-task-r0.json",
+        "data/operations/toolbox-portable-research-episode-route-evidence-r0.json",
+        "data/operations/toolbox-portable-research-episode-route-profile-r0.json",
+        "data/operations/toolbox-producer-consumer-semantic-c1-evidence-r0.json",
+        "data/operations/toolbox-producer-consumer-semantic-real-task-r0.json",
+        "data/operations/toolbox-producer-consumer-semantic-route-evidence-r0.json",
+        "data/operations/toolbox-producer-consumer-semantic-route-profile-r0.json",
+        "data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
+        "data/operations/toolbox-publication-metadata-cross-source-real-input-r0.json",
+        "data/operations/toolbox-publication-metadata-cross-source-real-task-r0.json",
+        "data/operations/toolbox-publication-metadata-cross-source-route-evidence-r0.json",
+        "data/operations/toolbox-pubmed-citation-matcher-c1-evidence-r0.json",
+        "data/operations/toolbox-pubmed-citation-matcher-real-task-r0.json",
+        "data/operations/toolbox-pubmed-citation-matcher-route-evidence-r0.json",
+        "data/operations/toolbox-pubmed-citation-matcher-route-profile-r0.json",
+        "data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+        "data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json",
+        "data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+        "data/operations/toolbox-pubmed-doi-update-real-task-r1.json",
+        "data/operations/toolbox-pubmed-doi-update-route-evidence-r0.json",
+        "data/operations/toolbox-pubmed-doi-update-route-evidence-r1.json",
+        "data/operations/toolbox-pubmed-doi-update-route-evidence-r2.json",
+        "data/operations/toolbox-pubmed-query-search-c1-evidence-r0.json",
+        "data/operations/toolbox-pubmed-query-search-real-task-r0.json",
+        "data/operations/toolbox-pubmed-query-search-route-evidence-r0.json",
+        "data/operations/toolbox-pubmed-query-search-route-profile-r0.json",
+        "data/operations/toolbox-pubmed-query-search-source-binding-r0.json",
+        "data/operations/toolbox-q38-evidence-bundle-real-tool-test-r0.json",
+        "data/operations/toolbox-q38-evidence-bundle-route-evidence-r0.json",
+        "data/operations/toolbox-raw-evidence-navigator-c1-comparison-r0.json",
+        "data/operations/toolbox-raw-evidence-navigator-route-evidence-r0.json",
+        "data/operations/toolbox-real-task-route-evidence-r0.json",
+        "data/operations/toolbox-real-task-route-evidence-r1.json",
+        "data/operations/toolbox-real-task-route-evidence-r2.json",
+        "data/operations/toolbox-receiver-handoff-preflight-c1-evidence-r0.json",
+        "data/operations/toolbox-reusable-context-expiry-backward-output-v0-2-r0.json",
+        "data/operations/toolbox-reusable-context-expiry-baseline-input-r0.json",
+        "data/operations/toolbox-reusable-context-expiry-baseline-output-v0-1.json",
+        "data/operations/toolbox-reusable-context-expiry-c1-evidence-r0.json",
+        "data/operations/toolbox-reusable-context-expiry-real-task-input-r1.json",
+        "data/operations/toolbox-reusable-context-expiry-real-task-output-r1.json",
+        "data/operations/toolbox-reusable-context-preflight-c1-comparison-r0.json",
+        "data/operations/toolbox-reusable-context-preflight-real-task-r0.json",
+        "data/operations/toolbox-reusable-context-preflight-route-evidence-r0.json",
+        "data/operations/toolbox-reusable-context-preflight-route-evidence-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r0.json",
+        "data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
+        "data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+        "data/operations/toolbox-selected-index-search-result-merge-output-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-real-task-r0.json",
+        "data/operations/toolbox-selected-index-search-result-merge-real-task-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-route-evidence-r0.json",
+        "data/operations/toolbox-selected-index-search-result-merge-route-evidence-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r2.json",
+        "data/operations/toolbox-selected-index-search-result-merge-route-profile-r0.json",
+        "data/operations/toolbox-selected-index-search-result-merge-route-profile-r2.json",
+        "data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r1.json",
+        "data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r2.json",
+        "data/operations/toolbox-selected-index-search-result-merge-source-binding-r0.json",
+        "data/operations/toolbox-source-section-parity-c1-evidence-r0.json",
+        "data/operations/toolbox-source-section-parity-real-task-evidence-r0.json",
+        "data/operations/toolbox-source-section-parity-real-task-output-r0.json",
+        "data/operations/toolbox-source-section-parity-route-evidence-r0.json",
+        "data/operations/toolbox-source-section-parity-route-evidence-r1.json",
+        "data/operations/toolbox-source-section-parity-route-execution-evidence-r0.json",
+        "data/operations/toolbox-source-section-parity-route-profile-r0.json",
+        "data/operations/toolbox-structural-analogy-search-c1-evidence-r0.json",
+        "data/operations/toolbox-structural-analogy-search-real-task-output-r0.json",
+        "data/operations/toolbox-structural-analogy-search-route-evidence-r0.json",
+        "data/operations/toolbox-structural-analogy-search-source-binding-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-c1-evidence-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-real-task-evidence-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-real-task-input-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-real-task-output-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-route-evidence-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-route-profile-r0.json",
+        "data/operations/toolbox-task-decomposition-solvability-source-binding-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-c1-evidence-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-input-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-output-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-real-task-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-route-evidence-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-route-profile-r0.json",
+        "data/operations/toolbox-validation-invocation-dedup-source-binding-r0.json",
+        "docs/operations/actions-interval-union.md",
+        "docs/operations/actions-step-timeline-summary.md",
+        "docs/operations/actions-validation-attribution.md",
+        "docs/operations/actions-validation-target-coverage.md",
+        "docs/operations/arxiv-metadata-lookup.md",
+        "docs/operations/arxiv-query-search.md",
+        "docs/operations/counterfactual-fragility-probe.md",
+        "docs/operations/crossref-query-search.md",
+        "docs/operations/datacite-doi-metadata.md",
+        "docs/operations/declared-permission-delta-preflight.md",
+        "docs/operations/executed-experience-reuse-preflight.md",
+        "docs/operations/execution-candidate-pareto-frontier.md",
+        "docs/operations/execution-state-lineage-audit.md",
+        "docs/operations/failure-anchored-recovery-preflight.md",
+        "docs/operations/governed-improvement-transition.md",
+        "docs/operations/grounded-ideation-preflight.md",
+        "docs/operations/noaa-ch4-annual-growth-lookup.md",
+        "docs/operations/noaa-ch4-source-surface-comparison.md",
+        "docs/operations/noaa-co2-annual-growth-lookup.md",
+        "docs/operations/noaa-co2-ch4-annual-growth-pairing.md",
+        "docs/operations/noaa-co2-source-surface-comparison.md",
+        "docs/operations/noaa-n2o-annual-growth-lookup.md",
+        "docs/operations/noaa-n2o-source-surface-comparison.md",
+        "docs/operations/noaa-sf6-annual-growth-lookup.md",
+        "docs/operations/noaa-sf6-source-surface-comparison.md",
+        "docs/operations/openalex-query-search.md",
+        "docs/operations/portable-research-episode-preflight.md",
+        "docs/operations/producer-consumer-semantic-preflight.md",
+        "docs/operations/pubmed-citation-matcher.md",
+        "docs/operations/selected-index-search-result-merge.md",
+        "docs/operations/source-section-byte-parity.md",
+        "docs/operations/toolbox-actions-check-observations.md",
+        "docs/operations/toolbox-agent-episode-binding.md",
+        "docs/operations/toolbox-audit-finding-comparator.md",
+        "docs/operations/toolbox-bounded-thinking-operation.md",
+        "docs/operations/toolbox-component-comparison.md",
+        "docs/operations/toolbox-component-path-residue.md",
+        "docs/operations/toolbox-context-packet-variant-comparator.md",
+        "docs/operations/toolbox-crossref-citation-matcher.md",
+        "docs/operations/toolbox-crossref-metadata-verifier.md",
+        "docs/operations/toolbox-crossref-reference-metadata-comparison.md",
+        "docs/operations/toolbox-europe-pmc-fulltext-locator.md",
+        "docs/operations/toolbox-europe-pmc-query-search.md",
+        "docs/operations/toolbox-evidence-update-snapshot-comparator.md",
+        "docs/operations/toolbox-execution-effect-receipt.md",
+        "docs/operations/toolbox-handoff-action-binding-preflight.md",
+        "docs/operations/toolbox-handoff-advisory-selection.md",
+        "docs/operations/toolbox-handoff-artifact-byte-check.md",
+        "docs/operations/toolbox-offline-source-snapshot-binding.md",
+        "docs/operations/toolbox-openalex-work-metadata.md",
+        "docs/operations/toolbox-portable-research-episode-builder.md",
+        "docs/operations/toolbox-publication-metadata-cross-source-comparison.md",
+        "docs/operations/toolbox-pubmed-query-search.md",
+        "docs/operations/toolbox-receiver-handoff-preflight.md",
+        "docs/operations/toolbox-reusable-context-preflight.md",
+        "docs/operations/toolbox-structural-analogy-search.md",
+        "docs/operations/toolbox-task-decomposition-solvability.md",
+        "docs/operations/toolbox-validation-invocation-deduplication.md",
+        "docs/operations/toolbox-verify-offline-source-snapshot-run.md",
+        "docs/toolbox-jsonl-selector-r0.md",
+        "research_os_v1/g1_goal_intake/README.md",
+        "research_os_v1/g1_goal_intake/__init__.py",
+        "research_os_v1/g1_goal_intake/__main__.py",
+        "research_os_v1/g1_goal_intake/fixtures/structurally-valid-proposal.json",
+        "research_os_v1/g1_goal_intake/preflight.py",
+        "schemas/operations/declared-permission-delta-r0.schema.json",
+        "schemas/operations/execution-candidate-pareto-input-r0.schema.json",
+        "schemas/operations/execution-candidate-pareto-output-r0.schema.json",
+        "schemas/operations/governed-improvement-transition-r0.schema.json",
+        "schemas/operations/grounded-ideation-preflight-r0.schema.json",
+        "schemas/operations/publication-metadata-comparison-input-r0.schema.json",
+        "schemas/operations/publication-metadata-comparison-output-r0.schema.json",
+        "schemas/operations/pubmed-citation-matcher-input-r0.schema.json",
+        "schemas/operations/pubmed-citation-matcher-output-r0.schema.json",
+        "schemas/operations/pubmed-doi-update-audit-input-r0.schema.json",
+        "schemas/operations/pubmed-doi-update-audit-output-r0.schema.json",
+        "schemas/operations/pubmed-update-link-inspection-input-r0.schema.json",
+        "schemas/operations/toolbox-actions-check-observations-input-r0.schema.json",
+        "schemas/operations/toolbox-actions-check-observations-output-r0.schema.json",
+        "schemas/operations/toolbox-actions-interval-union-output-r0.schema.json",
+        "schemas/operations/toolbox-actions-validation-attribution-input-r0.schema.json",
+        "schemas/operations/toolbox-actions-validation-attribution-output-r0.schema.json",
+        "schemas/operations/toolbox-actions-validation-target-coverage-input-r0.schema.json",
+        "schemas/operations/toolbox-actions-validation-target-coverage-output-r0.schema.json",
+        "schemas/operations/toolbox-agent-episode-binding-r0.schema.json",
+        "schemas/operations/toolbox-arxiv-query-search-input-r0.schema.json",
+        "schemas/operations/toolbox-arxiv-query-search-output-r0.schema.json",
+        "schemas/operations/toolbox-audit-finding-comparison-r0.schema.json",
+        "schemas/operations/toolbox-bounded-thinking-operation-input-r0.schema.json",
+        "schemas/operations/toolbox-bounded-thinking-operation-output-r0.schema.json",
+        "schemas/operations/toolbox-candidate-cards-r0.schema.json",
+        "schemas/operations/toolbox-component-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-component-comparison-output-r0.schema.json",
+        "schemas/operations/toolbox-component-path-residue-input-r0.schema.json",
+        "schemas/operations/toolbox-component-path-residue-output-r0.schema.json",
+        "schemas/operations/toolbox-counterfactual-probe-input-r0.schema.json",
+        "schemas/operations/toolbox-counterfactual-probe-output-r0.schema.json",
+        "schemas/operations/toolbox-crossref-citation-matcher-input-r0.schema.json",
+        "schemas/operations/toolbox-crossref-citation-matcher-output-r0.schema.json",
+        "schemas/operations/toolbox-crossref-query-search-input-r0.schema.json",
+        "schemas/operations/toolbox-crossref-query-search-output-r0.schema.json",
+        "schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r1.schema.json",
+        "schemas/operations/toolbox-datacite-doi-metadata-input-r0.schema.json",
+        "schemas/operations/toolbox-datacite-doi-metadata-output-r0.schema.json",
+        "schemas/operations/toolbox-europe-pmc-fulltext-locator-r0.schema.json",
+        "schemas/operations/toolbox-evidence-update-snapshot-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-evidence-update-snapshot-comparison-output-r0.schema.json",
+        "schemas/operations/toolbox-executed-experience-preflight-r0.schema.json",
+        "schemas/operations/toolbox-executed-experience-preflight-r1.schema.json",
+        "schemas/operations/toolbox-executed-experience-result-r0.schema.json",
+        "schemas/operations/toolbox-executed-experience-result-r1.schema.json",
+        "schemas/operations/toolbox-execution-effect-receipt-input-r0.schema.json",
+        "schemas/operations/toolbox-execution-effect-receipt-output-r0.schema.json",
+        "schemas/operations/toolbox-execution-state-lineage-input-r0.schema.json",
+        "schemas/operations/toolbox-execution-state-lineage-output-r0.schema.json",
+        "schemas/operations/toolbox-failure-anchored-recovery-input-r0.schema.json",
+        "schemas/operations/toolbox-failure-anchored-recovery-output-r0.schema.json",
+        "schemas/operations/toolbox-handoff-action-binding-input-r0.schema.json",
+        "schemas/operations/toolbox-handoff-action-binding-output-r0.schema.json",
+        "schemas/operations/toolbox-handoff-advisory-selection-input-r0.schema.json",
+        "schemas/operations/toolbox-handoff-advisory-selection-output-r0.schema.json",
+        "schemas/operations/toolbox-jsonl-selector-c1-evidence-r0.schema.json",
+        "schemas/operations/toolbox-jsonl-selector-input-r0.schema.json",
+        "schemas/operations/toolbox-jsonl-selector-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-ch4-source-surface-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-ch4-source-surface-comparison-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r1.schema.json",
+        "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r2.schema.json",
+        "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r1.schema.json",
+        "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r2.schema.json",
+        "schemas/operations/toolbox-noaa-co2-source-surface-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-co2-source-surface-comparison-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-n2o-annual-growth-lookup-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-n2o-annual-growth-lookup-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-n2o-source-surface-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-n2o-source-surface-comparison-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-output-r0.schema.json",
+        "schemas/operations/toolbox-noaa-sf6-source-surface-comparison-input-r0.schema.json",
+        "schemas/operations/toolbox-noaa-sf6-source-surface-comparison-output-r0.schema.json",
+        "schemas/operations/toolbox-openalex-query-search-input-r0.schema.json",
+        "schemas/operations/toolbox-openalex-query-search-output-r0.schema.json",
+        "schemas/operations/toolbox-portable-research-episode-builder-input-r0.schema.json",
+        "schemas/operations/toolbox-portable-research-episode-builder-output-r0.schema.json",
+        "schemas/operations/toolbox-portable-research-episode-r0.schema.json",
+        "schemas/operations/toolbox-producer-consumer-semantic-input-r0.schema.json",
+        "schemas/operations/toolbox-producer-consumer-semantic-output-r0.schema.json",
+        "schemas/operations/toolbox-pubmed-query-search-input-r0.schema.json",
+        "schemas/operations/toolbox-pubmed-query-search-output-r0.schema.json",
+        "schemas/operations/toolbox-q38-evidence-bundle-r0.schema.json",
+        "schemas/operations/toolbox-reusable-context-expiry-c1-evidence-r0.schema.json",
+        "schemas/operations/toolbox-reusable-context-preflight-r0.schema.json",
+        "schemas/operations/toolbox-reusable-context-preflight-r1.schema.json",
+        "schemas/operations/toolbox-reusable-context-preflight-result-r0.schema.json",
+        "schemas/operations/toolbox-reusable-context-preflight-result-r1.schema.json",
+        "schemas/operations/toolbox-selected-index-search-result-merge-input-r0.schema.json",
+        "schemas/operations/toolbox-selected-index-search-result-merge-output-r0.schema.json",
+        "schemas/operations/toolbox-selected-index-search-result-merge-output-r1.schema.json",
+        "schemas/operations/toolbox-source-section-parity-input-r0.schema.json",
+        "schemas/operations/toolbox-source-section-parity-output-r0.schema.json",
+        "schemas/operations/toolbox-structural-analogy-search-input-r0.schema.json",
+        "schemas/operations/toolbox-structural-analogy-search-output-r0.schema.json",
+        "schemas/operations/toolbox-task-decomposition-solvability-input-r0.schema.json",
+        "schemas/operations/toolbox-task-decomposition-solvability-output-r0.schema.json",
+        "schemas/operations/toolbox-validation-invocation-dedup-input-r0.schema.json",
+        "schemas/operations/toolbox-validation-invocation-dedup-output-r0.schema.json",
+        "tools/extract_cluster_source_brief.py",
+        "tools/operations/build_toolbox_identity_cards.py",
+        "tools/operations/validate_toolbox_candidates.py",
+        "tools/toolbox_actions_check_observations.py",
+        "tools/toolbox_actions_interval_union.py",
+        "tools/toolbox_actions_repeated_step_analysis.py",
+        "tools/toolbox_actions_step_timeline.py",
+        "tools/toolbox_actions_validation_attribution.py",
+        "tools/toolbox_actions_validation_target_coverage.py",
+        "tools/toolbox_agent_episode_binding.py",
+        "tools/toolbox_arxiv_metadata_lookup.py",
+        "tools/toolbox_arxiv_query_search.py",
+        "tools/toolbox_audit_finding_comparator.py",
+        "tools/toolbox_batch_resolve_current_assets.py",
+        "tools/toolbox_bind_offline_source_snapshot_run.py",
+        "tools/toolbox_bounded_thinking_operation.py",
+        "tools/toolbox_build_archify_derived_ir.py",
+        "tools/toolbox_build_portable_research_episode.py",
+        "tools/toolbox_cluster_source_brief.py",
+        "tools/toolbox_cognitive_migration_revision.py",
+        "tools/toolbox_compare_crossref_reference_metadata.py",
+        "tools/toolbox_compare_evidence_update_snapshots.py",
+        "tools/toolbox_compare_noaa_ch4_surfaces.py",
+        "tools/toolbox_compare_noaa_co2_surfaces.py",
+        "tools/toolbox_compare_noaa_n2o_surfaces.py",
+        "tools/toolbox_compare_noaa_sf6_surfaces.py",
+        "tools/toolbox_compare_publication_metadata.py",
+        "tools/toolbox_compare_source_section_bytes.py",
+        "tools/toolbox_compare_task_decomposition_solvability.py",
+        "tools/toolbox_component_comparison.py",
+        "tools/toolbox_component_path_residue.py",
+        "tools/toolbox_context_packet.py",
+        "tools/toolbox_context_packet_variant_comparator.py",
+        "tools/toolbox_counterfactual_probe.py",
+        "tools/toolbox_crossref_citation_matcher.py",
+        "tools/toolbox_crossref_metadata_verifier.py",
+        "tools/toolbox_crossref_query_search.py",
+        "tools/toolbox_datacite_doi_metadata.py",
+        "tools/toolbox_declared_permission_delta_preflight.py",
+        "tools/toolbox_europe_pmc_fulltext_locator.py",
+        "tools/toolbox_europe_pmc_query_search.py",
+        "tools/toolbox_executed_experience_preflight.py",
+        "tools/toolbox_execution_effect_receipt.py",
+        "tools/toolbox_execution_pareto_frontier.py",
+        "tools/toolbox_execution_state_lineage.py",
+        "tools/toolbox_failure_anchored_recovery.py",
+        "tools/toolbox_function_os_evaluator.py",
+        "tools/toolbox_g1_goal_intake_preflight.py",
+        "tools/toolbox_governed_improvement_transition.py",
+        "tools/toolbox_grounded_ideation_preflight.py",
+        "tools/toolbox_handoff_action_binding_preflight.py",
+        "tools/toolbox_handoff_advisory_selector.py",
+        "tools/toolbox_jsonl_selector.py",
+        "tools/toolbox_merge_selected_index_search_results.py",
+        "tools/toolbox_noaa_ch4_annual_growth.py",
+        "tools/toolbox_noaa_co2_annual_growth.py",
+        "tools/toolbox_noaa_n2o_annual_growth_lookup.py",
+        "tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+        "tools/toolbox_noaa_source_surface_comparison_core.py",
+        "tools/toolbox_openalex_query_search.py",
+        "tools/toolbox_openalex_work_metadata.py",
+        "tools/toolbox_pack_registry_inspector.py",
+        "tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py",
+        "tools/toolbox_portable_research_episode.py",
+        "tools/toolbox_producer_consumer_semantic_preflight.py",
+        "tools/toolbox_pubmed_citation_matcher.py",
+        "tools/toolbox_pubmed_doi_update_audit.py",
+        "tools/toolbox_pubmed_identifier_resolver.py",
+        "tools/toolbox_pubmed_query_search.py",
+        "tools/toolbox_pubmed_update_link_reader.py",
+        "tools/toolbox_raw_evidence_navigator.py",
+        "tools/toolbox_read_current_asset_card.py",
+        "tools/toolbox_receiver_handoff_preflight.py",
+        "tools/toolbox_reusable_context_preflight.py",
+        "tools/toolbox_structural_analogy_search.py",
+        "tools/toolbox_validate_evidence_program.py",
+        "tools/toolbox_validate_q38_evidence_bundle.py",
+        "tools/toolbox_validation_invocation_deduplication.py",
+        "tools/toolbox_verify_handoff_artifact_files.py",
+        "tools/toolbox_verify_offline_source_snapshot_run.py"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.7.0"
+  "registry_version": "2.8.0"
 }

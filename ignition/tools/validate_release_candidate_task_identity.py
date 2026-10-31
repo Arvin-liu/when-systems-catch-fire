@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -42,8 +43,8 @@ def _current_identity() -> tuple[str, str, int]:
 def _current_paths() -> tuple[Path, Path, Path, Path, str, str]:
     task_id, architecture_task, ordinal = _current_identity()
     return (
-        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
-        ROOT / f"data/operations/iterations/{ordinal}/progress.jsonl",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/progress.jsonl",
         ROOT / f"agent-results/{task_id}-result.md",
         ROOT / f"agent-results/{task_id}-machine-receipt.json",
         task_id,
@@ -75,6 +76,31 @@ def load_result_task(path: Path) -> str | None:
         if EXPECTED_TASK_ID in line and "#" not in line:
             return EXPECTED_TASK_ID
     return None
+
+
+def resolve_observed_branch(environ: dict[str, str] | None = None) -> str | None:
+    """Resolve the PR source branch when GitHub Actions checks out detached HEAD."""
+    env = os.environ if environ is None else environ
+    head_ref = env.get("GITHUB_HEAD_REF", "").strip()
+    if head_ref:
+        return head_ref
+    event_name = env.get("GITHUB_EVENT_NAME", "").strip()
+    if event_name in {"pull_request", "pull_request_target"}:
+        # A PR event without its source ref is unverifiable; return an empty
+        # value so the exact branch comparison fails closed.
+        return ""
+    ref = env.get("GITHUB_REF", "").strip()
+    if ref.startswith("refs/heads/"):
+        return ref.removeprefix("refs/heads/")
+    branch = subprocess.run(
+        ["git", "branch", "--show-current"],
+        cwd=REPO_ROOT,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    ).stdout.strip()
+    return branch or None
 
 
 def validate_documents(
@@ -206,9 +232,7 @@ def validate_documents(
 
 
 def validate(*, require_result: bool = False, require_release_ready: bool = False) -> list[str]:
-    observed_branch = subprocess.run(
-        ["git", "branch", "--show-current"], cwd=REPO_ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False
-    ).stdout.strip()
+    observed_branch = resolve_observed_branch()
     result_task_id = load_result_task(RESULT_PATH)
     machine_task_id = load_result_task(MACHINE_RECEIPT_PATH)
     return validate_documents(

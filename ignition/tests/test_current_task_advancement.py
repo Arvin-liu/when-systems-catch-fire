@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import copy
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
 from tools import advance_current_task as advancement
 from tools import validate_execution_contract_135 as validate_execution_contract
@@ -56,6 +59,29 @@ class CurrentTaskAdvancementTests(unittest.TestCase):
         self.assertIn(("IGNITION-20260821-130", "IGNITION-20260821-131"), edges)
         self.assertIn(("IGNITION-20260822-132", "IGNITION-20260822-133"), edges)
         self.assertIn(("IGNITION-20260822-133", "IGNITION-20260822-134"), edges)
+
+    def test_contract_selection_follows_registered_task20_binding(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = "ignition/data/operations/iterations/020/execution-contract-r1.json"
+            path = root / source
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps({
+                "task_id": "IGNITION-20261024-020",
+                "identity_expectations": {"release_candidate_task": "IGNITION-20261024-020"},
+            }), encoding="utf-8")
+            model = {"role_bindings": {"release_candidate_task": {"source_path": source}}}
+            self.assertEqual(advancement.resolve_contract_path(model, root), path.resolve())
+
+    def test_contract_selection_rejects_unbound_or_escaping_path(self) -> None:
+        with self.assertRaises(advancement.AdvancementError):
+            advancement.resolve_contract_path({"role_bindings": {"release_candidate_task": {
+                "source_path": "ignition/data/operations/iterations/149/execution-contract-r1.json"
+            }}}, Path("/tmp"))
+        with self.assertRaises(advancement.AdvancementError):
+            advancement.resolve_contract_path({"role_bindings": {"release_candidate_task": {
+                "source_path": "../../outside.json"
+            }}}, Path("/tmp"))
 
 
 if __name__ == "__main__":

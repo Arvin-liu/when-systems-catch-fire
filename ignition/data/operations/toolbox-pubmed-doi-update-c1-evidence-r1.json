@@ -1,0 +1,110 @@
+{
+  "schema_version": "ignition.toolbox-pubmed-doi-update-c1-evidence-r1",
+  "comparison_scope": "One exact public DOI task compares the DOI composition inner reader with an independently invoked exact-PMID reader supplied the expected DOI. This checks same-task stage consistency and the identity gate only.",
+  "task": {
+    "doi": "10.1016/j.ajhg.2010.04.006",
+    "pmid": "20466091",
+    "pmcid": "PMC2869000",
+    "goal": "Resolve the DOI, require same-response DOI identity in PubMed EFetch, and inspect only raw Comments/Corrections rows.",
+    "permissions": {
+      "explicit_cli_flag": "--allow-public-network",
+      "hosts": [
+        "pmc.ncbi.nlm.nih.gov",
+        "eutils.ncbi.nlm.nih.gov"
+      ],
+      "writes": false,
+      "secrets": false,
+      "billing": false
+    }
+  },
+  "composed_invocation": {
+    "returncode": 0,
+    "started_at_utc": "2026-10-25T20:13:14.227Z",
+    "completed_at_utc": "2026-10-25T20:13:16.417Z",
+    "process_wall_ms": 2189.95,
+    "tool_version": "0.2.0",
+    "resolution": {
+      "acquisition_status": "OK",
+      "doi": "10.1016/j.ajhg.2010.04.006",
+      "http_status": 200,
+      "identifier_status": "IDENTIFIER_RESOLVED",
+      "matched_doi": "10.1016/j.ajhg.2010.04.006",
+      "pmcid": "PMC2869000",
+      "pmid": "20466091",
+      "response_sha256": "7ae97ebbd89ed995841c390ed9a2d49fde8bd2251a933d3c4a8de16ad26b7daa",
+      "retrieval_timestamp_utc": "2026-10-25T20:13:14Z",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.1016%2Fj.ajhg.2010.04.006&format=json"
+    },
+    "update_link_row": {
+      "acquisition_status": "OK",
+      "doi_binding_status": "EXACT_MATCH",
+      "expected_doi": "10.1016/j.ajhg.2010.04.006",
+      "http_status": 200,
+      "pmid": "20466091",
+      "pubmed_record_url": "https://pubmed.ncbi.nlm.nih.gov/20466091/",
+      "record_status": "RECORD_FOUND_NO_RECORDED_RELATIONS",
+      "relations": [],
+      "relations_truncated": false,
+      "response_sha256": "5c2c7c69e8b1e220f67176bd4c9d56ea61aa578d29b2b1da25b97722fd224b42",
+      "retrieval_timestamp_utc": "2026-10-25T20:13:14Z",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20466091&retmode=xml&tool=IgnitionToolbox"
+    },
+    "source_code_sha256": {
+      "composition_wrapper": "91eec6b680cb7b2a9d5f12a14fc3253e359541e4d4e888255af10470135a3ec1",
+      "identifier_resolver": "05b89735fabd074f1ff79daf14fbc04af0b18a7d7ca6fb03d074306f9d6a05eb",
+      "update_link_reader": "e66e2083327b86be30f1c0d9b00c65e079d3b65e9be0ac0015930ee5baa7647f"
+    }
+  },
+  "independent_reader_invocation": {
+    "returncode": 0,
+    "started_at_utc": "2026-10-25T20:10:36.405Z",
+    "completed_at_utc": "2026-10-25T20:10:37.600Z",
+    "process_wall_ms": 1194.518,
+    "tool_version": "0.2.0",
+    "request_json": {
+      "pmids": [
+        "20466091"
+      ],
+      "expected_doi": "10.1016/j.ajhg.2010.04.006"
+    },
+    "row": {
+      "acquisition_status": "OK",
+      "doi_binding_status": "EXACT_MATCH",
+      "expected_doi": "10.1016/j.ajhg.2010.04.006",
+      "http_status": 200,
+      "pmid": "20466091",
+      "pubmed_record_url": "https://pubmed.ncbi.nlm.nih.gov/20466091/",
+      "record_status": "RECORD_FOUND_NO_RECORDED_RELATIONS",
+      "relations": [],
+      "relations_truncated": false,
+      "response_sha256": "5c2c7c69e8b1e220f67176bd4c9d56ea61aa578d29b2b1da25b97722fd224b42",
+      "retrieval_timestamp_utc": "2026-10-25T20:10:36Z",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20466091&retmode=xml&tool=IgnitionToolbox"
+    },
+    "source_code_sha256": {
+      "wrapper": "e66e2083327b86be30f1c0d9b00c65e079d3b65e9be0ac0015930ee5baa7647f"
+    }
+  },
+  "matched_observations": {
+    "same_returned_pmid": true,
+    "same_expected_doi": true,
+    "same_doi_binding_status": true,
+    "same_record_status": true,
+    "same_relations": true,
+    "same_efetch_response_sha256": true,
+    "response_sha256": "5c2c7c69e8b1e220f67176bd4c9d56ea61aa578d29b2b1da25b97722fd224b42"
+  },
+  "c1_disposition": {
+    "research.inspect_pubmed_update_links": "SPECIALIZED: retain direct known-PMID use; optional expected_doi verifies the exact response when a composing caller supplies one.",
+    "research.audit_pubmed_updates_from_doi": "SPECIALIZED: retain the optional one-DOI resolver-plus-reader route with same-response DOI binding.",
+    "replacement_decision": "NO_REPLACEMENT_ESTABLISHED",
+    "uncertainty": "One DOI and two matching EFetch reads do not measure broad accuracy, completeness, reliability, cost, latency distribution, provider authenticity, or scientific validity."
+  },
+  "claim_ceiling": "The live response reported the same DOI on the exact PubMed record and no Comments/Corrections rows in these responses. This is not proof that no update exists, does not authenticate the provider, and does not establish retraction status or scientific validity.",
+  "source_evidence_refs": [
+    "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+    "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r1.json",
+    "ignition/tests/test_toolbox_pubmed_update_link_reader.py",
+    "ignition/tests/test_toolbox_pubmed_doi_update_audit.py"
+  ]
+}

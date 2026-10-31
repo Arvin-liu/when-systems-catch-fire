@@ -1,0 +1,60 @@
+{
+  "schema_version": "toolbox-c1-comparison-r0",
+  "candidate_tool_id": "maintenance.preflight_governed_improvement_transition",
+  "owner_rule_ref": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e",
+    "section": "C1"
+  },
+  "source_concept_ref": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "commit": "9a865118dbd0ae84dbed716b8c03accc395e7047",
+    "path": "iterations/2026-10-05-ab19-recursive-improvement-gap-audit.md",
+    "blob_sha1": "d84326160a2793fdf45f1d96efef9ffed8b95f66",
+    "status": "NONCANONICAL_NEEDS_SYNTHETIC_PILOT"
+  },
+  "comparison_method": "One matched synthetic multi-successor task was supplied to the transition preflight once per successor and to the Pareto summary once across all candidates. Output coverage and CLI elapsed time were recorded; no real candidate system ran.",
+  "compared_tools": [
+    {
+      "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+      "implementation_path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+      "declared_scope": "Summarizes paired candidate outcomes and one caller-declared resource metric into pass-rate, cost, dominated, and frontier results.",
+      "difference": "It does not bind a frozen predecessor-successor transition, evaluator drift, held-out replay, permission delta, rollback target, or later-round R&D gain."
+    },
+    {
+      "tool_id": "maintenance.preflight_producer_consumer_semantics",
+      "implementation_path": "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+      "declared_scope": "Checks declared producer and consumer text patterns and field matches from caller-provided source excerpts.",
+      "difference": "It checks a static producer-consumer relation and does not compare predecessor-successor improvement evidence."
+    },
+    {
+      "tool_id": "writing.preflight_cognitive_migration_revision",
+      "implementation_path": "ignition/tools/toolbox_cognitive_migration_revision.py",
+      "declared_scope": "Reviews caller-selected paragraph order and declared cognitive migration while preserving source text boundaries.",
+      "difference": "Its input and output concern revision structure, not system-transition measurements, evaluator binding, cost, failures, authority, or rollback."
+    }
+  ],
+  "same_task_trials": {
+    "status": "COMPLETED_SYNTHETIC_ONLY",
+    "task_fixture_count": 1,
+    "input_fixture_count": 3,
+    "measured_cost": "Local Python CLI elapsed time only; 30 process invocations per input shape, including interpreter startup; no calibrated runtime or operating-cost estimate.",
+    "matched_quality_results": "Predecessor A passed 2/3; B passed 2/3 at 8 declared work units/case; C passed 3/3 at 11 units/case. Pareto reported B and C on the observed frontier; transition reviews returned REVIEW_REQUIRED for A→B and A→C.",
+    "evidence_ref": "ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json"
+  },
+  "decision": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "replacement_candidates": [],
+    "deprecation_or_retirement_status": "COMPARISON_UNKNOWN",
+    "coexistence_basis": "On the one synthetic task, Pareto uniquely summarized the multi-successor pass-rate/resource frontier; transition preflight uniquely reported per-successor evaluation binding, failure/cost guardrails, authority scope, rollback binding, and next-round R&D status. This demonstrates complementary declared output coverage only. Real-task utility, correctness, reliability, generalization, and cost remain unknown; do not replace or retire any tool."
+  },
+  "low_cost_follow_up": {
+    "status": "COMPLETED_SYNTHETIC_ONLY",
+    "proposal": "Executed the planned low-cost matched synthetic comparison: one frozen A/B/C packet, two per-successor transition preflights, and one multi-candidate Pareto summary; compared output coverage, invocation count, and local CLI elapsed time.",
+    "evidence_ref": "ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json",
+    "automatic_replacement_permitted": false
+  },
+  "claim_ceiling": "The comparison establishes declared contract differences only; it does not establish superior quality, lower cost, reliability, or replacement value."
+}

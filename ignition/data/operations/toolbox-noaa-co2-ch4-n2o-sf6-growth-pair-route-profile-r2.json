@@ -1,0 +1,14 @@
+{
+  "task_id": "noaa-co2-ch4-n2o-sf6-captured-growth-panel-2023-2025-v0-3",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r2 containing complete version-0.1.0 CO2 and CH4 outputs and optional N2O and/or SF6 comparator outputs from their fixed NOAA GML page/raw surfaces; all supplied outputs use the same inclusive year range, N2O starts no earlier than 2001, and SF6 starts no earlier than 1998."
+  ],
+  "required_outputs": [
+    "Same-year separate NOAA GML CO2 (ppm), CH4/N2O (ppb), and SF6 (ppt) source-surface comparison rows keyed by year with every per-gas status retained; no cross-gas arithmetic or simultaneity claim.",
+    "Eight fixed-source receipts, per-species retrieval times and response digests, four comparator-output digests and the combined capture-time span for four gases."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

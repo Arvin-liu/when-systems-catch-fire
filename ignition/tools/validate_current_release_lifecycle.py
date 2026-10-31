@@ -46,13 +46,13 @@ def current_execution_contract_path() -> Path:
     lineage = load_json(LINEAGE_PATH)
     task_id = lineage["task_identity"]["current_formal_task"]
     ordinal = int(task_id.rsplit("-", 1)[1])
-    return ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json"
+    return ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json"
 
 
 def current_audit_path() -> Path:
     lineage = load_json(LINEAGE_PATH)
     ordinal = int(lineage["task_identity"]["current_formal_task"].rsplit("-", 1)[1])
-    return ROOT / f"data/operations/iterations/{ordinal}/step15-release-lifecycle-audit.json"
+    return ROOT / f"data/operations/iterations/{ordinal:03d}/step15-release-lifecycle-audit.json"
 
 
 def validate(document: dict[str, Any] | None = None) -> list[str]:

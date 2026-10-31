@@ -37,7 +37,7 @@ def _current_identity() -> tuple[str, int]:
 def _current_paths() -> tuple[Path, Path, str, int]:
     task_id, ordinal = _current_identity()
     return (
-        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json",
         ROOT / "schemas/operations/execution-contract-r1.schema.json",
         task_id,
         ordinal,
@@ -63,6 +63,8 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     expectations = contract.get("identity_expectations", {})
     if contract.get("task_id") != CURRENT_TASK_ID:
         errors.append(f"execution contract task must match canonical Current task {CURRENT_TASK_ID}")
+    if "formal_ordinal" in contract and contract["formal_ordinal"] != CURRENT_ORDINAL:
+        errors.append("execution contract formal_ordinal differs from the ordinal parsed from its task_id")
     for field in ("current_formal_task", "release_candidate_task", "publication_witness_task"):
         if expectations.get(field) != CURRENT_TASK_ID:
             errors.append(f"identity expectation {field} must match canonical Current task {CURRENT_TASK_ID}")
@@ -72,7 +74,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("previous canonical Current task must match canonical task identity")
     if expectations.get("previous_formal_task") != identity.get("previous_formal_task"):
         errors.append("previous formal task must match canonical task identity")
-    iteration_root = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}"
+    iteration_root = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL:03d}"
     baseline_audit = next(
         (
             candidate

@@ -1,0 +1,6 @@
+{
+  "question": "Does slower atmospheric methane growth alone establish that methane emissions declined?",
+  "queries": [
+    "NOAA methane growth observations, WMO 2025 concentration, and GONGGA 2019-2024 posterior emissions"
+  ]
+}

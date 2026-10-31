@@ -1,0 +1,4 @@
+L21: # WMO Greenhouse Gas Bulletin - No. 22
+L25: 27 October 2026
+L30: CH_{4} at 1 948±2 ppb
+L31: For CH4, the increase from 2024 to 2025 was lower than that observed from 2023 to 2024

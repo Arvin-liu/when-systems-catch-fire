@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/toolbox-evidence-update-snapshot-comparison-output-r0.schema.json",
+  "title": "Evidence update snapshot comparison output R0",
+  "oneOf": [{"$ref": "#/$defs/valid"}, {"$ref": "#/$defs/invalid"}],
+  "$defs": {
+    "nullableText": {"type": ["string", "null"]},
+    "delta": {
+      "type": "object", "additionalProperties": false, "required": ["before", "after", "changed", "known"],
+      "properties": {"before": {"$ref": "#/$defs/nullableText"}, "after": {"$ref": "#/$defs/nullableText"}, "changed": {"type": "boolean"}, "known": {"type": "boolean"}}
+    },
+    "binding": {
+      "type": "object", "additionalProperties": false, "required": ["snapshot_id", "reference", "observed_at_utc"],
+      "properties": {"snapshot_id": {"type": "string"}, "reference": {"type": "string"}, "observed_at_utc": {"type": "string"}}
+    },
+    "policyDelta": {
+      "type": "object", "additionalProperties": false, "required": ["identity", "revision_digest"],
+      "properties": {"identity": {"$ref": "#/$defs/delta"}, "revision_digest": {"$ref": "#/$defs/delta"}}
+    },
+    "changedField": {
+      "type": "object", "additionalProperties": false, "required": ["field", "before", "after"],
+      "properties": {"field": {"enum": ["source_family", "record_state", "record_sha256"]}, "before": {"$ref": "#/$defs/nullableText"}, "after": {"$ref": "#/$defs/nullableText"}}
+    },
+    "valid": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema_version", "tool_id", "tool_version", "status", "comparison_status", "comparison_id", "input_sha256", "predecessor", "candidate", "task_revision_delta", "scope_delta", "applicability_delta", "declared_claim_state_delta", "change_reason", "evaluation_instrument_delta", "update_policy_delta", "stopping_policy_delta", "acquisition_dependence", "evidence_delta", "review_triggers", "comparison_unknown_reasons", "source_authenticity", "evidence_quality", "claim_truth", "scientific_acceptance", "filesystem_access", "network_requests", "execution_authorized", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "ignition.toolbox-evidence-update-snapshot-comparison-output-r0"},
+        "tool_id": {"const": "research.compare_evidence_update_snapshots"},
+        "tool_version": {"const": "0.1.0"},
+        "status": {"enum": ["UPDATE_DELTA_REPORTED", "EXPLICIT_NO_CHANGE", "NO_CHANGE_NOT_ESTABLISHED"]},
+        "comparison_status": {"enum": ["COMPARABLE_AS_DECLARED", "COMPARISON_UNKNOWN"]},
+        "comparison_id": {"type": "string"},
+        "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "predecessor": {"$ref": "#/$defs/binding"},
+        "candidate": {"$ref": "#/$defs/binding"},
+        "task_revision_delta": {"$ref": "#/$defs/delta"},
+        "scope_delta": {"$ref": "#/$defs/delta"},
+        "applicability_delta": {"$ref": "#/$defs/delta"},
+        "declared_claim_state_delta": {
+          "type": "object", "additionalProperties": false, "required": ["before", "after", "changed", "known", "authority"],
+          "properties": {"before": {"$ref": "#/$defs/nullableText"}, "after": {"$ref": "#/$defs/nullableText"}, "changed": {"type": "boolean"}, "known": {"type": "boolean"}, "authority": {"const": "CALLER_DECLARED_ONLY"}}
+        },
+        "change_reason": {"type": "object", "additionalProperties": false, "required": ["baseline", "candidate"], "properties": {"baseline": {"type": "object"}, "candidate": {"type": "object"}}},
+        "evaluation_instrument_delta": {"$ref": "#/$defs/policyDelta"},
+        "update_policy_delta": {"$ref": "#/$defs/policyDelta"},
+        "stopping_policy_delta": {"$ref": "#/$defs/policyDelta"},
+        "acquisition_dependence": {
+          "type": "object", "additionalProperties": false, "required": ["before", "after", "changed", "known", "accumulation_bias_assessment"],
+          "properties": {"before": {"$ref": "#/$defs/nullableText"}, "after": {"$ref": "#/$defs/nullableText"}, "changed": {"type": "boolean"}, "known": {"type": "boolean"}, "accumulation_bias_assessment": {"const": "NOT_EVALUATED"}}
+        },
+        "evidence_delta": {
+          "type": "object", "additionalProperties": false,
+          "required": ["added_ids", "absent_from_candidate_ids", "retained_exact_ids", "changed_records", "unresolved_records", "declared_withdrawal_or_retraction_transitions", "source_family_counts"],
+          "properties": {
+            "added_ids": {"type": "array", "items": {"type": "string"}},
+            "absent_from_candidate_ids": {"type": "array", "items": {"type": "string"}},
+            "retained_exact_ids": {"type": "array", "items": {"type": "string"}},
+            "changed_records": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["evidence_id", "changed_fields"], "properties": {"evidence_id": {"type": "string"}, "changed_fields": {"type": "array", "items": {"$ref": "#/$defs/changedField"}}}}},
+            "unresolved_records": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["evidence_id", "unknown_fields"], "properties": {"evidence_id": {"type": "string"}, "unknown_fields": {"type": "array", "items": {"enum": ["source_family", "record_state", "record_sha256"]}}}}},
+            "declared_withdrawal_or_retraction_transitions": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["evidence_id", "before_state", "after_state"], "properties": {"evidence_id": {"type": "string"}, "before_state": {"type": "string"}, "after_state": {"enum": ["WITHDRAWN", "RETRACTED"]}}}},
+            "source_family_counts": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["source_family", "baseline_count", "candidate_count", "delta"], "properties": {"source_family": {"type": "string"}, "baseline_count": {"type": "integer", "minimum": 0}, "candidate_count": {"type": "integer", "minimum": 0}, "delta": {"type": "integer"}}}}
+          }
+        },
+        "review_triggers": {"type": "array", "items": {"type": "string"}},
+        "comparison_unknown_reasons": {"type": "array", "items": {"type": "string"}},
+        "source_authenticity": {"const": "NOT_VERIFIED"},
+        "evidence_quality": {"const": "NOT_ASSESSED"},
+        "claim_truth": {"const": "NOT_ADJUDICATED"},
+        "scientific_acceptance": {"const": "NOT_GRANTED"},
+        "filesystem_access": {"const": "NONE"},
+        "network_requests": {"const": 0},
+        "execution_authorized": {"const": false},
+        "claim_ceiling": {"type": "string"}
+      }
+    },
+    "invalid": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema_version", "tool_id", "tool_version", "status", "input_sha256", "errors", "execution_authorized"],
+      "properties": {
+        "schema_version": {"const": "ignition.toolbox-evidence-update-snapshot-comparison-output-r0"},
+        "tool_id": {"const": "research.compare_evidence_update_snapshots"},
+        "tool_version": {"const": "0.1.0"},
+        "status": {"const": "INPUT_INVALID"},
+        "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "errors": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["code", "path"], "properties": {"code": {"type": "string"}, "path": {"type": "string"}}}},
+        "execution_authorized": {"const": false}
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-reusable-context-preflight-result-r0",
+  "title": "Cross-task reusable context preflight result R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "task_id", "decision", "decisions", "reused_context_cards", "refresh_required", "raw_reopen_required", "resource_observation", "execution_authorized", "authority_effect", "semantic_relevance", "evidential_sufficiency", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "toolbox-reusable-context-preflight-result-r0"},
+    "tool_id": {"const": "knowledge.preflight_reusable_context"},
+    "tool_version": {"enum": ["0.1.0", "0.2.0"]},
+    "task_id": {"$ref": "#/$defs/id"},
+    "decision": {"enum": ["CONTEXT_REUSED", "NO_ELIGIBLE_CONTEXT"]},
+    "decisions": {"type": "array", "items": {"type": "object", "additionalProperties": true, "required": ["card_id", "decision", "reason"], "properties": {"card_id": {"$ref": "#/$defs/id"}, "decision": {"enum": ["REUSE", "INVALIDATE", "SKIP"]}, "reason": {"type": "string", "minLength": 1}}}},
+    "reused_context_cards": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["card_id", "derived_context", "context_kind", "source_bindings"], "properties": {"card_id": {"$ref": "#/$defs/id"}, "derived_context": {"type": "string"}, "context_kind": {"const": "DERIVED_CONTEXT_ONLY"}, "source_bindings": {"type": "array", "items": {"$ref": "#/$defs/sourceBinding"}}}}},
+    "refresh_required": {"type": "array", "items": {"type": "object", "additionalProperties": true, "required": ["source_id", "path", "reason", "current_version", "declared_current_sha256"], "properties": {"source_id": {"$ref": "#/$defs/id"}, "path": {"type": "string"}, "reason": {"type": "string"}, "current_version": {"type": "string"}, "declared_current_sha256": {"$ref": "#/$defs/digest"}, "observed_local_sha256": {"$ref": "#/$defs/digest"}}}},
+    "raw_reopen_required": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["source_id", "path", "reason"], "properties": {"source_id": {"$ref": "#/$defs/id"}, "path": {"type": "string"}, "reason": {"const": "RAW_SOURCE_REQUIRED"}}}},
+    "resource_observation": {"type": "object", "additionalProperties": false, "required": ["source_files_hashed", "source_bytes_read", "context_bytes_returned", "latency_ms", "cost_equivalent"], "properties": {"source_files_hashed": {"type": "integer", "minimum": 0}, "source_bytes_read": {"type": "integer", "minimum": 0}, "context_bytes_returned": {"type": "integer", "minimum": 0}, "latency_ms": {"const": "UNKNOWN"}, "cost_equivalent": {"const": "NOT_MEASURED"}}},
+    "execution_authorized": {"const": false},
+    "authority_effect": {"const": "NONE"},
+    "semantic_relevance": {"const": "NOT_EVALUATED"},
+    "evidential_sufficiency": {"const": "NOT_EVALUATED"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "id": {"type": "string", "minLength": 1, "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"},
+    "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "sourceBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "path", "version", "sha256", "access_scope_id"],
+      "properties": {"source_id": {"$ref": "#/$defs/id"}, "path": {"type": "string"}, "version": {"type": "string"}, "sha256": {"$ref": "#/$defs/digest"}, "access_scope_id": {"$ref": "#/$defs/id"}}
+    }
+  }
+}

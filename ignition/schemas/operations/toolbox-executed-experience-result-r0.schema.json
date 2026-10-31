@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-executed-experience-result-r0",
+  "title": "Executed Experience Reuse Preflight Result R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "evaluated_at_utc", "evaluation_time_source", "task_id", "experience_decisions", "execution_authorized", "reuse_authorized", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "toolbox-executed-experience-result-r0"},
+    "tool_id": {"const": "knowledge.preflight_executed_experience_reuse"},
+    "tool_version": {"const": "0.1.0"},
+    "evaluated_at_utc": {"type": "string"},
+    "evaluation_time_source": {"const": "CALLER_SUPPLIED_NOT_AUTHENTICATED"},
+    "task_id": {"type": "string"},
+    "experience_decisions": {"type": "array", "items": {"$ref": "#/$defs/decision"}},
+    "execution_authorized": {"const": false},
+    "reuse_authorized": {"const": false},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["experience_id", "decision", "reason", "evidence_status", "task_family_match", "environment_match", "source_scope_match", "can_execute", "can_authorize"],
+      "properties": {
+        "experience_id": {"type": "string"},
+        "decision": {"enum": ["WITHHOLD", "REVIEW_REQUIRED", "OPTIONAL_REFERENCE_ONLY", "COUNTEREXAMPLE_ONLY"]},
+        "reason": {"type": "string"},
+        "evidence_status": {"type": "string"},
+        "task_family_match": {"type": "boolean"},
+        "environment_match": {"type": "boolean"},
+        "source_scope_match": {"type": "boolean"},
+        "can_execute": {"const": false},
+        "can_authorize": {"const": false}
+      }
+    }
+  }
+}

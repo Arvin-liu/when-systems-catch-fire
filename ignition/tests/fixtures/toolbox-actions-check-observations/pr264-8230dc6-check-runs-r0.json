@@ -1,0 +1,145 @@
+{
+  "schema_version": "toolbox-actions-check-observations-input-r0",
+  "expected_head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+  "check_runs_complete": true,
+  "requested_contexts": [
+    {
+      "name": "foundation-validation",
+      "app_id": 15368
+    },
+    {
+      "name": "release-transaction-protocol-validation",
+      "app_id": 15368
+    },
+    {
+      "name": "repository-path-accounting-preflight",
+      "app_id": 15368
+    }
+  ],
+  "check_runs_snapshot": {
+    "total_count": 11,
+    "check_runs": [
+      {
+        "id": 120790658353,
+        "name": "Full Foundation regression",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784515477,
+        "name": "deploy",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "skipped",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784459026,
+        "name": "layer-b-resolver",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357732,
+        "name": "validate-current-state-sync",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "failure",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357661,
+        "name": "foundation-validation-route",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357599,
+        "name": "validate",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357548,
+        "name": "build",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357545,
+        "name": "layer-a-tests",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357482,
+        "name": "repository-path-accounting-preflight",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357371,
+        "name": "release-transaction-protocol-validation",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 120784357336,
+        "name": "lifecycle-validation",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "status": "completed",
+        "conclusion": "success",
+        "app": {
+          "id": 15368,
+          "slug": "github-actions"
+        }
+      }
+    ]
+  }
+}

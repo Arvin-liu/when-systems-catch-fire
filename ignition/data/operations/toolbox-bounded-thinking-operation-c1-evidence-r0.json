@@ -1,0 +1,55 @@
+{
+  "schema_version": "toolbox-bounded-thinking-operation-c1-evidence-r0",
+  "disposition": "COMPARISON_UNKNOWN",
+  "task_scope": "Same active toolbox-admission task: decide the next thinking operation inside a bounded run, then separately choose any concrete validation tool needed to satisfy the caller-declared output contract.",
+  "candidate_tool_id": "ignition.select_bounded_thinking_operation",
+  "compared_tool_id": "ignition.adaptive_toolbox_route_planner",
+  "comparison_dimensions": {
+    "task_quality": {
+      "status": "NOT_COMPARABLE",
+      "finding": "The candidate emits one thinking-operation proposal from caller-declared episode state; the existing planner emits a tool-set proposal from typed input/output contracts. They do not produce interchangeable outputs."
+    },
+    "evidence_completeness": {
+      "status": "LIMITED",
+      "finding": "The Workbench comparison is frozen synthetic evidence. The Formal selector now has 18 passing focused tests, four read-only route profiles, and one bounded two-stage repository-task observation. No matched live-model effectiveness trial was performed; comparative quality remains unknown."
+    },
+    "coverage": {
+      "status": "COMPLEMENTARY",
+      "finding": "The selector covers intra-run operation arbitration. The planner covers typed tool coverage and incremental tool selection. Each leaves the other layer unresolved."
+    },
+    "cost": {
+      "status": "UNKNOWN",
+      "finding": "One local selector process timing is descriptive only. No comparable calibrated cost, latency, or resource benchmark exists."
+    },
+    "reliability": {
+      "status": "UNKNOWN",
+      "finding": "Determinism, schema boundaries, failure handling and route exclusions passed focused local checks. Comparative reliability across representative real tasks remains unmeasured."
+    },
+    "maintainability": {
+      "status": "UNKNOWN",
+      "finding": "The selector adds a CLI, two schemas, tests and a candidate card. No maintenance-burden comparison was run."
+    },
+    "risk": {
+      "status": "BOUNDED_BY_DECLARED_CONTRACT",
+      "finding": "The selector reads stdin and two local schemas and writes only stdout; no network, repository write, execution, permission expansion, or authority effect is declared. This is a software contract, not an OS sandbox claim."
+    },
+    "rollback": {
+      "status": "DEFINED",
+      "finding": "Remove the experimental card and entry point, regenerate the derived identity JSON and TOOLBOX.md, and preserve historical evidence."
+    }
+  },
+  "functional_relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+  "replacement_candidates": [],
+  "unique_scope_observed": "Choose a single next thinking-operation class inside an already bounded run without selecting a Goal or concrete tool route.",
+  "retirement_or_deprecation": "NONE; the existing adaptive tool route planner remains unchanged and useful for tool selection.",
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-bounded-thinking-operation-blueprint-reference-r0.json",
+    "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-r0.json",
+    "ignition/data/operations/toolbox-bounded-thinking-operation-route-evidence-r0.json",
+    "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-input-r0.json",
+    "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-output-r0.json",
+    "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-input-r0.json",
+    "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-output-r0.json"
+  ],
+  "claim_ceiling": "No superiority, replacement, generalized benefit, or cost advantage is established. Preserve COMPARISON_UNKNOWN and permit coexistence only within each tool’s declared task scope."
+}

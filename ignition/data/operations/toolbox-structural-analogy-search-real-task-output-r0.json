@@ -1,0 +1,280 @@
+{
+  "analogy_is_evidence": false,
+  "authority_transferred": false,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "best_mapping_tie_count": 1,
+      "best_mapping_ties_truncated": false,
+      "best_mappings": [
+        {
+          "extra_mapped_target_relation_ids": [],
+          "matched_relation_pairs": [
+            {
+              "mapped_object_id": "validator",
+              "mapped_subject_id": "maintainer",
+              "source_relation_id": "r1",
+              "source_relation_type": "initiates",
+              "target_relation_id": "p1",
+              "target_relation_type": "triggers"
+            },
+            {
+              "mapped_object_id": "validator",
+              "mapped_subject_id": "schema",
+              "source_relation_id": "r2",
+              "source_relation_type": "constrains",
+              "target_relation_id": "p2",
+              "target_relation_type": "constrains"
+            },
+            {
+              "mapped_object_id": "validation_result",
+              "mapped_subject_id": "validator",
+              "source_relation_id": "r3",
+              "source_relation_type": "produces",
+              "target_relation_id": "p3",
+              "target_relation_type": "produces"
+            }
+          ],
+          "source_to_target_node_map": [
+            {
+              "source_node_id": "contract",
+              "target_node_id": "schema"
+            },
+            {
+              "source_node_id": "decision",
+              "target_node_id": "validation_result"
+            },
+            {
+              "source_node_id": "gate",
+              "target_node_id": "validator"
+            },
+            {
+              "source_node_id": "owner",
+              "target_node_id": "maintainer"
+            }
+          ],
+          "transfer_hypotheses": [
+            {
+              "source_relation_id": "r1",
+              "status": "REQUIRES_TARGET_DOMAIN_VALIDATION",
+              "target_relation_id": "p1"
+            },
+            {
+              "source_relation_id": "r2",
+              "status": "REQUIRES_TARGET_DOMAIN_VALIDATION",
+              "target_relation_id": "p2"
+            },
+            {
+              "source_relation_id": "r3",
+              "status": "REQUIRES_TARGET_DOMAIN_VALIDATION",
+              "target_relation_id": "p3"
+            }
+          ],
+          "unmapped_target_relation_ids": [],
+          "unmatched_source_relation_ids": []
+        }
+      ],
+      "candidate_id": "a_pipeline_validation",
+      "domain_id": "data-engineering",
+      "evaluated_node_mappings": 1,
+      "extra_mapped_target_relation_count": 0,
+      "mapped_target_relation_precision_fraction": "3/3",
+      "matched_mapped_target_relation_count": 3,
+      "matched_source_relation_count": 3,
+      "source_relation_count": 3,
+      "source_relation_coverage_fraction": "3/3",
+      "status": "STRUCTURAL_OVERLAP_CANDIDATE",
+      "structural_rank": 1,
+      "structure_id": "pipeline-validation",
+      "unmapped_target_relation_count_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "best_mapping_tie_count": 1,
+      "best_mapping_ties_truncated": false,
+      "best_mappings": [
+        {
+          "extra_mapped_target_relation_ids": [
+            "q4"
+          ],
+          "matched_relation_pairs": [
+            {
+              "mapped_object_id": "validator",
+              "mapped_subject_id": "maintainer",
+              "source_relation_id": "r1",
+              "source_relation_type": "initiates",
+              "target_relation_id": "q1",
+              "target_relation_type": "triggers"
+            },
+            {
+              "mapped_object_id": "validator",
+              "mapped_subject_id": "schema",
+              "source_relation_id": "r2",
+              "source_relation_type": "constrains",
+              "target_relation_id": "q2",
+              "target_relation_type": "constrains"
+            },
+            {
+              "mapped_object_id": "validation_result",
+              "mapped_subject_id": "validator",
+              "source_relation_id": "r3",
+              "source_relation_type": "produces",
+              "target_relation_id": "q3",
+              "target_relation_type": "produces"
+            }
+          ],
+          "source_to_target_node_map": [
+            {
+              "source_node_id": "contract",
+              "target_node_id": "schema"
+            },
+            {
+              "source_node_id": "decision",
+              "target_node_id": "validation_result"
+            },
+            {
+              "source_node_id": "gate",
+              "target_node_id": "validator"
+            },
+            {
+              "source_node_id": "owner",
+              "target_node_id": "maintainer"
+            }
+          ],
+          "transfer_hypotheses": [
+            {
+              "source_relation_id": "r1",
+              "status": "REQUIRES_TARGET_DOMAIN_VALIDATION",
+              "target_relation_id": "q1"
+            },
+            {
+              "source_relation_id": "r2",
+              "status": "REQUIRES_TARGET_DOMAIN_VALIDATION",
+              "target_relation_id": "q2"
+            },
+            {
+              "source_relation_id": "r3",
+              "status": "REQUIRES_TARGET_DOMAIN_VALIDATION",
+              "target_relation_id": "q3"
+            }
+          ],
+          "unmapped_target_relation_ids": [],
+          "unmatched_source_relation_ids": []
+        }
+      ],
+      "candidate_id": "b_pipeline_with_extra_relation",
+      "domain_id": "data-engineering",
+      "evaluated_node_mappings": 1,
+      "extra_mapped_target_relation_count": 1,
+      "mapped_target_relation_precision_fraction": "3/4",
+      "matched_mapped_target_relation_count": 3,
+      "matched_source_relation_count": 3,
+      "source_relation_count": 3,
+      "source_relation_coverage_fraction": "3/3",
+      "status": "STRUCTURAL_OVERLAP_CANDIDATE",
+      "structural_rank": 2,
+      "structure_id": "pipeline-validation-with-audit",
+      "unmapped_target_relation_count_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "best_mapping_tie_count": 1,
+      "best_mapping_ties_truncated": false,
+      "best_mappings": [
+        {
+          "extra_mapped_target_relation_ids": [
+            "n1",
+            "n2",
+            "n3"
+          ],
+          "matched_relation_pairs": [],
+          "source_to_target_node_map": [
+            {
+              "source_node_id": "contract",
+              "target_node_id": "alert"
+            },
+            {
+              "source_node_id": "decision",
+              "target_node_id": "safe_state"
+            },
+            {
+              "source_node_id": "gate",
+              "target_node_id": "evacuate"
+            },
+            {
+              "source_node_id": "owner",
+              "target_node_id": "commander"
+            }
+          ],
+          "transfer_hypotheses": [],
+          "unmapped_target_relation_ids": [],
+          "unmatched_source_relation_ids": [
+            "r1",
+            "r2",
+            "r3"
+          ]
+        }
+      ],
+      "candidate_id": "c_reversed_relations",
+      "domain_id": "incident-response",
+      "evaluated_node_mappings": 1,
+      "extra_mapped_target_relation_count": 3,
+      "mapped_target_relation_precision_fraction": "0/3",
+      "matched_mapped_target_relation_count": 0,
+      "matched_source_relation_count": 0,
+      "source_relation_count": 3,
+      "source_relation_coverage_fraction": "0/3",
+      "status": "NO_MAPPED_RELATION_OVERLAP",
+      "structural_rank": 3,
+      "structure_id": "incident-response-reversed",
+      "unmapped_target_relation_count_range": [
+        0,
+        0
+      ]
+    }
+  ],
+  "claim_ceiling": "Enumerates role-compatible node mappings and exact caller-declared relation-type correspondences over the supplied finite graphs. A structural overlap is only a candidate analogy; no source authenticity, semantic equivalence, solution validity, target-domain evidence, causal transfer, scientific truth, or authority is established.",
+  "estimated_node_mappings": 3,
+  "evaluated_node_mappings": 3,
+  "execution_authorized": false,
+  "input_sha256": "f96ebd4fdf573fff550e63d2f6e5caa0c8e78319448338b85e6e18c88abc7bf7",
+  "invariants_applied": [
+    "ANALOGY_TRANSFERS_RELATION_NOT_AUTHORITY",
+    "SURFACE_SIMILARITY_IS_NOT_STRUCTURAL_MATCH",
+    "TRANSFERRED_SOLUTION_REQUIRES_TARGET_DOMAIN_VALIDATION",
+    "ANALOGY_DIVERSITY_IS_SEARCH_EXPANSION_NOT_EVIDENCE"
+  ],
+  "ranking_rule": "MAXIMIZE_EXACT_MAPPED_SOURCE_RELATIONS_THEN_MINIMIZE_EXTRA_MAPPED_TARGET_RELATIONS_THEN_CANDIDATE_ID; structural counts only",
+  "relation_mappings": [
+    {
+      "source_relation_type": "constrains",
+      "target_relation_type": "constrains"
+    },
+    {
+      "source_relation_type": "initiates",
+      "target_relation_type": "triggers"
+    },
+    {
+      "source_relation_type": "produces",
+      "target_relation_type": "produces"
+    }
+  ],
+  "schema_version": "toolbox-structural-analogy-search-output-r0",
+  "source_authority_verified": false,
+  "source_structure": {
+    "domain_id": "repository-governance",
+    "node_count": 4,
+    "relation_count": 3,
+    "structure_id": "bounded-admission-workflow"
+  },
+  "status": "STRUCTURAL_OVERLAP_CANDIDATES_FOUND",
+  "surface_text_used": false,
+  "target_domain_validated": false,
+  "task_id": "toolbox-gap-analogy-search",
+  "tool_id": "reasoning.search_structural_analogies",
+  "tool_version": "0.1.0"
+}

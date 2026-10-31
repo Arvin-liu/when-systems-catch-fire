@@ -23,15 +23,29 @@ OpenAlex 是完全免费的开放学术数据库，无需 API key。
   - is_retracted 字段可用于撤稿预警
 """
 
+from __future__ import annotations
+
 import sys
+import hashlib
 import json
+import time
+import urllib.error
 import urllib.request
 import urllib.parse
+from datetime import datetime, timezone
 
 API = "https://api.openalex.org/works"
 DEFAULT_MAILTO = "research@ignition.local"
 DEFAULT_LIMIT = 5
 MAX_LIMIT = 25  # OpenAlex 单页最大 200，但默认限制 25 避免过大输出
+
+TOOLBOX_SEARCH_VERSION = "0.1.0"
+TOOLBOX_SEARCH_HOST = "api.openalex.org"
+TOOLBOX_SEARCH_SELECT = "id,doi,display_name,publication_year,type,relevance_score,authorships,primary_location"
+TOOLBOX_SEARCH_MAX_RESULTS = 10
+TOOLBOX_SEARCH_MAX_RESPONSE_BYTES = 512 * 1024
+TOOLBOX_SEARCH_TIMEOUT_SECONDS = 5
+TOOLBOX_SEARCH_MAX_RESPONSE_SECONDS = 7
 
 
 def _restore_abstract(inverted_index: dict | None) -> str | None:
@@ -50,15 +64,194 @@ def _restore_abstract(inverted_index: dict | None) -> str | None:
     return " ".join(words)
 
 
-def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> list[dict]:
-    """搜索 OpenAlex，返回标准化的结果列表。
+def _canonical_work_sha256(work: dict) -> str:
+    canonical = json.dumps(work, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
+
+
+def _normalize_work(w: dict) -> dict:
+    """Normalize one OpenAlex work using only fields in that raw record."""
+    authors = []
+    for authorship in w.get("authorships", []):
+        name = authorship.get("author", {}).get("display_name", "")
+        if name:
+            authors.append(name)
+
+    abstract = _restore_abstract(w.get("abstract_inverted_index"))
+    open_access = w.get("open_access", {}) or {}
+    primary = w.get("primary_location") or {}
+    source = primary.get("source") or {}
+
+    return {
+        "openalex_id": w.get("id", ""),
+        "doi": w.get("doi", ""),
+        "title": w.get("title", "") or w.get("display_name", ""),
+        "year": w.get("publication_year"),
+        "authors": authors,
+        "venue": source.get("display_name", ""),
+        "type": w.get("type", ""),
+        "abstract": abstract,
+        "is_oa": open_access.get("is_oa", False),
+        "oa_status": open_access.get("oa_status", ""),
+        "oa_url": open_access.get("oa_url", ""),
+        "any_repository_has_fulltext": open_access.get("any_repository_has_fulltext", False),
+        "cited_by_count": w.get("cited_by_count", 0),
+        "is_retracted": w.get("is_retracted", False),
+        "concepts": [c.get("display_name", "") for c in w.get("concepts", [])[:8]],
+        "relevance_score": w.get("relevance_score"),
+        "language": w.get("language", ""),
+    }
+
+
+def parse_search_response(response_body: bytes) -> dict:
+    """Derive normalized rows and per-record hashes from the same raw bytes.
+
+    The record hashes use canonical JSON encoding of each raw work object. The
+    complete original response bytes remain the authoritative captured artifact.
+    """
+    if not isinstance(response_body, bytes):
+        raise TypeError("OpenAlex response body must be bytes")
+    data = json.loads(response_body.decode("utf-8"))
+    if not isinstance(data, dict) or not isinstance(data.get("results"), list):
+        raise ValueError("OpenAlex response must contain a results array")
+    works = data["results"]
+    if any(not isinstance(work, dict) for work in works):
+        raise ValueError("OpenAlex results must contain only work objects")
+    return {
+        "results": [_normalize_work(work) for work in works],
+        "raw_record_sha256": [_canonical_work_sha256(work) for work in works],
+    }
+
+
+class _ToolboxNoRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """The bounded toolbox adapter never follows an API redirect."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):  # type: ignore[override]
+        return None
+
+
+def _toolbox_usage_headers(headers: object) -> dict[str, str | None]:
+    names = (
+        "X-RateLimit-Limit",
+        "X-RateLimit-Remaining",
+        "X-RateLimit-Credits-Used",
+        "X-RateLimit-Reset",
+    )
+    result: dict[str, str | None] = {}
+    for name in names:
+        value = headers.get(name) if headers is not None and hasattr(headers, "get") else None
+        if not isinstance(value, str) or len(value) > 64 or any(ord(char) < 32 for char in value):
+            result[name] = None
+        else:
+            result[name] = value
+    return result
+
+
+def _toolbox_search_url(query: str, max_results: int) -> str:
+    params = urllib.parse.urlencode({
+        "search": query,
+        "per_page": str(max_results),
+        "select": TOOLBOX_SEARCH_SELECT,
+    })
+    url = API + "?" + params
+    target = urllib.parse.urlsplit(url)
+    if (
+        target.scheme != "https"
+        or target.hostname != TOOLBOX_SEARCH_HOST
+        or target.port is not None
+        or target.username
+        or target.password
+        or target.path != "/works"
+        or target.fragment
+        or len(url.encode("ascii")) > 4094
+    ):
+        raise ValueError("OpenAlex toolbox search endpoint is not the fixed bounded HTTPS target")
+    return url
+
+
+def search_for_toolbox(query: str, max_results: int) -> dict:
+    """Run one no-key, bounded OpenAlex works search for the toolbox adapter.
+
+    The legacy `search()` and CLI keep their existing output contract. This
+    separate entry point reuses this module's OpenAlex response parser while
+    omitting the legacy placeholder mailto, selecting metadata-only fields,
+    rejecting redirects, and capping request and response work.
+    """
+    if (
+        not isinstance(query, str)
+        or not query
+        or query != query.strip()
+        or len(query) > 512
+        or len(query.encode("utf-8")) > 2048
+        or any(ord(char) < 0x20 or 0x7F <= ord(char) <= 0x9F for char in query)
+    ):
+        raise ValueError("query must be a bounded, trimmed, control-free string")
+    if isinstance(max_results, bool) or not isinstance(max_results, int) or not 1 <= max_results <= TOOLBOX_SEARCH_MAX_RESULTS:
+        raise ValueError("max_results must be an integer from 1 through 10")
+    url = _toolbox_search_url(query, max_results)
+    request_sha256 = hashlib.sha256(url.encode("ascii")).hexdigest()
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "IgnitionToolboxOpenAlexSearch/{}".format(TOOLBOX_SEARCH_VERSION),
+            "Accept": "application/json",
+        },
+    )
+    opener = urllib.request.build_opener(_ToolboxNoRedirectHandler())
+    try:
+        with opener.open(request, timeout=TOOLBOX_SEARCH_TIMEOUT_SECONDS) as response:
+            status = int(response.status)
+            usage = _toolbox_usage_headers(response.headers)
+            if status != 200:
+                return {"acquisition_status": "HTTP_ERROR", "http_status": status, "body": None, "usage_headers": usage, "request_sha256": request_sha256}
+            content_type = response.headers.get("Content-Type", "").split(";", 1)[0].strip().casefold()
+            if content_type != "application/json" and not content_type.endswith("+json"):
+                return {"acquisition_status": "NON_JSON_RESPONSE", "http_status": status, "body": None, "usage_headers": usage, "request_sha256": request_sha256}
+
+            deadline = time.monotonic() + TOOLBOX_SEARCH_MAX_RESPONSE_SECONDS
+            chunks: list[bytes] = []
+            total_bytes = 0
+            while total_bytes <= TOOLBOX_SEARCH_MAX_RESPONSE_BYTES:
+                if time.monotonic() >= deadline:
+                    return {"acquisition_status": "RESPONSE_TIMEOUT", "http_status": status, "body": None, "usage_headers": usage, "request_sha256": request_sha256}
+                chunk = response.read(min(8192, TOOLBOX_SEARCH_MAX_RESPONSE_BYTES + 1 - total_bytes))
+                if time.monotonic() > deadline:
+                    return {"acquisition_status": "RESPONSE_TIMEOUT", "http_status": status, "body": None, "usage_headers": usage, "request_sha256": request_sha256}
+                if not chunk:
+                    break
+                chunks.append(chunk)
+                total_bytes += len(chunk)
+            if total_bytes > TOOLBOX_SEARCH_MAX_RESPONSE_BYTES:
+                return {"acquisition_status": "RESPONSE_TOO_LARGE", "http_status": status, "body": None, "usage_headers": usage, "request_sha256": request_sha256}
+            return {
+                "acquisition_status": "OK",
+                "http_status": status,
+                "body": b"".join(chunks),
+                "usage_headers": usage,
+                "request_sha256": request_sha256,
+            }
+    except urllib.error.HTTPError as exc:
+        status = int(exc.code)
+        if 300 <= status < 400:
+            outcome = "REDIRECT_BLOCKED"
+        elif status == 429:
+            outcome = "RATE_LIMITED"
+        else:
+            outcome = "HTTP_ERROR"
+        return {"acquisition_status": outcome, "http_status": status, "body": None, "usage_headers": _toolbox_usage_headers(exc.headers), "request_sha256": request_sha256}
+    except (urllib.error.URLError, TimeoutError, OSError):
+        return {"acquisition_status": "NETWORK_ERROR", "http_status": None, "body": None, "usage_headers": {}, "request_sha256": request_sha256}
+
+
+def search_with_evidence(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> dict:
+    """搜索 OpenAlex 并同时保留原始响应，供可复现工作流记录来源。
 
     Args:
         query: 搜索词
         limit: 返回条数（1-25）
         mailto: polite pool 邮箱
     Returns:
-        list of dict，每条包含标准化字段
+        dict containing request_url, response_body (bytes), and normalized results
     """
     limit = max(1, min(int(limit), MAX_LIMIT))
     params = urllib.parse.urlencode({
@@ -69,47 +262,19 @@ def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO)
     url = f"{API}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "OpenAlex-Client/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.load(r)
+        response_body = r.read()
+    parsed = parse_search_response(response_body)
+    return {
+        "request_url": url,
+        "response_body": response_body,
+        "results": parsed["results"],
+        "raw_record_sha256": parsed["raw_record_sha256"],
+    }
 
-    results = []
-    for w in data.get("results", []):
-        # 作者列表
-        authors = []
-        for a in w.get("authorships", []):
-            name = a.get("author", {}).get("display_name", "")
-            if name:
-                authors.append(name)
 
-        # 摘要还原
-        abstract = _restore_abstract(w.get("abstract_inverted_index"))
-
-        # OA 信息
-        oa = w.get("open_access", {})
-        primary = w.get("primary_location") or {}
-        source = primary.get("source") or {}
-
-        result = {
-            "openalex_id": w.get("id", ""),
-            "doi": w.get("doi", ""),
-            "title": w.get("title", "") or w.get("display_name", ""),
-            "year": w.get("publication_year"),
-            "authors": authors,
-            "venue": source.get("display_name", ""),
-            "type": w.get("type", ""),
-            "abstract": abstract,
-            "is_oa": oa.get("is_oa", False),
-            "oa_status": oa.get("oa_status", ""),
-            "oa_url": oa.get("oa_url", ""),
-            "any_repository_has_fulltext": oa.get("any_repository_has_fulltext", False),
-            "cited_by_count": w.get("cited_by_count", 0),
-            "is_retracted": w.get("is_retracted", False),
-            "concepts": [c.get("display_name", "") for c in w.get("concepts", [])[:8]],
-            "relevance_score": w.get("relevance_score"),
-            "language": w.get("language", ""),
-        }
-        results.append(result)
-
-    return results
+def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> list[dict]:
+    """搜索 OpenAlex，返回标准化的结果列表（兼容原调用方）。"""
+    return search_with_evidence(query, limit=limit, mailto=mailto)["results"]
 
 
 def fetch_by_doi(doi: str, mailto: str = DEFAULT_MAILTO) -> dict | None:

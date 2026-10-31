@@ -36,6 +36,27 @@ ADDITIONAL_LOCATORS = {
 MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
 ITERATION_PATH_RE = re.compile(r"^data/operations/iterations/(?P<number>\d+)(?:/|$)")
 
+# Task20 is the one Owner-registered successor whose unique formal ordinal is
+# lower than the prior current ordinal.  Pin the signed registration facts so
+# the historical-evidence guard can distinguish this newly registered
+# successor from an attempt to backfill an arbitrary old iteration directory.
+REGISTERED_SUCCESSOR_BINDINGS = {
+    20: {
+        "task_id": "IGNITION-20261024-020",
+        "expected_task_branch": "codex/r3-forward-20261022",
+        "expected_receipt_branch": "relay/receipts/IGNITION-20261024-020-r3-transition",
+        "previous_formal_task": "IGNITION-20260829-148",
+        "formal_base_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "registration_commit_sha": "5955ddd321c4fa638f58095d1890bb45af7f5827",
+        "registration_file_sha256": "f61a5ea14475457c97f9d307c28577a45d798a54daff824c2577a2ca4081021f",
+        "registration_nonce": "d61844f8d543b93c4b3e2069a0882fcf",
+        "registration_parent_shas": [
+            "67e9ccad086871fb169ddb21932848a4d3e5363d",
+            "3b81551500686c5d09074456152ff5f4a9b04b59",
+        ],
+    }
+}
+
 
 class InterfaceSyncError(ValueError):
     """A deterministic interface synchronization invariant failed."""
@@ -153,12 +174,22 @@ def validate_semantics(registry: dict[str, Any]) -> None:
         REPO_ROOT / ".github/README.md",
         (
             "Current 点火操作法",
-            "Capability Registry",
+            "能力注册表",
+            "点火工具箱 / 工具身份卡",
             "READ_ONLY_RUN",
             "输入对象不是指令",
             markdown_visible_text(MINIMAL_INVOCATION),
             "点火迭代操作法",
         ),
+    )
+    github_readme = (REPO_ROOT / ".github/README.md").read_text(encoding="utf-8")
+    require(
+        "[能力注册表](../ignition/data/operations/ignition-operation-capability-registry-r1.json)" in github_readme,
+        "CAPABILITY_REGISTRY_LINK_TARGET",
+    )
+    require(
+        "[点火工具箱 / 工具身份卡](../ignition/TOOLBOX.md)" in github_readme,
+        "TOOLBOX_IDENTITY_CARDS_LINK_TARGET",
     )
 
     for locator in (
@@ -174,16 +205,55 @@ def validate_semantics(registry: dict[str, Any]) -> None:
     require(start_text.index("OPERATING-METHOD.md") < start_text.index("ITERATION.md"), "COLD_START_ORDER_REVERSED")
 
 
+def _registered_successor_contract_matches(contract: dict[str, Any], ordinal: int) -> bool:
+    expected = REGISTERED_SUCCESSOR_BINDINGS.get(ordinal)
+    if expected is None:
+        return False
+    registration = contract.get("successor_registration")
+    expectations = contract.get("identity_expectations")
+    baseline = contract.get("formal_baseline")
+    if not isinstance(registration, dict) or not isinstance(expectations, dict) or not isinstance(baseline, dict):
+        return False
+    return (
+        contract.get("task_id") == expected["task_id"]
+        and contract.get("formal_ordinal") == ordinal
+        and contract.get("expected_task_branch") == expected["expected_task_branch"]
+        and contract.get("expected_receipt_branch") == expected["expected_receipt_branch"]
+        and expectations.get("previous_formal_task") == expected["previous_formal_task"]
+        and baseline.get("sha") == expected["formal_base_main_sha"]
+        and registration.get("commit_sha") == expected["registration_commit_sha"]
+        and registration.get("file_sha256") == expected["registration_file_sha256"]
+        and registration.get("registration_nonce") == expected["registration_nonce"]
+        and registration.get("parent_shas") == expected["registration_parent_shas"]
+    )
+
+
+def _registered_successor_ordinals() -> set[int]:
+    ordinals: set[int] = set()
+    for ordinal in REGISTERED_SUCCESSOR_BINDINGS:
+        contract_path = ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json"
+        try:
+            contract = load_json(contract_path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        if _registered_successor_contract_matches(contract, ordinal):
+            ordinals.add(ordinal)
+    return ordinals
+
+
 def historical_rewrite_violations(diff_output: str) -> list[str]:
     """Return changed paths that rewrite historical evidence.
 
-    A successor iteration is allowed to add its own new evidence files.  The
-    guard still rejects modifications, deletions, renames, or copies in a
-    successor iteration, as well as every historical/archive path.  This
-    keeps the Task148 preservation check meaningful when a later task is
-    reviewed from the same baseline.
+    A successor iteration is allowed to add its own new evidence files.  A
+    lower formal ordinal is accepted only when its exact execution contract
+    matches the pinned Owner-registered successor record.  The guard still
+    rejects modifications, deletions, renames, or copies in a successor
+    iteration, as well as every historical/archive path.  This keeps the
+    Task148 preservation check meaningful when a later task is reviewed from
+    the same baseline.
     """
     violations: list[str] = []
+    registered_successors = _registered_successor_ordinals()
     for line in diff_output.splitlines():
         fields = line.split("\t")
         if len(fields) < 2:
@@ -201,7 +271,12 @@ def historical_rewrite_violations(diff_output: str) -> list[str]:
             iteration_number = int(match.group("number"))
             if iteration_number == 148:
                 continue
-            successor_addition = iteration_number > 148 and status_code == "A"
+            registered_successor_addition = (
+                iteration_number in registered_successors
+                and match.group("number") == f"{iteration_number:03d}"
+                and status_code == "A"
+            )
+            successor_addition = (iteration_number > 148 or registered_successor_addition) and status_code == "A"
             if not successor_addition:
                 violations.append(raw_path)
     return violations

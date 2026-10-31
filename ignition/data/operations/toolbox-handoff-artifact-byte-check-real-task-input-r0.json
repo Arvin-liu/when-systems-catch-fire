@@ -1,0 +1,44 @@
+{
+  "schema_version": "handoff-artifact-byte-check-r0",
+  "source_receipt": {
+    "artifact_refs": [
+      {
+        "kind": "json_evidence",
+        "ref": "data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+        "sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7"
+      },
+      {
+        "kind": "json_evidence",
+        "ref": "data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+        "sha256": "88e33f5db91a163cef87c04e429eba85ae6ff336ed5e770b1470d6f83ffd1816"
+      },
+      {
+        "kind": "json_evidence",
+        "ref": "data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json",
+        "sha256": "6d533edc55705e655ebfa7bc1a9722861b5773eb3040fc2c9c68756de3d3cc66"
+      }
+    ],
+    "claimed_actions": [
+      "request bounded local digest comparison for candidate evidence files"
+    ],
+    "executor_id": "local.codex",
+    "executor_telemetry": {
+      "network": "disabled",
+      "workspace": "local candidate checkout"
+    },
+    "external_session_ref": null,
+    "federation_task_id": "local-toolbox-evidence-byte-check-bef6bf46",
+    "handoff_eligibility": {
+      "eligible": false,
+      "reason": "Not an external handoff or receiver authorization decision."
+    },
+    "receipt_digest": "560beb854c74545ccdde2465df7c1cd3344b4a0f486a9c9645c416d533da7a95",
+    "terminal_state": "COMPLETED_VALIDATED",
+    "unresolveds": [
+      "Locally constructed unkeyed receipt; source provenance is not authenticated."
+    ],
+    "validation_refs": [
+      "independent-python-sha256-reference"
+    ]
+  }
+}

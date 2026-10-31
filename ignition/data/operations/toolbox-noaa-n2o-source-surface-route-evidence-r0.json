@@ -1,0 +1,184 @@
+{
+  "schema_version": "toolbox-noaa-n2o-source-surface-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_MINIMUM_SUFFICIENT_ROUTING_EXPERIMENT",
+  "observed_at_utc": "2026-10-27T00:44:31Z",
+  "candidate_tool_id": "research.compare_noaa_n2o_source_surfaces",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "e3cf2e32e241d6e908c92d148a9b0ac5ba52940953def0b554ba7acc28cc3fb3",
+  "route_profile_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-route-profile-r0.json",
+  "route_profile_sha256": "5f25f4f2dc8e62f7a853e4317bdc3136b3f8dc8533622eed8895bf905c51ba14",
+  "route_trials_replayed": 4,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_OFF",
+      "task_profile": {
+        "task_id": "noaa-gml-n2o-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-source-surface-comparison-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years); caller-supplied URLs and extra keys are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, NOAA-reported annual atmospheric N2O mole-fraction increase and stated uncertainty from both fixed surfaces, exact arithmetic differences, or explicit missing-year status.",
+          "Two fixed source receipts with retrieval timestamps, HTTP metadata, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "e3f55d031637e8038208d3d04e1f075ed6510991763c04a0e873a77889370d32"
+    },
+    {
+      "scenario": "EXPLICIT_EXACT_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-n2o-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-source-surface-comparison-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years); caller-supplied URLs and extra keys are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, NOAA-reported annual atmospheric N2O mole-fraction increase and stated uncertainty from both fixed surfaces, exact arithmetic differences, or explicit missing-year status.",
+          "Two fixed source receipts with retrieval timestamps, HTTP metadata, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "99e68b11fc1d6ad98db88dda177521a475faa0c48c60f8650b4a06fac55b0c75"
+    },
+    {
+      "scenario": "EXPLICIT_HOST_MISSING",
+      "task_profile": {
+        "task_id": "noaa-gml-n2o-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-source-surface-comparison-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years); caller-supplied URLs and extra keys are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, NOAA-reported annual atmospheric N2O mole-fraction increase and stated uncertainty from both fixed surfaces, exact arithmetic differences, or explicit missing-year status.",
+          "Two fixed source receipts with retrieval timestamps, HTTP metadata, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "e79731beac46eb5a5b03b41ad68d2448b3c8b64d848584ee5a2be114b275e9af"
+    },
+    {
+      "scenario": "OVERBROAD_ALLOWLIST",
+      "task_profile": {
+        "task_id": "noaa-gml-n2o-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-source-surface-comparison-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years); caller-supplied URLs and extra keys are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, NOAA-reported annual atmospheric N2O mole-fraction increase and stated uncertainty from both fixed surfaces, exact arithmetic differences, or explicit missing-year status.",
+          "Two fixed source receipts with retrieval timestamps, HTTP metadata, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_n2o_source_surfaces",
+        "research.compare_noaa_co2_source_surfaces",
+        "research.compare_noaa_ch4_source_surfaces",
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "f9004482ad56b8761780938df8b64bc798b11e0f917e497dd9579199980edd80"
+    }
+  ],
+  "summary": {
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "network_calls_made": 0,
+    "default_route": "INCOMPLETE_NO_CANDIDATE_SELECTED",
+    "exact_allowlist_route": "COMPLETE_SELECTS_ONLY_N2O_TOOL",
+    "missing_host_route": "INCOMPLETE_NETWORK_HOST_NOT_ALLOWED",
+    "overbroad_allowlist_route": "COMPLETE_STILL_SELECTS_ONLY_N2O_TOOL"
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "3e0876e340aedc7504400814d5e0fa2ff9c4db6d",
+      "superseded_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+      "superseded_observed_at_utc": "2026-10-27T00:26:58Z",
+      "replayed_at_utc": "2026-10-27T00:44:31Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "d33cca5f16ff01d80852904c810451990823c0c7",
+      "superseded_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+      "superseded_observed_at_utc": "2026-10-27T00:44:31Z",
+      "replayed_at_utc": "2026-10-29T14:14:20Z"
+    }
+  ],
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-27T00:44:31Z",
+    "route_trials_replayed": 4,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "replay_result_sha256": "418bc4808bbf566bd7d8c8eb0271d012cb52b0e4f4e79e337bf692bf4a858d17",
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
+  }
+}

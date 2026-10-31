@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-arxiv-query-search-input-r0",
+  "title": "Bounded arXiv Query Search Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query", "max_results"],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Public, non-sensitive arXiv search syntax. The query is transmitted to export.arxiv.org and is not echoed in the receipt."
+    },
+    "max_results": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    }
+  }
+}

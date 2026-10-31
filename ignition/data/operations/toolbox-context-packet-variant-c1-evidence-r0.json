@@ -1,0 +1,48 @@
+{
+  "schema_version": "toolbox-context-packet-variant-c1-evidence-r0",
+  "candidate_tool_id": "maintenance.compare_context_packet_variants",
+  "candidate_scope": "Compare two already assembled, matched ContextPacket R0 objects by emitted excerpt UTF-8 bytes and caller-declared structural obligation deltas.",
+  "source_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "commit": "1c8542328f482f39986a0a79ce1e0514aa14b398",
+    "path": "sources/GITHUB-TRENDING-2026-10-24-WEEK-MONTH-IGNITION-DELTA-R0.md",
+    "blueprint_id": "TR26-06",
+    "status": "NONCANONICAL_UNEXECUTED_WORKBENCH_SOURCE"
+  },
+  "compared_tools": [
+    {
+      "tool_id": "knowledge.assemble_context_packet",
+      "difference": "Assembles one bounded packet from caller-selected local source ranges and reports digest/structural status; it does not compare two matched packets."
+    },
+    {
+      "tool_id": "knowledge.navigate_raw_evidence",
+      "difference": "Searches a local indexed evidence corpus and opens bounded matches; it does not compute matched packet excerpt byte or obligation deltas."
+    },
+    {
+      "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+      "difference": "Compares repeated Actions job/step timing sequences; input and output contract differs from context packet comparison."
+    },
+    {
+      "tool_id": "research.compare_publication_metadata_snapshots",
+      "difference": "Compares selected DOI publication metadata fields; it does not compare task context packets."
+    }
+  ],
+  "comparison_findings": [
+    "The comparator has a distinct input contract: two already assembled ContextPacket R0 outputs bound to the same caller-declared question, current_ref, and ordered obligations.",
+    "No compared tool provides the same paired structural byte and obligation delta output.",
+    "This is contract-level specialization evidence only; semantic relevance, important-error recall, answer quality, task outcome, provider token use, billing, retrieval cost, and sufficiency remain unmeasured.",
+    "No existing tool is replaced, deprecated, removed, or excluded."
+  ],
+  "decision": {
+    "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "retirement_status": "SPECIALIZED",
+    "replacement_candidates": []
+  },
+  "evidence_refs": [
+    "ignition/tools/toolbox_context_packet.py",
+    "ignition/tests/test_toolbox_context_packet.py",
+    "ignition/tools/toolbox_raw_evidence_navigator.py",
+    "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+    "ignition/tools/toolbox_compare_publication_metadata.py"
+  ]
+}

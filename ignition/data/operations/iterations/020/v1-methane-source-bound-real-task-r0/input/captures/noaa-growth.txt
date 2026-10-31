@@ -1,0 +1,10 @@
+L25: # Annual CH4 mole fraction increase (ppb) from Jan 1 through Dec 31.
+L39: # CH4 expressed as a mole fraction in dry air, nanomol/mol, abbreviated as ppb
+L41: # NOTE: In general, the data presented for the last year are subject to change,
+L42: # depending on recalibration of the reference gas mixtures used, and other quality
+L43: # control procedures. Occasionally, earlier years may also change for the same
+L44: # reasons. Usually these changes are minor.
+L46: # year     ann inc         unc
+L86:   2023        8.29        0.82
+L87:   2024        8.04        0.43
+L88:   2025        4.77        0.43

@@ -1,0 +1,123 @@
+{
+  "candidate_code_commit": "f57713e679cfaf1adaeb777bc1f14dffaa9fc8e8",
+  "claim_review_status": "PARTIAL",
+  "delegation_refs": [
+    "Arvin-liu/1111#149",
+    "Arvin-liu/1111#153"
+  ],
+  "episode_id": "METHANE-ANNUAL-GROWTH-SOURCE-BINDING-R1",
+  "initial_negative_evidence": {
+    "e37": {
+      "claim_anchor_statuses": [
+        "NOT_FOUND",
+        "EXACT_MATCH",
+        "EXACT_MATCH",
+        "EXACT_MATCH"
+      ],
+      "claim_review_status": "FAILED",
+      "receipt_sha256": "d5004f93a42266c6bd881abaf8018a52a5c3974c1ef6c800c0ffc55f709f3475",
+      "run_status": "CLAIM_REVIEW_FAILED"
+    },
+    "legacy": {
+      "claim_anchor_statuses": [
+        "NOT_FOUND",
+        "EXACT_MATCH",
+        "EXACT_MATCH",
+        "EXACT_MATCH"
+      ],
+      "claim_review_status": "FAILED",
+      "receipt_sha256": "611f79a4c72a21ea38586d3843e6a1f700d48f86250a8e66c8ff2f8a1b35dfa8",
+      "run_status": "CLAIM_REVIEW_FAILED"
+    }
+  },
+  "matched_comparison": {
+    "claim_review_statuses": [
+      "PARTIAL",
+      "PARTIAL"
+    ],
+    "e37_anchor_statuses": [
+      "EXACT_MATCH",
+      "EXACT_MATCH",
+      "EXACT_MATCH",
+      "EXACT_MATCH"
+    ],
+    "e37_capture_count": 4,
+    "episode_id": "METHANE-ANNUAL-GROWTH-SOURCE-BINDING-R1",
+    "implementation_commit": "f57713e679cfaf1adaeb777bc1f14dffaa9fc8e8",
+    "legacy_anchor_statuses": [
+      "EXACT_MATCH",
+      "EXACT_MATCH",
+      "EXACT_MATCH",
+      "EXACT_MATCH"
+    ],
+    "legacy_capture_count": 0,
+    "network_requests": [
+      0,
+      0
+    ],
+    "receipt_sha256": [
+      "190613de266bfc11efa00c5a9f4654210344a1e7413e0707771f312447d41d41",
+      "632197396b1987796a342516bf8b04d9771fa8755fee4c68f85056dd7ffa16dc"
+    ],
+    "run_statuses": [
+      "CLAIM_REVIEW_INCOMPLETE",
+      "CLAIM_REVIEW_INCOMPLETE"
+    ],
+    "same_anchor_statuses": true,
+    "same_draft_sha256": true,
+    "same_normalized_sources": true,
+    "same_source_set_digest": true,
+    "semantic_validation": [
+      "NOT_PERFORMED",
+      "NOT_PERFORMED"
+    ],
+    "source_set_sha256": "44e774ac6b3a6c897693fcb27c76af819ec580c2a17ea4f978bf036ba7c3c032",
+    "task_id": "V1-TOOLBOX-METHANE-20261031"
+  },
+  "question": "Does slower atmospheric methane growth alone establish that methane emissions declined?",
+  "report_path": "ignition/reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md",
+  "research_result_ceiling": "One GONGGA inversion posterior; 2024 source coverage ends December 29; full-month value is a two-day imputation sensitivity; no inversion uncertainty propagation, no multi-model inference, no 2025 emissions estimate, no human review, no scientific acceptance.",
+  "schema": "v1-source-bound-research-use-evidence-r0",
+  "semantic_validation_status": "NOT_PERFORMED_BY_PIPELINE; separate AI-authored assessment is not human review and does not constitute scientific acceptance",
+  "source_set_sha256": "44e774ac6b3a6c897693fcb27c76af819ec580c2a17ea4f978bf036ba7c3c032",
+  "task_id": "V1-TOOLBOX-METHANE-20261031",
+  "independent_review_status": "AI_SECONDARY_REVIEW_COMPLETE_HUMAN_REVIEW_NOT_PERFORMED",
+  "publication_status": "CANDIDATE_NOT_RELEASED_ON_FORMAL_MAIN",
+  "comparison_disposition": {
+    "overall_result": "NO_DELTA",
+    "net_benefit": "NOT_ESTABLISHED",
+    "narrow_observed_difference": "E37 retained four captures while legacy retained zero in the matched offline replay; both had 4/4 exact anchors",
+    "operational_baseline": "legacy adapter",
+    "e37_router_status": "EXPERIMENTAL_DEFAULT_OFF",
+    "live_retrieval_quality_measured": false,
+    "semantic_accuracy_measured_by_pipeline": false,
+    "operator_time_measured": false,
+    "cost_measured": false,
+    "post_release_use_performed": false
+  },
+  "gongga_recalculation": {
+    "script_path": "recompute_gongga_annual_totals.py",
+    "script_sha256": "15b7fe9b1ac26ff3a41317b09497472df67eef52d7c9e6715bb548a22361de41",
+    "result_path": "gongga-recalculation.json",
+    "result_sha256": "dda56903e703f2821d1b381476a6002a127286c1b4abde5563c50021f5c9d71f",
+    "input_files_included": [
+      "input/data/2019_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "input/data/2023_GONGGA-CH4_Flux_CAMS_TRO.nc",
+      "input/data/2024_GONGGA-CH4_Flux_CAMS_TRO.nc"
+    ],
+    "coverage_days": {
+      "2019": 365,
+      "2023": 365,
+      "2024": 364
+    },
+    "2024_coverage_through": "2024-12-29",
+    "2024_missing_dates": [
+      "2024-12-30",
+      "2024-12-31"
+    ],
+    "2024_available_coverage_total_Tg_CH4": 594.613321542048,
+    "2024_full_month_imputation_sensitivity_Tg_CH4": 597.5673478884701,
+    "matched_calendar_date_proxy_daily_rate_difference_percent": 2.6698053926465404,
+    "uncertainty_propagated": false
+  }
+}

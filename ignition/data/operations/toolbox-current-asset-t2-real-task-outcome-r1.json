@@ -1,0 +1,1645 @@
+{
+  "schema_version": "ignition.toolbox-real-task-route-evidence-r1",
+  "experiment_id": "REAL-TASK-20261025-CURRENT-ASSET-T2-BATCH-ROUTE",
+  "observed_at_utc": "2026-10-25T10:44:05.478021Z",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "checkout": {
+    "branch": "codex/toolbox-growth-20261025",
+    "head": "662f56d20df325748cf4c9977336043be2712a71",
+    "formal_main": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_ref_binding": "CALLER_SUPPLIED_CHECKED_OUT_CANDIDATE_REF"
+  },
+  "task": {
+    "task_id": "resolve-title-and-id-to-one-stored-current-identity",
+    "intent": "Verify whether the supplied title 乘法归零律 and identifier T2 denote the same repository Current identity; report only the stored disposition, claim ceiling, and record digest. Do not judge external or scientific truth.",
+    "input_references": [
+      "乘法归零律",
+      "T2"
+    ],
+    "acceptance": [
+      "Both references resolve to T2 in input order.",
+      "Both resolutions agree on stored disposition, claim ceiling, and record SHA-256.",
+      "No fuzzy or historical-file identity is used; external truth remains unclaimed."
+    ],
+    "actual_outcome": {
+      "single_reference_path_success": true,
+      "batch_candidate_success": true,
+      "canonical_id": "T2",
+      "title": "乘法归零律",
+      "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+      "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+      "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "record_read_extension_same_identity_and_digest": true
+    }
+  },
+  "routes": {
+    "default_light": {
+      "plans": [
+        {
+          "reference": "乘法归零律",
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "foundation.resolve_current_asset"
+          ],
+          "execution_authorized": false,
+          "unmet_outputs": []
+        },
+        {
+          "reference": "T2",
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "foundation.resolve_current_asset"
+          ],
+          "execution_authorized": false,
+          "unmet_outputs": []
+        }
+      ],
+      "actual_invocation_count": 2,
+      "interpretation": "Registered single-reference Current resolver, called once for each supplied reference."
+    },
+    "batch_sufficient": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "foundation.batch_resolve_current_asset_references"
+      ],
+      "execution_authorized": false,
+      "actual_invocation_count": 1,
+      "interpretation": "One explicitly allowlisted batch tool handles both references and returns one source-hash receipt."
+    },
+    "expanded_option_set": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "foundation.batch_resolve_current_asset_references"
+      ],
+      "allowlisted_tool_ids": [
+        "foundation.batch_resolve_current_asset_references",
+        "foundation.read_current_asset_card"
+      ],
+      "execution_authorized": false,
+      "reader_selected": false,
+      "interpretation": "Router retained the full-card reader as unselected because it added no output required by the identity-resolution task."
+    }
+  },
+  "invocations": {
+    "default_light": [
+      {
+        "label": "current_single_reference",
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "-B",
+          "ignition/tools/foundation/resolve_current_canonical_asset.py",
+          "--reference",
+          "乘法归零律"
+        ],
+        "input_bytes": 0,
+        "input_sha256": null,
+        "exit_code": 0,
+        "elapsed_ms_observed": 842.68,
+        "stdout_bytes": 1161,
+        "stdout_sha256": "8f0f39c10296b0f0bcd7afe77f43739718c758a536ae73123709e6c7c3d8e564",
+        "stderr": "",
+        "stdout_text": "{\n  \"alias_resolution\": {\n    \"alias_id\": \"ALIAS-16840BD20E4B89DB\",\n    \"lineage_key\": \"T2\",\n    \"replacement\": \"乘法归零律\",\n    \"status\": \"CURRENT_SEARCH_ALIAS\"\n  },\n  \"authority_sources\": [\n    \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n    \"ignition/data/governance/knowledge-experience/alias-index.jsonl\"\n  ],\n  \"canonical_id\": \"T2\",\n  \"canonical_title\": \"乘法归零律\",\n  \"claim_ceiling\": \"A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.\",\n  \"failure_reason\": null,\n  \"final_disposition\": \"KEEP_AS_ESTABLISHED_MATH\",\n  \"historical_file_used_as_identity\": false,\n  \"identity_authority\": \"HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99\",\n  \"input_reference\": \"乘法归零律\",\n  \"match_kind\": \"CURRENT_SEARCH_ALIAS\",\n  \"memory_or_fuzzy_resolution_used\": false,\n  \"primary_identity\": \"RELATION_OR_CONSTRAINT\",\n  \"record_sha256\": \"29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0\",\n  \"registry_kind\": \"FUNCTION_ASSET\",\n  \"resolution_establishes_external_truth\": false,\n  \"resolution_status\": \"RESOLVED_CURRENT_CANONICAL_IDENTITY\"\n}\n",
+        "parsed": {
+          "alias_resolution": {
+            "alias_id": "ALIAS-16840BD20E4B89DB",
+            "lineage_key": "T2",
+            "replacement": "乘法归零律",
+            "status": "CURRENT_SEARCH_ALIAS"
+          },
+          "authority_sources": [
+            "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "ignition/data/governance/knowledge-experience/alias-index.jsonl"
+          ],
+          "canonical_id": "T2",
+          "canonical_title": "乘法归零律",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "failure_reason": null,
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "historical_file_used_as_identity": false,
+          "identity_authority": "HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99",
+          "input_reference": "乘法归零律",
+          "match_kind": "CURRENT_SEARCH_ALIAS",
+          "memory_or_fuzzy_resolution_used": false,
+          "primary_identity": "RELATION_OR_CONSTRAINT",
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "registry_kind": "FUNCTION_ASSET",
+          "resolution_establishes_external_truth": false,
+          "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY"
+        }
+      },
+      {
+        "label": "current_single_reference",
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "-B",
+          "ignition/tools/foundation/resolve_current_canonical_asset.py",
+          "--reference",
+          "T2"
+        ],
+        "input_bytes": 0,
+        "input_sha256": null,
+        "exit_code": 0,
+        "elapsed_ms_observed": 834.109,
+        "stdout_bytes": 961,
+        "stdout_sha256": "23d9d7203a5fef3451e81b7a9fffec7baca9e71c2149d453d9c1ff1cfa2da2d2",
+        "stderr": "",
+        "stdout_text": "{\n  \"authority_sources\": [\n    \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n    \"ignition/data/foundation/mappings/legacy-mappings.jsonl\"\n  ],\n  \"canonical_id\": \"T2\",\n  \"canonical_title\": \"乘法归零律\",\n  \"claim_ceiling\": \"A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.\",\n  \"failure_reason\": null,\n  \"final_disposition\": \"KEEP_AS_ESTABLISHED_MATH\",\n  \"historical_file_used_as_identity\": false,\n  \"identity_authority\": \"HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99\",\n  \"input_reference\": \"T2\",\n  \"match_kind\": \"CANONICAL_ID\",\n  \"memory_or_fuzzy_resolution_used\": false,\n  \"primary_identity\": \"RELATION_OR_CONSTRAINT\",\n  \"record_sha256\": \"29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0\",\n  \"registry_kind\": \"FUNCTION_ASSET\",\n  \"resolution_establishes_external_truth\": false,\n  \"resolution_status\": \"RESOLVED_CURRENT_CANONICAL_IDENTITY\"\n}\n",
+        "parsed": {
+          "authority_sources": [
+            "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "ignition/data/foundation/mappings/legacy-mappings.jsonl"
+          ],
+          "canonical_id": "T2",
+          "canonical_title": "乘法归零律",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "failure_reason": null,
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "historical_file_used_as_identity": false,
+          "identity_authority": "HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99",
+          "input_reference": "T2",
+          "match_kind": "CANONICAL_ID",
+          "memory_or_fuzzy_resolution_used": false,
+          "primary_identity": "RELATION_OR_CONSTRAINT",
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "registry_kind": "FUNCTION_ASSET",
+          "resolution_establishes_external_truth": false,
+          "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY"
+        }
+      }
+    ],
+    "batch_sufficient": {
+      "label": "experimental_batch_resolver",
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "ignition/tools/toolbox_batch_resolve_current_assets.py",
+        "--stdin"
+      ],
+      "input_bytes": 39,
+      "input_sha256": "489c2fac7c09457e41c1e4f528e02152c918862cb4f5fb9f47602ffd77774657",
+      "exit_code": 0,
+      "elapsed_ms_observed": 1009.003,
+      "stdout_bytes": 4457,
+      "stdout_sha256": "f503edc5db1309ad3fbdaf8c1f915991ff98547786f45e055a5139bb10abab6b",
+      "stderr": "",
+      "stdout_text": "{\n  \"claim_ceiling\": \"Repository-snapshot canonical identity and migration resolution only; unresolved and ambiguous items remain explicit; no fuzzy identity, truth, proof, evidence upgrade, or external validity is inferred.\",\n  \"receipt_sha256\": \"6c70e51519285ef780c63dbc961c4615d09aefcf306909c9685bbde77b077c55\",\n  \"reference_count\": 2,\n  \"result_status\": \"BATCH_RESOLUTION_PROCESSED\",\n  \"results\": [\n    {\n      \"input_index\": 0,\n      \"resolution\": {\n        \"alias_resolution\": {\n          \"alias_id\": \"ALIAS-16840BD20E4B89DB\",\n          \"lineage_key\": \"T2\",\n          \"replacement\": \"乘法归零律\",\n          \"status\": \"CURRENT_SEARCH_ALIAS\"\n        },\n        \"authority_sources\": [\n          \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n          \"ignition/data/governance/knowledge-experience/alias-index.jsonl\"\n        ],\n        \"canonical_id\": \"T2\",\n        \"canonical_title\": \"乘法归零律\",\n        \"claim_ceiling\": \"A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.\",\n        \"failure_reason\": null,\n        \"final_disposition\": \"KEEP_AS_ESTABLISHED_MATH\",\n        \"historical_file_used_as_identity\": false,\n        \"identity_authority\": \"HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99\",\n        \"input_reference\": \"乘法归零律\",\n        \"match_kind\": \"CURRENT_SEARCH_ALIAS\",\n        \"memory_or_fuzzy_resolution_used\": false,\n        \"primary_identity\": \"RELATION_OR_CONSTRAINT\",\n        \"record_sha256\": \"29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0\",\n        \"registry_kind\": \"FUNCTION_ASSET\",\n        \"resolution_establishes_external_truth\": false,\n        \"resolution_status\": \"RESOLVED_CURRENT_CANONICAL_IDENTITY\"\n      },\n      \"submitted_reference\": \"乘法归零律\"\n    },\n    {\n      \"input_index\": 1,\n      \"resolution\": {\n        \"authority_sources\": [\n          \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n          \"ignition/data/foundation/mappings/legacy-mappings.jsonl\"\n        ],\n        \"canonical_id\": \"T2\",\n        \"canonical_title\": \"乘法归零律\",\n        \"claim_ceiling\": \"A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.\",\n        \"failure_reason\": null,\n        \"final_disposition\": \"KEEP_AS_ESTABLISHED_MATH\",\n        \"historical_file_used_as_identity\": false,\n        \"identity_authority\": \"HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99\",\n        \"input_reference\": \"T2\",\n        \"match_kind\": \"CANONICAL_ID\",\n        \"memory_or_fuzzy_resolution_used\": false,\n        \"primary_identity\": \"RELATION_OR_CONSTRAINT\",\n        \"record_sha256\": \"29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0\",\n        \"registry_kind\": \"FUNCTION_ASSET\",\n        \"resolution_establishes_external_truth\": false,\n        \"resolution_status\": \"RESOLVED_CURRENT_CANONICAL_IDENTITY\"\n      },\n      \"submitted_reference\": \"T2\"\n    }\n  ],\n  \"schema_version\": \"toolbox-batch-canonical-resolution-r0\",\n  \"source_refs\": [\n    {\n      \"name\": \"canonical_resolver\",\n      \"path\": \"ignition/tools/foundation/resolve_current_canonical_asset.py\",\n      \"sha256\": \"07c50639da127f629c90d9e790d10e78606cc26ee72eb794b2468df72d220cc3\"\n    },\n    {\n      \"name\": \"function_identity_cards\",\n      \"path\": \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n      \"sha256\": \"ee77061af46149f6eb92ea80ece4d61f7eac54d65ed63dfcc64adaa193d542b0\"\n    },\n    {\n      \"name\": \"nonfunction_claim_registry\",\n      \"path\": \"ignition/data/foundation/nonfunction-claims/claim-registry.jsonl\",\n      \"sha256\": \"b64c48ba8f613bbbe9c781c31117254a4a6d408335f9ae2ca30821362c9bb2d2\"\n    },\n    {\n      \"name\": \"current_alias_index\",\n      \"path\": \"ignition/data/governance/knowledge-experience/alias-index.jsonl\",\n      \"sha256\": \"98b4a3499ecfd54514dac39cbc47b49ceeb2b570aa27f504ca4712ee16c34317\"\n    },\n    {\n      \"name\": \"current_identity_corrections\",\n      \"path\": \"ignition/data/foundation/function-assets/corrections.jsonl\",\n      \"sha256\": \"0eb7866cd20b9e1ee9e7106cca4a51277b3f3e0fa99d09e4adb1a503821c9831\"\n    },\n    {\n      \"name\": \"legacy_identity_mappings\",\n      \"path\": \"ignition/data/foundation/mappings/legacy-mappings.jsonl\",\n      \"sha256\": \"f7269dc6cc6ec36d5948d52bf516448c5c2cba8f0a65dea79f1c5212bfb50524\"\n    }\n  ],\n  \"summary\": {\n    \"ambiguous\": 0,\n    \"resolved\": 2,\n    \"unresolved\": 0\n  }\n}\n",
+      "parsed": {
+        "claim_ceiling": "Repository-snapshot canonical identity and migration resolution only; unresolved and ambiguous items remain explicit; no fuzzy identity, truth, proof, evidence upgrade, or external validity is inferred.",
+        "receipt_sha256": "6c70e51519285ef780c63dbc961c4615d09aefcf306909c9685bbde77b077c55",
+        "reference_count": 2,
+        "result_status": "BATCH_RESOLUTION_PROCESSED",
+        "results": [
+          {
+            "input_index": 0,
+            "resolution": {
+              "alias_resolution": {
+                "alias_id": "ALIAS-16840BD20E4B89DB",
+                "lineage_key": "T2",
+                "replacement": "乘法归零律",
+                "status": "CURRENT_SEARCH_ALIAS"
+              },
+              "authority_sources": [
+                "ignition/data/foundation/function-assets/identity-cards.jsonl",
+                "ignition/data/governance/knowledge-experience/alias-index.jsonl"
+              ],
+              "canonical_id": "T2",
+              "canonical_title": "乘法归零律",
+              "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+              "failure_reason": null,
+              "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+              "historical_file_used_as_identity": false,
+              "identity_authority": "HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99",
+              "input_reference": "乘法归零律",
+              "match_kind": "CURRENT_SEARCH_ALIAS",
+              "memory_or_fuzzy_resolution_used": false,
+              "primary_identity": "RELATION_OR_CONSTRAINT",
+              "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+              "registry_kind": "FUNCTION_ASSET",
+              "resolution_establishes_external_truth": false,
+              "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY"
+            },
+            "submitted_reference": "乘法归零律"
+          },
+          {
+            "input_index": 1,
+            "resolution": {
+              "authority_sources": [
+                "ignition/data/foundation/function-assets/identity-cards.jsonl",
+                "ignition/data/foundation/mappings/legacy-mappings.jsonl"
+              ],
+              "canonical_id": "T2",
+              "canonical_title": "乘法归零律",
+              "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+              "failure_reason": null,
+              "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+              "historical_file_used_as_identity": false,
+              "identity_authority": "HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99",
+              "input_reference": "T2",
+              "match_kind": "CANONICAL_ID",
+              "memory_or_fuzzy_resolution_used": false,
+              "primary_identity": "RELATION_OR_CONSTRAINT",
+              "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+              "registry_kind": "FUNCTION_ASSET",
+              "resolution_establishes_external_truth": false,
+              "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY"
+            },
+            "submitted_reference": "T2"
+          }
+        ],
+        "schema_version": "toolbox-batch-canonical-resolution-r0",
+        "source_refs": [
+          {
+            "name": "canonical_resolver",
+            "path": "ignition/tools/foundation/resolve_current_canonical_asset.py",
+            "sha256": "07c50639da127f629c90d9e790d10e78606cc26ee72eb794b2468df72d220cc3"
+          },
+          {
+            "name": "function_identity_cards",
+            "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "sha256": "ee77061af46149f6eb92ea80ece4d61f7eac54d65ed63dfcc64adaa193d542b0"
+          },
+          {
+            "name": "nonfunction_claim_registry",
+            "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+            "sha256": "b64c48ba8f613bbbe9c781c31117254a4a6d408335f9ae2ca30821362c9bb2d2"
+          },
+          {
+            "name": "current_alias_index",
+            "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+            "sha256": "98b4a3499ecfd54514dac39cbc47b49ceeb2b570aa27f504ca4712ee16c34317"
+          },
+          {
+            "name": "current_identity_corrections",
+            "path": "ignition/data/foundation/function-assets/corrections.jsonl",
+            "sha256": "0eb7866cd20b9e1ee9e7106cca4a51277b3f3e0fa99d09e4adb1a503821c9831"
+          },
+          {
+            "name": "legacy_identity_mappings",
+            "path": "ignition/data/foundation/mappings/legacy-mappings.jsonl",
+            "sha256": "f7269dc6cc6ec36d5948d52bf516448c5c2cba8f0a65dea79f1c5212bfb50524"
+          }
+        ],
+        "summary": {
+          "ambiguous": 0,
+          "resolved": 2,
+          "unresolved": 0
+        }
+      }
+    },
+    "forced_redundant_increment": {
+      "label": "forced_redundant_exact_card_read",
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "ignition/tools/toolbox_read_current_asset_card.py",
+        "--stdin"
+      ],
+      "input_bytes": 21,
+      "input_sha256": "321e56c611b5d5da821eccccaa51408462ddc1a4b5e6f24acc6db924d70f9349",
+      "exit_code": 0,
+      "elapsed_ms_observed": 939.947,
+      "stdout_bytes": 34727,
+      "stdout_sha256": "e6430218d7dd9f58dde68f7bda6a5d668720f9531490be66bd521d89fe159bad",
+      "stderr": "",
+      "stdout_text": "{\n  \"authority_path\": \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n  \"canonical_id\": \"T2\",\n  \"claim_ceiling\": \"Exact content of one checked-out Current identity-card or non-function claim record, with its stored record hash verified and both identity registries source-hashed. This does not establish truth, proof, external validity, or independent verification of linked source anchors.\",\n  \"record\": {\n    \"adjudication_evidence_paths\": [\n      \"AI-HANDOFF.md\",\n      \"CHANGELOG.md\",\n      \"FOUNDATION.md\",\n      \"OPERATING-METHOD.md\",\n      \"RESULTS/CORRECTIONS.md\",\n      \"analysis/corpus-relation/article_cluster_candidates.json\",\n      \"analysis/corpus-relation/cluster_source_briefs/C000.md\",\n      \"analysis/corpus-relation/corpus_relation_graph.json\",\n      \"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl\",\n      \"data/external-research/121-fulltext-resolver/121-extracts.jsonl\",\n      \"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json\",\n      \"data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json\",\n      \"data/external-research/121-fulltext-resolver/121q6c/asset-bridge-audit-35.json\",\n      \"data/foundation/adjudications/079-independent-semantic-review.jsonl\",\n      \"data/foundation/adjudications/079-method-audit.jsonl\",\n      \"data/foundation/adjudications/080-source-text-adjudications.jsonl\",\n      \"data/foundation/adjudications/083-updated-original-adjudications.jsonl\",\n      \"data/foundation/adjudications/084-max-decisions.jsonl\",\n      \"data/foundation/adjudications/classification-overrides.jsonl\",\n      \"data/foundation/adjudications/core-kernel.jsonl\",\n      \"data/foundation/arguments/arguments.jsonl\",\n      \"data/foundation/claims/claims.jsonl\",\n      \"data/foundation/escalations/083-max-adjudication-queue.jsonl\",\n      \"data/foundation/formal-objects/objects.jsonl\",\n      \"data/foundation/function-assets/census.jsonl\",\n      \"data/foundation/function-assets/identity-cards.jsonl\",\n      \"data/foundation/mappings/legacy-mappings.jsonl\",\n      \"data/foundation/mappings/object-evidence-mappings.jsonl\",\n      \"data/foundation/proofs/artifacts.jsonl\",\n      \"data/foundation/proofs/core-artifacts.jsonl\",\n      \"data/foundation/proofs/obligations.jsonl\",\n      \"data/foundation/proofs/proof-artifacts.jsonl\",\n      \"data/foundation/sources/sources.jsonl\",\n      \"data/foundation/unresolved-obligations.json\",\n      \"data/foundation/unresolved-obligations.jsonl\",\n      \"data/foundation/validations/079-equivalence-checks.jsonl\",\n      \"data/foundation/validations/core-logic-checks.jsonl\",\n      \"data/foundation/work-queues/080-semantic-review-queue.jsonl\",\n      \"data/math-foundation/function-provenance-ledger.csv\",\n      \"data/math-foundation/function-provenance-ledger.jsonl\",\n      \"data/operations/iterations/112/publication/FINAL_ACHIEVEMENT_LEDGER.jsonl\",\n      \"data/operations/iterations/112/publication/R0_CLAIM_AUDIT.jsonl\",\n      \"data/operations/iterations/112/publication/r0-original/01-百轮成果总台账.jsonl\",\n      \"data/operations/iterations/112/publication/r0-original/04-纠正与撤回谱系.md\",\n      \"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-03.md\",\n      \"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md\",\n      \"data/operations/iterations/112/publication/r0-original/reviews/事实审查.md\",\n      \"data/operations/iterations/112/publication/r0-original/reviews/编辑审查.md\",\n      \"data/operations/iterations/112/publication/r0-original/reviews/逐项修订清单.md\",\n      \"data/operations/iterations/112/publication/r0-original/volume/修订说明.md\",\n      \"data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md\",\n      \"data/operations/iterations/112/publication/r0-original/点火目前真正知道什么.md\",\n      \"data/operations/iterations/124/step12-closure-r1.json\",\n      \"data/operations/iterations/130/step07-classification-report.json\",\n      \"data/operations/iterations/134/step00-residual-archaeology.json\",\n      \"data/operations/iterations/134/step06-human-surface-semantic-audit.json\",\n      \"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json\",\n      \"data/operations/iterations/134/step11-current-projection-closure.json\",\n      \"data/operations/iterations/134/step13-human-surface-semantic-audit.json\",\n      \"data/operations/iterations/134/step14-human-surface-semantic-audit.json\",\n      \"data/operations/iterations/135/step02-human-surface-semantic-audit.json\",\n      \"data/operations/iterations/143/corpus-census-r1.json\",\n      \"data/operations/iterations/143/publication-portfolio-r1.json\",\n      \"data/operations/iterations/148/progress.jsonl\",\n      \"data/operations/iterations/148/step06-current-canonical-resolution.json\",\n      \"data/operations/residual-ledger-r1.json\",\n      \"data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl\",\n      \"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl\",\n      \"data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl\",\n      \"data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl\",\n      \"docs/editorial/MANIFEST.md\",\n      \"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md\",\n      \"docs/foundation/future-claim-admission-protocol.md\",\n      \"docs/foundation/historical-correction-log.md\",\n      \"docs/foundation/historical-function-deep-adjudication-20260729.md\",\n      \"docs/foundation/physics-asset-correction-20260729.md\",\n      \"docs/foundation/strong-claim-gates.md\",\n      \"docs/governance/knowledge-experience-layer.md\",\n      \"formal/sage/function_asset_task99_checks.sage\",\n      \"function-os-candidate/v0.2/tests/test_n8_robust.py\",\n      \"llms.txt\",\n      \"reports/foundation-architecture/098-claim-governance-implementation.md\",\n      \"reports/foundation-architecture/098-dependency-impact.md\",\n      \"reports/foundation-architecture/098-remote-truth-and-gap.md\",\n      \"reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md\",\n      \"reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md\",\n      \"reports/foundation-architecture/core-kernel-adjudication-20260713.md\",\n      \"reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md\",\n      \"reports/foundation-architecture/semantic-adjudication-verification-20260713.md\",\n      \"reports/math-foundation/pilot-formal-audit-20260712.md\",\n      \"reports/operations/ignition-134-step00-residual-archaeology.md\",\n      \"reports/operations/ignition-134-step14-human-surface-semantic-audit.md\",\n      \"templates/protocol-entry-template.md\",\n      \"views/legacy-functions.jsonl\",\n      \"统一函数总表/0012-T2-乘法归零律.md\",\n      \"统一函数总表/0014-T4-乘法对称变换.md\",\n      \"统一函数总表/0025-T15-乘法临界漂移统一.md\",\n      \"统一函数总表/0515-D517-质量度量约束放松函数.md\",\n      \"统一函数总表/INDEX.md\",\n      \"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md\",\n      \"统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md\",\n      \"统一案例总表/0656-C-661-公众号碰撞 × 点火框架验证.md\",\n      \"统一案例总表/0657-C-662-四方向联合碰撞验证.md\"\n    ],\n    \"algebraic_carrier_and_operation\": {\n      \"carrier\": \"Nat and any explicitly stated algebra with absorbing zero\",\n      \"operation\": \"typed multiplication\"\n    },\n    \"alias_candidate_count\": 0,\n    \"alias_candidates\": [],\n    \"allowed_uses\": [\n      \"carrier-specific zero-product theorem\",\n      \"implementation checks with an explicitly typed multiplication\"\n    ],\n    \"assumptions_and_quantifiers\": {\n      \"assumptions\": [\n        \"For a,b in a stated carrier with an absorbing zero, a=0 or b=0 implies a*b=0; the converse needs no-zero-divisor assumptions.\"\n      ],\n      \"quantifiers\": \"EXPLICIT_IN_CORRECTION\"\n    },\n    \"audit_gates\": {\n      \"circular_reasoning_gate\": \"PASS\",\n      \"claim_ceiling_gate\": \"PASS\",\n      \"claim_layer_gate\": \"PASS\",\n      \"counterexample_gate\": \"PASS\",\n      \"cross_domain_isomorphism_gate\": \"NOT_APPLICABLE\",\n      \"definition_gate\": \"PASS\",\n      \"dependency_impact_gate\": \"NOT_APPLICABLE\",\n      \"dimension_and_type_gate\": \"PASS\",\n      \"internal_test_truth_gate\": \"PASS\",\n      \"universal_quantifier_gate\": \"PASS\"\n    },\n    \"canonical_id\": \"T2\",\n    \"claim_ceiling\": \"A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.\",\n    \"claimed_status\": {\n      \"falsifiability_or_testability\": \"BOUNDED_REPLAY_AVAILABLE\",\n      \"historical_assertion_grade\": \"UNVERIFIED\",\n      \"model_or_theorem_status\": \"MATHEMATICAL_PROPOSITION\"\n    },\n    \"current_public_exposure\": [\n      \"PUBLIC_FRONT_DOOR\",\n      \"PUBLIC_DOCUMENT\",\n      \"LEGACY_PUBLIC_SOURCE\",\n      \"PUBLIC_ARCHIVE_OR_REPORT\"\n    ],\n    \"definition\": {\n      \"carrier\": \"Nat and any explicitly stated algebra with absorbing zero\",\n      \"codomain\": \"Nat proposition\",\n      \"domain\": \"Typed pairs (a,b) in a specified carrier with an absorbing zero\",\n      \"exact_expression_or_executable_specification\": \"UNSPECIFIED_IN_SOURCE\",\n      \"inputs\": [\n        {\n          \"name\": \"a\",\n          \"type\": \"Nat\"\n        },\n        {\n          \"name\": \"b\",\n          \"type\": \"Nat\"\n        }\n      ],\n      \"operation\": \"typed multiplication\",\n      \"original_formula\": null,\n      \"original_text\": \"乘法归零律\",\n      \"output\": \"Nat proposition\",\n      \"parameters\": [],\n      \"units\": []\n    },\n    \"dependencies\": {\n      \"children\": [\n        \"D517\"\n      ],\n      \"parents\": [],\n      \"transitive_children\": [\n        \"D517\"\n      ]\n    },\n    \"empirical_obligations\": [\n      \"Define the operational mapping from variables to external objects before making a reality claim.\",\n      \"Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain.\"\n    ],\n    \"external_evidence_maturity\": \"E0\",\n    \"final_disposition\": \"KEEP_AS_ESTABLISHED_MATH\",\n    \"first_appearance_method\": \"earliest path occurrence reachable from the locked source commit; renames are not inferred\",\n    \"first_known_appearance_commit\": \"00c2a8c769984776de922f49c3c66c677d6fa3b4\",\n    \"historical_ids\": [\n      \"T2\"\n    ],\n    \"identity_authority\": \"HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99\",\n    \"known_counterexamples\": [\n      \"In Z/6Z, 2*3=0 although neither factor is zero; matrix products can also vanish with nonzero factors.\"\n    ],\n    \"last_adjudicated_commit\": \"23f4702a0e9f136cb39f03c4bcd3d85a27084804\",\n    \"last_adjudicated_date\": \"2026-07-29\",\n    \"mathematical_maturity\": \"M6\",\n    \"mathematical_properties\": {\n      \"boundaries\": [\n        \"For a,b in a stated carrier with an absorbing zero, a=0 or b=0 implies a*b=0; the converse needs no-zero-divisor assumptions.\"\n      ],\n      \"computability\": \"REQUIRES_HUMAN_REVIEW\",\n      \"continuity\": \"NOT_APPLICABLE\",\n      \"counterexamples\": [\n        \"In Z/6Z, 2*3=0 although neither factor is zero; matrix products can also vanish with nonzero factors.\"\n      ],\n      \"differentiability\": \"NOT_APPLICABLE\",\n      \"failure_modes\": [\n        \"The algebraic absorbing-zero statement does not entail temporal irreversibility, indispensability or world disappearance.\"\n      ],\n      \"monotonicity\": \"NOT_APPLICABLE\",\n      \"singularities\": []\n    },\n    \"primary_identity\": \"RELATION_OR_CONSTRAINT\",\n    \"prohibited_uses\": [\n      \"untyped universal multiplication law\",\n      \"time-irreversibility claim\",\n      \"no-substitution claim\",\n      \"conflating scalar, matrix, operator, tensor, contraction and Hadamard products\"\n    ],\n    \"proof_obligations\": [\n      \"Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a function.\",\n      \"Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.\",\n      \"proof-obligation:T2\"\n    ],\n    \"record_sha256\": \"29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0\",\n    \"reviewer_state\": \"TASK98_HUMAN_ADJUDICATION_RECONFIRMED\",\n    \"secondary_identities\": [],\n    \"six_layer_audit\": {\n      \"algebra_and_analysis\": {\n        \"evidence\": \"task-98 scoped checks\",\n        \"result\": \"PASS\"\n      },\n      \"domain_interpretation\": {\n        \"evidence\": \"external evidence remains independent of M maturity\",\n        \"result\": \"PASS\"\n      },\n      \"logic\": {\n        \"evidence\": \"quantifier, circularity and claim-layer gates\",\n        \"result\": \"PASS\"\n      },\n      \"numerical_and_computational\": {\n        \"evidence\": \"bounded replay only\",\n        \"result\": \"PASS\"\n      },\n      \"syntax_and_mapping\": {\n        \"evidence\": \"definition metadata and source anchors\",\n        \"result\": \"FAIL\"\n      },\n      \"type_and_dimension\": {\n        \"evidence\": \"typed signature or declared metadata\",\n        \"result\": \"PASS\"\n      }\n    },\n    \"source_anchors\": [\n      {\n        \"first_line\": 104,\n        \"last_line\": 104,\n        \"mention_count\": 1,\n        \"path\": \"AI-HANDOFF.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 47,\n        \"last_line\": 47,\n        \"mention_count\": 1,\n        \"path\": \"CHANGELOG.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 49,\n        \"last_line\": 49,\n        \"mention_count\": 1,\n        \"path\": \"FOUNDATION.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 300,\n        \"last_line\": 300,\n        \"mention_count\": 1,\n        \"path\": \"OPERATING-METHOD.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 10,\n        \"last_line\": 10,\n        \"mention_count\": 1,\n        \"path\": \"RESULTS/CORRECTIONS.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 292,\n        \"last_line\": 292,\n        \"mention_count\": 1,\n        \"path\": \"analysis/corpus-relation/article_cluster_candidates.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 232,\n        \"last_line\": 562,\n        \"mention_count\": 26,\n        \"path\": \"analysis/corpus-relation/cluster_source_briefs/C000.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 7610,\n        \"last_line\": 8585,\n        \"mention_count\": 3,\n        \"path\": \"analysis/corpus-relation/corpus_relation_graph.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 18,\n        \"last_line\": 18,\n        \"mention_count\": 1,\n        \"path\": \"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 29,\n        \"last_line\": 71,\n        \"mention_count\": 5,\n        \"path\": \"data/external-research/121-fulltext-resolver/121-extracts.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 265,\n        \"last_line\": 266,\n        \"mention_count\": 2,\n        \"path\": \"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 113,\n        \"last_line\": 114,\n        \"mention_count\": 2,\n        \"path\": \"data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 302,\n        \"last_line\": 303,\n        \"mention_count\": 2,\n        \"path\": \"data/external-research/121-fulltext-resolver/121q6c/asset-bridge-audit-35.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 2,\n        \"last_line\": 2,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/adjudications/079-independent-semantic-review.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/adjudications/079-method-audit.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/adjudications/080-source-text-adjudications.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 537,\n        \"mention_count\": 3,\n        \"path\": \"data/foundation/adjudications/083-updated-original-adjudications.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 1,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/adjudications/084-max-decisions.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 541,\n        \"mention_count\": 2,\n        \"path\": \"data/foundation/adjudications/classification-overrides.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 26,\n        \"last_line\": 550,\n        \"mention_count\": 2,\n        \"path\": \"data/foundation/adjudications/core-kernel.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/arguments/arguments.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/claims/claims.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 220,\n        \"mention_count\": 2,\n        \"path\": \"data/foundation/escalations/083-max-adjudication-queue.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 541,\n        \"mention_count\": 2,\n        \"path\": \"data/foundation/formal-objects/objects.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/mappings/legacy-mappings.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/mappings/object-evidence-mappings.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 1,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/proofs/artifacts.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 1,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/proofs/core-artifacts.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/proofs/obligations.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 1,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/proofs/proof-artifacts.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/sources/sources.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 26,\n        \"last_line\": 26,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/unresolved-obligations.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/unresolved-obligations.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 1,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/validations/079-equivalence-checks.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 1,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/validations/core-logic-checks.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 537,\n        \"last_line\": 537,\n        \"mention_count\": 1,\n        \"path\": \"data/foundation/work-queues/080-semantic-review-queue.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 887,\n        \"last_line\": 887,\n        \"mention_count\": 1,\n        \"path\": \"data/math-foundation/function-provenance-ledger.csv\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 598,\n        \"last_line\": 598,\n        \"mention_count\": 1,\n        \"path\": \"data/math-foundation/function-provenance-ledger.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 15,\n        \"last_line\": 15,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/FINAL_ACHIEVEMENT_LEDGER.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 24,\n        \"last_line\": 24,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/R0_CLAIM_AUDIT.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 15,\n        \"last_line\": 15,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/01-百轮成果总台账.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 22,\n        \"last_line\": 22,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/04-纠正与撤回谱系.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 10,\n        \"last_line\": 10,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-03.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 353,\n        \"last_line\": 353,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 15,\n        \"last_line\": 15,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/reviews/事实审查.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 16,\n        \"last_line\": 32,\n        \"mention_count\": 2,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/reviews/编辑审查.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 18,\n        \"last_line\": 18,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/reviews/逐项修订清单.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 51,\n        \"last_line\": 51,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/volume/修订说明.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 121,\n        \"last_line\": 722,\n        \"mention_count\": 2,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 35,\n        \"last_line\": 35,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/112/publication/r0-original/点火目前真正知道什么.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 73,\n        \"last_line\": 73,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/124/step12-closure-r1.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 773,\n        \"last_line\": 773,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/130/step07-classification-report.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 51,\n        \"last_line\": 51,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/134/step00-residual-archaeology.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 18,\n        \"last_line\": 18,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/134/step06-human-surface-semantic-audit.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 9,\n        \"last_line\": 9,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 53,\n        \"last_line\": 53,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/134/step11-current-projection-closure.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 19,\n        \"last_line\": 19,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/134/step13-human-surface-semantic-audit.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 13,\n        \"last_line\": 13,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/134/step14-human-surface-semantic-audit.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 13,\n        \"last_line\": 13,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/135/step02-human-surface-semantic-audit.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 252,\n        \"last_line\": 267,\n        \"mention_count\": 2,\n        \"path\": \"data/operations/iterations/143/corpus-census-r1.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 158,\n        \"last_line\": 158,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/143/publication-portfolio-r1.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 6,\n        \"last_line\": 6,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/148/progress.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 20,\n        \"last_line\": 20,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/iterations/148/step06-current-canonical-resolution.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 297,\n        \"last_line\": 297,\n        \"mention_count\": 1,\n        \"path\": \"data/operations/residual-ledger-r1.json\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 61,\n        \"last_line\": 61,\n        \"mention_count\": 1,\n        \"path\": \"data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 202,\n        \"last_line\": 224,\n        \"mention_count\": 2,\n        \"path\": \"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 202,\n        \"last_line\": 224,\n        \"mention_count\": 2,\n        \"path\": \"data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 2562,\n        \"last_line\": 2562,\n        \"mention_count\": 1,\n        \"path\": \"data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 22,\n        \"mention_count\": 2,\n        \"path\": \"docs/editorial/MANIFEST.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 37,\n        \"last_line\": 67,\n        \"mention_count\": 2,\n        \"path\": \"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 31,\n        \"last_line\": 31,\n        \"mention_count\": 1,\n        \"path\": \"docs/foundation/future-claim-admission-protocol.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 7,\n        \"last_line\": 8,\n        \"mention_count\": 2,\n        \"path\": \"docs/foundation/historical-correction-log.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 13,\n        \"last_line\": 13,\n        \"mention_count\": 1,\n        \"path\": \"docs/foundation/historical-function-deep-adjudication-20260729.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 15,\n        \"last_line\": 22,\n        \"mention_count\": 2,\n        \"path\": \"docs/foundation/physics-asset-correction-20260729.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 5,\n        \"last_line\": 5,\n        \"mention_count\": 1,\n        \"path\": \"docs/foundation/strong-claim-gates.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 45,\n        \"last_line\": 45,\n        \"mention_count\": 1,\n        \"path\": \"docs/governance/knowledge-experience-layer.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 29,\n        \"last_line\": 29,\n        \"mention_count\": 1,\n        \"path\": \"formal/sage/function_asset_task99_checks.sage\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 26,\n        \"last_line\": 41,\n        \"mention_count\": 2,\n        \"path\": \"function-os-candidate/v0.2/tests/test_n8_robust.py\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 54,\n        \"last_line\": 54,\n        \"mention_count\": 1,\n        \"path\": \"llms.txt\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 19,\n        \"last_line\": 19,\n        \"mention_count\": 1,\n        \"path\": \"reports/foundation-architecture/098-claim-governance-implementation.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 7,\n        \"last_line\": 7,\n        \"mention_count\": 1,\n        \"path\": \"reports/foundation-architecture/098-dependency-impact.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 11,\n        \"last_line\": 11,\n        \"mention_count\": 1,\n        \"path\": \"reports/foundation-architecture/098-remote-truth-and-gap.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 31,\n        \"last_line\": 31,\n        \"mention_count\": 1,\n        \"path\": \"reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 1,\n        \"last_line\": 16,\n        \"mention_count\": 3,\n        \"path\": \"reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 10,\n        \"last_line\": 10,\n        \"mention_count\": 1,\n        \"path\": \"reports/foundation-architecture/core-kernel-adjudication-20260713.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 3,\n        \"last_line\": 4,\n        \"mention_count\": 2,\n        \"path\": \"reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 3,\n        \"last_line\": 9,\n        \"mention_count\": 2,\n        \"path\": \"reports/foundation-architecture/semantic-adjudication-verification-20260713.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 556,\n        \"last_line\": 568,\n        \"mention_count\": 2,\n        \"path\": \"reports/math-foundation/pilot-formal-audit-20260712.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 23,\n        \"last_line\": 23,\n        \"mention_count\": 1,\n        \"path\": \"reports/operations/ignition-134-step00-residual-archaeology.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 11,\n        \"last_line\": 11,\n        \"mention_count\": 1,\n        \"path\": \"reports/operations/ignition-134-step14-human-surface-semantic-audit.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 16,\n        \"last_line\": 16,\n        \"mention_count\": 1,\n        \"path\": \"templates/protocol-entry-template.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 17,\n        \"last_line\": 17,\n        \"mention_count\": 1,\n        \"path\": \"views/legacy-functions.jsonl\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 4,\n        \"last_line\": 45,\n        \"mention_count\": 17,\n        \"path\": \"统一函数总表/0012-T2-乘法归零律.md\",\n        \"role\": \"DEFINITION\"\n      },\n      {\n        \"first_line\": 61,\n        \"last_line\": 61,\n        \"mention_count\": 1,\n        \"path\": \"统一函数总表/0014-T4-乘法对称变换.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 60,\n        \"last_line\": 60,\n        \"mention_count\": 1,\n        \"path\": \"统一函数总表/0025-T15-乘法临界漂移统一.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 34,\n        \"last_line\": 34,\n        \"mention_count\": 1,\n        \"path\": \"统一函数总表/0515-D517-质量度量约束放松函数.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 24,\n        \"last_line\": 24,\n        \"mention_count\": 1,\n        \"path\": \"统一函数总表/INDEX.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 54,\n        \"last_line\": 54,\n        \"mention_count\": 1,\n        \"path\": \"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 42,\n        \"last_line\": 42,\n        \"mention_count\": 1,\n        \"path\": \"统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 42,\n        \"last_line\": 42,\n        \"mention_count\": 1,\n        \"path\": \"统一案例总表/0656-C-661-公众号碰撞 × 点火框架验证.md\",\n        \"role\": \"REFERENCE\"\n      },\n      {\n        \"first_line\": 45,\n        \"last_line\": 45,\n        \"mention_count\": 1,\n        \"path\": \"统一案例总表/0657-C-662-四方向联合碰撞验证.md\",\n        \"role\": \"REFERENCE\"\n      }\n    ],\n    \"title\": \"乘法归零律\"\n  },\n  \"record_kind\": \"FUNCTION_ASSET\",\n  \"record_sha256\": \"29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0\",\n  \"record_sha256_verified\": true,\n  \"result_status\": \"CURRENT_CANONICAL_RECORD_READ\",\n  \"schema_version\": \"toolbox-current-foundation-record-r0\",\n  \"source_refs\": [\n    {\n      \"name\": \"function_identity_cards\",\n      \"path\": \"ignition/data/foundation/function-assets/identity-cards.jsonl\",\n      \"sha256\": \"ee77061af46149f6eb92ea80ece4d61f7eac54d65ed63dfcc64adaa193d542b0\"\n    },\n    {\n      \"name\": \"nonfunction_claim_registry\",\n      \"path\": \"ignition/data/foundation/nonfunction-claims/claim-registry.jsonl\",\n      \"sha256\": \"b64c48ba8f613bbbe9c781c31117254a4a6d408335f9ae2ca30821362c9bb2d2\"\n    }\n  ]\n}\n",
+      "parsed": {
+        "authority_path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "canonical_id": "T2",
+        "claim_ceiling": "Exact content of one checked-out Current identity-card or non-function claim record, with its stored record hash verified and both identity registries source-hashed. This does not establish truth, proof, external validity, or independent verification of linked source anchors.",
+        "record": {
+          "adjudication_evidence_paths": [
+            "AI-HANDOFF.md",
+            "CHANGELOG.md",
+            "FOUNDATION.md",
+            "OPERATING-METHOD.md",
+            "RESULTS/CORRECTIONS.md",
+            "analysis/corpus-relation/article_cluster_candidates.json",
+            "analysis/corpus-relation/cluster_source_briefs/C000.md",
+            "analysis/corpus-relation/corpus_relation_graph.json",
+            "data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl",
+            "data/external-research/121-fulltext-resolver/121-extracts.jsonl",
+            "data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json",
+            "data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json",
+            "data/external-research/121-fulltext-resolver/121q6c/asset-bridge-audit-35.json",
+            "data/foundation/adjudications/079-independent-semantic-review.jsonl",
+            "data/foundation/adjudications/079-method-audit.jsonl",
+            "data/foundation/adjudications/080-source-text-adjudications.jsonl",
+            "data/foundation/adjudications/083-updated-original-adjudications.jsonl",
+            "data/foundation/adjudications/084-max-decisions.jsonl",
+            "data/foundation/adjudications/classification-overrides.jsonl",
+            "data/foundation/adjudications/core-kernel.jsonl",
+            "data/foundation/arguments/arguments.jsonl",
+            "data/foundation/claims/claims.jsonl",
+            "data/foundation/escalations/083-max-adjudication-queue.jsonl",
+            "data/foundation/formal-objects/objects.jsonl",
+            "data/foundation/function-assets/census.jsonl",
+            "data/foundation/function-assets/identity-cards.jsonl",
+            "data/foundation/mappings/legacy-mappings.jsonl",
+            "data/foundation/mappings/object-evidence-mappings.jsonl",
+            "data/foundation/proofs/artifacts.jsonl",
+            "data/foundation/proofs/core-artifacts.jsonl",
+            "data/foundation/proofs/obligations.jsonl",
+            "data/foundation/proofs/proof-artifacts.jsonl",
+            "data/foundation/sources/sources.jsonl",
+            "data/foundation/unresolved-obligations.json",
+            "data/foundation/unresolved-obligations.jsonl",
+            "data/foundation/validations/079-equivalence-checks.jsonl",
+            "data/foundation/validations/core-logic-checks.jsonl",
+            "data/foundation/work-queues/080-semantic-review-queue.jsonl",
+            "data/math-foundation/function-provenance-ledger.csv",
+            "data/math-foundation/function-provenance-ledger.jsonl",
+            "data/operations/iterations/112/publication/FINAL_ACHIEVEMENT_LEDGER.jsonl",
+            "data/operations/iterations/112/publication/R0_CLAIM_AUDIT.jsonl",
+            "data/operations/iterations/112/publication/r0-original/01-百轮成果总台账.jsonl",
+            "data/operations/iterations/112/publication/r0-original/04-纠正与撤回谱系.md",
+            "data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-03.md",
+            "data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md",
+            "data/operations/iterations/112/publication/r0-original/reviews/事实审查.md",
+            "data/operations/iterations/112/publication/r0-original/reviews/编辑审查.md",
+            "data/operations/iterations/112/publication/r0-original/reviews/逐项修订清单.md",
+            "data/operations/iterations/112/publication/r0-original/volume/修订说明.md",
+            "data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md",
+            "data/operations/iterations/112/publication/r0-original/点火目前真正知道什么.md",
+            "data/operations/iterations/124/step12-closure-r1.json",
+            "data/operations/iterations/130/step07-classification-report.json",
+            "data/operations/iterations/134/step00-residual-archaeology.json",
+            "data/operations/iterations/134/step06-human-surface-semantic-audit.json",
+            "data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json",
+            "data/operations/iterations/134/step11-current-projection-closure.json",
+            "data/operations/iterations/134/step13-human-surface-semantic-audit.json",
+            "data/operations/iterations/134/step14-human-surface-semantic-audit.json",
+            "data/operations/iterations/135/step02-human-surface-semantic-audit.json",
+            "data/operations/iterations/143/corpus-census-r1.json",
+            "data/operations/iterations/143/publication-portfolio-r1.json",
+            "data/operations/iterations/148/progress.jsonl",
+            "data/operations/iterations/148/step06-current-canonical-resolution.json",
+            "data/operations/residual-ledger-r1.json",
+            "data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl",
+            "data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl",
+            "data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl",
+            "data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl",
+            "docs/editorial/MANIFEST.md",
+            "docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md",
+            "docs/foundation/future-claim-admission-protocol.md",
+            "docs/foundation/historical-correction-log.md",
+            "docs/foundation/historical-function-deep-adjudication-20260729.md",
+            "docs/foundation/physics-asset-correction-20260729.md",
+            "docs/foundation/strong-claim-gates.md",
+            "docs/governance/knowledge-experience-layer.md",
+            "formal/sage/function_asset_task99_checks.sage",
+            "function-os-candidate/v0.2/tests/test_n8_robust.py",
+            "llms.txt",
+            "reports/foundation-architecture/098-claim-governance-implementation.md",
+            "reports/foundation-architecture/098-dependency-impact.md",
+            "reports/foundation-architecture/098-remote-truth-and-gap.md",
+            "reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md",
+            "reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md",
+            "reports/foundation-architecture/core-kernel-adjudication-20260713.md",
+            "reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md",
+            "reports/foundation-architecture/semantic-adjudication-verification-20260713.md",
+            "reports/math-foundation/pilot-formal-audit-20260712.md",
+            "reports/operations/ignition-134-step00-residual-archaeology.md",
+            "reports/operations/ignition-134-step14-human-surface-semantic-audit.md",
+            "templates/protocol-entry-template.md",
+            "views/legacy-functions.jsonl",
+            "统一函数总表/0012-T2-乘法归零律.md",
+            "统一函数总表/0014-T4-乘法对称变换.md",
+            "统一函数总表/0025-T15-乘法临界漂移统一.md",
+            "统一函数总表/0515-D517-质量度量约束放松函数.md",
+            "统一函数总表/INDEX.md",
+            "统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md",
+            "统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md",
+            "统一案例总表/0656-C-661-公众号碰撞 × 点火框架验证.md",
+            "统一案例总表/0657-C-662-四方向联合碰撞验证.md"
+          ],
+          "algebraic_carrier_and_operation": {
+            "carrier": "Nat and any explicitly stated algebra with absorbing zero",
+            "operation": "typed multiplication"
+          },
+          "alias_candidate_count": 0,
+          "alias_candidates": [],
+          "allowed_uses": [
+            "carrier-specific zero-product theorem",
+            "implementation checks with an explicitly typed multiplication"
+          ],
+          "assumptions_and_quantifiers": {
+            "assumptions": [
+              "For a,b in a stated carrier with an absorbing zero, a=0 or b=0 implies a*b=0; the converse needs no-zero-divisor assumptions."
+            ],
+            "quantifiers": "EXPLICIT_IN_CORRECTION"
+          },
+          "audit_gates": {
+            "circular_reasoning_gate": "PASS",
+            "claim_ceiling_gate": "PASS",
+            "claim_layer_gate": "PASS",
+            "counterexample_gate": "PASS",
+            "cross_domain_isomorphism_gate": "NOT_APPLICABLE",
+            "definition_gate": "PASS",
+            "dependency_impact_gate": "NOT_APPLICABLE",
+            "dimension_and_type_gate": "PASS",
+            "internal_test_truth_gate": "PASS",
+            "universal_quantifier_gate": "PASS"
+          },
+          "canonical_id": "T2",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "claimed_status": {
+            "falsifiability_or_testability": "BOUNDED_REPLAY_AVAILABLE",
+            "historical_assertion_grade": "UNVERIFIED",
+            "model_or_theorem_status": "MATHEMATICAL_PROPOSITION"
+          },
+          "current_public_exposure": [
+            "PUBLIC_FRONT_DOOR",
+            "PUBLIC_DOCUMENT",
+            "LEGACY_PUBLIC_SOURCE",
+            "PUBLIC_ARCHIVE_OR_REPORT"
+          ],
+          "definition": {
+            "carrier": "Nat and any explicitly stated algebra with absorbing zero",
+            "codomain": "Nat proposition",
+            "domain": "Typed pairs (a,b) in a specified carrier with an absorbing zero",
+            "exact_expression_or_executable_specification": "UNSPECIFIED_IN_SOURCE",
+            "inputs": [
+              {
+                "name": "a",
+                "type": "Nat"
+              },
+              {
+                "name": "b",
+                "type": "Nat"
+              }
+            ],
+            "operation": "typed multiplication",
+            "original_formula": null,
+            "original_text": "乘法归零律",
+            "output": "Nat proposition",
+            "parameters": [],
+            "units": []
+          },
+          "dependencies": {
+            "children": [
+              "D517"
+            ],
+            "parents": [],
+            "transitive_children": [
+              "D517"
+            ]
+          },
+          "empirical_obligations": [
+            "Define the operational mapping from variables to external objects before making a reality claim.",
+            "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+          ],
+          "external_evidence_maturity": "E0",
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "first_appearance_method": "earliest path occurrence reachable from the locked source commit; renames are not inferred",
+          "first_known_appearance_commit": "00c2a8c769984776de922f49c3c66c677d6fa3b4",
+          "historical_ids": [
+            "T2"
+          ],
+          "identity_authority": "HUMAN_ADJUDICATED_TASK98_RECONFIRMED_TASK99",
+          "known_counterexamples": [
+            "In Z/6Z, 2*3=0 although neither factor is zero; matrix products can also vanish with nonzero factors."
+          ],
+          "last_adjudicated_commit": "23f4702a0e9f136cb39f03c4bcd3d85a27084804",
+          "last_adjudicated_date": "2026-07-29",
+          "mathematical_maturity": "M6",
+          "mathematical_properties": {
+            "boundaries": [
+              "For a,b in a stated carrier with an absorbing zero, a=0 or b=0 implies a*b=0; the converse needs no-zero-divisor assumptions."
+            ],
+            "computability": "REQUIRES_HUMAN_REVIEW",
+            "continuity": "NOT_APPLICABLE",
+            "counterexamples": [
+              "In Z/6Z, 2*3=0 although neither factor is zero; matrix products can also vanish with nonzero factors."
+            ],
+            "differentiability": "NOT_APPLICABLE",
+            "failure_modes": [
+              "The algebraic absorbing-zero statement does not entail temporal irreversibility, indispensability or world disappearance."
+            ],
+            "monotonicity": "NOT_APPLICABLE",
+            "singularities": []
+          },
+          "primary_identity": "RELATION_OR_CONSTRAINT",
+          "prohibited_uses": [
+            "untyped universal multiplication law",
+            "time-irreversibility claim",
+            "no-substitution claim",
+            "conflating scalar, matrix, operator, tensor, contraction and Hadamard products"
+          ],
+          "proof_obligations": [
+            "Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a function.",
+            "Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.",
+            "proof-obligation:T2"
+          ],
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "reviewer_state": "TASK98_HUMAN_ADJUDICATION_RECONFIRMED",
+          "secondary_identities": [],
+          "six_layer_audit": {
+            "algebra_and_analysis": {
+              "evidence": "task-98 scoped checks",
+              "result": "PASS"
+            },
+            "domain_interpretation": {
+              "evidence": "external evidence remains independent of M maturity",
+              "result": "PASS"
+            },
+            "logic": {
+              "evidence": "quantifier, circularity and claim-layer gates",
+              "result": "PASS"
+            },
+            "numerical_and_computational": {
+              "evidence": "bounded replay only",
+              "result": "PASS"
+            },
+            "syntax_and_mapping": {
+              "evidence": "definition metadata and source anchors",
+              "result": "FAIL"
+            },
+            "type_and_dimension": {
+              "evidence": "typed signature or declared metadata",
+              "result": "PASS"
+            }
+          },
+          "source_anchors": [
+            {
+              "first_line": 104,
+              "last_line": 104,
+              "mention_count": 1,
+              "path": "AI-HANDOFF.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 47,
+              "last_line": 47,
+              "mention_count": 1,
+              "path": "CHANGELOG.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 49,
+              "last_line": 49,
+              "mention_count": 1,
+              "path": "FOUNDATION.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 300,
+              "last_line": 300,
+              "mention_count": 1,
+              "path": "OPERATING-METHOD.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 10,
+              "last_line": 10,
+              "mention_count": 1,
+              "path": "RESULTS/CORRECTIONS.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 292,
+              "last_line": 292,
+              "mention_count": 1,
+              "path": "analysis/corpus-relation/article_cluster_candidates.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 232,
+              "last_line": 562,
+              "mention_count": 26,
+              "path": "analysis/corpus-relation/cluster_source_briefs/C000.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 7610,
+              "last_line": 8585,
+              "mention_count": 3,
+              "path": "analysis/corpus-relation/corpus_relation_graph.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 18,
+              "last_line": 18,
+              "mention_count": 1,
+              "path": "data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 29,
+              "last_line": 71,
+              "mention_count": 5,
+              "path": "data/external-research/121-fulltext-resolver/121-extracts.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 265,
+              "last_line": 266,
+              "mention_count": 2,
+              "path": "data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 113,
+              "last_line": 114,
+              "mention_count": 2,
+              "path": "data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 302,
+              "last_line": 303,
+              "mention_count": 2,
+              "path": "data/external-research/121-fulltext-resolver/121q6c/asset-bridge-audit-35.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 2,
+              "last_line": 2,
+              "mention_count": 1,
+              "path": "data/foundation/adjudications/079-independent-semantic-review.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/adjudications/079-method-audit.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/adjudications/080-source-text-adjudications.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 537,
+              "mention_count": 3,
+              "path": "data/foundation/adjudications/083-updated-original-adjudications.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 1,
+              "mention_count": 1,
+              "path": "data/foundation/adjudications/084-max-decisions.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 541,
+              "mention_count": 2,
+              "path": "data/foundation/adjudications/classification-overrides.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 26,
+              "last_line": 550,
+              "mention_count": 2,
+              "path": "data/foundation/adjudications/core-kernel.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/arguments/arguments.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/claims/claims.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 220,
+              "mention_count": 2,
+              "path": "data/foundation/escalations/083-max-adjudication-queue.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 541,
+              "mention_count": 2,
+              "path": "data/foundation/formal-objects/objects.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/mappings/legacy-mappings.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/mappings/object-evidence-mappings.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 1,
+              "mention_count": 1,
+              "path": "data/foundation/proofs/artifacts.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 1,
+              "mention_count": 1,
+              "path": "data/foundation/proofs/core-artifacts.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/proofs/obligations.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 1,
+              "mention_count": 1,
+              "path": "data/foundation/proofs/proof-artifacts.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/sources/sources.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 26,
+              "last_line": 26,
+              "mention_count": 1,
+              "path": "data/foundation/unresolved-obligations.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "data/foundation/unresolved-obligations.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 1,
+              "mention_count": 1,
+              "path": "data/foundation/validations/079-equivalence-checks.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 1,
+              "mention_count": 1,
+              "path": "data/foundation/validations/core-logic-checks.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 537,
+              "last_line": 537,
+              "mention_count": 1,
+              "path": "data/foundation/work-queues/080-semantic-review-queue.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 887,
+              "last_line": 887,
+              "mention_count": 1,
+              "path": "data/math-foundation/function-provenance-ledger.csv",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 598,
+              "last_line": 598,
+              "mention_count": 1,
+              "path": "data/math-foundation/function-provenance-ledger.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 15,
+              "last_line": 15,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/FINAL_ACHIEVEMENT_LEDGER.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 24,
+              "last_line": 24,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/R0_CLAIM_AUDIT.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 15,
+              "last_line": 15,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/01-百轮成果总台账.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 22,
+              "last_line": 22,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/04-纠正与撤回谱系.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 10,
+              "last_line": 10,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-03.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 353,
+              "last_line": 353,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 15,
+              "last_line": 15,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/reviews/事实审查.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 16,
+              "last_line": 32,
+              "mention_count": 2,
+              "path": "data/operations/iterations/112/publication/r0-original/reviews/编辑审查.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 18,
+              "last_line": 18,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/reviews/逐项修订清单.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 51,
+              "last_line": 51,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/volume/修订说明.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 121,
+              "last_line": 722,
+              "mention_count": 2,
+              "path": "data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 35,
+              "last_line": 35,
+              "mention_count": 1,
+              "path": "data/operations/iterations/112/publication/r0-original/点火目前真正知道什么.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 73,
+              "last_line": 73,
+              "mention_count": 1,
+              "path": "data/operations/iterations/124/step12-closure-r1.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 773,
+              "last_line": 773,
+              "mention_count": 1,
+              "path": "data/operations/iterations/130/step07-classification-report.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 51,
+              "last_line": 51,
+              "mention_count": 1,
+              "path": "data/operations/iterations/134/step00-residual-archaeology.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 18,
+              "last_line": 18,
+              "mention_count": 1,
+              "path": "data/operations/iterations/134/step06-human-surface-semantic-audit.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 9,
+              "last_line": 9,
+              "mention_count": 1,
+              "path": "data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 53,
+              "last_line": 53,
+              "mention_count": 1,
+              "path": "data/operations/iterations/134/step11-current-projection-closure.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 19,
+              "last_line": 19,
+              "mention_count": 1,
+              "path": "data/operations/iterations/134/step13-human-surface-semantic-audit.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 13,
+              "last_line": 13,
+              "mention_count": 1,
+              "path": "data/operations/iterations/134/step14-human-surface-semantic-audit.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 13,
+              "last_line": 13,
+              "mention_count": 1,
+              "path": "data/operations/iterations/135/step02-human-surface-semantic-audit.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 252,
+              "last_line": 267,
+              "mention_count": 2,
+              "path": "data/operations/iterations/143/corpus-census-r1.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 158,
+              "last_line": 158,
+              "mention_count": 1,
+              "path": "data/operations/iterations/143/publication-portfolio-r1.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 6,
+              "last_line": 6,
+              "mention_count": 1,
+              "path": "data/operations/iterations/148/progress.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 20,
+              "last_line": 20,
+              "mention_count": 1,
+              "path": "data/operations/iterations/148/step06-current-canonical-resolution.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 297,
+              "last_line": 297,
+              "mention_count": 1,
+              "path": "data/operations/residual-ledger-r1.json",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 61,
+              "last_line": 61,
+              "mention_count": 1,
+              "path": "data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 202,
+              "last_line": 224,
+              "mention_count": 2,
+              "path": "data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 202,
+              "last_line": 224,
+              "mention_count": 2,
+              "path": "data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 2562,
+              "last_line": 2562,
+              "mention_count": 1,
+              "path": "data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 22,
+              "mention_count": 2,
+              "path": "docs/editorial/MANIFEST.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 37,
+              "last_line": 67,
+              "mention_count": 2,
+              "path": "docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 31,
+              "last_line": 31,
+              "mention_count": 1,
+              "path": "docs/foundation/future-claim-admission-protocol.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 7,
+              "last_line": 8,
+              "mention_count": 2,
+              "path": "docs/foundation/historical-correction-log.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 13,
+              "last_line": 13,
+              "mention_count": 1,
+              "path": "docs/foundation/historical-function-deep-adjudication-20260729.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 15,
+              "last_line": 22,
+              "mention_count": 2,
+              "path": "docs/foundation/physics-asset-correction-20260729.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 5,
+              "last_line": 5,
+              "mention_count": 1,
+              "path": "docs/foundation/strong-claim-gates.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 45,
+              "last_line": 45,
+              "mention_count": 1,
+              "path": "docs/governance/knowledge-experience-layer.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 29,
+              "last_line": 29,
+              "mention_count": 1,
+              "path": "formal/sage/function_asset_task99_checks.sage",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 26,
+              "last_line": 41,
+              "mention_count": 2,
+              "path": "function-os-candidate/v0.2/tests/test_n8_robust.py",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 54,
+              "last_line": 54,
+              "mention_count": 1,
+              "path": "llms.txt",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 19,
+              "last_line": 19,
+              "mention_count": 1,
+              "path": "reports/foundation-architecture/098-claim-governance-implementation.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 7,
+              "last_line": 7,
+              "mention_count": 1,
+              "path": "reports/foundation-architecture/098-dependency-impact.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 11,
+              "last_line": 11,
+              "mention_count": 1,
+              "path": "reports/foundation-architecture/098-remote-truth-and-gap.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 31,
+              "last_line": 31,
+              "mention_count": 1,
+              "path": "reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 1,
+              "last_line": 16,
+              "mention_count": 3,
+              "path": "reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 10,
+              "last_line": 10,
+              "mention_count": 1,
+              "path": "reports/foundation-architecture/core-kernel-adjudication-20260713.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 3,
+              "last_line": 4,
+              "mention_count": 2,
+              "path": "reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 3,
+              "last_line": 9,
+              "mention_count": 2,
+              "path": "reports/foundation-architecture/semantic-adjudication-verification-20260713.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 556,
+              "last_line": 568,
+              "mention_count": 2,
+              "path": "reports/math-foundation/pilot-formal-audit-20260712.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 23,
+              "last_line": 23,
+              "mention_count": 1,
+              "path": "reports/operations/ignition-134-step00-residual-archaeology.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 11,
+              "last_line": 11,
+              "mention_count": 1,
+              "path": "reports/operations/ignition-134-step14-human-surface-semantic-audit.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 16,
+              "last_line": 16,
+              "mention_count": 1,
+              "path": "templates/protocol-entry-template.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 17,
+              "last_line": 17,
+              "mention_count": 1,
+              "path": "views/legacy-functions.jsonl",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 4,
+              "last_line": 45,
+              "mention_count": 17,
+              "path": "统一函数总表/0012-T2-乘法归零律.md",
+              "role": "DEFINITION"
+            },
+            {
+              "first_line": 61,
+              "last_line": 61,
+              "mention_count": 1,
+              "path": "统一函数总表/0014-T4-乘法对称变换.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 60,
+              "last_line": 60,
+              "mention_count": 1,
+              "path": "统一函数总表/0025-T15-乘法临界漂移统一.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 34,
+              "last_line": 34,
+              "mention_count": 1,
+              "path": "统一函数总表/0515-D517-质量度量约束放松函数.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 24,
+              "last_line": 24,
+              "mention_count": 1,
+              "path": "统一函数总表/INDEX.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 54,
+              "last_line": 54,
+              "mention_count": 1,
+              "path": "统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 42,
+              "last_line": 42,
+              "mention_count": 1,
+              "path": "统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 42,
+              "last_line": 42,
+              "mention_count": 1,
+              "path": "统一案例总表/0656-C-661-公众号碰撞 × 点火框架验证.md",
+              "role": "REFERENCE"
+            },
+            {
+              "first_line": 45,
+              "last_line": 45,
+              "mention_count": 1,
+              "path": "统一案例总表/0657-C-662-四方向联合碰撞验证.md",
+              "role": "REFERENCE"
+            }
+          ],
+          "title": "乘法归零律"
+        },
+        "record_kind": "FUNCTION_ASSET",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "record_sha256_verified": true,
+        "result_status": "CURRENT_CANONICAL_RECORD_READ",
+        "schema_version": "toolbox-current-foundation-record-r0",
+        "source_refs": [
+          {
+            "name": "function_identity_cards",
+            "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "sha256": "ee77061af46149f6eb92ea80ece4d61f7eac54d65ed63dfcc64adaa193d542b0"
+          },
+          {
+            "name": "nonfunction_claim_registry",
+            "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+            "sha256": "b64c48ba8f613bbbe9c781c31117254a4a6d408335f9ae2ca30821362c9bb2d2"
+          }
+        ]
+      }
+    }
+  },
+  "outcome_rows": {
+    "default_light": [
+      {
+        "input_reference": "乘法归零律",
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "match_kind": "CURRENT_SEARCH_ALIAS",
+        "registry_kind": "FUNCTION_ASSET",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "memory_or_fuzzy_resolution_used": false,
+        "historical_file_used_as_identity": false,
+        "resolution_establishes_external_truth": false
+      },
+      {
+        "input_reference": "T2",
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "match_kind": "CANONICAL_ID",
+        "registry_kind": "FUNCTION_ASSET",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "memory_or_fuzzy_resolution_used": false,
+        "historical_file_used_as_identity": false,
+        "resolution_establishes_external_truth": false
+      }
+    ],
+    "batch_sufficient": [
+      {
+        "input_reference": "乘法归零律",
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "match_kind": "CURRENT_SEARCH_ALIAS",
+        "registry_kind": "FUNCTION_ASSET",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "memory_or_fuzzy_resolution_used": false,
+        "historical_file_used_as_identity": false,
+        "resolution_establishes_external_truth": false
+      },
+      {
+        "input_reference": "T2",
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "match_kind": "CANONICAL_ID",
+        "registry_kind": "FUNCTION_ASSET",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "memory_or_fuzzy_resolution_used": false,
+        "historical_file_used_as_identity": false,
+        "resolution_establishes_external_truth": false
+      }
+    ],
+    "reader_extension": {
+      "result_status": "CURRENT_CANONICAL_RECORD_READ",
+      "canonical_id": "T2",
+      "record_kind": "FUNCTION_ASSET",
+      "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "record_sha256_verified": true,
+      "authority_path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+      "title": "乘法归零律",
+      "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+      "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology."
+    }
+  },
+  "observed_costs": {
+    "measure": "One local run per listed process; elapsed time is observed wall clock, not a stable benchmark or billed cost. Authority bytes are sizes read by declared tool paths, not physical disk I/O.",
+    "authority_file_sizes_bytes": {
+      "ignition/data/foundation/function-assets/corrections.jsonl": 27882,
+      "ignition/data/foundation/function-assets/identity-cards.jsonl": 33010617,
+      "ignition/data/foundation/mappings/legacy-mappings.jsonl": 142409,
+      "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl": 53132791,
+      "ignition/data/governance/knowledge-experience/alias-index.jsonl": 424476
+    },
+    "default_light": {
+      "tool_processes": 2,
+      "authority_bytes_by_contract": 173476350,
+      "elapsed_ms_observed": 1676.789,
+      "stdout_bytes": 2122
+    },
+    "batch_sufficient": {
+      "tool_processes": 1,
+      "authority_bytes_by_contract": 86738175,
+      "elapsed_ms_observed": 1009.003,
+      "stdout_bytes": 4457
+    },
+    "forced_redundant_increment": {
+      "additional_tool_processes": 1,
+      "additional_authority_bytes_by_contract": 86143408,
+      "additional_elapsed_ms_observed": 939.947,
+      "additional_stdout_bytes": 34727,
+      "cumulative_authority_bytes_by_contract": 172881583,
+      "task_success_changed": false
+    }
+  },
+  "c1_same_task_comparison": {
+    "compared_tool_ids": [
+      "foundation.resolve_current_asset",
+      "foundation.batch_resolve_current_asset_references"
+    ],
+    "same_input_order": [
+      "乘法归零律",
+      "T2"
+    ],
+    "same_repository_snapshot_for_actual_invocations": "662f56d20df325748cf4c9977336043be2712a71",
+    "same_results_on_task_acceptance": true,
+    "source_line_snapshot_check": {
+      "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+      "main_line": 6094,
+      "candidate_line": 6094,
+      "main_line_sha256": "40e73a72531938bb50307173b0c140b4ac969d4303a7a6150176efdf7de67eec",
+      "candidate_line_sha256": "40e73a72531938bb50307173b0c140b4ac969d4303a7a6150176efdf7de67eec",
+      "line_bytes_equal": true,
+      "stored_record_sha256_main": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "stored_record_sha256_candidate": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0"
+    },
+    "independent_resolver_snapshot_check": [
+      {
+        "reference": "乘法归零律",
+        "equal_on_checked_fields": true,
+        "main": {
+          "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+          "canonical_id": "T2",
+          "canonical_title": "乘法归零律",
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "memory_or_fuzzy_resolution_used": false,
+          "historical_file_used_as_identity": false,
+          "resolution_establishes_external_truth": false
+        },
+        "candidate": {
+          "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+          "canonical_id": "T2",
+          "canonical_title": "乘法归零律",
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "memory_or_fuzzy_resolution_used": false,
+          "historical_file_used_as_identity": false,
+          "resolution_establishes_external_truth": false
+        }
+      },
+      {
+        "reference": "T2",
+        "equal_on_checked_fields": true,
+        "main": {
+          "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+          "canonical_id": "T2",
+          "canonical_title": "乘法归零律",
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "memory_or_fuzzy_resolution_used": false,
+          "historical_file_used_as_identity": false,
+          "resolution_establishes_external_truth": false
+        },
+        "candidate": {
+          "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+          "canonical_id": "T2",
+          "canonical_title": "乘法归零律",
+          "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+          "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+          "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+          "memory_or_fuzzy_resolution_used": false,
+          "historical_file_used_as_identity": false,
+          "resolution_establishes_external_truth": false
+        }
+      }
+    ],
+    "decision": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "findings": [
+      "On this two-reference task, both routes returned the same T2 identity, disposition, claim ceiling, and record digest without fuzzy or historical identity.",
+      "The batch candidate processed both references in one process and emitted one source-hash receipt; the registered single-reference resolver required two invocations.",
+      "The single-reference resolver remains suitable for one reference; this task does not support replacing it.",
+      "The exact T2 source line and record digest are byte-identical between Formal main and the candidate branch; the candidate authority bundle differs by unrelated claim rows.",
+      "A full-card read returned the same ID/digest but added no required task output.",
+      "Capture-2 analysis initially compared against the generic string RESOLVED and reported a false negative; correction used the resolver source constant RESOLVED_CURRENT_CANONICAL_IDENTITY. The stored raw invocation stdout was re-evaluated without rerunning either tool."
+    ],
+    "limits": [
+      "One local task only; not a broad reliability or cost benchmark.",
+      "Observed elapsed time is one warm-cache/no-control measurement.",
+      "Source hashes verify repository bytes, not scientific truth.",
+      "No network, billing, secrets, repository writes, or Foundation regression."
+    ]
+  },
+  "capture_attempt_history": [
+    {
+      "attempt": "CAPTURE-1",
+      "status": "CAPTURE_FAILED",
+      "error_type": "KeyError",
+      "error_message": "'decision'",
+      "cause": "serializer indexed route wrapper instead of inner plan",
+      "used_in_comparison": false
+    },
+    {
+      "attempt": "CAPTURE-2",
+      "status": "CAPTURED",
+      "used_in_comparison": true
+    },
+    {
+      "attempt": "CAPTURE-2-RESULT-EVALUATION",
+      "status": "ANALYSIS_FALSE_NEGATIVE",
+      "error_type": "wrong_expected_enum",
+      "expected_value_used": "RESOLVED",
+      "actual_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+      "used_in_comparison": false
+    },
+    {
+      "attempt": "CAPTURE-3-RESULT-EVALUATION",
+      "status": "CORRECTED_FROM_CAPTURED_STDOUT",
+      "expected_value_used": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+      "tool_rerun": false,
+      "used_in_comparison": true
+    }
+  ],
+  "claim_ceiling": "One controlled Current identity-resolution task and optional-tool route comparison only; no general router quality, global cost optimum, external validity, scientific proof, or release readiness.",
+  "post_comparison_route_recheck": {
+    "recorded_at_utc": "2026-10-25T10:53:43.956810Z",
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py::plan_tool_route",
+    "candidate_branch": "codex/toolbox-growth-20261025",
+    "candidate_checkout_head_for_route_recheck": "662f56d20df325748cf4c9977336043be2712a71",
+    "candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "routes": {
+      "default_alias": {
+        "task_profile": {
+          "current_ref": "refs/heads/codex/toolbox-growth-20261025@662f56d20df325748cf4c9977336043be2712a71",
+          "allowed_execution_modes": [
+            "READ_ONLY_RUN"
+          ],
+          "task_id": "resolve-title-and-id-to-one-stored-current-identity-title",
+          "input_types": [
+            "alias"
+          ],
+          "required_outputs": [
+            "canonical identity match"
+          ]
+        },
+        "allowlisted_tool_ids": [],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "foundation.resolve_current_asset"
+        ],
+        "execution_authorized": false,
+        "unmet_outputs": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8"
+        },
+        "full_plan_canonical_sha256": "7949211252c0f53ad7f577824ff5744d248277d8213a9a06f389a6e2efc3e84a"
+      },
+      "default_canonical_id": {
+        "task_profile": {
+          "current_ref": "refs/heads/codex/toolbox-growth-20261025@662f56d20df325748cf4c9977336043be2712a71",
+          "allowed_execution_modes": [
+            "READ_ONLY_RUN"
+          ],
+          "task_id": "resolve-title-and-id-to-one-stored-current-identity-id",
+          "input_types": [
+            "canonical id"
+          ],
+          "required_outputs": [
+            "canonical identity match"
+          ]
+        },
+        "allowlisted_tool_ids": [],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "foundation.resolve_current_asset"
+        ],
+        "execution_authorized": false,
+        "unmet_outputs": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8"
+        },
+        "full_plan_canonical_sha256": "d62c0a22fce4cf275c34151f1ac2ae71115959ec2bf318d2375c3e618a4d69ce"
+      },
+      "batch_sufficient": {
+        "task_profile": {
+          "current_ref": "refs/heads/codex/toolbox-growth-20261025@662f56d20df325748cf4c9977336043be2712a71",
+          "allowed_execution_modes": [
+            "READ_ONLY_RUN"
+          ],
+          "task_id": "resolve-title-and-id-to-one-stored-current-identity-batch",
+          "input_types": [
+            "JSON stdin object with an ordered nonempty array of exact reference strings"
+          ],
+          "required_outputs": [
+            "input-ordered canonical identity resolution rows",
+            "authority and resolver SHA-256 receipt"
+          ]
+        },
+        "allowlisted_tool_ids": [
+          "foundation.batch_resolve_current_asset_references"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "foundation.batch_resolve_current_asset_references"
+        ],
+        "execution_authorized": false,
+        "unmet_outputs": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8"
+        },
+        "full_plan_canonical_sha256": "54e3317b91136e25e599485ec5662d59364aef50fbdad384971204abb4e23fa7"
+      },
+      "expanded_option_set": {
+        "task_profile": {
+          "current_ref": "refs/heads/codex/toolbox-growth-20261025@662f56d20df325748cf4c9977336043be2712a71",
+          "allowed_execution_modes": [
+            "READ_ONLY_RUN"
+          ],
+          "task_id": "resolve-title-and-id-to-one-stored-current-identity-expanded",
+          "input_types": [
+            "JSON stdin object with an ordered nonempty array of exact reference strings",
+            "JSON stdin object containing exactly one exact canonical_id string"
+          ],
+          "required_outputs": [
+            "input-ordered canonical identity resolution rows",
+            "authority and resolver SHA-256 receipt"
+          ]
+        },
+        "allowlisted_tool_ids": [
+          "foundation.batch_resolve_current_asset_references",
+          "foundation.read_current_asset_card"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "foundation.batch_resolve_current_asset_references"
+        ],
+        "execution_authorized": false,
+        "unmet_outputs": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8"
+        },
+        "full_plan_canonical_sha256": "316f8db7e7c7903e82eb1efe82ecdea857d5ebd7bfb5e84f3048780d69b014cc"
+      }
+    },
+    "interpretation": "Fresh planner results use the candidate catalog after C1 evidence was added. Explicit allowlisting yields the batch tool only; the full-record reader remains unselected because its output is not required. All route plans remain proposals and execution_authorized=false."
+  }
+}

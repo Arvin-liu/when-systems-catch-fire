@@ -1,0 +1,39 @@
+{
+  "schema_version": "toolbox-actions-validation-target-coverage-c1-evidence-r0",
+  "tool_id": "maintenance.compare_actions_validation_target_coverage",
+  "decision": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "scope": "Matched historical PR #264 task: identify plan target coverage across multiple same-context runs, compare adjacent selected-target changes, and summarize caller-declared per-target outcomes while preserving missing-receipt unknowns.",
+  "compared_tool_ids": [
+    "maintenance.attribute_actions_validation_evidence",
+    "maintenance.compare_actions_repeated_step_sequences",
+    "maintenance.summarize_actions_step_timeline"
+  ],
+  "comparison_evidence_refs": [
+    "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+    "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+    "ignition/data/operations/toolbox-actions-validation-target-coverage-real-task-r0.json",
+    "ignition/data/operations/toolbox-actions-validation-target-coverage-source-binding-r0.json",
+    "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json"
+  ],
+  "findings": [
+    "Single-run attribution validates one plan, run, artifact list, and optional receipt. Applied independently, it preserves one-run bindings but does not produce cross-run target union/intersection, additions/removals, or per-target history in one output.",
+    "The repeated-step analyzer compares job and step names, outcomes, and timestamps across runs, but it does not read validation plans, selected target IDs, artifact inventories, or component receipts.",
+    "The current single-run timeline operation summarizes one run job/step intervals and does not compare target coverage.",
+    "The new component composes existing per-run attribution and adds target-set and caller-declared-result aggregation. It does not replace any existing tool.",
+    "No matched performance, cash-cost, billing, avoidable-work, or reliability comparison was conducted. Estimated cost and savings remain unknown."
+  ],
+  "unique_remaining_use_cases": {
+    "maintenance.attribute_actions_validation_evidence": "Bind one run to its plan, artifact inventory, optional receipt, and per-run timeline.",
+    "maintenance.compare_actions_repeated_step_sequences": "Compare repeated named jobs/steps, outcomes, and observed intervals across same-context run history.",
+    "maintenance.summarize_actions_step_timeline": "Summarize one Actions run job/step timeline.",
+    "maintenance.compare_actions_validation_target_coverage": "Compare selected-target plan coverage and caller-declared receipt outcomes across same-context runs, marking absent receipt as unknown."
+  },
+  "replacement_candidates": [],
+  "retirement_or_migration": "No retirement or migration is supported; the compared tools retain distinct useful scopes.",
+  "limitations": [
+    "Caller-supplied sources are unauthenticated by the tool.",
+    "Receipt target booleans are caller declarations, not official CI validation.",
+    "Repeated target sets do not establish redundancy or waste.",
+    "No billing, cost/savings, merge, or release claim."
+  ]
+}

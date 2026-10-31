@@ -1,0 +1,13 @@
+{
+  "task_id": "pr264-four-run-target-coverage-experience-reuse",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "One bounded JSON request conforming to toolbox-executed-experience-preflight-r0 with a task scope and 1–32 caller-selected experience receipts."
+  ],
+  "required_outputs": [
+    "One deterministic JSON result conforming to toolbox-executed-experience-result-r0; per-entry optional reference, counterexample, review-required, or withhold decisions."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

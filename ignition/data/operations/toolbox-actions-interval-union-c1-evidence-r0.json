@@ -1,0 +1,47 @@
+{
+  "schema_version": "toolbox-actions-interval-union-c1-evidence-r0",
+  "comparison_subject": "maintenance.summarize_actions_interval_union@0.1.0",
+  "input_sha256": "cf2a122311527c761aa36f491ea7bd22badc7049a3e972db23b97ef914a18676",
+  "same_input_run_count": 4,
+  "same_input_job_count": 14,
+  "existing_tool": {
+    "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+    "implementation": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+    "output_elapsed_time_aggregated_across_runs": false,
+    "repeated_step_group_count": 70,
+    "output_sha256": "b4cd2c8418a499c7a9ce0769c6231b1e887da99c276ce53ae2279d5efde3f18d"
+  },
+  "new_tool": {
+    "tool_id": "maintenance.summarize_actions_interval_union",
+    "implementation": "ignition/tools/toolbox_actions_interval_union.py",
+    "receipt_status": "PARTIAL_OBSERVED_INTERVAL_SET",
+    "metrics": {
+      "job_count": 14,
+      "jobs_with_observed_intervals": 12,
+      "jobs_without_observed_intervals": 2,
+      "sum_observed_job_interval_seconds": 26972.0,
+      "union_observed_job_interval_seconds": 26972.0,
+      "excess_overlap_seconds": 0.0,
+      "maximum_concurrent_observed_jobs": 1,
+      "job_interval_coverage_complete_for_declared_jobs": false
+    },
+    "output_sha256": "f249769dfed777be7107823449eb2946380c553a15d1127c80c5958617acd9af"
+  },
+  "c1_disposition": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "compared_tool_ids": [
+    "maintenance.compare_actions_repeated_step_sequences",
+    "maintenance.summarize_actions_step_timeline"
+  ],
+  "unique_remaining_use_cases": [
+    "Multi-run job interval union and excess-overlap arithmetic with visible incomplete coverage."
+  ],
+  "unknowns": [
+    "No comparable runtime, CPU, memory, analyst-effort, hosted-runner billing, or cash-cost evidence.",
+    "The snapshots are caller supplied; this tool does not authenticate their GitHub source.",
+    "Two missing intervals prohibit concluding that unobserved jobs were idle or that no additional overlap occurred."
+  ],
+  "historical_evidence_retained": [
+    "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+    "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json"
+  ]
+}

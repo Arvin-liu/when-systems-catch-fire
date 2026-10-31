@@ -1,0 +1,369 @@
+{
+  "schema_version": "ignition.toolbox-openalex-live-task-evidence-r0",
+  "experiment_id": "REAL-TASK-20261025-GAP001-05-CROSSREF-OPENALEX-WORK-METADATA",
+  "observed_at_utc": {
+    "openalex": "2026-10-25T06:59:10Z",
+    "crossref": "2026-10-25T06:59:18Z"
+  },
+  "router_candidate_revision": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "branch": "codex/toolbox-growth-20261025",
+    "base_main": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "candidate_parent": "2bef424c8d170137bc1fae8dc811e03e6141ad6b",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_cards_git_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0"
+  },
+  "task": {
+    "task_id": "source-record-metadata-cross-provider-work-identity-gap001-05",
+    "intent": "Check one existing source record title/year against Crossref and OpenAlex and retrieve OpenAlex Work ID plus the provider-reported retraction signal.",
+    "source_record": {
+      "path": "ignition/data/external-research/104-source-registry.jsonl",
+      "source_id": "GAP001-05",
+      "doi": "10.3982/ecta15732",
+      "expected_title": "Policy Learning With Observational Data",
+      "expected_year": 2021,
+      "recorded_registry_retraction_status": "NONE"
+    }
+  },
+  "route_profile": {
+    "input_types": [
+      "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records",
+      "JSON stdin object with one to five unique bare DOI identifiers"
+    ],
+    "required_outputs": [
+      "input-ordered Crossref metadata comparison rows",
+      "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+      "per-request response SHA-256, HTTP status, and public API usage fields"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "allowed_network_hosts": [
+      "api.crossref.org",
+      "api.openalex.org"
+    ],
+    "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+  },
+  "route_trials": [
+    {
+      "scenario": "default_opt_out",
+      "include_experimental_tool_ids": [],
+      "allowed_network_hosts": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "cost_estimate_status": "UNKNOWN"
+    },
+    {
+      "scenario": "allowlisted_without_host",
+      "include_experimental_tool_ids": [
+        "research.lookup_openalex_work_metadata"
+      ],
+      "allowed_network_hosts": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "cost_estimate_status": "UNKNOWN"
+    },
+    {
+      "scenario": "explicit_host_opt_in",
+      "include_experimental_tool_ids": [
+        "research.lookup_openalex_work_metadata"
+      ],
+      "allowed_network_hosts": [
+        "api.openalex.org"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.lookup_openalex_work_metadata"
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "cost_estimate_status": "UNKNOWN"
+    },
+    {
+      "scenario": "paired_crossref_and_openalex_outputs",
+      "include_experimental_tool_ids": [
+        "research.verify_crossref_metadata",
+        "research.lookup_openalex_work_metadata"
+      ],
+      "allowed_network_hosts": [
+        "api.crossref.org",
+        "api.openalex.org"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.lookup_openalex_work_metadata",
+        "research.verify_crossref_metadata"
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "cost_estimate_status": "UNKNOWN"
+    }
+  ],
+  "invocations": [
+    {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "tool_version": "0.1.0",
+      "entrypoint": "python3 -B ignition/tools/toolbox_openalex_work_metadata.py --stdin --allow-public-network",
+      "input_payload_sha256": "97c35cd1a1ac8eabc686bceb7ecc7e01d272e7707c1379e5b4d11860bacf8b71",
+      "api_host": "api.openalex.org",
+      "api_path": "/works",
+      "request_count": 1,
+      "selected_fields": [
+        "id",
+        "doi",
+        "display_name",
+        "publication_year",
+        "type",
+        "is_retracted"
+      ],
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "response_sha256": "da5e806908bb6b1f4d3831ecceff1ba55289e74ac17fac484f1c7721163bc3cb",
+      "wrapper_source_sha256": "e98120738b32c2442dc32546abdc613d3ef8ca83004fd2d0e4393e29a9b1adfe",
+      "tool_status": "EXACT_DOI_WORKS_RESOLVED",
+      "output": {
+        "requested_doi": "10.3982/ecta15732",
+        "status": "EXACT_PRIMARY_DOI_MATCH",
+        "openalex_id": "https://openalex.org/W3083006799",
+        "openalex_doi": "https://doi.org/10.3982/ecta15732",
+        "title": "Policy Learning With Observational Data",
+        "publication_year": 2021,
+        "type": "article",
+        "is_retracted": false
+      },
+      "api_usage": {
+        "meta": {
+          "count": 1,
+          "cost": null,
+          "db_response_time_ms": 10
+        },
+        "rate_limit_headers": {
+          "X-RateLimit-Credits-Used": "1",
+          "X-RateLimit-Limit": "1000",
+          "X-RateLimit-Remaining": "997",
+          "X-RateLimit-Reset": "61249"
+        }
+      },
+      "raw_response_retained": false,
+      "claim_ceiling": "OpenAlex Work metadata retrieved in this response only; the identifier and Retraction Watch-derived flag do not establish authenticity, completeness, scientific truth, or authoritative retraction status."
+    },
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "tool_version": "0.1.0",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+      "input_payload_sha256": "8c3d4034b55c44a24e545eaadbd1d94bd4139b8669832aa19b8abd95eae3426c",
+      "api_host": "api.crossref.org",
+      "retrieval_timestamp_utc": "2026-10-25T06:59:18Z",
+      "http_status": 200,
+      "response_sha256": "3f2f32d42cd289de9e36d00cfa5a97906e09df22fc78a1d4dba9f2241c222e1c",
+      "wrapper_source_sha256": "cb2b96418cdb07ba1533bee20e9652079d7085db471e61c4304435a5fc2770c1",
+      "tool_status": "ALL_METADATA_MATCHED",
+      "output": {
+        "title_match": true,
+        "year_match": true,
+        "observed_title": "Policy Learning With Observational Data",
+        "observed_year": 2021,
+        "retraction_signal": "NONE"
+      },
+      "claim_ceiling": "Crossref API title/year comparison only; this is not article-content or scientific validation."
+    }
+  ],
+  "historical_task110_comparison": {
+    "preregistration_path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
+    "adjudication_path": "ignition/data/operations/iterations/110/openalex/first-run-20260801/adjudication.jsonl",
+    "source_id": "GAP001-05",
+    "retrieved_at_utc": "2026-08-01T07:19:32Z",
+    "openalex_work_id": "https://openalex.org/W3083006799",
+    "response_sha256": "a9430b71cac7e8c8230d5478313fe9bd02c3b7a94defab69d9789c4444d64d48",
+    "historical_outcome": "SUPPORTED_WITHIN_SCOPE for preregistered cross-source metadata consistency; this is historical evidence, not the live tool result or scientific validation."
+  },
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "comparison_finding": "The same DOI produced matching title/year from both providers in this one paired task. OpenAlex additionally returned its Work ID and is_retracted=false; Crossref returned retraction_signal=NONE. These are distinct provider outputs, and one DOI does not establish relative quality, coverage, or cost or support replacing either tool.",
+  "cost_estimate_status": "UNKNOWN",
+  "development_test_history": [
+    {
+      "attempt": "initial focused unit run",
+      "result": "FAILED: mocked HTTPError redirect case raised when closing a synthetic HTTPError with no response file descriptor."
+    },
+    {
+      "repair": "Removed the unnecessary close call for the synthetic/redirect HTTPError branch; redirect remains fail-closed."
+    },
+    {
+      "attempt": "rerun focused unit run",
+      "result": "PASS: 9 tests."
+    }
+  ],
+  "limits": [
+    "Both live invocations were one fixed-host HTTPS GET each, explicitly used --allow-public-network, and used no API key, user email, title transmission to OpenAlex, credential, paid account, repository write, article text, or raw response retention.",
+    "The one OpenAlex response reported one usage credit in X-RateLimit-Credits-Used and meta.cost was null; this is one observation, not a comparative cost profile.",
+    "OpenAlex is_retracted is documented as a Retraction Watch-derived field and is not a complete or authoritative retraction adjudication.",
+    "The route planner proposes only: execution_authorized remains false and a route host list is not user authority.",
+    "No tool was made router-default; candidate selection remains opt-in and invocation requires independent per-call consent."
+  ],
+  "official_documentation": [
+    {
+      "topic": "DOI filters and Work field semantics",
+      "url": "https://help.openalex.org/data/works/attributes/"
+    },
+    {
+      "topic": "selected fields on Works endpoints",
+      "url": "https://help.openalex.org/api/selecting-fields/"
+    },
+    {
+      "topic": "keyless usage, rate limits, and response usage metadata",
+      "url": "https://help.openalex.org/api/authentication/"
+    },
+    {
+      "topic": "usage pricing and costs",
+      "url": "https://help.openalex.org/access/example-costs/"
+    },
+    {
+      "topic": "CC0 data licensing",
+      "url": "https://help.openalex.org/data/how-its-built/"
+    }
+  ]
+}

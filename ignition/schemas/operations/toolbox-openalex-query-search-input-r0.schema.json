@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ignition OpenAlex query search input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query", "max_results"],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Caller-approved, non-sensitive OpenAlex Works query. Runtime also enforces UTF-8 byte and control-character limits."
+    },
+    "max_results": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    }
+  }
+}

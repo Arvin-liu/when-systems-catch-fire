@@ -1,0 +1,40 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-real-task-evidence-r0",
+  "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "tool_version": "0.1.0",
+  "execution_mode": "OFFLINE_READ_ONLY_TRANSFORM",
+  "invocation": {
+    "command": "python3 -B ignition/tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py --stdin",
+    "network_calls_made": 0,
+    "files_written_by_tool": 0,
+    "input_payload_sha256": "650452979fe4daa701e0d7b5b78eb7ff57b5633a025add5283fa8febf3231a3c"
+  },
+  "input_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-input-r0.json",
+  "input_file_sha256": "650452979fe4daa701e0d7b5b78eb7ff57b5633a025add5283fa8febf3231a3c",
+  "output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-output-r0.json",
+  "output_file_sha256": "bc2b616bd9dc3ee8aa78457f1e79f88253e180fd570524eaa1275789b9271e46",
+  "upstream_capture_refs": [
+    {
+      "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+      "provider_page_retrieved_at_utc": "2026-10-26T16:29:02Z",
+      "fixed_raw_table_retrieved_at_utc": "2026-10-26T16:29:03Z"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-output-r0.json",
+      "provider_page_retrieved_at_utc": "2026-10-26T17:29:36Z",
+      "fixed_raw_table_retrieved_at_utc": "2026-10-26T17:29:37Z"
+    }
+  ],
+  "result": {
+    "status": "PAIRED",
+    "requested_years": [2023, 2024, 2025],
+    "paired_year_count": 3,
+    "co2_rows_with_two_surface_values": 3,
+    "ch4_rows_with_two_surface_values": 3,
+    "years_with_two_surface_values_for_both_gases": 3,
+    "years_with_a_missing_surface_value": 0,
+    "cohort_capture_span_seconds": 3635,
+    "cross_gas_arithmetic_performed": false
+  },
+  "evidence_limit": "The inputs are prior captured NOAA comparator outputs, not a fresh retrieval by this tool. This run demonstrates an offline transform and retained provenance, not provider authentication, measurement validation, simultaneity, or a scientific conclusion."
+}

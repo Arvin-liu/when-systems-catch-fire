@@ -1,0 +1,94 @@
+{
+  "schema_version": "ignition.publication-metadata-comparison-input-r0",
+  "doi": "10.3982/ecta15732",
+  "source_results": [
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "result": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "Crossref API metadata retrieval and normalized title/year comparison only; this does not validate article content, source authenticity, scientific truth, or retraction status beyond returned metadata fields.",
+        "metadata_mismatch_count": 0,
+        "record_count": 1,
+        "resolved_count": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "canonical_identifier": "10.3982/ecta15732",
+            "expected_title": "Policy Learning With Observational Data",
+            "expected_year": 2021,
+            "full_match": true,
+            "http_status": 200,
+            "observed_title": "Policy Learning With Observational Data",
+            "observed_year": 2021,
+            "response_sha256": "3f2f32d42cd289de9e36d00cfa5a97906e09df22fc78a1d4dba9f2241c222e1c",
+            "retraction_signal": "NONE",
+            "retrieval_timestamp_utc": "2026-10-25T12:36:47Z",
+            "source_id": "GAP001-05",
+            "source_license": "Crossref bibliographic metadata; public reuse basis documented by Crossref",
+            "source_url": "https://api.crossref.org/works/10.3982%2Fecta15732",
+            "title_match": true,
+            "year_match": true
+          }
+        ],
+        "schema_version": "ignition.crossref-metadata-verification-r0",
+        "source_code_sha256": {
+          "task103_crossref_helpers": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51",
+          "wrapper": "cb2b96418cdb07ba1533bee20e9652079d7085db471e61c4304435a5fc2770c1"
+        },
+        "status": "ALL_METADATA_MATCHED",
+        "tool_id": "research.verify_crossref_metadata",
+        "tool_version": "0.1.0"
+      }
+    },
+    {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "result": {
+        "acquisition_status": "OK",
+        "api_host": "api.openalex.org",
+        "api_path": "/works",
+        "api_usage": {
+          "meta": {
+            "cost": null,
+            "count": 1,
+            "db_response_time_ms": 12
+          },
+          "rate_limit_headers": {
+            "X-RateLimit-Credits-Used": "1",
+            "X-RateLimit-Limit": "1000",
+            "X-RateLimit-Remaining": "996",
+            "X-RateLimit-Reset": "40991"
+          }
+        },
+        "claim_ceiling": "OpenAlex Work metadata retrieved in this response only; an OpenAlex ID or is_retracted flag does not establish source authenticity, complete coverage, article content, scientific truth, or authoritative retraction status.",
+        "doi_count": 1,
+        "http_status": 200,
+        "request_count": 1,
+        "response_sha256": "2991ddc93727ea8ff31682a6f9aa10e10362905c42e10921857a3062396a9372",
+        "rows": [
+          {
+            "is_retracted": false,
+            "openalex_doi": "https://doi.org/10.3982/ecta15732",
+            "openalex_id": "https://openalex.org/W3083006799",
+            "publication_year": 2021,
+            "requested_doi": "10.3982/ecta15732",
+            "status": "EXACT_PRIMARY_DOI_MATCH",
+            "title": "Policy Learning With Observational Data",
+            "type": "article"
+          }
+        ],
+        "schema_version": "ignition.openalex-work-metadata-lookup-r0",
+        "selected_fields": [
+          "id",
+          "doi",
+          "display_name",
+          "publication_year",
+          "type",
+          "is_retracted"
+        ],
+        "status": "EXACT_DOI_WORKS_RESOLVED",
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "tool_version": "0.1.0"
+      }
+    }
+  ]
+}

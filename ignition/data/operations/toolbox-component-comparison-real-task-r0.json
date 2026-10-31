@@ -1,0 +1,123 @@
+{
+  "schema_version": "toolbox-component-comparison-real-task-r0",
+  "task_id": "pr264-actions-tool-scope-c1-20261026",
+  "task_description": "Compare the existing per-step Actions timeline tool with the plan/run/artifact attribution tool using the recorded PR #264 single-run evidence. Determine which task ranges remain valuable and whether the record supports retiring either tool.",
+  "owner_principle_ref": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682 instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md#C1",
+  "input_path": "ignition/tests/fixtures/toolbox-component-comparison/pr264-actions-tool-scope-r0.json",
+  "input_sha256": "ee6e6245e82eba764bc82f95a1a399edb3a789958b2afef433e111d148b33516",
+  "tool_source_path": "ignition/tools/toolbox_component_comparison.py",
+  "tool_source_sha256": "5ad5186643c7296f29d8f39e216ca34632123e661454139ff889ef2ecfa02797",
+  "evidence_sources": [
+    {
+      "path": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+      "sha256": "dd76599b5ef4da8bb75df38355d4b045390b3786d938413aaa5709407cea92f4"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json",
+      "sha256": "74ec658a68d92b836d1e2cc79651caae029937919b4742b25f6f33c040356e92"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+      "sha256": "453e9ef805bf81d9df7fc1b123a1e4ef853d68ff96f110b52c68a8d4d458bbd2"
+    },
+    {
+      "path": "ignition/tests/fixtures/toolbox-actions-step-timeline/actions-run-40064357026.json",
+      "sha256": "bf3aeff00faa3a6927f1a856aff36516240254acc79a9b230b9119bb17bd6a4c"
+    },
+    {
+      "path": "ignition/tests/fixtures/toolbox-actions-validation-attribution/input-run-40064357026-r0.json",
+      "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b"
+    }
+  ],
+  "result": {
+    "schema_version": "toolbox-component-comparison-output-r0",
+    "comparison_id": "pr264-actions-tool-scope-20261026",
+    "tools": {
+      "incumbent": {
+        "tool_id": "maintenance.summarize_actions_step_timeline",
+        "version": "0.1.0"
+      },
+      "proposed_successor": {
+        "tool_id": "maintenance.attribute_actions_validation_evidence",
+        "version": "0.1.0"
+      }
+    },
+    "scope_disposition": "COEXIST_DISTINCT_SCOPE",
+    "performance_comparison_status": "COMPARISON_UNKNOWN",
+    "scope": {
+      "shared_use_case_ids": [
+        "job_interval_summary"
+      ],
+      "incumbent_unique_use_case_ids": [
+        "detailed_per_step_timeline"
+      ],
+      "successor_unique_use_case_ids": [
+        "plan_run_artifact_attribution"
+      ],
+      "same_id_contract_mismatch_use_case_ids": []
+    },
+    "paired_result_summary": {
+      "matched_pair_count": 1,
+      "missing_pair_use_case_ids": [],
+      "incomparable_or_unknown_use_case_ids": [
+        "job_interval_summary"
+      ],
+      "missing_cost_use_case_ids": [
+        "job_interval_summary"
+      ],
+      "case_results": [
+        {
+          "use_case_id": "job_interval_summary",
+          "status": "COMPARISON_UNKNOWN",
+          "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+          "outcome_pair": [
+            "PASS",
+            "PASS"
+          ],
+          "quality_score_pair": [
+            1000,
+            1000
+          ],
+          "resource_cost_pair": [
+            null,
+            null
+          ],
+          "permission_rank_pair": [
+            0,
+            0
+          ]
+        }
+      ],
+      "incumbent_advantage_use_case_ids": [],
+      "successor_advantage_use_case_ids": [],
+      "resource_metric": {
+        "metric_id": "local_process_wall_time",
+        "unit": "ms"
+      }
+    },
+    "evidence_refs": [
+      "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+      "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+      "ignition/data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json"
+    ],
+    "next_low_cost_comparison": "Keep both routes limited to their supported task ranges; compare any remaining shared use case only if a route decision needs it.",
+    "governance_boundary": {
+      "caller_evidence_authenticated": false,
+      "use_case_value_independently_verified": false,
+      "tool_retired_or_registry_changed": false,
+      "route_selected": false,
+      "execution_authorized": false,
+      "permission_changed": false
+    },
+    "claim_ceiling": "Deterministic analysis of caller-declared use-case inventories and matched outcomes only; supplied evidence, value claims, measurements, risk lists, and tool sources are not authenticated or independently validated.",
+    "input_sha256": "ee6e6245e82eba764bc82f95a1a399edb3a789958b2afef433e111d148b33516",
+    "tool_sha256": "5ad5186643c7296f29d8f39e216ca34632123e661454139ff889ef2ecfa02797"
+  },
+  "interpretation": {
+    "scope_disposition": "COEXIST_DISTINCT_SCOPE",
+    "performance_comparison_status": "COMPARISON_UNKNOWN",
+    "finding": "The standalone timeline retains a detailed per-step output task; the attribution tool retains plan/run/artifact binding. A shared interval summary is recorded, but the evidence does not bind a common evaluator, execution environment, or comparable per-task cost, so it does not establish global replacement.",
+    "lifecycle_mutation": "NONE",
+    "next_action": "Keep both routes scoped to their declared output contracts. Run one matched shared-summary task only if a routing decision depends on relative quality or cost."
+  }
+}

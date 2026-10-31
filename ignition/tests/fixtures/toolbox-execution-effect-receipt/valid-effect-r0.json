@@ -1,0 +1,40 @@
+{
+  "schema_version": "toolbox-execution-effect-receipt-input-r0",
+  "task_ref": "fixture:bound-output-observation",
+  "execution": {
+    "status": "COMPLETED",
+    "run_id": "fixture-run-001",
+    "tool_id": "fixture.tool",
+    "tool_version": "1.2.3",
+    "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "input_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "output_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "environment_ref": "python-3.9.6-local",
+    "executor_actor_ref": "actor:executor",
+    "started_at_utc": "2026-10-27T01:00:00Z",
+    "completed_at_utc": "2026-10-27T01:00:01Z",
+    "exit_code": 0
+  },
+  "observations": [
+    {
+      "observation_id": "fixture-observation-001",
+      "kind": "EFFECT",
+      "run_id": "fixture-run-001",
+      "tool_id": "fixture.tool",
+      "tool_version": "1.2.3",
+      "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "input_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "output_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "environment_ref": "python-3.9.6-local",
+      "observer_actor_ref": "actor:observer",
+      "observed_at_utc": "2026-10-27T01:00:02Z",
+      "evidence_ref": "fixture://observation/001",
+      "evidence_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "effect_state": "EFFECT_PRESENT",
+      "failure_record_ref": null,
+      "failure_record_sha256": null,
+      "first_failure_preserved": null
+    }
+  ],
+  "repository_paths": []
+}

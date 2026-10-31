@@ -10,7 +10,7 @@ from pathlib import Path
 
 import jsonschema
 
-from legacy_table_migration import source_exists as migrated_source_exists
+from legacy_table_migration import migration_paths
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = ROOT / "data/foundation/function-assets"
@@ -108,9 +108,12 @@ def main() -> int:
     ids = [row["stable_id"] for row in census]
     check("census:unique-stable-id", len(ids) == len(set(ids)), f"rows={len(ids)} unique={len(set(ids))}")
     check("census:registered-coverage", {row["id"] for row in objects} <= set(ids))
+    # The migration manifest is shared across all occurrence paths. Read it
+    # once here instead of reparsing the full manifest for every census row.
+    migrated_sources = set(migration_paths())
     check(
         "census:all-sources-exist",
-        all((ROOT / path).is_file() or migrated_source_exists(path) for row in census for path in row["source_evidence"]["occurrence_paths"]),
+        all((ROOT / path).is_file() or path in migrated_sources for row in census for path in row["source_evidence"]["occurrence_paths"]),
     )
     check("census:summary-count", summary["deduplicated_assets"] == len(census))
     check("census:discovery-count", summary["source_occurrence_records"] == len(discovery))
