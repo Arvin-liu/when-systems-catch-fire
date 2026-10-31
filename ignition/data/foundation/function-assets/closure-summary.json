@@ -1,17 +1,17 @@
 {
-  "adjudication_ledger_records": 6190,
+  "adjudication_ledger_records": 6194,
   "blocked_semantic_rebounds": 0,
-  "canonical_identity_cards": 6190,
+  "canonical_identity_cards": 6194,
   "claim_ceiling": "Repository-scoped classification, executable checks and explicit quarantine closure; no external truth, peer review, empirical replication or universal proof is inferred.",
   "closure_definition": "Every discovery has one canonical card, one primary identity, two maturity values, one final disposition and an evidence or quarantine path.",
   "counterexample_records": 12,
   "dependency_edges": 1923,
   "dependency_nodes_with_dangling_parents": 0,
-  "discovered_assets": 6190,
+  "discovered_assets": 6194,
   "disposition_distribution": {
     "DOWNGRADE_TO_CONJECTURE": 44,
     "DOWNGRADE_TO_PENDING": 77,
-    "KEEP_AS_ALGORITHM": 1158,
+    "KEEP_AS_ALGORITHM": 1162,
     "KEEP_AS_ESTABLISHED_MATH": 1,
     "KEEP_AS_STRUCTURAL_METAPHOR": 4,
     "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER": 1,
@@ -22,11 +22,11 @@
   },
   "explicit_quarantine_or_pending": 5023,
   "external_evidence_distribution": {
-    "E0": 6185,
+    "E0": 6189,
     "E1": 5
   },
   "identity_distribution": {
-    "ALGORITHM_OR_WORKFLOW": 1241,
+    "ALGORITHM_OR_WORKFLOW": 1245,
     "CONJECTURE_OR_RESEARCH_CANDIDATE": 122,
     "GATE_OR_CLASSIFIER": 18,
     "HEURISTIC": 24,
@@ -39,7 +39,7 @@
   },
   "mathematical_maturity_distribution": {
     "M0": 4411,
-    "M1": 1326,
+    "M1": 1330,
     "M2": 448,
     "M3": 1,
     "M4": 3,
@@ -50,7 +50,7 @@
   "reviewer_state_distribution": {
     "TASK98_HUMAN_ADJUDICATION_RECONFIRMED": 12,
     "TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE": 4410,
-    "TASK99_REPOSITORY_EVIDENCE_ADJUDICATED": 1768
+    "TASK99_REPOSITORY_EVIDENCE_ADJUDICATED": 1772
   },
   "schema_version": "2.0.0",
   "semantic_rebound_candidates": 0,

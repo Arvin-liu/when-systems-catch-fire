@@ -1,138 +1,156 @@
 {
-  "schema_version": "ignition.toolbox-cluster-source-brief-c1-evidence-r0",
-  "evidence_status": "MATCHED_REAL_TASK_AND_ROUTE_EXPERIMENT",
-  "candidate_tool_id": "knowledge.cluster_source_brief",
   "candidate_identity": {
-    "version": "0.1.0",
-    "source_path": "ignition/tools/toolbox_cluster_source_brief.py",
-    "source_sha256": "830c74e34408760909507c2012ef180dd09df6fa4433948dd26e1ef1dcd6ebf8",
-    "git_blob_sha1": "493513e3966d02214692918b847f4c4e92d81884",
     "entrypoint": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C007",
+    "git_blob_sha1": "493513e3966d02214692918b847f4c4e92d81884",
     "permissions": {
+      "billing": false,
+      "external_actions": false,
+      "network": false,
       "read_paths": [
         "ignition/KNOWLEDGE/cards/",
         "ignition/analysis/corpus-relation/article_cluster_candidates.json",
         "ignition/tools/build_corpus_relation_graph.py"
       ],
-      "write_paths": [],
-      "network": false,
       "secrets": false,
-      "billing": false,
-      "external_actions": false
+      "write_paths": []
     },
-    "router_selectable_by_default": false
+    "router_selectable_by_default": false,
+    "source_path": "ignition/tools/toolbox_cluster_source_brief.py",
+    "source_sha256": "830c74e34408760909507c2012ef180dd09df6fa4433948dd26e1ef1dcd6ebf8",
+    "version": "0.1.0"
   },
+  "candidate_tool_id": "knowledge.cluster_source_brief",
+  "disposition": {
+    "basis": [
+      "The read-only JSON outputs matched byte-for-byte on C007 and both implementations use the same renderer.",
+      "The candidate wrapper only accepts explicit cluster IDs and always emits the JSON receipt; it has no file-writing branch.",
+      "The existing CLI also provides Markdown-only stdout and a legacy file-writing workflow. These are distinct invocation scopes; exact JSON parity does not show universal superiority or justify deleting either behavior.",
+      "Latency, maintenance effort, operator error frequency, and cross-cluster outcome quality were not compared, so replacement value remains COMPARISON_UNKNOWN."
+    ],
+    "candidate_retained_as": "ACTIVE_OPTIONAL_DEFAULT_OFF_READ_ONLY_ADAPTER",
+    "claim_ceiling": "Repository-snapshot output equivalence for the matched C007 task and a typed route proposal only; no scientific truth, source sufficiency, publication acceptance, general reliability, or global optimum is established.",
+    "relationship": "COEXIST_BY_INVOCATION_SCOPE",
+    "replacement_supported": false
+  },
+  "evidence_status": "MATCHED_REAL_TASK_AND_ROUTE_EXPERIMENT",
   "paired_comparison": {
-    "task_id": "C1-C007-01",
-    "objective": "Produce a source-backed member brief and source/output digest receipt for the existing C007 article-candidate cluster.",
-    "input": {
-      "cluster_id": "C007",
-      "disposition": "ARTICLE_CANDIDATE",
-      "topic": "WRITING_PUBLICATION",
-      "size": 16,
-      "central_question": "研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？"
-    },
-    "member_count": 16,
-    "permission_context": "READ_ONLY_RUN; local checked-out repository snapshot; no network hosts; no file writes; candidate and baseline both requested the same JSON receipt mode.",
-    "candidate_command": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C007",
     "baseline_implementation": {
-      "path": "ignition/tools/extract_cluster_source_brief.py",
-      "identity": "Existing CLI implementation; not a registered Current operation or toolbox-card identity.",
-      "sha256": "270e616f82fa92cd5354bfce6c3dd7af88f61b81d2e0cf0d7480638082ff2c10",
       "git_blob_sha1": "2d0c1d623220bb94ea18aaea6004c7c49c36c9e1",
+      "identity": "Existing CLI implementation; not a registered Current operation or toolbox-card identity.",
       "matched_command": "python3 -B ignition/tools/extract_cluster_source_brief.py C007 --stdout --json",
       "other_declared_modes": [
         "--stdout emits Markdown only",
         "legacy default mode writes cluster brief files and INDEX.md"
-      ]
-    },
-    "candidate_result": {
-      "exit_code": 0,
-      "stdout_bytes": 21653,
-      "stdout_sha256": "bac99acee02b6da46f7d0356247d79c018aae3a7bc4503ac1275d8135949f441",
-      "brief_sha256": "c7da77499b4b260372594619c91d6ce45185bf7225f7f1b1d42e0b1a0c0fda32",
-      "receipt_sha256": "c1584ac62f9c33d8e2497465c4f76b1fd43ddbb2ac5978e2d168f3dac231a3ba"
+      ],
+      "path": "ignition/tools/extract_cluster_source_brief.py",
+      "sha256": "270e616f82fa92cd5354bfce6c3dd7af88f61b81d2e0cf0d7480638082ff2c10"
     },
     "baseline_result": {
       "exit_code": 0,
       "stdout_bytes": 21653,
-      "stdout_sha256": "bac99acee02b6da46f7d0356247d79c018aae3a7bc4503ac1275d8135949f441"
+      "stdout_sha256": "8cca88f5a6ee76df6f9ca013e1cb21f69d9aa4bf1b5b8aee783c97518f9e0e24"
+    },
+    "candidate_command": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C007",
+    "candidate_result": {
+      "brief_sha256": "c7da77499b4b260372594619c91d6ce45185bf7225f7f1b1d42e0b1a0c0fda32",
+      "exit_code": 0,
+      "receipt_sha256": "2f3f8d869aa8a4cb96d8853e44f480283a484d75a73caeb75f32082d28a96736",
+      "stdout_bytes": 21653,
+      "stdout_sha256": "8cca88f5a6ee76df6f9ca013e1cb21f69d9aa4bf1b5b8aee783c97518f9e0e24"
+    },
+    "input": {
+      "central_question": "研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？",
+      "cluster_id": "C007",
+      "disposition": "ARTICLE_CANDIDATE",
+      "size": 16,
+      "topic": "WRITING_PUBLICATION"
+    },
+    "member_count": 16,
+    "objective": "Produce a source-backed member brief and source/output digest receipt for the existing C007 article-candidate cluster.",
+    "permission_context": "READ_ONLY_RUN; local checked-out repository snapshot; no network hosts; no file writes; candidate and baseline both requested the same JSON receipt mode.",
+    "side_effect_check": {
+      "input_fingerprints_unchanged": true,
+      "network_hosts": [],
+      "output_directory_unchanged": true
+    },
+    "source_fingerprints": {
+      "baseline_cli_sha256": "270e616f82fa92cd5354bfce6c3dd7af88f61b81d2e0cf0d7480638082ff2c10",
+      "candidate_wrapper_sha256": "830c74e34408760909507c2012ef180dd09df6fa4433948dd26e1ef1dcd6ebf8",
+      "cluster_snapshot_sha256": "9ee233101649143e057db62f446d4ead2967eab27e157aef2336b97c395b07f5",
+      "knowledge_card_file_count": 15,
+      "knowledge_cards_tree_sha256": "6c0f213bc7b1352c5e56d13974de2198e2d33b95c56b020ff6f04a3cbd1dbd9f",
+      "parser_file_sha256": "befab067a4800449ec1966db93e7a1d639a64f8e863614a63379f1fad9255af2",
+      "parser_git_blob_sha1": "590e5e27bb794639b76cc80a7f5cb5fd77ff9c0d"
     },
     "stdout_byte_identical": true,
-    "source_fingerprints": {
-      "cluster_snapshot_sha256": "9ee233101649143e057db62f446d4ead2967eab27e157aef2336b97c395b07f5",
-      "knowledge_cards_tree_sha256": "7a19188dfa6f2a025ac280d510dbe4d9904de41c11164a005dbab459482df4af",
-      "knowledge_card_file_count": 15,
-      "parser_file_sha256": "befab067a4800449ec1966db93e7a1d639a64f8e863614a63379f1fad9255af2",
-      "parser_git_blob_sha1": "590e5e27bb794639b76cc80a7f5cb5fd77ff9c0d",
-      "candidate_wrapper_sha256": "830c74e34408760909507c2012ef180dd09df6fa4433948dd26e1ef1dcd6ebf8",
-      "baseline_cli_sha256": "270e616f82fa92cd5354bfce6c3dd7af88f61b81d2e0cf0d7480638082ff2c10"
-    },
-    "side_effect_check": {
-      "output_directory_unchanged": true,
-      "input_fingerprints_unchanged": true,
-      "network_hosts": []
-    }
+    "task_id": "C1-C007-01"
   },
   "routing": {
-    "task_profile": {
-      "task_id": "C007-source-brief-route-c1-01",
-      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
-      "input_types": [
-        "article cluster ID"
-      ],
-      "required_outputs": [
-        "source-backed cluster member brief",
-        "source and output digest receipt"
-      ],
-      "allowed_execution_modes": [
-        "READ_ONLY_RUN"
+    "catalog_replay": {
+      "catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "provider_call_made": false,
+      "routes": [
+        {
+          "decision": "INCOMPLETE",
+          "execution_authorized": false,
+          "scenario": "default_off",
+          "selected_tool_ids": [],
+          "unmet_outputs": [
+            "source and output digest receipt",
+            "source-backed cluster member brief"
+          ]
+        },
+        {
+          "decision": "COMPLETE",
+          "execution_authorized": false,
+          "scenario": "explicit_allowlist",
+          "selected_tool_ids": [
+            "knowledge.cluster_source_brief"
+          ],
+          "unmet_outputs": []
+        }
       ]
+    },
+    "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+    "cost_estimate": {
+      "reason": "No comparable measured cost data is declared for the candidate operations.",
+      "status": "UNKNOWN"
     },
     "default_off": {
       "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "rejection_for_candidate": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
       "selected_tool_ids": [],
       "unmet_outputs": [
         "source and output digest receipt",
         "source-backed cluster member brief"
-      ],
-      "execution_authorized": false,
-      "rejection_for_candidate": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ]
     },
     "explicit_allowlist": {
-      "decision": "COMPLETE",
-      "selected_tool_ids": [
-        "knowledge.cluster_source_brief"
-      ],
       "covered_outputs": [
         "source and output digest receipt",
         "source-backed cluster member brief"
       ],
-      "unmet_outputs": [],
+      "decision": "COMPLETE",
       "execution_authorized": false,
       "permissions": {
+        "billing": false,
+        "external_actions": false,
+        "network": false,
         "read_paths": [
           "ignition/KNOWLEDGE/cards/",
           "ignition/analysis/corpus-relation/article_cluster_candidates.json",
           "ignition/tools/build_corpus_relation_graph.py"
         ],
-        "write_paths": [],
-        "network": false,
         "secrets": false,
-        "billing": false,
-        "external_actions": false
+        "write_paths": []
       },
-      "rejected_candidate_count": 50
-    },
-    "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
-    "cost_estimate": {
-      "status": "UNKNOWN",
-      "reason": "No comparable measured cost data is declared for the candidate operations."
-    },
-    "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
-    "source_refs": {
-      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+      "rejected_candidate_count": 50,
+      "selected_tool_ids": [
+        "knowledge.cluster_source_brief"
+      ],
+      "unmet_outputs": []
     },
     "route_catalog_history": [
       {
@@ -145,43 +163,25 @@
         ]
       }
     ],
-    "catalog_replay": {
-      "catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+    "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+    "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "provider_call_made": false,
-      "routes": [
-        {
-          "scenario": "default_off",
-          "decision": "INCOMPLETE",
-          "selected_tool_ids": [],
-          "unmet_outputs": [
-            "source and output digest receipt",
-            "source-backed cluster member brief"
-          ],
-          "execution_authorized": false
-        },
-        {
-          "scenario": "explicit_allowlist",
-          "decision": "COMPLETE",
-          "selected_tool_ids": [
-            "knowledge.cluster_source_brief"
-          ],
-          "unmet_outputs": [],
-          "execution_authorized": false
-        }
-      ]
+      "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+    },
+    "task_profile": {
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ],
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "input_types": [
+        "article cluster ID"
+      ],
+      "required_outputs": [
+        "source-backed cluster member brief",
+        "source and output digest receipt"
+      ],
+      "task_id": "C007-source-brief-route-c1-01"
     }
   },
-  "disposition": {
-    "relationship": "COEXIST_BY_INVOCATION_SCOPE",
-    "replacement_supported": false,
-    "candidate_retained_as": "ACTIVE_OPTIONAL_DEFAULT_OFF_READ_ONLY_ADAPTER",
-    "basis": [
-      "The read-only JSON outputs matched byte-for-byte on C007 and both implementations use the same renderer.",
-      "The candidate wrapper only accepts explicit cluster IDs and always emits the JSON receipt; it has no file-writing branch.",
-      "The existing CLI also provides Markdown-only stdout and a legacy file-writing workflow. These are distinct invocation scopes; exact JSON parity does not show universal superiority or justify deleting either behavior.",
-      "Latency, maintenance effort, operator error frequency, and cross-cluster outcome quality were not compared, so replacement value remains COMPARISON_UNKNOWN."
-    ],
-    "claim_ceiling": "Repository-snapshot output equivalence for the matched C007 task and a typed route proposal only; no scientific truth, source sufficiency, publication acceptance, general reliability, or global optimum is established."
-  }
+  "schema_version": "ignition.toolbox-cluster-source-brief-c1-evidence-r0"
 }

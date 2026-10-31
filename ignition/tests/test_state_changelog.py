@@ -9,11 +9,13 @@ from tools.validate_state_changelog import (
     PROFILE_PATH,
     PROFILE_PATH_R3,
     PROFILE_PATH_R4,
+    PROFILE_PATH_R5,
     PROFILE_PATH_R1,
     R1_PROFILE_SHA256,
     R2_PROFILE_SHA256,
     R3_PROFILE_SHA256,
     R4_PROFILE_SHA256,
+    R5_PROFILE_SHA256,
     ROOT,
     validate,
 )
@@ -153,7 +155,7 @@ class StateChangelogTests(unittest.TestCase):
         self.assertEqual("task20-current-lineage-r1", r3["entries"][-1]["profile"])
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
-        source_r3 = source[: headings[-1].start()]
+        source_r3 = source[: headings[r3["entry_count"]].start()]
         path = ROOT / ".state-changelog-r3-prefix-test.md"
         try:
             path.write_text(source_r3, encoding="utf-8")
@@ -163,8 +165,9 @@ class StateChangelogTests(unittest.TestCase):
 
     def test_r3_profile_rejects_an_unregistered_59th_append(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        profile = json.loads(PROFILE_PATH_R3.read_text(encoding="utf-8"))
         headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
-        source_r3 = source[: headings[-1].start()]
+        source_r3 = source[: headings[profile["entry_count"]].start()]
         source_r3 += (
             "\n## 2026-10-30 — SYNTHETIC-UNAUTHORIZED-59\n\n"
             "- main_state: synthetic candidate only\n"
@@ -180,7 +183,7 @@ class StateChangelogTests(unittest.TestCase):
             path = Path(tmp) / "STATE-CHANGELOG.md"
             path.write_text(source_r3, encoding="utf-8")
             errors = validate(path=path, profile_path=PROFILE_PATH_R3)
-        self.assertTrue(any("expects 58 entries" in error for error in errors), errors)
+        self.assertTrue(any(f"expects {profile['entry_count']} entries" in error for error in errors), errors)
 
     def test_r4_profile_is_exact_additive_successor_of_immutable_r3(self):
         r3_bytes = PROFILE_PATH_R3.read_bytes()
@@ -195,12 +198,22 @@ class StateChangelogTests(unittest.TestCase):
         self.assertEqual(r4["entry_count"], len(r4["entries"]))
         self.assertEqual(r4["entry_count"], len(r3["entries"]) + 1)
         self.assertEqual("task20-v1-homepage-r1", r4["entries"][-1]["profile"])
-        self.assertEqual([], validate())
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        source_r4 = source[: headings[r4["entry_count"]].start()]
+        path = ROOT / ".state-changelog-r4-prefix-test.md"
+        try:
+            path.write_text(source_r4, encoding="utf-8")
+            self.assertEqual([], validate(path=path, profile_path=PROFILE_PATH_R4))
+        finally:
+            path.unlink(missing_ok=True)
 
     def test_r4_profile_rejects_an_unregistered_60th_append(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
-        source += (
-            "\n## 2026-10-30 — SYNTHETIC-UNAUTHORIZED-60\n\n"
+        profile = json.loads(PROFILE_PATH_R4.read_text(encoding="utf-8"))
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        source = source[: headings[profile["entry_count"]].start()] + (
+            "\n## 2027-01-01 — SYNTHETIC-UNAUTHORIZED-60\n\n"
             "- main_state: synthetic candidate only\n"
             "- delta: no authorized trust root was supplied\n"
             "- homepage_boundary: fixture only\n"
@@ -213,8 +226,43 @@ class StateChangelogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "STATE-CHANGELOG.md"
             path.write_text(source, encoding="utf-8")
-            errors = validate(path=path)
-        self.assertTrue(any("expects 59 entries" in error for error in errors), errors)
+            errors = validate(path=path, profile_path=PROFILE_PATH_R4)
+        self.assertTrue(any(f"expects {profile['entry_count']} entries" in error for error in errors), errors)
+
+    def test_r5_profile_is_exact_additive_successor_of_immutable_r4(self):
+        r4_bytes = PROFILE_PATH_R4.read_bytes()
+        r4 = json.loads(r4_bytes)
+        r5_bytes = PROFILE_PATH_R5.read_bytes()
+        r5 = json.loads(r5_bytes)
+        self.assertEqual(hashlib.sha256(r4_bytes).hexdigest(), R4_PROFILE_SHA256)
+        self.assertEqual(hashlib.sha256(r5_bytes).hexdigest(), R5_PROFILE_SHA256)
+        self.assertEqual(r5["parent_profile"]["sha256"], R4_PROFILE_SHA256)
+        self.assertEqual(r5["entries"][: len(r4["entries"])], r4["entries"])
+        self.assertEqual(r5["entry_count"], len(r5["entries"]))
+        self.assertEqual(r5["entry_count"], len(r4["entries"]) + 1)
+        self.assertEqual("task20-v1-research-closeout-r0", r5["entries"][-1]["profile"])
+        self.assertEqual([], validate())
+
+    def test_r5_profile_rejects_an_unregistered_successor(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        profile = json.loads(PROFILE_PATH_R5.read_text(encoding="utf-8"))
+        source += (
+            "\n## 2027-01-01 — SYNTHETIC-UNAUTHORIZED-R5\n\n"
+            "- main_state: synthetic candidate only\n"
+            "- delta: no authorized trust root was supplied\n"
+            "- foundation: repository-local test fixture only\n"
+            "- authority_changes: none\n"
+            "- epistemic_state: unchanged\n"
+            "- obligations: remain open\n"
+            "- stale_knowledge: none\n"
+            "- next_read: Owner must authorize a real successor independently\n"
+            "- claim_ceiling: repository-local fixture only\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "STATE-CHANGELOG.md"
+            path.write_text(source, encoding="utf-8")
+            errors = validate(path)
+        self.assertTrue(any(f"expects {profile['entry_count']} entries" in error for error in errors), errors)
 
     def test_immutable_r1_prefix_validates_with_original_profile(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")

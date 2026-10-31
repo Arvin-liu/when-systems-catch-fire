@@ -117,7 +117,7 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6190,
+      "function_identity_cards": 6194,
       "function_quarantine_or_pending": 5023,
       "nonfunction_claims": 19375,
       "nonfunction_quarantine_or_pending": 5280
@@ -237,7 +237,7 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "3a21a0759c1c66107ceee432a75b655c9e7718ae917369391323f0952b1654fb"
+      "sha256": "150fce6538ca9b135d86e109e6851dcb6b8b8f00c453a1bc85399dab8d04e354"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
@@ -249,7 +249,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "4980e8767f597b175b394f41db2ed8cceef567388b37d73720784772930dcb29"
+      "sha256": "78fc1e82eff1f49da0003289dfe0857c82aaffa21254f5f90d93d44aaf99894b"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
