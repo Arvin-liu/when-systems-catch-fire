@@ -1,13 +1,13 @@
 {
-  "lines_scanned": 26199,
+  "lines_scanned": 26203,
   "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN",
   "records": [
     {
-      "byte_count": 728,
-      "end_byte_offset_exclusive": 728,
       "line_number": 1,
-      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
       "start_byte_offset": 0,
+      "end_byte_offset_exclusive": 728,
+      "byte_count": 728,
+      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
     }
   ],
@@ -17,7 +17,7 @@
     "equals": "NFC-b39db6e6d352f4f6",
     "json_pointer": "/search_id"
   },
-  "source_bytes": 21558426,
+  "source_bytes": 21561994,
   "source_path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-  "source_sha256": "7d8179e849119611f6c60614116bfedc64afad618c09660d868d75b03bfce6c7"
+  "source_sha256": "34d3fe57f3c694bb3e3e90f7825faadfcebdafe117d834e176c71ea33350492f"
 }
