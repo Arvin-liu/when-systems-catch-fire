@@ -2024,6 +2024,11 @@
   - 可搜索名称：NFC-1d191dff026a1f54 / authority_changes: the terminal result adds no Owner, provider, channel, browser, remote Git, executor-configuration, bi
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: the verified Owner merge of 1111 PR #156 registers Task21 identity only. It grants no R3 activation,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0cb3f8639f249799 / authority_changes: the verified Owner merge of 1111 PR #156 registers Task21 identity only. It grants no R3 activation,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: this presentation-only transition grants no Owner, provider, executor, channel, browser, remote-Git,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-757c8c95c59672a7 / authority_changes: this presentation-only transition grants no Owner, provider, executor, channel, browser, remote-Git,
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4c1c5580f9d8cd69 / capability_and_output: the Task148 capability registry, registry-derived playbooks, Current-first canonical resolver, ge
   - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [capability、permission、truth、Owner 或 epistemic status。](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c78069843c71873a / capability、permission、truth、Owner 或 epistemic status。
-  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—

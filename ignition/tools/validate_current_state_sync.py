@@ -429,6 +429,13 @@ def discover_receipts() -> list[Path]:
     return sorted(ROOT.glob("data/operations/iterations/*/current-state-sync-receipt.json"))
 
 
+def current_task_receipt_path() -> Path:
+    """Resolve the receipt from canonical Current identity, not ordinal sort order."""
+    current = iteration_boundary.derive()
+    ordinal = current["current_formal_task_ordinal"]
+    return ROOT / f"data/operations/iterations/{ordinal:03d}/current-state-sync-receipt.json"
+
+
 def validate_fixture_manifest() -> list[str]:
     if not FIXTURE_PATH.is_file():
         return [f"missing current-state sync fixture manifest: {FIXTURE_PATH.relative_to(ROOT)}"]
@@ -520,13 +527,12 @@ def run_check(receipt_path: Path | None = None, check_fixtures: bool = True) -> 
     errors.extend(validate_current_facts(contract))
     errors.extend(validate_release_publication_contract())
     if receipt_path is None:
-        receipts = discover_receipts()
-        if not receipts:
-            errors.append("no current-state-sync receipt found")
+        receipt_path = current_task_receipt_path()
+        if not receipt_path.is_file():
+            errors.append(f"current-task state-sync receipt is missing: {receipt_path.relative_to(REPO_ROOT)}")
             receipt = None
         else:
-            receipt = load_json(receipts[-1])
-            receipt_path = receipts[-1]
+            receipt = load_json(receipt_path)
     else:
         receipt = load_json(receipt_path)
     if receipt is not None:

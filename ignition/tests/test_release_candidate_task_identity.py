@@ -74,8 +74,8 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
         branch = gate.resolve_observed_branch({
             "GITHUB_EVENT_NAME": "pull_request",
             "GITHUB_HEAD_REF": self.contract["expected_task_branch"],
-            "GITHUB_REF": "refs/pull/264/merge",
-            "GITHUB_REF_NAME": "264/merge",
+            "GITHUB_REF": "refs/pull/266/merge",
+            "GITHUB_REF_NAME": "266/merge",
         })
         self.assertEqual(branch, self.contract["expected_task_branch"])
         self.assertEqual(self.check(observed_branch=branch), [])
@@ -83,8 +83,8 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
     def test_pull_request_without_head_ref_fails_closed(self) -> None:
         branch = gate.resolve_observed_branch({
             "GITHUB_EVENT_NAME": "pull_request",
-            "GITHUB_REF": "refs/pull/264/merge",
-            "GITHUB_REF_NAME": "264/merge",
+            "GITHUB_REF": "refs/pull/266/merge",
+            "GITHUB_REF_NAME": "266/merge",
         })
         self.assertEqual(branch, "")
         errors = self.check(observed_branch=branch)
@@ -93,7 +93,7 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
     def test_push_branch_is_resolved_from_github_ref(self) -> None:
         branch = gate.resolve_observed_branch({
             "GITHUB_EVENT_NAME": "push",
-            "GITHUB_REF": "refs/heads/codex/r3-forward-20261022",
+            "GITHUB_REF": f"refs/heads/{self.contract['expected_task_branch']}",
         })
         self.assertEqual(branch, self.contract["expected_task_branch"])
 

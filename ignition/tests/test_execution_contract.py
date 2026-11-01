@@ -34,6 +34,15 @@ class ExecutionContractTests(unittest.TestCase):
         )
         self.assertEqual(contract["identity_impact"], "NONE")
 
+    def test_exact_task21_owner_directive_json_is_an_allowed_control_source(self) -> None:
+        contract = copy.deepcopy(validator.load_json(validator.CONTRACT_PATH))
+        contract["control_source"]["command_path"] = (
+            "instructions/goal-mode/IGNITION-2026-11-01-TASK21-OWNER-IDENTITY-AND-PHASE1-RELAY-R0.json"
+        )
+        self.assertEqual(validator.validate(contract), [])
+        contract["control_source"]["command_path"] = "instructions/goal-mode/unrelated.json"
+        self.assertTrue(any("command_path" in error for error in validator.validate(contract)))
+
 
 if __name__ == "__main__":
     unittest.main()

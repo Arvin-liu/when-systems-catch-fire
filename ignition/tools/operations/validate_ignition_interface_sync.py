@@ -54,6 +54,20 @@ REGISTERED_SUCCESSOR_BINDINGS = {
             "67e9ccad086871fb169ddb21932848a4d3e5363d",
             "3b81551500686c5d09074456152ff5f4a9b04b59",
         ],
+    },
+    21: {
+        "task_id": "IGNITION-20261101-021",
+        "expected_task_branch": "codex/r3-post264-owner-auth-repair-20261101-021",
+        "expected_receipt_branch": "relay/receipts/IGNITION-20261101-021-r3-transition",
+        "previous_formal_task": "IGNITION-20261024-020",
+        "formal_base_main_sha": "c92d53b22e2ff6f8d7573d112568b740b6c1e293",
+        "registration_commit_sha": "cb5f8055ce8225f0197c2348f67571ff774993b5",
+        "registration_file_sha256": "db53faa3abcdf51e8fe7e6763fc1de44d7b507fa763b34e57855bb4180ce82f4",
+        "registration_nonce": "40f4d334a999563e2da8cb9a2e7e6682",
+        "registration_parent_shas": [
+            "d8afce57ce7506e394f1be35766133f04b7662c0",
+            "d9743b3b993fcbcf7e3ed1f18ffc54f6dce8c310",
+        ],
     }
 }
 

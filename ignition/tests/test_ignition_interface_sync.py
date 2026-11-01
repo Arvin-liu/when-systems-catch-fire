@@ -139,6 +139,46 @@ class IgnitionInterfaceSyncTests(unittest.TestCase):
         self.assertFalse(_registered_successor_contract_matches(altered, ordinal))
         self.assertEqual(binding["task_id"], contract["task_id"])
 
+    def test_owner_registered_task21_allows_only_new_task21_evidence(self):
+        ordinal = 21
+        binding = REGISTERED_SUCCESSOR_BINDINGS[ordinal]
+        contract = load_json(ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json")
+        self.assertTrue(_registered_successor_contract_matches(contract, ordinal))
+        self.assertEqual(binding["registration_commit_sha"], contract["successor_registration"]["commit_sha"])
+        self.assertEqual(binding["registration_file_sha256"], contract["successor_registration"]["file_sha256"])
+
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/021/new-evidence.json\n"
+            ),
+            [],
+        )
+        for status in ("M", "D", "R100"):
+            with self.subTest(status=status):
+                self.assertEqual(
+                    historical_rewrite_violations(
+                        f"{status}\tignition/data/operations/iterations/021/existing-evidence.json\n"
+                    ),
+                    ["ignition/data/operations/iterations/021/existing-evidence.json"],
+                )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/022/unregistered-evidence.json\n"
+            ),
+            ["ignition/data/operations/iterations/022/unregistered-evidence.json"],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/021/historical/new.json\n"
+            ),
+            ["ignition/data/operations/iterations/021/historical/new.json"],
+        )
+
+        altered = copy.deepcopy(contract)
+        altered["successor_registration"]["registration_nonce"] = "not-the-registered-nonce"
+        self.assertFalse(_registered_successor_contract_matches(altered, ordinal))
+        self.assertEqual(binding["task_id"], contract["task_id"])
+
 
 if __name__ == "__main__":
     unittest.main()

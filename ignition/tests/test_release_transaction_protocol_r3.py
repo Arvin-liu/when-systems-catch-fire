@@ -791,6 +791,46 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertIsNone(evidence)
         self.assertTrue(any("may not reuse Task148" in error for error in errors))
 
+    def test_successor_registration_rejects_update_to_historical_fixed_path(self) -> None:
+        api = _github_api()
+        control = api.control
+        control._materialize_witness()
+        parent_sha = control.witness_sha
+        renewed_statement = dict(
+            _registration_statement(),
+            registration_nonce="p" * 32,
+            registered_at="2026-10-18T06:50:00Z",
+        )
+        renewed_raw = json.dumps(renewed_statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        renewed_files = dict(control.snapshots[parent_sha])
+        renewed_files[r3.SUCCESSOR_REGISTRATION_PATH] = renewed_raw
+        staging_sha = "7" * 40
+        merge_sha = "8" * 40
+        control.add_commit(
+            staging_sha, [parent_sha], renewed_files,
+            date="2026-10-18T06:55:00Z", signed=False,
+        )
+        control.add_commit(
+            merge_sha, [parent_sha, staging_sha], renewed_files,
+            date="2026-10-18T07:00:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+        control.main_sha = merge_sha
+
+        evidence, errors = r3.read_authenticated_successor_registration(
+            merge_sha,
+            expected_file_sha256=hashlib.sha256(renewed_raw).hexdigest(),
+            expected_formal_base_main_sha="a" * 40,
+            expected_nonce="p" * 32,
+            expected_parent_shas=[parent_sha, staging_sha],
+            github_api=api,
+        )
+        self.assertIsNone(evidence)
+        self.assertTrue(
+            any("already existed in the signed commit's first parent" in error for error in errors),
+            errors,
+        )
+
     def test_signed_registration_rejects_staging_nonce_parent_and_later_replay(self) -> None:
         content = json.dumps(_registration_statement(), sort_keys=True, separators=(",", ":")).encode("utf-8")
         digest = hashlib.sha256(content).hexdigest()
@@ -944,8 +984,10 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertTrue(any("no first-parent update" in error for error in errors), errors)
 
     def test_successor_registration_uses_fresh_versioned_control_path(self) -> None:
-        expected = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"
+        expected = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json"
+        task20_path = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"
         self.assertEqual(r3.SUCCESSOR_REGISTRATION_PATH, expected)
+        self.assertNotEqual(r3.SUCCESSOR_REGISTRATION_PATH, task20_path)
         self.assertNotEqual(
             r3.SUCCESSOR_REGISTRATION_PATH,
             "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R1.json",
@@ -954,6 +996,37 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(
             protocol["identity_binding"]["successor_registration"]["authority_path"],
             expected,
+        )
+
+    def test_occupied_task20_registration_path_cannot_satisfy_new_successor_path(self) -> None:
+        api = _github_api()
+        control = api.control
+        control._materialize_witness()
+        first_parent_sha = control.witness_sha
+        files = dict(control.snapshots[first_parent_sha])
+        registration = files.pop(r3.SUCCESSOR_REGISTRATION_PATH)
+        files["instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"] = registration
+        staging_sha = "a" * 40
+        merge_sha = "b" * 40
+        control.add_commit(
+            staging_sha, [first_parent_sha], files,
+            date="2026-10-18T07:10:00Z", signed=False,
+        )
+        control.add_commit(
+            merge_sha, [first_parent_sha, staging_sha], files,
+            date="2026-10-18T07:20:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+        control.main_sha = merge_sha
+
+        evidence, errors = r3.read_authenticated_successor_registration(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(
+            any(
+                "fixed control path is absent" in error and r3.SUCCESSOR_REGISTRATION_PATH in error
+                for error in errors
+            ),
+            errors,
         )
 
     def test_contract_preserves_r2_baseline_and_identifies_all_transition_exceptions(self) -> None:
@@ -1271,6 +1344,233 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertIsNone(evidence)
         self.assertTrue(any("signature failed closed" in error for error in errors), errors)
+
+    def test_owner_authorization_accepts_unique_historical_path_update_and_rejects_replay_or_tampering(self) -> None:
+        api = _github_api()
+        control = api.control
+        control._materialize_witness()
+        original_sha = control.authorization_sha
+        original_raw = control.snapshots[original_sha][r3.OWNER_AUTHORIZATION_PATH]
+        parent_sha = control.witness_sha
+
+        def canonical_bytes(value: object) -> bytes:
+            return json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+        renewed_raw = canonical_bytes(_owner_statement(pr_number=302, head_sha="c" * 40))
+        renewed_files = dict(control.snapshots[parent_sha])
+        renewed_files[r3.OWNER_AUTHORIZATION_PATH] = renewed_raw
+        update_staging_sha = "7" * 40
+        update_merge_sha = "8" * 40
+        control.add_commit(
+            update_staging_sha, [parent_sha], renewed_files,
+            date="2026-10-18T06:50:00Z", signed=False,
+        )
+        control.add_commit(
+            update_merge_sha, [parent_sha, update_staging_sha], renewed_files,
+            date="2026-10-18T07:00:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+        control.main_sha = update_merge_sha
+
+        evidence, errors = r3.read_authenticated_owner_authorization(update_merge_sha, github_api=api)
+        self.assertEqual(errors, [])
+        self.assertIsNotNone(evidence)
+        self.assertEqual(evidence["evidence"]["approved_pr_number"], 302)
+        self.assertTrue(evidence["evidence"]["authorization_signature_verified"])
+
+        stale, errors = r3.read_authenticated_owner_authorization(original_sha, github_api=api)
+        self.assertIsNone(stale)
+        self.assertTrue(any("not the latest first-parent content update" in error for error in errors), errors)
+
+        def tampered_read(endpoint: str):
+            value = api(endpoint)
+            exact = (
+                f"repos/Arvin-liu/1111/contents/{r3.OWNER_AUTHORIZATION_PATH}"
+                f"?ref={update_merge_sha}"
+            )
+            if endpoint == exact:
+                value = dict(value)
+                value["content"] = base64.b64encode(renewed_raw + b" ").decode("ascii")
+            return value
+
+        tampered, errors = r3.read_authenticated_owner_authorization(
+            update_merge_sha, github_api=tampered_read
+        )
+        self.assertIsNone(tampered)
+        self.assertTrue(any("blob SHA does not bind exact control-file bytes" in error for error in errors), errors)
+
+        replay_files = dict(control.snapshots[update_merge_sha])
+        replay_files[r3.OWNER_AUTHORIZATION_PATH] = original_raw
+        replay_staging_sha = "a" * 40
+        replay_merge_sha = "b" * 40
+        control.add_commit(
+            replay_staging_sha, [update_merge_sha], replay_files,
+            date="2026-10-18T07:10:00Z", signed=False,
+        )
+        control.add_commit(
+            replay_merge_sha, [update_merge_sha, replay_staging_sha], replay_files,
+            date="2026-10-18T07:20:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+        control.main_sha = replay_merge_sha
+        overwritten, errors = r3.read_authenticated_owner_authorization(update_merge_sha, github_api=api)
+        self.assertIsNone(overwritten)
+        self.assertTrue(any("not the latest first-parent content update" in error for error in errors), errors)
+        replay, errors = r3.read_authenticated_owner_authorization(replay_merge_sha, github_api=api)
+        self.assertEqual(errors, [])
+        self.assertIsNotNone(replay)
+        replayed_approval = replay["evidence"]
+        self.assertEqual(replayed_approval["approved_pr_number"], 301)
+        self.assertEqual(replayed_approval["approved_head_sha"], "b" * 40)
+
+        # A freshly signed path update cannot make that historical approval
+        # authorize a different candidate. Replay rejection belongs at the
+        # exact PR/head/base admission boundary, not in an expensive scan of
+        # every first-parent commit in private-repository history.
+        receipt = _activation_receipt()
+        receipt["pr_number"] = 302
+        receipt["pr_url"] = "https://github.com/Arvin-liu/when-systems-catch-fire/pull/302"
+        receipt["candidate_head_sha"] = "c" * 40
+        receipt["base_main_sha"] = "d" * 40
+        receipt["merge_preview_parents"] = ["d" * 40, "c" * 40]
+        receipt["actual_final_main_parents"] = ["d" * 40, "c" * 40]
+        receipt["owner_approval"] = replayed_approval
+        observations = _live_observations()
+        observations["pr_number"] = 302
+        observations["pr_url"] = receipt["pr_url"]
+        observations["pr_head_sha"] = "c" * 40
+        observations["final_main_parents"] = ["d" * 40, "c" * 40]
+        observations["owner_authorization"] = replayed_approval
+        observations["authorization_file_sha256"] = replayed_approval["authorization_file_sha256"]
+        observations["authorization_readback_commit_sha"] = replayed_approval["authorization_commit_sha"]
+        observations.update(replay["meta"])
+        live_pr = {
+            "pr_number": 302, "pr_url": receipt["pr_url"],
+            "head_ref": receipt["pr_head_ref"], "head_sha": "c" * 40,
+            "merge_commit_sha": receipt["actual_final_main_sha"],
+            "merged_at": receipt["pr_merged_at"],
+        }
+        with patch.object(r3, "read_live_merged_pr", return_value=(live_pr, [])):
+            active, errors = r3.resolve_effective_protocol(
+                receipt, observations=observations, repository_owner_id=49422864, github_api=api,
+            )
+        self.assertEqual(active, "R2")
+        self.assertTrue(any("Owner authorization does not bind the exact transition PR and candidate head" in error for error in errors), errors)
+        self.assertTrue(any("Owner authorization is stale for the admitted base SHA" in error for error in errors), errors)
+
+        original_receipt = _activation_receipt()
+        original_receipt["owner_approval"] = replayed_approval
+        original_observations = _live_observations()
+        original_observations["owner_authorization"] = replayed_approval
+        original_observations["authorization_file_sha256"] = replayed_approval["authorization_file_sha256"]
+        original_observations["authorization_readback_commit_sha"] = replayed_approval["authorization_commit_sha"]
+        original_observations.update(replay["meta"])
+        original_live_pr = {
+            "pr_number": 301, "pr_url": original_receipt["pr_url"],
+            "head_ref": original_receipt["pr_head_ref"], "head_sha": "b" * 40,
+            "merge_commit_sha": original_receipt["actual_final_main_sha"],
+            "merged_at": original_receipt["pr_merged_at"],
+        }
+        with patch.object(r3, "read_live_merged_pr", return_value=(original_live_pr, [])):
+            active, errors = r3.resolve_effective_protocol(
+                original_receipt, observations=original_observations,
+                repository_owner_id=49422864, github_api=api,
+            )
+        self.assertEqual(active, "R2")
+        self.assertTrue(any("Owner authorization was not committed before the GitHub PR merge" in error for error in errors), errors)
+        self.assertTrue(any("signed 1111 witness is not a descendant of the exact signed Owner authorization commit" in error for error in errors), errors)
+
+    def test_historical_owner_authorization_update_rejects_invalid_signature_identity_tree_and_digest(self) -> None:
+        def updated_authorization(
+            *,
+            signed: bool = True,
+            unchanged: bool = False,
+            second_parent_uses_old_file: bool = False,
+            statement: dict[str, object] | None = None,
+        ):
+            api = _github_api()
+            control = api.control
+            control._materialize_witness()
+            first_parent_sha = control.witness_sha
+            first_parent_files = dict(control.snapshots[first_parent_sha])
+            merge_files = dict(first_parent_files)
+            if not unchanged:
+                updated_statement = dict(statement or _owner_statement(pr_number=302, head_sha="c" * 40))
+                updated_raw = json.dumps(updated_statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+                merge_files[r3.OWNER_AUTHORIZATION_PATH] = updated_raw
+            else:
+                updated_raw = first_parent_files[r3.OWNER_AUTHORIZATION_PATH]
+            second_parent_files = first_parent_files if second_parent_uses_old_file else merge_files
+            staging_sha = "7" * 40
+            merge_sha = "8" * 40
+            control.add_commit(
+                staging_sha, [first_parent_sha], second_parent_files,
+                date="2026-10-18T06:55:00Z", signed=False,
+            )
+            control.add_commit(
+                merge_sha, [first_parent_sha, staging_sha], merge_files,
+                date="2026-10-18T07:00:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+                committer_login="web-flow", signed=signed,
+            )
+            control.main_sha = merge_sha
+            return api, control, merge_sha, updated_raw
+
+        api, _, merge_sha, _ = updated_authorization(signed=False)
+        evidence, errors = r3.read_authenticated_owner_authorization(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(any("signature failed closed" in error for error in errors), errors)
+
+        api, control, merge_sha, _ = updated_authorization()
+        control.commits[merge_sha]["author"]["id"] = 7
+        evidence, errors = r3.read_authenticated_owner_authorization(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(any("commit author must be the Owner" in error for error in errors), errors)
+
+        api, control, merge_sha, _ = updated_authorization()
+        control.commits[merge_sha]["committer"] = {"id": 99, "login": "other-user"}
+        evidence, errors = r3.read_authenticated_owner_authorization(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(any("committer must be the Owner or GitHub web-flow" in error for error in errors), errors)
+
+        api, _, merge_sha, _ = updated_authorization(unchanged=True)
+        evidence, errors = r3.read_authenticated_owner_authorization(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(any("not the latest first-parent content update" in error for error in errors), errors)
+
+        api, _, merge_sha, _ = updated_authorization()
+        def not_on_main_ancestry(endpoint: str):
+            if endpoint == f"repos/Arvin-liu/1111/compare/{merge_sha}...{merge_sha}":
+                return {"status": "diverged"}
+            return api(endpoint)
+        evidence, errors = r3.read_authenticated_owner_authorization(
+            merge_sha, github_api=not_on_main_ancestry
+        )
+        self.assertIsNone(evidence)
+        self.assertTrue(any("not an ancestor of the exact current" in error for error in errors), errors)
+
+        api, _, merge_sha, _ = updated_authorization(second_parent_uses_old_file=True)
+        evidence, errors = r3.read_authenticated_owner_authorization(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(any("second-parent fixed path" in error for error in errors), errors)
+
+        api, _, merge_sha, _ = updated_authorization()
+        _, errors = r3._read_authenticated_control_path_commit(
+            r3.OWNER_AUTHORIZATION_REPOSITORY,
+            r3.OWNER_AUTHORIZATION_PATH,
+            merge_sha,
+            49422864,
+            expected_file_sha256="0" * 64,
+            allow_historical_authorization_update=True,
+            api=api,
+        )
+        self.assertTrue(any("SHA-256 differs" in error for error in errors), errors)
+
+        future_statement = dict(_owner_statement(pr_number=302, head_sha="c" * 40))
+        future_statement["approved_at"] = "2026-10-18T07:01:00Z"
+        api, _, merge_sha, _ = updated_authorization(statement=future_statement)
+        evidence, errors = r3.read_authenticated_owner_authorization(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(any("authorization time is later than" in error for error in errors), errors)
 
     def test_r0_owner_authorization_path_is_rejected_after_versioned_rotation(self) -> None:
         api = _github_api()

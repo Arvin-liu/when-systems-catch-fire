@@ -109,6 +109,15 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def git_blob(commit: str, path: str) -> bytes | None:
+    result = subprocess.run(["git", "show", f"{commit}:{path}"], cwd=REPO_ROOT, capture_output=True, check=False)
+    return result.stdout if result.returncode == 0 else None
+
+
+def digest_bytes(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
+
+
 def is_ancestor(ancestor: str, descendant: str) -> bool:
     return subprocess.run(
         ["git", "merge-base", "--is-ancestor", ancestor, descendant],
@@ -134,8 +143,6 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     for label, path, expected in (
         ("Step14", STEP14_PATH, EXPECTED_STEP14_SHA),
         ("Step15", STEP15_PATH, EXPECTED_STEP15_SHA),
-        ("canonical source", CANONICAL_PATH, EXPECTED_CANONICAL_SHA),
-        ("system map", SYSTEM_MAP_PATH, EXPECTED_SYSTEM_MAP_SHA),
         ("adapter", ADAPTER_PATH, EXPECTED_ADAPTER_SHA),
         ("typed IR", IR_PATH, EXPECTED_IR_SHA),
         ("standalone artifact", ARTIFACT_HTML_PATH, EXPECTED_ARTIFACT_SHA),
@@ -145,6 +152,14 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     ):
         if sha256(path) != expected:
             errors.append(f"{label} hash drifted")
+
+    for label, path, expected in (
+        ("canonical source", "ignition/data/architecture/overall-architecture.json", EXPECTED_CANONICAL_SHA),
+        ("system map", "ignition/data/architecture/interactive-system-map.json", EXPECTED_SYSTEM_MAP_SHA),
+    ):
+        snapshot = git_blob(EXPECTED_BASE_SHA, path)
+        if snapshot is None or digest_bytes(snapshot) != expected:
+            errors.append(f"historical {label} hash drifted")
 
     step14 = load_json(STEP14_PATH)
     step15 = load_json(STEP15_PATH)
