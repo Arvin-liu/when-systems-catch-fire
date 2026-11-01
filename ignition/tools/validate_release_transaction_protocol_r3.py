@@ -421,9 +421,10 @@ def _read_authenticated_control_path_commit(
     expected_file_sha256: str | None = None,
     expected_parent_shas: list[str] | None = None,
     expected_nonce: str | None = None,
+    allow_historical_authorization_update: bool = False,
     api: Callable[[str], dict[str, Any] | list[Any]],
 ) -> tuple[dict[str, Any] | None, list[str]]:
-    """Bind a verified Owner signature to one new fixed-path commit on current main."""
+    """Bind a verified Owner signature to the latest fixed-path content update on current main."""
     try:
         if commit_sha is not None and (
             not isinstance(commit_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", commit_sha)
@@ -469,7 +470,10 @@ def _read_authenticated_control_path_commit(
         if after_entry is None or after_entry != latest_entry:
             return None, [f"signed commit tree does not bind the latest exact fixed-path blob for {repository}:{path}"]
         if before_entry is not None:
-            return None, [f"fixed Owner control path already existed in the signed commit's first parent; replay/update is rejected for {repository}:{path}"]
+            if not allow_historical_authorization_update or path != OWNER_AUTHORIZATION_PATH:
+                return None, [f"fixed Owner control path already existed in the signed commit's first parent; replay/update is rejected for {repository}:{path}"]
+            if before_entry.get("sha") == after_entry.get("sha"):
+                return None, [f"fixed Owner control blob is unchanged from its first parent; replay is rejected for {repository}:{path}"]
         second_parent_entry = None
         if len(parent_shas) == 2:
             second_parent_entry = _path_entry_for_commit(repository, parent_shas[1], path, api, cache)
@@ -652,7 +656,12 @@ def read_authenticated_owner_authorization(
         if private_repo.get("default_branch") != "main":
             return None, ["1111 default branch is not main, so the fixed authorization source cannot be verified"]
         binding, binding_errors = _read_authenticated_control_path_commit(
-            OWNER_AUTHORIZATION_REPOSITORY, OWNER_AUTHORIZATION_PATH, commit_sha, actor_id, api=api
+            OWNER_AUTHORIZATION_REPOSITORY,
+            OWNER_AUTHORIZATION_PATH,
+            commit_sha,
+            actor_id,
+            allow_historical_authorization_update=True,
+            api=api,
         )
         if binding_errors or binding is None:
             return None, [f"fixed 1111 authorization binding failed: {item}" for item in binding_errors]
