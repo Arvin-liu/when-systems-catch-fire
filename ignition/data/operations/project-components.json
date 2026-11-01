@@ -305,6 +305,7 @@
         "data/operations/state-changelog-profile-r3.json",
         "data/operations/state-changelog-profile-r4.json",
         "data/operations/state-changelog-profile-r5.json",
+        "data/operations/state-changelog-profile-r6.json",
         "data/operations/human-front-door-identity-r1.json",
         "data/operations/current-task-lineage-status.json",
         "data/operations/current-volatile-fact-registry-r1.json",
@@ -403,7 +404,15 @@
         "data/foundation/",
         "docs/foundation/",
         "tools/foundation/",
+        "tools/validate_task149_step05_archify_adapter.py",
+        "tools/validate_task149_step06_archify_validation.py",
+        "tools/validate_task149_step17_limited_propagation.py",
+        "tools/validate_task150_step08_provider_failure_fallback.py",
+        "tools/validate_task150_step21_fresh_standalone_evidence.py",
+        "tools/validate_task150_step29_exact_head_ready_gate.py",
         "tests/foundation/",
+        "tests/test_task150_step08_provider_failure_fallback.py",
+        "tests/test_task150_step21_fresh_standalone_evidence.py",
         "tests/test_knowledge_corpus_admission.py",
         "formal/lean/"
       ]
@@ -2615,6 +2624,7 @@
       },
       "path_patterns": [
         "data/operations/component-validation-map-r1.json",
+        "data/operations/full-regression-runner-r1.json",
         "data/operations/component-release-policy-r1.json",
         "schemas/operations/component-validation-map-r1.schema.json",
         "schemas/operations/component-release-policy-r1.schema.json",
