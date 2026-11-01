@@ -333,8 +333,11 @@
         "tools/validate_release_candidate_task_identity.py",
         "tools/validate_task_identity_model.py",
         "tests/test_current_task_advancement.py",
+        "tests/test_iteration_boundary_compatibility.py",
         "tools/advance_current_task.py",
+        "tools/validate_current_surface_semantics.py",
         "tools/validate_execution_contract.py",
+        "tools/validate_iteration_boundary_compatibility.py",
         "tools/validate_iteration_ordinal_binding.py"
       ]
     },

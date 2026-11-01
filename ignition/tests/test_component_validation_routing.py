@@ -124,6 +124,33 @@ class ComponentValidationRoutingTest(unittest.TestCase):
             for reason in result["full_regression_reasons"]
         ))
 
+    def test_task21_current_surface_paths_route_to_full_foundation_regression(self):
+        paths = [
+            "ignition/tests/test_iteration_boundary_compatibility.py",
+            "ignition/tools/validate_current_surface_semantics.py",
+            "ignition/tools/validate_iteration_boundary_compatibility.py",
+        ]
+        result = self.plan(paths)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["current_state"])
+        self.assertEqual(result["domains"], ["G", "O"])
+        self.assertEqual(
+            result["selected_target_ids"],
+            ["g_current_state_consumers", "g_human_front_door_consumers", "o_human_result_consumers"],
+        )
+        self.assertTrue(any(
+            reason == {"kind": "component_requires_full_regression", "component_id": "current_state"}
+            for reason in result["full_regression_reasons"]
+        ))
+        self.assertEqual(
+            {item["path"]: item["components"][0]["component_id"] for item in result["path_component_evidence"]},
+            {
+                "tests/test_iteration_boundary_compatibility.py": "current_state",
+                "tools/validate_current_surface_semantics.py": "current_state",
+                "tools/validate_iteration_boundary_compatibility.py": "current_state",
+            },
+        )
+
     def test_g_only_change_selects_governance_controls(self):
         result = self.plan(["data/governance/history-remediation-register.json"])
         self.assertEqual(result["mode"], "TARGETED")
