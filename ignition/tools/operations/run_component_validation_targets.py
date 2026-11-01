@@ -12,9 +12,11 @@ import shutil
 import subprocess
 import sys
 import time
+import types
 import unittest
 from pathlib import Path
 from typing import Any
+from importlib.machinery import ModuleSpec
 
 ROOT = Path(__file__).resolve().parents[2]
 CHECKOUT_ROOT = ROOT.parent
@@ -187,6 +189,27 @@ def collect_registered_test_ids(
         sys.modules.pop(name, None)
     try:
         sys.path[:0] = search_paths
+        # ``tests`` is intentionally a namespace package in this repository.
+        # A previously imported fixture package with the same name can outrank
+        # that namespace package even though the registered checkout is first
+        # on sys.path. Anchor the namespace to the registered test directory so
+        # origin checks remain checkout-bound after a full unittest discovery.
+        if "tests" in module_prefixes:
+            package_roots = {
+                expected.parents[len(module.split(".")) - 2].resolve()
+                for module, expected in expected_paths.items()
+                if module.split(".", 1)[0] == "tests" and len(module.split(".")) >= 2
+            }
+            if len(package_roots) != 1:
+                raise RoutingBlocked("selected tests modules do not share one registered package root")
+            package_root = next(iter(package_roots))
+            package = types.ModuleType("tests")
+            package.__package__ = "tests"
+            package_spec = ModuleSpec("tests", loader=None, is_package=True)
+            package_spec.submodule_search_locations = [str(package_root)]
+            package.__spec__ = package_spec
+            package.__path__ = package_spec.submodule_search_locations
+            sys.modules["tests"] = package
         for module, expected in expected_paths.items():
             spec = importlib.util.find_spec(module)
             if spec is None or spec.origin is None:

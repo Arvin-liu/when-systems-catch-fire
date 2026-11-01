@@ -1,12 +1,8 @@
 {
   "candidate": {
+    "lines_scanned": 26207,
     "output_path": "ignition/data/operations/toolbox-jsonl-selector-real-task-r0.json",
-    "output_sha256": "f8e1d48b5a221cabd4558195a373f4863cef0c9c1e7b1d94b8888e18e54a9c52",
-    "status": "COMPLETE",
-    "source_sha256": "34d3fe57f3c694bb3e3e90f7825faadfcebdafe117d834e176c71ea33350492f",
-    "source_bytes": 21561994,
-    "lines_scanned": 26203,
-    "selected_record_count": 1,
+    "output_sha256": "0cd16df1a3ec566cad354ecd919aceea0b075287ef55b800b7bcc5e727101a4c",
     "record": {
       "byte_count": 728,
       "end_byte_offset_exclusive": 728,
@@ -14,48 +10,52 @@
       "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
       "start_byte_offset": 0,
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
-    }
+    },
+    "selected_record_count": 1,
+    "source_bytes": 21564915,
+    "source_sha256": "08b07d9c676e6ddf42e6d2bbe47cfa23e83084a4ffbb1d5d373d05262bde8a4d",
+    "status": "COMPLETE"
   },
   "claim_ceiling": "One checked-out JSONL row was selected with exact JSON Pointer and JSON scalar equality, and its selected text and hashes matched a direct standard-library fallback. No semantic relevance, source authority, completeness outside this file, token savings, net benefit, or replacement value is established.",
   "disposition": {
     "comparison_status": "COMPARISON_UNKNOWN",
-    "finding": "After refreshing both observations against the current 21,561,994-byte checked-out Knowledge index, the candidate and one-off standard-library fallback returned the same exact row, line, byte range, record digest, and source digest on this one local task. This establishes functional parity only; no runtime, cost, token, retrieval-quality, reliability, or replacement advantage was measured. Keep the candidate default-off."
+    "finding": "After refreshing both observations against the current 21,564,915-byte checked-out Knowledge index, the candidate and one-off standard-library fallback returned the same exact row, line, byte range, record digest, and source digest on this one local task. This establishes functional parity only; no runtime, cost, token, retrieval-quality, reliability, or replacement advantage was measured. Keep the candidate default-off."
   },
   "fallback": {
+    "lines_scanned": 26207,
+    "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN",
     "output_path": "ignition/data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
-    "output_sha256": "f1c6f99b490792cb19d57414d63036439b99eb380a5cdf0eb5957c44506b0381",
-    "status": "COMPLETE",
-    "source_sha256": "34d3fe57f3c694bb3e3e90f7825faadfcebdafe117d834e176c71ea33350492f",
-    "source_bytes": 21561994,
-    "lines_scanned": 26203,
-    "selected_record_count": 1,
+    "output_sha256": "0adf7a513c65ba08926353e2a46fd040fae764731e754a658090421dbd30f57f",
     "record": {
-      "line_number": 1,
-      "start_byte_offset": 0,
-      "end_byte_offset_exclusive": 728,
       "byte_count": 728,
+      "end_byte_offset_exclusive": 728,
+      "line_number": 1,
       "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
+      "start_byte_offset": 0,
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
     },
-    "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN"
+    "selected_record_count": 1,
+    "source_bytes": 21564915,
+    "source_sha256": "08b07d9c676e6ddf42e6d2bbe47cfa23e83084a4ffbb1d5d373d05262bde8a4d",
+    "status": "COMPLETE"
   },
   "parity": {
-    "source_sha256_equal": true,
-    "selected_record_count_equal": true,
-    "line_number_equal": true,
     "byte_offsets_equal": true,
+    "line_number_equal": true,
     "record_byte_count_equal": true,
     "record_sha256_equal": true,
-    "record_text_equal": true
+    "record_text_equal": true,
+    "selected_record_count_equal": true,
+    "source_sha256_equal": true
   },
   "request": {
+    "equals": "NFC-b39db6e6d352f4f6",
     "input_path": "ignition/data/operations/toolbox-jsonl-selector-real-task-input-r0.json",
     "input_sha256": "88cac643c913d4e26d2ead4ef76ff190aa052fc5ad2a03119510afe361e1e331",
     "json_pointer": "/search_id",
-    "equals": "NFC-b39db6e6d352f4f6",
-    "max_source_bytes": 25000000,
+    "max_matches": 1,
     "max_returned_bytes": 8192,
-    "max_matches": 1
+    "max_source_bytes": 25000000
   },
   "schema_version": "ignition.toolbox-jsonl-selector-c1-evidence-r0",
   "task": {

@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import copy
 import hashlib
+import importlib
 import json
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -32,10 +34,35 @@ class ComponentValidationEvidenceTest(unittest.TestCase):
         target_id = "g_history_remediation_contract"
         target = next(item for item in self.validation_map["targets"] if item["target_id"] == target_id)
         modules = target["modules"]
-        test_ids = collect_registered_test_ids(
-            modules, repo_root=CHECKOUT_ROOT, import_roots=target.get("import_roots", []),
-            validation_sha=self.validation_sha,
-        )
+        previous_tests = {
+            name: module for name, module in sys.modules.items()
+            if name == "tests" or name.startswith("tests.")
+        }
+        for name in previous_tests:
+            sys.modules.pop(name, None)
+        with tempfile.TemporaryDirectory(prefix="component-validation-foreign-tests-") as temporary:
+            foreign_root = Path(temporary)
+            foreign_tests = foreign_root / "tests"
+            foreign_tests.mkdir()
+            (foreign_tests / "__init__.py").write_text("\"\"\"Foreign collision fixture.\"\"\"\n", encoding="utf-8")
+            (foreign_tests / "test_history_remediation_contract.py").write_text(
+                "\"\"\"Wrong-origin test module fixture.\"\"\"\n", encoding="utf-8",
+            )
+            sys.path.insert(0, str(foreign_root))
+            try:
+                collision = importlib.import_module("tests")
+                if Path(collision.__file__).resolve() != (foreign_tests / "__init__.py").resolve():
+                    raise AssertionError("foreign test-package collision fixture did not load")
+                test_ids = collect_registered_test_ids(
+                    modules, repo_root=CHECKOUT_ROOT, import_roots=target.get("import_roots", []),
+                    validation_sha=self.validation_sha,
+                )
+            finally:
+                sys.path.remove(str(foreign_root))
+                for name in tuple(sys.modules):
+                    if name == "tests" or name.startswith("tests."):
+                        sys.modules.pop(name, None)
+                sys.modules.update(previous_tests)
         report_lines = [f"{test_id.rsplit('.', 1)[-1]} ({test_id}) ... ok" for test_id in test_ids]
         test_word = "test" if len(test_ids) == 1 else "tests"
         test_report = "\n".join(report_lines) + f"\n\nRan {len(test_ids)} {test_word} in 0.001s\n\nOK\n"
