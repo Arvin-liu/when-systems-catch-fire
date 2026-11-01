@@ -10,12 +10,16 @@ from tools.validate_state_changelog import (
     PROFILE_PATH_R3,
     PROFILE_PATH_R4,
     PROFILE_PATH_R5,
+    PROFILE_PATH_R6,
     PROFILE_PATH_R1,
     R1_PROFILE_SHA256,
     R2_PROFILE_SHA256,
     R3_PROFILE_SHA256,
     R4_PROFILE_SHA256,
     R5_PROFILE_SHA256,
+    R6_PROFILE_SHA256,
+    R6_APPEND_PROFILE,
+    R6_AUTHORIZATION,
     ROOT,
     validate,
 )
@@ -62,7 +66,7 @@ class StateChangelogTests(unittest.TestCase):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         source = _replace_in_entry(
             source,
-            53,
+            61,
             "- authority_changes:",
             "- authority_removed:",
         )
@@ -246,6 +250,8 @@ class StateChangelogTests(unittest.TestCase):
     def test_r5_profile_rejects_an_unregistered_successor(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         profile = json.loads(PROFILE_PATH_R5.read_text(encoding="utf-8"))
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        source = source[: headings[profile["entry_count"]].start()]
         source += (
             "\n## 2027-01-01 — SYNTHETIC-UNAUTHORIZED-R5\n\n"
             "- main_state: synthetic candidate only\n"
@@ -261,7 +267,45 @@ class StateChangelogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "STATE-CHANGELOG.md"
             path.write_text(source, encoding="utf-8")
-            errors = validate(path)
+            errors = validate(path=path, profile_path=PROFILE_PATH_R5)
+        self.assertTrue(any(f"expects {profile['entry_count']} entries" in error for error in errors), errors)
+
+    def test_r6_profile_is_exact_additive_successor_of_immutable_r5(self):
+        r5_bytes = PROFILE_PATH_R5.read_bytes()
+        r5 = json.loads(r5_bytes)
+        r6_bytes = PROFILE_PATH_R6.read_bytes()
+        r6 = json.loads(r6_bytes)
+        self.assertEqual(hashlib.sha256(r5_bytes).hexdigest(), R5_PROFILE_SHA256)
+        self.assertEqual(hashlib.sha256(r6_bytes).hexdigest(), R6_PROFILE_SHA256)
+        self.assertEqual(r6["parent_profile"]["sha256"], R5_PROFILE_SHA256)
+        self.assertEqual(r6["authorization"], R6_AUTHORIZATION)
+        self.assertEqual(r6["entries"][: len(r5["entries"])], r5["entries"])
+        self.assertEqual(r6["entry_count"], len(r6["entries"]))
+        self.assertEqual(r6["entry_count"], len(r5["entries"]) + 1)
+        self.assertEqual(R6_APPEND_PROFILE, r6["entries"][-1]["profile"])
+        self.assertEqual([], validate(profile_path=PROFILE_PATH_R6))
+
+    def test_r6_profile_rejects_an_unregistered_62nd_append(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        profile = json.loads(PROFILE_PATH_R6.read_text(encoding="utf-8"))
+        source += (
+            "\n## 2027-01-01 — SYNTHETIC-UNAUTHORIZED-62\n\n"
+            "- main_state: synthetic candidate only\n"
+            "- delta: no Task21 Owner authority was supplied\n"
+            "- authority_changes: none\n"
+            "- epistemic_state: unchanged\n"
+            "- obligations: remain open\n"
+            "- stale_knowledge: none\n"
+            "- next_read: Owner must authorize a real successor independently\n"
+            "- identity_binding: fixture only\n"
+            "- task_lineage: fixture only\n"
+            "- release_boundary: fixture only\n"
+            "- claim_ceiling: repository-local fixture only\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "STATE-CHANGELOG.md"
+            path.write_text(source, encoding="utf-8")
+            errors = validate(path=path, profile_path=PROFILE_PATH_R6)
         self.assertTrue(any(f"expects {profile['entry_count']} entries" in error for error in errors), errors)
 
     def test_immutable_r1_prefix_validates_with_original_profile(self):

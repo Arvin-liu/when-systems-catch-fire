@@ -13,7 +13,7 @@
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=106; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20261101-021` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `a9ec3f07f53311b5eb6a51cc7f21cf725526d45e667c3e31c89d81d020660a74`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `6b3cc83c2b7cbeba1beb7d8d01c516d9306adfebabb033055f61bdb6615c3127`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -785,13 +785,17 @@
 - research_evidence: see `reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md` and `data/operations/iterations/020/v1-methane-source-bound-real-task-r0/`.
 - research_limitations: one inversion posterior; monthly-mean proxy; 2024 coverage ends December 29; no inversion uncertainty propagation, multi-model inference, human review, or post-release component use.
 - claim_ceiling: candidate-stage V1 workflow, data-integrity, arithmetic, and bounded-source-review evidence only; no net benefit, human scientific validation, epistemic acceptance, R3 activation, Formal main publication, or #259 release is inferred.
-
 ## 2026-11-01 — IGNITION-20261101-021 — Task21 Phase 1 closeout candidate
 
 - main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this branch advances canonical Current from the exact Formal main baseline `c92d53b22e2ff6f8d7573d112568b740b6c1e293` under the explicitly assigned Task21 identity. It is a branch-local candidate and makes no main-publication claim.
+- delta: the branch binds Task21 to the Owner-verified successor registration and carries the narrow R3 validator repair while keeping the candidate separate from effective Formal main state.
 - identity_binding: Task21 binds to 1111 PR #156 merge commit `cb5f8055ce8225f0197c2348f67571ff774993b5`, GitHub-verified Owner signature, registration blob `bb9cf4d0f4c05ce6d73f67de0958bcae778c039f`, file SHA-256 `db53faa3abcdf51e8fe7e6763fc1de44d7b507fa763b34e57855bb4180ce82f4`, nonce `40f4d334a999563e2da8cb9a2e7e6682`, and ordered parents `d8afce57ce7506e394f1be35766133f04b7662c0`, `d9743b3b993fcbcf7e3ed1f18ffc54f6dce8c310`. The registered R3 protocol blob is `1fd53f8023ab96d694e71c6ed28f81e30a32ca6c`.
+- authority_changes: the verified Owner merge of 1111 PR #156 registers Task21 identity only. It grants no R3 activation, Formal merge, or publication authority; no Task20 authorization is reused.
 - task_lineage: Task20 `IGNITION-20261024-020` remains recorded `IN_PROGRESS`, `terminal=false`; this advancement does not infer its completion or close its obligations. Latest architecture-changing task remains `IGNITION-20260827-142`; Task21 identity impact is `NONE`.
 - preserved_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task148 remains `COMPLETED_WITH_OPEN_OBLIGATIONS`. These historical states and the non-terminal Task20 record are preserved.
 - release_boundary: the successor registration assigns identity only. R2 remains effective until a new, independent Task21 R3 Owner authorization, protected Formal merge, and exact final-main publication witness all validate. No Task20 authorization is carried into Task21.
+- obligations: exact-head full validation and current Formal protection checks; a separate signed Task21 R3 authorization; ordinary protected merge; a clean exact-main publication witness; source-bound methane research, independent scientific/semantic review, adapter upgrade and rollback, and final Foundation/R/O/G validation remain pending.
+- stale_knowledge: Task20 methane research remains `PARTIAL`; its 2024 coverage ends December 29, the 597.567 Tg value is an imputation sensitivity rather than an observed annual total, and the prior run did not include semantic pipeline validation or post-release component use. Task21 research remains unstarted until R3 is activated and witnessed.
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. No scientific acceptance, external truth, live completion, production readiness, or Phase 2 work is asserted.
+- next_read: after the candidate reaches exact-head validation, prepare the independent Task21 authorization; only after that authorization and the real protected-main witness may the source-bound research and its independent review begin.
 - claim_ceiling: repository-local Task21 identity binding and R3 candidate repair only; no R3 activation, release, publication, scientific acceptance, or epistemic acceptance is inferred.

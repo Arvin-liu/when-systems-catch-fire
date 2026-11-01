@@ -69,7 +69,7 @@
   "generator_id": "agent_platform_r2_blast_radius",
   "source_authority_sha256": {
     "data/operations/change-propagation-topology.json": "d8b0d00fae55b525694b0d05bcddf3828ca2436bd4fd6c65d111e75b5b2752dc",
-    "data/operations/project-components.json": "182c6348578ae1415a1470113d6caf0f53c22175227678abb7cb60ad297bebd7",
+    "data/operations/project-components.json": "4c1602d15eced3428f3244ee66ffa05863ef860eebecf123e114d37081c19c1e",
     "data/operations/propagation/agent-platform-r2-propagation-contract.json": "6ece56835f87a2ca4ca7f4ec96134e3ad0d10cf839628ba37b116fa24e917656",
     "tools/propagation/impact_contract.py": "4cf8685c8552f82a11e41108086fc78cccf1881abffa7934954541d88985a936"
   },

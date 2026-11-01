@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,7 @@ from jsonschema import Draft202012Validator
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
+REPO_ROOT = ROOT.parent
 ARTIFACT_PATH = ROOT / "data/operations/iterations/149/step05-archify-adapter-ir-receipt.json"
 SCHEMA_PATH = ROOT / "schemas/operations/task149-step05-archify-adapter-ir-r0.schema.json"
 IR_PATH = ROOT / "data/operations/iterations/149/archify-typed-ir-r0.json"
@@ -35,6 +37,15 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def git_blob(commit: str, path: str) -> bytes | None:
+    result = subprocess.run(["git", "show", f"{commit}:{path}"], cwd=REPO_ROOT, capture_output=True, check=False)
+    return result.stdout if result.returncode == 0 else None
+
+
+def digest_bytes(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
+
+
 def validate(document: dict[str, Any] | None = None) -> list[str]:
     document = document if document is not None else load_json(ARTIFACT_PATH)
     errors = [error.json_path + ": " + error.message for error in Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(document)]
@@ -47,13 +58,19 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if document.get("upstream_schema_surface", {}).get("sha256") != EXPECTED_ARCHIFY_SCHEMA_SHA:
         errors.append("Archify architecture schema evidence changed")
     by_path = {item.get("path"): item for item in document.get("source_inputs", [])}
-    for path, local_path in (("ignition/data/architecture/overall-architecture.json", ARCHITECTURE_PATH), ("ignition/data/architecture/interactive-system-map.json", SYSTEM_MAP_PATH)):
-        if by_path.get(path, {}).get("sha256") != digest(local_path):
+    historical_architecture = git_blob(EXPECTED_FORMAL_BASELINE, "ignition/data/architecture/overall-architecture.json")
+    historical_map = git_blob(EXPECTED_FORMAL_BASELINE, "ignition/data/architecture/interactive-system-map.json")
+    source_snapshots = {
+        "ignition/data/architecture/overall-architecture.json": historical_architecture,
+        "ignition/data/architecture/interactive-system-map.json": historical_map,
+    }
+    for path, snapshot in source_snapshots.items():
+        if snapshot is None or by_path.get(path, {}).get("sha256") != digest_bytes(snapshot):
             errors.append(f"source hash mismatch: {path}")
     ir = load_json(IR_PATH) if IR_PATH.exists() else {}
     if document.get("typed_ir", {}).get("sha256") != digest(IR_PATH):
         errors.append("typed IR hash does not match the generated file")
-    architecture = load_json(ARCHITECTURE_PATH)
+    architecture = json.loads(historical_architecture.decode("utf-8")) if historical_architecture is not None else {}
     if document.get("typed_ir", {}).get("component_count") != len(ir.get("components", [])) or len(ir.get("components", [])) != len(architecture.get("nodes", [])):
         errors.append("typed component count must cover every canonical architecture node")
     if document.get("typed_ir", {}).get("connection_count") != len(ir.get("connections", [])) or len(ir.get("connections", [])) != len(architecture.get("edges", [])):

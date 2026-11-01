@@ -7,9 +7,13 @@ from tools.validate_task150_step21_fresh_standalone_evidence import (
     CANONICAL_PATH,
     FIXTURE_PATH,
     IR_PATH,
+    EXPECTED_FORMAL_HEAD,
+    EXPECTED_SYSTEM_MAP_SHA,
     apply_fixture,
     exact_topology_errors,
     load_json,
+    digest_bytes,
+    git_blob,
     validate,
 )
 
@@ -23,6 +27,12 @@ class Task150Step21FreshStandaloneEvidenceTests(unittest.TestCase):
         cls.fixture = load_json(FIXTURE_PATH)
 
     def test_fresh_evidence_receipt_passes(self):
+        self.assertEqual(validate(self.document), [])
+
+    def test_historical_map_is_checked_at_its_bound_formal_revision(self):
+        snapshot = git_blob(EXPECTED_FORMAL_HEAD, "ignition/data/architecture/interactive-system-map.json")
+        self.assertIsNotNone(snapshot)
+        self.assertEqual(digest_bytes(snapshot), EXPECTED_SYSTEM_MAP_SHA)
         self.assertEqual(validate(self.document), [])
 
     def test_source_provider_ir_and_artifact_are_bound(self):
