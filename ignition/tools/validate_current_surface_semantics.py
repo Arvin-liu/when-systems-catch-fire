@@ -44,7 +44,7 @@ def _current_task_identity() -> tuple[str, int]:
 
 
 CURRENT_TASK_ID, CURRENT_ORDINAL = _current_task_identity()
-REPORT_PATH = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/step15-current-surface-semantic-gate-r1.json"
+REPORT_PATH = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL:03d}/step15-current-surface-semantic-gate-r1.json"
 
 
 def relative(path: Path) -> str:

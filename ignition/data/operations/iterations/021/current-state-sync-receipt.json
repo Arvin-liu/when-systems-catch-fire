@@ -1,0 +1,137 @@
+{
+  "architecture_identity_impact": "NONE",
+  "changed_paths": [
+    "ignition/AI-HANDOFF.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/iterations/021/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/021/execution-contract-r1.json",
+    "ignition/data/operations/iterations/021/step01-remote-truth-audit.json",
+    "ignition/data/operations/iterations/021/step15-current-surface-semantic-gate-r1.json",
+    "ignition/data/operations/iterations/021/step15-deterministic-current-surface-r1.json",
+    "ignition/data/operations/iterations/021/step15-historical-compatibility-r1.json",
+    "ignition/data/operations/iterations/021/step15-ordinal-binding-gate-r1.json",
+    "ignition/data/operations/iterations/021/step15-release-lifecycle-audit.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/release-transaction-protocol-r3.json",
+    "ignition/data/operations/release-transaction-recovery-state-r1.json",
+    "ignition/data/operations/task-identity-model-r1.json",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/llms.txt",
+    "ignition/schemas/operations/execution-contract-r1.schema.json",
+    "ignition/schemas/operations/release-transaction-protocol-r3.schema.json",
+    "ignition/tests/test_current_state_sync.py",
+    "ignition/tests/test_current_task_advancement.py",
+    "ignition/tests/test_execution_contract.py",
+    "ignition/tests/test_iteration_boundary_compatibility.py",
+    "ignition/tests/test_release_transaction_protocol_r3.py",
+    "ignition/tools/advance_current_task.py",
+    "ignition/tools/validate_current_state_sync.py",
+    "ignition/tools/validate_current_surface_semantics.py",
+    "ignition/tools/validate_iteration_boundary_compatibility.py",
+    "ignition/tools/validate_release_transaction_protocol_r3.py"
+  ],
+  "claim_ceiling": "Repository-local Task21 current-state identity and deterministic projection synchronization only; Task20 remains IN_PROGRESS and non-terminal, R2 remains effective, and no architecture change, R3 activation, scientific acceptance, external truth, production readiness or epistemic acceptance is inferred.",
+  "current_formal_task_id": "IGNITION-20261101-021",
+  "current_formal_task_ordinal": 21,
+  "current_iteration_boundary": 21,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "schema_version": "current-state-sync-receipt-r1",
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "Append-only Task21 branch-local current-state and release-boundary evidence is recorded."
+  },
+  "surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "path": ".github/README.md",
+      "reason": "Task21 changes task identity and R3 verifier state only; homepage project identity wording is unchanged.",
+      "surface_id": "homepage-identity"
+    },
+    {
+      "decision": "CHANGE",
+      "evidence": "Task21 execution contract, current snapshot and generated Current surface.",
+      "path": "ignition/docs/project-current-state.md",
+      "reason": "Task21 canonical identity is reflected by the generated Current block; no architecture identity changed.",
+      "surface_id": "project-current-state"
+    },
+    {
+      "decision": "CHANGE",
+      "evidence": "Task21 execution contract, current snapshot and generated Current surface.",
+      "path": "ignition/AI-START-HERE.md",
+      "reason": "Task21 canonical identity is reflected by the generated Current block; no architecture identity changed.",
+      "surface_id": "ai-cold-start"
+    },
+    {
+      "decision": "CHANGE",
+      "evidence": "Task21 execution contract, current snapshot and generated Current surface.",
+      "path": "ignition/AI-HANDOFF.md",
+      "reason": "Task21 canonical identity is reflected by the generated Current block; no architecture identity changed.",
+      "surface_id": "ai-agents-handoff"
+    },
+    {
+      "decision": "CHANGE",
+      "evidence": "Task21 execution contract, current snapshot and generated Current surface.",
+      "path": "ignition/ARCHITECTURE.md",
+      "reason": "Only the compiler-owned Current identity block changes; architecture identity remains Task142.",
+      "surface_id": "architecture"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "reason": "Task21 changes no steering intent, goal, policy or completion authority semantics.",
+      "surface_id": "steering-doc"
+    },
+    {
+      "decision": "CHANGE",
+      "evidence": "Task21 execution contract, current snapshot and generated Current surface.",
+      "path": "ignition/llms.txt",
+      "reason": "Task21 canonical identity is reflected by the generated machine Current block; no architecture identity changed.",
+      "surface_id": "machine-entry"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "reason": "Map version, visible nodes, edges and geometry remain unchanged.",
+      "surface_id": "system-map-doc"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "reason": "Task21 does not change federation or executor admission semantics.",
+      "surface_id": "federation-doc"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "reason": "Task21 does not change the system-map source or projection.",
+      "surface_id": "system-map-json"
+    },
+    {
+      "decision": "CHANGE",
+      "evidence": "Task21 execution contract, current snapshot and generated Current surface.",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "reason": "Task21 branch-local lifecycle delta is appended and the compiler-owned Current block is regenerated.",
+      "surface_id": "state-changelog"
+    }
+  ],
+  "system_map_sync": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "Task21 changes formal task identity and release-verifier source binding only; architecture identity and system-map structure remain unchanged."
+  },
+  "task_id": "IGNITION-20261101-021"
+}

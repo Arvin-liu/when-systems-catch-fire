@@ -51,7 +51,8 @@
           "type": "string",
           "oneOf": [
             {"pattern": "^agent-commands/IGNITION-[0-9]{8}-[0-9]{3}-.+\\.md$"},
-            {"pattern": "^instructions/goal-mode/IGNITION-[0-9]{4}-[0-9]{2}-[0-9]{2}-.+\\.md$"}
+            {"pattern": "^instructions/goal-mode/IGNITION-[0-9]{4}-[0-9]{2}-[0-9]{2}-.+\\.md$"},
+            {"pattern": "^instructions/goal-mode/IGNITION-2026-11-01-TASK21-OWNER-IDENTITY-AND-PHASE1-RELAY-R0\\.json$"}
           ]
         },
         "command_record_commit": {"$ref": "#/$defs/sha"}

@@ -984,8 +984,10 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertTrue(any("no first-parent update" in error for error in errors), errors)
 
     def test_successor_registration_uses_fresh_versioned_control_path(self) -> None:
-        expected = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"
+        expected = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json"
+        task20_path = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"
         self.assertEqual(r3.SUCCESSOR_REGISTRATION_PATH, expected)
+        self.assertNotEqual(r3.SUCCESSOR_REGISTRATION_PATH, task20_path)
         self.assertNotEqual(
             r3.SUCCESSOR_REGISTRATION_PATH,
             "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R1.json",
@@ -994,6 +996,37 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(
             protocol["identity_binding"]["successor_registration"]["authority_path"],
             expected,
+        )
+
+    def test_occupied_task20_registration_path_cannot_satisfy_new_successor_path(self) -> None:
+        api = _github_api()
+        control = api.control
+        control._materialize_witness()
+        first_parent_sha = control.witness_sha
+        files = dict(control.snapshots[first_parent_sha])
+        registration = files.pop(r3.SUCCESSOR_REGISTRATION_PATH)
+        files["instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"] = registration
+        staging_sha = "a" * 40
+        merge_sha = "b" * 40
+        control.add_commit(
+            staging_sha, [first_parent_sha], files,
+            date="2026-10-18T07:10:00Z", signed=False,
+        )
+        control.add_commit(
+            merge_sha, [first_parent_sha, staging_sha], files,
+            date="2026-10-18T07:20:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+        control.main_sha = merge_sha
+
+        evidence, errors = r3.read_authenticated_successor_registration(merge_sha, github_api=api)
+        self.assertIsNone(evidence)
+        self.assertTrue(
+            any(
+                "fixed control path is absent" in error and r3.SUCCESSOR_REGISTRATION_PATH in error
+                for error in errors
+            ),
+            errors,
         )
 
     def test_contract_preserves_r2_baseline_and_identifies_all_transition_exceptions(self) -> None:

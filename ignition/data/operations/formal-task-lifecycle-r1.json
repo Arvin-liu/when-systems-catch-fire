@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20261024-020",
+  "current_task_id": "IGNITION-20261101-021",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,23 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20261101-021",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "NONE",
+      "terminal_basis": "Task21 is an in-progress Phase 1 closeout candidate bound to the Owner-verified Task21 registration in 1111 PR #156. Formal PR, exact-head validation, independent Task21 R3 Owner authorization, protected merge, post-publication witness, research-use evidence, independent scientific/semantic review, adapter upgrade/rollback and final Foundation remain open. R2 remains effective; no Phase 2 begins. Task20 remains recorded IN_PROGRESS and non-terminal.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/021/execution-contract-r1.json",
+        "ignition/data/operations/task-identity-model-r1.json",
+        "Arvin-liu/1111@cb5f8055ce8225f0197c2348f67571ff774993b5:instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json"
+      ],
+      "claim_ceiling": "Task21 branch-local R3 candidate repair and exact successor identity binding only; Task20 completion, R3 activation, protected publication, scientific acceptance, external truth, production readiness, live completion and epistemic acceptance are not inferred."
+    },
     {
       "task_id": "IGNITION-20261024-020",
       "execution_status": "IN_PROGRESS",
