@@ -7,6 +7,10 @@ from tools import task_identity
 
 
 class IterationBoundaryCompatibilityTests(unittest.TestCase):
+    def test_current_artifacts_use_zero_padded_iteration_directory(self) -> None:
+        self.assertEqual(audit.CURRENT_ITERATION_DIR.name, f"{audit.CURRENT_ORDINAL:03d}")
+        self.assertEqual(audit.REPORT_PATH.parent, audit.CURRENT_ITERATION_DIR)
+
     def test_historical_compatibility_audit_passes(self) -> None:
         report = audit.build_report()
         self.assertEqual(report["status"], "PASS", report)

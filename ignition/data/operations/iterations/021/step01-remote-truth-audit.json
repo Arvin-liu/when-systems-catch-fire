@@ -1,0 +1,58 @@
+{
+  "claim_ceiling": "Verified repository-ref and signed registration observations only; successor registration assigns Task21 identity and does not activate R3, authorize a Formal merge or close Task20.",
+  "control_repository": {
+    "observed_main_sha": "cb5f8055ce8225f0197c2348f67571ff774993b5",
+    "ordered_parents": [
+      "d8afce57ce7506e394f1be35766133f04b7662c0",
+      "d9743b3b993fcbcf7e3ed1f18ffc54f6dce8c310"
+    ],
+    "owner_identity_instruction_blob_sha": "76258e9c066790bd061a2e0def1e3ac007179e87",
+    "owner_identity_instruction_path": "instructions/goal-mode/IGNITION-2026-11-01-TASK21-OWNER-IDENTITY-AND-PHASE1-RELAY-R0.json",
+    "readback_url": "https://api.github.com/repos/Arvin-liu/1111/branches/main",
+    "ref": "refs/heads/main",
+    "registration_blob_sha": "bb9cf4d0f4c05ce6d73f67de0958bcae778c039f",
+    "registration_commit_sha": "cb5f8055ce8225f0197c2348f67571ff774993b5",
+    "registration_file_sha256": "db53faa3abcdf51e8fe7e6763fc1de44d7b507fa763b34e57855bb4180ce82f4",
+    "registration_nonce": "40f4d334a999563e2da8cb9a2e7e6682",
+    "registration_path": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json",
+    "registration_pr_number": 156,
+    "repository": "Arvin-liu/1111",
+    "signature_reason": "valid",
+    "signature_verified": true,
+    "tree_sha": "ede563f522ee96552a4ffc8651859712f8cea56b"
+  },
+  "formal_repository": {
+    "author_actor_id": 49422864,
+    "author_login": "Arvin-liu",
+    "committer_login": "web-flow",
+    "expected_main_sha": "c92d53b22e2ff6f8d7573d112568b740b6c1e293",
+    "observed_main_sha": "c92d53b22e2ff6f8d7573d112568b740b6c1e293",
+    "ordered_parents": [
+      "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "82c35ba16c0ce93059ea2601aa0c92647ab518c0"
+    ],
+    "readback_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/branches/main",
+    "ref": "refs/heads/main",
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "signature_reason": "valid",
+    "signature_verified": true,
+    "tree_sha": "7de68e4778fa5fe5f3a4b1fe72e89aa63fcb5a77"
+  },
+  "observed_at": "2026-11-01T06:41:14Z",
+  "predecessor_state": {
+    "execution_status": "IN_PROGRESS",
+    "identity_advance_is_completion": false,
+    "r2_effective": true,
+    "task_id": "IGNITION-20261024-020",
+    "terminal": false
+  },
+  "r3_candidate_binding": {
+    "local_git_blob_sha": "1fd53f8023ab96d694e71c6ed28f81e30a32ca6c",
+    "match": true,
+    "protocol_path": "ignition/data/operations/release-transaction-protocol-r3.json",
+    "registered_protocol_blob_sha": "1fd53f8023ab96d694e71c6ed28f81e30a32ca6c"
+  },
+  "schema_version": "ignition-021-step01-remote-truth-audit-r1",
+  "step": "01",
+  "task_id": "IGNITION-20261101-021"
+}

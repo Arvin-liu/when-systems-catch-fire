@@ -1,0 +1,43 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20261101-021",
+  "formal_ordinal": 21,
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/main",
+    "commit": "cb5f8055ce8225f0197c2348f67571ff774993b5",
+    "command_path": "instructions/goal-mode/IGNITION-2026-11-01-TASK21-OWNER-IDENTITY-AND-PHASE1-RELAY-R0.json",
+    "command_record_commit": "cb5f8055ce8225f0197c2348f67571ff774993b5"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "c92d53b22e2ff6f8d7573d112568b740b6c1e293"
+  },
+  "successor_registration": {
+    "commit_sha": "cb5f8055ce8225f0197c2348f67571ff774993b5",
+    "file_sha256": "db53faa3abcdf51e8fe7e6763fc1de44d7b507fa763b34e57855bb4180ce82f4",
+    "registration_nonce": "40f4d334a999563e2da8cb9a2e7e6682",
+    "parent_shas": [
+      "d8afce57ce7506e394f1be35766133f04b7662c0",
+      "d9743b3b993fcbcf7e3ed1f18ffc54f6dce8c310"
+    ]
+  },
+  "expected_task_branch": "codex/r3-post264-owner-auth-repair-20261101-021",
+  "expected_receipt_branch": "relay/receipts/IGNITION-20261101-021-r3-transition",
+  "required_release_ref": "refs/heads/main",
+  "draft_pr_only": false,
+  "owner_authorization_required_for_ready_merge_or_close": true,
+  "no_owner_intermediate": true,
+  "identity_impact": "NONE",
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20261101-021",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20261024-020",
+    "previous_formal_task": "IGNITION-20261024-020",
+    "release_candidate_task": "IGNITION-20261101-021",
+    "publication_witness_task": "IGNITION-20261101-021"
+  },
+  "claim_ceiling": "Task21 repository-local R3 verifier repair and formal identity binding to the Owner-verified 1111 registration in PR #156 only; the registration assigns successor identity but grants no R3 activation authority. No Owner authority for R3 activation or release is inferred. Task20 remains recorded IN_PROGRESS and non-terminal with its open obligations, and R2 remains effective until a fresh independent Task21 Owner authorization, protected Formal main merge and exact post-publication witness succeed. No Phase 2, external truth, production readiness, scientific acceptance, validated live completion or epistemic acceptance is inferred."
+}

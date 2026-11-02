@@ -60,6 +60,37 @@ class CurrentTaskAdvancementTests(unittest.TestCase):
         self.assertIn(("IGNITION-20260822-132", "IGNITION-20260822-133"), edges)
         self.assertIn(("IGNITION-20260822-133", "IGNITION-20260822-134"), edges)
 
+    def test_in_progress_predecessor_is_not_rewritten_as_terminal(self) -> None:
+        source = copy.deepcopy(self.source)
+        source["current_task"] = {
+            "task_id": "IGNITION-20261024-020",
+            "scope": "Task20 bounded R3 work",
+            "execution_status": "IN_PROGRESS",
+            "terminal": False,
+            "identity_impact": "NONE",
+        }
+        contract = copy.deepcopy(self.contract)
+        task_id = "IGNITION-20261101-021"
+        contract["task_id"] = task_id
+        contract["identity_expectations"].update({
+            "current_formal_task": task_id,
+            "previous_canonical_current_task": "IGNITION-20261024-020",
+            "previous_formal_task": "IGNITION-20261024-020",
+            "release_candidate_task": task_id,
+            "publication_witness_task": task_id,
+        })
+        updated, changed = advancement.advance_document(source, contract)
+        reason = updated["task_identity"]["advancement"]["transition_reason"]
+        self.assertTrue(changed)
+        self.assertEqual(updated["task_identity"]["previous_canonical_current_task"], "IGNITION-20261024-020")
+        self.assertIn("execution_status=IN_PROGRESS", reason)
+        self.assertIn("terminal=false", reason)
+        self.assertNotIn("from terminal", reason)
+        self.assertEqual(
+            updated["task_identity"]["advancement"]["execution_contract_path"],
+            "ignition/data/operations/iterations/021/execution-contract-r1.json",
+        )
+
     def test_contract_selection_follows_registered_task20_binding(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

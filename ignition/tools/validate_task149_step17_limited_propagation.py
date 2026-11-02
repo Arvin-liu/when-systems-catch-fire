@@ -68,6 +68,11 @@ POST_STEP17_SOURCE_RECONCILIATIONS = {
     "ignition/OPERATING-METHOD.md",
     "ignition/data/operations/ignition-operation-capability-registry-r1.json",
     "ignition/data/operations/ignition-operation-playbooks-r1.json",
+    # Task20 changed these surfaces after the Task149 Draft publication. Keep
+    # the historical receipt bound to its recorded source-era bytes.
+    "ignition/HUMAN-READING.md",
+    "ignition/docs/USAGE.md",
+    "ignition/data/architecture/current-system-identity.json",
 }
 
 
@@ -169,15 +174,14 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     parent_changelog = git_show(document.get("formal_previous_commit", ""), "ignition/STATE-CHANGELOG.md")
     if parent_changelog is None or sha256_bytes(parent_changelog) != delta.get("whole_file_before_sha256"):
         errors.append("Task149 STATE-CHANGELOG whole-file before hash is not bound to Step16 parent")
-    profile = load_json(PROFILE_PATH)
-    if profile.get("entry_count") != 55 or profile.get("historical_entry_count") != 27:
-        errors.append("state-changelog profile counts do not preserve the Task149 historical boundary")
     historical_profile_bytes = git_show(STEP17_PUBLISHED_COMMIT, "ignition/data/operations/state-changelog-profile-r1.json")
     try:
         historical_profile = json.loads(historical_profile_bytes.decode("utf-8")) if historical_profile_bytes is not None else {}
     except (UnicodeDecodeError, json.JSONDecodeError):
         historical_profile = {}
         errors.append("Step17 published state-changelog profile cannot be loaded")
+    if historical_profile.get("entry_count") != 55 or historical_profile.get("historical_entry_count") != 27:
+        errors.append("state-changelog profile counts do not preserve the Task149 historical boundary")
     profile_entry = next((item for item in historical_profile.get("entries", []) if item.get("ordinal") == 55), None)
     if profile_entry is None or profile_entry.get("profile") != "historical-current-r0" or profile_entry.get("section_sha256") != delta.get("section_sha256"):
         errors.append("Task149 STATE-CHANGELOG profile seal is missing or not historical")
@@ -234,7 +238,12 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if supporting.get("before_sha256") == supporting.get("after_sha256"):
         errors.append("front-door NonImpactProof registry was not changed")
 
-    identity = load_json(IDENTITY_PATH)
+    identity_bytes = git_show(document.get("formal_previous_commit", ""), "ignition/data/architecture/current-system-identity.json")
+    try:
+        identity = json.loads(identity_bytes.decode("utf-8")) if identity_bytes is not None else {}
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        identity = {}
+        errors.append("Task149 parent Current identity snapshot cannot be loaded")
     if identity.get("current_formal_task_id") != "IGNITION-20260829-148":
         errors.append("Current identity must remain Task148 during the Draft spike")
     if identity.get("current_operating_method", {}).get("status") != "CURRENT":

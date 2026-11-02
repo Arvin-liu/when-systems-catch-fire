@@ -62,7 +62,8 @@ def _current_task_identity() -> tuple[str, int]:
 
 
 CURRENT_TASK_ID, CURRENT_ORDINAL = _current_task_identity()
-REPORT_PATH = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/step15-historical-compatibility-r1.json"
+CURRENT_ITERATION_DIR = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL:03d}"
+REPORT_PATH = CURRENT_ITERATION_DIR / "step15-historical-compatibility-r1.json"
 
 
 def sha256(path: Path) -> str:
@@ -70,7 +71,7 @@ def sha256(path: Path) -> str:
 
 
 def unchanged_from_baseline(path: Path) -> bool:
-    contract = load_json(ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/execution-contract-r1.json")
+    contract = load_json(CURRENT_ITERATION_DIR / "execution-contract-r1.json")
     baseline_sha = contract["formal_baseline"]["sha"]
     completed = subprocess.run(
         ["git", "diff", "--quiet", baseline_sha, "HEAD", "--", path.relative_to(REPO_ROOT).as_posix()],
@@ -90,7 +91,7 @@ def _current_projection_audit() -> tuple[list[str], dict[str, Any]]:
     lifecycle = load_json(ROOT / "data/operations/current-release-lifecycle-r1.json")
     facts = load_json(ROOT / "data/architecture/current-facts.json")
     snapshot = load_json(ROOT / "data/operations/current-snapshot-r1.json")
-    receipt = load_json(ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/current-state-sync-receipt.json")
+    receipt = load_json(CURRENT_ITERATION_DIR / "current-state-sync-receipt.json")
     identity_projection = {
         "current_formal_task_id": identity.get("current_formal_task_id"),
         "current_formal_task_ordinal": identity.get("current_formal_task_ordinal"),

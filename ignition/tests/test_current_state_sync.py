@@ -23,6 +23,12 @@ class CurrentStateSyncTests(unittest.TestCase):
             IGNITION_ROOT / "data/operations/iterations/123/current-state-sync-receipt.json"
         )
 
+    def test_default_receipt_path_is_derived_from_current_formal_identity(self) -> None:
+        self.assertEqual(
+            validator.current_task_receipt_path(),
+            IGNITION_ROOT / "data/operations/iterations/021/current-state-sync-receipt.json",
+        )
+
     def test_live_contract_and_presentation_receipt_pass(self) -> None:
         self.assertEqual(validator.run_check(check_fixtures=True), [])
 

@@ -1,9 +1,9 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_formal_task_id": "IGNITION-20261024-020",
-  "current_formal_task_ordinal": 20,
-  "current_iteration_boundary": 20,
+  "current_formal_task_id": "IGNITION-20261101-021",
+  "current_formal_task_ordinal": 21,
+  "current_iteration_boundary": 21,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
@@ -65,7 +65,7 @@
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
-      "current_task_id": "IGNITION-20261024-020",
+      "current_task_id": "IGNITION-20261101-021",
       "current_task_status": "IN_PROGRESS",
       "current_task_terminal": false,
       "open_obligation_ids": [
@@ -119,8 +119,8 @@
     "foundation": {
       "function_identity_cards": 6194,
       "function_quarantine_or_pending": 5023,
-      "nonfunction_claims": 19375,
-      "nonfunction_quarantine_or_pending": 5280
+      "nonfunction_claims": 19379,
+      "nonfunction_quarantine_or_pending": 5281
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -144,9 +144,9 @@
       }
     },
     "iteration": {
-      "current_formal_task_id": "IGNITION-20261024-020",
-      "current_formal_task_ordinal": 20,
-      "current_iteration_boundary": 20,
+      "current_formal_task_id": "IGNITION-20261101-021",
+      "current_formal_task_ordinal": 21,
+      "current_iteration_boundary": 21,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
       "current_map_version": "0.16.0",
       "latest_architecture_changing_task_id": "IGNITION-20260827-142",
@@ -159,11 +159,11 @@
       "cards": 713,
       "changes": 592,
       "layered_readings": 634,
-      "search_records": 26203
+      "search_records": 26207
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
-      "current_task_id": "IGNITION-20261024-020",
+      "current_task_id": "IGNITION-20261101-021",
       "next_eligible_actions": [
         "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
       ],
@@ -202,7 +202,7 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20261024-020",
+      "current_task_id": "IGNITION-20261101-021",
       "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
@@ -229,7 +229,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "6b3cb858109139cd123455a5ba3914d31a7fbd95ea1a047838d995ab61cc9a2d"
+      "sha256": "594225d89afa6a47e12de6899c0fcf0c864b03251c56bab3863ae354f55a8044"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "d65d174ea525b09752bea9c72d268b436068d57f1267026637a87f0172e31826"
+      "sha256": "53fe444ca7dbffc998139fa2e212d4ee12523fbbe5e771e530e0273679ad3001"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,11 +249,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "78fc1e82eff1f49da0003289dfe0857c82aaffa21254f5f90d93d44aaf99894b"
+      "sha256": "7a448a4a017311f00c2d5767212c3d014efe950878771285c4db15642776a453"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "b46999447ef62812d3d9b20b93c213b47ee9e0620db4be8d8a32a5b064baec62"
+      "sha256": "863b373c65654d89069f255a746fdb1362d3aaeb87ac9a2d32c4b6e7bf057bac"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -261,15 +261,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "9fe12524c6944379c382a8d25a9f1d3bde6b3685884964bbc635ed9b955b4a6e"
+      "sha256": "75b7a03e8ac2ac73eb1947c570d2f1de0aacde2afa65d3a7374b838127c44d1a"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "cf2edfacdbee0c766f2aabe122f6ffeba20f6337e8f250c5e41c40873baaaf32"
+      "sha256": "030f8996fb0696d313655133103a112b79b0795f812085119f87c61deb588b47"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "36ecd225416a7ef057b26acec9a9a1f4361771a8dd5d9848fbe419e7a33363db"
+      "sha256": "51f6d0b29f09870e8a749d04cb0f1095bd21e23e80e0e0aff8119ae1f3e1f6fb"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -297,11 +297,11 @@
     },
     {
       "path": "ignition/data/operations/open-obligation-registry-r1.json",
-      "sha256": "97540693d4a528f69362b7f98f9ea45617c14e7fa6c694a5af60d33a1c2163fc"
+      "sha256": "0e38db6c1ead67bc1b8967d7f638a19f475e30f78f824b017a6715374d559d36"
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "182c6348578ae1415a1470113d6caf0f53c22175227678abb7cb60ad297bebd7"
+      "sha256": "f80f8753e0837676e82211e7dde84f99b67b372713cb7fbbc98478118b78931d"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "d5e2e03e9fbec348422fab591ba11b08408b909443f7d3a452da3f953ec1c9e5"
+      "sha256": "75f99ff49360479d603564a8b62659722e8ac88f37819128af14e4104df6687d"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

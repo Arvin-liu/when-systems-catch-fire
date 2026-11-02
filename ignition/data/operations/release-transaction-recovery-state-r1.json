@@ -2,7 +2,7 @@
   "schema_version": "release-transaction-recovery-state-r1",
   "contract_id": "RELEASE_TRANSACTION_RECOVERY_STATE",
   "status": "NOT_REQUESTED",
-  "source_r3_protocol_blob_sha": "dde21eef51ab44c09c8523f95a76c13aab1b17a7",
+  "source_r3_protocol_blob_sha": "1fd53f8023ab96d694e71c6ed28f81e30a32ca6c",
   "target_r2_protocol_blob_sha": "9d87de51f0b2bb0a1d075bbcdf6ca6e8ff8e3615",
   "scope": "RESTORE_R2_ONLY",
   "requested_at": null,

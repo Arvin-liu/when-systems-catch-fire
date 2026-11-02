@@ -7,6 +7,7 @@ import argparse
 import copy
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -45,6 +46,15 @@ def load_json(path: Path) -> Any:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def git_blob(commit: str, path: str) -> bytes | None:
+    result = subprocess.run(["git", "show", f"{commit}:{path}"], cwd=REPO_ROOT, capture_output=True, check=False)
+    return result.stdout if result.returncode == 0 else None
+
+
+def digest_bytes(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
 
 
 def exact_topology_errors(architecture: dict[str, Any], ir: dict[str, Any]) -> list[str]:
@@ -101,9 +111,11 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     source = document["canonical_source"]
     if source["formal_source_revision"] != EXPECTED_FORMAL_HEAD or source["sha256"] != EXPECTED_SOURCE_SHA:
         errors.append("canonical source binding drifted")
-    if sha256(CANONICAL_PATH) != EXPECTED_SOURCE_SHA:
+    historical_architecture = git_blob(EXPECTED_FORMAL_HEAD, "ignition/data/architecture/overall-architecture.json")
+    historical_map = git_blob(EXPECTED_FORMAL_HEAD, "ignition/data/architecture/interactive-system-map.json")
+    if historical_architecture is None or digest_bytes(historical_architecture) != EXPECTED_SOURCE_SHA:
         errors.append("live canonical source hash drifted")
-    if sha256(SYSTEM_MAP_PATH) != EXPECTED_SYSTEM_MAP_SHA:
+    if historical_map is None or digest_bytes(historical_map) != EXPECTED_SYSTEM_MAP_SHA:
         errors.append("live system-map hash drifted")
     if sha256(ADAPTER_PATH) != EXPECTED_ADAPTER_SHA:
         errors.append("adapter hash drifted")
@@ -121,7 +133,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("typed IR is not bound to the Step20 formal exact head")
     if len(ir.get("components", [])) != 24 or len(ir.get("connections", [])) != 24:
         errors.append("fresh typed IR cardinality drifted")
-    architecture = load_json(CANONICAL_PATH)
+    architecture = json.loads(historical_architecture.decode("utf-8")) if historical_architecture is not None else load_json(CANONICAL_PATH)
     if exact_topology_errors(architecture, ir):
         errors.append("fresh typed IR failed exact canonical node/edge equality")
 

@@ -7,6 +7,7 @@ import argparse
 import copy
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -43,6 +44,15 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def git_blob(commit: str, path: str) -> bytes | None:
+    result = subprocess.run(["git", "show", f"{commit}:{path}"], cwd=REPO_ROOT, capture_output=True, check=False)
+    return result.stdout if result.returncode == 0 else None
+
+
+def digest_bytes(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
+
+
 def simulated_result(case_id: str) -> str:
     if case_id in {"archify-command-unavailable", "node-unavailable"}:
         return "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT"
@@ -56,9 +66,24 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         return errors
     if document["failure_injection"]["real_provider_process_started"] is not False or document["failure_injection"]["system_mutation"] is not False:
         errors.append("failure matrix must not start a provider or mutate the system")
-    if sha256(CANONICAL_PATH) != EXPECTED_ARCH_SHA or sha256(SYSTEM_MAP_PATH) != EXPECTED_MAP_SHA:
+    source_commit = document.get("formal_previous_commit", "")
+    architecture = git_blob(source_commit, "ignition/data/architecture/overall-architecture.json")
+    system_map = git_blob(source_commit, "ignition/data/architecture/interactive-system-map.json")
+    if (
+        architecture is None
+        or system_map is None
+        or digest_bytes(architecture) != EXPECTED_ARCH_SHA
+        or digest_bytes(system_map) != EXPECTED_MAP_SHA
+    ):
         errors.append("canonical or last-known map hash drifted")
     preservation = document["canonical_preservation"]
+    if (
+        preservation["architecture_before_sha256"] != EXPECTED_ARCH_SHA
+        or preservation["architecture_after_sha256"] != EXPECTED_ARCH_SHA
+        or preservation["last_known_map_before_sha256"] != EXPECTED_MAP_SHA
+        or preservation["last_known_map_after_sha256"] != EXPECTED_MAP_SHA
+    ):
+        errors.append("failure receipt does not bind the exact historical canonical inputs")
     if preservation["architecture_before_sha256"] != preservation["architecture_after_sha256"] or preservation["last_known_map_before_sha256"] != preservation["last_known_map_after_sha256"]:
         errors.append("failure handling did not preserve canonical inputs")
     seen = set()

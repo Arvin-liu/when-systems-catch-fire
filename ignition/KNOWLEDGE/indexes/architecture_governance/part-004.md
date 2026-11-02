@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def __init__\(self, issues: Iterable\[ValidationIssue\]\):](../../../reos_vnext/validation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-69128FAD5D2EAB90 / def __init__\(self, issues: Iterable\[ValidationIssue\]\): / IMPLICIT-69128FAD5D2EAB90
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - [def __init__\(self, kind: str, *, response: str \| None = None\) -> None:](../../../agent_federation/pilots.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-14855CDF28DE1DB3 / def __init__\(self, kind: str, *, response: str \| None = None\) -> None: / IMPLICIT-14855CDF28DE1DB3
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2B46F54C3D2120FF / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-2B46F54C3D2120FF / IMPLICIT-62448B3035636E77
   - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/pilots.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-62448B3035636E77 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-62448B3035636E77 / IMPLICIT-2B46F54C3D2120FF
-  - 来源：`agent_federation/pilots.py`
   - 依赖：—；被引用：—

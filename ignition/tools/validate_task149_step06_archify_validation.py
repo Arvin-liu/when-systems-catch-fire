@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,7 @@ from jsonschema import Draft202012Validator
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
+REPO_ROOT = ROOT.parent
 ARTIFACT_PATH = ROOT / "data/operations/iterations/149/step06-archify-validation-receipt.json"
 SCHEMA_PATH = ROOT / "schemas/operations/task149-step06-archify-validation-r0.schema.json"
 ARCHITECTURE_PATH = ROOT / "data/architecture/overall-architecture.json"
@@ -33,19 +35,29 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def git_blob(commit: str, path: str) -> bytes | None:
+    result = subprocess.run(["git", "show", f"{commit}:{path}"], cwd=REPO_ROOT, capture_output=True, check=False)
+    return result.stdout if result.returncode == 0 else None
+
+
+def digest_bytes(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
+
+
 def validate(document: dict[str, Any] | None = None) -> list[str]:
     document = document if document is not None else load_json(ARTIFACT_PATH)
     errors = [error.json_path + ": " + error.message for error in Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(document)]
     if document.get("formal_commit") != EXPECTED_FORMAL_COMMIT:
         errors.append("Step06 must bind the published Step05 formal commit")
 
-    source_paths = {
-        "ignition/data/architecture/overall-architecture.json": ARCHITECTURE_PATH,
-        "ignition/data/architecture/interactive-system-map.json": SYSTEM_MAP_PATH,
-    }
+    source_paths = (
+        "ignition/data/architecture/overall-architecture.json",
+        "ignition/data/architecture/interactive-system-map.json",
+    )
     observed_sources = {item.get("path"): item for item in document.get("source_inputs", [])}
-    for relative, path in source_paths.items():
-        if observed_sources.get(relative, {}).get("sha256") != digest(path):
+    for relative in source_paths:
+        snapshot = git_blob(EXPECTED_FORMAL_COMMIT, relative)
+        if snapshot is None or observed_sources.get(relative, {}).get("sha256") != digest_bytes(snapshot):
             errors.append(f"source hash mismatch: {relative}")
 
     typed = document.get("typed_ir", {})

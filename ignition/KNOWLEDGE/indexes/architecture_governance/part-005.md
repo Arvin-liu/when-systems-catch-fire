@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/pilots.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-62448B3035636E77 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-62448B3035636E77 / IMPLICIT-2B46F54C3D2120FF
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
 - [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/codex.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C1349882A8FAB996 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-C1349882A8FAB996 / IMPLICIT-2B46F54C3D2120FF
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-E4CD4C82F3BF4AB3 / def test_type_mismatch\(self\): / IMPLICIT-E4CD4C82F3BF4AB3
   - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_type_mismatch_input\(self\):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-223E672DB6F5DE45 / def test_type_mismatch_input\(self\): / IMPLICIT-223E672DB6F5DE45
-  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
   - 依赖：—；被引用：—

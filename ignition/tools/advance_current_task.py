@@ -179,9 +179,15 @@ def advance_document(document: dict[str, Any], contract: dict[str, Any]) -> tupl
         "advancement": {
             "from_task_id": current,
             "to_task_id": target,
-            "transition_reason": f"{target} advances canonical Current from terminal {current} while preserving the prior task as historical provenance and keeping the formal task separate from the latest architecture-changing task.",
+            "transition_reason": (
+                f"{target} advances canonical Current from recorded predecessor {current} with "
+                f"execution_status={document['current_task']['execution_status']} and "
+                f"terminal={str(document['current_task']['terminal']).lower()}; prior task completion "
+                "is not inferred, its exact source is retained by prior_source_sha256, and the formal "
+                "task remains separate from the latest architecture-changing task."
+            ),
             "prior_source_sha256": prior_digest,
-            "execution_contract_path": f"ignition/data/operations/iterations/{target.rsplit('-', 1)[1]}/execution-contract-r1.json",
+            "execution_contract_path": f"ignition/data/operations/iterations/{task_order(target)[1]:03d}/execution-contract-r1.json",
             "idempotency_key": target,
         },
         "claim_ceiling": CLAIM_CEILING,

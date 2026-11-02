@@ -14,6 +14,11 @@ class Task150Step08ProviderFailureFallbackTests(unittest.TestCase):
         self.assertEqual(validate(self.document), [])
         self.assertEqual(len(self.document["cases"]), 7)
 
+    def test_historical_inputs_are_bound_to_the_recorded_formal_parent(self):
+        mutated = copy.deepcopy(self.document)
+        mutated["formal_previous_commit"] = "0" * 40
+        self.assertTrue(validate(mutated))
+
     def test_unavailable_results_are_typed(self):
         self.assertEqual(simulated_result("archify-command-unavailable"), "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT")
         self.assertEqual(simulated_result("node-unavailable"), "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT")

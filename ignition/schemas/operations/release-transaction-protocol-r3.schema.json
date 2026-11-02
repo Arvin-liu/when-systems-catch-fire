@@ -784,7 +784,7 @@
         "status": { "const": "OWNER_REGISTRATION_REQUIRED" },
         "authority_repository": { "const": "Arvin-liu/1111" },
         "authority_branch": { "const": "main" },
-        "authority_path": { "const": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json" },
+        "authority_path": { "const": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json" },
         "requires_github_verified_owner_signature": { "const": true },
         "must_bind": {
           "type": "array",
@@ -1402,7 +1402,7 @@
         },
         "registered_at": { "type": "string", "format": "date-time" },
         "registration_repository": { "const": "Arvin-liu/1111" },
-        "registration_path": { "const": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json" },
+        "registration_path": { "const": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json" },
         "registration_commit_sha": { "$ref": "#/$defs/sha1" },
         "registration_committed_at": { "type": "string", "format": "date-time" },
         "registration_file_sha256": { "$ref": "#/$defs/sha256" },
