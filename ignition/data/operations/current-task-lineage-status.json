@@ -3,9 +3,9 @@
   "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
   "current_task": {
     "task_id": "IGNITION-20261101-021",
-    "scope": "Formal task IGNITION-20261101-021 Current advancement",
-    "execution_status": "IN_PROGRESS",
-    "terminal": false,
+    "scope": "Formal task IGNITION-20261101-021 Phase 1 V1 terminal closeout",
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
     "identity_impact": "NONE"
   },
   "current_state": {

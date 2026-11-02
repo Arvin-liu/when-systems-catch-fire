@@ -4,7 +4,7 @@
   "issues": [],
   "result": "VALID",
   "schema_version": "current-surface-semantic-gate-r1",
-  "snapshot_source_digest": "147642db2389c6cd5b985296decb1b3769e5c0173a2fd1d88d20c8cd7cfdd568",
+  "snapshot_source_digest": "f46611ca6760d9f4e53c89d47e678e8e6cf2514300bbd789f528fa5c08efb338",
   "surfaces": [
     {
       "generated_block_count": 1,
