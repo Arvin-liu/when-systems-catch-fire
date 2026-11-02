@@ -306,6 +306,7 @@
         "data/operations/state-changelog-profile-r4.json",
         "data/operations/state-changelog-profile-r5.json",
         "data/operations/state-changelog-profile-r6.json",
+        "data/operations/state-changelog-profile-r7.json",
         "data/operations/human-front-door-identity-r1.json",
         "data/operations/current-task-lineage-status.json",
         "data/operations/current-volatile-fact-registry-r1.json",
