@@ -254,7 +254,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "7a448a4a017311f00c2d5767212c3d014efe950878771285c4db15642776a453"
+      "sha256": "9bc07738a072ebfb47d5a398d3bdc0350e293254688dccaa1c4e5171920040df"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
@@ -318,7 +318,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "75f99ff49360479d603564a8b62659722e8ac88f37819128af14e4104df6687d"
+      "sha256": "c49eba78ff6641e23d7bfee7c15d7334bacd98d38ac1572702351fb502e0a43e"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
