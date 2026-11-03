@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b0f436b17f18637 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3368fb46af48cd15 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-78125e45210eeaaf / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原有 OQ-103-3 已从“待执行 OpenAlex 交叉验证”更新为“首轮已执行、边界内部分支持、](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4bde20f145aa6913 / 原有 OQ-103-3 已从“待执行 OpenAlex 交叉验证”更新为“首轮已执行、边界内部分支持、
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [双 088 归并与外部证据层定版报告](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0dfe3d5165dd0cb2 / 双 088 归并与外部证据层定版报告
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [反事实推断（如自然实验、随机对照试验）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8f54a73f108447c1 / 反事实推断（如自然实验、随机对照试验）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [反事实识别（如自然实验、随机对照试验）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bc481ee42193e42c / 反事实识别（如自然实验、随机对照试验）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [反例与变异：** 英语虽无强制证据形态，仍可用词汇标记；土耳其语形态也不机械等于事实可靠度。](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-92179684c385e820 / 反例与变异：** 英语虽无强制证据形态，仍可用词汇标记；土耳其语形态也不机械等于事实可靠度。
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-c3b63bdd213aed08 / 材料与哈希口径（统一语义）
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
-  - 依赖：—；被引用：—
-- [材料内成立；创业普遍结构 pending（外部证据 E6）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0a33eeb6b1974cd0 / 材料内成立；创业普遍结构 pending（外部证据 E6）。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [材料内成立；跨人群普遍性 pending（外部证据 E7）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d7938b53d96d26d / 材料内成立；跨人群普遍性 pending（外部证据 E7）。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [材料内成立；跨代际普遍性 pending（外部证据 E2）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a57d24c8e8181e21 / 材料内成立；跨代际普遍性 pending（外部证据 E2）。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [材料内成立；跨关系普遍结构 pending（外部证据 E9）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9d9b13778092a1a2 / 材料内成立；跨关系普遍结构 pending（外部证据 E9）。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [材料内成立；跨群体普遍性 pending（外部证据 E5）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a8359024fd4614a8 / 材料内成立；跨群体普遍性 pending（外部证据 E5）。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [材料来源不清、事实错误、引用缺失。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d6bfec92da7f2323 / 材料来源不清、事实错误、引用缺失。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [材料碰撞只产生：D 条目（NEW_FUNCTION/EXTENSION）、C 条目、候选登记（PENDING_EVIDENCE）、审计/决策产物（outputs/collisions、data/collisions）。](../../../docs/material-collision-validation-and-classification.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d6773b92252ce344 / 材料碰撞只产生：D 条目（NEW_FUNCTION/EXTENSION）、C 条目、候选登记（PENDING_EVIDENCE）、审计/决策产物（outputs/collisions、data/collisions）。
-  - 来源：`docs/material-collision-validation-and-classification.md`
   - 依赖：—；被引用：—

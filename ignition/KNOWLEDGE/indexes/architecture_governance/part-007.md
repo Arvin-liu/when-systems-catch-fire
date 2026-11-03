@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [EXEC --> OBS\[观察、测试与验证\]](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-64d3a2120beeb54c / EXEC --> OBS\[观察、测试与验证\]
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [executed by task 105: preregistered, then adversarially validated on a curated](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bd245122ac7d48f9 / executed by task 105: preregistered, then adversarially validated on a curated
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
 - [Executed with `qclaw/pool-kimi-k2.7-code-highspeed` + `adaptive` thinking. The task file specified GLM-5.2 Max; this dev](../../../data/external-research/121-fulltext-resolver/121-task-artifact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ef419b7891b484d9 / Executed with `qclaw/pool-kimi-k2.7-code-highspeed` + `adaptive` thinking. The task file specified GLM-5.2 Max; this dev
@@ -2493,14 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Legacy compatibility report / legacy-compatibility-report-20260712
   - 来源：`reports/foundation-architecture/legacy-compatibility-report-20260712.md`
-  - 依赖：—；被引用：—
-- [Legacy text is domain-unspecified and speaks of any factor in the framework product; Lean restricts to two Nat factors,](../../../data/foundation/validations/079-equivalence-checks.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ffb18bf55f3c83d7 / Legacy text is domain-unspecified and speaks of any factor in the framework product; Lean restricts to two Nat factors,
-  - 来源：`data/foundation/validations/079-equivalence-checks.jsonl`
-  - 依赖：—；被引用：—
-- [Licensing Rights Inventory](../../ASSET-CARDS.md#asset-hr-c936ceda8bbc6085)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
-  - 可搜索名称：Licensing Rights Inventory / licensing-rights-inventory
-  - 来源：`docs/governance/licensing-rights-inventory.md`
   - 依赖：—；被引用：—

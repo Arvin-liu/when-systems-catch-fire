@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_plant_swarm := ∫\(local_interaction × indirect_communication × emergent_intelligence\) / distributed](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-31fb9e5843f924a7 / 数学表达 / Expression: `F_plant_swarm := ∫\(local_interaction × indirect_communication × emergent_intelligence\) / distributed
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_problem\(d\)=Mismatch\(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d\)`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d7ebcbd054a0301e / 数学表达 / Expression: `F_problem\(d\)=Mismatch\(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d\)`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b068d6eb6c30d05c / 数学表达 / Expression: `F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [数学表达 / Expression: `F_swarm_intelligence := Σ\(agent_i × local_rule × global_emergence\) / interaction_topology`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3e2a8bd5602ac591 / 数学表达 / Expression: `F_swarm_intelligence := Σ\(agent_i × local_rule × global_emergence\) / interaction_topology`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-282a997ad8599334 / 潜意识-觉知-意识函数
   - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)\)>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1261DE538057B2F6 / 潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)\)>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） / IMPLICIT-1261DE538057B2F6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)\)>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db093a081c4fd76d / 潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)\)>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)\)>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-4ca83f9cf38f2cae / 潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)\)>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—

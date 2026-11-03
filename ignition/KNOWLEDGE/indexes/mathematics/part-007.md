@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d24622ba77e3cab8 / M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-27ee2542eb3c4d88 / M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明 **扩展注释 / Extended Annotation**
@@ -1599,6 +1604,16 @@
   - 可搜索名称：NFC-ec8c6e2cf09571f7 / release-ready candidate evidence only. This record does not establish formal
   - 来源：`reports/operations/ignition-143-step19-terminality.md`
   - 依赖：—；被引用：—
+- [release_boundary: ordinary protected Formal PR, exact-head required contexts, independent review, exact resulting main S](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5420c15f47ee4731 / release_boundary: ordinary protected Formal PR, exact-head required contexts, independent review, exact resulting main S
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [release_evidence: Formal main 138b388fbe7815d6cdddc573315120eb4c1b099d has R3 PUBLISHED_AND_VERIFIED; postpublication ru](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ead95d98962fbe91 / release_evidence: Formal main 138b388fbe7815d6cdddc573315120eb4c1b099d has R3 PUBLISHED_AND_VERIFIED; postpublication ru
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [release_lifecycle: content-owned `RELEASE_READY`, current task terminal, publication authority `REMOTE_REF_OBSERVATION`,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-8e86064bb3e8e211 / release_lifecycle: content-owned `RELEASE_READY`, current task terminal, publication authority `REMOTE_REF_OBSERVATION`,
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6695af10eff760ea / Task 100 adds a deterministic corpus-wide non-function claim registry, thirteen-gate adjudication, evidence lineage and
   - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [task 100 的 `data/foundation/nonfunction-claims/claim-registry.jsonl` 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 qua](../../../docs/foundation/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ea5b17c9b329037f / task 100 的 `data/foundation/nonfunction-claims/claim-registry.jsonl` 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 qua
-  - 来源：`docs/foundation/README.md`
-  - 依赖：—；被引用：—
-- [Task 107 — Foundation Drift Repair: Incident Report](../../ASSET-CARDS.md#asset-hr-7cb77f69452eaaf6)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：Task 107 — Foundation Drift Repair: Incident Report / task-107-incident-report
-  - 来源：`docs/foundation/task-107-incident-report.md`
-  - 依赖：—；被引用：—
-- [Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-6a44f7449d613e68 / Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量
-  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—

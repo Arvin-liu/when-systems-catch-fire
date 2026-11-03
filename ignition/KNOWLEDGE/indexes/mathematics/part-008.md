@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [task 100 的 `data/foundation/nonfunction-claims/claim-registry.jsonl` 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 qua](../../../docs/foundation/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ea5b17c9b329037f / task 100 的 `data/foundation/nonfunction-claims/claim-registry.jsonl` 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 qua
+  - 来源：`docs/foundation/README.md`
+  - 依赖：—；被引用：—
+- [Task 107 — Foundation Drift Repair: Incident Report](../../ASSET-CARDS.md#asset-hr-7cb77f69452eaaf6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Task 107 — Foundation Drift Repair: Incident Report / task-107-incident-report
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
+- [Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6a44f7449d613e68 / Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [Task 127 adds a single Durability / Lifecycle component inside the existing](../../../docs/architecture/os-control-plane-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-43b1b77570d31bcf / Task 127 adds a single Durability / Lifecycle component inside the existing
@@ -2487,20 +2502,5 @@
 - [title: "植物演化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E9BC41F68866C087 / title: "植物演化函数" / IMPLICIT-E9BC41F68866C087
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物生态系统函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CF4170588EFE1EA7 / title: "植物生态系统函数" / IMPLICIT-CF4170588EFE1EA7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物生物圈函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-547BC035B9203A18 / title: "植物生物圈函数" / IMPLICIT-547BC035B9203A18
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物群体函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4D8DBD768C88953C / title: "植物群体函数" / IMPLICIT-4D8DBD768C88953C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D378} exist, compose F_{D378}=N\(⊕_{g∈D_{D378}} g\); otherwise treat F_{D378} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23c14de6afad42d8 / If upstream objects D_{D378} exist, compose F_{D378}=N\(⊕_{g∈D_{D378}} g\); otherwise treat F_{D378} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D378；被引用：—
 - [If upstream objects D_{D379} exist, compose F_{D379}=N\(⊕_{g∈D_{D379}} g\); otherwise treat F_{D379} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3094364b23cb1aa6 / If upstream objects D_{D379} exist, compose F_{D379}=N\(⊕_{g∈D_{D379}} g\); otherwise treat F_{D379} as an axiom seed.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-119118db9bb7bef0 / Must use FORMAL_SEMANTIC_EQUIVALENCE with proof, or specify lower level
   - 来源：`data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl`
-  - 依赖：—；被引用：—
-- [M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d24622ba77e3cab8 / M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

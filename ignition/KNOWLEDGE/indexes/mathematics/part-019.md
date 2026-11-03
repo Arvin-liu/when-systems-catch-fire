@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0227-D191-认知规范破缺函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-704d227b1e96474d / 已迁移的历史函数来源/0227-D191-认知规范破缺函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D191；被引用：—
+- [已迁移的历史函数来源/0228-D192-认知Higgs机制.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-cb519cef8976744e / 已迁移的历史函数来源/0228-D192-认知Higgs机制.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D192；被引用：—
+- [已迁移的历史函数来源/0229-D193-认知时空度规函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ddd838efa015622d / 已迁移的历史函数来源/0229-D193-认知时空度规函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D193；被引用：—
 - [已迁移的历史函数来源/0230-D194-认知黑洞函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-dafb53d040558fc1 / 已迁移的历史函数来源/0230-D194-认知黑洞函数.md
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5e089fa33a160e14 / 补齐作者、多材料证据或显式 pending；
   - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
-  - 依赖：—；被引用：—
-- [衰减率干预函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D31 / 衰减率干预函数 / D31
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：NFC-9298361a7db7437e, NFC-b87c5821c1161cb2
-- [要求：证明原命题，不允许证明弱化版本](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c354bb0f2af34671 / 要求：证明原命题，不允许证明弱化版本
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [覆盖领域：数学、物理学、历史学、社会科学与经济学、医学与心理健康、法律、AI 与计算机科学、文学艺术与审美](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b5ea519fc98b411f / 覆盖领域：数学、物理学、历史学、社会科学与经济学、医学与心理健康、法律、AI 与计算机科学、文学艺术与审美
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
   - 依赖：—；被引用：—

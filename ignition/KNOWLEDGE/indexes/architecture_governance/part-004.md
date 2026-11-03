@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def __init__\(self, fixture: DisposableLiveFixture, *, task_id: str, dispatch_id: str, attempt_id: str, executor_id: str\) -> None:](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4A08D78D1388F5BA / def __init__\(self, fixture: DisposableLiveFixture, *, task_id: str, dispatch_id: str, attempt_id: str, executor_id: str\) -> None: / IMPLICIT-4A08D78D1388F5BA
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
 - [def __init__\(self, issues: Iterable\[ValidationIssue\]\):](../../../reos_vnext/validation.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-69128FAD5D2EAB90 / def __init__\(self, issues: Iterable\[ValidationIssue\]\): / IMPLICIT-69128FAD5D2EAB90
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C8CBEEAE6AD75D24 / def derive_reconciliation_state\(audit: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-C8CBEEAE6AD75D24
   - 来源：`agent_federation/live_reconciliation.py`
-  - 依赖：—；被引用：—
-- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2B46F54C3D2120FF / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-2B46F54C3D2120FF / IMPLICIT-62448B3035636E77
-  - 来源：`agent_federation/adapters/openclaw.py`
   - 依赖：—；被引用：—

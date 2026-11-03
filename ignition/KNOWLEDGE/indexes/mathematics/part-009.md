@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "植物生态系统函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CF4170588EFE1EA7 / title: "植物生态系统函数" / IMPLICIT-CF4170588EFE1EA7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "植物生物圈函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-547BC035B9203A18 / title: "植物生物圈函数" / IMPLICIT-547BC035B9203A18
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "植物群体函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4D8DBD768C88953C / title: "植物群体函数" / IMPLICIT-4D8DBD768C88953C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "植物胁迫函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-85E69D2E41949FA9 / title: "植物胁迫函数" / IMPLICIT-85E69D2E41949FA9
@@ -2489,18 +2504,3 @@
   - 可搜索名称：CLAIM-D313 / Within the source-defined scope, 共存稳态条件函数 is adjudicated as PREDICATE: M14的良性-恶性共存\(\[D299\]\(docs/zh/functions/items/D299.m
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D274, D299；被引用：—
-- [Within the source-defined scope, 共存震荡函数 is adjudicated as RELATION: M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D327 / Within the source-defined scope, 共存震荡函数 is adjudicated as RELATION: M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 共存震荡分支函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D355 / Within the source-defined scope, 共存震荡分支函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 共存震荡阻尼函数 is adjudicated as RELATION: M14的共存震荡阻尼∝\|K_benign-α_exclusion\|——偏离临界越远阻尼越大。临界处阻](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D341 / Within the source-defined scope, 共存震荡阻尼函数 is adjudicated as RELATION: M14的共存震荡阻尼∝\|K_benign-α_exclusion\|——偏离临界越远阻尼越大。临界处阻
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—

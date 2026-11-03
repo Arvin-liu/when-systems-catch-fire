@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [P1-5：已生成 evidence / function dependency 机器可读数据，见 `data/evidence_regimes.*` 和 `data/function_dependency.*`。](../../../docs/v0.2_next_tasks.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4d1b7fa40d0bbfbd / P1-5：已生成 evidence / function dependency 机器可读数据，见 `data/evidence_regimes.*` 和 `data/function_dependency.*`。
+  - 来源：`docs/v0.2_next_tasks.md`
+  - 依赖：P1；被引用：—
+- [P1-5：生成 evidence / function dependency 数据](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1245f102d17b2721 / P1-5：生成 evidence / function dependency 数据
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [P1-5：生成 evidence / function dependency 数据（均需半自动，从学科卡片逐领域填充）；](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-044c18fafad31466 / P1-5：生成 evidence / function dependency 数据（均需半自动，从学科卡片逐领域填充）；
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：P1；被引用：—
 - [P1-6 已建立数据校验器：](../../../docs/v0.2_summary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-51b02cdffcc8c328 / P1-6 已建立数据校验器：
@@ -1204,6 +1219,11 @@
   - 可搜索名称：NFC-064b5ff0e17223fb / research.search_pubmed_query is an experimental, default-off adapter for caller-directed PubMed query-to-record discover
   - 来源：`docs/operations/toolbox-pubmed-query-search.md`
   - 依赖：—；被引用：—
+- [research_boundary: Source Binding execution and an independent legacy-adapter rollback are recorded; the matched result](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74ed27b2cf44605a / research_boundary: Source Binding execution and an independent legacy-adapter rollback are recorded; the matched result
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [research_evidence: see `reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md` and `da](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-56bbd886a7012f80 / research_evidence: see `reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md` and `da
@@ -2334,6 +2354,11 @@
   - 可搜索名称：NFC-7ab94b3bb77a5f48 / stale_knowledge: the prior Task141 `IN_PROGRESS` rendering was a current-state coupling defect, not evidence that Task14
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: the R6 entry remains immutable historical evidence for the earlier candidate state. The corrected 2024](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3993df3574306c28 / stale_knowledge: the R6 entry remains immutable historical evidence for the earlier candidate state. The corrected 2024
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-41e9b288068cba93 / stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove
@@ -2477,30 +2502,5 @@
 - [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9a4c2781a8458f04 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9ea4b52496faa16d / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a138eefa80002b58 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a3628041f7dd65c2 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a78a06943979ad72 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-abb57fd45927a2d3 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
   - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—

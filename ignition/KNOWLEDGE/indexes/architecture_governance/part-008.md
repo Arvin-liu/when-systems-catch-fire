@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Legacy text is domain-unspecified and speaks of any factor in the framework product; Lean restricts to two Nat factors,](../../../data/foundation/validations/079-equivalence-checks.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ffb18bf55f3c83d7 / Legacy text is domain-unspecified and speaks of any factor in the framework product; Lean restricts to two Nat factors,
+  - 来源：`data/foundation/validations/079-equivalence-checks.jsonl`
+  - 依赖：—；被引用：—
+- [Licensing Rights Inventory](../../ASSET-CARDS.md#asset-hr-c936ceda8bbc6085)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：Licensing Rights Inventory / licensing-rights-inventory
+  - 来源：`docs/governance/licensing-rights-inventory.md`
+  - 依赖：—；被引用：—
 - [Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-348ff07aa063c26c / Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material
@@ -2324,6 +2334,11 @@
   - 可搜索名称：NFC-2dc29bd2e05e988f / owner plane, blocker, next eligible action, evidence and successor lineage.
   - 来源：`docs/architecture/os-control-plane-r2.md`
   - 依赖：—；被引用：—
+- [owner_authorization: 1111 PR #161 was merged by Arvin-liu \(actor 49422864\). Merge commit e6cbef3dc78b541a8c3a9382e49b587](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f09f59072b271764 / owner_authorization: 1111 PR #161 was merged by Arvin-liu \(actor 49422864\). Merge commit e6cbef3dc78b541a8c3a9382e49b587
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [owner_boundary: the superseded executor-qualification campaign is not executed in Task143; no Gemini, Hermes, OpenClaw o](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2a74e31932e29f83 / owner_boundary: the superseded executor-qualification campaign is not executed in Task143; no Gemini, Hermes, OpenClaw o
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f6244e8c48b6f51b / P1-5 已生成 evidence / function dependency 机器可读数据：
   - 来源：`docs/v0.2_summary.md`
-  - 依赖：P1；被引用：—
-- [P1-5：已生成 evidence / function dependency 机器可读数据，见 `data/evidence_regimes.*` 和 `data/function_dependency.*`。](../../../docs/v0.2_next_tasks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4d1b7fa40d0bbfbd / P1-5：已生成 evidence / function dependency 机器可读数据，见 `data/evidence_regimes.*` 和 `data/function_dependency.*`。
-  - 来源：`docs/v0.2_next_tasks.md`
-  - 依赖：P1；被引用：—
-- [P1-5：生成 evidence / function dependency 数据](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1245f102d17b2721 / P1-5：生成 evidence / function dependency 数据
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：P1；被引用：—
-- [P1-5：生成 evidence / function dependency 数据（均需半自动，从学科卡片逐领域填充）；](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-044c18fafad31466 / P1-5：生成 evidence / function dependency 数据（均需半自动，从学科卡片逐领域填充）；
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
   - 依赖：P1；被引用：—

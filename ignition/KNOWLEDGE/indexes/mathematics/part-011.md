@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-674\]\( \) \| \[导数连续性×双向动力学验证\]\( \) \| 吴军《数学通识50讲》导数与连续性（可导性、奇点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2ffccf530a7dee5 / \| \[C-674\]\( \) \| \[导数连续性×双向动力学验证\]\( \) \| 吴军《数学通识50讲》导数与连续性（可导性、奇点
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-675\]\( \) \| \[公理化体系外层补齐×定理层验证\]\( \) \| 吴军《数学通识50讲》公理化体系的外](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1468adbc15dd923f / \| \[C-675\]\( \) \| \[公理化体系外层补齐×定理层验证\]\( \) \| 吴军《数学通识50讲》公理化体系的外
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-86\]\( \) \| \[自主意识函数\]\( \) \| 自主意识函数 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a2aa9ffdb157817b / \| \[C-86\]\( \) \| \[自主意识函数\]\( \) \| 自主意识函数 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-90\]\( \) \| \[结构保守性元定理\]\( \) \| 结构保守性元定理 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-48a2bf5691462e73 / \| \[C-90\]\( \) \| \[结构保守性元定理\]\( \) \| 结构保守性元定理 \|
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-2dc62de181c811cf / │ ├── T1-T20 因果判定子函数
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：T1, T20；被引用：—
-- [│ ├── T41-T60 同构判定子函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8db3b5256d173e16 / │ ├── T41-T60 同构判定子函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：T41, T60；被引用：—
-- [├── D581-D590 学科验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bba81d770f4f3cc8 / ├── D581-D590 学科验证函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D581, D590；被引用：—
-- [├── T9 自主意识函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-a3b03e0a74afe276 / ├── T9 自主意识函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：T9；被引用：—
