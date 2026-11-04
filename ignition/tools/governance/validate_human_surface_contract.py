@@ -27,7 +27,7 @@ FUNCTION_REGISTRY = ROOT / "data/foundation/function-assets/census.jsonl"
 NONFUNCTION_REGISTRY = ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl"
 MIGRATION = ROOT / "data/foundation/migrations/legacy-table-migration.jsonl"
 SYSTEM_MAP = ROOT / "data/architecture/interactive-system-map.json"
-SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-architecture.svg"
+SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-map.svg"
 COMPONENTS = ROOT / "data/operations/project-components.json"
 
 HUMAN_ROOTS = [ROOT / "docs/human/function-assets", ROOT / "docs/human/nonfunction-assets"]
@@ -63,7 +63,6 @@ RETIRED_ROUTE_TOKENS = (
     "函数资产人类浏览器",
     "非函数断言人类浏览器",
     "ignition-overall-architecture.svg",
-    "ignition-system-map.svg",
 )
 CURRENT_SNAPSHOT_BLOCK = re.compile(
     r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
@@ -161,8 +160,8 @@ def validate() -> dict[str, int]:
         if expected_source_hash is not None and not declared_hash.startswith("UNAVAILABLE_"):
             require(declared_hash == expected_source_hash, f"source hash drift: {human_path}")
 
-    require(SYSTEM_MAP.is_file() and SYSTEM_MAP_SVG.is_file(), "single complete architecture graph is missing")
-    old_graphs = [ROOT / "docs/generated/ignition-overall-architecture.svg", ROOT / "docs/generated/ignition-system-map.svg"]
+    require(SYSTEM_MAP.is_file() and SYSTEM_MAP_SVG.is_file(), "registry-derived complete system map is missing")
+    old_graphs = [ROOT / "docs/generated/ignition-overall-architecture.svg"]
     for path in old_graphs:
         require(not path.exists(), f"retired architecture graph remains: {path}")
     generated_dir = ROOT / "docs/generated"

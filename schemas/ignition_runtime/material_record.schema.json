@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/material_record.schema.json",
+  "title": "Ignition Runtime Material Record (epistemic source binding)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "material_id",
+    "source_sha256",
+    "source_tier",
+    "provider_id",
+    "provider_mode",
+    "claim_ceiling",
+    "schema_version",
+    "runtime_version",
+    "contract_version"
+  ],
+  "properties": {
+    "material_id": { "type": "string" },
+    "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "source_tier": {
+      "type": "string",
+      "enum": ["PRIMARY_REPORT", "SECONDARY_ACADEMIC_INTERPRETATION", "MEDIA_SYNTHESIS"]
+    },
+    "observed_at": { "type": ["string", "null"] },
+    "published_at": { "type": ["string", "null"] },
+    "event_at": { "type": ["string", "null"] },
+    "valid_from": { "type": ["string", "null"] },
+    "valid_to": { "type": ["string", "null"] },
+    "provider_id": { "type": "string", "minLength": 1 },
+    "provider_mode": { "type": "string", "enum": ["DETERMINISTIC_FIXTURE", "UPLOAD", "DERIVED"] },
+    "result_digest": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+    "schema_version": { "type": "string" },
+    "runtime_version": { "type": "string" },
+    "contract_version": { "type": "string" },
+    "unknown_nonempty": { "type": "boolean" },
+    "claim_ceiling": {
+      "type": "string",
+      "enum": ["PRIMARY_VERIFIED", "SECONDARY", "UNKNOWN"]
+    },
+    "inference_claims": { "type": "array", "items": { "type": "string" } },
+    "source_claims": { "type": "array", "items": { "type": "string" } },
+    "stale": { "type": "boolean" },
+    "normalized_transcript_copy": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Controlled vocabulary of relation_type values; arn_class maps to the target ARN relation_class where applicable.",
+  "relation_types": [
+    {
+      "type": "supports",
+      "arn_class": "evidential_support",
+      "description": "Evidential support (requires conditions; not evidence independence).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "contradicts",
+      "arn_class": "evidential_conflict",
+      "description": "Evidential conflict with a proposition/evidence.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "depends_on",
+      "arn_class": "dependency",
+      "description": "Precondition/resource dependency.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "enables",
+      "arn_class": "enabling",
+      "description": "Enabling condition.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "inhibits",
+      "arn_class": "inhibition",
+      "description": "Inhibiting condition.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "similar_to",
+      "arn_class": "semantic_similarity",
+      "description": "Similarity (never causality/truth/importance).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "co_occurs",
+      "arn_class": "co_occurrence",
+      "description": "Co-occurrence/adjacency.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "references",
+      "arn_class": "resource_reference",
+      "description": "Resource reference.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "role_of",
+      "arn_class": "social_expectation",
+      "description": "Role/expectation assignment.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "temporal_precedes",
+      "arn_class": "dependency",
+      "description": "Temporal precedence (ARN with temporal_bounds).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "relation_refutation",
+      "arn_class": "evidential_conflict",
+      "description": "Higher-order: one relation refutes another.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "causal_handoff",
+      "arn_class": "causal_delegated_to_mcf",
+      "description": "Written only by router on MCF_REVIEW return (B5).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "generic",
+      "arn_class": "unknown",
+      "description": "Broad heterogeneous fallback; maps to ARN unknown.",
+      "status": "active",
+      "since_version": "1.0.0"
+    }
+  ]
+}

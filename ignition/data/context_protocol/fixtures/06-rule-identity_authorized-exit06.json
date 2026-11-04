@@ -1,0 +1,634 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "SCIENTIFIC-CONTEXT-PROTOCOL-I1",
+  "capability_id": "open_scientific_context_protocol",
+  "parent_binding": {
+    "task_id": "Q44-I1",
+    "exact_head": "7532b4b34cf841c09faab8c835c5fc7f896d30d8"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/coaching/pilot-q44-i1.json",
+      "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "artifact_digest": "sha256:197586b318d7634ab6bda533e48e6a03130c4aea5a8fe2db1eb41a5b1fdcd4a0",
+      "commit_sha": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "repository_relative_path": "data/coaching/pilot-q44-i1.json",
+      "blob_sha": "fce931e1bd839f1eeffdeac990938b2f172f4297",
+      "sha256": "sha256:197586b318d7634ab6bda533e48e6a03130c4aea5a8fe2db1eb41a5b1fdcd4a0",
+      "record_type": "COACHING_PILOT",
+      "declared_role": "predecessor_q44_evidence",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/escalation/pilot-q43-i1.json",
+      "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "artifact_digest": "sha256:c2641c1adecd6e86cfe55593288afce8321867468ba1a3ad6c937fb8454adf76",
+      "commit_sha": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "repository_relative_path": "data/escalation/pilot-q43-i1.json",
+      "blob_sha": "2968536a71c583969de5f1e7bd367afa6c75d405",
+      "sha256": "sha256:c2641c1adecd6e86cfe55593288afce8321867468ba1a3ad6c937fb8454adf76",
+      "record_type": "ESCALATION_PILOT",
+      "declared_role": "predecessor_q43_evidence",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "commit_sha": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "repository_relative_path": "FOUNDATION.md",
+      "blob_sha": "c084b5300c1f6a4eeac3fd08cd764c1d12f0ec2f",
+      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "record_type": "FOUNDATION",
+      "declared_role": "foundation_evidence",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.4",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "PROTOCOL_VERSION",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.5",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "IDENTITY_AUTH",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.6",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "CAPABILITY_RECORD",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.7",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "ARTIFACT_BINDING",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.8",
+      "artifact": "data/coaching/pilot-q44-i1.json",
+      "exact_head": "7532b4b34cf841c09faab8c835c5fc7f896d30d8",
+      "artifact_digest": "sha256:30e5baffa0759ddf443f03fd58f127ca0e63cba70804d496856f6fb0b6f9164e",
+      "commit_sha": "7532b4b34cf841c09faab8c835c5fc7f896d30d8",
+      "repository_relative_path": "data/coaching/pilot-q44-i1.json",
+      "blob_sha": "b9db3f0f46b1f440e6c8f2737593ce73a452bbfd",
+      "sha256": "sha256:30e5baffa0759ddf443f03fd58f127ca0e63cba70804d496856f6fb0b6f9164e",
+      "record_type": "structured_record",
+      "declared_role": "RIGHTS_CONTEXT",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.9",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "FAILURE_RETRY",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.10",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "COMPAT_POLICY",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.11",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "SENSITIVE_LOCAL",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.12",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "HARDWARE_REQUEST",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.13",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "text",
+      "declared_role": "CAPABILITY_RECORD",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.14",
+      "artifact": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "exact_head": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "artifact_digest": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "repository_relative_path": "data/context_protocol/repro/scp-r0-context-protocol-sample.json",
+      "blob_sha": "9f17f4e284864155c842056510e7746516fd2bd1",
+      "sha256": "sha256:5339be4e0fbe32e29b9a91fc338beb8ea5ebdeb11584f70814a792e2a8aa6b16",
+      "record_type": "structured_record",
+      "declared_role": "STOP_ROLLBACK",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "LOCAL_MOCK_REQUEST",
+      "protocol_version": {
+        "status": "RECORDED",
+        "value": "1.0.0",
+        "evidence_refs": [
+          "evidence.4"
+        ]
+      },
+      "source_rights_context": {
+        "status": "RECORDED",
+        "value": "REPOSITORY_INTERNAL",
+        "evidence_refs": [
+          "evidence.8"
+        ]
+      },
+      "model_tool_executor_identity": {
+        "status": "RECORDED",
+        "value": "bounded model_tool_executor_identity for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "authority_capability": {
+        "status": "RECORDED",
+        "value": "capability-scoped: can negotiate and exchange context; holds NO authority to execute, deploy, or copy a platform",
+        "evidence_refs": [
+          "evidence.6"
+        ]
+      },
+      "observation_prediction": {
+        "status": "RECORDED",
+        "value": "bounded observation_prediction for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "analogy_search_case": {
+        "status": "RECORDED",
+        "value": "bounded analogy_search_case for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "intervention_failure": {
+        "status": "RECORDED",
+        "value": "bounded intervention_failure for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "symbolic_perspectives": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_perspectives for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "decision_integrity": {
+        "status": "RECORDED",
+        "value": "bounded decision_integrity for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "epistemic_state": {
+        "status": "RECORDED",
+        "value": "bounded epistemic_state for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "latent_multi_history_counterfactual": {
+        "status": "RECORDED",
+        "value": "bounded latent_multi_history_counterfactual for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "experiment_hardware_request_result": {
+        "status": "RECORDED",
+        "value": "hardware access is request-only; the protocol records a request and a result placeholder, never executes hardware",
+        "evidence_refs": [
+          "evidence.12"
+        ]
+      },
+      "exact_head_provenance_digest": {
+        "status": "RECORDED",
+        "value": "bounded exact_head_provenance_digest for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_rollback": {
+        "status": "RECORDED",
+        "value": "a stop/rollback path is present so any exchange can be halted and reverted",
+        "evidence_refs": [
+          "evidence.14"
+        ]
+      },
+      "sensitive_data_network_local_first": {
+        "status": "RECORDED",
+        "value": "sensitive data stays repository_local / network_local_first; no boundary bypass",
+        "evidence_refs": [
+          "evidence.11"
+        ]
+      },
+      "capability_negotiation": {
+        "status": "RECORDED",
+        "value": "bounded capability_negotiation for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "request_response_envelope": {
+        "status": "RECORDED",
+        "value": "bounded request_response_envelope for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "identity_authorization": {
+        "status": "RECORDED",
+        "value": "executor identity authorized only for repository_local, reversible, mock protocol exchange",
+        "evidence_refs": [
+          "evidence.5"
+        ]
+      },
+      "artifact_binding": {
+        "status": "RECORDED",
+        "value": "every exchanged artifact carries exact_head provenance so the receiver can verify against an immutable Git object",
+        "evidence_refs": [
+          "evidence.7"
+        ]
+      },
+      "failure_retry_semantics": {
+        "status": "RECORDED",
+        "value": "failures are typed (schema/identity/artifact/binding/rights/retry) and retries are bounded and explicit",
+        "evidence_refs": [
+          "evidence.9"
+        ]
+      },
+      "compatibility_policy": {
+        "status": "RECORDED",
+        "value": "on incompatible version or unverifiable artifact, the exchange fails closed (no silent downgrade)",
+        "evidence_refs": [
+          "evidence.10"
+        ]
+      },
+      "local_mock_adapter": {
+        "status": "RECORDED",
+        "value": "bounded local_mock_adapter for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "it does not claim a deployed ecosystem or an installed platform model",
+        "evidence_refs": [
+          "evidence.13"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "LOCAL_MOCK_RESPONSE",
+      "protocol_version": {
+        "status": "RECORDED",
+        "value": "1.0.0",
+        "evidence_refs": [
+          "evidence.4"
+        ]
+      },
+      "source_rights_context": {
+        "status": "RECORDED",
+        "value": "REPOSITORY_INTERNAL",
+        "evidence_refs": [
+          "evidence.8"
+        ]
+      },
+      "model_tool_executor_identity": {
+        "status": "RECORDED",
+        "value": "bounded model_tool_executor_identity for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "authority_capability": {
+        "status": "RECORDED",
+        "value": "capability-scoped: can negotiate and exchange context; holds NO authority to execute, deploy, or copy a platform",
+        "evidence_refs": [
+          "evidence.6"
+        ]
+      },
+      "observation_prediction": {
+        "status": "RECORDED",
+        "value": "bounded observation_prediction for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "analogy_search_case": {
+        "status": "RECORDED",
+        "value": "bounded analogy_search_case for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "intervention_failure": {
+        "status": "RECORDED",
+        "value": "bounded intervention_failure for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "symbolic_perspectives": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_perspectives for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "decision_integrity": {
+        "status": "RECORDED",
+        "value": "bounded decision_integrity for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "epistemic_state": {
+        "status": "RECORDED",
+        "value": "bounded epistemic_state for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "latent_multi_history_counterfactual": {
+        "status": "RECORDED",
+        "value": "bounded latent_multi_history_counterfactual for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "experiment_hardware_request_result": {
+        "status": "RECORDED",
+        "value": "hardware access is request-only; the protocol records a request and a result placeholder, never executes hardware",
+        "evidence_refs": [
+          "evidence.12"
+        ]
+      },
+      "exact_head_provenance_digest": {
+        "status": "RECORDED",
+        "value": "bounded exact_head_provenance_digest for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_rollback": {
+        "status": "RECORDED",
+        "value": "a stop/rollback path is present so any exchange can be halted and reverted",
+        "evidence_refs": [
+          "evidence.14"
+        ]
+      },
+      "sensitive_data_network_local_first": {
+        "status": "RECORDED",
+        "value": "sensitive data stays repository_local / network_local_first; no boundary bypass",
+        "evidence_refs": [
+          "evidence.11"
+        ]
+      },
+      "capability_negotiation": {
+        "status": "RECORDED",
+        "value": "bounded capability_negotiation for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "request_response_envelope": {
+        "status": "RECORDED",
+        "value": "bounded request_response_envelope for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "identity_authorization": {
+        "status": "RECORDED",
+        "value": "executor identity authorized only for repository_local, reversible, mock protocol exchange",
+        "evidence_refs": [
+          "evidence.5"
+        ]
+      },
+      "artifact_binding": {
+        "status": "RECORDED",
+        "value": "every exchanged artifact carries exact_head provenance so the receiver can verify against an immutable Git object",
+        "evidence_refs": [
+          "evidence.7"
+        ]
+      },
+      "failure_retry_semantics": {
+        "status": "RECORDED",
+        "value": "failures are typed (schema/identity/artifact/binding/rights/retry) and retries are bounded and explicit",
+        "evidence_refs": [
+          "evidence.9"
+        ]
+      },
+      "compatibility_policy": {
+        "status": "RECORDED",
+        "value": "on incompatible version or unverifiable artifact, the exchange fails closed (no silent downgrade)",
+        "evidence_refs": [
+          "evidence.10"
+        ]
+      },
+      "local_mock_adapter": {
+        "status": "RECORDED",
+        "value": "bounded local_mock_adapter for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "it does not claim a deployed ecosystem or an installed platform model",
+        "evidence_refs": [
+          "evidence.13"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "version_negotiated": true,
+    "identity_authorized": false,
+    "capability_not_authority": true,
+    "artifact_exact_head_bound": true,
+    "rights_preserved": true,
+    "failure_retry_typed": true,
+    "compatibility_fail_closed": true,
+    "sensitive_local_first": true,
+    "hardware_request_only": true,
+    "no_ecosystem_overclaim": true,
+    "stop_rollback_present": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "version_negotiated",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.4"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "identity_authorized",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.5"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "capability_not_authority",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.6"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "artifact_exact_head_bound",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.7"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "rights_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.8"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "failure_retry_typed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.9"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "compatibility_fail_closed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.10"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "sensitive_local_first",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.11"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "hardware_request_only",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.12"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_ecosystem_overclaim",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.13"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "stop_rollback_present",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.14"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}

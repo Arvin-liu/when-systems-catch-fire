@@ -1,0 +1,110 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Plane 6 eight failure classes with machine criteria, boundary tests, disposition policy and Q39 mapping.",
+  "failure_classes": [
+    {
+      "class_id": "INPUT_SOURCE",
+      "definition": "Failure at source side: missing/corrupt/unreadable source, provenance fail-closed, rights-restricted, malformed temporal kept UNKNOWN.",
+      "machine_criteria": "failure point at Plane 1 ingestion boundary; no Object record yet produced.",
+      "boundary_tests": [
+        "A1: replace with perfect synthetic source; failure disappears -> INPUT_SOURCE.",
+        "A2: failure limited to this source/observation lineage -> INPUT_SOURCE."
+      ],
+      "disposition_policy": "REPAIR_SOURCE",
+      "q39_mapping": [
+        "DATA",
+        "RIGHTS",
+        "ENVIRONMENT"
+      ]
+    },
+    {
+      "class_id": "EXTRACTION_MODEL",
+      "definition": "Failure in interpretation/extraction: source intact but source->observation->object diverges from source content.",
+      "machine_criteria": "source integrity passes; >=1 Object/Assertion content disagrees with source digest.",
+      "boundary_tests": [
+        "B1: remove mechanism execution; failure persists -> EXTRACTION_MODEL/REPRESENTATION.",
+        "B3: object content wrong -> EXTRACTION_MODEL."
+      ],
+      "disposition_policy": "REPAIR_EXTRACTOR",
+      "q39_mapping": [
+        "MODEL"
+      ]
+    },
+    {
+      "class_id": "REPRESENTATION",
+      "definition": "Failure in representational capacity: extraction correct but target schema/envelope cannot carry losslessly.",
+      "machine_criteria": "extraction verified correct; failure locates to schema field gap or semantic loss.",
+      "boundary_tests": [
+        "B3: object content correct but envelope cannot carry -> REPRESENTATION."
+      ],
+      "disposition_policy": "EXTEND_REPRESENTATION",
+      "q39_mapping": [
+        "SCOPE"
+      ]
+    },
+    {
+      "class_id": "MECHANISM",
+      "definition": "Failure in mechanism contract/execution binding.",
+      "machine_criteria": "input object correct; failure is one of Plane 4 contract checks; infrastructure healthy.",
+      "boundary_tests": [
+        "B2: input object correct and failure is contract check -> MECHANISM."
+      ],
+      "disposition_policy": "REPAIR_MECHANISM_CONTRACT",
+      "q39_mapping": [
+        "MECHANISM"
+      ]
+    },
+    {
+      "class_id": "INFRASTRUCTURE_RUNTIME",
+      "definition": "Failure in carrying layer: store crash, pointer/manifest corruption, validator fault, env-induced replay divergence, CI/toolchain.",
+      "machine_criteria": "failure at carrying layer; same input succeeds on healthy infra; no contract defect.",
+      "boundary_tests": [
+        "same input on healthy infra succeeds -> INFRASTRUCTURE_RUNTIME."
+      ],
+      "disposition_policy": "REPAIR_INFRA",
+      "q39_mapping": [
+        "EXECUTION",
+        "ENVIRONMENT"
+      ]
+    },
+    {
+      "class_id": "ARCHITECTURE",
+      "definition": "Failure in architecture contract itself: missing/contradictory plane boundary, undecidable routing, conflicting invariants.",
+      "machine_criteria": "counterfactual: perfect source + each component compliant, failure still reproduces; spans all objects through that contract path.",
+      "boundary_tests": [
+        "A1: perfect source still fails -> ARCHITECTURE.",
+        "A2: cross-source/object scope -> ARCHITECTURE."
+      ],
+      "disposition_policy": "ARCHITECTURE_REVIEW",
+      "q39_mapping": [
+        "AUTHORITY",
+        "SCOPE"
+      ]
+    },
+    {
+      "class_id": "GOVERNANCE_REFUSAL",
+      "definition": "Governance/value-boundary refusal: system refuses per governance contract (rights, charter, ceiling, auto-PROMOTE/EVOLVE ban, external action ban).",
+      "machine_criteria": "a governance registry/charter entry is hit; system behavior matches governance contract.",
+      "boundary_tests": [
+        "governance entry hit and behavior correct -> GOVERNANCE_REFUSAL."
+      ],
+      "disposition_policy": "GOVERNANCE_REVIEW",
+      "q39_mapping": [
+        "AUTHORITY",
+        "RIGHTS"
+      ]
+    },
+    {
+      "class_id": "UNKNOWN",
+      "definition": "Unclassifiable: insufficient or contradictory evidence.",
+      "machine_criteria": "any required criterion field missing/contradictory -> forced UNKNOWN (fail-closed).",
+      "boundary_tests": [
+        "evidence insufficient -> UNKNOWN; never 'closest class' guess."
+      ],
+      "disposition_policy": "NEED_MORE_EVIDENCE",
+      "q39_mapping": [
+        "NON_IDENTIFIABLE"
+      ]
+    }
+  ]
+}

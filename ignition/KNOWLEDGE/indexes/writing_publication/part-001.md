@@ -39,6 +39,11 @@
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [## 4. Why the commitment gate is NOT merged into the Q33 rights/publication gate](../../../docs/discovery/discovery-commitment-boundary-architecture.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-06D2DA19DA375B42 / ## 4. Why the commitment gate is NOT merged into the Q33 rights/publication gate / IMPLICIT-06D2DA19DA375B42
+  - 来源：`docs/discovery/discovery-commitment-boundary-architecture.md`
+  - 依赖：—；被引用：—
 - [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8ACF034FD195F618 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d / IMPLICIT-8ACF034FD195F618 / IMPLICIT-B9D9DF87E733D634
@@ -53,6 +58,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F5AEAA5901E518AE / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d / IMPLICIT-F5AEAA5901E518AE / IMPLICIT-8ACF034FD195F618
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C004.md`
+  - 依赖：—；被引用：—
+- [## Relationship to Q33 \(rights / publication gate\)](../../../docs/discovery/discovery-commitment-boundary.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-23BD7D2D07A954B7 / ## Relationship to Q33 \(rights / publication gate\) / IMPLICIT-23BD7D2D07A954B7
+  - 来源：`docs/discovery/discovery-commitment-boundary.md`
   - 依赖：—；被引用：—
 - [121Q25B Whole-Project Synchronization Contract](../../ASSET-CARDS.md#asset-hr-45480c716d721c81)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
@@ -113,6 +123,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-faf89433c6a36c43 / `step16-projection-preflight.json` receipt was created after path-manifest
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
+- [`tests/test_r3_multi_history_world_projection.py` -> 3 passed.](../../../docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-eef72a4a121e3b4a / `tests/test_r3_multi_history_world_projection.py` -> 3 passed.
+  - 来源：`docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md`
   - 依赖：—；被引用：—
 - [`tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -284,6 +299,16 @@
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [Independent Draft PR #95 \(base = `repair/d2-r1-multi-history-world-projection`\).](../../../docs/counterfactual/q42-i1-repair-r1-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d8af191219d66449 / Independent Draft PR #95 \(base = `repair/d2-r1-multi-history-world-projection`\).
+  - 来源：`docs/counterfactual/q42-i1-repair-r1-summary.md`
+  - 依赖：—；被引用：—
+- [Multi-history world-projection gate: **6/6** pytest pass \(pilot exit 0; 24-fixture fail-closed matrix each returns its d](../../../docs/multihistory/d2-i1-repair-r1-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-61fee0f14467ec21 / Multi-history world-projection gate: **6/6** pytest pass \(pilot exit 0; 24-fixture fail-closed matrix each returns its d
+  - 来源：`docs/multihistory/d2-i1-repair-r1-summary.md`
+  - 依赖：—；被引用：—
 - [nonfunction and Knowledge projections were generated. The final tracked tree](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dc7f89bc84dd66f5 / nonfunction and Knowledge projections were generated. The final tracked tree
@@ -314,11 +339,26 @@
   - 可搜索名称：NFC-8aeabce466a6363f / Q30T merges accepted PR #59 at exact HEAD and closes the repository-native Zhiyuan Writing Method showcase as Current: o
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
+- [R2\(test\): `tests/test_r3_multi_history_world_projection.py` — positive pilot exit 0; flipped value exit 30 \(EVALUATOR_RU](../../../docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-edddc89dccb188c9 / R2\(test\): `tests/test_r3_multi_history_world_projection.py` — positive pilot exit 0; flipped value exit 30 \(EVALUATOR_RU
+  - 来源：`docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md`
+  - 依赖：—；被引用：—
+- [RB09-CALLER-ASSERTED-SEMANTICS — `tools/multihistory/validate_multi_history_world_projection_gate.py` now binds](../../../docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-653a48dece4012f0 / RB09-CALLER-ASSERTED-SEMANTICS — `tools/multihistory/validate_multi_history_world_projection_gate.py` now binds
+  - 来源：`docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md`
+  - 依赖：—；被引用：—
 - [release_lifecycle: `PREPARED_FOR_RELEASE`, projection `RELEASE_READY`, publication `NOT_PUBLISHED`, post-publication rem](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5709e9bb0395af13 / release_lifecycle: `PREPARED_FOR_RELEASE`, projection `RELEASE_READY`, publication `NOT_PUBLISHED`, post-publication rem
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [repair-r3 Freeze Summary — multi_history_world_projection \(multi_history_world_projection \(D2\)\)](../../../docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-403b72c2bae346ba / repair-r3 Freeze Summary — multi_history_world_projection \(multi_history_world_projection \(D2\)\)
+  - 来源：`docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md`
+  - 依赖：D2；被引用：—
 - [require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DCD595A104850EA5 / require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\) / IMPLICIT-DCD595A104850EA5
@@ -389,6 +429,16 @@
   - 可搜索名称：NFC-4773abe430084587 / \| `JIN-SRC-04` \| S4 \| 点火 `origin/main` 方法资产 \| 分层、审计、模型投影 \| 仅方法出处 \| 不是金史证据 \|
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [\| capability \| `multi_history_world_projection` \|](../../../docs/multihistory/d2-i1-repair-r1-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cb0b98be89d8f7b4 / \| capability \| `multi_history_world_projection` \|
+  - 来源：`docs/multihistory/d2-i1-repair-r1-summary.md`
+  - 依赖：—；被引用：—
+- [\| direct predecessor \| `D2-I1` → repair branch `repair/d2-r1-multi-history-world-projection` \(head `1904628103d8c2313310](../../../docs/counterfactual/q42-i1-repair-r1-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-fca296068f5ac657 / \| direct predecessor \| `D2-I1` → repair branch `repair/d2-r1-multi-history-world-projection` \(head `1904628103d8c2313310
+  - 来源：`docs/counterfactual/q42-i1-repair-r1-summary.md`
+  - 依赖：D2；被引用：—
 - [\| I_iso\(A,B\) \| 与赛课/邻里/高通量三者强同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-c044ee12eeec7907 / \| I_iso\(A,B\) \| 与赛课/邻里/高通量三者强同构 \|
@@ -428,6 +478,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-749bbcf94d235988 / \| publication_risk_rules \| failure_typology \| 风险规则对应的失败类型 \|
   - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [\| repair branch \| `repair/d2-r1-multi-history-world-projection` \|](../../../docs/multihistory/d2-i1-repair-r1-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-48f97ee6105a052e / \| repair branch \| `repair/d2-r1-multi-history-world-projection` \|
+  - 来源：`docs/multihistory/d2-i1-repair-r1-summary.md`
   - 依赖：—；被引用：—
 - [\| SB-019 \| 中 \| 失败类型: 同构误判 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending](../../../docs/storytelling_backlog_ids.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

@@ -1,0 +1,13 @@
+{
+  "seal_id": "SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-SEAL",
+  "task_id": "SCIENTIFIC-CONTEXT-PROTOCOL-R2",
+  "branch": "repair-r2/scientific-context-protocol-r2-context-semantics",
+  "annotated_tag": "archive/scientific-context-protocol-repair-r2-frozen-head",
+  "closure_complete": true,
+  "residue": 0,
+  "validation": "BUILDER_VALIDATION_PASS",
+  "independent_accepted": false,
+  "sealed_at": "2026-07-23T02:15:04+0800",
+  "sealed_by": "WorkBuddy night-shift main session (\u4e91\u5929\u660e)",
+  "statement": "RB09-DIRECT-PREDECESSOR-BINDING closed: SCIENTIFIC-CONTEXT-PROTOCOL now binds its direct predecessor to the real repair-r2 head 7532b4b34cf841c09faab8c835c5fc7f896d30d8. The fail-closed shared engine (4 engine blockers) is inherited unchanged via the stacked merge; pilot evidence upgraded to the fail-closed schema."
+}

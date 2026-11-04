@@ -1,10 +1,11 @@
 # 点火仓库原生系统图
 
-状态：首页使用 Task150 已验证的 standalone derived visualization 作为公共架构投影；机器可读的 `0.16.0` Current registry-derived structural projection 仍作为独立 companion。两者均为派生视图，不替代 canonical source、架构权威或真值判断；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：首页使用 Task150 已验证的 standalone derived visualization 作为高层架构投影；当前 `0.22.0` registry-derived 完整系统图是独立 companion，输出到单独的 SVG。两者均为派生视图，不替代 canonical source、架构权威或真值判断；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
 - [首页公共架构投影 SVG](../generated/ignition-system-architecture.svg)
+- [当前完整系统图 SVG](../generated/ignition-system-map.svg)
 - [首页交互式架构投影（GitHub Pages）](https://arvin-liu.github.io/when-systems-catch-fire/architecture/)
 - [仓库中的稳定交互式 HTML payload（source/provenance）](../generated/ignition-system-architecture.html)
 - [机器可读投影](../../data/architecture/interactive-system-map.json)
@@ -14,7 +15,7 @@
 
 生成链：
 
-`project component registry + typed propagation topology + layout overlay → deterministic generator → materialized machine projection`
+`project component registry + typed propagation topology + layout overlay → deterministic generator → machine JSON + current full-map SVG`
 
 `canonical overall architecture source + Task150 verified standalone evidence → source-digest gate → stable homepage SVG + stable homepage HTML`
 
@@ -25,7 +26,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`；仓库中的 `ignition-system-architecture.html` 是通过 Task150 source-digest gate 固定的稳定 HTML payload，供 provenance 和 byte comparison 使用，不是 GitHub blob 页面里的运行时 viewer。GitHub Pages Actions 会把这份 HTML 原样复制到 `architecture/index.html`，目标公共路由是 `https://arvin-liu.github.io/when-systems-catch-fire/architecture/`；只有部署 job 成功并经 HTTP 与浏览器观察后，才能把它称为已上线的 live interactive viewer。两种格式使用同一份 Task150 已验证的派生视觉内容；其 canonical-source digest、历史证据字节、Pages payload 关系和首页路径由 `tools/validate_homepage_architecture_projection.py --check` 固定核验。HTML 的交互行为不把 provider 提升为架构权威，也不选择默认 renderer。
+`docs/generated/ignition-system-architecture.svg` 与对应 HTML 是 Task150 固定并配对的高层首页投影；它们的历史字节与 source-digest gate 继续由 `tools/validate_homepage_architecture_projection.py --check` 核验。`docs/generated/ignition-system-map.svg` 则由当前 registry、typed topology 和 layout 派生，随机器系统图更新。两个 SVG 的用途与来源不同，新增构件更新当前系统图时不会改写 Task150 首页证据。GitHub Pages Actions 仍复制 Task150 HTML 到 `architecture/index.html`；只有部署 job 成功并经 HTTP 与浏览器观察后，才能称为已上线的 live interactive viewer。HTML 不授予 provider 架构权威，也不选择默认 renderer。
 
 ## 权威与边界
 

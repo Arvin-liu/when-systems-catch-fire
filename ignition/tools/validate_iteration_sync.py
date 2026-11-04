@@ -56,6 +56,12 @@ CURRENT_PATH_ALIASES = {
     "README.md": ".github/README.md",
     "CONTRIBUTING.md": ".github/CONTRIBUTING.md",
     "SUPPORT.md": ".github/SUPPORT.md",
+    # NFC-14866124CC1A2CAE remains in the canonical nonfunction-claim
+    # registry, but current materiality selection no longer publishes an
+    # individual prose page for it. Keep historical iteration references
+    # resolvable through the human bulk explanation, which links to that
+    # registry and describes the machine-only remainder.
+    "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md": "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
 }
 TRIGGERING_CLASSIFICATIONS = {
     "CAPABILITY_ADDITION",
