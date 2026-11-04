@@ -467,6 +467,82 @@ def _postpublication_record() -> dict[str, object]:
     return record
 
 
+def _successor_registration_statement() -> dict[str, object]:
+    identities = [
+        {"task_id": "IGNITION-20261024-020", "formal_ordinal": 20, "work_branch": "task/020", "receipt_branch": "receipt/020", "lifecycle_state": "MERGED", "evidence_ref": "fixture:task20"},
+        {"task_id": "IGNITION-20261101-021", "formal_ordinal": 21, "work_branch": "task/021", "receipt_branch": "receipt/021", "lifecycle_state": "MERGED", "evidence_ref": "fixture:task21"},
+        {"task_id": "IGNITION-20260829-148", "formal_ordinal": 148, "work_branch": "task/148", "receipt_branch": "receipt/148", "lifecycle_state": "MERGED", "evidence_ref": "fixture:task148"},
+        {"task_id": "IGNITION-20990101-998", "formal_ordinal": 998, "work_branch": "synthetic/open-work", "receipt_branch": "synthetic/open-receipt", "lifecycle_state": "OPEN", "evidence_ref": "fixture:open"},
+    ]
+    inventory = {
+        "merged_task_ids": ["IGNITION-20261024-020", "IGNITION-20261101-021", "IGNITION-20260829-148"],
+        "open_task_pr_numbers": [799],
+        "open_task_ids": ["IGNITION-20990101-998"],
+        "formal_task_identities": identities,
+        "1111_task_receipt_refs": ["fixture:task20", "fixture:task21", "fixture:task148", "fixture:open"],
+    }
+    inventory["inventory_sha256"] = hashlib.sha256(
+        json.dumps(inventory, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    return {
+        "schema_version": "r3-successor-task-registration-r1", "record_type": "TASK_REGISTRATION",
+        "registration_id": "registration-fixture-001", "task_id": "IGNITION-20991231-999",
+        "formal_ordinal": 999, "transaction_protocol_id": r3.SUCCESSOR_PROTOCOL_ID,
+        "protocol_blob_sha": r3.git_blob_sha(r3.SUCCESSOR_PROTOCOL_PATH),
+        "protocol_file_sha256": hashlib.sha256(r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest(),
+        "work_branch": "synthetic/new-work", "receipt_branch": "synthetic/new-receipt",
+        "formal_base_main_sha": "a" * 40, "predecessor_task_id": "IGNITION-20261101-021",
+        "predecessor_ordinal": 21, "conflict_inventory": inventory,
+        "registration_nonce": "1" * 32, "scope": "REGISTER_ONE_SUCCESSOR_TASK_IDENTITY",
+        "registered_at": "2026-11-04T07:59:00Z", "owner_actor_id": 49422864,
+    }
+
+
+def _successor_authorization_fixture() -> tuple[dict[str, object], dict[str, object]]:
+    registration = _successor_registration_statement()
+    registration_raw = json.dumps(registration, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    registration_row = {
+        "path": f"{r3.SUCCESSOR_REGISTRATION_PREFIX}{registration['registration_id']}.json",
+        "statement": registration, "commit_sha": "c" * 40, "parents": ["d" * 40, "e" * 40],
+        "blob_sha": r3._git_blob_sha(registration_raw), "file_sha256": hashlib.sha256(registration_raw).hexdigest(),
+        "committed_at": "2026-11-04T08:00:00Z", "signature_verified": True, "signature_reason": "valid",
+    }
+    statement = {
+        "schema_version": "r3-successor-transaction-authorization-r1", "record_type": "TRANSACTION_AUTHORIZATION",
+        "authorization_id": "authorization-fixture-001", "task_id": registration["task_id"],
+        "formal_ordinal": registration["formal_ordinal"], "registration_id": registration["registration_id"],
+        "transaction_id": "transaction-fixture-001", "pr_number": 701,
+        "candidate_head_sha": "b" * 40, "base_main_sha": "a" * 40,
+        "protocol_blob_sha": registration["protocol_blob_sha"],
+        "protocol_file_sha256": registration["protocol_file_sha256"],
+        "authorization_nonce": "2" * 32, "scope": "EXACT_REGISTERED_FORMAL_RELEASE_PR_ONLY",
+        "approved_at": "2026-11-04T09:00:00Z", "expires_at": "2026-11-05T09:00:00Z",
+        "owner_actor_id": 49422864,
+    }
+    authorization_raw = json.dumps(statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    authorization_row = {
+        "path": f"{r3.SUCCESSOR_AUTHORIZATION_PREFIX}{statement['authorization_id']}.json",
+        "statement": statement, "commit_sha": "f" * 40, "parents": ["c" * 40, "g" * 40],
+        "blob_sha": r3._git_blob_sha(authorization_raw), "file_sha256": hashlib.sha256(authorization_raw).hexdigest(),
+        "committed_at": "2026-11-04T10:00:00Z", "signature_verified": True, "signature_reason": "valid",
+    }
+    evidence = {
+        "record_type": statement["record_type"], "statement": statement,
+        "authorization_repository": "Arvin-liu/1111", "authorization_path": authorization_row["path"],
+        "authorization_commit_sha": authorization_row["commit_sha"],
+        "authorization_parent_shas": authorization_row["parents"],
+        "authorization_file_sha256": authorization_row["file_sha256"],
+        "authorization_blob_sha": authorization_row["blob_sha"],
+        "authorization_committed_at": authorization_row["committed_at"],
+        "authorization_signature_verified": True, "authorization_signature_reason": "valid",
+    }
+    ledger = {
+        "registrations": [registration_row], "authorizations": [authorization_row],
+        "revocations": [], "supersessions": [], "superseded_registration_ids": [],
+    }
+    return evidence, ledger
+
+
 def _activation_receipt() -> dict[str, object]:
     context = _context()
     return {
@@ -1790,6 +1866,235 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertEqual(active, "R2")
         self.assertTrue(any("live GitHub final-main commit parents differ" in error for error in errors))
+
+    def test_successor_candidate_is_inert_and_pins_immutable_history(self) -> None:
+        self.assertEqual(r3.validate_contract(), [])
+        self.assertEqual(r3.validate_successor_protocol_contract(), [])
+        successor = r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)
+        self.assertEqual(successor["status"], "CANDIDATE_NOT_EFFECTIVE")
+        self.assertEqual(r3.git_blob_sha(r3.PROTOCOL_PATH), "1fd53f8023ab96d694e71c6ed28f81e30a32ca6c")
+        self.assertEqual(successor["historical_adjudication"]["required_status"], "NOT_COMPLIANT")
+        self.assertEqual(successor["historical_adjudication"]["separate_r3_witness_status"], "BLOCKED_WITH_EVIDENCE")
+        self.assertTrue(successor["historical_compatibility"]["pr_266_legacy_validator_profile_remains_supported"])
+
+        changed = json.loads(json.dumps(successor))
+        changed["historical_adjudication"]["required_status"] = "COMPLIANT"
+        self.assertTrue(r3.validate_successor_protocol_contract(changed))
+        changed = json.loads(json.dumps(successor))
+        changed["historical_compatibility"]["pr_267_cannot_be_retroactively_certified"] = False
+        self.assertTrue(r3.validate_successor_protocol_contract(changed))
+
+    def test_successor_registration_rejects_reused_ordinal_and_expanded_scope(self) -> None:
+        registration = _successor_registration_statement()
+        self.assertEqual(r3.validate_successor_registration_statement(
+            registration,
+            expected_base_main_sha="a" * 40,
+            expected_predecessor_task_id="IGNITION-20261101-021",
+            expected_predecessor_ordinal=21,
+        ), [])
+
+        reused = json.loads(json.dumps(registration))
+        reused["formal_ordinal"] = 21
+        reused["task_id"] = "IGNITION-20991231-021"
+        errors = r3.validate_successor_registration_statement(
+            reused,
+            expected_base_main_sha="a" * 40,
+            expected_predecessor_task_id="IGNITION-20261101-021",
+            expected_predecessor_ordinal=21,
+        )
+        self.assertTrue(any("already assigned" in error or "may not reuse Task20" in error for error in errors), errors)
+
+        expanded = json.loads(json.dumps(registration))
+        expanded["scope"] = "REGISTER_AND_AUTHORIZE_ANY_RELEASE"
+        errors = r3.validate_successor_registration_statement(
+            expanded,
+            expected_base_main_sha="a" * 40,
+            expected_predecessor_task_id="IGNITION-20261101-021",
+            expected_predecessor_ordinal=21,
+        )
+        self.assertTrue(errors)
+
+    def test_successor_ledger_allows_multiple_transactions_but_rejects_global_nonce_replay(self) -> None:
+        records = [
+            {"statement": {"record_type": "TASK_REGISTRATION", "registration_id": "registration-fixture-001", "task_id": "IGNITION-20991231-999", "formal_ordinal": 999, "work_branch": "work/999", "receipt_branch": "receipt/999", "registration_nonce": "1" * 32}},
+            {"statement": {"record_type": "TASK_REGISTRATION", "registration_id": "registration-fixture-002", "task_id": "IGNITION-20991231-997", "formal_ordinal": 997, "work_branch": "work/997", "receipt_branch": "receipt/997", "registration_nonce": "3" * 32}},
+            {"statement": {"record_type": "TRANSACTION_AUTHORIZATION", "authorization_id": "authorization-fixture-001", "transaction_id": "transaction-fixture-001", "authorization_nonce": "2" * 32}},
+            {"statement": {"record_type": "TRANSACTION_AUTHORIZATION", "authorization_id": "authorization-fixture-002", "transaction_id": "transaction-fixture-002", "authorization_nonce": "4" * 32}},
+            {"statement": {"record_type": "PUBLICATION_WITNESS", "transaction_id": "transaction-fixture-001"}},
+            {"statement": {"record_type": "PUBLICATION_WITNESS", "transaction_id": "transaction-fixture-002"}},
+        ]
+        self.assertEqual(r3.validate_successor_ledger_uniqueness(records), [])
+
+        replayed = json.loads(json.dumps(records))
+        replayed[3]["statement"]["authorization_nonce"] = "1" * 32
+        errors = r3.validate_successor_ledger_uniqueness(replayed)
+        self.assertTrue(any("nonce" in error for error in errors), errors)
+
+        duplicate = json.loads(json.dumps(records))
+        duplicate[1]["statement"]["formal_ordinal"] = 999
+        errors = r3.validate_successor_ledger_uniqueness(duplicate)
+        self.assertTrue(any("formal_ordinal" in error for error in errors), errors)
+
+    def test_successor_ledger_rejects_edits_deletions_readds_and_wrong_reviewed_tree(self) -> None:
+        path = f"{r3.SUCCESSOR_REGISTRATION_PREFIX}registration-fixture-001.json"
+        entry = {"sha": "a" * 40, "mode": "100644", "type": "blob"}
+        accepted = r3.validate_successor_append_only_addition(
+            path, status="added", already_added=False, blob_sha="a" * 40,
+            first_parent_sha="b" * 40, before_entry=None, after_entry=entry,
+            second_parent_entry=entry,
+        )
+        self.assertEqual(accepted, [])
+        attempts = [
+            {"status": "modified", "already_added": False, "before": None, "second": entry},
+            {"status": "removed", "already_added": False, "before": entry, "second": None},
+            {"status": "added", "already_added": True, "before": None, "second": entry},
+            {"status": "added", "already_added": False, "before": None, "second": {"sha": "c" * 40}},
+        ]
+        for attempt in attempts:
+            errors = r3.validate_successor_append_only_addition(
+                path, status=attempt["status"], already_added=attempt["already_added"],
+                blob_sha="a" * 40, first_parent_sha="b" * 40,
+                before_entry=attempt["before"], after_entry=entry,
+                second_parent_entry=attempt["second"],
+            )
+            self.assertTrue(errors, attempt)
+
+    def test_successor_transaction_authorization_binds_every_scope_and_expires_or_revokes(self) -> None:
+        evidence, ledger = _successor_authorization_fixture()
+        statement = evidence["statement"]
+        base = {
+            "ledger": ledger, "task_id": statement["task_id"], "formal_ordinal": statement["formal_ordinal"],
+            "registration_id": statement["registration_id"], "transaction_id": statement["transaction_id"],
+            "pr_number": statement["pr_number"], "candidate_head_sha": statement["candidate_head_sha"],
+            "base_main_sha": statement["base_main_sha"], "protocol_blob_sha": statement["protocol_blob_sha"],
+            "protocol_file_sha256": statement["protocol_file_sha256"], "valid_through": "2026-11-04T10:30:00Z",
+        }
+        self.assertEqual(r3.validate_successor_transaction_authorization_statement(evidence, **base), [])
+        for field, value in (
+            ("task_id", "IGNITION-20991231-997"), ("formal_ordinal", 997),
+            ("transaction_id", "transaction-other"), ("pr_number", 702),
+            ("candidate_head_sha", "9" * 40), ("base_main_sha", "8" * 40),
+        ):
+            altered = dict(base)
+            altered[field] = value
+            errors = r3.validate_successor_transaction_authorization_statement(evidence, **altered)
+            self.assertTrue(errors, field)
+
+        expired = dict(base, valid_through="2026-11-06T00:00:00Z")
+        self.assertTrue(any("expired" in error for error in r3.validate_successor_transaction_authorization_statement(evidence, **expired)))
+        revoked_ledger = json.loads(json.dumps(ledger))
+        revoked_ledger["revocations"] = [{"statement": {
+            "authorization_id": statement["authorization_id"],
+            "authorization_file_sha256": ledger["authorizations"][0]["file_sha256"],
+            "revoked_at": "2026-11-04T10:15:00Z",
+        }}]
+        revoked = dict(base, ledger=revoked_ledger)
+        self.assertTrue(any("revoked" in error for error in r3.validate_successor_transaction_authorization_statement(evidence, **revoked)))
+
+        forged = dict(evidence)
+        forged["authorization_signature_verified"] = False
+        self.assertTrue(r3.validate_successor_transaction_authorization_statement(forged, **base))
+
+    def test_successor_review_gate_requires_two_exact_authorized_approvals(self) -> None:
+        head = "b" * 40
+        reviews = [
+            {"review_id": 1, "actor_id": 50, "state": "APPROVED", "commit_sha": head, "submitted_at": "2026-11-04T10:01:00Z", "permission": "write"},
+            {"review_id": 2, "actor_id": 49422864, "state": "APPROVED", "commit_sha": head, "submitted_at": "2026-11-04T10:02:00Z", "permission": "admin"},
+            # A comment after merge must not retroactively replace the valid review state at merge.
+            {"review_id": 3, "actor_id": 50, "state": "COMMENTED", "commit_sha": head, "submitted_at": "2026-11-04T10:30:00Z", "permission": "write"},
+        ]
+        independent, owner, errors = r3.validate_successor_review_gate(
+            reviews, author_id=40, owner_id=49422864, head_sha=head,
+            authorized_reviewer_ids={50}, valid_through="2026-11-04T10:10:00Z",
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(independent["review_id"], 1)
+        self.assertEqual(owner["review_id"], 2)
+
+        missing = [row for row in reviews if row["actor_id"] != 50]
+        _, _, errors = r3.validate_successor_review_gate(
+            missing, author_id=40, owner_id=49422864, head_sha=head,
+            authorized_reviewer_ids={50}, valid_through="2026-11-04T10:10:00Z",
+        )
+        self.assertTrue(any("no authorized non-author" in error for error in errors), errors)
+        wrong_head = [dict(row, commit_sha="c" * 40) for row in reviews[:2]]
+        _, _, errors = r3.validate_successor_review_gate(
+            wrong_head, author_id=40, owner_id=49422864, head_sha=head,
+            authorized_reviewer_ids={50}, valid_through="2026-11-04T10:10:00Z",
+        )
+        self.assertTrue(errors)
+
+    def test_successor_required_contexts_bind_each_exact_app_and_head(self) -> None:
+        head = "b" * 40
+        requirements = r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)["inherits_from"]["required_status_check_contexts"]
+        rows = [
+            {
+                "name": requirement["context"], "app": {"id": requirement["app_id"]},
+                "head_sha": head, "status": "completed", "conclusion": "success",
+                "started_at": "2026-11-04T09:00:00Z", "completed_at": "2026-11-04T09:05:00Z",
+                "id": index + 1, "html_url": f"https://github.com/checks/{index + 1}",
+            }
+            for index, requirement in enumerate(requirements)
+        ]
+
+        contexts, errors = r3.read_live_successor_required_contexts(
+            head, github_api=lambda endpoint: {"check_runs": rows}
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(len(contexts), len(requirements))
+        self.assertEqual(r3._valid_successor_context_set(contexts, contexts, head), [])
+
+        stale = json.loads(json.dumps(rows))
+        stale[0]["head_sha"] = "c" * 40
+        contexts, errors = r3.read_live_successor_required_contexts(
+            head, github_api=lambda endpoint: {"check_runs": stale}
+        )
+        self.assertTrue(errors)
+
+        failed = json.loads(json.dumps(rows))
+        failed[0]["conclusion"] = "failure"
+        contexts, errors = r3.read_live_successor_required_contexts(
+            head, github_api=lambda endpoint: {"check_runs": failed}
+        )
+        self.assertTrue(any("did not pass" in error for error in errors), errors)
+
+    def test_successor_migration_rejects_wrong_formal_head_before_activation(self) -> None:
+        statement = {
+            "protocol_sha256": hashlib.sha256(r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest(),
+            "formal_pr_number": 801, "formal_base_sha": "a" * 40,
+            "formal_candidate_head_sha": "b" * 40, "formal_merge_commit_sha": "c" * 40,
+        }
+        def wrong_head(endpoint: str):
+            self.assertEqual(endpoint, "repos/Arvin-liu/when-systems-catch-fire/pulls/801")
+            return {
+                "number": 801, "state": "closed", "merged": True, "draft": False,
+                "base": {"ref": "main", "sha": "a" * 40},
+                "head": {"sha": "d" * 40}, "merge_commit_sha": "c" * 40,
+                "merged_by": {"id": 49422864},
+            }
+        errors = r3.validate_successor_migration_witness_live(
+            statement, signed_record={}, owner_id=49422864, github_api=wrong_head
+        )
+        self.assertTrue(any("exact Owner-merged non-draft PR refs" in error for error in errors), errors)
+
+    def test_successor_root_authority_does_not_accept_unverified_or_different_pr(self) -> None:
+        def not_the_root_pr(endpoint: str):
+            if endpoint == "repos/Arvin-liu/when-systems-catch-fire":
+                return {"owner": {"id": 49422864}}
+            if endpoint == "repos/Arvin-liu/1111":
+                return {"owner": {"id": 49422864}, "private": True, "default_branch": "main"}
+            if endpoint == "repos/Arvin-liu/1111/pulls/163":
+                return {
+                    "number": 163, "state": "closed", "merged": True,
+                    "merged_by": {"id": 49422864},
+                    "base": {"ref": "main", "sha": "d" * 40},
+                    "head": {"sha": "9" * 40}, "merge_commit_sha": "5" * 40,
+                    "merged_at": "2026-11-04T09:00:00Z",
+                }
+            raise AssertionError(f"unexpected authority read before exact PR identity is checked: {endpoint}")
+        authority, errors = r3.read_authenticated_successor_root_authority(github_api=not_the_root_pr)
+        self.assertIsNone(authority)
+        self.assertTrue(any("not the exact manually Owner-merged" in error for error in errors), errors)
 
 
 if __name__ == "__main__":

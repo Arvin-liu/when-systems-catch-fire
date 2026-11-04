@@ -39,6 +39,10 @@ jobs:
           if [ -f data/operations/release-transaction-protocol-r3.json ] \
             || [ -f tools/validate_release_transaction_protocol_r3.py ] \
             || [ -f tests/test_release_transaction_protocol_r3.py ]; then
-            python3 tools/validate_release_transaction_protocol_r3.py --check
+            if [ -f data/operations/release-transaction-protocol-r3-successor-r1.json ]; then
+              python3 tools/validate_release_transaction_protocol_r3.py --check --check-successor
+            else
+              python3 tools/validate_release_transaction_protocol_r3.py --check
+            fi
             python3 -m unittest tests.test_release_transaction_protocol_r3 -v
           fi
