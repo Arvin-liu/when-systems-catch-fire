@@ -13,20 +13,28 @@
   "tasks": [
     {
       "task_id": "IGNITION-20261101-021",
-      "execution_status": "IN_PROGRESS",
-      "terminal": false,
-      "scope_complete": false,
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
       "identity_impact": "NONE",
-      "terminal_basis": "Task21 is an in-progress Phase 1 closeout candidate bound to the Owner-verified Task21 registration in 1111 PR #156. Formal PR, exact-head validation, independent Task21 R3 Owner authorization, protected merge, post-publication witness, research-use evidence, independent scientific/semantic review, adapter upgrade/rollback and final Foundation remain open. R2 remains effective; no Phase 2 begins. Task20 remains recorded IN_PROGRESS and non-terminal.",
+      "terminal_basis": "Task21's bounded Phase 1 V1 scope is complete under the verified Owner acceptance boundary in 1111 PR #161. Existing Formal main 138b388fbe7815d6cdddc573315120eb4c1b099d records R3 PUBLISHED_AND_VERIFIED and successful exact-main Foundation, G/O, R-domain, projection, and repository-path evidence. Source Binding execution and an independent legacy-adapter rollback are recorded; their matched result is NO_DELTA and net benefit is NOT ESTABLISHED. Scientific and semantic review, NOAA conflict resolution, uncertainty work, and human scientific review remain open research duties and do not keep this bounded architecture task active. LIVE_EXTERNAL_INVOCATION remains OPEN / OWNER_DEFERRED and is not closed by terminality. The release-ready candidate still requires exact-head protected checks and independent review; after merge, final acceptance and the postpublication witness must bind the resulting main SHA before Phase 1 V1 is declared complete.",
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
       "evidence_refs": [
         "ignition/data/operations/iterations/021/execution-contract-r1.json",
         "ignition/data/operations/task-identity-model-r1.json",
-        "Arvin-liu/1111@cb5f8055ce8225f0197c2348f67571ff774993b5:instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json"
+        "Arvin-liu/1111@cb5f8055ce8225f0197c2348f67571ff774993b5:instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json",
+        "Arvin-liu/1111@e6cbef3dc78b541a8c3a9382e49b587562051c87:instructions/goal-mode/IGNITION-2026-11-03-TASK21-PHASE1-TERMINAL-CLOSEOUT-AUTH-R1.json",
+        "Arvin-liu/1111@e6cbef3dc78b541a8c3a9382e49b587562051c87:reports/operations/IGNITION-2026-11-02-TASK21-PHASE1-V1-CLOSEOUT-R0.md",
+        "GitHub Actions run 41405252287: full Foundation and final-main witness PASS on 138b388fbe7815d6cdddc573315120eb4c1b099d",
+        "GitHub Actions run 41405252291: R3 postpublication PASS on 138b388fbe7815d6cdddc573315120eb4c1b099d",
+        "GitHub Actions run 41405252324: repository-path-accounting-preflight PASS on 138b388fbe7815d6cdddc573315120eb4c1b099d",
+        "ignition/reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md",
+        "ignition/data/operations/iterations/020/v1-methane-source-bound-real-task-r0/independent-semantic-review.md",
+        "ignition/data/operations/state-changelog-profile-r7.json"
       ],
-      "claim_ceiling": "Task21 branch-local R3 candidate repair and exact successor identity binding only; Task20 completion, R3 activation, protected publication, scientific acceptance, external truth, production readiness, live completion and epistemic acceptance are not inferred."
+      "claim_ceiling": "Task21 Phase 1 repository-local terminality candidate and previously verified Formal main 138b388fbe7815d6cdddc573315120eb4c1b099d release, validation, Source Binding, and rollback evidence only. No final resulting-main acceptance, scientific acceptance, net benefit, external truth, production readiness, Owner acceptance, validated live completion, or epistemic acceptance is inferred."
     },
     {
       "task_id": "IGNITION-20261024-020",

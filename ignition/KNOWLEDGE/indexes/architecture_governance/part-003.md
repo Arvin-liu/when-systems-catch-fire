@@ -794,6 +794,11 @@
   - 可搜索名称：NFC-87ee9905723e8c1b / claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: Task21 Phase 1 repository-local terminal-closeout candidate and prior exact-main R3/validation evidence o](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c55e6928b8383d5e / claim_ceiling: Task21 Phase 1 repository-local terminal-closeout candidate and prior exact-main R3/validation evidence o
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd7cc4e938e6b72a / claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-FE6C9AA79468E73E / def __init__\(self, fixture: DisposableLiveCompletionFixture\) -> None: / IMPLICIT-FE6C9AA79468E73E / IMPLICIT-AFBB97D25A7C840A
   - 来源：`agent_federation/live_validation.py`
-  - 依赖：—；被引用：—
-- [def __init__\(self, fixture: DisposableLiveFixture, *, task_id: str, dispatch_id: str, attempt_id: str, executor_id: str\) -> None:](../../../agent_federation/live_pilot.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4A08D78D1388F5BA / def __init__\(self, fixture: DisposableLiveFixture, *, task_id: str, dispatch_id: str, attempt_id: str, executor_id: str\) -> None: / IMPLICIT-4A08D78D1388F5BA
-  - 来源：`agent_federation/live_pilot.py`
   - 依赖：—；被引用：—

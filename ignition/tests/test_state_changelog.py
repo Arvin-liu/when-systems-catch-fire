@@ -1,3 +1,4 @@
+import copy
 import hashlib
 import json
 import re
@@ -11,6 +12,7 @@ from tools.validate_state_changelog import (
     PROFILE_PATH_R4,
     PROFILE_PATH_R5,
     PROFILE_PATH_R6,
+    PROFILE_PATH_R7,
     PROFILE_PATH_R1,
     R1_PROFILE_SHA256,
     R2_PROFILE_SHA256,
@@ -18,6 +20,9 @@ from tools.validate_state_changelog import (
     R4_PROFILE_SHA256,
     R5_PROFILE_SHA256,
     R6_PROFILE_SHA256,
+    R7_PROFILE_SHA256,
+    R7_APPEND_PROFILE,
+    R7_AUTHORIZATION,
     R6_APPEND_PROFILE,
     R6_AUTHORIZATION,
     ROOT,
@@ -66,7 +71,7 @@ class StateChangelogTests(unittest.TestCase):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         source = _replace_in_entry(
             source,
-            61,
+            62,
             "- authority_changes:",
             "- authority_removed:",
         )
@@ -283,11 +288,21 @@ class StateChangelogTests(unittest.TestCase):
         self.assertEqual(r6["entry_count"], len(r6["entries"]))
         self.assertEqual(r6["entry_count"], len(r5["entries"]) + 1)
         self.assertEqual(R6_APPEND_PROFILE, r6["entries"][-1]["profile"])
-        self.assertEqual([], validate(profile_path=PROFILE_PATH_R6))
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        source_r6 = source[: headings[r6["entry_count"]].start()]
+        path = ROOT / ".state-changelog-r6-prefix-test.md"
+        try:
+            path.write_text(source_r6, encoding="utf-8")
+            self.assertEqual([], validate(path=path, profile_path=PROFILE_PATH_R6))
+        finally:
+            path.unlink(missing_ok=True)
 
-    def test_r6_profile_rejects_an_unregistered_62nd_append(self):
+    def test_r6_profile_does_not_accept_the_r7_terminal_append(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         profile = json.loads(PROFILE_PATH_R6.read_text(encoding="utf-8"))
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        source = source[: headings[profile["entry_count"]].start()]
         source += (
             "\n## 2027-01-01 — SYNTHETIC-UNAUTHORIZED-62\n\n"
             "- main_state: synthetic candidate only\n"
@@ -307,6 +322,124 @@ class StateChangelogTests(unittest.TestCase):
             path.write_text(source, encoding="utf-8")
             errors = validate(path=path, profile_path=PROFILE_PATH_R6)
         self.assertTrue(any(f"expects {profile['entry_count']} entries" in error for error in errors), errors)
+
+    def test_r7_profile_is_exact_additive_successor_of_immutable_r6(self):
+        r6_bytes = PROFILE_PATH_R6.read_bytes()
+        r6 = json.loads(r6_bytes)
+        r7_bytes = PROFILE_PATH_R7.read_bytes()
+        r7 = json.loads(r7_bytes)
+        self.assertEqual(hashlib.sha256(r6_bytes).hexdigest(), R6_PROFILE_SHA256)
+        self.assertEqual(hashlib.sha256(r7_bytes).hexdigest(), R7_PROFILE_SHA256)
+        self.assertEqual(r7["parent_profile"]["sha256"], R6_PROFILE_SHA256)
+        self.assertEqual(r7["authorization"], R7_AUTHORIZATION)
+        self.assertEqual(r7["entries"][: len(r6["entries"])], r6["entries"])
+        self.assertEqual(r7["entry_count"], len(r7["entries"]))
+        self.assertEqual(r7["entry_count"], len(r6["entries"]) + 1)
+        self.assertEqual(R7_APPEND_PROFILE, r7["entries"][-1]["profile"])
+        self.assertEqual("IGNITION-20261101-021", r7["entries"][-1]["task_id"])
+        self.assertEqual(21, r7["entries"][-1]["formal_ordinal"])
+        self.assertEqual([], validate())
+
+    def test_r7_profile_rejects_an_extra_append(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        source += (
+            "\n## 2027-01-01 — SYNTHETIC-UNAUTHORIZED-63\n\n"
+            "- main_state: synthetic candidate only\n"
+            "- delta: no Task21 Owner authority was supplied\n"
+            "- authority_changes: none\n"
+            "- epistemic_state: unchanged\n"
+            "- obligations: remain open\n"
+            "- stale_knowledge: none\n"
+            "- next_read: Owner must authorize a real successor independently\n"
+            "- claim_ceiling: repository-local fixture only\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "STATE-CHANGELOG.md"
+            path.write_text(source, encoding="utf-8")
+            errors = validate(path=path, profile_path=PROFILE_PATH_R7)
+        self.assertTrue(any("expects 62 entries" in error for error in errors), errors)
+
+    def test_r7_profile_rejects_wrong_ordinal_or_profile(self):
+        base = json.loads(PROFILE_PATH_R7.read_text(encoding="utf-8"))
+        mutations = {
+            "ordinal": lambda value: value["entries"][-1].update(ordinal=63),
+            "profile": lambda value: value["entries"][-1].update(profile=R6_APPEND_PROFILE),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(mutation=name), tempfile.TemporaryDirectory() as tmp:
+                candidate = copy.deepcopy(base)
+                mutate(candidate)
+                profile_path = Path(tmp) / "profile.json"
+                profile_path.write_text(json.dumps(candidate), encoding="utf-8")
+                errors = validate(profile_path=profile_path)
+            self.assertTrue(
+                any("exact authorized Task21 ordinal-62 terminal record" in error for error in errors),
+                errors,
+            )
+
+    def test_r7_profile_rejects_reordered_or_rewritten_r6_prefix(self):
+        base = json.loads(PROFILE_PATH_R7.read_text(encoding="utf-8"))
+        mutations = {
+            "reordered": lambda value: value["entries"].__setitem__(slice(0, 2), list(reversed(value["entries"][:2]))),
+            "rewritten": lambda value: value["entries"][0].update(label="TAMPERED R6 HISTORY"),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(mutation=name), tempfile.TemporaryDirectory() as tmp:
+                candidate = copy.deepcopy(base)
+                mutate(candidate)
+                profile_path = Path(tmp) / "profile.json"
+                profile_path.write_text(json.dumps(candidate), encoding="utf-8")
+                errors = validate(profile_path=profile_path)
+            self.assertTrue(any("rewrites or reorders the sealed R6 entry prefix" in error for error in errors), errors)
+
+    def test_r7_profile_rejects_wrong_authorization_commit_or_blob(self):
+        base = json.loads(PROFILE_PATH_R7.read_text(encoding="utf-8"))
+        for field in ("commit", "blob_sha1"):
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
+                candidate = copy.deepcopy(base)
+                candidate["authorization"][field] = "0" * 40
+                profile_path = Path(tmp) / "profile.json"
+                profile_path.write_text(json.dumps(candidate), encoding="utf-8")
+                errors = validate(profile_path=profile_path)
+            self.assertTrue(
+                any("exact verified Owner authorization binding" in error for error in errors),
+                errors,
+            )
+
+    def test_r7_profile_rejects_wrong_task_identity(self):
+        base = json.loads(PROFILE_PATH_R7.read_text(encoding="utf-8"))
+        mutations = {
+            "authorization_task_id": lambda value: value["authorization"].update(task_id="IGNITION-20261024-020"),
+            "authorization_ordinal": lambda value: value["authorization"].update(formal_ordinal=20),
+            "append_task_id": lambda value: value["entries"][-1].update(task_id="IGNITION-20261024-020"),
+            "append_ordinal": lambda value: value["entries"][-1].update(formal_ordinal=20),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(mutation=name), tempfile.TemporaryDirectory() as tmp:
+                candidate = copy.deepcopy(base)
+                mutate(candidate)
+                profile_path = Path(tmp) / "profile.json"
+                profile_path.write_text(json.dumps(candidate), encoding="utf-8")
+                errors = validate(profile_path=profile_path)
+            self.assertTrue(errors, errors)
+            self.assertTrue(any("Task21" in error or "ordinal-62" in error for error in errors), errors)
+
+    def test_r7_profile_rejects_missing_or_unverified_owner_signature(self):
+        base = json.loads(PROFILE_PATH_R7.read_text(encoding="utf-8"))
+        mutations = {
+            "missing": lambda value: value["authorization"].pop("commit_verified"),
+            "unverified": lambda value: value["authorization"].update(commit_verified=False),
+            "invalid_reason": lambda value: value["authorization"].update(verification_reason="unsigned"),
+            "wrong_actor": lambda value: value["authorization"].update(merged_by_actor_id=12345),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(mutation=name), tempfile.TemporaryDirectory() as tmp:
+                candidate = copy.deepcopy(base)
+                mutate(candidate)
+                profile_path = Path(tmp) / "profile.json"
+                profile_path.write_text(json.dumps(candidate), encoding="utf-8")
+                errors = validate(profile_path=profile_path)
+            self.assertTrue(any("GitHub-verified Owner merge" in error for error in errors), errors)
 
     def test_immutable_r1_prefix_validates_with_original_profile(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
