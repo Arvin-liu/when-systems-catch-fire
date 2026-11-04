@@ -1,0 +1,291 @@
+{
+  "method_version": "1.0.0",
+  "task_id": "ARR-R1-SCAFFOLD",
+  "change_classification": [
+    "CAPABILITY_ADDITION"
+  ],
+  "verified_start": {
+    "main_head": "6723cdfaf52873516c564c324066361b257cdf52",
+    "source": "arr scaffold branch based on production/ignition-run-promote-evolve-r1 frozen head 6723cdfa",
+    "verified_at": "2026-07-24"
+  },
+  "branch_pr": {
+    "branch": "architecture/adaptive-relational-runtime-r1-scaffold",
+    "pr_number": null,
+    "base": "main",
+    "base_head": "6723cdfaf52873516c564c324066361b257cdf52",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": null,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/adaptive-relational-runtime-r1-scaffold-receipt.md",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "ARR R1 scaffold commit 5 records repository-local map/registry/CI synchronization only. The exact final main closeout HEAD and post-commit CI are external attestations re-fetched live before any acceptance; this artifact does not self-assert a final SHA."
+  },
+  "gap": {
+    "summary": "The repository lacked a registry-driven adaptive relational runtime scaffold (one-kernel six-plane) with a declared non-executor adapter role and anti-second-executor static gate.",
+    "evidence": [
+      "14 schemas, 10 registries, 10 object primitives under schemas/architecture/adaptive-relational-runtime/",
+      "tools/adaptive_relational_runtime/ adapter package with static_gate.py (zero violations)",
+      "78 pytest cases and a 40-item attack matrix with B1-B6 overclaim guards"
+    ],
+    "smallest_material_action": "Synchronize maps, registries, topology and CI so the ARR R1 scaffold surfaces are accepted by the repo-native governance validators without changing runtime behavior."
+  },
+  "claim_ceiling": "candidate_repository_scaffold_capability_only: ARR R1 scaffold registers derived-representation surfaces, maps and CI synchronization; it does not add a truth layer, L7, execution engine, external action or causal upgrade.",
+  "status": {
+    "candidate": true,
+    "ready_for_gpt_verification": false,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "ARR R1 scaffold is map/registry/CI synchronization; README front-door structure is unchanged."
+    },
+    {
+      "surface": "docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current-state doc records ARR R1 scaffold existence as a current capability addition."
+    },
+    {
+      "surface": "AI-HANDOFF.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No handoff-policy change in this synchronization commit."
+    },
+    {
+      "surface": "AI-START-HERE.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No cold-start ordering change in this synchronization commit."
+    },
+    {
+      "surface": "llms.txt",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No machine-boundary change in this synchronization commit."
+    },
+    {
+      "surface": "SUMMARY.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No navigation change in this synchronization commit."
+    },
+    {
+      "surface": "CHANGELOG.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Release history not appended in this scaffold-sync commit."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "ARR components are registered and system_map_layout explicitly owns the geometry validator; registry_version 2.9.11 -> 2.9.12."
+    },
+    {
+      "surface": "data/operations/change-propagation-topology.json",
+      "decision": "CHANGE",
+      "reason": "ARR relations added; topology_version 1.1.0 -> 1.1.1."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map-layout.json",
+      "decision": "CHANGE",
+      "reason": "ARR node included; deterministic four-column repack isolates the dense governance group and moves layout_version 2.5.0 -> 2.6.0 while preserving the 0.22.0 map identity."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "Materialized map regenerated with arr node."
+    },
+    {
+      "surface": "docs/generated/ignition-system-map.svg",
+      "decision": "CHANGE",
+      "reason": "The registry-derived full system-map SVG is generated at its own path; SHA-256 2bc5f48af6b08d17b120213c1ab6ee09deea4361eb25265b47f7e32fd229a3f8. Task150 homepage SVG/HTML remain a separate byte-pinned pair."
+    },
+    {
+      "surface": "data/operations/component-execution-profiles.json",
+      "decision": "CHANGE",
+      "reason": "Profiles regenerated with arr / arr_runtime (manual, non-executor)."
+    },
+    {
+      "surface": "tools/validate_human_front_door.py",
+      "decision": "CHANGE",
+      "reason": "arr added to hardcoded required_nodes set (gate logic unchanged)."
+    },
+    {
+      "surface": "tools/adaptive_relational_runtime/static_gate.py",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Static gate unchanged in commit 5; it continues to report zero violations."
+    },
+    {
+      "surface": ".github/workflows/foundation-validation.yml",
+      "decision": "CHANGE",
+      "reason": "ARR paths added to triggers; anti-second-executor static scan step added."
+    },
+    {
+      "surface": "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+      "decision": "CHANGE",
+      "reason": "Commit-5 evidence and known-limitations document added."
+    },
+    {
+      "surface": "docs/generated/ignition-system-architecture.svg",
+      "decision": "CHANGE",
+      "reason": "Restored the exact Task150-pinned homepage projection after separating the current registry-derived full map; published SVG SHA-256 remains a6261459164c2f1f8e0be289149197f81e7da4ae346db99b4c67e9dda6ce7c4b."
+    },
+    {
+      "surface": "docs/architecture/interactive-system-map.md",
+      "decision": "CHANGE",
+      "reason": "Documents the distinct Task150 homepage pair and current registry-derived full-map SVG, with generator and evidence boundaries."
+    },
+    {
+      "surface": "tools/generate_interactive_system_map.py",
+      "decision": "CHANGE",
+      "reason": "Generator writes the registry-derived full map to ignition-system-map.svg and checks the fixed homepage SVG/HTML pair independently."
+    },
+    {
+      "surface": "tools/validate_system_map_geometry.py",
+      "decision": "CHANGE",
+      "reason": "Geometry validation now names the registry-derived full-map SVG path; geometry report refreshed for the 115-node, 95-edge map."
+    },
+    {
+      "surface": "data/architecture/system-map-geometry-quality-r1.json",
+      "decision": "CHANGE",
+      "reason": "Deterministic geometry report regenerated; PASS at height=3044, blank-area reduction=0.8866906475, crossings=176, mobile viewports=2."
+    },
+    {
+      "surface": "tools/governance/validate_human_surface_contract.py",
+      "decision": "CHANGE",
+      "reason": "Human-surface contract validates the current full-map artifact while separately checking the Task150 homepage projection."
+    },
+    {
+      "surface": "tools/governance/validate_human_visibility.py",
+      "decision": "CHANGE",
+      "reason": "Repository full-map SVG is allowed as a current surface; retired Pages routes and deployment assets remain prohibited."
+    },
+    {
+      "surface": "tools/governance/build_knowledge_experience.py",
+      "decision": "CHANGE",
+      "reason": "Removed legacy rewrite that redirected a valid current full-map link to the distinct homepage projection."
+    },
+    {
+      "surface": "data/architecture/current-facts.json",
+      "decision": "CHANGE",
+      "reason": "Current facts regenerated from the updated component, topology, and layout authorities."
+    },
+    {
+      "surface": "docs/architecture/current-facts.md",
+      "decision": "CHANGE",
+      "reason": "Generated current-facts prose refreshed from canonical registries and the current layout version."
+    },
+    {
+      "surface": "data/governance/human-surface/materiality-manifest.json",
+      "decision": "CHANGE",
+      "reason": "Human-surface source fingerprints refreshed after the project-current-state summary update."
+    },
+    {
+      "surface": "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+      "decision": "CHANGE",
+      "reason": "Regenerated source fingerprint for the updated project-current-state summary."
+    },
+    {
+      "surface": "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+      "decision": "CHANGE",
+      "reason": "Regenerated source fingerprint for the updated project-current-state summary."
+    },
+    {
+      "surface": "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md",
+      "decision": "CHANGE",
+      "reason": "Regenerated source fingerprint for the updated project-current-state summary."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/asset-cards.jsonl",
+      "decision": "CHANGE",
+      "reason": "Knowledge Experience cards regenerated through the official builder after recognizing the separate current full-map link and updated summary provenance."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/layered-reading.jsonl",
+      "decision": "CHANGE",
+      "reason": "Layered-reading outputs regenerated through the official Knowledge Experience builder."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/search-index.jsonl",
+      "decision": "CHANGE",
+      "reason": "Search index regenerated through the official Knowledge Experience builder."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/manifest.json",
+      "decision": "CHANGE",
+      "reason": "Knowledge Experience manifest regenerated from canonical sources and current human-surface fingerprints."
+    },
+    {
+      "surface": "KNOWLEDGE/reading-layers/part-011.md",
+      "decision": "CHANGE",
+      "reason": "Human reading-layer shard regenerated from the current Knowledge Experience projection."
+    },
+    {
+      "surface": "data/foundation/repository-path-classification/classification-manifest.jsonl",
+      "decision": "CHANGE",
+      "reason": "Repository-path classification manifest regenerated from the 5411-file live tree; all 10 checks pass and no path is unresolved."
+    }
+  ],
+  "changed_surfaces": [
+    "docs/project-current-state.md",
+    "data/operations/project-components.json",
+    "data/operations/change-propagation-topology.json",
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "docs/generated/ignition-system-map.svg",
+    "data/operations/component-execution-profiles.json",
+    "tools/validate_human_front_door.py",
+    ".github/workflows/foundation-validation.yml",
+    "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+    "docs/generated/ignition-system-architecture.svg",
+    "docs/architecture/interactive-system-map.md",
+    "tools/generate_interactive_system_map.py",
+    "tools/validate_system_map_geometry.py",
+    "data/architecture/system-map-geometry-quality-r1.json",
+    "tools/governance/validate_human_surface_contract.py",
+    "tools/governance/validate_human_visibility.py",
+    "tools/governance/build_knowledge_experience.py",
+    "data/architecture/current-facts.json",
+    "docs/architecture/current-facts.md",
+    "data/governance/human-surface/materiality-manifest.json",
+    "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+    "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+    "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md",
+    "data/governance/knowledge-experience/asset-cards.jsonl",
+    "data/governance/knowledge-experience/layered-reading.jsonl",
+    "data/governance/knowledge-experience/search-index.jsonl",
+    "data/governance/knowledge-experience/manifest.json",
+    "KNOWLEDGE/reading-layers/part-011.md",
+    "data/foundation/repository-path-classification/classification-manifest.jsonl"
+  ],
+  "validation": {
+    "local": [
+      {
+        "name": "arr_r1_scaffold_sync",
+        "status": "PASS",
+        "evidence": "repo-native checks pass: 149 focused pytest cases plus 42 subtests; system map has 115 nodes/95 typed edges at SHA-256 2bc5f48af6b08d17b120213c1ab6ee09deea4361eb25265b47f7e32fd229a3f8; geometry PASS (height=3044, blank-area reduction=0.8866906475, crossings=176, both mobile viewports fit); Task150 homepage SVG SHA-256 a6261459164c2f1f8e0be289149197f81e7da4ae346db99b4c67e9dda6ce7c4b and paired HTML SHA-256 da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45 remain byte-pinned; path classification covers 5411 paths with zero unresolved; human-surface contract, visibility, and front-door checks pass."
+      }
+    ],
+    "remote": [],
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    }
+  },
+  "rollback_strategy": "ARR R1 scaffold surfaces are additive registry/map/CI synchronization; rollback is a revert of commit 5, after which the arr/arr_runtime components and their map node are removed and the remaining runtime/test artifacts remain inert (adapter-only, no second executor).",
+  "remaining_limitations": [
+    "commit-2 polish items a-d are documented known limitations, not applied (exactly-5-commit rule)",
+    "commit-4 NB-1 (_apply_anti_overstep bindings param unused) and NB-2 (eng.run mutates caller input in place) are documented known limitations, runtime.py unchanged",
+    "arr is a candidate derived representation; it does not establish real-world truth, causality or an execution engine"
+  ],
+  "receipt_location": "agent-results/adaptive-relational-runtime-r1-scaffold-receipt.md"
+}

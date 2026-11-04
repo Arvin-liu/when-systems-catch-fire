@@ -128,7 +128,6 @@ _HUMAN_SURFACE_REPLACEMENTS = (
     ("统一案例总表", "历史案例来源"),
     ("docs/human/nonfunction-claims/", "docs/human/nonfunction-assets/"),
     ("ignition-overall-architecture.svg", "ignition-system-architecture.svg"),
-    ("ignition-system-map.svg", "ignition-system-architecture.svg"),
 )
 
 _LEGACY_HUMAN_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]*(?:统一函数总表|统一案例总表|已迁移的历史函数来源|已迁移的历史案例来源|docs/human/nonfunction-claims)/[^)]*)\)")

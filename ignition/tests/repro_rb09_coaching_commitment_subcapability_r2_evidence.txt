@@ -1,0 +1,5 @@
+=== R0 RB09-CALLER-ASSERTED-SEMANTICS reproduction (authentic r2 engine) :: coaching_commitment_subcapability ===
+r2_engine_commit=7532b4b34cf841c09faab8c835c5fc7f896d30d8
+gate=tools/coaching/validate_coaching_commitment_subcapability_gate.py exit=0
+stdout={"boundary": "repository candidate only; no external action or truth-layer upgrade", "errors": [], "exit_code": 0, "exit_name": "GATE_PASS", "gate": "coaching_commitment_subcapability"}
+DEFECT REPRODUCED: r2 engine returned GATE_PASS (exit 0) for a schema-valid but SEMANTICALLY-FALSE bundle (record values contradict the rules; the engine only verified evidence registration/reference and trusted the caller-asserted PASS). RB09-CALLER-ASSERTED-SEMANTICS not closed in r2.

@@ -144,7 +144,6 @@ def validate() -> dict:
         "pages/system-map.html",
         "pages/generated/ignition-system-map.svg",
         "docs/generated/ignition-overall-architecture.svg",
-        "docs/generated/ignition-system-map.svg",
         "human.pages_source",
         "external.pages_homepage",
         "pages_pipeline",

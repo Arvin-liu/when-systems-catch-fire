@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 680 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 826 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -194,11 +194,123 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/agent/121Q35-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-18563AF79A634279`
+- 关联断言：['NFC-49687b0dd8488215', 'NFC-7dbae85775acd535', 'NFC-e6d562d388c317e9']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/agent/q35-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-5F87F3896E7F57E4`
+- 关联断言：['NFC-3ccd6f650dd2f3fb', 'NFC-515577d1b6dd76f2', 'NFC-a59e10cb9a1f1ef4']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/agent/q36-intervention-interface.md`
+
+- 状态：`ADDED`
+- Delta：`CD-425AAB97DE31C588`
+- 关联断言：['NFC-5eaa540e94811b12', 'NFC-87e4e0b495b8aed5', 'NFC-8e103df5b4fc94ba', 'NFC-b7202f60612ececc', 'NFC-e9b1bbf726417261', 'NFC-ef35093872279397']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/agent/responsibility-authority-action-trace-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9AE53865D397F79D`
+- 关联断言：['NFC-117f31f1855387bd', 'NFC-1e4c87af254ab495', 'NFC-2a4f2adb680ae6db', 'NFC-369c9a11f9e445b2', 'NFC-77829ed9d8724323', 'NFC-8555bbd6be8dd9cf', 'NFC-90abe64c2b945200', 'NFC-9febfa8399c09653', 'NFC-c612b71aefb2a63f', 'NFC-ef019d217bc144ba', 'NFC-f0ccc3a4a671aff7']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/agent/responsibility-authority-action-trace.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D5295CAE325D67EC`
+- 关联断言：['NFC-0929d57dbedfc1d6', 'NFC-27738f7ae97c677f', 'NFC-783c0e812d5b04c9', 'NFC-7dc4129f1a737756', 'NFC-c222e4e628112ed8', 'NFC-d56b18a0a3bd1945']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/ai-assistant-usage-reference.md`
 
 - 状态：`ADDED`
 - Delta：`CD-DD1BA0E41F07DAAF`
 - 关联断言：['NFC-01fe6358309b5b65', 'NFC-0c8e46e707629540', 'NFC-14ae46e37cb052af', 'NFC-21ab489d59709265', 'NFC-2a9c86cace49e86c', 'NFC-2edb70ce45a42f26', 'NFC-3fb62e98814a9522', 'NFC-3fed2d9c04fe7263', 'NFC-451e74da718b357f', 'NFC-52979cd1921cdaa7', 'NFC-5cc5742029c91e56', 'NFC-65171e26d0757391', 'NFC-768d7684595c166d', 'NFC-8149a2323aa98ff1', 'NFC-98e4b06ff7d1d337', 'NFC-9fc223a2bdf5b9e7', 'NFC-a5dc5872eb254bf2', 'NFC-afc54bb019912eed', 'NFC-b2b9b7683ac55348', 'NFC-b59825cc5bd04797']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/analogy/121Q37-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C840FCCC563427F7`
+- 关联断言：['NFC-1c87d9ab8af36a8e', 'NFC-1d10caf7be2c2493', 'NFC-77f0796d90e84f29', 'NFC-f95c8499ce666370']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/analogy/q37-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-385C7EF0EB7FD008`
+- 关联断言：['NFC-0060a3c868e46d69', 'NFC-0378fde556e4868d', 'NFC-03e7a5632a80cb9e', 'NFC-07ace01e40ccf748', 'NFC-18314b955cdcceb4', 'NFC-235f08afa363abe7', 'NFC-24708def27dc68e5', 'NFC-26933e46a13a134a', 'NFC-3c34c9bbd868cea7', 'NFC-426bb6ee56e6eeeb', 'NFC-4559dcd23796ccc4', 'NFC-4ff345cca9c95da7', 'NFC-607ec5e8b44c2471', 'NFC-7ec522036e9218e0', 'NFC-885e42dadc95089a', 'NFC-8a0dc89c03367d63', 'NFC-90dda878b7c43fa3', 'NFC-9a807c889e35b769', 'NFC-afd1a751af5e46b0', 'NFC-b167e1922dc8248d']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/analogy/q37-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C5800DB129E4127C`
+- 关联断言：['NFC-142163ec00aadfe0', 'NFC-1c2acbd207f5d698', 'NFC-1da15ec0ad8d6c39', 'NFC-1e654076f061f2a7', 'NFC-1fcab234b3671474', 'NFC-252fe7183eaa885a', 'NFC-28a4dcb2f58d79d8', 'NFC-368e583e57ec194b', 'NFC-3b2f39c38b2a068c', 'NFC-424b46e2e7fb81d2', 'NFC-43c63c0ed4c16b60', 'NFC-4cf4017b26fe4905', 'NFC-555b715a7838f765', 'NFC-969e76ce6dc9947b', 'NFC-97f916e902ef22fb', 'NFC-98400347c9f44f67', 'NFC-9e2e6550e1b231f4', 'NFC-a3785856da421060', 'NFC-b243a79c27b165a3', 'NFC-c40b66095fe44386']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/analogy/q37-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-B0B07031E35951B0`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/anomaly/q41-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D730FDDE4830C4E6`
+- 关联断言：['NFC-130c33e5427380cc', 'NFC-4754fcafeaf52dfd', 'NFC-58cc704641277b0f', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/anomaly/q41-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-7344ACC586187EA6`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/anomaly/q41-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2AEDDF189D71035E`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-8eec79b56e9d594d', 'NFC-8f88e6936c84679b', 'NFC-eee74ad007d53ef9', 'NFC-f9454fb1c6d321dc']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/anomaly/q41-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8DA1880E167154BC`
+- 关联断言：['NFC-0c96f4f627d26d79', 'NFC-2b228e0e5a7d63b0', 'NFC-58427b88a5722855', 'NFC-5bcb4ab9a48aa761', 'NFC-6b34afb6bfbfefaf', 'NFC-7d7f2caf862feacc', 'NFC-8024534430819ca2', 'NFC-9feece4039def182', 'NFC-aa8a627b57095c48', 'NFC-aefe648f90fb1ca6', 'NFC-d3ab474d7cd5d854', 'NFC-dd81920e26fd2b21', 'NFC-e78ea9e167f5bda2', 'NFC-faf0a9fc16371f98']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/anomaly/q41-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-F44B0332AFD50241`
+- 关联断言：['NFC-0138bc1479a341e4', 'NFC-0d93d7ac4cf31dfc', 'NFC-2207fda3e175e716', 'NFC-2b0f4d526f1717a5', 'NFC-2f115b5506686c75', 'NFC-4907641e93307c9f', 'NFC-4d2b7fc4765febdb', 'NFC-517db2de8fa94db6', 'NFC-53653c7dd7583a13', 'NFC-5810b09e62707203', 'NFC-759ba8f87d88caa1', 'NFC-78ae61a422d278f2', 'NFC-81b6b879dbc08e56', 'NFC-84054e8cb15eb8e2', 'NFC-8a7d2b9100a769ef', 'NFC-9ec91e636bd124c8', 'NFC-a86831a93b1f64d1', 'NFC-af9ef8435321ff44', 'NFC-b322a41c345e0495', 'NFC-b9ef5bd8a53aa46f']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -215,6 +327,38 @@
 - 状态：`ADDED`
 - Delta：`CD-D1DE2BD2A70DC6C1`
 - 关联断言：['NFC-0bf7edb9d825261f', 'NFC-12c786c7ae9031aa', 'NFC-15817de8b7893cff', 'NFC-278a6bee18dc5aa4', 'NFC-4e5434362bce837a', 'NFC-53f9e0e81fd1737e', 'NFC-56df233408ad2e91', 'NFC-5bf8034f285367b7', 'NFC-65a687980e16b646', 'NFC-6a0622cad4238578', 'NFC-727874bbde48f6c4', 'NFC-7b1ab63aecbf4b2a', 'NFC-7d87cc56bd503414', 'NFC-803ef5471855b592', 'NFC-829434d888d326e2', 'NFC-96ceaa198ff2738d', 'NFC-9795099f6d93a36c', 'NFC-dec35c3a92bbde6f', 'NFC-e52781d9aab82747', 'NFC-f09dbab70f731738']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/adaptive-relational-runtime-adrs.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0D6BB2101F76490D`
+- 关联断言：['NFC-1b10a6145062103f', 'NFC-1badb6764db72f89', 'NFC-465f715faebf512e', 'NFC-5e677fae348399f0', 'NFC-6a659698c20428e8', 'NFC-8d47336e80a3b8a1', 'NFC-91b2617d8b6a1b10', 'NFC-94466bc1b8c4be20', 'NFC-97996344ea07eddb', 'NFC-ab57b7bde4204b11', 'NFC-af5c2777b87983e7', 'NFC-b18dfe8b47dbd401', 'NFC-b45856420b2ad55b', 'NFC-b5df2afb67ad3ea5', 'NFC-d50202a932f35f3a', 'NFC-d6d67c21f6833883']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/adaptive-relational-runtime-interop.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A941457F5102ED89`
+- 关联断言：['NFC-0a3b1816dbecccc2', 'NFC-1fda687728b412a9', 'NFC-24178a9d524839c1', 'NFC-2d226b3964e66e9f', 'NFC-2d8fcbe7f0e92d66', 'NFC-30bce6fe7367f703', 'NFC-3ba99c030a55dc6d', 'NFC-3f45cd1625a3bf43', 'NFC-423dd21c9395e08b', 'NFC-4cef9e8f6a3a4b8d', 'NFC-56d5b341320f20d3', 'NFC-6382822f058fd04d', 'NFC-6a9e37956e39819b', 'NFC-764f2b0d79021b59', 'NFC-77d57bcd97fab00d', 'NFC-96685855270f9baa', 'NFC-9e3ed06c5143a732', 'NFC-a0e365dfcf8b9a3c', 'NFC-a1bcffdb378dc31b', 'NFC-a2878c7fc659365b']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
+
+- 状态：`ADDED`
+- Delta：`CD-DD37A2DBBF9FB489`
+- 关联断言：['NFC-1462153d3b77cd7c', 'NFC-338459d543549328', 'NFC-3aa0c00dcee00717', 'NFC-45b2e9d762bb1ec7', 'NFC-4afe3ad9efc825de', 'NFC-4b987088eb8aefa5', 'NFC-67ff53aa9049917d', 'NFC-6d76582546efb2ca', 'NFC-6ff6f8442af2b625', 'NFC-76e8a59a10593994', 'NFC-8ac87f2b00a6a4ee', 'NFC-98cec16d856c44a9', 'NFC-9c6c418a2dc982ad', 'NFC-cb1c6b788b58c776', 'NFC-d55888ee8d3fc2f2', 'NFC-f221717797f912ed']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/adaptive-relational-runtime.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E2706F26C12E2DFF`
+- 关联断言：['NFC-044d891d8ea6f059', 'NFC-0df9d2728d5de909', 'NFC-103cd036011f3cd5', 'NFC-135d8b4f981184ac', 'NFC-15d2c05dc1d64e34', 'NFC-20576c814480c086', 'NFC-27d16eb88776c88b', 'NFC-36530a595ebe9cbc', 'NFC-396b3bb16ec9cc73', 'NFC-3e15a7f412993d6a', 'NFC-4203a45d19a815c2', 'NFC-5e9c3c039ac20e9b', 'NFC-5f8eeb8c3934ffd1', 'NFC-5faa3c5d0b1d7e13', 'NFC-69cab8c9c83f58cc', 'NFC-7c2fdef6037797ed', 'NFC-7db160ae1f1713d9', 'NFC-7e17269cbbf0f8a3', 'NFC-8d435d0cc4a83adc', 'NFC-8ebde3cb12942cf3']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -422,7 +566,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-DAF1CB45CCD7B5B6`
-- 关联断言：['NFC-03eeff9afac685a9', 'NFC-18f53f50c175792e', 'NFC-1cfa681ddbdef9ef', 'NFC-2123c6f21ee242af', 'NFC-2b361754a47ba621', 'NFC-2c731043f91f9ec6', 'NFC-3aaad055dd6ae1b8', 'NFC-3ea29b50333c842a', 'NFC-4b72c57328cc62b8', 'NFC-4f9ef989426a16e1', 'NFC-6045399c02a63d8c', 'NFC-636c12c26bc0f5fa', 'NFC-7d9e218be01d45cd', 'NFC-8bd1c2352cc442c4', 'NFC-a9d6376815eab15a', 'NFC-c50702a11635014f', 'NFC-caaecba556a3eba0', 'NFC-ce70b768103eb284', 'NFC-d3ad062793783315', 'NFC-d7097c783bbf69a0']（仅显示前 20 项）
+- 关联断言：['NFC-03eeff9afac685a9', 'NFC-1cfa681ddbdef9ef', 'NFC-1dadcece17c2f219', 'NFC-2123c6f21ee242af', 'NFC-2b361754a47ba621', 'NFC-2c731043f91f9ec6', 'NFC-3aaad055dd6ae1b8', 'NFC-3ea29b50333c842a', 'NFC-4b72c57328cc62b8', 'NFC-4f9ef989426a16e1', 'NFC-6045399c02a63d8c', 'NFC-636c12c26bc0f5fa', 'NFC-79fd745ef86393b7', 'NFC-7d9e218be01d45cd', 'NFC-8bd1c2352cc442c4', 'NFC-a9d6376815eab15a', 'NFC-c50702a11635014f', 'NFC-caaecba556a3eba0', 'NFC-ce70b768103eb284', 'NFC-d3ad062793783315']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -463,6 +607,14 @@
 - 状态：`ADDED`
 - Delta：`CD-1EE77928279485FA`
 - 关联断言：['NFC-0c88200a1db124d7', 'NFC-0e73682d381aae96', 'NFC-10fd3acc75e4b626', 'NFC-152008720d3bbbf3', 'NFC-2348fb7d4233bc44', 'NFC-2bc7975bbf9bdd98', 'NFC-2d2dbff35035b39b', 'NFC-36e049226d919413', 'NFC-3b25fb3b138f241f', 'NFC-47b201ff5377fb11', 'NFC-4f78e846f0b64104', 'NFC-51ce8beffd8e000b', 'NFC-545c3ec17f44bc98', 'NFC-61fc41dc694914cc', 'NFC-67a3fe9c01dd27fd', 'NFC-681a827c2765d5e5', 'NFC-6cce37ecda487b05', 'NFC-7687f7f46e82132c', 'NFC-76f82f25ad972594', 'NFC-7925cb81a997020e']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/object-relation-mechanism-model.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C7EC97DB8410BE92`
+- 关联断言：['NFC-050f1729f2b78df9', 'NFC-151675ddc5e86856', 'NFC-1da34907d71386ee', 'NFC-1de653478c1e4c15', 'NFC-2da5f9fe4494cecf', 'NFC-5680e3291d3ce443', 'NFC-5df38c0d411d40c7', 'NFC-636bf6ac25955027', 'NFC-76d758865a66049b', 'NFC-78a5e1783df0af17', 'NFC-809c0ca269d34a18', 'NFC-816d5b5a932ddd16', 'NFC-887d51a73f80291d', 'NFC-88bf6657c9152797', 'NFC-8daf0a05e92cfbe0', 'NFC-8dbe2df93849e977', 'NFC-8deb2b148943524a', 'NFC-94249b615471b0e2', 'NFC-95c685df815e249f', 'NFC-9e5ad387a3c4c4ed']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -522,6 +674,14 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/architecture/self-growth-control-plane.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AE8C355AE1B5F510`
+- 关联断言：['NFC-067b760d7362010c', 'NFC-0fd73b89cc8a8949', 'NFC-1411a0586d2a1148', 'NFC-157251ec3bc0c401', 'NFC-2031cef171c45427', 'NFC-26bd5cfc052458af', 'NFC-291a639036913956', 'NFC-2c9c7275b4851002', 'NFC-36934044b2f2b075', 'NFC-37f7347f12e2f401', 'NFC-4cd60ae9e9cbc3e4', 'NFC-59984608e9ad4510', 'NFC-5c1973ac25fc16cf', 'NFC-64e047c34e4ee7f6', 'NFC-66369b97e9bcdecf', 'NFC-7381c8ea28557d08', 'NFC-77a34a9db7c2df49', 'NFC-8e7fa14b916a0284', 'NFC-90bae3a367202c2c', 'NFC-9280dfe14765b9d4']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/architecture/soft-context-exposure-contract-r0.md`
 
 - 状态：`ADDED`
@@ -578,6 +738,126 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/coaching/q44-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-05C484CEE4E8D22C`
+- 关联断言：['NFC-4754fcafeaf52dfd', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/coaching/q44-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-168E1E24A80CDCA8`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/coaching/q44-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C497B2038428B239`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-3fce1fd8ec4e82d1', 'NFC-802e4a6263a02137', 'NFC-8f88e6936c84679b']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/coaching/q44-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-099B7EE56F51E3C9`
+- 关联断言：['NFC-16226aea4836e883', 'NFC-27c0267dfaf8ee39', 'NFC-2b77e1a36f748072', 'NFC-3265e7b93fcc8a24', 'NFC-3df5ce95e221ff22', 'NFC-4f33740814d3db65', 'NFC-5877b994fabeeea1', 'NFC-66328b037cefcae7', 'NFC-69af519e59434b6d', 'NFC-6f4a15079646e7a6', 'NFC-6f96acc28bb21fda', 'NFC-7513a9112a7a9926', 'NFC-7e75b2b17bf119b0', 'NFC-8005f0af906d40a4', 'NFC-80481b8b905cd25c', 'NFC-8c9c44d5959505df', 'NFC-95fd3462d8de723b', 'NFC-9d587ec172ad8247', 'NFC-a3b732573aaddf17', 'NFC-afcf74bba52b4f93']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/coaching/q44-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CB20BBD582F7C004`
+- 关联断言：['NFC-034d7409c2c48189', 'NFC-148fe08a6c1c6ac7', 'NFC-3566df11e9a5fb06', 'NFC-3dbf1aecd9365f3d', 'NFC-42cb6b99ab9ea3cf', 'NFC-5322c2b10575b5c9', 'NFC-6c33048422ffb1d5', 'NFC-71869fdaa3ef5fdf', 'NFC-81f9afbf733958d2', 'NFC-82d4981d063d3a42', 'NFC-b78ad14899e12517', 'NFC-ed98065d20ee622a']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/context_protocol/scientific-context-protocol-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-949C5089B6146210`
+- 关联断言：['NFC-17a7b14b1555bfbb', 'NFC-2c74e3541320e23f', 'NFC-4754fcafeaf52dfd', 'NFC-5f331b43e698bc87', 'NFC-80df5b7fdece990d', 'NFC-8919c0c344e1b663', 'NFC-a9967ffe26db16e5', 'NFC-d3c75f1693cbe0f2', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/context_protocol/scientific-context-protocol-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-B7FB9FE0C8BCDA2D`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/context_protocol/scientific-context-protocol-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EC039C20E23DE92D`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-67fde831aba2b05f', 'NFC-77942e841e7348cd', 'NFC-8f88e6936c84679b', 'NFC-b92a92f1d81b05be']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/context_protocol/scientific-context-protocol-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6A4D2887A7EB1961`
+- 关联断言：['NFC-18e428a96229cc4d', 'NFC-36fb7ef9473f4da1', 'NFC-635722f455b4108d', 'NFC-6e16afab8e608428', 'NFC-74ce67916c4eb9aa', 'NFC-92959feb1e272b12', 'NFC-a28793fff7cb0750', 'NFC-a2d1b8b7f65b7663', 'NFC-b0d8a55721185fff', 'NFC-b3df825697d8cf87', 'NFC-c860204841c5f074', 'NFC-d273c48718f709c9', 'NFC-de9e1e322335de93', 'NFC-f0b840b552dc0b36']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/context_protocol/scientific-context-protocol-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FFC5E5B284FF2025`
+- 关联断言：['NFC-0a6af4179e7c51c5', 'NFC-0d93d7ac4cf31dfc', 'NFC-0ebbfbf1ef8b06ec', 'NFC-149915ceb456f20a', 'NFC-2207fda3e175e716', 'NFC-29b2a41f1bd99763', 'NFC-2f115b5506686c75', 'NFC-35570ed30d874542', 'NFC-4aae61abd12d156b', 'NFC-4be6055fdcda9729', 'NFC-4d2b7fc4765febdb', 'NFC-53653c7dd7583a13', 'NFC-6e9f165979d2e197', 'NFC-78ae61a422d278f2', 'NFC-7d3760dc50f61b3f', 'NFC-81b6b879dbc08e56', 'NFC-83bc4cde9f074e6f', 'NFC-9ec91e636bd124c8', 'NFC-af9ef8435321ff44', 'NFC-b322a41c345e0495']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/counterfactual/q42-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6A86E018E9F7C548`
+- 关联断言：['NFC-074e591cbdefc7e8', 'NFC-161263ec94026776', 'NFC-236ad99366ed4d91', 'NFC-249e79ed0c5ad041', 'NFC-4754fcafeaf52dfd', 'NFC-a766291e640cee15', 'NFC-ace68c445c0fcea9', 'NFC-dd3f91f4393805e5', 'NFC-ee8250fb76e094b3', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/counterfactual/q42-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-82446BADB07475ED`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/counterfactual/q42-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FFC89B81E4AB94BC`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-8f015d4cb44547d9', 'NFC-8f88e6936c84679b', 'NFC-9645bf41286b6154', 'NFC-aafd6fbeba171c02']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/counterfactual/q42-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-59EA86D972025DEE`
+- 关联断言：['NFC-1217a4464dd8ab14', 'NFC-1a809b86bfb6dc43', 'NFC-1df34729d08bc496', 'NFC-2a2de223efd5a69a', 'NFC-3df5ce95e221ff22', 'NFC-44a56059908b3571', 'NFC-4f33740814d3db65', 'NFC-52252bd7f9c7cd5f', 'NFC-566bec7528bc16fe', 'NFC-5877b994fabeeea1', 'NFC-60d77daea3193dd9', 'NFC-6384bd5b9ef0f79c', 'NFC-67015ddc1a30f0d0', 'NFC-6f4a15079646e7a6', 'NFC-6f96acc28bb21fda', 'NFC-6fded3e713c81926', 'NFC-7020b44db24ad30e', 'NFC-7513a9112a7a9926', 'NFC-7e75b2b17bf119b0', 'NFC-83be1bb5775102a3']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/counterfactual/q42-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0B7BB83C2970454C`
+- 关联断言：['NFC-0138bc1479a341e4', 'NFC-0d93d7ac4cf31dfc', 'NFC-0dd08f02c5b1d0dd', 'NFC-2207fda3e175e716', 'NFC-2f115b5506686c75', 'NFC-34465d49f86a0127', 'NFC-35bc1360f104c39d', 'NFC-44680397186b213f', 'NFC-4d2b7fc4765febdb', 'NFC-517db2de8fa94db6', 'NFC-52252bd7f9c7cd5f', 'NFC-53653c7dd7583a13', 'NFC-759ba8f87d88caa1', 'NFC-78ae61a422d278f2', 'NFC-81b6b879dbc08e56', 'NFC-84054e8cb15eb8e2', 'NFC-9ec91e636bd124c8', 'NFC-af9ef8435321ff44', 'NFC-b322a41c345e0495', 'NFC-b5b6a5ea6746588f']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/data_integration.md`
 
 - 状态：`ADDED`
@@ -586,11 +866,83 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/decision/DECISION-INTEGRITY-I1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A22FA07C1A055140`
+- 关联断言：['NFC-0d93d7ac4cf31dfc', 'NFC-1590a7c44f26559a', 'NFC-2ac2227ffd6190fc', 'NFC-357ec786d9c58aba', 'NFC-62d98a9ce809444d', 'NFC-65696e2ce1f6f2e4', 'NFC-78ae61a422d278f2', 'NFC-7c722028ee1a199c', 'NFC-8129efa7ad6f7417', 'NFC-af9ef8435321ff44', 'NFC-b4c77762195029c1', 'NFC-bb92aabdec2166f4', 'NFC-c871f5b11cf782eb', 'NFC-c8ab3c4e837be818', 'NFC-e02ef776c3b31ed7', 'NFC-f77789a0da49f2c5', 'NFC-f78bda1e627b79bd']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/decision/DECISION-INTEGRITY-I1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-25ADFD2A6FC2CFCF`
+- 关联断言：['NFC-0d93d7ac4cf31dfc', 'NFC-2207fda3e175e716', 'NFC-357ec786d9c58aba', 'NFC-4c61e72b8721d769', 'NFC-4d2b7fc4765febdb', 'NFC-78ae61a422d278f2', 'NFC-92697982cbed9a50', 'NFC-99eeb32f7dd110f8', 'NFC-9f98a5b0878bb1a0', 'NFC-af9ef8435321ff44', 'NFC-b322a41c345e0495', 'NFC-b4c77762195029c1', 'NFC-bdccae18c14f6587', 'NFC-c31a1d6fe8fc88d5', 'NFC-cf129b5dffba71fb', 'NFC-dbd7964208416169', 'NFC-f77789a0da49f2c5']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/decision/decision-integrity-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A42CA7F5CF545BB4`
+- 关联断言：['NFC-0696cb11d79c5b85', 'NFC-1ad1954fac5552e7', 'NFC-21a86f90bdc2d70f', 'NFC-22762684e67a431d', 'NFC-4754fcafeaf52dfd', 'NFC-56508949b3dcc5f5', 'NFC-5acb42b43f038258', 'NFC-7856f3cb737440f1', 'NFC-c4d4aad81c3e22a7', 'NFC-ea427c661513465a', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/decision/decision-integrity-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-0931C4725D50E625`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/decision/decision-integrity-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-147943A6E8B66751`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-0cb75f7f4e2d623b', 'NFC-169ab92e9a0c22d3', 'NFC-8f88e6936c84679b', 'NFC-9c13c669064565f2']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/discipline_kernel_pilot.md`
 
 - 状态：`ADDED`
 - Delta：`CD-68B1B8069202E8BB`
 - 关联断言：['NFC-01e69c91ff1a853e', 'NFC-141b3da4dd7ebf4c', 'NFC-23086e803b0d4a48', 'NFC-248a13fbc388fc57', 'NFC-47dc4afcba20ff44', 'NFC-49d8945ccf91f875', 'NFC-70a1ec2c42864627', 'NFC-7892ec6e675bd8e2', 'NFC-831298eadea223e4', 'NFC-87668345c50db829', 'NFC-932f55c6a1a72d84', 'NFC-a0ee0c7c6d4237ff', 'NFC-b1d0abc85739bb64', 'NFC-b32c4e686c7d61fb', 'NFC-d42d5de048f49247', 'NFC-d622606e20e17fff', 'NFC-db38ebda18875c2a', 'NFC-ef2bb7ae38431ee1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/discovery/121Q34-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-125D003CCAD52BFD`
+- 关联断言：['NFC-25bf4760acaab1ff', 'NFC-385553873eb5f2b0', 'NFC-49687b0dd8488215', 'NFC-61c904045312bcd9', 'NFC-7725774af4a8df6c', 'NFC-8573fae89c229ea2', 'NFC-ad668ababbd41334', 'NFC-ca6b75e56a07f3f9', 'NFC-e2f3e1d8c306128d']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/discovery/discovery-commitment-boundary-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FB2827C4881B4410`
+- 关联断言：['NFC-041b6fb51cac0041', 'NFC-16f2ff92b98fd3ca', 'NFC-50e462a631b01256', 'NFC-5b41b4c9569bfd9d', 'NFC-5c2645e012f10593', 'NFC-7ebb9ee688912f38', 'NFC-7f9e8515d4de87a2', 'NFC-9d029955d28a7cf1', 'NFC-a5bca974af64499b', 'NFC-c0677d56af5b19ec', 'NFC-c6a04c84c9e3e4ac']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/discovery/discovery-commitment-boundary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-78C3A86CB212821F`
+- 关联断言：['NFC-30dbeb0275722a6c', 'NFC-3700635d68b93507', 'NFC-39ac4c4905d0a8a4', 'NFC-41c08f4a7bdd9f7f', 'NFC-43c700cb9ee297e1', 'NFC-6050dc1192235c36', 'NFC-665f86933b565263', 'NFC-6c765c955812d5cd', 'NFC-7a7b62f0af8de699', 'NFC-8e892a7d3b218161', 'NFC-9d0b74041b3a3e73', 'NFC-9de1ffa458cad4d4', 'NFC-b334b5f4812fb96d', 'NFC-b5270adfc3cfb2d1', 'NFC-b95f1f8f963003bc', 'NFC-c729da7acca0e1e7', 'NFC-cba7a50e2d6e10c7', 'NFC-d69799823caaed14', 'NFC-e9c54fb843f98f76', 'NFC-f96fd318f30bd359']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/discovery/q34-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-CCA056ED7E58AFF9`
+- 关联断言：['NFC-13933a92c263f2d6', 'NFC-6df0d08a42921469', 'NFC-6ed9bc8cb4407541', 'NFC-701827a3532ce9ac']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -738,6 +1090,46 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/escalation/q43-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BAB2C5954243A038`
+- 关联断言：['NFC-4754fcafeaf52dfd', 'NFC-47a97eb07f32afd6', 'NFC-7b7c7e622bb526b4', 'NFC-b1ab00a39db4209a', 'NFC-bf8a78e4f2bed14b', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/escalation/q43-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-BB1E1B5406A1E4C0`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/escalation/q43-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FB4F5B929F57E6A5`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-1d585ab6f3260ef1', 'NFC-5c22f50fe4146e28', 'NFC-8f88e6936c84679b', 'NFC-f804693511648959']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/escalation/q43-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8E458F7412CA7CCE`
+- 关联断言：['NFC-3df5ce95e221ff22', 'NFC-46bf466cffb09519', 'NFC-4f33740814d3db65', 'NFC-5877b994fabeeea1', 'NFC-664da1858ae28e5b', 'NFC-6e8367eecca89f9e', 'NFC-6f4a15079646e7a6', 'NFC-6f96acc28bb21fda', 'NFC-718b5731a80350f5', 'NFC-7513a9112a7a9926', 'NFC-781a6d1132d757f8', 'NFC-7e75b2b17bf119b0', 'NFC-8c9c44d5959505df', 'NFC-95fd3462d8de723b', 'NFC-9d587ec172ad8247', 'NFC-a3b732573aaddf17', 'NFC-a8faccad2a0dd3b5', 'NFC-ac3454e9e8b066f6', 'NFC-ae457b30c748d29f', 'NFC-afcf74bba52b4f93']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/escalation/q43-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6C42B1659F0EBF1F`
+- 关联断言：['NFC-03d3bba67c477913', 'NFC-0672240b38e22937', 'NFC-0771a5a5159596c8', 'NFC-0d93d7ac4cf31dfc', 'NFC-1c34f88707b55e61', 'NFC-214de68aa927e2b6', 'NFC-2207fda3e175e716', 'NFC-2b9ac3bbee11781e', 'NFC-2bacdba5394c3a58', 'NFC-3a429bdaf08e4191', 'NFC-4d2b7fc4765febdb', 'NFC-6b98a7eb1db535c2', 'NFC-6e8367eecca89f9e', 'NFC-759ba8f87d88caa1', 'NFC-79f92f646310cade', 'NFC-7d5e0a5aa5039dbf', 'NFC-8d6a09dc49c6ce47', 'NFC-931824824b736e7f', 'NFC-96d830cd3fda867a', 'NFC-b322a41c345e0495']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/evidence_regime_library.md`
 
 - 状态：`ADDED`
@@ -767,6 +1159,38 @@
 - 状态：`ADDED`
 - Delta：`CD-56DDAF68420877EC`
 - 关联断言：['NFC-4f7e504a1b9abe46', 'NFC-82613fc146cbf86b', 'NFC-97d5f8e468374870']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/failure/121Q39-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FA5D737A728B4333`
+- 关联断言：['NFC-1c87d9ab8af36a8e', 'NFC-55c791121787f9c3', 'NFC-7d1daaed7850249a']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/failure/q39-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-996865E7DADEAC0E`
+- 关联断言：['NFC-3be6ffe42f22f7fc', 'NFC-47c38cc24ed7bcf7', 'NFC-5492d7cefc43f39c', 'NFC-712f0f6c74155068', 'NFC-8df1b14a268e3dba']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/failure/q39-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B3548ADB60521BD3`
+- 关联断言：['NFC-2ca9a4fb24c0f341', 'NFC-5c67511f58121f21', 'NFC-8a1f9b751c0f05f9', 'NFC-bb9ba7f8b2344510', 'NFC-f8ab40d436bb9546']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/failure/q39-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-5B08DE053D0C1393`
+- 关联断言：['NFC-48f4d8c72e6cbd64', 'NFC-be8dced20eaa8ee7']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -2002,10 +2426,10 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
-## `docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md`
+## `docs/human/nonfunction-assets/entries/nfc-139f14280f9dd160.md`
 
 - 状态：`ADDED`
-- Delta：`CD-0D87D41A687B5858`
+- Delta：`CD-362E4B51F0A40DB5`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
@@ -2114,6 +2538,62 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/ignition-runtime/ARCHITECTURE.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E2DD51201C1AE761`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/ignition-runtime/OPERATION.md`
+
+- 状态：`ADDED`
+- Delta：`CD-7B3B3C7BC96CEFFA`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/intervention/121Q36-INT-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C8372865CCCA6E9F`
+- 关联断言：['NFC-49687b0dd8488215', 'NFC-55a18c8578199535', 'NFC-9a77a14967ea2766', 'NFC-e4f47bc8d5f9d659', 'NFC-fe83f787060c6e63']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/intervention/q36-int-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-973B35BA3452B5BC`
+- 关联断言：['NFC-08e60b0148fe7b67', 'NFC-09df52ef4e5ca33b', 'NFC-146944fcc4d28e1c', 'NFC-1479c4506472b859', 'NFC-15573cf898bfa3e1', 'NFC-1ebc69ed2bb9fd37', 'NFC-2e3a1cb3191218be', 'NFC-37762b88ac2e874f', 'NFC-490a67bffa85f491', 'NFC-4ae39a1af0e79314', 'NFC-63c17089ced543f9', 'NFC-7e8ef760594c6675', 'NFC-a577209307885e9c', 'NFC-a86e2373761812c4', 'NFC-b98fb97575fa5800', 'NFC-eab8f4357face1b3', 'NFC-ed96cfd940b2a88a', 'NFC-f20c76f3e20c9162', 'NFC-f57b9f552e7d9a12']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/intervention/q36-int-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D9710D920C5361BC`
+- 关联断言：['NFC-1479c4506472b859', 'NFC-15573cf898bfa3e1', 'NFC-167f4910eabd8a6f', 'NFC-263600af312aa685', 'NFC-3a0a00cadc8b039c', 'NFC-4ae39a1af0e79314', 'NFC-d4009100a24d7ebf', 'NFC-e7b727a6f6483503', 'NFC-fe32becd1f5996e0']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/intervention/q36-int-typed-contract.md`
+
+- 状态：`ADDED`
+- Delta：`CD-75F602379AEB4DFA`
+- 关联断言：['NFC-018d79e2ddf9e87f', 'NFC-1621309f495d3706', 'NFC-19d43e0269314615', 'NFC-2580ce5ec9913f89', 'NFC-2c38d4c99f7f625c', 'NFC-4040efbc3fe64e59', 'NFC-454a0a0364496d48', 'NFC-58cb89b017a6d4f5', 'NFC-8a1416c997b5b90d', 'NFC-b1b2c514298c1edb', 'NFC-b456ec62aa16c6f9', 'NFC-b77e96e6ac719fc4', 'NFC-c733615bf202e820', 'NFC-c901c1bb33770c4c', 'NFC-e2929fa8a6cb9859', 'NFC-f49a3d818afe89a2', 'NFC-f81e73b23313efdd']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/intervention/q36-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-900319AE7914224A`
+- 关联断言：['NFC-31935ba6d3a626a8']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/language-thought/README.md`
 
 - 状态：`ADDED`
@@ -2215,6 +2695,46 @@
 - 状态：`ADDED`
 - Delta：`CD-EADC4F84461825B2`
 - 关联断言：['NFC-1f0a411c00f197aa', 'NFC-5ba0c5e970b0bfbe', 'NFC-8e4520473b2f4cdd', 'NFC-cc3c9fd60eb0b9c8', 'NFC-d10d4ba6d8065926', 'NFC-d7f2ed535103ac94', 'NFC-f258ba0addaaf267', 'NFC-f4dcfd7116d21c4d']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/latent/f15-d1-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D9620DC3D36CABD8`
+- 关联断言：['NFC-04c4bd5ae41670b4', 'NFC-188c7b2fd5397f2c', 'NFC-3fb275ef01176dc7', 'NFC-427451da2a675d6e', 'NFC-4754fcafeaf52dfd', 'NFC-49c8d0d7c73b2df8', 'NFC-dc9333ad02698585', 'NFC-e23df9f859611617', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/latent/f15-d1-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-AAB358EC8DBAEC72`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/latent/f15-d1-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-152F8CEE988D98C8`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-408f257a7e5710e8', 'NFC-56bdb3915cb6e438', 'NFC-8f88e6936c84679b', 'NFC-b77405cd77f8c11e']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/latent/f15-d1-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AA1759BFA85D9750`
+- 关联断言：['NFC-2ff9ba9d30f5e441', 'NFC-49d41fa6ae362178', 'NFC-6b34afb6bfbfefaf', 'NFC-6f3e66083f318e26', 'NFC-7d7f2caf862feacc', 'NFC-85f4238fe4af65de', 'NFC-908b195dd3fc6623', 'NFC-94164161adc4168c', 'NFC-9fb7a351f60ab3ff', 'NFC-aa8a627b57095c48', 'NFC-aefe648f90fb1ca6', 'NFC-af8705256beaeec4', 'NFC-b8454fedc141c20e', 'NFC-d06a2bdbe0fb2114', 'NFC-dd81920e26fd2b21', 'NFC-f12a249d0aeae270', 'NFC-faf0a9fc16371f98']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/latent/f15-d1-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-7BABED689A99704E`
+- 关联断言：['NFC-0138bc1479a341e4', 'NFC-0d93d7ac4cf31dfc', 'NFC-2207fda3e175e716', 'NFC-2f115b5506686c75', 'NFC-3ced0f3c887d0ba3', 'NFC-4d2b7fc4765febdb', 'NFC-517db2de8fa94db6', 'NFC-53653c7dd7583a13', 'NFC-53fc57c108b1d0b7', 'NFC-5a8bcdae520541f4', 'NFC-5f7eb2db9ac87cba', 'NFC-6d1d9129b17f2e39', 'NFC-7168c9b801906285', 'NFC-759ba8f87d88caa1', 'NFC-78ae61a422d278f2', 'NFC-81b6b879dbc08e56', 'NFC-84054e8cb15eb8e2', 'NFC-9ec91e636bd124c8', 'NFC-9f86009dac744539', 'NFC-af9ef8435321ff44']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -2338,6 +2858,86 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/metacognition/SCIENTIFIC-METACOGNITION-I1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-876E559EAE6E01CE`
+- 关联断言：['NFC-1cb4916b0e393bb6', 'NFC-1da31c3b36a311d3', 'NFC-311ce53b7433a88c', 'NFC-5515fe987a25ca1b', 'NFC-5861bdb2b457a001', 'NFC-6b34afb6bfbfefaf', 'NFC-7d7f2caf862feacc', 'NFC-aa8a627b57095c48', 'NFC-aefe648f90fb1ca6', 'NFC-afc215ad2ebb3cad', 'NFC-d9f16e6fbd409448', 'NFC-dd81920e26fd2b21', 'NFC-e63ddc3757d658fc', 'NFC-faf0a9fc16371f98']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/metacognition/SCIENTIFIC-METACOGNITION-I1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9FA1F0AEA64B7025`
+- 关联断言：['NFC-000fd9dd993dd857', 'NFC-0138bc1479a341e4', 'NFC-02e502924055e9d9', 'NFC-0d93d7ac4cf31dfc', 'NFC-2f115b5506686c75', 'NFC-3310687c87122327', 'NFC-4d2b7fc4765febdb', 'NFC-517db2de8fa94db6', 'NFC-51c7e7780cbe9e1b', 'NFC-78ae61a422d278f2', 'NFC-7bad532039b798be', 'NFC-84054e8cb15eb8e2', 'NFC-99eeb32f7dd110f8', 'NFC-9fb3d9692a434dc0', 'NFC-af9ef8435321ff44', 'NFC-b322a41c345e0495', 'NFC-ba28ab90d481a5a1', 'NFC-d1776248caf1eec8', 'NFC-d502acae391272b5', 'NFC-e8ce66985a281fa9']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/metacognition/scientific-metacognition-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-29388CEBC5553D8C`
+- 关联断言：['NFC-39ce9b9393060e6c', 'NFC-4754fcafeaf52dfd', 'NFC-5a6688c60ae59cfe', 'NFC-63f3ddc8a4f95690', 'NFC-91bc2a9cb7d823ed', 'NFC-9657ba1e7873f164', 'NFC-b97c82354089101b', 'NFC-c0fd2d2bb93e39fa', 'NFC-cccc76bf44e8b5dd', 'NFC-d9b576be59c583a4', 'NFC-dca15aba6e8dca83', 'NFC-e422ffb0ce090915', 'NFC-f2826374a34ba075', 'NFC-f3b0e6aa26ac2c12']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/metacognition/scientific-metacognition-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-4DDD011A7BA41FBA`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/metacognition/scientific-metacognition-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B6BED6725AE1702F`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-8f88e6936c84679b', 'NFC-994ec910004a1128', 'NFC-c89614c137e37f37', 'NFC-ce36c16bc840b5bd']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/multihistory/d2-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0B6B84A0638B57BC`
+- 关联断言：['NFC-0b53a2ee8ad145a8', 'NFC-3aee8f10c643c5ad', 'NFC-4754fcafeaf52dfd', 'NFC-70cffc907e1c24f2', 'NFC-916b4aca4d36e3fd', 'NFC-a6fa3de3e4e7d42b', 'NFC-af4a2df4bf122b9d', 'NFC-b16b01f6038b1a80', 'NFC-bb017bd5da625f95', 'NFC-bdf34034be687879', 'NFC-f2826374a34ba075']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/multihistory/d2-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-7EC49665FC9F2892`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/multihistory/d2-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A534AE6614E219DE`
+- 关联断言：['NFC-04c59463638daf47', 'NFC-27bc08e079de0075', 'NFC-31f6798e9a62ce00', 'NFC-5b028c6396048f2f', 'NFC-8f88e6936c84679b']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/multihistory/d2-i1-repair-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2E3F487058265176`
+- 关联断言：['NFC-05b202c2898e25e7', 'NFC-0bc8c2d65228ab4a', 'NFC-0d93d7ac4cf31dfc', 'NFC-159aaafdbb182b3f', 'NFC-1eec7fd2d029907c', 'NFC-2c6aa3b2f507666f', 'NFC-3326fd441f388ae8', 'NFC-342d5940f10af945', 'NFC-37526f58156f3d66', 'NFC-956d2402c09a0941', 'NFC-965f60b656f65d52', 'NFC-98eaca71ce15c1c7', 'NFC-a13d3f8f34e30d72', 'NFC-ab4d67e4316ecf52', 'NFC-c8f0b953ed1b337f', 'NFC-d987cc6208b35a96', 'NFC-e3b30e25bcc0b82d', 'NFC-ea90d876d5ce9511']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/multihistory/d2-i1-repair-r1-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FD4D1470EB8F919E`
+- 关联断言：['NFC-0138bc1479a341e4', 'NFC-0d93d7ac4cf31dfc', 'NFC-2207fda3e175e716', 'NFC-2f115b5506686c75', 'NFC-421502e16ec0288d', 'NFC-48f97ee6105a052e', 'NFC-4d2b7fc4765febdb', 'NFC-517db2de8fa94db6', 'NFC-53653c7dd7583a13', 'NFC-5d83c9f89ed2c072', 'NFC-61fee0f14467ec21', 'NFC-65e07bcfd96d79d1', 'NFC-759ba8f87d88caa1', 'NFC-769e634ffa816a1b', 'NFC-787530789273f9c8', 'NFC-78ae61a422d278f2', 'NFC-81b6b879dbc08e56', 'NFC-84054e8cb15eb8e2', 'NFC-956d2402c09a0941', 'NFC-9ec91e636bd124c8']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/narrative-output-layer.md`
 
 - 状态：`ADDED`
@@ -2359,6 +2959,46 @@
 - 状态：`ADDED`
 - Delta：`CD-8CA3464D7D94BF7A`
 - 关联断言：['NFC-6e3bd22c54152d14', 'NFC-89b4bfa9a1f41209', 'NFC-8d10fe1f765dbbee', 'NFC-aa33987a44ec7e8a', 'NFC-f2e7b02407f69da4', 'NFC-fa3d32dc17215b7c']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/observation/121Q36-OBS-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9489C340B4EB64A8`
+- 关联断言：['NFC-49687b0dd8488215', 'NFC-6da73a33bccb7d1a', 'NFC-7deebf6390cc324d', 'NFC-fb0e37bc475b457c']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/observation/q36-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-11CFA94425A8D100`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/observation/q36-obs-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4E5DA3317F2A5CFF`
+- 关联断言：['NFC-03733641f85985b1', 'NFC-05339798d9d343b0', 'NFC-1aa851eedef45db1', 'NFC-24f512f505ef38cc', 'NFC-3916a4197f110374', 'NFC-4d1f381a4a0ef58d', 'NFC-4f592ba010f224b8', 'NFC-7734c66c320f60b0', 'NFC-9c81cc8cbe8f1755', 'NFC-a3c9c67c3cc6ca02', 'NFC-d49ea02b15fee61c', 'NFC-d714fb46fd4b258c', 'NFC-dd496ede42cc3f37', 'NFC-e011269a6d523932', 'NFC-e4b5a3d3432b9fcc', 'NFC-f63384c8886667a3']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/observation/q36-obs-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B3382FF1EB506FBF`
+- 关联断言：['NFC-0032aefaae0732b8', 'NFC-190a9d8d45ae1885', 'NFC-2d63401838e80804', 'NFC-5993c2f33c93583a', 'NFC-5cb68b5f5feb9157', 'NFC-6554041a43502898', 'NFC-8be638634a52bc96', 'NFC-9dec82cb6ea8f15c', 'NFC-b2ce7c37c573f288', 'NFC-b6d153c54aa7b1f3', 'NFC-cfa0e0deea009c25', 'NFC-d6ca4d45eacca43a', 'NFC-dd496ede42cc3f37', 'NFC-e3e1570122d169eb', 'NFC-f3c4feedceaf282e']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/observation/q36-obs-typed-contract.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B1DF1A1F79920C11`
+- 关联断言：['NFC-033d0a3aa9761e76', 'NFC-13d4fb24aea5147b', 'NFC-20b88a1d0d984668', 'NFC-23c15f2a5e43a5b3', 'NFC-27360f24f7aa298f', 'NFC-30bd231a8ca8e75d', 'NFC-48eb2fe0a292c6b3', 'NFC-6cbd227bd48b3497', 'NFC-7986b2c883531f33', 'NFC-87cdd4ffe78d5c26', 'NFC-885ea12d506173bb', 'NFC-8fd9a99803c6d369', 'NFC-a008230be8838601', 'NFC-a15f03e1baf02d4d', 'NFC-a3197fb13cca123a', 'NFC-a5afd43a5686ed6a', 'NFC-ded578d6cf81fd45', 'NFC-e8b63c054b143347', 'NFC-eee73a42a16f4f5c', 'NFC-f5a1654f5031b154']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -2438,7 +3078,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-6B16F258C4E8A97C`
-- 关联断言：['NFC-015cfd6ba387c9b1', 'NFC-040301cc7bb5e4d2', 'NFC-04decd8092db3709', 'NFC-06680ddfb6dee556', 'NFC-06ddf2b643747a14', 'NFC-0b07c48990897300', 'NFC-0ccc961fd77152ee', 'NFC-10dc7fb421e66908', 'NFC-1330c1ed70ef4700', 'NFC-14866124cc1a2cae', 'NFC-154bdc1ff37c47f6', 'NFC-159fd6e483f5f322', 'NFC-19c3c3352a78b2aa', 'NFC-1a10fc0d57b2942f', 'NFC-1d87af37b95f3a71', 'NFC-1ead70b9f991a2b8', 'NFC-20ca671c13054c2b', 'NFC-22530c97a5903187', 'NFC-2836cdb19c21deb6', 'NFC-28eaec186367612e']（仅显示前 20 项）
+- 关联断言：['NFC-015cfd6ba387c9b1', 'NFC-040301cc7bb5e4d2', 'NFC-04decd8092db3709', 'NFC-06680ddfb6dee556', 'NFC-06ddf2b643747a14', 'NFC-0b07c48990897300', 'NFC-0ccc961fd77152ee', 'NFC-10dc7fb421e66908', 'NFC-1330c1ed70ef4700', 'NFC-139f14280f9dd160', 'NFC-14866124cc1a2cae', 'NFC-154bdc1ff37c47f6', 'NFC-159fd6e483f5f322', 'NFC-19c3c3352a78b2aa', 'NFC-1a10fc0d57b2942f', 'NFC-1d87af37b95f3a71', 'NFC-1ead70b9f991a2b8', 'NFC-20ca671c13054c2b', 'NFC-22530c97a5903187', 'NFC-278b0297568a9c1c']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -2562,6 +3202,110 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/repair-r3/epistemic_state_control_plane-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-849211218B6AA2A5`
+- 关联断言：['NFC-3c954013f9fb76e6', 'NFC-6720368f06b99f67', 'NFC-bbf65b01be322958', 'NFC-f2678952fa052530', 'NFC-fab17baad1babac3']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/coaching_commitment_subcapability-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-019417C733D098E0`
+- 关联断言：['NFC-0a3320c56fa75c81', 'NFC-3c954013f9fb76e6', 'NFC-7b56244a864e45fe', 'NFC-c5162292ad275f90']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/counterfactual_unrealized_path-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3B66972CF5391BC1`
+- 关联断言：['NFC-0a3320c56fa75c81', 'NFC-3c954013f9fb76e6', 'NFC-52252bd7f9c7cd5f', 'NFC-5a44b15e8d93cf89', 'NFC-5a4ab44e7567bf08', 'NFC-6eb11a668216c1bd', 'NFC-85683ed6ff40a419', 'NFC-8b74455b11fe51f0', 'NFC-af05032381c11c05']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/decision-integrity-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EDDFAFABD0098EFB`
+- 关联断言：['NFC-0f1c0d2983882467', 'NFC-48c795abaca38636', 'NFC-870492d951e94446', 'NFC-dc2cb845927c1ec3', 'NFC-e3142544d049a3e5']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/graded_intervention_escalation-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-694577982CF84B93`
+- 关联断言：['NFC-0a3320c56fa75c81', 'NFC-3c954013f9fb76e6', 'NFC-d60af5e892ee54fc', 'NFC-e5e11fff413120d2']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/latent_system_identifiability-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-F28143204A4F5325`
+- 关联断言：['NFC-0a3320c56fa75c81', 'NFC-3c954013f9fb76e6', 'NFC-6f784af3b4565f44', 'NFC-dfc3362e34717807']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/multi_history_world_projection-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-DB2D609E413B40DF`
+- 关联断言：['NFC-0a3320c56fa75c81', 'NFC-3c954013f9fb76e6', 'NFC-403b72c2bae346ba', 'NFC-653a48dece4012f0', 'NFC-cb0b98be89d8f7b4', 'NFC-cf80296472d93d56', 'NFC-d5bcfd4fc9ae8553', 'NFC-edddc89dccb188c9', 'NFC-eef72a4a121e3b4a']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/open_scientific_context_protocol-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-11AF0954D75739FF`
+- 关联断言：['NFC-0a25a50ba471bb82', 'NFC-0a3320c56fa75c81', 'NFC-2b7e157d803483fa', 'NFC-3c954013f9fb76e6']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/repair-r3/repair-r3/world_feedback_anomaly-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A3AF2ECCB95C34AA`
+- 关联断言：['NFC-0a3320c56fa75c81', 'NFC-3c954013f9fb76e6', 'NFC-c4b04d4fc7e29277', 'NFC-e7ce88d38f7516c0']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/retrieval/121Q38-repair-r1-architecture.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0D7CC7B783E9D0AD`
+- 关联断言：['NFC-1c87d9ab8af36a8e', 'NFC-364ead192205c2b4', 'NFC-615daa8fab9b1ff2', 'NFC-c64683fdc0fe6967']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/retrieval/q38-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D2A2676D604F2AE5`
+- 关联断言：['NFC-05a15facecbd7fa6', 'NFC-0841c1005545b2f4', 'NFC-24a860fbf3a58f0b', 'NFC-26e6634eb4909849', 'NFC-327d821e388dff2e', 'NFC-3770f07ad0670067', 'NFC-a6b861f8f367d650', 'NFC-bcb395bfb51b3dcb', 'NFC-c03918c2a8c5c7ad', 'NFC-c6754be0c6d13f3a', 'NFC-c9c111e781169b88', 'NFC-cec66a2b659b7c34', 'NFC-d88991a51b10e4e7']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/retrieval/q38-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EFB9F3B9B8F04C8B`
+- 关联断言：['NFC-79a94979c953ccd4', 'NFC-9370515500cdc217', 'NFC-968206ab0155123b', 'NFC-a7b26c1442cc7496', 'NFC-b327fbc2978d3361', 'NFC-e4c6c993b665f15e']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/retrieval/q38-legacy-lab-salvage-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-0F845DFE5A556E9D`
+- 关联断言：['NFC-1c16229d4663254a', 'NFC-2a3bb6c1583de4b7', 'NFC-773a8ed7db873f00']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/roadmap_v0.2.md`
 
 - 状态：`ADDED`
@@ -2591,6 +3335,30 @@
 - 状态：`ADDED`
 - Delta：`CD-33DECAA204922438`
 - 关联断言：['NFC-18bcf1f7d098a26d', 'NFC-46c5316afeffaacb', 'NFC-4ff3b45bdba3780c', 'NFC-729df5e7b4517651', 'NFC-abb49fdc86fa503d', 'NFC-ec280231d1e66691']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/symbolic/symbolic-sphere-i1-architecture-decision.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CD315923C9DBBA6B`
+- 关联断言：['NFC-2920d9cc5e5e2244', 'NFC-4350210956c38be9', 'NFC-45670e5a760257f3', 'NFC-85c18a1314676723', 'NFC-d556013d757f25b9', 'NFC-d7f85326d18ee9a2', 'NFC-e371f4b5a77a7ca8', 'NFC-fff89eacfa17adf1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/symbolic/symbolic-sphere-i1-boundary-matrix.json`
+
+- 状态：`ADDED`
+- Delta：`CD-4DA58C38F42C6CDD`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/symbolic/symbolic-sphere-i1-interfaces.md`
+
+- 状态：`ADDED`
+- Delta：`CD-04D004B649D6A32E`
+- 关联断言：['NFC-544f1a4d27e5881e', 'NFC-70aba8fb9aae7fa9', 'NFC-f01615a4241520a5']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -3610,6 +4378,22 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `reports/ignition-rpe/ATTACK_MATRIX.md`
+
+- 状态：`ADDED`
+- Delta：`CD-DA8B5988D2D6D5C2`
+- 关联断言：['NFC-3e57578f44343a59', 'NFC-79115d2ad9432845', 'NFC-afded5f63649746c']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md`
+
+- 状态：`ADDED`
+- Delta：`CD-17804E3DC4E94E57`
+- 关联断言：['NFC-1d02797dbbaf3eeb', 'NFC-2e8007f698f3bdfd', 'NFC-67f7a79b4c471800', 'NFC-6854d9d6bd935021', 'NFC-6c16a5673159e6b4', 'NFC-7d3dace6cb3a11b7', 'NFC-9b72db5ada40a5ec', 'NFC-b9c016f3ea6098e3', 'NFC-c9d8f47c6fa14d7f', 'NFC-f0c6d6e07e2863e4']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `reports/math-foundation/blockers-20260712.md`
 
 - 状态：`ADDED`
@@ -3954,6 +4738,198 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `reports/operations/121Q34-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-9ADBF938B4892F10`
+- 关联断言：['NFC-0765961eb390d815']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q34-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-5E721CB6CA46EDA1`
+- 关联断言：['NFC-021017fdb241c9cc']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q35-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-E598CE9DDB78C04C`
+- 关联断言：['NFC-bd529d55f77e086f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q35-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-8B8A5689B1B4FC2B`
+- 关联断言：['NFC-c03b7f5bb4683f98']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q36-INT-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-963171CC37A20A78`
+- 关联断言：['NFC-1368154de7ece30b']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q36-INT-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-C2566B9D9B03462E`
+- 关联断言：['NFC-c0a85cef9e968d95']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q36-OBS-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-90431454CCB9F051`
+- 关联断言：['NFC-d100d4869d21bf85']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q36-OBS-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-D7D25D79B6B3B06B`
+- 关联断言：['NFC-283e9c10021789e9']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q37-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-07C9296F3C5F4E7A`
+- 关联断言：['NFC-c1e170acbf37f32d']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q37-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-624E3E78A46DBE89`
+- 关联断言：['NFC-d508d1ded413bc02']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q38-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-1977F700FE3F4363`
+- 关联断言：['NFC-a83b8b5e83d0c4be']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q38-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-A5348E6F77183334`
+- 关联断言：['NFC-42fbe302faac625f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q39-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-2943B28F0B9AFEB9`
+- 关联断言：['NFC-34fdc1f29bf06a02']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/121Q39-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-6BFEF16BB4C45CED`
+- 关联断言：['NFC-6eb21c9cf694e1f6']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ARR-R1-SCAFFOLD-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-F08F1751E6F8A87A`
+- 关联断言：['NFC-2e85272a1120dff2']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/D2-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-3C0CD16D8F97BA35`
+- 关联断言：['NFC-70d1438ca70b62ad']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/D2-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-5884FAA7719A6D30`
+- 关联断言：['NFC-fe87409ef965f300']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/D2-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-7CED45F5B589417B`
+- 关联断言：['NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/DECISION-INTEGRITY-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-4673BE6AD63A5CBB`
+- 关联断言：['NFC-1923bb917f670b92']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/DECISION-INTEGRITY-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-C969AA1AECF00468`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-55571C37DC8B05E5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/F15-D1-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-675D89E286960ED4`
+- 关联断言：['NFC-25a22dc3a346d944']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/F15-D1-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-EB804DEB64E82E78`
+- 关联断言：['NFC-ab612f1623acc7bc']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/F15-D1-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3DBAE4B94E7B9F19`
+- 关联断言：['NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
 
 - 状态：`ADDED`
@@ -3999,6 +4975,198 @@
 - 状态：`ADDED`
 - Delta：`CD-4F3C4FF4A7AB0E3A`
 - 关联断言：['NFC-02d021373da2e251', 'NFC-069597da7f398431', 'NFC-58d5b43ea0d1d113', 'NFC-739cdaa76d099510', 'NFC-79d0c2bbe1426b2d']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q41-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-B85B4553EE4D4A44`
+- 关联断言：['NFC-df37df0e9c8b826d']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q41-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-FAD016110654B496`
+- 关联断言：['NFC-ed47814b528820ca']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q41-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AC064AC68608AC32`
+- 关联断言：['NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q42-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-DD6CA77E45B090D2`
+- 关联断言：['NFC-a2e677bba2240140']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q42-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-09E2299C4084FF70`
+- 关联断言：['NFC-72cbcb74284e72f4']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q42-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-886483A6B67D18E9`
+- 关联断言：['NFC-4854881e2da939c6', 'NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f', 'NFC-e8f43f8e2a57aa40']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q43-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-67FCF2F63E7A8EEB`
+- 关联断言：['NFC-cf5a723852821874']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q43-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-B5BEE5279C62A2FB`
+- 关联断言：['NFC-8154d76fb44dd999']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q43-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4E7373C8B02F3F6E`
+- 关联断言：['NFC-b7e7b86ae5c8f779', 'NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f', 'NFC-e7e6dd51ca529f47']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q44-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-0DF17E5577A12C97`
+- 关联断言：['NFC-dd68e2cb9ee6a88a']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q44-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-4AB4E86A31BA6FA0`
+- 关联断言：['NFC-a6fbe6b4592f7baa']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/Q44-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E80677686D834EF1`
+- 关联断言：['NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-1433A5763F608599`
+- 关联断言：['NFC-f8861e3acb786406']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-7ADD79275A012400`
+- 关联断言：['NFC-53925e20dc30fdaf']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D4C40EC0127597ED`
+- 关联断言：['NFC-cdf203499ac4fbd8', 'NFC-ddb96045ade9844f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SCIENTIFIC-METACOGNITION-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-FA3198A68DFC73EB`
+- 关联断言：['NFC-a90db06985299651']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-6B8B1179511C6483`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9BD6FA3459079380`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-1ABDF1D8822F0151`
+- 关联断言：['NFC-bd550dd525538d83']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.json`
+
+- 状态：`ADDED`
+- Delta：`CD-339212E82852BF4E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md`
+
+- 状态：`ADDED`
+- Delta：`CD-578F793E0EF4F0F6`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SYMBOLIC-SPHERE-I1-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-2C5E08395380AECE`
+- 关联断言：['NFC-3714f33640fb9bae']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-9C11931DE0EB97A5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-444A463E9E52DF40`
+- 关联断言：['NFC-496b80f744d724f7', 'NFC-7f308b58e25b440d', 'NFC-99d690a56465643e']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

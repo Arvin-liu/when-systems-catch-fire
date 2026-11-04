@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/candidate.schema.json",
+  "title": "Ignition Runtime Candidate Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "semantic_id",
+    "claim_text",
+    "source_sha256",
+    "source_tier",
+    "claim_ceiling",
+    "status",
+    "first_seen_gen"
+  ],
+  "properties": {
+    "candidate_id": { "type": "string" },
+    "material_id": { "type": "string" },
+    "semantic_id": { "type": "string", "pattern": "^sid_[0-9a-f]+$" },
+    "claim_text": { "type": "string", "minLength": 1 },
+    "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "source_tier": {
+      "type": "string",
+      "enum": ["PRIMARY_REPORT", "SECONDARY_ACADEMIC_INTERPRETATION", "MEDIA_SYNTHESIS"]
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "enum": ["PRIMARY_VERIFIED", "SECONDARY", "UNKNOWN"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["ACTIVE", "ARCHIVED", "REPLACED"]
+    },
+    "inference_claims": { "type": "array", "items": { "type": "string" } },
+    "source_claims": { "type": "array", "items": { "type": "string" } },
+    "first_seen_gen": { "type": "string" },
+    "archived_at": { "type": ["string", "null"] },
+    "archived_gen": { "type": ["string", "null"] }
+  }
+}

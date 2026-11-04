@@ -1,0 +1,89 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Plane 6 EVOLVE-candidate gate state machine (SIGNAL_ONLY -> EVOLVE_CANDIDATE terminal; no EXECUTING/APPLIED edges) plus the six gate criteria G1-G6 (+G5g).",
+  "growth_signal_gates": [
+    {
+      "state": "SIGNAL_ONLY",
+      "terminal": false,
+      "allowed_transitions": [
+        "EVOLVE_CANDIDATE",
+        "REJECTED",
+        "ARCHIVED",
+        "SUPERSEDED",
+        "WITHDRAWN"
+      ],
+      "description": "Created state; single failure / failed gate stays here."
+    },
+    {
+      "state": "EVOLVE_CANDIDATE",
+      "terminal": true,
+      "allowed_transitions": [],
+      "description": "All six gates PASS + explicit human authorization. Terminal in this scaffold: NO execution edges."
+    },
+    {
+      "state": "REJECTED",
+      "terminal": true,
+      "allowed_transitions": [],
+      "description": "Rejected by gate evidence."
+    },
+    {
+      "state": "ARCHIVED",
+      "terminal": false,
+      "allowed_transitions": [
+        "WITHDRAWN"
+      ],
+      "description": "Archived signal tombstone."
+    },
+    {
+      "state": "SUPERSEDED",
+      "terminal": false,
+      "allowed_transitions": [
+        "WITHDRAWN"
+      ],
+      "description": "Superseded by a newer signal."
+    },
+    {
+      "state": "WITHDRAWN",
+      "terminal": true,
+      "allowed_transitions": [],
+      "description": "Withdrawn (human/expiry)."
+    }
+  ],
+  "gate_criteria": [
+    {
+      "gate_id": "G1",
+      "criterion": "recurrence",
+      "machine_rule": "recurrence_evidence >=2 entries, object_refs distinct, source_refs distinct, each reproduction_digest replayable."
+    },
+    {
+      "gate_id": "G2",
+      "criterion": "scope",
+      "machine_rule": "scope.object_refs >=2 and scope.source_refs >=2 and non-overlapping."
+    },
+    {
+      "gate_id": "G3",
+      "criterion": "measured_loss",
+      "machine_rule": "measured_loss non-null and measurement_method deterministically replayable."
+    },
+    {
+      "gate_id": "G4",
+      "criterion": "workaround",
+      "machine_rule": "workaround_assessment.assessed==True and adequate_low_cost_exists==False."
+    },
+    {
+      "gate_id": "G5",
+      "criterion": "minimal_repair_hypothesis",
+      "machine_rule": "four subfields all non-empty; falsification_test falsifiable; touched_surface minimal."
+    },
+    {
+      "gate_id": "G5g",
+      "criterion": "governance_hard_refusal",
+      "machine_rule": "if minimal_repair_hypothesis weakens governance/charter/ceiling/auto-EVOLVE ban -> G5 FAIL (specialized)."
+    },
+    {
+      "gate_id": "G6",
+      "criterion": "human_authorization",
+      "machine_rule": "human_authorization.verified written by gate evaluator (caller may not self-assert True)."
+    }
+  ]
+}

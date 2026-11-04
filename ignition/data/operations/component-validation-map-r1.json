@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "purpose": "Versioned, evidence-backed mapping from registered components and their declared consumers to repository test targets for R/O/G pull-request validation.",
   "claim_ceiling": "This map selects repository validation only. It does not establish real-world causal effects, grant execution or publication authority, or replace required shared security, permission, evidence, review, or release checks.",
   "targets": [
@@ -105,8 +105,8 @@
       "domain": "G",
       "modules": [
         "ignition.tests.test_human_front_door",
-        "tests.test_overall_architecture",
-        "tests.test_generated_output_authority"
+        "ignition.tests.test_overall_architecture",
+        "ignition.tests.test_generated_output_authority"
       ],
       "evidence": "These existing tests cover the registered no-L7 and system-map/front-door projection constraints.",
       "import_roots": [
@@ -221,6 +221,45 @@
       "import_roots": [
         "ignition"
       ]
+    },
+    {
+      "target_id": "g_open_scientific_context_protocol",
+      "domain": "G",
+      "modules": [
+        "tests.context_protocol.test_open_scientific_context_protocol_gate",
+        "tests.context_protocol.test_scientific_context_protocol_repair_r2",
+        "tests.test_r3_open_scientific_context_protocol"
+      ],
+      "evidence": "Existing Q45 direct gate, R2 evidence-binding, and R3 semantic-evaluator tests cover the declared context protocol contract, pilot, and validator paths.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "o_ignition_runtime_r1_consumers",
+      "domain": "O",
+      "modules": [
+        "rpe_ci.test_consumers"
+      ],
+      "import_roots": [
+        "tests"
+      ],
+      "evidence": "A uniquely named unittest target invokes the existing pytest regression and scenario modules so their real test cases execute through the Foundation router without namespace shadowing; the evidence remains repository-local and grants no production or scientific authority."
+    },
+    {
+      "target_id": "g_arr_runtime",
+      "domain": "G",
+      "modules": [
+        "tests.test_component_validation_routing"
+      ],
+      "import_roots": [
+        "ignition"
+      ],
+      "command_ids": [
+        "arr_runtime_static_gate",
+        "arr_runtime_pytest"
+      ],
+      "evidence": "The registered ARR static gate and focused pytest suite exercise adapter-only boundaries, fixtures, schemas, and growth-ceiling controls; existing router tests preserve exact target and fail-closed routing behavior."
     }
   ],
   "components": [
@@ -798,6 +837,114 @@
         "EVIDENCE_UPDATE"
       ],
       "evidence": "Q43 pilot, reproduction records, and fail-closed fixture cases."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 protocol contract schema, architecture decision, and frozen semantic boundary."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 fail-closed CLI, R2 evidence-binding record, and R3 semantic evaluator with focused negative controls."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 repository-local pilot, controlled R2 reproduction, and versioned protocol examples."
+    },
+    {
+      "component_id": "ignition_runtime_r1",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_ignition_runtime_r1_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The runtime code, schemas, workflow, architecture, and evidence reports are assigned to the existing R1 regression/scenario tests; component registration only selects validation and does not activate the candidate."
+    },
+    {
+      "component_id": "arr",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_arr_runtime",
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "ARR registry, schemas, architecture, and map projection changes are checked by the existing human front-door and human-result consumers plus the registered ARR static gate and focused pytest suite."
+    },
+    {
+      "component_id": "arr_runtime",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_arr_runtime"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "ARR adapter implementation and tests are checked by the registered anti-second-executor static gate and focused pytest suite; this adapter does not create external execution authority."
+    },
+    {
+      "component_id": "iteration",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The registered iteration component owns the current iteration-sync validator and test; the existing publication-consumer target checks manifest path, seal, and current-state synchronization."
     }
   ]
 }

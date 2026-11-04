@@ -157,7 +157,19 @@
       "latent_system_identifiability_pilot",
       "multi_history_world_projection_contract",
       "multi_history_world_projection_gate_validator",
-      "multi_history_world_projection_pilot"
+      "multi_history_world_projection_pilot",
+      "counterfactual_unrealized_path_contract",
+      "counterfactual_unrealized_path_gate_validator",
+      "counterfactual_unrealized_path_pilot",
+      "graded_intervention_escalation_contract",
+      "graded_intervention_escalation_gate_validator",
+      "graded_intervention_escalation_pilot",
+      "coaching_commitment_subcapability_contract",
+      "coaching_commitment_subcapability_gate_validator",
+      "coaching_commitment_subcapability_pilot",
+      "open_scientific_context_protocol_contract",
+      "open_scientific_context_protocol_gate_validator",
+      "open_scientific_context_protocol_pilot"
     ],
     "layers": [
       "l0",

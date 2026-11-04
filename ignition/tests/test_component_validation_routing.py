@@ -7,6 +7,7 @@ import sys
 import subprocess
 import tempfile
 import unittest
+from types import ModuleType
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +26,13 @@ from tools.operations.route_component_validation import (  # noqa: E402
     plan_paths,
     validate_validation_map,
 )
-from tools.operations.run_component_validation_targets import _run_suite, run_commands, run_modules, run_plan  # noqa: E402
+from tools.operations.run_component_validation_targets import (  # noqa: E402
+    _run_suite,
+    collect_registered_test_ids,
+    run_commands,
+    run_modules,
+    run_plan,
+)
 
 
 class ComponentValidationRoutingTest(unittest.TestCase):
@@ -531,12 +538,29 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                 "",
             ])
             (package / "test_consumer.py").write_text(consumer_source, encoding="utf-8")
-            result = run_modules(
-                ["research_workflow.test_consumer"],
-                repo_root=repo_root,
-                import_roots=["research_workflow"],
-                verbosity=0,
-            )
+            previous_package = sys.modules.get("research_workflow")
+            previous_cli = sys.modules.get("cli")
+            sys.modules.pop("cli", None)
+            stale_package = ModuleType("research_workflow")
+            stale_package.__path__ = []
+            sys.modules["research_workflow"] = stale_package
+            try:
+                result = run_modules(
+                    ["research_workflow.test_consumer"],
+                    repo_root=repo_root,
+                    import_roots=["research_workflow"],
+                    verbosity=0,
+                )
+                self.assertIs(sys.modules.get("research_workflow"), stale_package)
+            finally:
+                if previous_package is None:
+                    sys.modules.pop("research_workflow", None)
+                else:
+                    sys.modules["research_workflow"] = previous_package
+                if previous_cli is None:
+                    sys.modules.pop("cli", None)
+                else:
+                    sys.modules["cli"] = previous_cli
         self.assertEqual(result["tests_executed"], 1)
         self.assertEqual(result["failures"], 0)
         self.assertEqual(result["errors"], 0)
@@ -570,6 +594,63 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                 import_roots=["ignition", "ignition/research_workflow"],
                 verbosity=0,
             )
+        self.assertEqual(result["tests_executed"], 1)
+        self.assertEqual(result["failures"], 0)
+        self.assertEqual(result["errors"], 0)
+        self.assertTrue(result["successful"])
+
+    def test_declared_import_roots_precede_repository_root_for_indirect_imports(self):
+        with tempfile.TemporaryDirectory() as temp:
+            repo_root = Path(temp)
+            ignition_tools = repo_root / "ignition/tools"
+            root_tools = repo_root / "tools"
+            test_dir = repo_root / "ignition/tests"
+            ignition_tools.mkdir(parents=True)
+            root_tools.mkdir(parents=True)
+            test_dir.mkdir(parents=True)
+            (ignition_tools / "__init__.py").write_text("", encoding="utf-8")
+            (root_tools / "__init__.py").write_text("", encoding="utf-8")
+            (ignition_tools / "probe.py").write_text("VALUE = 'declared-root'\n", encoding="utf-8")
+            (root_tools / "probe.py").write_text("VALUE = 'repository-root'\n", encoding="utf-8")
+            (test_dir / "test_indirect_import.py").write_text(
+                "import unittest\n"
+                "from tools.probe import VALUE\n"
+                "class ImportRootTest(unittest.TestCase):\n"
+                "    def test_declared_root_wins(self):\n"
+                "        self.assertEqual(VALUE, 'declared-root')\n",
+                encoding="utf-8",
+            )
+            prefixes = ("ignition", "tools")
+            previous_modules = {
+                name: module for name, module in sys.modules.items()
+                if any(name == prefix or name.startswith(prefix + ".") for prefix in prefixes)
+            }
+            for name in previous_modules:
+                sys.modules.pop(name, None)
+            try:
+                test_ids = collect_registered_test_ids(
+                    ["ignition.tests.test_indirect_import"],
+                    repo_root=repo_root,
+                    import_roots=["ignition"],
+                )
+                for name in list(sys.modules):
+                    if name == "tools" or name.startswith("tools."):
+                        sys.modules.pop(name, None)
+                result = run_modules(
+                    ["ignition.tests.test_indirect_import"],
+                    repo_root=repo_root,
+                    import_roots=["ignition"],
+                    verbosity=0,
+                )
+            finally:
+                for name in list(sys.modules):
+                    if any(name == prefix or name.startswith(prefix + ".") for prefix in prefixes):
+                        sys.modules.pop(name, None)
+                sys.modules.update(previous_modules)
+        self.assertEqual(
+            test_ids,
+            ["ignition.tests.test_indirect_import.ImportRootTest.test_declared_root_wins"],
+        )
         self.assertEqual(result["tests_executed"], 1)
         self.assertEqual(result["failures"], 0)
         self.assertEqual(result["errors"], 0)

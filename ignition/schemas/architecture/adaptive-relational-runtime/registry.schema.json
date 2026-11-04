@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:adaptive-relational-runtime:schema:registry",
+  "title": "ARR Registry (generic)",
+  "description": "Generic validation contract for ARR R1 versioned registries (closed-enum controlled vocabularies).",
+  "type": "object",
+  "required": [
+    "registry_version",
+    "purpose"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "registry_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_ref": {
+      "type": "string"
+    },
+    "object_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "kind",
+          "kind_prefix"
+        ]
+      }
+    },
+    "assertion_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "relation_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "mechanism_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "route_targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "target"
+        ]
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "rule_id"
+        ]
+      }
+    },
+    "engine_guards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "guard_id"
+        ]
+      }
+    },
+    "anti_overstep_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "binding_id"
+        ]
+      }
+    },
+    "reject_codes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "code"
+        ]
+      }
+    },
+    "lifecycle_states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "state"
+        ]
+      }
+    },
+    "lifecycle_edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "from",
+          "to",
+          "guard_hash"
+        ]
+      }
+    },
+    "reject_reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "code"
+        ]
+      }
+    },
+    "evidence_tiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "tier"
+        ]
+      }
+    },
+    "claim_ceilings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "ceiling"
+        ]
+      }
+    },
+    "tier_to_ceiling": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "tier",
+          "ceiling"
+        ]
+      }
+    },
+    "failure_classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "class_id"
+        ]
+      }
+    },
+    "growth_signal_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "state"
+        ]
+      }
+    },
+    "gate_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "gate_id"
+        ]
+      }
+    },
+    "adapter_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "capability_id"
+        ]
+      }
+    },
+    "production_receipt_adapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "read_only",
+        "allowed_op_types",
+        "forbidden_actions"
+      ],
+      "properties": {
+        "read_only": {
+          "const": true
+        },
+        "allowed_op_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "static_gate_import_whitelist": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$comment": "SPDX-License-Identifier: Apache-2.0"
+}

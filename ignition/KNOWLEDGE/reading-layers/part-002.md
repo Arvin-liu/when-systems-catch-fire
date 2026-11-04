@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1c6a8f5e8b981082"></a>
+## 121B Fulltext Batch Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
+- 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)
+
+<a id="reading-hr-1c89ea0a4c2a0aa1"></a>
+## map-epistemic-architecture
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
+- 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)
+
 <a id="reading-hr-1d52767df2986dd5"></a>
 ## 121Q25D current closeout
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -339,17 +353,3 @@
 - 1 分钟：PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection；PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing operation occurred.；The scan found 14 candidates: 5 AGENTICEXECUTOR records (4 installed), 4 REASONERRUNTIME records, 3 TOOLONLY records and 2 UI-only records. Installed versions observed include Gemini CLI 0.53.1, Codex CLI 0.144.4, Hermes Agent v0.20.0 (2026.8.3), OpenClaw 2026.7.1-2 (0790d9f), Ollama 0.32.7 and LM Studio CLI commit 6041ae0.；主题：Dynamic selection；Codex CLI is the current selection: Fresh census selects Codex CLI (codex-cli 0.144.4) because it is the only installed AGENTICEXECUTOR with all ten bounded checks true, including Codex public login status exit 0, read-only one-shot transport, structured output, isolated runtime scratch and independent OS validation. This is an admission trace, not a model-q…；Gemini remains blocked because its public auth interface did not provide a bounded status result and auth/home separation plus no-new-billing re-attestation are not proven. Hermes remains blocked by strict structured-result, public-auth and auth-source boundaries. OpenClaw remains blocked by workspace/channel/process-cleanup boundaries. Copilot CLI is not in…
 - 完整阅读：[reports/operations/ignition-140-step09-local-executor-census-and-selection.md](../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
-
-<a id="reading-hr-321a7bf858f3944f"></a>
-## IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication
-`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication；No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-result/auth gaps, OpenClaw workspace/channel/auth/cleanup/struc…；No new obligation is manufactured, the next eligible action remains RUNDYNAMICEXECUTORADMISSION, and the historical counts remain exactly 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete. Task141's terminal status remains independent and unchanged.；Machine evidence is ignition/data/operations/iterations/142/step16-obligation-adjudication.json; the canonical registry update is ignition/data/operations/open-obligation-registry-r1.json, validated by ignition/tools/validatetask142obligationadjudication.py and ignition/tools/validateopenobligationregistry.py.；Claim ceiling: independent open-obligation adjudication only; no live completion is claimed.
-- 完整阅读：[reports/operations/ignition-142-step16-obligation-adjudication.md](../../reports/operations/ignition-142-step16-obligation-adjudication.md)
-
-<a id="reading-hr-3254690d89efc00d"></a>
-## Pointfire seven-track external cross-domain replay — repaired governed pass
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Pointfire seven-track external cross-domain replay — repaired governed pass；Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS；This report records the first governed pass of the preregistered external replay. It is a source-scoped research result and not a declaration of universal external validity, causal identification, or epistemic acceptance.；主题：Frozen question and scope；Question: 在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？；The scope is urban or urbanized settings during summer or a comparable warm season. Land-surface temperature, near-surface air temperature, and human heat exposure are kept as separate measurement targets. A source family is an original study, cohort, experiment, or independent official dataset; multiple papers or pages describing the same underlying study d…
-- 完整阅读：[reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md](../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)

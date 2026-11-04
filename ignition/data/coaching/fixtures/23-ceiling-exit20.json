@@ -1,0 +1,358 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "Q44-I1",
+  "capability_id": "coaching_commitment_subcapability",
+  "parent_binding": {
+    "task_id": "Q43-I1",
+    "exact_head": "e5181c83efba68f847b55e13c7b5a1ee1fd6888e"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "exact_head": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "artifact_digest": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "repository_relative_path": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "blob_sha": "efc96904750693eeec57e6dfbc52b703574056ca",
+      "sha256": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "record_type": "structured_record",
+      "declared_role": "USER_GOAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "exact_head": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "artifact_digest": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "repository_relative_path": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "blob_sha": "efc96904750693eeec57e6dfbc52b703574056ca",
+      "sha256": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "record_type": "structured_record",
+      "declared_role": "INFORMED_COMMITMENT"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "exact_head": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "artifact_digest": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "repository_relative_path": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "blob_sha": "efc96904750693eeec57e6dfbc52b703574056ca",
+      "sha256": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "record_type": "structured_record",
+      "declared_role": "REVISE_PAUSE_STOP"
+    },
+    {
+      "evidence_id": "evidence.4",
+      "artifact": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "exact_head": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "artifact_digest": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "repository_relative_path": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "blob_sha": "efc96904750693eeec57e6dfbc52b703574056ca",
+      "sha256": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "record_type": "structured_record",
+      "declared_role": "SUPPORT_OPTION"
+    },
+    {
+      "evidence_id": "evidence.5",
+      "artifact": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "exact_head": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "artifact_digest": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "repository_relative_path": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "blob_sha": "efc96904750693eeec57e6dfbc52b703574056ca",
+      "sha256": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "record_type": "structured_record",
+      "declared_role": "NARRATIVE_SET"
+    },
+    {
+      "evidence_id": "evidence.6",
+      "artifact": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "exact_head": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "artifact_digest": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "repository_relative_path": "data/coaching/repro/q44-r0-coaching-sample.json",
+      "blob_sha": "efc96904750693eeec57e6dfbc52b703574056ca",
+      "sha256": "sha256:b37c02b40383fa22bc5da6688ab886e5f58c6970b7f81baa413bd62b3fcad7b4",
+      "record_type": "structured_record",
+      "declared_role": "ESCALATION_BOUNDARY"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "USER_LED_COMMITMENT",
+      "user_declared_goal": {
+        "status": "RECORDED",
+        "value": "The goal is declared by the user, not inferred, substituted or silently upgraded by the candidate.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "informed_commitment": {
+        "status": "RECORDED",
+        "value": "Any commitment is made with informed understanding of scope, costs, risks and alternatives.",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "plan_checkpoints": {
+        "status": "RECORDED",
+        "value": "The user retains the right to revise, pause or stop at any checkpoint without penalty.",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "deviations": {
+        "status": "RECORDED",
+        "value": "Outcome is separated from process: a successful outcome does not retroactively legitimate the process, nor does a poor outcome automatically condemn a sound process.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "support_options": {
+        "status": "RECORDED",
+        "value": "No manipulative persuasion, no shame-driven compliance, no hidden goal substitution.",
+        "evidence_refs": [
+          "evidence.4"
+        ]
+      },
+      "revise_pause_stop": {
+        "status": "RECORDED",
+        "value": "The user retains the right to revise, pause or stop at any checkpoint without penalty.",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "non_manipulation_constraint": {
+        "status": "RECORDED",
+        "value": "No manipulative persuasion, no shame-driven compliance, no hidden goal substitution.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "multi_perspective_narrative": {
+        "status": "RECORDED",
+        "value": "Multiple narratives and perspectives are preserved rather than collapsed into one.",
+        "evidence_refs": [
+          "evidence.5"
+        ]
+      },
+      "autonomy_consent": {
+        "status": "RECORDED",
+        "value": "Consent is reversible and belongs to the user; autonomy is preserved at every step.",
+        "evidence_refs": [
+          "evidence.4"
+        ]
+      },
+      "outcome_process_separation": {
+        "status": "RECORDED",
+        "value": "Outcome is separated from process: a successful outcome does not retroactively legitimate the process, nor does a poor outcome automatically condemn a sound process.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "escalation": {
+        "status": "RECORDED",
+        "value": "When a request exceeds the candidate's bounded authority, it becomes a request-only escalation to a human with the required authority.",
+        "evidence_refs": [
+          "evidence.6"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "PAUSE_OR_REVISE_PATH",
+      "user_declared_goal": {
+        "status": "RECORDED",
+        "value": "The goal is declared by the user, not inferred, substituted or silently upgraded by the candidate.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "informed_commitment": {
+        "status": "RECORDED",
+        "value": "Any commitment is made with informed understanding of scope, costs, risks and alternatives.",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "plan_checkpoints": {
+        "status": "RECORDED",
+        "value": "The user retains the right to revise, pause or stop at any checkpoint without penalty.",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "deviations": {
+        "status": "RECORDED",
+        "value": "Outcome is separated from process: a successful outcome does not retroactively legitimate the process, nor does a poor outcome automatically condemn a sound process.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "support_options": {
+        "status": "RECORDED",
+        "value": "No manipulative persuasion, no shame-driven compliance, no hidden goal substitution.",
+        "evidence_refs": [
+          "evidence.4"
+        ]
+      },
+      "revise_pause_stop": {
+        "status": "RECORDED",
+        "value": "The user retains the right to revise, pause or stop at any checkpoint without penalty.",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "non_manipulation_constraint": {
+        "status": "RECORDED",
+        "value": "No manipulative persuasion, no shame-driven compliance, no hidden goal substitution.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "multi_perspective_narrative": {
+        "status": "RECORDED",
+        "value": "Multiple narratives and perspectives are preserved rather than collapsed into one.",
+        "evidence_refs": [
+          "evidence.5"
+        ]
+      },
+      "autonomy_consent": {
+        "status": "RECORDED",
+        "value": "Consent is reversible and belongs to the user; autonomy is preserved at every step.",
+        "evidence_refs": [
+          "evidence.4"
+        ]
+      },
+      "outcome_process_separation": {
+        "status": "RECORDED",
+        "value": "Outcome is separated from process: a successful outcome does not retroactively legitimate the process, nor does a poor outcome automatically condemn a sound process.",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "escalation": {
+        "status": "RECORDED",
+        "value": "When a request exceeds the candidate's bounded authority, it becomes a request-only escalation to a human with the required authority.",
+        "evidence_refs": [
+          "evidence.6"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "goal_user_declared": true,
+    "commitment_informed": true,
+    "consent_reversible": true,
+    "no_goal_substitution": true,
+    "no_shame_pressure": true,
+    "multiple_narratives_preserved": true,
+    "process_outcome_separate": true,
+    "support_not_control": true,
+    "escalation_boundary_enforced": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "goal_user_declared",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "commitment_informed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "consent_reversible",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_goal_substitution",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_shame_pressure",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.4"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "multiple_narratives_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.5"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "process_outcome_separate",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "support_not_control",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.4"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "escalation_boundary_enforced",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.6"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights.",
+    "claim_ceiling": "universal truth and causal proof",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}
