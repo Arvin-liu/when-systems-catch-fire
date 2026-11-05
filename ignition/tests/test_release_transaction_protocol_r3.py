@@ -507,15 +507,35 @@ def _successor_authorization_fixture() -> tuple[dict[str, object], dict[str, obj
         "blob_sha": r3._git_blob_sha(registration_raw), "file_sha256": hashlib.sha256(registration_raw).hexdigest(),
         "committed_at": "2026-11-04T08:00:00Z", "signature_verified": True, "signature_reason": "valid",
     }
+    preparation = {
+        "schema_version": "r3-successor-preparation-authorization-r1", "record_type": "PREPARATION_AUTHORIZATION",
+        "preparation_id": "preparation-fixture-001", "task_id": registration["task_id"],
+        "formal_ordinal": registration["formal_ordinal"], "registration_id": registration["registration_id"],
+        "work_branch": registration["work_branch"], "base_main_sha": registration["formal_base_main_sha"],
+        "protocol_blob_sha": registration["protocol_blob_sha"],
+        "protocol_file_sha256": registration["protocol_file_sha256"],
+        "candidate_seed_sha256": "6" * 64, "preparation_nonce": "4" * 32,
+        "scope": "PREPARATION_ONLY",
+        "allowed_actions": ["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"],
+        "approved_at": "2026-11-04T08:20:00Z", "expires_at": "2026-11-05T09:00:00Z",
+        "owner_actor_id": 49422864,
+    }
+    preparation_raw = json.dumps(preparation, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    preparation_row = {
+        "path": f"{r3.SUCCESSOR_AUTHORIZATION_PREFIX}{preparation['preparation_id']}.json",
+        "statement": preparation, "commit_sha": "d" * 40, "parents": ["c" * 40, "h" * 40],
+        "blob_sha": r3._git_blob_sha(preparation_raw), "file_sha256": hashlib.sha256(preparation_raw).hexdigest(),
+        "committed_at": "2026-11-04T08:30:00Z", "signature_verified": True, "signature_reason": "valid",
+    }
     statement = {
-        "schema_version": "r3-successor-transaction-authorization-r1", "record_type": "TRANSACTION_AUTHORIZATION",
-        "authorization_id": "authorization-fixture-001", "task_id": registration["task_id"],
+        "schema_version": "r3-successor-final-transaction-authorization-r1", "record_type": "FINAL_TRANSACTION_AUTHORIZATION",
+        "authorization_id": "authorization-fixture-001", "preparation_id": preparation["preparation_id"], "task_id": registration["task_id"],
         "formal_ordinal": registration["formal_ordinal"], "registration_id": registration["registration_id"],
         "transaction_id": "transaction-fixture-001", "pr_number": 701,
         "candidate_head_sha": "b" * 40, "base_main_sha": "a" * 40,
         "protocol_blob_sha": registration["protocol_blob_sha"],
         "protocol_file_sha256": registration["protocol_file_sha256"],
-        "authorization_nonce": "2" * 32, "scope": "EXACT_REGISTERED_FORMAL_RELEASE_PR_ONLY",
+        "authorization_nonce": "2" * 32, "scope": "FINAL_TRANSACTION",
         "approved_at": "2026-11-04T09:00:00Z", "expires_at": "2026-11-05T09:00:00Z",
         "owner_actor_id": 49422864,
     }
@@ -537,10 +557,32 @@ def _successor_authorization_fixture() -> tuple[dict[str, object], dict[str, obj
         "authorization_signature_verified": True, "authorization_signature_reason": "valid",
     }
     ledger = {
-        "registrations": [registration_row], "authorizations": [authorization_row],
+        "registrations": [registration_row], "preparation_authorizations": [preparation_row], "authorizations": [authorization_row],
         "revocations": [], "supersessions": [], "superseded_registration_ids": [],
+        "owner_reviews": [],
     }
     return evidence, ledger
+
+
+def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 49422864) -> dict[str, object]:
+    statement = {
+        "schema_version": "r3-successor-owner-exact-head-review-r1", "record_type": "OWNER_EXACT_HEAD_REVIEW",
+        "review_id": "owner-review-fixture-001", "task_id": "IGNITION-20991231-999", "formal_ordinal": 999,
+        "registration_id": "registration-fixture-001", "formal_pr_number": pr_number, "pr_author_id": author_id,
+        "formal_base_sha": "a" * 40, "formal_candidate_head_sha": "b" * 40,
+        "formal_pr_diff_sha256": "c" * 64,
+        "protocol_sha256": hashlib.sha256(r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest(),
+        "decision": "APPROVE", "review_summary": "Reviewed exact candidate scope, authorization stages, and retained history.",
+        "reviewed_at": "2026-11-04T09:30:00Z", "review_nonce": "5" * 32,
+        "scope": "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD", "owner_actor_id": 49422864,
+    }
+    raw = json.dumps(statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return {
+        "path": f"{r3.SUCCESSOR_REVIEW_PREFIX}{statement['review_id']}.json", "statement": statement,
+        "commit_sha": "e" * 40, "parents": ["d" * 40, "f" * 40],
+        "blob_sha": r3._git_blob_sha(raw), "file_sha256": hashlib.sha256(raw).hexdigest(),
+        "committed_at": "2026-11-04T09:40:00Z", "signature_verified": True, "signature_reason": "valid",
+    }
 
 
 def _activation_receipt() -> dict[str, object]:
@@ -1918,8 +1960,10 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         records = [
             {"statement": {"record_type": "TASK_REGISTRATION", "registration_id": "registration-fixture-001", "task_id": "IGNITION-20991231-999", "formal_ordinal": 999, "work_branch": "work/999", "receipt_branch": "receipt/999", "registration_nonce": "1" * 32}},
             {"statement": {"record_type": "TASK_REGISTRATION", "registration_id": "registration-fixture-002", "task_id": "IGNITION-20991231-997", "formal_ordinal": 997, "work_branch": "work/997", "receipt_branch": "receipt/997", "registration_nonce": "3" * 32}},
-            {"statement": {"record_type": "TRANSACTION_AUTHORIZATION", "authorization_id": "authorization-fixture-001", "transaction_id": "transaction-fixture-001", "authorization_nonce": "2" * 32}},
-            {"statement": {"record_type": "TRANSACTION_AUTHORIZATION", "authorization_id": "authorization-fixture-002", "transaction_id": "transaction-fixture-002", "authorization_nonce": "4" * 32}},
+            {"statement": {"record_type": "PREPARATION_AUTHORIZATION", "preparation_id": "preparation-fixture-001", "preparation_nonce": "2" * 32}},
+            {"statement": {"record_type": "FINAL_TRANSACTION_AUTHORIZATION", "authorization_id": "authorization-fixture-001", "preparation_id": "preparation-fixture-001", "transaction_id": "transaction-fixture-001", "authorization_nonce": "4" * 32}},
+            {"statement": {"record_type": "PREPARATION_AUTHORIZATION", "preparation_id": "preparation-fixture-002", "preparation_nonce": "6" * 32}},
+            {"statement": {"record_type": "FINAL_TRANSACTION_AUTHORIZATION", "authorization_id": "authorization-fixture-002", "preparation_id": "preparation-fixture-002", "transaction_id": "transaction-fixture-002", "authorization_nonce": "8" * 32}},
             {"statement": {"record_type": "PUBLICATION_WITNESS", "transaction_id": "transaction-fixture-001"}},
             {"statement": {"record_type": "PUBLICATION_WITNESS", "transaction_id": "transaction-fixture-002"}},
         ]
@@ -1934,6 +1978,9 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         duplicate[1]["statement"]["formal_ordinal"] = 999
         errors = r3.validate_successor_ledger_uniqueness(duplicate)
         self.assertTrue(any("formal_ordinal" in error for error in errors), errors)
+        reused_authorization_id = json.loads(json.dumps(records))
+        reused_authorization_id[3]["statement"]["authorization_id"] = "preparation-fixture-001"
+        self.assertTrue(any("authorization ID" in error for error in r3.validate_successor_ledger_uniqueness(reused_authorization_id)))
 
     def test_successor_ledger_rejects_edits_deletions_readds_and_wrong_reviewed_tree(self) -> None:
         path = f"{r3.SUCCESSOR_REGISTRATION_PREFIX}registration-fixture-001.json"
@@ -1967,7 +2014,8 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "registration_id": statement["registration_id"], "transaction_id": statement["transaction_id"],
             "pr_number": statement["pr_number"], "candidate_head_sha": statement["candidate_head_sha"],
             "base_main_sha": statement["base_main_sha"], "protocol_blob_sha": statement["protocol_blob_sha"],
-            "protocol_file_sha256": statement["protocol_file_sha256"], "valid_through": "2026-11-04T10:30:00Z",
+            "protocol_file_sha256": statement["protocol_file_sha256"],
+            "preparation_valid_through": "2026-11-04T08:50:00Z", "valid_through": "2026-11-04T10:30:00Z",
         }
         self.assertEqual(r3.validate_successor_transaction_authorization_statement(evidence, **base), [])
         for field, value in (
@@ -1979,12 +2027,16 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             altered[field] = value
             errors = r3.validate_successor_transaction_authorization_statement(evidence, **altered)
             self.assertTrue(errors, field)
+        altered_prep = dict(evidence)
+        altered_prep["statement"] = dict(statement, preparation_id="preparation-other-001")
+        self.assertTrue(r3.validate_successor_transaction_authorization_statement(altered_prep, **base))
 
         expired = dict(base, valid_through="2026-11-06T00:00:00Z")
         self.assertTrue(any("expired" in error for error in r3.validate_successor_transaction_authorization_statement(evidence, **expired)))
         revoked_ledger = json.loads(json.dumps(ledger))
         revoked_ledger["revocations"] = [{"statement": {
             "authorization_id": statement["authorization_id"],
+            "authorization_record_type": "FINAL_TRANSACTION_AUTHORIZATION",
             "authorization_file_sha256": ledger["authorizations"][0]["file_sha256"],
             "revoked_at": "2026-11-04T10:15:00Z",
         }}]
@@ -1995,34 +2047,227 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         forged["authorization_signature_verified"] = False
         self.assertTrue(r3.validate_successor_transaction_authorization_statement(forged, **base))
 
-    def test_successor_review_gate_requires_two_exact_authorized_approvals(self) -> None:
+    def test_preparation_authorization_is_prless_scoped_and_separate_from_final_transaction(self) -> None:
+        _, ledger = _successor_authorization_fixture()
+        prep = ledger["preparation_authorizations"][0]["statement"]
+        base = {
+            "ledger": ledger, "task_id": prep["task_id"], "formal_ordinal": prep["formal_ordinal"],
+            "registration_id": prep["registration_id"], "work_branch": prep["work_branch"],
+            "base_main_sha": prep["base_main_sha"], "protocol_blob_sha": prep["protocol_blob_sha"],
+            "protocol_file_sha256": prep["protocol_file_sha256"],
+            "candidate_seed_sha256": prep["candidate_seed_sha256"],
+            "action": "CREATE_DRAFT_PULL_REQUEST", "valid_through": "2026-11-04T08:50:00Z",
+        }
+        self.assertEqual(r3.validate_successor_preparation_authorization_statement(prep["preparation_id"], **base), [])
+        for field, value in (("task_id", "IGNITION-20991231-997"), ("work_branch", "work/other"),
+                             ("base_main_sha", "8" * 40), ("candidate_seed_sha256", "9" * 64)):
+            altered = dict(base, **{field: value})
+            self.assertTrue(r3.validate_successor_preparation_authorization_statement(prep["preparation_id"], **altered), field)
+        forbidden = dict(base, action="MERGE")
+        self.assertTrue(r3.validate_successor_preparation_authorization_statement(prep["preparation_id"], **forbidden))
+        expired = dict(base, valid_through="2026-11-06T00:00:00Z")
+        self.assertTrue(any("expired" in item for item in r3.validate_successor_preparation_authorization_statement(prep["preparation_id"], **expired)))
+        revoked = json.loads(json.dumps(ledger))
+        revoked["revocations"] = [{"statement": {
+            "authorization_id": prep["preparation_id"],
+            "authorization_record_type": "PREPARATION_AUTHORIZATION",
+            "authorization_file_sha256": revoked["preparation_authorizations"][0]["file_sha256"],
+            "revoked_at": "2026-11-04T08:40:00Z",
+        }}]
+        self.assertTrue(any("revoked" in item for item in r3.validate_successor_preparation_authorization_statement(
+            prep["preparation_id"], **dict(base, ledger=revoked)
+        )))
+        wrong_type = dict(prep, scope="FINAL_TRANSACTION")
+        schema = r3.load_json(r3.SUCCESSOR_SCHEMA_PATH)
+        self.assertTrue(r3._schema_errors(wrong_type, {"$ref": "#/$defs/preparationAuthorizationRecord", "$defs": schema["$defs"]}))
+        self.assertNotIn("pr_number", prep)
+        self.assertNotIn("candidate_head_sha", prep)
+
+    def test_successor_review_gate_allows_owner_author_but_requires_distinct_attested_reviewer(self) -> None:
         head = "b" * 40
+        body = "Independence: I reviewed without involvement in implementation or direction from the PR author.\nAssessment: The new preparation grant is separate from final authorization, and changed-head and replay cases are rejected."
         reviews = [
-            {"review_id": 1, "actor_id": 50, "state": "APPROVED", "commit_sha": head, "submitted_at": "2026-11-04T10:01:00Z", "permission": "write"},
-            {"review_id": 2, "actor_id": 49422864, "state": "APPROVED", "commit_sha": head, "submitted_at": "2026-11-04T10:02:00Z", "permission": "admin"},
+            {"review_id": 1, "actor_id": 50, "state": "APPROVED", "commit_sha": head, "submitted_at": "2026-11-04T10:01:00Z", "user_type": "User", "body": body},
             # A comment after merge must not retroactively replace the valid review state at merge.
-            {"review_id": 3, "actor_id": 50, "state": "COMMENTED", "commit_sha": head, "submitted_at": "2026-11-04T10:30:00Z", "permission": "write"},
+            {"review_id": 3, "actor_id": 50, "state": "COMMENTED", "commit_sha": head, "submitted_at": "2026-11-04T10:30:00Z", "user_type": "User", "body": "later comment"},
         ]
-        independent, owner, errors = r3.validate_successor_review_gate(
-            reviews, author_id=40, owner_id=49422864, head_sha=head,
-            authorized_reviewer_ids={50}, valid_through="2026-11-04T10:10:00Z",
+        independent, owner_review, errors = r3.validate_successor_review_gate(
+            reviews, author_id=49422864, owner_id=49422864, head_sha=head,
+            authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
         )
         self.assertEqual(errors, [])
         self.assertEqual(independent["review_id"], 1)
-        self.assertEqual(owner["review_id"], 2)
+        self.assertIsNone(owner_review)
 
-        missing = [row for row in reviews if row["actor_id"] != 50]
+        author_self_review = [dict(reviews[0], actor_id=49422864)]
         _, _, errors = r3.validate_successor_review_gate(
-            missing, author_id=40, owner_id=49422864, head_sha=head,
-            authorized_reviewer_ids={50}, valid_through="2026-11-04T10:10:00Z",
+            author_self_review, author_id=49422864, owner_id=49422864, head_sha=head,
+            authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
         )
-        self.assertTrue(any("no authorized non-author" in error for error in errors), errors)
-        wrong_head = [dict(row, commit_sha="c" * 40) for row in reviews[:2]]
+        self.assertTrue(any("no distinct non-author" in error for error in errors), errors)
+        wrong_head = [dict(reviews[0], commit_sha="c" * 40)]
         _, _, errors = r3.validate_successor_review_gate(
             wrong_head, author_id=40, owner_id=49422864, head_sha=head,
-            authorized_reviewer_ids={50}, valid_through="2026-11-04T10:10:00Z",
+            authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
         )
         self.assertTrue(errors)
+        incomplete = [dict(reviews[0], body="Approved without the required review evidence")]
+        _, _, errors = r3.validate_successor_review_gate(
+            incomplete, author_id=40, owner_id=49422864, head_sha=head,
+            authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
+        )
+        self.assertTrue(any("Independence" in item or "Assessment" in item for item in errors), errors)
+
+    def test_live_review_readback_does_not_require_write_permission(self) -> None:
+        endpoints = []
+        body = "Independence: Independent review context, no implementation access.\nAssessment: Exact head and history gates were checked."
+        def api(endpoint: str):
+            endpoints.append(endpoint)
+            if endpoint == "repos/Arvin-liu/when-systems-catch-fire":
+                return {"owner": {"id": 49422864}}
+            if endpoint.endswith("/pulls/801"):
+                return {"number": 801, "user": {"id": 49422864, "type": "User"}, "created_at": "2026-11-04T08:50:00Z"}
+            if endpoint.endswith("/reviews?per_page=100&page=1"):
+                return [{"id": 9, "user": {"id": 60, "type": "User"}, "state": "APPROVED", "commit_id": "b" * 40,
+                         "submitted_at": "2026-11-04T09:00:00Z", "html_url": "https://github.com/review/9",
+                         "author_association": "CONTRIBUTOR", "body": body}]
+            raise AssertionError(endpoint)
+        meta, reviews, errors = r3.read_live_successor_pr_reviews(801, github_api=api)
+        self.assertEqual(errors, [])
+        self.assertEqual(reviews[0]["user_type"], "User")
+        self.assertNotIn("permission", reviews[0])
+        self.assertFalse(any("/collaborators/" in endpoint for endpoint in endpoints))
+        independent, _, errors = r3.validate_successor_review_gate(
+            reviews, author_id=49422864, owner_id=49422864, head_sha="b" * 40,
+            authorized_reviewer_ids=None, valid_through="2026-11-04T10:00:00Z",
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(independent["actor_id"], 60)
+
+    def test_owner_exact_head_review_record_binds_diff_and_precedes_merge(self) -> None:
+        row = _owner_exact_head_review_fixture()
+        signed = row["statement"]
+        kwargs = {
+            "owner_id": 49422864, "task_id": signed["task_id"], "formal_ordinal": signed["formal_ordinal"],
+            "registration_id": signed["registration_id"], "pr_number": signed["formal_pr_number"],
+            "author_id": signed["pr_author_id"], "base_sha": signed["formal_base_sha"],
+            "head_sha": signed["formal_candidate_head_sha"], "diff_sha256": signed["formal_pr_diff_sha256"],
+            "protocol_sha256": signed["protocol_sha256"], "valid_through": "2026-11-04T10:00:00Z",
+        }
+        self.assertEqual(r3.validate_successor_owner_exact_head_review_record(row, **kwargs), [])
+        self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, head_sha="d" * 40)))
+        self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, diff_sha256="e" * 64)))
+        self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, valid_through="2026-11-04T09:35:00Z")))
+
+    def test_task22_preparation_authority_uses_effective_163_and_165_not_candidate_self_authority(self) -> None:
+        contract = r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
+        raw = json.dumps({
+            "root_authority_binding": {
+                "verified_owner_merge_sha": r3.SUCCESSOR_ROOT_MERGE_SHA, "effective": True,
+            },
+            "explicit_identity_assignment": {
+                "task_id": contract["task_id"], "formal_ordinal": contract["formal_ordinal"],
+                "formal_base_main_sha_observed": "87d7f8d3114e859a59585da336fb6301ee4cbbd3",
+                "proposed_work_branch": contract["work_branch"],
+                "proposed_receipt_branch": contract["receipt_branch"],
+            },
+            "authorization_scope_after_verified_owner_merge": {
+                "permitted": "Prepare the Formal branch and Draft PR, then collect required checks.",
+                "prohibited": ["Any Stage A 023 code push or PR.", "Branch-protection changes.", "Formal main direct write or self-approval."],
+            },
+        }, sort_keys=True).encode("utf-8")
+        main_sha = "9" * 40
+        def api(endpoint: str):
+            if endpoint == "repos/Arvin-liu/1111":
+                return {"owner": {"id": 49422864}, "private": True, "default_branch": "main"}
+            if endpoint == "repos/Arvin-liu/1111/pulls/165":
+                return {"number": 165, "state": "closed", "merged": True, "merged_by": {"id": 49422864},
+                        "base": {"ref": "main", "sha": r3.TASK22_IDENTITY_BASE_SHA},
+                        "head": {"sha": r3.TASK22_IDENTITY_HEAD_SHA}, "merge_commit_sha": r3.TASK22_IDENTITY_MERGE_SHA}
+            if endpoint.endswith("/pulls/165/files?per_page=100"):
+                return [{"filename": r3.TASK22_IDENTITY_PATH, "status": "added", "sha": r3.TASK22_IDENTITY_TREE_BLOB}]
+            if endpoint == "repos/Arvin-liu/1111/branches/main":
+                return {"commit": {"sha": main_sha}}
+            if endpoint == f"repos/Arvin-liu/1111/compare/{r3.TASK22_IDENTITY_MERGE_SHA}...{main_sha}":
+                return {"status": "ahead"}
+            raise AssertionError(endpoint)
+        with patch.object(r3, "read_authenticated_successor_root_authority", return_value=({"merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA}, [])), \
+             patch.object(r3, "_commit_from_api", return_value={"parents": [{"sha": r3.TASK22_IDENTITY_BASE_SHA}, {"sha": r3.TASK22_IDENTITY_HEAD_SHA}]}), \
+             patch.object(r3, "_verified_owner_commit", return_value=(True, "valid")), \
+             patch.object(r3, "_read_authenticated_control_path_commit", return_value=({"raw": raw, "blob_sha": r3.TASK22_IDENTITY_TREE_BLOB, "file_sha256": r3.TASK22_IDENTITY_FILE_SHA256}, [])):
+            authority, errors = r3.read_authenticated_task22_amendment_preparation_authority(github_api=api)
+        self.assertEqual(errors, [])
+        self.assertEqual(authority["pull_request_number"], 165)
+        self.assertEqual(authority["task_id"], "IGNITION-20261105-022")
+        self.assertIn("READY", authority["prohibited"])
+
+    def test_successor_migration_allows_owner_author_with_signed_review_record(self) -> None:
+        base, head, merge_sha, tree_sha = "a" * 40, "b" * 40, "d" * 40, "c" * 40
+        body = "Independence: I reviewed from a context separate from the Owner author and implementation.\nAssessment: The scoped authorization and ledger changes bind exact heads and prevent replay."
+        review = {
+            "review_id": 42, "actor_id": 60, "state": "APPROVED", "commit_sha": head,
+            "submitted_at": "2026-11-04T09:00:00Z", "review_url": "https://github.com/review/42",
+            "author_association": "CONTRIBUTOR", "user_type": "User", "body": body,
+        }
+        owner_row = _owner_exact_head_review_fixture(pr_number=801, author_id=49422864)
+        diff_sha = owner_row["statement"]["formal_pr_diff_sha256"]
+        protocol_raw = r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()
+        blob = r3.git_blob_sha(r3.SUCCESSOR_PROTOCOL_PATH)
+        encoded = base64.b64encode(protocol_raw).decode("ascii")
+        contexts = [
+            {"context": name, "app_id": 15368, "sha": head, "conclusion": "success", "check_run_id": index,
+             "check_url": f"https://github.com/check/{index}", "completed_at": "2026-11-04T09:30:00Z"}
+            for index, name in enumerate(("release-transaction-protocol-validation", "foundation-validation", "repository-path-accounting-preflight"), 1)
+        ]
+        rules_sha = "e" * 64
+        statement = {
+            "protocol_sha256": hashlib.sha256(protocol_raw).hexdigest(), "root_authority_merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA,
+            "formal_pr_number": 801, "formal_base_sha": base, "formal_candidate_head_sha": head,
+            "formal_merge_commit_sha": merge_sha, "formal_merge_tree_sha": tree_sha,
+            "formal_merge_parents": [base, head], "required_check_contexts": contexts,
+            "branch_protection_rules_sha256": rules_sha, "branch_protection_verified": True,
+            "merge_method": "MERGE_COMMIT", "independent_review_id": 42, "independent_reviewer_id": 60,
+            "independent_review_commit_sha": head, "independent_review_body_sha256": hashlib.sha256(body.encode()).hexdigest(),
+            "pr_author_id": 49422864, "owner_review_record_id": owner_row["statement"]["review_id"],
+            "owner_review_record_commit_sha": owner_row["commit_sha"],
+            "owner_review_record_file_sha256": owner_row["file_sha256"], "owner_reviewed_head_sha": head,
+            "witnessed_at": "2026-11-04T10:15:00Z", "owner_actor_id": 49422864,
+        }
+        pr = {
+            "number": 801, "state": "closed", "merged": True, "draft": False,
+            "base": {"ref": "main", "sha": base}, "head": {"sha": head},
+            "merge_commit_sha": merge_sha, "merged_by": {"id": 49422864}, "merged_at": "2026-11-04T10:00:00Z",
+            "user": {"id": 49422864, "type": "User"},
+        }
+        def api(endpoint: str):
+            if endpoint == "repos/Arvin-liu/when-systems-catch-fire/pulls/801": return pr
+            if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/commits/{merge_sha}":
+                return {"sha": merge_sha, "parents": [{"sha": base}, {"sha": head}], "commit": {"tree": {"sha": tree_sha}}}
+            if endpoint.startswith("repos/Arvin-liu/when-systems-catch-fire/contents/"):
+                return {"path": "ignition/data/operations/release-transaction-protocol-r3-successor-r1.json",
+                        "type": "file", "encoding": "base64", "content": encoded, "sha": blob}
+            if endpoint == "repos/Arvin-liu/when-systems-catch-fire/branches/main": return {"commit": {"sha": "f" * 40}}
+            if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/compare/{merge_sha}...{'f' * 40}": return {"status": "ahead"}
+            raise AssertionError(endpoint)
+        with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
+             patch.object(r3, "read_live_successor_pr_diff_sha256", return_value=(diff_sha, [])), \
+             patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True}, [])):
+            errors = r3.validate_successor_migration_witness_live(
+                statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
+                owner_review_records=[owner_row], github_api=api,
+            )
+        self.assertEqual(errors, [])
+        self.assertNotEqual(review["actor_id"], pr["user"]["id"])
+        with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
+             patch.object(r3, "read_live_successor_pr_diff_sha256", return_value=(diff_sha, [])), \
+             patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True}, [])):
+            without_owner_record = r3.validate_successor_migration_witness_live(
+                statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
+                owner_review_records=[], github_api=api,
+            )
+        self.assertTrue(any("Owner exact-head review ID" in item for item in without_owner_record), without_owner_record)
 
     def test_successor_required_contexts_bind_each_exact_app_and_head(self) -> None:
         head = "b" * 40

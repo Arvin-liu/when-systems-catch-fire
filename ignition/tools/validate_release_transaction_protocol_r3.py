@@ -45,6 +45,7 @@ SUCCESSOR_REGISTRATION_PREFIX = "instructions/goal-mode/r3-successors/registrati
 SUCCESSOR_AUTHORIZATION_PREFIX = "instructions/goal-mode/r3-successors/authorizations/"
 SUCCESSOR_REVOCATION_PREFIX = "instructions/goal-mode/r3-successors/revocations/"
 SUCCESSOR_SUPERSESSION_PREFIX = "instructions/goal-mode/r3-successors/supersessions/"
+SUCCESSOR_REVIEW_PREFIX = "instructions/goal-mode/r3-successors/reviews/"
 SUCCESSOR_PUBLICATION_PREFIX = "reports/operations/r3-successors/publications/"
 SUCCESSOR_MIGRATION_PREFIX = "reports/operations/r3-successors/migrations/"
 SUCCESSOR_LEDGER_PREFIXES = (
@@ -52,6 +53,7 @@ SUCCESSOR_LEDGER_PREFIXES = (
     SUCCESSOR_AUTHORIZATION_PREFIX,
     SUCCESSOR_REVOCATION_PREFIX,
     SUCCESSOR_SUPERSESSION_PREFIX,
+    SUCCESSOR_REVIEW_PREFIX,
     SUCCESSOR_PUBLICATION_PREFIX,
     SUCCESSOR_MIGRATION_PREFIX,
 )
@@ -68,6 +70,13 @@ SUCCESSOR_ROOT_AUTHORITY_SHA256 = "995b12e2c86d9af6788c92b6a04780dbb513af4b92aef
 SUCCESSOR_ROOT_INSTRUCTION_PATH = "instructions/IGNITION-2026-11-04-R3-SUCCESSOR-PROTOCOL-AMENDMENT-INSTRUCTION-R0.md"
 SUCCESSOR_ROOT_INSTRUCTION_BLOB = "cdf9f4783eae4f509d2a44f4bcacbaf4eb97a687"
 SUCCESSOR_ROOT_INSTRUCTION_SHA256 = "e6ae8406ddf68904e4d85f1aff3f823686e0e0a6b7a4f428e8eaca19e887dea9"
+TASK22_IDENTITY_PR_NUMBER = 165
+TASK22_IDENTITY_BASE_SHA = "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"
+TASK22_IDENTITY_HEAD_SHA = "17ed13c274630269062e84834d52b49f34236931"
+TASK22_IDENTITY_MERGE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
+TASK22_IDENTITY_TREE_BLOB = "146df919b91ddf2bf189a106441abee80486056d"
+TASK22_IDENTITY_FILE_SHA256 = "f4300d22378458b1ed36ccb168cbe67be71c8056706005af331e3bd93c6ccc05"
+TASK22_IDENTITY_PATH = "instructions/goal-mode/IGNITION-2026-11-05-TASK22-OWNER-IDENTITY-ASSIGNMENT-R0.json"
 HISTORICAL_ADJUDICATION_PR_NUMBER = 162
 HISTORICAL_ADJUDICATION_MERGE_SHA = "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d"
 HISTORICAL_AUDIT_PATH = "reports/operations/IGNITION-2026-11-04-TASK21-PR267-POSTMERGE-INDEPENDENT-AUDIT-R0.md"
@@ -776,6 +785,154 @@ def read_authenticated_successor_root_authority(
         return None, [f"root governance authority readback failed closed: {error.__class__.__name__}: {error}"]
 
 
+def read_authenticated_task22_amendment_preparation_authority(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Verify the external #163 + #165 authority for this candidate's Draft prep.
+
+    This one-time amendment bootstrap is intentionally independent of the
+    successor PREPARATION_ONLY ledger, which is part of the candidate and is
+    not effective yet.
+    """
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
+        root, root_errors = read_authenticated_successor_root_authority(github_api=api)
+        if root_errors or root is None:
+            return None, [f"Task22 preparation lacks the live #163 root authority: {error}" for error in root_errors]
+        if root["merge_commit_sha"] != contract["root_authority_merge_commit_sha"]:
+            return None, ["Task22 preparation root merge differs from the exact #163 mandate"]
+
+        repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (repo.get("owner") or {}).get("id")
+        if owner_id != 49422864 or repo.get("private") is not True or repo.get("default_branch") != "main":
+            return None, ["Task22 identity source is not the verified private 1111/main Owner repository"]
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{TASK22_IDENTITY_PR_NUMBER}")
+        base, head = (pr.get("base") or {}), (pr.get("head") or {})
+        if (
+            pr.get("number") != TASK22_IDENTITY_PR_NUMBER or pr.get("state") != "closed"
+            or pr.get("merged") is not True or (pr.get("merged_by") or {}).get("id") != owner_id
+            or base.get("ref") != "main" or base.get("sha") != TASK22_IDENTITY_BASE_SHA
+            or head.get("sha") != TASK22_IDENTITY_HEAD_SHA
+            or pr.get("merge_commit_sha") != TASK22_IDENTITY_MERGE_SHA
+        ):
+            return None, ["Task22 identity assignment is not the exact Owner-merged #165 transaction"]
+
+        files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{TASK22_IDENTITY_PR_NUMBER}/files?per_page=100")
+        if (
+            not isinstance(files, list) or len(files) != 1
+            or files[0].get("filename") != TASK22_IDENTITY_PATH
+            or files[0].get("status") != "added"
+            or files[0].get("sha") != TASK22_IDENTITY_TREE_BLOB
+        ):
+            return None, ["PR #165 does not add exactly the expected Task22 identity-assignment file"]
+
+        merge = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, TASK22_IDENTITY_MERGE_SHA, api, {})
+        parents = [row.get("sha") for row in merge.get("parents", []) if isinstance(row, dict)]
+        if parents != [TASK22_IDENTITY_BASE_SHA, TASK22_IDENTITY_HEAD_SHA]:
+            return None, ["PR #165 Owner merge has wrong ordered base/head parents"]
+        signed, signature_error = _verified_owner_commit(merge, owner_id)
+        if not signed:
+            return None, [f"PR #165 Owner merge signature is invalid: {signature_error}"]
+        main = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{TASK22_IDENTITY_MERGE_SHA}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["PR #165 identity assignment is not ancestral to current 1111/main"]
+        identity = contract["identity_assignment_file"]
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, identity["path"], TASK22_IDENTITY_MERGE_SHA, owner_id,
+            expected_file_sha256=identity["sha256"],
+            expected_parent_shas=[TASK22_IDENTITY_BASE_SHA, TASK22_IDENTITY_HEAD_SHA], api=api,
+        )
+        if binding_errors or binding is None:
+            return None, [f"PR #165 identity file failed exact signed readback: {error}" for error in binding_errors]
+        if binding["blob_sha"] != identity["git_blob_sha"]:
+            return None, ["PR #165 identity-assignment blob differs from the Owner-merged file"]
+        assignment = json.loads(binding["raw"].decode("utf-8"))
+        assigned = assignment["explicit_identity_assignment"]
+        root_binding = assignment["root_authority_binding"]
+        scope = assignment["authorization_scope_after_verified_owner_merge"]
+        prohibited_actions = scope.get("prohibited")
+        if (
+            root_binding.get("verified_owner_merge_sha") != root["merge_commit_sha"]
+            or root_binding.get("effective") is not True
+            or assigned.get("task_id") != contract["task_id"]
+            or assigned.get("formal_ordinal") != contract["formal_ordinal"]
+            or assigned.get("formal_base_main_sha_observed") != "87d7f8d3114e859a59585da336fb6301ee4cbbd3"
+            or assigned.get("proposed_work_branch") != contract["work_branch"]
+            or assigned.get("proposed_receipt_branch") != contract["receipt_branch"]
+            or not isinstance(prohibited_actions, list)
+            or not any("Stage A 023" in item for item in prohibited_actions)
+            or not any("Branch-protection" in item for item in prohibited_actions)
+            or not any("Formal main direct write" in item for item in prohibited_actions)
+            or "Draft PR" not in scope.get("permitted", "")
+        ):
+            return None, ["Owner-merged #165 identity, #163 root binding, or narrow preparation scope differs from this candidate"]
+        return {
+            "root_authority": root,
+            "repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "pull_request_number": TASK22_IDENTITY_PR_NUMBER,
+            "merge_commit_sha": TASK22_IDENTITY_MERGE_SHA,
+            "ordered_parents": parents,
+            "owner_actor_id": owner_id,
+            "signature_verified": True,
+            "signature_reason": "valid",
+            "main_sha": main_sha,
+            "file_path": identity["path"],
+            "file_blob_sha": binding["blob_sha"],
+            "file_sha256": binding["file_sha256"],
+            "task_id": assigned["task_id"],
+            "formal_ordinal": assigned["formal_ordinal"],
+            "work_branch": assigned["proposed_work_branch"],
+            "receipt_branch": assigned["proposed_receipt_branch"],
+            "permitted": contract["permitted"],
+            "prohibited": contract["prohibited"],
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Task22 #163/#165 preparation authority failed closed: {error.__class__.__name__}: {error}"]
+
+
+def validate_task22_local_preparation_checkout(
+    authority: dict[str, Any],
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Confirm this exact assigned branch is clean, pushed, and based on main."""
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
+        branch = subprocess.run(
+            ["git", "branch", "--show-current"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+        ).stdout.strip()
+        head_sha = subprocess.run(
+            ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+        ).stdout.strip()
+        status = subprocess.run(
+            ["git", "status", "--porcelain"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+        ).stdout
+        if branch != contract["work_branch"]:
+            return None, ["local checkout is not the Owner-assigned Task22 work branch"]
+        if status:
+            return None, ["Task22 checkout has uncommitted changes; exact branch head cannot be presented for Draft review"]
+        main = api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        if main_sha != "87d7f8d3114e859a59585da336fb6301ee4cbbd3":
+            return None, ["Formal main advanced from the exact #165-assigned Task22 base; stop and rebase only under renewed evidence"]
+        task_branch = api(f"repos/{PUBLIC_REPOSITORY}/branches/{quote(branch, safe='')}")
+        remote_head = (task_branch.get("commit") or {}).get("sha") if isinstance(task_branch, dict) else None
+        if remote_head != head_sha:
+            return None, ["pushed Task22 branch head differs from the exact locally verified candidate head"]
+        ancestry = api(f"repos/{PUBLIC_REPOSITORY}/compare/{main_sha}...{head_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["exact Task22 candidate head is not based on the authorized Formal main SHA"]
+        if authority.get("task_id") != contract["task_id"] or authority.get("work_branch") != branch:
+            return None, ["verified #165 assignment does not match the exact local task branch identity"]
+        return {"branch": branch, "head_sha": head_sha, "base_main_sha": main_sha, "remote_head_sha": remote_head}, []
+    except (OSError, subprocess.SubprocessError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Task22 local Draft-preparation checkout failed closed: {error.__class__.__name__}: {error}"]
+
+
 def read_authenticated_historical_adjudication(
     *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
 ) -> tuple[dict[str, Any] | None, list[str]]:
@@ -939,8 +1096,9 @@ def validate_successor_ledger_uniqueness(records: list[dict[str, Any]]) -> list[
     groups = {
         record_type: [row for row in records if row.get("statement", {}).get("record_type") == record_type]
         for record_type in (
-            "TASK_REGISTRATION", "TRANSACTION_AUTHORIZATION", "AUTHORIZATION_REVOCATION",
-            "REGISTRATION_SUPERSESSION", "PUBLICATION_WITNESS", "PROTOCOL_MIGRATION_WITNESS",
+            "TASK_REGISTRATION", "PREPARATION_AUTHORIZATION", "FINAL_TRANSACTION_AUTHORIZATION",
+            "AUTHORIZATION_REVOCATION", "REGISTRATION_SUPERSESSION", "OWNER_EXACT_HEAD_REVIEW",
+            "PUBLICATION_WITNESS", "PROTOCOL_MIGRATION_WITNESS",
         )
     }
 
@@ -955,14 +1113,25 @@ def validate_successor_ledger_uniqueness(records: list[dict[str, Any]]) -> list[
         ("receipt_branch", "receipt branch"),
     ):
         unique(groups["TASK_REGISTRATION"], key, label)
-    for key, label in (("authorization_id", "authorization_id"), ("transaction_id", "transaction_id")):
-        unique(groups["TRANSACTION_AUTHORIZATION"], key, label)
+    unique(groups["PREPARATION_AUTHORIZATION"], "preparation_id", "preparation_id")
+    unique(groups["FINAL_TRANSACTION_AUTHORIZATION"], "authorization_id", "authorization_id")
+    all_auth_ids = [
+        row["statement"].get(key)
+        for row, key in (
+            *((row, "preparation_id") for row in groups["PREPARATION_AUTHORIZATION"]),
+            *((row, "authorization_id") for row in groups["FINAL_TRANSACTION_AUTHORIZATION"]),
+        )
+    ]
+    if len(all_auth_ids) != len(set(all_auth_ids)):
+        errors.append("successor ledger repeats an authorization ID across preparation and final phases")
+    unique(groups["FINAL_TRANSACTION_AUTHORIZATION"], "transaction_id", "transaction_id")
     unique(groups["AUTHORIZATION_REVOCATION"], "revocation_id", "revocation_id")
     unique(groups["REGISTRATION_SUPERSESSION"], "supersession_id", "supersession_id")
+    unique(groups["OWNER_EXACT_HEAD_REVIEW"], "review_id", "owner exact-head review ID")
     unique(groups["PUBLICATION_WITNESS"], "transaction_id", "published transaction ID")
     unique(groups["PROTOCOL_MIGRATION_WITNESS"], "protocol_sha256", "protocol migration digest")
 
-    nonce_fields = ("registration_nonce", "authorization_nonce", "revocation_nonce", "supersession_nonce")
+    nonce_fields = ("registration_nonce", "preparation_nonce", "authorization_nonce", "revocation_nonce", "supersession_nonce", "review_nonce")
     nonces = [
         row["statement"].get(field)
         for row in records
@@ -1185,14 +1354,23 @@ def read_authenticated_successor_control_ledger(
                 def_name = "taskRegistrationRecord"
                 expected_id = statement.get("registration_id")
             elif path.startswith(SUCCESSOR_AUTHORIZATION_PREFIX):
-                def_name = "transactionAuthorizationRecord"
-                expected_id = statement.get("authorization_id")
+                if statement.get("record_type") == "PREPARATION_AUTHORIZATION":
+                    def_name = "preparationAuthorizationRecord"
+                    expected_id = statement.get("preparation_id")
+                elif statement.get("record_type") == "FINAL_TRANSACTION_AUTHORIZATION":
+                    def_name = "finalTransactionAuthorizationRecord"
+                    expected_id = statement.get("authorization_id")
+                else:
+                    return None, [f"successor authorization path has an unsupported record type: {path}"]
             elif path.startswith(SUCCESSOR_REVOCATION_PREFIX):
                 def_name = "authorizationRevocationRecord"
                 expected_id = statement.get("revocation_id")
             elif path.startswith(SUCCESSOR_SUPERSESSION_PREFIX):
                 def_name = "registrationSupersessionRecord"
                 expected_id = statement.get("supersession_id")
+            elif path.startswith(SUCCESSOR_REVIEW_PREFIX):
+                def_name = "ownerExactHeadReviewRecord"
+                expected_id = statement.get("review_id")
             elif path.startswith(SUCCESSOR_PUBLICATION_PREFIX):
                 def_name = "publicationWitnessRecord"
                 expected_id = statement.get("transaction_id")
@@ -1230,9 +1408,11 @@ def read_authenticated_successor_control_ledger(
 
         # Enforce global uniqueness, including across different ledger record types.
         registrations = [row for row in records if row["statement"]["record_type"] == "TASK_REGISTRATION"]
-        authorizations = [row for row in records if row["statement"]["record_type"] == "TRANSACTION_AUTHORIZATION"]
+        preparation_authorizations = [row for row in records if row["statement"]["record_type"] == "PREPARATION_AUTHORIZATION"]
+        authorizations = [row for row in records if row["statement"]["record_type"] == "FINAL_TRANSACTION_AUTHORIZATION"]
         revocations = [row for row in records if row["statement"]["record_type"] == "AUTHORIZATION_REVOCATION"]
         supersessions = [row for row in records if row["statement"]["record_type"] == "REGISTRATION_SUPERSESSION"]
+        owner_reviews = [row for row in records if row["statement"]["record_type"] == "OWNER_EXACT_HEAD_REVIEW"]
         publications = [row for row in records if row["statement"]["record_type"] == "PUBLICATION_WITNESS"]
         migrations = [row for row in records if row["statement"]["record_type"] == "PROTOCOL_MIGRATION_WITNESS"]
         errors.extend(validate_successor_ledger_uniqueness(records))
@@ -1284,12 +1464,22 @@ def read_authenticated_successor_control_ledger(
             except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
                 errors.append(f"successor registration exact-base predecessor check failed closed: {error}")
         registration_by_id = {row["statement"]["registration_id"]: row for row in registrations}
+        preparation_by_id = {row["statement"]["preparation_id"]: row for row in preparation_authorizations}
         authorization_by_id = {row["statement"]["authorization_id"]: row for row in authorizations}
         revoked_ids: set[str] = set()
         for row in revocations:
             statement = row["statement"]
-            target = authorization_by_id.get(statement["authorization_id"])
-            if target is None or target["file_sha256"] != statement["authorization_file_sha256"]:
+            if statement["authorization_record_type"] == "PREPARATION_AUTHORIZATION":
+                target = preparation_by_id.get(statement["authorization_id"])
+                target_type = "PREPARATION_AUTHORIZATION"
+            else:
+                target = authorization_by_id.get(statement["authorization_id"])
+                target_type = "FINAL_TRANSACTION_AUTHORIZATION"
+            if (
+                target is None
+                or target["file_sha256"] != statement["authorization_file_sha256"]
+                or target["statement"]["record_type"] != target_type
+            ):
                 errors.append("revocation does not bind an exact existing Owner authorization")
             else:
                 target_time, target_errors = _parse_control_time(target["committed_at"], "authorization commit time")
@@ -1331,30 +1521,65 @@ def read_authenticated_successor_control_ledger(
             if prior_id in superseded_ids:
                 errors.append("one registration has more than one supersession record")
             superseded_ids.add(prior_id)
-        for row in authorizations:
+        for row in preparation_authorizations:
             statement = row["statement"]
             registration = registration_by_id.get(statement["registration_id"])
             if registration is None or registration["statement"]["task_id"] != statement["task_id"] or registration["statement"]["formal_ordinal"] != statement["formal_ordinal"]:
-                errors.append("transaction authorization does not bind its exact signed task registration")
+                errors.append("preparation authorization does not bind its exact signed task registration")
             else:
                 if (
                     statement["protocol_blob_sha"] != git_blob_sha(SUCCESSOR_PROTOCOL_PATH)
                     or statement["protocol_file_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
                     or registration["statement"]["protocol_blob_sha"] != statement["protocol_blob_sha"]
                     or registration["statement"]["protocol_file_sha256"] != statement["protocol_file_sha256"]
+                    or statement["base_main_sha"] != registration["statement"]["formal_base_main_sha"]
+                    or statement["work_branch"] != registration["statement"]["work_branch"]
                 ):
-                    errors.append("transaction authorization is stale for its exact registered protocol version")
+                    errors.append("preparation authorization differs from its exact registered branch, base or protocol version")
                 registration_time, registration_errors = _parse_control_time(registration["committed_at"], "registration commit time")
-                authorization_time, authorization_errors = _parse_control_time(row["committed_at"], "authorization commit time")
-                approved_at, approved_errors = _parse_control_time(statement["approved_at"], "Owner authorization approved_at")
-                expires_at, expiry_errors = _parse_control_time(statement["expires_at"], "Owner authorization expires_at")
+                authorization_time, authorization_errors = _parse_control_time(row["committed_at"], "preparation authorization commit time")
+                approved_at, approved_errors = _parse_control_time(statement["approved_at"], "preparation authorization approved_at")
+                expires_at, expiry_errors = _parse_control_time(statement["expires_at"], "preparation authorization expires_at")
                 errors.extend(registration_errors + authorization_errors + approved_errors + expiry_errors)
                 if registration_time and authorization_time and authorization_time <= registration_time:
-                    errors.append("transaction authorization must follow its immutable registration")
+                    errors.append("preparation authorization must follow its immutable registration")
                 if approved_at and authorization_time and approved_at > authorization_time:
-                    errors.append("transaction authorization approval timestamp is later than its signed merge")
+                    errors.append("preparation authorization approval timestamp is later than its signed merge")
                 if approved_at and expires_at and expires_at <= approved_at:
-                    errors.append("transaction authorization expiry does not follow its approval timestamp")
+                    errors.append("preparation authorization expiry does not follow its approval timestamp")
+        for row in authorizations:
+            statement = row["statement"]
+            registration = registration_by_id.get(statement["registration_id"])
+            preparation = preparation_by_id.get(statement["preparation_id"])
+            if registration is None or preparation is None:
+                errors.append("final transaction authorization does not bind an existing signed registration and preparation grant")
+                continue
+            prep_statement = preparation["statement"]
+            if (
+                statement["task_id"] != registration["statement"]["task_id"]
+                or statement["formal_ordinal"] != registration["statement"]["formal_ordinal"]
+                or statement["registration_id"] != prep_statement["registration_id"]
+                or statement["task_id"] != prep_statement["task_id"]
+                or statement["formal_ordinal"] != prep_statement["formal_ordinal"]
+                or statement["base_main_sha"] != prep_statement["base_main_sha"]
+                or statement["protocol_blob_sha"] != prep_statement["protocol_blob_sha"]
+                or statement["protocol_file_sha256"] != prep_statement["protocol_file_sha256"]
+            ):
+                errors.append("final transaction authorization differs from its exact preparation grant or task registration")
+            registration_time, registration_errors = _parse_control_time(registration["committed_at"], "registration commit time")
+            preparation_time, prep_errors = _parse_control_time(preparation["committed_at"], "preparation commit time")
+            authorization_time, authorization_errors = _parse_control_time(row["committed_at"], "final transaction authorization commit time")
+            approved_at, approved_errors = _parse_control_time(statement["approved_at"], "final transaction authorization approved_at")
+            expires_at, expiry_errors = _parse_control_time(statement["expires_at"], "final transaction authorization expires_at")
+            errors.extend(registration_errors + prep_errors + authorization_errors + approved_errors + expiry_errors)
+            if registration_time and authorization_time and authorization_time <= registration_time:
+                errors.append("final transaction authorization must follow its immutable registration")
+            if preparation_time and authorization_time and authorization_time <= preparation_time:
+                errors.append("final transaction authorization must follow its signed preparation grant")
+            if approved_at and authorization_time and approved_at > authorization_time:
+                errors.append("final transaction authorization approval timestamp is later than its signed merge")
+            if approved_at and expires_at and expires_at <= approved_at:
+                errors.append("final transaction authorization expiry does not follow its approval timestamp")
         for row in publications:
             statement = row["statement"]
             auth = authorization_by_id.get(statement["authorization_id"])
@@ -1365,7 +1590,8 @@ def read_authenticated_successor_control_ledger(
             auth_statement = auth["statement"]
             reg_statement = registration["statement"]
             if (
-                auth_statement["transaction_id"] != statement["transaction_id"]
+                auth_statement["preparation_id"] != statement["preparation_id"]
+                or auth_statement["transaction_id"] != statement["transaction_id"]
                 or auth_statement["authorization_id"] != statement["authorization_id"]
                 or auth_statement["registration_id"] != statement["registration_id"]
                 or auth_statement["task_id"] != statement["task_id"]
@@ -1393,15 +1619,14 @@ def read_authenticated_successor_control_ledger(
                 errors.append("migration witness does not bind the verified external Owner root authority")
             if statement["independent_reviewer_id"] == statement["pr_author_id"] or statement["independent_reviewer_id"] == owner_id:
                 errors.append("migration witness independent reviewer must differ from both PR author and Owner")
-            if statement["owner_review_actor_id"] != owner_id or statement["owner_review_commit_sha"] != statement["formal_candidate_head_sha"]:
-                errors.append("migration witness Owner review is not bound to the exact Formal PR head")
         if errors:
             return None, errors
         for row in migrations:
             errors.extend(
                 f"successor migration witness {row['statement']['protocol_sha256']}: {item}"
                 for item in validate_successor_migration_witness_live(
-                    row["statement"], signed_record=row, owner_id=owner_id, github_api=api
+                    row["statement"], signed_record=row, owner_id=owner_id,
+                    owner_review_records=owner_reviews, github_api=api
                 )
             )
         for row in publications:
@@ -1419,8 +1644,10 @@ def read_authenticated_successor_control_ledger(
             "records": records,
             "registrations": registrations,
             "authorizations": authorizations,
+            "preparation_authorizations": preparation_authorizations,
             "revocations": revocations,
             "supersessions": supersessions,
+            "owner_reviews": owner_reviews,
             "publications": publications,
             "migrations": migrations,
             "revoked_authorization_ids": sorted(revoked_ids),
@@ -1440,6 +1667,119 @@ def _parse_control_time(value: str, label: str) -> tuple[datetime | None, list[s
         return None, [f"{label} is not a valid timezone-aware timestamp"]
 
 
+def _successor_authorization_revocation_errors(
+    ledger: dict[str, Any], *, authorization_id: str, authorization_record_type: str,
+    authorization_file_sha256: str, valid_through: str,
+) -> list[str]:
+    errors: list[str] = []
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "authorization revocation cutoff")
+    errors.extend(cutoff_errors)
+    for revoked in ledger.get("revocations", []):
+        revocation = revoked["statement"]
+        if (
+            revocation.get("authorization_id") != authorization_id
+            or revocation.get("authorization_record_type") != authorization_record_type
+        ):
+            continue
+        if revocation.get("authorization_file_sha256") != authorization_file_sha256:
+            errors.append("authorization revocation does not bind the exact signed authorization bytes")
+        revoked_at, revoked_errors = _parse_control_time(revocation.get("revoked_at"), "authorization revoked_at")
+        errors.extend(revoked_errors)
+        if revoked_at and cutoff and revoked_at <= cutoff:
+            errors.append(f"Owner {authorization_record_type.lower()} was revoked before the authorized boundary")
+    return errors
+
+
+def validate_successor_preparation_authorization_statement(
+    preparation_id: str,
+    *,
+    ledger: dict[str, Any],
+    task_id: str,
+    formal_ordinal: int,
+    registration_id: str,
+    work_branch: str,
+    base_main_sha: str,
+    protocol_blob_sha: str,
+    protocol_file_sha256: str,
+    candidate_seed_sha256: str,
+    action: str,
+    valid_through: str,
+) -> list[str]:
+    """Validate the no-PR-yet PREPARATION_ONLY grant for one allowed action."""
+    errors: list[str] = []
+    rows = [
+        row for row in ledger.get("preparation_authorizations", [])
+        if row["statement"].get("preparation_id") == preparation_id
+    ]
+    if len(rows) != 1:
+        return ["preparation grant does not resolve to exactly one immutable signed 1111 ledger record"]
+    row = rows[0]
+    signed = row["statement"]
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors.extend(_schema_errors(signed, {"$ref": "#/$defs/preparationAuthorizationRecord", "$defs": schema["$defs"]}))
+    for field, expected_value in (
+        ("preparation_id", preparation_id), ("task_id", task_id), ("formal_ordinal", formal_ordinal),
+        ("registration_id", registration_id), ("work_branch", work_branch), ("base_main_sha", base_main_sha),
+        ("protocol_blob_sha", protocol_blob_sha), ("protocol_file_sha256", protocol_file_sha256),
+        ("candidate_seed_sha256", candidate_seed_sha256), ("scope", "PREPARATION_ONLY"),
+        ("allowed_actions", ["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"]),
+        ("owner_actor_id", 49422864),
+    ):
+        if signed.get(field) != expected_value:
+            errors.append(f"PREPARATION_ONLY {field} does not bind the exact registered candidate scope")
+    if action not in signed.get("allowed_actions", []):
+        errors.append("PREPARATION_ONLY grant does not authorize this action")
+    expected_evidence = {
+        "path": f"{SUCCESSOR_AUTHORIZATION_PREFIX}{preparation_id}.json",
+        "statement": signed, "file_sha256": row.get("file_sha256"),
+        "signature_verified": True, "signature_reason": "valid",
+    }
+    if row.get("path") != expected_evidence["path"] or row.get("signature_verified") is not True or row.get("signature_reason") != "valid":
+        errors.append("PREPARATION_ONLY evidence differs from the exact Owner-signed append-only record")
+    registration_rows = [
+        item for item in ledger.get("registrations", [])
+        if item["statement"].get("registration_id") == registration_id
+    ]
+    if len(registration_rows) != 1:
+        errors.append("PREPARATION_ONLY grant has no unique exact signed task registration")
+    else:
+        registration = registration_rows[0]["statement"]
+        if (
+            registration.get("task_id") != task_id
+            or registration.get("formal_ordinal") != formal_ordinal
+            or registration.get("work_branch") != work_branch
+            or registration.get("formal_base_main_sha") != base_main_sha
+            or registration.get("protocol_blob_sha") != protocol_blob_sha
+            or registration.get("protocol_file_sha256") != protocol_file_sha256
+        ):
+            errors.append("PREPARATION_ONLY grant differs from its exact signed task registration")
+        registration_time, reg_errors = _parse_control_time(registration_rows[0]["committed_at"], "registration commit time")
+        prep_commit_time, commit_errors = _parse_control_time(row["committed_at"], "preparation authorization commit time")
+        errors.extend(reg_errors + commit_errors)
+        if registration_time and prep_commit_time and prep_commit_time <= registration_time:
+            errors.append("PREPARATION_ONLY grant must be Owner-signed after its task registration")
+    approved_at, approved_errors = _parse_control_time(signed.get("approved_at"), "preparation authorization approved_at")
+    committed_at, committed_errors = _parse_control_time(row.get("committed_at"), "preparation authorization signed commit time")
+    expires_at, expiry_errors = _parse_control_time(signed.get("expires_at"), "preparation authorization expires_at")
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "preparation action cutoff")
+    errors.extend(approved_errors + committed_errors + expiry_errors + cutoff_errors)
+    if approved_at and committed_at and approved_at > committed_at:
+        errors.append("PREPARATION_ONLY approval timestamp is later than its Owner-signed merge")
+    if committed_at and cutoff and committed_at >= cutoff:
+        errors.append("PREPARATION_ONLY grant was not signed before the authorized action")
+    if approved_at and cutoff and approved_at >= cutoff:
+        errors.append("PREPARATION_ONLY grant was not approved before the authorized action")
+    if approved_at and expires_at and expires_at <= approved_at:
+        errors.append("PREPARATION_ONLY expiry does not follow its approval timestamp")
+    if expires_at and cutoff and expires_at <= cutoff:
+        errors.append("PREPARATION_ONLY grant is expired at the authorized action")
+    errors.extend(_successor_authorization_revocation_errors(
+        ledger, authorization_id=preparation_id, authorization_record_type="PREPARATION_AUTHORIZATION",
+        authorization_file_sha256=row.get("file_sha256", ""), valid_through=valid_through,
+    ))
+    return errors
+
+
 def validate_successor_transaction_authorization_statement(
     evidence: dict[str, Any],
     *,
@@ -1453,29 +1793,34 @@ def validate_successor_transaction_authorization_statement(
     base_main_sha: str,
     protocol_blob_sha: str,
     protocol_file_sha256: str,
+    preparation_valid_through: str,
     valid_through: str,
 ) -> list[str]:
-    """Require the exact Owner-signed, unexpired, unrevoked transaction grant."""
+    """Require both stages: valid prep at PR creation, then exact final grant."""
     errors: list[str] = []
     statement = evidence.get("statement") if isinstance(evidence, dict) else None
     if not isinstance(statement, dict):
-        return ["successor transaction authorization evidence has no signed statement"]
-    auth_rows = [row for row in ledger.get("authorizations", []) if row["statement"].get("authorization_id") == statement.get("authorization_id")]
+        return ["successor final transaction authorization evidence has no signed statement"]
+    auth_rows = [
+        row for row in ledger.get("authorizations", [])
+        if row["statement"].get("authorization_id") == statement.get("authorization_id")
+    ]
     if len(auth_rows) != 1:
-        return ["successor authorization does not resolve to exactly one immutable signed 1111 ledger record"]
+        return ["final transaction authorization does not resolve to exactly one immutable signed 1111 ledger record"]
     row = auth_rows[0]
     signed = row["statement"]
     for field, expected_value in (
+        ("record_type", "FINAL_TRANSACTION_AUTHORIZATION"), ("scope", "FINAL_TRANSACTION"),
         ("task_id", task_id), ("formal_ordinal", formal_ordinal), ("registration_id", registration_id),
         ("transaction_id", transaction_id), ("pr_number", pr_number),
         ("candidate_head_sha", candidate_head_sha), ("base_main_sha", base_main_sha),
         ("protocol_blob_sha", protocol_blob_sha), ("protocol_file_sha256", protocol_file_sha256),
-        ("scope", "EXACT_REGISTERED_FORMAL_RELEASE_PR_ONLY"), ("owner_actor_id", 49422864),
+        ("owner_actor_id", 49422864),
     ):
         if signed.get(field) != expected_value:
-            errors.append(f"successor Owner authorization {field} does not bind the exact transaction")
+            errors.append(f"FINAL_TRANSACTION {field} does not bind the exact PR transaction")
     expected_evidence = {
-        "record_type": signed["record_type"], "statement": signed,
+        "record_type": "FINAL_TRANSACTION_AUTHORIZATION", "statement": signed,
         "authorization_repository": OWNER_AUTHORIZATION_REPOSITORY,
         "authorization_path": row["path"], "authorization_commit_sha": row["commit_sha"],
         "authorization_parent_shas": row["parents"], "authorization_file_sha256": row["file_sha256"],
@@ -1483,46 +1828,61 @@ def validate_successor_transaction_authorization_statement(
         "authorization_signature_verified": True, "authorization_signature_reason": "valid",
     }
     if evidence != expected_evidence:
-        errors.append("transaction record authorization evidence differs from the exact signed 1111 append-only record")
-    registration_rows = [row for row in ledger.get("registrations", []) if row["statement"].get("registration_id") == registration_id]
-    if len(registration_rows) != 1:
-        errors.append("transaction authorization has no unique exact signed task registration")
-    elif row["commit_sha"] == registration_rows[0]["commit_sha"]:
-        errors.append("successor authorization and registration cannot share the same signed control commit")
-    else:
-        registration_time, time_errors = _parse_control_time(registration_rows[0]["committed_at"], "registration commit time")
-        authorization_time, auth_time_errors = _parse_control_time(row["committed_at"], "authorization commit time")
-        errors.extend(time_errors + auth_time_errors)
-        if registration_time and authorization_time and authorization_time <= registration_time:
-            errors.append("Owner transaction authorization must be signed after the immutable task registration")
+        errors.append("transaction authorization evidence differs from the exact signed 1111 final-authorization record")
 
-    approved_at, approved_errors = _parse_control_time(signed.get("approved_at"), "Owner authorization approved_at")
-    signed_at, signed_errors = _parse_control_time(row["committed_at"], "Owner authorization signed commit time")
-    expires_at, expiry_errors = _parse_control_time(signed.get("expires_at"), "Owner authorization expires_at")
-    cutoff, cutoff_errors = _parse_control_time(valid_through, "authorization validity cutoff")
+    preparation_id = signed.get("preparation_id")
+    preparation_rows = [
+        item for item in ledger.get("preparation_authorizations", [])
+        if item["statement"].get("preparation_id") == preparation_id
+    ]
+    registration_rows = [
+        item for item in ledger.get("registrations", [])
+        if item["statement"].get("registration_id") == registration_id
+    ]
+    if len(preparation_rows) != 1 or len(registration_rows) != 1:
+        errors.append("FINAL_TRANSACTION lacks one exact signed preparation grant and task registration")
+    else:
+        prep_row, reg_row = preparation_rows[0], registration_rows[0]
+        prep = prep_row["statement"]
+        errors.extend(validate_successor_preparation_authorization_statement(
+            preparation_id, ledger=ledger, task_id=task_id, formal_ordinal=formal_ordinal,
+            registration_id=registration_id, work_branch=reg_row["statement"]["work_branch"],
+            base_main_sha=base_main_sha, protocol_blob_sha=protocol_blob_sha,
+            protocol_file_sha256=protocol_file_sha256, candidate_seed_sha256=prep.get("candidate_seed_sha256", ""),
+            action="CREATE_DRAFT_PULL_REQUEST", valid_through=preparation_valid_through,
+        ))
+        if (
+            prep_row["commit_sha"] == row["commit_sha"]
+            or signed.get("preparation_id") != prep.get("preparation_id")
+            or signed.get("registration_id") != prep.get("registration_id")
+            or signed.get("task_id") != prep.get("task_id")
+            or signed.get("formal_ordinal") != prep.get("formal_ordinal")
+            or signed.get("base_main_sha") != prep.get("base_main_sha")
+            or signed.get("protocol_blob_sha") != prep.get("protocol_blob_sha")
+            or signed.get("protocol_file_sha256") != prep.get("protocol_file_sha256")
+        ):
+            errors.append("FINAL_TRANSACTION does not extend the exact preceding PREPARATION_ONLY grant")
+
+    approved_at, approved_errors = _parse_control_time(signed.get("approved_at"), "final authorization approved_at")
+    signed_at, signed_errors = _parse_control_time(row.get("committed_at"), "final authorization signed commit time")
+    expires_at, expiry_errors = _parse_control_time(signed.get("expires_at"), "final authorization expires_at")
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "final authorization validity cutoff")
     errors.extend(approved_errors + signed_errors + expiry_errors + cutoff_errors)
     if approved_at and signed_at and approved_at > signed_at:
-        errors.append("Owner authorization approved_at is later than its Owner-signed commit")
+        errors.append("FINAL_TRANSACTION approval timestamp is later than its Owner-signed merge")
     if signed_at and cutoff and signed_at >= cutoff:
-        errors.append("Owner transaction authorization was not committed before its validation or PR merge boundary")
+        errors.append("FINAL_TRANSACTION was not signed before validation or PR merge")
     if approved_at and cutoff and approved_at >= cutoff:
-        errors.append("Owner transaction authorization was not approved before its validation or PR merge boundary")
+        errors.append("FINAL_TRANSACTION was not approved before validation or PR merge")
     if approved_at and expires_at and expires_at <= approved_at:
-        errors.append("Owner transaction authorization expires before it becomes valid")
+        errors.append("FINAL_TRANSACTION expiry does not follow its approval timestamp")
     if expires_at and cutoff and expires_at <= cutoff:
-        errors.append("Owner transaction authorization is expired at the validation or PR merge time")
-
-    for revoked in ledger.get("revocations", []):
-        revocation = revoked["statement"]
-        if revocation.get("authorization_id") != signed.get("authorization_id"):
-            continue
-        if revocation.get("authorization_file_sha256") != row["file_sha256"]:
-            errors.append("authorization revocation does not bind the exact signed authorization bytes")
-        revoked_at, revoked_errors = _parse_control_time(revocation.get("revoked_at"), "authorization revoked_at")
-        errors.extend(revoked_errors)
-        if revoked_at and cutoff and revoked_at <= cutoff:
-            errors.append("Owner transaction authorization was revoked before the authorized PR merge")
-
+        errors.append("FINAL_TRANSACTION is expired at validation or PR merge")
+    errors.extend(_successor_authorization_revocation_errors(
+        ledger, authorization_id=signed.get("authorization_id", ""),
+        authorization_record_type="FINAL_TRANSACTION_AUTHORIZATION",
+        authorization_file_sha256=row.get("file_sha256", ""), valid_through=valid_through,
+    ))
     if registration_id in ledger.get("superseded_registration_ids", []):
         supersessions = [
             item for item in ledger.get("supersessions", [])
@@ -1531,11 +1891,114 @@ def validate_successor_transaction_authorization_statement(
         if any(
             (lambda parsed: parsed is not None and cutoff is not None and parsed <= cutoff)(
                 _parse_control_time(item["statement"].get("superseded_at"), "registration superseded_at")[0]
-            )
-            for item in supersessions
+            ) for item in supersessions
         ):
             errors.append("successor task registration was superseded before the authorized PR merge")
     return errors
+
+
+def validate_successor_owner_exact_head_review_record(
+    review_row: dict[str, Any] | None,
+    *,
+    owner_id: int,
+    task_id: str,
+    formal_ordinal: int,
+    registration_id: str,
+    pr_number: int,
+    author_id: int,
+    base_sha: str,
+    head_sha: str,
+    diff_sha256: str,
+    protocol_sha256: str,
+    valid_through: str,
+) -> list[str]:
+    """Require a separate Owner-signed, append-only review of this exact PR diff."""
+    if review_row is None:
+        return ["Owner exact-head review record is missing"]
+    signed = review_row.get("statement")
+    if not isinstance(signed, dict):
+        return ["Owner exact-head review record has no signed statement"]
+    errors: list[str] = []
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors.extend(_schema_errors(signed, {"$ref": "#/$defs/ownerExactHeadReviewRecord", "$defs": schema["$defs"]}))
+    for field, value in (
+        ("record_type", "OWNER_EXACT_HEAD_REVIEW"), ("owner_actor_id", owner_id),
+        ("task_id", task_id), ("formal_ordinal", formal_ordinal), ("registration_id", registration_id),
+        ("formal_pr_number", pr_number), ("pr_author_id", author_id),
+        ("formal_base_sha", base_sha), ("formal_candidate_head_sha", head_sha),
+        ("formal_pr_diff_sha256", diff_sha256), ("protocol_sha256", protocol_sha256),
+        ("decision", "APPROVE"), ("scope", "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD"),
+    ):
+        if signed.get(field) != value:
+            errors.append(f"Owner exact-head review {field} does not bind the exact PR diff and head")
+    if review_row.get("path") != f"{SUCCESSOR_REVIEW_PREFIX}{signed.get('review_id')}.json":
+        errors.append("Owner exact-head review ledger path differs from its immutable review ID")
+    if review_row.get("signature_verified") is not True or review_row.get("signature_reason") != "valid":
+        errors.append("Owner exact-head review record lacks a verified Owner signature")
+    reviewed_at, reviewed_errors = _parse_control_time(signed.get("reviewed_at"), "Owner reviewed_at")
+    committed_at, committed_errors = _parse_control_time(review_row.get("committed_at"), "Owner review signed commit time")
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "Owner review validity cutoff")
+    errors.extend(reviewed_errors + committed_errors + cutoff_errors)
+    if reviewed_at and committed_at and reviewed_at > committed_at:
+        errors.append("Owner exact-head review time is later than its signed append-only record")
+    if reviewed_at and cutoff and reviewed_at >= cutoff:
+        errors.append("Owner exact-head review was not completed before the Formal merge")
+    if committed_at and cutoff and committed_at >= cutoff:
+        errors.append("Owner exact-head review record was not signed before the Formal merge")
+    if not isinstance(signed.get("review_summary"), str) or not signed["review_summary"].strip():
+        errors.append("Owner exact-head review summary is empty")
+    return errors
+
+
+def _review_body_evidence_errors(body: Any) -> list[str]:
+    if not isinstance(body, str) or not body.strip():
+        return ["independent GitHub review body is empty"]
+    independence = re.search(r"(?im)^\s*independence\s*:\s*(\S.*)$", body)
+    assessment = re.search(r"(?im)^\s*assessment\s*:\s*(\S.*)$", body)
+    errors = []
+    if independence is None or not independence.group(1).strip():
+        errors.append("independent reviewer must include a non-empty Independence: attestation")
+    if assessment is None or not assessment.group(1).strip():
+        errors.append("independent reviewer must include a substantive Assessment: section")
+    return errors
+
+
+def read_live_successor_pr_diff_sha256(
+    pr_number: int,
+    *,
+    base_sha: str,
+    head_sha: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[str | None, list[str]]:
+    """Hash a stable exact-base/head changed-file inventory for Owner review."""
+    api = github_api or _gh_api_json
+    try:
+        files: list[dict[str, Any]] = []
+        for page in range(1, 101):
+            batch = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}/files?per_page=100&page={page}")
+            if not isinstance(batch, list):
+                return None, ["Formal PR changed-file inventory is unreadable"]
+            files.extend(row for row in batch if isinstance(row, dict))
+            if len(batch) < 100:
+                break
+        else:
+            return None, ["Formal PR changed-file inventory exceeded its bounded pagination limit"]
+        normalized = []
+        for item in files:
+            normalized.append({
+                "filename": item.get("filename"), "status": item.get("status"), "sha": item.get("sha"),
+                "additions": item.get("additions"), "deletions": item.get("deletions"), "changes": item.get("changes"),
+                "patch_sha256": hashlib.sha256(item.get("patch", "").encode("utf-8")).hexdigest()
+                if isinstance(item.get("patch"), str) else None,
+            })
+        paths = [item["filename"] for item in normalized]
+        if not normalized or any(not isinstance(path, str) for path in paths) or len(paths) != len(set(paths)):
+            return None, ["Formal PR changed-file inventory is empty, duplicated, or missing a path"]
+        payload = {"pr_number": pr_number, "base_sha": base_sha, "head_sha": head_sha, "files": sorted(normalized, key=lambda item: item["filename"])}
+        digest = hashlib.sha256(json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+        return digest, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Formal PR changed-file inventory failed closed: {error.__class__.__name__}: {error}"]
 
 
 def validate_successor_review_gate(
@@ -1544,13 +2007,11 @@ def validate_successor_review_gate(
     author_id: int,
     owner_id: int,
     head_sha: str,
-    authorized_reviewer_ids: set[int],
+    authorized_reviewer_ids: set[int] | None = None,
     valid_through: str,
 ) -> tuple[dict[str, Any] | None, dict[str, Any] | None, list[str]]:
-    """Select current-head approvals from distinct authorized non-author and Owner accounts."""
+    """Select the live independent review; Owner review is optional GitHub corroboration."""
     errors: list[str] = []
-    if author_id == owner_id:
-        return None, None, ["PR author cannot supply the required independent review or Owner approval"]
     cutoff, cutoff_errors = _parse_control_time(valid_through, "review validity cutoff")
     errors.extend(cutoff_errors)
     latest: dict[int, dict[str, Any]] = {}
@@ -1564,8 +2025,6 @@ def validate_successor_review_gate(
             errors.extend(submitted_errors)
             continue
         if cutoff is not None and submitted is not None and submitted > cutoff:
-            # Later GitHub review activity cannot retroactively alter the approval
-            # state that existed at the merge or validation boundary.
             continue
         old = latest.get(actor_id)
         key = (review.get("submitted_at", ""), review.get("review_id", 0))
@@ -1574,7 +2033,14 @@ def validate_successor_review_gate(
             latest[actor_id] = review
 
     def is_valid(review: dict[str, Any] | None) -> bool:
-        if not review or review.get("state") != "APPROVED" or review.get("commit_sha") != head_sha:
+        if (
+            not review or review.get("state") != "APPROVED"
+            or review.get("commit_sha") != head_sha or review.get("user_type") != "User"
+        ):
+            return False
+        body_errors = _review_body_evidence_errors(review.get("body"))
+        if body_errors:
+            errors.extend(body_errors)
             return False
         submitted, submitted_errors = _parse_control_time(review.get("submitted_at"), "review submitted_at")
         if submitted_errors:
@@ -1583,15 +2049,23 @@ def validate_successor_review_gate(
         return cutoff is None or submitted is not None and submitted <= cutoff
 
     owner_review = latest.get(owner_id)
-    if not is_valid(owner_review):
-        errors.append("Owner has not approved the exact current PR head before the authorization cutoff")
+    if (
+        not owner_review or owner_review.get("state") != "APPROVED"
+        or owner_review.get("commit_sha") != head_sha or owner_review.get("user_type") != "User"
+    ):
         owner_review = None
     independent = next((
         review for actor_id, review in latest.items()
-        if actor_id != author_id and actor_id != owner_id and actor_id in authorized_reviewer_ids and is_valid(review)
+        if actor_id != author_id and actor_id != owner_id
+        and (authorized_reviewer_ids is None or actor_id in authorized_reviewer_ids)
+        and is_valid(review)
     ), None)
+    if author_id == owner_id:
+        # GitHub bars the PR author from approving their own pull request. The
+        # separately signed Owner exact-head record is checked by its caller.
+        pass
     if independent is None:
-        errors.append("no authorized non-author, non-Owner reviewer approved the exact current PR head")
+        errors.append("no distinct non-author, non-Owner human reviewer approved the exact head with review evidence")
     return independent, owner_review, errors
 
 
@@ -1600,7 +2074,7 @@ def read_live_successor_pr_reviews(
     *,
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
 ) -> tuple[dict[str, Any] | None, list[dict[str, Any]] | None, list[str]]:
-    """Read the exact PR and review actors, including their live repository permissions."""
+    """Read live exact-head reviews without imposing repository write access."""
     api = github_api or _gh_api_json
     try:
         repo = api(f"repos/{PUBLIC_REPOSITORY}")
@@ -1619,27 +2093,21 @@ def read_live_successor_pr_reviews(
         else:
             return None, None, ["GitHub PR review history exceeded the bounded pagination limit"]
         normalized: list[dict[str, Any]] = []
-        permission_cache: dict[str, str] = {}
         for review in raw_reviews:
             user = review.get("user") or {}
-            actor_id, login = user.get("id"), user.get("login")
-            if not isinstance(actor_id, int) or not isinstance(login, str):
+            actor_id = user.get("id")
+            if not isinstance(actor_id, int):
                 return None, None, ["GitHub PR review lacks its exact reviewer identity"]
-            if login not in permission_cache:
-                permission_payload = api(f"repos/{PUBLIC_REPOSITORY}/collaborators/{quote(login, safe='')}/permission")
-                permission_cache[login] = permission_payload.get("permission", "none") if isinstance(permission_payload, dict) else "none"
             normalized.append({
                 "review_id": review.get("id"), "actor_id": actor_id,
                 "state": review.get("state"), "commit_sha": review.get("commit_id"),
                 "submitted_at": review.get("submitted_at"), "review_url": review.get("html_url"),
                 "author_association": review.get("author_association", "NONE"),
-                "permission": permission_cache[login],
+                "user_type": user.get("type"), "body": review.get("body", ""),
             })
         return {"pull_request": pr, "owner_id": owner_id}, normalized, []
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
-        return None, None, [f"live successor PR/review/permission readback failed closed: {error.__class__.__name__}: {error}"]
-
-
+        return None, None, [f"live successor PR/review readback failed closed: {error.__class__.__name__}: {error}"]
 def read_live_successor_required_contexts(
     head_sha: str,
     *,
@@ -1700,8 +2168,9 @@ def validate_successor_migration_witness_live(
     signed_record: dict[str, Any],
     owner_id: int,
     github_api: Callable[[str], dict[str, Any] | list[Any]],
+    owner_review_records: list[dict[str, Any]] | None = None,
 ) -> list[str]:
-    """Revalidate the exact Formal merge, required checks and both live approvals."""
+    """Revalidate the exact merge, independent review, Owner record and checks."""
     errors: list[str] = []
     try:
         if statement["protocol_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest():
@@ -1748,28 +2217,52 @@ def validate_successor_migration_witness_live(
             author_id = (normalized_pr.get("user") or {}).get("id")
             if author_id != statement["pr_author_id"]:
                 errors.append("migration witness PR author differs from live GitHub PR metadata")
-            reviewer_ids = {
-                row["actor_id"] for row in reviews
-                if row["permission"] in {"admin", "maintain", "write"}
-                and row["actor_id"] not in {owner_id, author_id}
-            }
-            independent, owner_review, gate_errors = validate_successor_review_gate(
+            independent, _, gate_errors = validate_successor_review_gate(
                 reviews, author_id=author_id, owner_id=owner_id,
-                head_sha=statement["formal_candidate_head_sha"], authorized_reviewer_ids=reviewer_ids,
+                head_sha=statement["formal_candidate_head_sha"], authorized_reviewer_ids=None,
                 valid_through=pr["merged_at"],
             )
             errors.extend(gate_errors)
             if independent is not None and (
                 independent["review_id"] != statement["independent_review_id"]
                 or independent["actor_id"] != statement["independent_reviewer_id"]
+                or independent["commit_sha"] != statement["independent_review_commit_sha"]
+                or hashlib.sha256(independent["body"].encode("utf-8")).hexdigest() != statement["independent_review_body_sha256"]
             ):
                 errors.append("migration witness does not identify the live independent exact-head approval")
-            if owner_review is not None and (
-                owner_review["review_id"] != statement["owner_review_id"]
-                or owner_review["actor_id"] != statement["owner_review_actor_id"]
-                or owner_review["commit_sha"] != statement["owner_review_commit_sha"]
-            ):
-                errors.append("migration witness does not identify the live Owner exact-head approval")
+            elif independent is None:
+                errors.append("migration witness has no independently attested exact-head GitHub review")
+
+            diff_sha256, diff_errors = read_live_successor_pr_diff_sha256(
+                statement["formal_pr_number"], base_sha=statement["formal_base_sha"],
+                head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
+            )
+            errors.extend(diff_errors)
+            owner_review_matches = [
+                row for row in (owner_review_records or [])
+                if row.get("statement", {}).get("review_id") == statement["owner_review_record_id"]
+            ]
+            if len(owner_review_matches) != 1:
+                errors.append("migration witness Owner exact-head review ID does not resolve to one signed ledger record")
+            else:
+                owner_review_record = owner_review_matches[0]
+                owner_statement = owner_review_record["statement"]
+                if (
+                    owner_review_record.get("commit_sha") != statement["owner_review_record_commit_sha"]
+                    or owner_review_record.get("file_sha256") != statement["owner_review_record_file_sha256"]
+                    or owner_statement.get("formal_candidate_head_sha") != statement["owner_reviewed_head_sha"]
+                ):
+                    errors.append("migration witness differs from the signed Owner review record identity or bytes")
+                errors.extend(validate_successor_owner_exact_head_review_record(
+                    owner_review_record, owner_id=owner_id,
+                    task_id=owner_statement.get("task_id", ""),
+                    formal_ordinal=owner_statement.get("formal_ordinal", -1),
+                    registration_id=owner_statement.get("registration_id", ""),
+                    pr_number=statement["formal_pr_number"], author_id=author_id,
+                    base_sha=statement["formal_base_sha"], head_sha=statement["formal_candidate_head_sha"],
+                    diff_sha256=diff_sha256 or "", protocol_sha256=statement["protocol_sha256"],
+                    valid_through=pr["merged_at"],
+                ))
         live_contexts, context_errors = read_live_successor_required_contexts(
             statement["formal_candidate_head_sha"], github_api=github_api
         )
@@ -1792,6 +2285,14 @@ def validate_successor_migration_witness_live(
             errors.append("migration witness timestamp is later than its Owner-signed 1111 merge")
         if statement["merge_method"] != "MERGE_COMMIT" or statement["branch_protection_verified"] is not True:
             errors.append("migration witness does not attest a protected normal merge-commit transaction")
+        live_protection, protection_errors = read_live_branch_protection(github_api=github_api)
+        errors.extend(protection_errors)
+        if live_protection is not None and (
+            live_protection.get("rules_sha256") != statement["branch_protection_rules_sha256"]
+            or live_protection.get("protected") is not True
+            or live_protection.get("admin_enforcement_enabled") is not True
+        ):
+            errors.append("migration witness branch-protection digest differs from the live protected-main readback")
         return errors
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
         return [f"successor migration live verification failed closed: {error.__class__.__name__}: {error}"]
@@ -3204,7 +3705,7 @@ def _successor_transaction_record_schema() -> dict[str, Any]:
     schema = copy.deepcopy(load_json(SCHEMA_PATH))
     successor_schema = load_json(SUCCESSOR_SCHEMA_PATH)
     definitions = schema["$defs"]
-    definitions["successorTransactionAuthorizationRecord"] = successor_schema["$defs"]["transactionAuthorizationRecord"]
+    definitions["successorTransactionAuthorizationRecord"] = successor_schema["$defs"]["finalTransactionAuthorizationRecord"]
     definitions["successorAuthorizationEvidence"] = copy.deepcopy(
         successor_schema["$defs"]["successorAuthorizationEvidence"]
     )
@@ -3439,9 +3940,12 @@ def validate_transaction_record(
         if synthetic:
             live_pr_meta = None
             live_reviews = record["pull_request_reviews"]
-            authorized_reviewers = set(expected.get("authorized_reviewer_ids", []))
+            authorized_reviewers = expected.get("authorized_reviewer_ids")
             live_contexts = expected.get("live_required_contexts")
             live_merge_time = expected.get("pr_merged_at") if phase == "postpublication" else None
+            live_pull = {}
+            live_author_id = pr["author_id"]
+            preparation_valid_through = expected.get("pr_created_at")
         else:
             live_pr_meta, live_reviews, pr_review_errors = read_live_successor_pr_reviews(
                 pr["number"], github_api=github_api
@@ -3450,9 +3954,12 @@ def validate_transaction_record(
             if live_pr_meta is None or live_reviews is None:
                 live_reviews = []
                 live_pull = {}
+                live_author_id = pr["author_id"]
+                preparation_valid_through = expected.get("pr_created_at")
             else:
                 live_pull = live_pr_meta["pull_request"]
                 live_author_id = (live_pull.get("user") or {}).get("id")
+                preparation_valid_through = live_pull.get("created_at")
                 if (
                     live_pull.get("number") != pr["number"]
                     or (live_pull.get("base") or {}).get("ref") != "main"
@@ -3475,12 +3982,8 @@ def validate_transaction_record(
                     ):
                         errors.append("successor postpublication validation requires the exact Owner-merged PR")
                 if live_reviews != record["pull_request_reviews"]:
-                    errors.append("recorded successor PR reviews differ from the exact live GitHub review/permission history")
-                authorized_reviewers = {
-                    row["actor_id"] for row in live_reviews
-                    if row["permission"] in {"admin", "maintain", "write"}
-                    and row["actor_id"] not in {owner_id, live_author_id}
-                }
+                    errors.append("recorded successor PR reviews differ from the exact live GitHub review history")
+                authorized_reviewers = None
                 live_merge_time = live_pull.get("merged_at") if phase == "postpublication" else None
             live_contexts, live_context_errors = read_live_successor_required_contexts(
                 pr["head_sha"], github_api=github_api
@@ -3507,10 +4010,37 @@ def validate_transaction_record(
             authorized_reviewer_ids=authorized_reviewers, valid_through=cutoff,
         )
         errors.extend(review_errors)
-        if independent_review is not None and independent_review["permission"] not in {"admin", "maintain", "write"}:
-            errors.append("independent reviewer lacks live repository write-level review permission")
         if owner_review is not None and owner_review["actor_id"] != owner_id:
             errors.append("Owner exact-head review is not from the root-authority Owner")
+        protocol_digest = hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
+        if synthetic:
+            diff_sha256 = expected.get("formal_pr_diff_sha256")
+        else:
+            diff_sha256, diff_errors = read_live_successor_pr_diff_sha256(
+                pr["number"], base_sha=refs["base_main_sha"], head_sha=pr["head_sha"], github_api=github_api
+            )
+            errors.extend(diff_errors)
+        owner_review_records = successor_ledger.get("owner_reviews", [])
+        matching_owner_records = [
+            row for row in owner_review_records
+            if row["statement"].get("formal_pr_number") == pr["number"]
+            and row["statement"].get("pr_author_id") == live_author_id
+            and row["statement"].get("formal_base_sha") == refs["base_main_sha"]
+            and row["statement"].get("formal_candidate_head_sha") == pr["head_sha"]
+            and row["statement"].get("formal_pr_diff_sha256") == diff_sha256
+            and row["statement"].get("protocol_sha256") == protocol_digest
+        ]
+        if len(matching_owner_records) != 1:
+            errors.append("successor PR lacks exactly one Owner-signed exact-head review record for its live diff")
+        else:
+            errors.extend(validate_successor_owner_exact_head_review_record(
+                matching_owner_records[0], owner_id=owner_id,
+                task_id=identity["task_id"], formal_ordinal=identity["formal_ordinal"],
+                registration_id=identity["successor_registration_id"],
+                pr_number=pr["number"], author_id=live_author_id,
+                base_sha=refs["base_main_sha"], head_sha=pr["head_sha"],
+                diff_sha256=diff_sha256, protocol_sha256=protocol_digest, valid_through=cutoff,
+            ))
         registration_id = identity["successor_registration_id"]
         errors.extend(validate_successor_transaction_authorization_statement(
             approval, ledger=successor_ledger,
@@ -3519,6 +4049,7 @@ def validate_transaction_record(
             pr_number=pr["number"], candidate_head_sha=pr["head_sha"], base_main_sha=refs["base_main_sha"],
             protocol_blob_sha=identity["successor_protocol_blob_sha"],
             protocol_file_sha256=identity["successor_protocol_file_sha256"],
+            preparation_valid_through=preparation_valid_through,
             valid_through=cutoff,
         ))
     else:
@@ -3598,6 +4129,7 @@ def validate_transaction_record(
                 expected_witness_fields = {
                     "status": "PUBLISHED_AND_VERIFIED",
                     "transaction_id": record["transaction_id"],
+                    "preparation_id": auth_statement["preparation_id"],
                     "registration_id": identity["successor_registration_id"],
                     "authorization_id": auth_statement["authorization_id"],
                     "task_id": identity["task_id"], "formal_ordinal": identity["formal_ordinal"],
@@ -3624,6 +4156,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--check-successor", action="store_true")
+    parser.add_argument("--verify-amendment-preparation", action="store_true")
+    parser.add_argument("--preparation-id")
+    parser.add_argument("--preparation-action", choices=["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"])
+    parser.add_argument("--preparation-candidate-seed-sha256")
+    parser.add_argument("--preparation-at")
     parser.add_argument("--transition-receipt", type=Path)
     parser.add_argument("--observations", type=Path)
     parser.add_argument("--repository-owner-id", type=int)
@@ -3659,6 +4196,64 @@ def main() -> int:
         for error in contract_errors:
             print(f"- {error}", file=sys.stderr)
         return 1
+
+    if args.verify_amendment_preparation:
+        authority, authority_errors = read_authenticated_task22_amendment_preparation_authority()
+        if authority_errors or authority is None:
+            print("TASK22_AMENDMENT_PREPARATION_AUTHORITY_INVALID", file=sys.stderr)
+            for error in authority_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        checkout, checkout_errors = validate_task22_local_preparation_checkout(authority)
+        if checkout_errors or checkout is None:
+            print("TASK22_AMENDMENT_DRAFT_CHECKOUT_INVALID", file=sys.stderr)
+            for error in checkout_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        print(
+            "TASK22_AMENDMENT_DRAFT_PREPARATION_AUTHORIZED "
+            f"task={authority['task_id']} branch={checkout['branch']} head={checkout['head_sha']} base={checkout['base_main_sha']} "
+            "scope=prepare/push/draft/collect-checks-only"
+        )
+        return 0
+
+    preparation_args = (args.preparation_id, args.preparation_action, args.preparation_candidate_seed_sha256)
+    if any(preparation_args):
+        if not all(preparation_args):
+            parser.error("PREPARATION_ONLY validation requires --preparation-id, --preparation-action and --preparation-candidate-seed-sha256")
+        if any((args.transaction_record, args.phase, args.successor_profile, args.verify_amendment_preparation)):
+            parser.error("PREPARATION_ONLY validation is a separate action and cannot be combined with a transaction or amendment-prep check")
+        identity, identity_errors = authoritative_task_context()
+        if identity_errors:
+            print("R3_SUCCESSOR_PREPARATION_IDENTITY_INVALID", file=sys.stderr)
+            for error in identity_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        ledger = identity.get("successor_control_ledger")
+        if not isinstance(ledger, dict):
+            print("R3_SUCCESSOR_PREPARATION_LEDGER_MISSING", file=sys.stderr)
+            return 1
+        authorized_at = args.preparation_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        errors = validate_successor_preparation_authorization_statement(
+            args.preparation_id, ledger=ledger, task_id=identity["task_id"],
+            formal_ordinal=identity["formal_ordinal"], registration_id=identity["successor_registration_id"],
+            work_branch=identity["task_branch"], base_main_sha=identity["formal_base_main_sha"],
+            protocol_blob_sha=identity["successor_protocol_blob_sha"],
+            protocol_file_sha256=identity["successor_protocol_file_sha256"],
+            candidate_seed_sha256=args.preparation_candidate_seed_sha256,
+            action=args.preparation_action, valid_through=authorized_at,
+        )
+        if errors:
+            print("R3_SUCCESSOR_PREPARATION_AUTHORIZATION_INVALID", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        print(
+            "R3_SUCCESSOR_PREPARATION_ONLY_OK "
+            f"preparation_id={args.preparation_id} action={args.preparation_action} "
+            f"task={identity['task_id']} branch={identity['task_branch']}"
+        )
+        return 0
 
     current = "R2"
     activation_errors = ["no independent R3 transition receipt was supplied"]
