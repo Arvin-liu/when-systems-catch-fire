@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-662\]\( \) \| \[四方向联合碰撞验证\]\( \) \| Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Context积累、叙事驱动）下，都产生了与点火框架的有效碰撞，共产生 3 条新函数和 10 条扩展注释。碰撞过程中，所有候选增量均通过正反交叉自举循环的 J⁺/J⁻ 判定，最终收敛于](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F0A516E543B22E8D / \| \[C-662\]\( \) \| \[四方向联合碰撞验证\]\( \) \| Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Context积累、叙事驱动）下，都产生了与点火框架的有效碰撞，共产生 3 条新函数和 10 条扩展注释。碰撞过程中，所有候选增量均通过正反交叉自举循环的 J⁺/J⁻ 判定，最终收敛于 / IMPLICIT-F0A516E543B22E8D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-663\]\( \) \| \[密码学碰撞验证案例\]\( \) \| 密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ed93496ee4bc365a / \| \[C-663\]\( \) \| \[密码学碰撞验证案例\]\( \) \| 密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D1, D518；被引用：—
 - [\| \[C-670\]\( \) \| \[数学认知升级×门控函数进化验证\]\( \) \| 吴军《数学通识50讲》认知升级主线与](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a8df5e112469208d / \| \[C-670\]\( \) \| \[数学认知升级×门控函数进化验证\]\( \) \| 吴军《数学通识50讲》认知升级主线与
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-c64d6bd9a030f62a / ∂Φ/∂N_gate\|physics   0（社会域分化方向），统一于Φ=零温自由能优化 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [│ └── D1-D30 因果判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fc3e520a3a02ae3f / │ └── D1-D30 因果判定衍生函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D1, D30；被引用：—
-- [│ └── D61-D90 同构判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6d4f3300cf27c944 / │ └── D61-D90 同构判定衍生函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D61, D90；被引用：—

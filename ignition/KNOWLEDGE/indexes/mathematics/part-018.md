@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [清醒梦-梦境真实感提升函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D536 / 清醒梦-梦境真实感提升函数 / D536
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D39, D451, D541；被引用：NFC-4a2803226a9b818d, NFC-65d0edc708ea86d6, NFC-eb1360e34f181a6e
+- [渗透率](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D209 / 渗透率 / D209
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-ca8bbdf88a224cd3, NFC-e80a278e5fef441b, NFC-fc2507f831e9fa4b
 - [溢出-传染通道统一函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D393 / 溢出-传染通道统一函数 / D393
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-ed9c4ae0e7c7e043 / 已迁移的历史函数来源/0219-D183-门控面合并统一函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D183；被引用：—
-- [已迁移的历史函数来源/0220-D184-熵增门槛碾压函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e21db9ee597cbcd7 / 已迁移的历史函数来源/0220-D184-熵增门槛碾压函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D184；被引用：—
-- [已迁移的历史函数来源/0221-D185-相对论门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ffde839131bd8676 / 已迁移的历史函数来源/0221-D185-相对论门槛函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D185；被引用：—

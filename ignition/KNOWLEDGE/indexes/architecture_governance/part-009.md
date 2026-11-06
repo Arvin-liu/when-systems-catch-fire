@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [P1-5 初版：由 outputs/getbrain/evidence-regime-library-draft-20260706.md 半自动抽取，后续可继续人工精修字段。](../../../data/evidence_regimes.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e579e7252be208af / P1-5 初版：由 outputs/getbrain/evidence-regime-library-draft-20260706.md 半自动抽取，后续可继续人工精修字段。
+  - 来源：`data/evidence_regimes.csv`
+  - 依赖：P1；被引用：—
 - [P1-5 初版：由 v0.2 证据制度库和风险治理层抽象得到。](../../../data/function_dependency.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-33f2d72a0c3c298d / P1-5 初版：由 v0.2 证据制度库和风险治理层抽象得到。
@@ -2497,10 +2502,5 @@
 - [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6dfb26ad85054d2b / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-6ef73ad16c816daf / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
   - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—

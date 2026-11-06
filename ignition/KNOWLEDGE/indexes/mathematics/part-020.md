@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [若任务需要全项目导航，读取\[完整总架构图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前结构阅读或受约束信息流；SVG link metadata 不等同于客户](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d78b1d52b99e2452 / 若任务需要全项目导航，读取\[完整总架构图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前结构阅读或受约束信息流；SVG link metadata 不等同于客户
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [若声称外部定理或实证成立，必须给出外部证据状态。](../../../docs/math-foundation/04-proof-obligations.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6f5389c2a8ad37f3 / 若声称外部定理或实证成立，必须给出外部证据状态。
+  - 来源：`docs/math-foundation/04-proof-obligations.md`
+  - 依赖：—；被引用：—
 - [若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。历](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e622af8362af080c / 若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。历

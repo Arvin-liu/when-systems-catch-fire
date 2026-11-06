@@ -879,11 +879,6 @@
   - 可搜索名称：NFC-e1765c48185a44a1 / Did not modify Kimi's original files \(preservation principle\)
   - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
   - 依赖：—；被引用：—
-- [Different GitHub IDs do not prove separate execution contexts. The reviewer's attestation and substantive findings are i](../../../docs/governance/r3-successor-protocol-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-65072be212b32da5 / Different GitHub IDs do not prove separate execution contexts. The reviewer's attestation and substantive findings are i
-  - 来源：`docs/governance/r3-successor-protocol-r1.md`
-  - 依赖：—；被引用：—
 - [digests \(relative names, types, modes and sizes; never runtime file contents\),](../../../reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0d28b3b4b1dd2845 / digests \(relative names, types, modes and sizes; never runtime file contents\),
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0f0112ba8a553eff / Exact-final-HEAD CI remains mandatory. After the final commit is pushed and both required workflows finish, the mutable
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf](../../../reports/operations/121Q24-current-state-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86e2cbfb3008643b / Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf
+  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
   - 依赖：—；被引用：—

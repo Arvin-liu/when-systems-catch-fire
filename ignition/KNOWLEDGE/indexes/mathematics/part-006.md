@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D375} exist, compose F_{D375}=N\(⊕_{g∈D_{D375}} g\); otherwise treat F_{D375} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-64e95d02b0a221b4 / If upstream objects D_{D375} exist, compose F_{D375}=N\(⊕_{g∈D_{D375}} g\); otherwise treat F_{D375} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D375；被引用：—
 - [If upstream objects D_{D376} exist, compose F_{D376}=N\(⊕_{g∈D_{D376}} g\); otherwise treat F_{D376} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aa067719615d8ee8 / If upstream objects D_{D376} exist, compose F_{D376}=N\(⊕_{g∈D_{D376}} g\); otherwise treat F_{D376} as an axiom seed.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-e782ee07f42122cd / MULTI_CASE is not a theorem.
   - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7c4ee233f4055587 / Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

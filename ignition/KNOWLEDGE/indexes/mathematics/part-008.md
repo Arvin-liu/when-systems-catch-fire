@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [T9 自主意识函数 / autonomous consciousness function](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6630b8855e67bf1d / T9 自主意识函数 / autonomous consciousness function
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：T9；被引用：—
 - [T9-自主意识函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-3a498ea8c2cffa60 / T9-自主意识函数.md
@@ -568,6 +573,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-3105c1372a644df8 / The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy
   - 来源：`agent-results/IGNITION-20260821-129-result.md`
+  - 依赖：—；被引用：—
+- [The report is AI evidence; it is never a GitHub `APPROVED` review.](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a83d063f827c1304 / The report is AI evidence; it is never a GitHub `APPROVED` review.
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2492,15 +2502,5 @@
 - [title: "植物信号传递函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E9091BC0885AA4D7 / title: "植物信号传递函数" / IMPLICIT-E9091BC0885AA4D7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物分布式决策函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89B7EA317BAAB620 / title: "植物分布式决策函数" / IMPLICIT-89B7EA317BAAB620
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物哥德尔函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-308F9918C1DB427A / title: "植物哥德尔函数" / IMPLICIT-308F9918C1DB427A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

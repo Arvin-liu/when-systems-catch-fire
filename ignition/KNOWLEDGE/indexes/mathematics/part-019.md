@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0220-D184-熵增门槛碾压函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e21db9ee597cbcd7 / 已迁移的历史函数来源/0220-D184-熵增门槛碾压函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D184；被引用：—
+- [已迁移的历史函数来源/0221-D185-相对论门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ffde839131bd8676 / 已迁移的历史函数来源/0221-D185-相对论门槛函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D185；被引用：—
 - [已迁移的历史函数来源/0222-D186-量子力学门槛聚集函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-bbbbbe1f6f435241 / 已迁移的历史函数来源/0222-D186-量子力学门槛聚集函数.md
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-17d8a6f0f1810d04 / 若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json`、`docs/archit
   - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
-- [若任务需要全项目导航，读取\[完整总架构图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前结构阅读或受约束信息流；SVG link metadata 不等同于客户](../../../docs/ai-assistant-usage-reference.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d78b1d52b99e2452 / 若任务需要全项目导航，读取\[完整总架构图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前结构阅读或受约束信息流；SVG link metadata 不等同于客户
-  - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [若声称外部定理或实证成立，必须给出外部证据状态。](../../../docs/math-foundation/04-proof-obligations.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-6f5389c2a8ad37f3 / 若声称外部定理或实证成立，必须给出外部证据状态。
-  - 来源：`docs/math-foundation/04-proof-obligations.md`
   - 依赖：—；被引用：—

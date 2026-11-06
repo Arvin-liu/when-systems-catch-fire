@@ -202,7 +202,7 @@
     "third_party_human_review_optional_by_default": true,
     "live_github_approval_required_only_when_branch_rules_require_it": true,
     "ai_report_is_not_github_approval": true,
-    "ai_report_binds_exact_source_diff_required_ci_and_branch_protection": true,
+    "ai_report_binds_exact_raw_diff_inventory_required_ci_and_branch_protection": true,
     "ai_report_requires_negative_control_assessment": true,
     "ai_report_provenance_and_digest_required": true,
     "reviewer_write_permission_required_only_when_a_live_branch_rule_requires_it": true,

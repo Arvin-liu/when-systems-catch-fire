@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [│ └── D1-D30 因果判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fc3e520a3a02ae3f / │ └── D1-D30 因果判定衍生函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D1, D30；被引用：—
+- [│ └── D61-D90 同构判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6d4f3300cf27c944 / │ └── D61-D90 同构判定衍生函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D61, D90；被引用：—
 - [│ ├── C-499 至 C-500 意识案例](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-39d2b392690080c7 / │ ├── C-499 至 C-500 意识案例
@@ -2494,13 +2504,3 @@
   - 可搜索名称：D88 / 乘法临界漂移统一 / D88 / D147
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D1, D90；被引用：NFC-0fad71d2e497a417, NFC-152f6b9e11db62ff, NFC-216347336f957185, NFC-346ab6517be8ba9f
-- [乘法临界漂移统一](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2c13b88837b99b35 / 乘法临界漂移统一
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [乘法临界漂移统一](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：T15 / 乘法临界漂移统一 / T15 / D147
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：—；被引用：CLAIM-D85, NFC-0cbbef1b7ae6e58f, NFC-2d54debf966348eb, NFC-2e8cce3c1cc4732d

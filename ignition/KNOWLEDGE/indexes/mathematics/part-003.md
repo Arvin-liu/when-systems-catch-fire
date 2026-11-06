@@ -2449,11 +2449,6 @@
   - 可搜索名称：NFC-43be1441ffcaf882 / an AI review is presented as independent proof without source separation;
   - 来源：`docs/governance/non-sycophancy-output-protocol.md`
   - 依赖：—；被引用：—
-- [An independent reviewer must be a different human reviewer from both PR author and Owner and must submit a live GitHub `](../../../docs/governance/r3-successor-protocol-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5c31defe04f5f735 / An independent reviewer must be a different human reviewer from both PR author and Owner and must submit a live GitHub `
-  - 来源：`docs/governance/r3-successor-protocol-r1.md`
-  - 依赖：—；被引用：—
 - [an isomorphism claim needs objects, a bijection and structure-preservation proof;](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-28a040ac06ecb179 / an isomorphism claim needs objects, a bijection and structure-preservation proof;
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-1ea431d77221290a / argv/interface fingerprints, lifecycle and stream digests, parser/schema
   - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, commu](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc5214a233885bab / ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, commu
+  - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—

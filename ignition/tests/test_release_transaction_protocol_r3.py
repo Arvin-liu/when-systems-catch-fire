@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import base64
-from contextlib import redirect_stderr
+from contextlib import redirect_stderr, redirect_stdout
 import hashlib
 from io import StringIO
 import json
@@ -600,7 +600,8 @@ def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 4
         "source_readback": {
             "mode": "GITHUB_READ_ONLY_EXACT_HEAD", "repository": "Arvin-liu/when-systems-catch-fire",
             "source_base_sha": "a" * 40, "source_head_sha": "b" * 40,
-            "formal_pr_diff_sha256": "c" * 64, "files": changed_files,
+            "formal_pr_diff_sha256": "c" * 64, "raw_diff_sha256": "9" * 64,
+            "files": changed_files,
         },
         "required_ci_contexts": ci_contexts,
         "assessment": {
@@ -1278,6 +1279,19 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(r2.load_json(r2.PROTOCOL_PATH)["pre_publication_hard_gates"]["canonical_full_suite"]["required_runs"], 2)
         self.assertEqual(r2.load_json(r2.PROTOCOL_PATH)["main_mutation_policy"]["mode"], "ORDINARY_FAST_FORWARD_ONLY")
 
+    def test_successor_candidate_cli_labels_r2_only_as_compatibility_profile(self) -> None:
+        output = StringIO()
+        argv = ["validate_release_transaction_protocol_r3.py", "--check", "--check-successor"]
+        with patch.object(sys, "argv", argv), patch.object(r3, "validate_contract", return_value=[]), patch.object(
+            r3, "validate_successor_protocol_contract", return_value=[]
+        ), redirect_stdout(output):
+            self.assertEqual(r3.main(), 0)
+        text = output.getvalue()
+        self.assertIn("RELEASE_TRANSACTION_PROTOCOL_R3_COMPATIBILITY_CHECK_OK profile=R2", text)
+        self.assertIn("RELEASE_TRANSACTION_PROTOCOL_R3_SUCCESSOR_CANDIDATE_NOT_EFFECTIVE", text)
+        self.assertNotIn("current=R2", text)
+        self.assertNotIn("R2 remains the effective policy", text)
+
     def test_short_real_natural_suite_process_passes(self) -> None:
         receipt = _record()["canonical_full_suite_receipts"][0]
         errors = r3.validate_suite_receipt(
@@ -1844,16 +1858,19 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(active, "R2")
         self.assertTrue(any("GitHub blob SHA does not bind exact control-file bytes" in error for error in errors), errors)
 
-    def test_unmerged_candidate_and_missing_receipt_keep_r2_current(self) -> None:
+    def test_legacy_bootstrap_selector_uses_r2_without_exact_transition_receipt(self) -> None:
         policy = r3.load_json(r3.PROTOCOL_PATH)
         policy["status"] = "CURRENT"
         self.assertTrue(r3.validate_contract(policy))
-        active, _ = r3.resolve_effective_protocol(None, observations=_live_observations(), repository_owner_id=49422864)
-        self.assertEqual(active, "R2")
-        active, _ = r3.resolve_effective_protocol(
+        # This resolver selects the legacy bootstrap profile; it is not the current-main policy witness.
+        selected_profile, _ = r3.resolve_effective_protocol(
+            None, observations=_live_observations(), repository_owner_id=49422864
+        )
+        self.assertEqual(selected_profile, "R2")
+        selected_profile, _ = r3.resolve_effective_protocol(
             _activation_receipt(), observations=_live_observations(), repository_owner_id=49422864, github_api=_github_api()
         )
-        self.assertEqual(active, "R3")
+        self.assertEqual(selected_profile, "R3")
 
     def test_actual_pull_request_run_binds_head_and_merge_checkout_separately(self) -> None:
         self.assertEqual(self._validate(_record(), "prepublication", _context()), [])
@@ -2218,6 +2235,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "registration_id": signed["registration_id"], "pr_number": signed["formal_pr_number"],
             "author_id": signed["pr_author_id"], "base_sha": signed["formal_base_sha"],
             "head_sha": signed["formal_candidate_head_sha"], "diff_sha256": signed["formal_pr_diff_sha256"],
+            "raw_diff_sha256": signed["independent_ai_review_report"]["source_readback"]["raw_diff_sha256"],
             "protocol_sha256": signed["protocol_sha256"],
             "branch_protection_rules_sha256": signed["independent_ai_review_report"]["branch_protection_rules_sha256"],
             "required_approval_count": signed["independent_ai_review_report"]["required_approval_count"],
@@ -2243,6 +2261,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "pr_number": signed["formal_pr_number"], "author_id": signed["pr_author_id"],
             "base_sha": signed["formal_base_sha"], "head_sha": signed["formal_candidate_head_sha"],
             "diff_sha256": signed["formal_pr_diff_sha256"], "protocol_sha256": signed["protocol_sha256"],
+            "raw_diff_sha256": signed["independent_ai_review_report"]["source_readback"]["raw_diff_sha256"],
             "branch_protection_rules_sha256": signed["independent_ai_review_report"]["branch_protection_rules_sha256"],
             "required_approval_count": signed["independent_ai_review_report"]["required_approval_count"],
             "changed_files": report["source_readback"]["files"],
@@ -2296,6 +2315,15 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         missing_patch["source_readback"]["files"][0]["patch_sha256"] = None
         errors = r3.validate_successor_ai_review_report(missing_patch, **kwargs)
         self.assertTrue(errors)
+        omitted_patch_inventory = json.loads(json.dumps(missing_patch["source_readback"]["files"]))
+        omitted_patch_kwargs = dict(kwargs, changed_files=omitted_patch_inventory)
+        missing_patch["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in missing_patch.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        self.assertEqual(r3.validate_successor_ai_review_report(missing_patch, **omitted_patch_kwargs), [])
+        wrong_raw_diff = dict(kwargs, raw_diff_sha256="8" * 64)
+        errors = r3.validate_successor_ai_review_report(report, **wrong_raw_diff)
+        self.assertTrue(any("raw diff" in error for error in errors), errors)
 
         failed_ci = json.loads(json.dumps(report))
         failed_ci["required_ci_contexts"][0]["conclusion"] = "failure"
@@ -2383,6 +2411,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         }
         owner_row = _owner_exact_head_review_fixture(pr_number=801, author_id=49422864)
         diff_sha = owner_row["statement"]["formal_pr_diff_sha256"]
+        raw_diff_sha = owner_row["statement"]["independent_ai_review_report"]["source_readback"]["raw_diff_sha256"]
         protocol_raw = r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()
         blob = r3.git_blob_sha(r3.SUCCESSOR_PROTOCOL_PATH)
         encoded = base64.b64encode(protocol_raw).decode("ascii")
@@ -2421,6 +2450,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         changed_files = owner_row["statement"]["independent_ai_review_report"]["source_readback"]["files"]
         with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
+             patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
              patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True, "required_review": False, "required_approval_count": 0}, [])):
             errors = r3.validate_successor_migration_witness_live(
@@ -2454,6 +2484,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         }
         with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
+             patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
              patch.object(r3, "read_live_branch_protection", return_value=(required_review_protection, [])):
             branch_review_errors = r3.validate_successor_migration_witness_live(
@@ -2466,6 +2497,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         missing_branch_review.pop("branch_required_github_reviews")
         with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
+             patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
              patch.object(r3, "read_live_branch_protection", return_value=(required_review_protection, [])):
             missing_branch_review_errors = r3.validate_successor_migration_witness_live(
@@ -2476,6 +2508,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
 
         with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
+             patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
              patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True, "required_review": False, "required_approval_count": 0}, [])):
             without_owner_record = r3.validate_successor_migration_witness_live(
@@ -2517,6 +2550,25 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             head, github_api=lambda endpoint: {"check_runs": failed}
         )
         self.assertTrue(any("did not pass" in error for error in errors), errors)
+
+    def test_successor_raw_diff_digest_binds_exact_live_base_and_head(self) -> None:
+        base, head = "a" * 40, "b" * 40
+        pr = {"base": {"sha": base}, "head": {"sha": head}}
+        raw = b"diff --git a/large.json b/large.json\n+exact contents omitted by per-file patch endpoint\n"
+        digest, errors = r3.read_live_successor_pr_raw_diff_sha256(
+            801, base_sha=base, head_sha=head,
+            github_api=lambda endpoint: pr,
+            raw_diff_reader=lambda endpoint: raw,
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(digest, hashlib.sha256(raw).hexdigest())
+        stale_digest, stale_errors = r3.read_live_successor_pr_raw_diff_sha256(
+            801, base_sha=base, head_sha="c" * 40,
+            github_api=lambda endpoint: pr,
+            raw_diff_reader=lambda endpoint: raw,
+        )
+        self.assertIsNone(stale_digest)
+        self.assertTrue(any("exact live base and head" in error for error in stale_errors), stale_errors)
 
     def test_successor_migration_rejects_wrong_formal_head_before_activation(self) -> None:
         statement = {

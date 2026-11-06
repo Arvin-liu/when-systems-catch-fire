@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7c4ee233f4055587 / Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evalua](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-10d141da100e08e6 / MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evalua
@@ -769,9 +774,9 @@
   - 可搜索名称：NFC-0ae47acb1dca9f43 / one official causal-inference methodological record.
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
   - 依赖：—；被引用：—
-- [Only a completed protected Formal merge followed by the exact signed 1111 migration witness can make this protocol diges](../../../docs/governance/r3-successor-protocol-r1.md)
+- [Only a completed protected Formal merge followed by the exact signed 1111 migration witness can make this successor prot](../../../docs/governance/r3-successor-protocol-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a7230c970acd14f5 / Only a completed protected Formal merge followed by the exact signed 1111 migration witness can make this protocol diges
+  - 可搜索名称：NFC-709988242786e2f0 / Only a completed protected Formal merge followed by the exact signed 1111 migration witness can make this successor prot
   - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [Ontology learning towards expressiveness* — `10.1016/j.cosrev.2024.100693`](../../../data/external-research/088-FINAL-REPORT.md)
@@ -2499,8 +2504,3 @@
   - 可搜索名称：T57 / T57｜认知肌肉训练函数 / T57
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：—；被引用：CLAIM-T57, NFC-26fca5e7bcf3d53d, NFC-28001725c64ee2d9
-- [T9 自主意识函数 / autonomous consciousness function](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6630b8855e67bf1d / T9 自主意识函数 / autonomous consciousness function
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：T9；被引用：—

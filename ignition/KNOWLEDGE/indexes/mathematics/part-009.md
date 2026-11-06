@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "植物分布式决策函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-89B7EA317BAAB620 / title: "植物分布式决策函数" / IMPLICIT-89B7EA317BAAB620
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "植物哥德尔函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-308F9918C1DB427A / title: "植物哥德尔函数" / IMPLICIT-308F9918C1DB427A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "植物学习函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-75CC554A840F6A95 / title: "植物学习函数" / IMPLICIT-75CC554A840F6A95
@@ -2494,13 +2504,3 @@
   - 可搜索名称：CLAIM-D311 / Within the source-defined scope, 僵尸态函数 is adjudicated as RELATION: 源报告把 D311 的数学表达写成 `P_survival = e^{-Φ_eff}`，并指出它描述的是“
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D311；被引用：—
-- [Within the source-defined scope, 僵尸态救援函数 is adjudicated as RELATION: M12的僵尸态外部救援最小力度F_rescue∝n·\(g_critical-g_eff\)²。n越大需要](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D339 / Within the source-defined scope, 僵尸态救援函数 is adjudicated as RELATION: M12的僵尸态外部救援最小力度F_rescue∝n·\(g_critical-g_eff\)²。n越大需要
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D312；被引用：—
-- [Within the source-defined scope, 僵尸态自修复函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D325 / Within the source-defined scope, 僵尸态自修复函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—

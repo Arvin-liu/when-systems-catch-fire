@@ -5,6 +5,11 @@
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
 - [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6ef73ad16c816daf / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-75004e87bfae4fdc / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
   - 来源：`TOOLBOX.md`
@@ -1044,6 +1049,11 @@
   - 可搜索名称：NFC-131685b820f10813 / The candidate is optional and default-off. Its machine identity card and evidence are in `ignition/data/operations/toolb
   - 来源：`docs/operations/noaa-n2o-source-surface-comparison.md`
   - 依赖：—；被引用：—
+- [The candidate retains R3's current required contexts, canonical full-suite receipt and independent revalidation, exact c](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-434e72695450dc51 / The candidate retains R3's current required contexts, canonical full-suite receipt and independent revalidation, exact c
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [The canonical live fact is now ledger-derived: four historical attempts exist,](../../../reports/operations/ignition-139-step07-current-state-sync.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a3a90d5d2079d6e0 / The canonical live fact is now ledger-derived: four historical attempts exist,
@@ -1293,11 +1303,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5aa9e5c92e4a19a1 / The fixture binds Actions run `40064357026`, attempt `1`, head `8230dc6c13ec12c57f9c81f81994ee775ebb2ce8`, and the `FULL
   - 来源：`docs/operations/actions-validation-attribution.md`
-  - 依赖：—；被引用：—
-- [The focused tests cover protocol/schema consistency, the non-circular #163/#165 bootstrap, preparation/final authorizati](../../../docs/governance/r3-successor-protocol-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1eb766ee17f7a532 / The focused tests cover protocol/schema consistency, the non-circular #163/#165 bootstrap, preparation/final authorizati
-  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [The following run then exposed three Current Facts failures. The regenerated](../../../reports/operations/ignition-138-step13-targeted-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1668,11 +1673,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ca82811efd316be9 / The planner is experimental and excluded from routing by default. Its route test shows that the default route leaves the
   - 来源：`docs/operations/toolbox-validation-invocation-deduplication.md`
-  - 依赖：—；被引用：—
-- [The PR author may be the Owner. GitHub does not allow a PR author to approve their own PR, so the Owner's exact-head rev](../../../docs/governance/r3-successor-protocol-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-243bbe84a0d0b12d / The PR author may be the Owner. GitHub does not allow a PR author to approve their own PR, so the Owner's exact-head rev
-  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [The primary contribution is a direct multi-model, multi-subset and multi-task empirical comparison with explicit control](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`

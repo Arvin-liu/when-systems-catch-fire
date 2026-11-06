@@ -6,6 +6,16 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7b2f40e45269b4e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5668015880c6c65e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cfa96691393f6c73 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-77b1c40071dd6228 / 数学表达 / Expression: `F_D523\(K_n\) := dim_H\(K_n\)=n, n=2 \(Marstrand, Davies\), n≥3 T39 gate verified \(min_point=0.8\)`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T39；被引用：—
-- [数学表达 / Expression: `F_D535\(h\) := \(β,σ,ε\) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fcd99ceca546ddc8 / 数学表达 / Expression: `F_D535\(h\) := \(β,σ,ε\) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [数学表达 / Expression: `F_evidence_guard=SourceQuality × Replicability × ExternalValidation × DomainRisk`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-525c90025f7fe7e4 / 数学表达 / Expression: `F_evidence_guard=SourceQuality × Replicability × ExternalValidation × DomainRisk`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

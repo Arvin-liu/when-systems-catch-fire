@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable
 from urllib.parse import quote, urlparse
+from urllib.request import Request, urlopen
 
 from jsonschema import Draft202012Validator, FormatChecker
 
@@ -411,6 +412,31 @@ def _gh_api_json(endpoint: str) -> dict[str, Any] | list[Any]:
         ["gh", "api", endpoint], check=True, capture_output=True, text=True, timeout=30
     )
     return json.loads(result.stdout)
+
+
+def _gh_api_raw_diff(endpoint: str) -> bytes:
+    """Read an exact GitHub unified diff without the per-file patch size cap."""
+    token_result = subprocess.run(
+        ["gh", "auth", "token"], check=True, capture_output=True, text=True, timeout=10,
+    )
+    token = token_result.stdout.strip()
+    if not token:
+        raise ValueError("authenticated GitHub token is unavailable for the raw PR diff")
+    request = Request(
+        f"https://api.github.com/{endpoint}",
+        headers={
+            "Accept": "application/vnd.github.v3.diff",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "Codex-successor-review-validator",
+        },
+    )
+    with urlopen(request, timeout=240) as response:
+        body = response.read()
+        declared_length = response.headers.get("Content-Length")
+    if declared_length is not None and int(declared_length) != len(body):
+        raise OSError("GitHub returned a truncated raw PR diff response")
+    return body
 
 
 def _verified_owner_commit(commit: dict[str, Any], owner_id: int) -> tuple[bool, str]:
@@ -1916,6 +1942,7 @@ def validate_successor_ai_review_report(
     base_sha: str,
     head_sha: str,
     diff_sha256: str,
+    raw_diff_sha256: str,
     protocol_sha256: str,
     branch_protection_rules_sha256: str,
     required_approval_count: int,
@@ -1980,14 +2007,13 @@ def validate_successor_ai_review_report(
         source.get("source_base_sha") != base_sha
         or source.get("source_head_sha") != head_sha
         or source.get("formal_pr_diff_sha256") != diff_sha256
+        or source.get("raw_diff_sha256") != raw_diff_sha256
     ):
-        errors.append("independent AI review source readback is not bound to the exact base, head and diff")
+        errors.append("independent AI review source readback is not bound to the exact base, head and raw diff")
     if changed_files is None:
         errors.append("live exact-head changed-file inventory is unavailable for independent AI review")
     elif source.get("files") != changed_files:
         errors.append("independent AI report did not read back the complete exact changed-file inventory")
-    elif any(not isinstance(item.get("patch_sha256"), str) for item in changed_files):
-        errors.append("live changed-file inventory lacks raw patch bytes needed for independent review")
 
     reviewed_contexts = report.get("required_ci_contexts")
     if required_contexts is None:
@@ -2036,6 +2062,7 @@ def validate_successor_owner_exact_head_review_record(
     base_sha: str,
     head_sha: str,
     diff_sha256: str,
+    raw_diff_sha256: str,
     protocol_sha256: str,
     branch_protection_rules_sha256: str,
     required_approval_count: int,
@@ -2071,6 +2098,7 @@ def validate_successor_owner_exact_head_review_record(
         report, task_id=task_id, formal_ordinal=formal_ordinal,
         pr_number=pr_number, author_id=author_id, base_sha=base_sha,
         head_sha=head_sha, diff_sha256=diff_sha256,
+        raw_diff_sha256=raw_diff_sha256,
         protocol_sha256=protocol_sha256,
         branch_protection_rules_sha256=branch_protection_rules_sha256,
         required_approval_count=required_approval_count,
@@ -2162,6 +2190,42 @@ def read_live_successor_pr_diff_sha256(
         pr_number, base_sha=base_sha, head_sha=head_sha, github_api=github_api,
     )
     return digest, errors
+
+
+def read_live_successor_pr_raw_diff_sha256(
+    pr_number: int,
+    *,
+    base_sha: str,
+    head_sha: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    raw_diff_reader: Callable[[str], bytes] | None = None,
+) -> tuple[str | None, list[str]]:
+    """Hash the complete PR unified diff, including files omitted by the patch API."""
+    api = github_api or _gh_api_json
+    endpoint = f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}"
+    try:
+        pr_before = api(endpoint)
+        if (
+            not isinstance(pr_before, dict)
+            or (pr_before.get("base") or {}).get("sha") != base_sha
+            or (pr_before.get("head") or {}).get("sha") != head_sha
+        ):
+            return None, ["Formal PR raw diff is not bound to the exact live base and head"]
+        raw = (raw_diff_reader or _gh_api_raw_diff)(endpoint)
+        if isinstance(raw, str):
+            raw = raw.encode("utf-8")
+        if not isinstance(raw, bytes) or not raw.startswith(b"diff --git "):
+            return None, ["Formal PR raw unified diff is empty or unreadable"]
+        pr_after = api(endpoint)
+        if (
+            not isinstance(pr_after, dict)
+            or (pr_after.get("base") or {}).get("sha") != base_sha
+            or (pr_after.get("head") or {}).get("sha") != head_sha
+        ):
+            return None, ["Formal PR base or head changed while reading the raw diff"]
+        return hashlib.sha256(raw).hexdigest(), []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Formal PR raw diff read failed closed: {error.__class__.__name__}: {error}"]
 
 
 def validate_successor_review_gate(
@@ -2436,6 +2500,11 @@ def validate_successor_migration_witness_live(
             head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
         )
         errors.extend(diff_errors)
+        raw_diff_sha256, raw_diff_errors = read_live_successor_pr_raw_diff_sha256(
+            statement["formal_pr_number"], base_sha=statement["formal_base_sha"],
+            head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
+        )
+        errors.extend(raw_diff_errors)
         live_protection, protection_errors = read_live_branch_protection(
             github_api=github_api, allow_required_human_review=True,
         )
@@ -2469,7 +2538,8 @@ def validate_successor_migration_witness_live(
                 registration_id=owner_statement.get("registration_id", ""),
                 pr_number=statement["formal_pr_number"], author_id=author_id or statement["pr_author_id"],
                 base_sha=statement["formal_base_sha"], head_sha=statement["formal_candidate_head_sha"],
-                diff_sha256=diff_sha256 or "", protocol_sha256=statement["protocol_sha256"],
+                diff_sha256=diff_sha256 or "", raw_diff_sha256=raw_diff_sha256 or "",
+                protocol_sha256=statement["protocol_sha256"],
                 branch_protection_rules_sha256=(live_protection or {}).get("rules_sha256", ""),
                 required_approval_count=(live_protection or {}).get("required_approval_count", -1),
                 changed_files=changed_files, required_contexts=live_contexts,
@@ -3275,11 +3345,13 @@ def resolve_effective_protocol(
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
     allow_main_descendant: bool = False,
 ) -> tuple[str, list[str]]:
-    """Return R3 only after Owner, immutable 1111, live rules and final-SHA evidence agree.
+    """Resolve the transition profile from exact Owner, 1111 and main evidence.
 
-    Before activation, R2 remains current. Once a merge-bound activation claim
-    exists, failed or unavailable revalidation leaves R3 blocked and effective;
-    only the separate signed protected-PR restoration path can select R2 again.
+    This selector returns the legacy R2 profile when no independent R3
+    transition receipt is supplied. That fallback is not evidence that R2 is
+    the repository's current effective protocol. A merge-bound activation
+    claim keeps R3 effective during failed or unavailable revalidation; only
+    the separate signed protected-PR restoration path can select R2 again.
     """
     activation_claimed = (
         allow_main_descendant
@@ -4287,6 +4359,14 @@ def validate_transaction_record(
                 pr["number"], base_sha=refs["base_main_sha"], head_sha=pr["head_sha"], github_api=github_api
             )
             errors.extend(diff_errors)
+        if synthetic:
+            raw_diff_sha256 = expected.get("formal_pr_raw_diff_sha256") or ""
+        else:
+            raw_diff_sha256, raw_diff_errors = read_live_successor_pr_raw_diff_sha256(
+                pr["number"], base_sha=refs["base_main_sha"], head_sha=pr["head_sha"],
+                github_api=github_api,
+            )
+            errors.extend(raw_diff_errors)
         owner_review_records = successor_ledger.get("owner_reviews", [])
         matching_owner_records = [
             row for row in owner_review_records
@@ -4306,7 +4386,8 @@ def validate_transaction_record(
                 registration_id=identity["successor_registration_id"],
                 pr_number=pr["number"], author_id=live_author_id,
                 base_sha=refs["base_main_sha"], head_sha=pr["head_sha"],
-                diff_sha256=diff_sha256, protocol_sha256=protocol_digest,
+                diff_sha256=diff_sha256, raw_diff_sha256=raw_diff_sha256,
+                protocol_sha256=protocol_digest,
                 branch_protection_rules_sha256=protection["rules_sha256"],
                 required_approval_count=protection["required_approval_count"],
                 changed_files=changed_files, required_contexts=live_contexts,
@@ -4563,7 +4644,7 @@ def main() -> int:
                 print(f"- {error}", file=sys.stderr)
             return 2
         if args.phase == "postpublication" and current != "R3":
-            print("R3_TRANSACTION_REJECTED: R2 remains the effective policy", file=sys.stderr)
+            print("R3_TRANSACTION_REJECTED: this invocation has no verified R3 transition evidence; the R2 compatibility selection does not establish the repository's effective policy", file=sys.stderr)
             for error in activation_errors:
                 print(f"- {error}", file=sys.stderr)
             return 2
@@ -4591,7 +4672,7 @@ def main() -> int:
             return 2
         print("RELEASE_TRANSACTION_PROTOCOL_R3_CURRENT")
     else:
-        print(f"RELEASE_TRANSACTION_PROTOCOL_R3_CANDIDATE_OK current=R2 path={relative(PROTOCOL_PATH)}")
+        print(f"RELEASE_TRANSACTION_PROTOCOL_R3_COMPATIBILITY_CHECK_OK profile=R2 path={relative(PROTOCOL_PATH)}")
         for error in activation_errors:
             print(f"- {error}")
     if args.check_successor:

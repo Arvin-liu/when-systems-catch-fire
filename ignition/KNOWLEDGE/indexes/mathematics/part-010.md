@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 僵尸态救援函数 is adjudicated as RELATION: M12的僵尸态外部救援最小力度F_rescue∝n·\(g_critical-g_eff\)²。n越大需要](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D339 / Within the source-defined scope, 僵尸态救援函数 is adjudicated as RELATION: M12的僵尸态外部救援最小力度F_rescue∝n·\(g_critical-g_eff\)²。n越大需要
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D312；被引用：—
+- [Within the source-defined scope, 僵尸态自修复函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D325 / Within the source-defined scope, 僵尸态自修复函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 元竞争动力学函数\(抽象版\) is adjudicated as STATE_TRANSITION: 可竞争标的的稀缺度动力学：标的的可用量随时间衰减，衰减率受竞争强度调节，同](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D520 / Within the source-defined scope, 元竞争动力学函数\(抽象版\) is adjudicated as STATE_TRANSITION: 可竞争标的的稀缺度动力学：标的的可用量随时间衰减，衰减率受竞争强度调节，同
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-67d39f48ff8dfe84 / \| \[C-646\]\( \) \| \[退出权空间案例26\]\( \) \| 凯利公式的有效边界是 Ω_cognitive 的上界。认知空间上界决定了
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-662\]\( \) \| \[四方向联合碰撞验证\]\( \) \| Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Context积累、叙事驱动）下，都产生了与点火框架的有效碰撞，共产生 3 条新函数和 10 条扩展注释。碰撞过程中，所有候选增量均通过正反交叉自举循环的 J⁺/J⁻ 判定，最终收敛于](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F0A516E543B22E8D / \| \[C-662\]\( \) \| \[四方向联合碰撞验证\]\( \) \| Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Context积累、叙事驱动）下，都产生了与点火框架的有效碰撞，共产生 3 条新函数和 10 条扩展注释。碰撞过程中，所有候选增量均通过正反交叉自举循环的 J⁺/J⁻ 判定，最终收敛于 / IMPLICIT-F0A516E543B22E8D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-663\]\( \) \| \[密码学碰撞验证案例\]\( \) \| 密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ed93496ee4bc365a / \| \[C-663\]\( \) \| \[密码学碰撞验证案例\]\( \) \| 密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D1, D518；被引用：—
