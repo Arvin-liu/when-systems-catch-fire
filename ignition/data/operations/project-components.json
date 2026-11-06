@@ -15,6 +15,7 @@
         "epistemic_governance_kernel",
         "human_knowledge_surfaces",
         "licensing",
+        "release_transaction_protocol_r3",
         "foundation",
         "ignition_operating_method",
         "l5",
@@ -34,7 +35,7 @@
         "formal/",
         "data/foundation/"
       ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
+      "reason": "Q33 governance components and the R3 successor protocol share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter, licensing, and successor protocol documents that also live under docs/governance/."
     },
     {
       "authority_source": ".github/README.md",
