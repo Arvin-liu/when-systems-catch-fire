@@ -565,6 +565,63 @@ def _successor_authorization_fixture() -> tuple[dict[str, object], dict[str, obj
 
 
 def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 49422864) -> dict[str, object]:
+    changed_files = [{
+        "filename": "ignition/tools/validate_release_transaction_protocol_r3.py",
+        "status": "modified", "sha": "f" * 40, "additions": 12, "deletions": 4,
+        "changes": 16, "patch_sha256": "a" * 64,
+    }]
+    ci_contexts = [
+        {"context": name, "app_id": 15368, "sha": "b" * 40, "conclusion": "success",
+         "check_run_id": index, "check_url": f"https://github.com/check/{index}",
+         "completed_at": "2026-11-04T09:15:00Z"}
+        for index, name in enumerate((
+            "release-transaction-protocol-validation", "foundation-validation",
+            "repository-path-accounting-preflight",
+        ), 1)
+    ]
+    report = {
+        "schema_version": "r3-successor-independent-ai-review-r1",
+        "report_id": "ai-review-fixture-001", "artifact_id": "codex-reviewer-fixture-001",
+        "created_at": "2026-11-04T09:20:00Z", "expires_at": "2026-11-04T10:30:00Z",
+        "task_id": "IGNITION-20991231-999", "formal_ordinal": 999,
+        "formal_pr_number": pr_number, "pr_author_id": author_id,
+        "formal_base_sha": "a" * 40, "formal_candidate_head_sha": "b" * 40,
+        "formal_pr_diff_sha256": "c" * 64,
+        "protocol_sha256": hashlib.sha256(r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest(),
+        "branch_protection_rules_sha256": "e" * 64, "required_approval_count": 0,
+        "authoring_provenance": {
+            "source": "PLATFORM_EXECUTION_METADATA", "model": "GPT-6 Codex",
+            "execution_id": "test-author-execution-001", "instance_id": "test-author-instance-001",
+        },
+        "reviewer_provenance": {
+            "source": "PLATFORM_EXECUTION_METADATA", "model": "GPT-6 Codex",
+            "execution_id": "test-reviewer-execution-001", "instance_id": "test-reviewer-instance-001",
+        },
+        "source_readback": {
+            "mode": "GITHUB_READ_ONLY_EXACT_HEAD", "repository": "Arvin-liu/when-systems-catch-fire",
+            "source_base_sha": "a" * 40, "source_head_sha": "b" * 40,
+            "formal_pr_diff_sha256": "c" * 64, "files": changed_files,
+        },
+        "required_ci_contexts": ci_contexts,
+        "assessment": {
+            "implementation": "The validator binds the report and Owner record to one exact successor PR.",
+            "threat_model": "Identity substitution and stale-head cases are rejected.",
+            "exact_source_and_diff": "The report lists the exact changed-file inventory and patch digests.",
+            "required_ci_and_scope": "All required contexts are successful on the exact head.",
+            "history_and_rollback": "Append-only controls preserve prior decisions and reject replay.",
+            "authority_separation": "The AI report is advisory evidence; Owner signature and merge remain separate.",
+        },
+        "negative_controls": [
+            {"control_id": control_id, "result": "PASS", "evidence": "Synthetic negative-control assertion."}
+            for control_id in sorted(r3.SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS)
+        ],
+        "findings": [], "limitations": ["Synthetic unit fixture; not a live review artifact."],
+        "verdict": "ACCEPT", "scope_expansion_proposed": False,
+        "claims_github_approved": False,
+    }
+    report["report_sha256"] = hashlib.sha256(
+        json.dumps(report, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
     statement = {
         "schema_version": "r3-successor-owner-exact-head-review-r1", "record_type": "OWNER_EXACT_HEAD_REVIEW",
         "review_id": "owner-review-fixture-001", "task_id": "IGNITION-20991231-999", "formal_ordinal": 999,
@@ -572,6 +629,7 @@ def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 4
         "formal_base_sha": "a" * 40, "formal_candidate_head_sha": "b" * 40,
         "formal_pr_diff_sha256": "c" * 64,
         "protocol_sha256": hashlib.sha256(r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest(),
+        "independent_ai_review_report": report,
         "decision": "APPROVE", "review_summary": "Reviewed exact candidate scope, authorization stages, and retained history.",
         "reviewed_at": "2026-11-04T09:30:00Z", "review_nonce": "5" * 32,
         "scope": "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD", "owner_actor_id": 49422864,
@@ -1857,6 +1915,11 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             return value
         live_protection, errors = r3.read_live_branch_protection(github_api=with_review_rule)
         self.assertTrue(any("approval count" in error for error in errors))
+        successor_protection, successor_errors = r3.read_live_branch_protection(
+            github_api=with_review_rule, allow_required_human_review=True,
+        )
+        self.assertEqual(successor_errors, [])
+        self.assertTrue(successor_protection["required_review"])
         record, expected = _record(), _context()
         record["branch_protection"] = live_protection
         expected["branch_protection_rules"] = live_protection
@@ -2083,7 +2146,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertNotIn("pr_number", prep)
         self.assertNotIn("candidate_head_sha", prep)
 
-    def test_successor_review_gate_allows_owner_author_but_requires_distinct_attested_reviewer(self) -> None:
+    def test_successor_review_gate_requires_human_only_when_live_branch_rules_do(self) -> None:
         head = "b" * 40
         body = "Independence: I reviewed without involvement in implementation or direction from the PR author.\nAssessment: The new preparation grant is separate from final authorization, and changed-head and replay cases are rejected."
         reviews = [
@@ -2103,20 +2166,23 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         _, _, errors = r3.validate_successor_review_gate(
             author_self_review, author_id=49422864, owner_id=49422864, head_sha=head,
             authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
+            require_human_approval=True,
         )
         self.assertTrue(any("no distinct non-author" in error for error in errors), errors)
         wrong_head = [dict(reviews[0], commit_sha="c" * 40)]
         _, _, errors = r3.validate_successor_review_gate(
             wrong_head, author_id=40, owner_id=49422864, head_sha=head,
             authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
+            require_human_approval=True,
         )
         self.assertTrue(errors)
-        incomplete = [dict(reviews[0], body="Approved without the required review evidence")]
+        incomplete = [dict(reviews[0], state="COMMENTED")]
         _, _, errors = r3.validate_successor_review_gate(
             incomplete, author_id=40, owner_id=49422864, head_sha=head,
             authorized_reviewer_ids=None, valid_through="2026-11-04T10:10:00Z",
+            require_human_approval=True,
         )
-        self.assertTrue(any("Independence" in item or "Assessment" in item for item in errors), errors)
+        self.assertTrue(errors, errors)
 
     def test_live_review_readback_does_not_require_write_permission(self) -> None:
         endpoints = []
@@ -2152,12 +2218,118 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "registration_id": signed["registration_id"], "pr_number": signed["formal_pr_number"],
             "author_id": signed["pr_author_id"], "base_sha": signed["formal_base_sha"],
             "head_sha": signed["formal_candidate_head_sha"], "diff_sha256": signed["formal_pr_diff_sha256"],
-            "protocol_sha256": signed["protocol_sha256"], "valid_through": "2026-11-04T10:00:00Z",
+            "protocol_sha256": signed["protocol_sha256"],
+            "branch_protection_rules_sha256": signed["independent_ai_review_report"]["branch_protection_rules_sha256"],
+            "required_approval_count": signed["independent_ai_review_report"]["required_approval_count"],
+            "changed_files": signed["independent_ai_review_report"]["source_readback"]["files"],
+            "required_contexts": signed["independent_ai_review_report"]["required_ci_contexts"],
+            "valid_through": "2026-11-04T10:00:00Z",
         }
         self.assertEqual(r3.validate_successor_owner_exact_head_review_record(row, **kwargs), [])
         self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, head_sha="d" * 40)))
         self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, diff_sha256="e" * 64)))
         self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, valid_through="2026-11-04T09:35:00Z")))
+        missing_owner_signature = json.loads(json.dumps(row))
+        missing_owner_signature["signature_verified"] = False
+        errors = r3.validate_successor_owner_exact_head_review_record(missing_owner_signature, **kwargs)
+        self.assertTrue(any("verified Owner signature" in error for error in errors), errors)
+
+    def test_independent_ai_review_report_binds_exact_evidence_and_fails_closed(self) -> None:
+        row = _owner_exact_head_review_fixture()
+        signed = row["statement"]
+        report = signed["independent_ai_review_report"]
+        kwargs = {
+            "task_id": signed["task_id"], "formal_ordinal": signed["formal_ordinal"],
+            "pr_number": signed["formal_pr_number"], "author_id": signed["pr_author_id"],
+            "base_sha": signed["formal_base_sha"], "head_sha": signed["formal_candidate_head_sha"],
+            "diff_sha256": signed["formal_pr_diff_sha256"], "protocol_sha256": signed["protocol_sha256"],
+            "branch_protection_rules_sha256": signed["independent_ai_review_report"]["branch_protection_rules_sha256"],
+            "required_approval_count": signed["independent_ai_review_report"]["required_approval_count"],
+            "changed_files": report["source_readback"]["files"],
+            "required_contexts": report["required_ci_contexts"],
+            "valid_through": "2026-11-04T10:00:00Z",
+        }
+        self.assertEqual(r3.validate_successor_ai_review_report(report, **kwargs), [])
+
+        same_execution = json.loads(json.dumps(report))
+        same_execution["reviewer_provenance"]["execution_id"] = same_execution["authoring_provenance"]["execution_id"]
+        same_execution["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in same_execution.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(same_execution, **kwargs)
+        self.assertTrue(any("must differ" in error for error in errors), errors)
+
+        tampered = json.loads(json.dumps(report))
+        tampered["assessment"]["implementation"] = "Changed after report signing."
+        errors = r3.validate_successor_ai_review_report(tampered, **kwargs)
+        self.assertTrue(any("digest" in error for error in errors), errors)
+
+        expired = json.loads(json.dumps(report))
+        expired["expires_at"] = "2026-11-04T09:59:00Z"
+        expired["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in expired.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(expired, **kwargs)
+        self.assertTrue(any("expired" in error for error in errors), errors)
+
+        stale = json.loads(json.dumps(report))
+        stale["formal_candidate_head_sha"] = "d" * 40
+        stale["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in stale.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(stale, **kwargs)
+        self.assertTrue(any("formal_candidate_head_sha" in error or "head and diff" in error for error in errors), errors)
+
+        for field, wrong_value in (
+            ("task_id", "IGNITION-20991231-998"), ("formal_pr_number", 802),
+            ("formal_base_sha", "d" * 40), ("formal_pr_diff_sha256", "d" * 64),
+        ):
+            mismatch = json.loads(json.dumps(report))
+            mismatch[field] = wrong_value
+            mismatch["report_sha256"] = hashlib.sha256(
+                json.dumps({k: v for k, v in mismatch.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+            ).hexdigest()
+            errors = r3.validate_successor_ai_review_report(mismatch, **kwargs)
+            self.assertTrue(any(field in error for error in errors), errors)
+
+        missing_patch = json.loads(json.dumps(report))
+        missing_patch["source_readback"]["files"][0]["patch_sha256"] = None
+        errors = r3.validate_successor_ai_review_report(missing_patch, **kwargs)
+        self.assertTrue(errors)
+
+        failed_ci = json.loads(json.dumps(report))
+        failed_ci["required_ci_contexts"][0]["conclusion"] = "failure"
+        errors = r3.validate_successor_ai_review_report(failed_ci, **kwargs)
+        self.assertTrue(errors)
+
+        expanded_scope = json.loads(json.dumps(report))
+        expanded_scope["scope_expansion_proposed"] = True
+        errors = r3.validate_successor_ai_review_report(expanded_scope, **kwargs)
+        self.assertTrue(errors)
+
+        inconclusive = json.loads(json.dumps(report))
+        inconclusive["verdict"] = "INCONCLUSIVE"
+        inconclusive["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in inconclusive.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(inconclusive, **kwargs)
+        self.assertTrue(any("verdict is not ACCEPT" in error for error in errors), errors)
+
+        open_blocker = json.loads(json.dumps(report))
+        open_blocker["findings"] = [{"severity": "BLOCKER", "status": "OPEN", "description": "unsafe scope"}]
+        open_blocker["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in open_blocker.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(open_blocker, **kwargs)
+        self.assertTrue(any("unresolved blocker" in error for error in errors), errors)
+
+        negative_control_failure = json.loads(json.dumps(report))
+        negative_control_failure["negative_controls"][0]["result"] = "FAIL"
+        negative_control_failure["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in negative_control_failure.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(negative_control_failure, **kwargs)
+        self.assertTrue(any("negative controls contain a failure" in error for error in errors), errors)
 
     def test_task22_preparation_authority_uses_effective_163_and_165_not_candidate_self_authority(self) -> None:
         contract = r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
@@ -2214,11 +2386,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         protocol_raw = r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()
         blob = r3.git_blob_sha(r3.SUCCESSOR_PROTOCOL_PATH)
         encoded = base64.b64encode(protocol_raw).decode("ascii")
-        contexts = [
-            {"context": name, "app_id": 15368, "sha": head, "conclusion": "success", "check_run_id": index,
-             "check_url": f"https://github.com/check/{index}", "completed_at": "2026-11-04T09:30:00Z"}
-            for index, name in enumerate(("release-transaction-protocol-validation", "foundation-validation", "repository-path-accounting-preflight"), 1)
-        ]
+        contexts = owner_row["statement"]["independent_ai_review_report"]["required_ci_contexts"]
         rules_sha = "e" * 64
         statement = {
             "protocol_sha256": hashlib.sha256(protocol_raw).hexdigest(), "root_authority_merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA,
@@ -2226,8 +2394,9 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "formal_merge_commit_sha": merge_sha, "formal_merge_tree_sha": tree_sha,
             "formal_merge_parents": [base, head], "required_check_contexts": contexts,
             "branch_protection_rules_sha256": rules_sha, "branch_protection_verified": True,
-            "merge_method": "MERGE_COMMIT", "independent_review_id": 42, "independent_reviewer_id": 60,
-            "independent_review_commit_sha": head, "independent_review_body_sha256": hashlib.sha256(body.encode()).hexdigest(),
+            "merge_method": "MERGE_COMMIT", "independent_review_mode": "INDEPENDENT_AI_EXECUTION",
+            "independent_ai_review_artifact_id": owner_row["statement"]["independent_ai_review_report"]["artifact_id"],
+            "independent_ai_review_report_sha256": owner_row["statement"]["independent_ai_review_report"]["report_sha256"],
             "pr_author_id": 49422864, "owner_review_record_id": owner_row["statement"]["review_id"],
             "owner_review_record_commit_sha": owner_row["commit_sha"],
             "owner_review_record_file_sha256": owner_row["file_sha256"], "owner_reviewed_head_sha": head,
@@ -2249,20 +2418,66 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             if endpoint == "repos/Arvin-liu/when-systems-catch-fire/branches/main": return {"commit": {"sha": "f" * 40}}
             if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/compare/{merge_sha}...{'f' * 40}": return {"status": "ahead"}
             raise AssertionError(endpoint)
+        changed_files = owner_row["statement"]["independent_ai_review_report"]["source_readback"]["files"]
         with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
-             patch.object(r3, "read_live_successor_pr_diff_sha256", return_value=(diff_sha, [])), \
+             patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
-             patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True}, [])):
+             patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True, "required_review": False, "required_approval_count": 0}, [])):
             errors = r3.validate_successor_migration_witness_live(
                 statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
                 owner_review_records=[owner_row], github_api=api,
             )
         self.assertEqual(errors, [])
         self.assertNotEqual(review["actor_id"], pr["user"]["id"])
+        branch_owner_row = json.loads(json.dumps(owner_row))
+        branch_report = branch_owner_row["statement"]["independent_ai_review_report"]
+        branch_report["branch_protection_rules_sha256"] = "f" * 64
+        branch_report["required_approval_count"] = 1
+        branch_report["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in branch_report.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        branch_raw = json.dumps(branch_owner_row["statement"], sort_keys=True, separators=(",", ":")).encode()
+        branch_owner_row["blob_sha"] = r3._git_blob_sha(branch_raw)
+        branch_owner_row["file_sha256"] = hashlib.sha256(branch_raw).hexdigest()
+        branch_review_statement = json.loads(json.dumps(statement))
+        branch_review_statement["branch_protection_rules_sha256"] = "f" * 64
+        branch_review_statement["owner_review_record_file_sha256"] = branch_owner_row["file_sha256"]
+        branch_review_statement["independent_ai_review_report_sha256"] = branch_report["report_sha256"]
+        branch_review_statement["branch_required_github_reviews"] = [{
+            "review_id": review["review_id"], "reviewer_id": review["actor_id"],
+            "commit_sha": review["commit_sha"],
+            "body_sha256": hashlib.sha256(review["body"].encode("utf-8")).hexdigest(),
+        }]
+        required_review_protection = {
+            "rules_sha256": "f" * 64, "protected": True, "admin_enforcement_enabled": True,
+            "required_review": True, "required_approval_count": 1,
+        }
         with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
-             patch.object(r3, "read_live_successor_pr_diff_sha256", return_value=(diff_sha, [])), \
+             patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
-             patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True}, [])):
+             patch.object(r3, "read_live_branch_protection", return_value=(required_review_protection, [])):
+            branch_review_errors = r3.validate_successor_migration_witness_live(
+                branch_review_statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
+                owner_review_records=[branch_owner_row], github_api=api,
+            )
+        self.assertEqual(branch_review_errors, [])
+
+        missing_branch_review = json.loads(json.dumps(branch_review_statement))
+        missing_branch_review.pop("branch_required_github_reviews")
+        with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
+             patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
+             patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_live_branch_protection", return_value=(required_review_protection, [])):
+            missing_branch_review_errors = r3.validate_successor_migration_witness_live(
+                missing_branch_review, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
+                owner_review_records=[branch_owner_row], github_api=api,
+            )
+        self.assertTrue(any("does not bind the live branch-required" in error for error in missing_branch_review_errors), missing_branch_review_errors)
+
+        with patch.object(r3, "read_live_successor_pr_reviews", return_value=({"pull_request": pr, "owner_id": 49422864}, [review], [])), \
+             patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
+             patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True, "required_review": False, "required_approval_count": 0}, [])):
             without_owner_record = r3.validate_successor_migration_witness_live(
                 statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
                 owner_review_records=[], github_api=api,

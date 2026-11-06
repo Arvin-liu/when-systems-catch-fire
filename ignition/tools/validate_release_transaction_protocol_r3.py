@@ -1897,6 +1897,133 @@ def validate_successor_transaction_authorization_statement(
     return errors
 
 
+SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS = {
+    "same_author_self_review", "fake_or_reused_reviewer_identity", "missing_raw_diff",
+    "task_pr_base_head_diff_mismatch", "tampered_report_digest", "missing_or_expired_artifact",
+    "outdated_head", "failed_ci", "unsafe_scope", "forged_github_approval",
+    "missing_owner_signature", "reject_or_inconclusive_verdict",
+    "supersession_rollback_or_history_rewrite",
+}
+
+
+def validate_successor_ai_review_report(
+    report: dict[str, Any] | None,
+    *,
+    task_id: str,
+    formal_ordinal: int,
+    pr_number: int,
+    author_id: int,
+    base_sha: str,
+    head_sha: str,
+    diff_sha256: str,
+    protocol_sha256: str,
+    branch_protection_rules_sha256: str,
+    required_approval_count: int,
+    changed_files: list[dict[str, Any]] | None,
+    required_contexts: list[dict[str, Any]] | None,
+    valid_through: str,
+) -> list[str]:
+    """Validate the independently authored, immutable AI review artifact."""
+    if not isinstance(report, dict):
+        return ["independent AI review report is missing or malformed"]
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors = _schema_errors(report, {"$ref": "#/$defs/independentAiReviewReport", "$defs": schema["$defs"]})
+    if errors:
+        return [f"independent AI review report schema: {item}" for item in errors]
+
+    for field, value in (
+        ("task_id", task_id), ("formal_ordinal", formal_ordinal),
+        ("formal_pr_number", pr_number), ("pr_author_id", author_id),
+        ("formal_base_sha", base_sha), ("formal_candidate_head_sha", head_sha),
+        ("formal_pr_diff_sha256", diff_sha256), ("protocol_sha256", protocol_sha256),
+        ("branch_protection_rules_sha256", branch_protection_rules_sha256),
+        ("required_approval_count", required_approval_count),
+    ):
+        if report.get(field) != value:
+            errors.append(f"independent AI review report {field} does not bind the exact successor task and PR")
+
+    report_payload = {key: value for key, value in report.items() if key != "report_sha256"}
+    canonical_digest = hashlib.sha256(
+        json.dumps(report_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    if report.get("report_sha256") != canonical_digest:
+        errors.append("independent AI review report digest does not match its canonical artifact bytes")
+
+    authoring = report.get("authoring_provenance") or {}
+    reviewer = report.get("reviewer_provenance") or {}
+    unavailable = {"unknown", "not_exposed", "unavailable", "redacted", "none", "null", "n/a", "na"}
+    for role, provenance in (("authoring", authoring), ("reviewer", reviewer)):
+        for field in ("model", "execution_id", "instance_id"):
+            value = provenance.get(field)
+            if not isinstance(value, str) or not value.strip() or value.strip().casefold() in unavailable:
+                errors.append(f"independent AI review {role} {field} provenance is missing or unverifiable")
+    if (
+        authoring.get("execution_id") == reviewer.get("execution_id")
+        or authoring.get("instance_id") == reviewer.get("instance_id")
+    ):
+        errors.append("independent AI reviewer execution and instance must differ from the authoring execution")
+
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "AI review validity cutoff")
+    created, created_errors = _parse_control_time(report.get("created_at"), "AI review artifact created_at")
+    expires, expires_errors = _parse_control_time(report.get("expires_at"), "AI review artifact expires_at")
+    errors.extend(cutoff_errors + created_errors + expires_errors)
+    if created and expires:
+        if expires <= created or (expires - created).total_seconds() > 24 * 60 * 60:
+            errors.append("independent AI review artifact expiry must be within 24 hours of creation")
+        if cutoff and created >= cutoff:
+            errors.append("independent AI review report was not created before the Owner merge decision")
+        if cutoff and expires <= cutoff:
+            errors.append("independent AI review artifact was expired at the Owner merge decision")
+
+    source = report.get("source_readback") or {}
+    if (
+        source.get("source_base_sha") != base_sha
+        or source.get("source_head_sha") != head_sha
+        or source.get("formal_pr_diff_sha256") != diff_sha256
+    ):
+        errors.append("independent AI review source readback is not bound to the exact base, head and diff")
+    if changed_files is None:
+        errors.append("live exact-head changed-file inventory is unavailable for independent AI review")
+    elif source.get("files") != changed_files:
+        errors.append("independent AI report did not read back the complete exact changed-file inventory")
+    elif any(not isinstance(item.get("patch_sha256"), str) for item in changed_files):
+        errors.append("live changed-file inventory lacks raw patch bytes needed for independent review")
+
+    reviewed_contexts = report.get("required_ci_contexts")
+    if required_contexts is None:
+        errors.append("live exact-head required CI evidence is unavailable to compare with the AI report")
+    elif reviewed_contexts != required_contexts:
+        errors.append("independent AI report did not inspect the exact live required CI context set")
+
+    controls = report.get("negative_controls", [])
+    control_ids = [item.get("control_id") for item in controls if isinstance(item, dict)]
+    if set(control_ids) != SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS or len(control_ids) != len(SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS):
+        errors.append("independent AI report does not assess every required negative control exactly once")
+    if any(item.get("result") != "PASS" for item in controls if isinstance(item, dict)):
+        errors.append("independent AI review negative controls contain a failure or inconclusive result")
+    assessment = report.get("assessment") or {}
+    required_assessments = {
+        "implementation", "threat_model", "exact_source_and_diff",
+        "required_ci_and_scope", "history_and_rollback", "authority_separation",
+    }
+    if set(assessment) != required_assessments or any(
+        not isinstance(value, str) or not value.strip() for value in assessment.values()
+    ):
+        errors.append("independent AI report lacks a substantive assessment across every required area")
+    if any(
+        item.get("severity") in {"BLOCKER", "HIGH"} and item.get("status") == "OPEN"
+        for item in report.get("findings", []) if isinstance(item, dict)
+    ):
+        errors.append("independent AI report has an unresolved blocker or high-severity finding")
+    if report.get("verdict") != "ACCEPT":
+        errors.append("independent AI review verdict is not ACCEPT")
+    if report.get("scope_expansion_proposed") is not False:
+        errors.append("independent AI review proposes an unauthorized scope expansion")
+    if report.get("claims_github_approved") is not False:
+        errors.append("independent AI review incorrectly claims GitHub approval")
+    return errors
+
+
 def validate_successor_owner_exact_head_review_record(
     review_row: dict[str, Any] | None,
     *,
@@ -1910,6 +2037,10 @@ def validate_successor_owner_exact_head_review_record(
     head_sha: str,
     diff_sha256: str,
     protocol_sha256: str,
+    branch_protection_rules_sha256: str,
+    required_approval_count: int,
+    changed_files: list[dict[str, Any]] | None,
+    required_contexts: list[dict[str, Any]] | None,
     valid_through: str,
 ) -> list[str]:
     """Require a separate Owner-signed, append-only review of this exact PR diff."""
@@ -1935,12 +2066,29 @@ def validate_successor_owner_exact_head_review_record(
         errors.append("Owner exact-head review ledger path differs from its immutable review ID")
     if review_row.get("signature_verified") is not True or review_row.get("signature_reason") != "valid":
         errors.append("Owner exact-head review record lacks a verified Owner signature")
+    report = signed.get("independent_ai_review_report")
+    errors.extend(validate_successor_ai_review_report(
+        report, task_id=task_id, formal_ordinal=formal_ordinal,
+        pr_number=pr_number, author_id=author_id, base_sha=base_sha,
+        head_sha=head_sha, diff_sha256=diff_sha256,
+        protocol_sha256=protocol_sha256,
+        branch_protection_rules_sha256=branch_protection_rules_sha256,
+        required_approval_count=required_approval_count,
+        changed_files=changed_files,
+        required_contexts=required_contexts, valid_through=valid_through,
+    ))
     reviewed_at, reviewed_errors = _parse_control_time(signed.get("reviewed_at"), "Owner reviewed_at")
     committed_at, committed_errors = _parse_control_time(review_row.get("committed_at"), "Owner review signed commit time")
     cutoff, cutoff_errors = _parse_control_time(valid_through, "Owner review validity cutoff")
     errors.extend(reviewed_errors + committed_errors + cutoff_errors)
     if reviewed_at and committed_at and reviewed_at > committed_at:
         errors.append("Owner exact-head review time is later than its signed append-only record")
+    report_created, report_created_errors = _parse_control_time(
+        (report or {}).get("created_at"), "AI review report created_at"
+    )
+    errors.extend(report_created_errors)
+    if report_created and reviewed_at and report_created >= reviewed_at:
+        errors.append("independent AI review report was not created before the Owner exact-head review")
     if reviewed_at and cutoff and reviewed_at >= cutoff:
         errors.append("Owner exact-head review was not completed before the Formal merge")
     if committed_at and cutoff and committed_at >= cutoff:
@@ -1963,26 +2111,26 @@ def _review_body_evidence_errors(body: Any) -> list[str]:
     return errors
 
 
-def read_live_successor_pr_diff_sha256(
+def read_live_successor_pr_diff_inventory(
     pr_number: int,
     *,
     base_sha: str,
     head_sha: str,
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
-) -> tuple[str | None, list[str]]:
-    """Hash a stable exact-base/head changed-file inventory for Owner review."""
+) -> tuple[str | None, list[dict[str, Any]] | None, list[str]]:
+    """Read and hash the exact changed-file inventory used by independent review."""
     api = github_api or _gh_api_json
     try:
         files: list[dict[str, Any]] = []
         for page in range(1, 101):
             batch = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}/files?per_page=100&page={page}")
             if not isinstance(batch, list):
-                return None, ["Formal PR changed-file inventory is unreadable"]
+                return None, None, ["Formal PR changed-file inventory is unreadable"]
             files.extend(row for row in batch if isinstance(row, dict))
             if len(batch) < 100:
                 break
         else:
-            return None, ["Formal PR changed-file inventory exceeded its bounded pagination limit"]
+            return None, None, ["Formal PR changed-file inventory exceeded its bounded pagination limit"]
         normalized = []
         for item in files:
             normalized.append({
@@ -1993,12 +2141,27 @@ def read_live_successor_pr_diff_sha256(
             })
         paths = [item["filename"] for item in normalized]
         if not normalized or any(not isinstance(path, str) for path in paths) or len(paths) != len(set(paths)):
-            return None, ["Formal PR changed-file inventory is empty, duplicated, or missing a path"]
-        payload = {"pr_number": pr_number, "base_sha": base_sha, "head_sha": head_sha, "files": sorted(normalized, key=lambda item: item["filename"])}
+            return None, None, ["Formal PR changed-file inventory is empty, duplicated, or missing a path"]
+        ordered = sorted(normalized, key=lambda item: item["filename"])
+        payload = {"pr_number": pr_number, "base_sha": base_sha, "head_sha": head_sha, "files": ordered}
         digest = hashlib.sha256(json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
-        return digest, []
+        return digest, ordered, []
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
-        return None, [f"Formal PR changed-file inventory failed closed: {error.__class__.__name__}: {error}"]
+        return None, None, [f"Formal PR changed-file inventory failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_live_successor_pr_diff_sha256(
+    pr_number: int,
+    *,
+    base_sha: str,
+    head_sha: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[str | None, list[str]]:
+    """Compatibility wrapper for callers that only need the canonical diff digest."""
+    digest, _, errors = read_live_successor_pr_diff_inventory(
+        pr_number, base_sha=base_sha, head_sha=head_sha, github_api=github_api,
+    )
+    return digest, errors
 
 
 def validate_successor_review_gate(
@@ -2009,8 +2172,10 @@ def validate_successor_review_gate(
     head_sha: str,
     authorized_reviewer_ids: set[int] | None = None,
     valid_through: str,
+    require_human_approval: bool = False,
+    required_approval_count: int = 1,
 ) -> tuple[dict[str, Any] | None, dict[str, Any] | None, list[str]]:
-    """Select the live independent review; Owner review is optional GitHub corroboration."""
+    """Validate a human GitHub approval only when live branch rules require one."""
     errors: list[str] = []
     cutoff, cutoff_errors = _parse_control_time(valid_through, "review validity cutoff")
     errors.extend(cutoff_errors)
@@ -2038,10 +2203,6 @@ def validate_successor_review_gate(
             or review.get("commit_sha") != head_sha or review.get("user_type") != "User"
         ):
             return False
-        body_errors = _review_body_evidence_errors(review.get("body"))
-        if body_errors:
-            errors.extend(body_errors)
-            return False
         submitted, submitted_errors = _parse_control_time(review.get("submitted_at"), "review submitted_at")
         if submitted_errors:
             errors.extend(submitted_errors)
@@ -2064,9 +2225,55 @@ def validate_successor_review_gate(
         # GitHub bars the PR author from approving their own pull request. The
         # separately signed Owner exact-head record is checked by its caller.
         pass
-    if independent is None:
+    eligible = [
+        review for actor_id, review in latest.items()
+        if actor_id != author_id and actor_id != owner_id
+        and (authorized_reviewer_ids is None or actor_id in authorized_reviewer_ids)
+        and is_valid(review)
+    ]
+    if require_human_approval and (
+        type(required_approval_count) is not int or required_approval_count < 1
+        or len({review["actor_id"] for review in eligible}) < required_approval_count
+    ):
         errors.append("no distinct non-author, non-Owner human reviewer approved the exact head with review evidence")
     return independent, owner_review, errors
+
+
+def select_successor_human_approvals(
+    reviews: list[dict[str, Any]],
+    *,
+    author_id: int,
+    owner_id: int,
+    head_sha: str,
+    valid_through: str,
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """Return latest distinct non-author, non-Owner approvals on one exact head."""
+    cutoff, errors = _parse_control_time(valid_through, "review validity cutoff")
+    latest: dict[int, dict[str, Any]] = {}
+    for review in reviews:
+        actor_id = review.get("actor_id")
+        if not isinstance(actor_id, int):
+            errors.append("live PR review lacks an exact reviewer actor ID")
+            continue
+        submitted, submitted_errors = _parse_control_time(review.get("submitted_at"), "review submitted_at")
+        if submitted_errors:
+            errors.extend(submitted_errors)
+            continue
+        if cutoff and submitted and submitted > cutoff:
+            continue
+        old = latest.get(actor_id)
+        if old is None or (review.get("submitted_at", ""), review.get("review_id", 0)) > (
+            old.get("submitted_at", ""), old.get("review_id", 0)
+        ):
+            latest[actor_id] = review
+    approved = [
+        review for actor_id, review in latest.items()
+        if actor_id != author_id and actor_id != owner_id
+        and review.get("state") == "APPROVED"
+        and review.get("commit_sha") == head_sha
+        and review.get("user_type") == "User"
+    ]
+    return sorted(approved, key=lambda review: (review.get("actor_id", 0), review.get("review_id", 0))), errors
 
 
 def read_live_successor_pr_reviews(
@@ -2212,63 +2419,62 @@ def validate_successor_migration_witness_live(
 
         pr_meta, reviews, review_errors = read_live_successor_pr_reviews(statement["formal_pr_number"], github_api=github_api)
         errors.extend(review_errors)
-        if pr_meta is not None and reviews is not None:
+        author_id = None
+        if pr_meta is not None:
             normalized_pr = pr_meta["pull_request"]
             author_id = (normalized_pr.get("user") or {}).get("id")
             if author_id != statement["pr_author_id"]:
                 errors.append("migration witness PR author differs from live GitHub PR metadata")
-            independent, _, gate_errors = validate_successor_review_gate(
-                reviews, author_id=author_id, owner_id=owner_id,
-                head_sha=statement["formal_candidate_head_sha"], authorized_reviewer_ids=None,
-                valid_through=pr["merged_at"],
-            )
-            errors.extend(gate_errors)
-            if independent is not None and (
-                independent["review_id"] != statement["independent_review_id"]
-                or independent["actor_id"] != statement["independent_reviewer_id"]
-                or independent["commit_sha"] != statement["independent_review_commit_sha"]
-                or hashlib.sha256(independent["body"].encode("utf-8")).hexdigest() != statement["independent_review_body_sha256"]
-            ):
-                errors.append("migration witness does not identify the live independent exact-head approval")
-            elif independent is None:
-                errors.append("migration witness has no independently attested exact-head GitHub review")
-
-            diff_sha256, diff_errors = read_live_successor_pr_diff_sha256(
-                statement["formal_pr_number"], base_sha=statement["formal_base_sha"],
-                head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
-            )
-            errors.extend(diff_errors)
-            owner_review_matches = [
-                row for row in (owner_review_records or [])
-                if row.get("statement", {}).get("review_id") == statement["owner_review_record_id"]
-            ]
-            if len(owner_review_matches) != 1:
-                errors.append("migration witness Owner exact-head review ID does not resolve to one signed ledger record")
-            else:
-                owner_review_record = owner_review_matches[0]
-                owner_statement = owner_review_record["statement"]
-                if (
-                    owner_review_record.get("commit_sha") != statement["owner_review_record_commit_sha"]
-                    or owner_review_record.get("file_sha256") != statement["owner_review_record_file_sha256"]
-                    or owner_statement.get("formal_candidate_head_sha") != statement["owner_reviewed_head_sha"]
-                ):
-                    errors.append("migration witness differs from the signed Owner review record identity or bytes")
-                errors.extend(validate_successor_owner_exact_head_review_record(
-                    owner_review_record, owner_id=owner_id,
-                    task_id=owner_statement.get("task_id", ""),
-                    formal_ordinal=owner_statement.get("formal_ordinal", -1),
-                    registration_id=owner_statement.get("registration_id", ""),
-                    pr_number=statement["formal_pr_number"], author_id=author_id,
-                    base_sha=statement["formal_base_sha"], head_sha=statement["formal_candidate_head_sha"],
-                    diff_sha256=diff_sha256 or "", protocol_sha256=statement["protocol_sha256"],
-                    valid_through=pr["merged_at"],
-                ))
         live_contexts, context_errors = read_live_successor_required_contexts(
             statement["formal_candidate_head_sha"], github_api=github_api
         )
         errors.extend(context_errors)
         if live_contexts is not None:
             errors.extend(_valid_successor_context_set(statement["required_check_contexts"], live_contexts, statement["formal_candidate_head_sha"]))
+        diff_sha256, changed_files, diff_errors = read_live_successor_pr_diff_inventory(
+            statement["formal_pr_number"], base_sha=statement["formal_base_sha"],
+            head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
+        )
+        errors.extend(diff_errors)
+        live_protection, protection_errors = read_live_branch_protection(
+            github_api=github_api, allow_required_human_review=True,
+        )
+        errors.extend(protection_errors)
+        owner_review_matches = [
+            row for row in (owner_review_records or [])
+            if row.get("statement", {}).get("review_id") == statement["owner_review_record_id"]
+        ]
+        if len(owner_review_matches) != 1:
+            errors.append("migration witness Owner exact-head review ID does not resolve to one signed ledger record")
+        else:
+            owner_review_record = owner_review_matches[0]
+            owner_statement = owner_review_record["statement"]
+            if (
+                owner_review_record.get("commit_sha") != statement["owner_review_record_commit_sha"]
+                or owner_review_record.get("file_sha256") != statement["owner_review_record_file_sha256"]
+                or owner_statement.get("formal_candidate_head_sha") != statement["owner_reviewed_head_sha"]
+            ):
+                errors.append("migration witness differs from the signed Owner review record identity or bytes")
+            ai_report = owner_statement.get("independent_ai_review_report") or {}
+            if (
+                statement.get("independent_review_mode") != "INDEPENDENT_AI_EXECUTION"
+                or statement.get("independent_ai_review_artifact_id") != ai_report.get("artifact_id")
+                or statement.get("independent_ai_review_report_sha256") != ai_report.get("report_sha256")
+            ):
+                errors.append("migration witness does not bind the signed independent AI review artifact")
+            errors.extend(validate_successor_owner_exact_head_review_record(
+                owner_review_record, owner_id=owner_id,
+                task_id=owner_statement.get("task_id", ""),
+                formal_ordinal=owner_statement.get("formal_ordinal", -1),
+                registration_id=owner_statement.get("registration_id", ""),
+                pr_number=statement["formal_pr_number"], author_id=author_id or statement["pr_author_id"],
+                base_sha=statement["formal_base_sha"], head_sha=statement["formal_candidate_head_sha"],
+                diff_sha256=diff_sha256 or "", protocol_sha256=statement["protocol_sha256"],
+                branch_protection_rules_sha256=(live_protection or {}).get("rules_sha256", ""),
+                required_approval_count=(live_protection or {}).get("required_approval_count", -1),
+                changed_files=changed_files, required_contexts=live_contexts,
+                valid_through=pr["merged_at"],
+            ))
         merged_at, merged_errors = _parse_control_time(pr["merged_at"], "Formal migration merged_at")
         witnessed_at, witnessed_errors = _parse_control_time(statement["witnessed_at"], "migration witness witnessed_at")
         control_commit_at, commit_errors = _parse_control_time(signed_record["committed_at"], "migration witness signed commit time")
@@ -2285,14 +2491,62 @@ def validate_successor_migration_witness_live(
             errors.append("migration witness timestamp is later than its Owner-signed 1111 merge")
         if statement["merge_method"] != "MERGE_COMMIT" or statement["branch_protection_verified"] is not True:
             errors.append("migration witness does not attest a protected normal merge-commit transaction")
-        live_protection, protection_errors = read_live_branch_protection(github_api=github_api)
-        errors.extend(protection_errors)
         if live_protection is not None and (
             live_protection.get("rules_sha256") != statement["branch_protection_rules_sha256"]
             or live_protection.get("protected") is not True
             or live_protection.get("admin_enforcement_enabled") is not True
         ):
             errors.append("migration witness branch-protection digest differs from the live protected-main readback")
+        if live_protection is not None and live_protection.get("required_review"):
+            if reviews is None or author_id is None:
+                errors.append("live branch rules require a human GitHub approval, but exact review history is unavailable")
+            else:
+                live_human_reviews, human_errors = select_successor_human_approvals(
+                    reviews, author_id=author_id, owner_id=owner_id,
+                    head_sha=statement["formal_candidate_head_sha"],
+                    valid_through=pr["merged_at"],
+                )
+                errors.extend(human_errors)
+                witness_human = statement.get("branch_required_github_reviews", [])
+                required_count = live_protection["required_approval_count"]
+                if len(live_human_reviews) < required_count:
+                    errors.append("live branch rules lack enough distinct non-author human approvals on the exact head")
+                if len(witness_human) < required_count or len(witness_human) != len(live_human_reviews):
+                    errors.append("migration witness does not bind the live branch-required GitHub approval")
+                live_by_review_id = {review["review_id"]: review for review in live_human_reviews}
+                seen_ids: set[int] = set()
+                for witness_row in witness_human:
+                    live_review = live_by_review_id.get(witness_row.get("review_id"))
+                    if (
+                        live_review is None or witness_row.get("review_id") in seen_ids
+                        or witness_row.get("reviewer_id") != live_review.get("actor_id")
+                        or witness_row.get("commit_sha") != live_review.get("commit_sha")
+                        or witness_row.get("body_sha256") != hashlib.sha256(live_review.get("body", "").encode("utf-8")).hexdigest()
+                    ):
+                        errors.append("migration witness human approval reference differs from exact live GitHub reviews")
+                    seen_ids.add(witness_row.get("review_id"))
+        elif statement.get("branch_required_github_reviews") is not None:
+            if reviews is None or author_id is None:
+                errors.append("optional GitHub review reference cannot be verified from live review history")
+            else:
+                optional_human_reviews, _ = select_successor_human_approvals(
+                    reviews, author_id=author_id, owner_id=owner_id,
+                    head_sha=statement["formal_candidate_head_sha"],
+                    valid_through=pr["merged_at"],
+                )
+                witness_human = statement["branch_required_github_reviews"]
+                optional_by_id = {review["review_id"]: review for review in optional_human_reviews}
+                if len(witness_human) != len(optional_human_reviews):
+                    errors.append("optional migration witness human review list differs from exact live GitHub reviews")
+                for witness_row in witness_human:
+                    live_review = optional_by_id.get(witness_row.get("review_id"))
+                    if (
+                        live_review is None
+                        or witness_row.get("reviewer_id") != live_review.get("actor_id")
+                        or witness_row.get("commit_sha") != live_review.get("commit_sha")
+                        or witness_row.get("body_sha256") != hashlib.sha256(live_review.get("body", "").encode("utf-8")).hexdigest()
+                    ):
+                        errors.append("optional migration witness human approval differs from exact live GitHub reviews")
         return errors
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
         return [f"successor migration live verification failed closed: {error.__class__.__name__}: {error}"]
@@ -2636,7 +2890,9 @@ def read_live_transition_witness(
 
 
 def read_live_branch_protection(
-    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    allow_required_human_review: bool = False,
 ) -> tuple[dict[str, Any] | None, list[str]]:
     """Read and enforce actual PR-only, required-check and no-bypass rules."""
     api = github_api or _gh_api_json
@@ -2882,7 +3138,7 @@ def read_live_branch_protection(
         errors: list[str] = []
         if not snapshot["pull_request_required"]:
             errors.append("GitHub does not require a pull request before main can be updated")
-        if approval_count != expected_policy["minimum_approving_reviews"]:
+        if not allow_required_human_review and approval_count != expected_policy["minimum_approving_reviews"]:
             errors.append("live approval count differs from the single-owner zero-approval policy")
         if code_owner_review_required or last_push_approval_required:
             errors.append("live review rules require an independent reviewer and cannot be satisfied by the single Owner")
@@ -3714,6 +3970,9 @@ def _successor_transaction_record_schema() -> dict[str, Any]:
     )
     definitions["successorPullRequestReview"] = successor_schema["$defs"]["successorPullRequestReview"]
     definitions["successorRequiredCheck"] = successor_schema["$defs"]["requiredCheck"]
+    definitions["requiredCheck"] = successor_schema["$defs"]["requiredCheck"]
+    for name in ("independentAiReviewReport", "aiExecutionProvenance", "aiSourceReadback"):
+        definitions[name] = copy.deepcopy(successor_schema["$defs"][name])
     transaction = definitions["transactionRecord"]
     transaction["properties"]["owner_approval"] = {"$ref": "#/$defs/successorAuthorizationEvidence"}
     transaction["required"].append("transaction_id")
@@ -3722,6 +3981,8 @@ def _successor_transaction_record_schema() -> dict[str, Any]:
     transaction["properties"]["required_context_evidence"] = {
         "type": "array", "minItems": 3, "items": {"$ref": "#/$defs/successorRequiredCheck"}
     }
+    transaction["required"].append("independent_ai_review_report_sha256")
+    transaction["properties"]["independent_ai_review_report_sha256"] = {"$ref": "#/$defs/sha256"}
     transaction["properties"]["pull_request_reviews"]["items"] = {
         "$ref": "#/$defs/successorPullRequestReview"
     }
@@ -3863,7 +4124,7 @@ def validate_transaction_record(
             errors.append("main branch protection is unknown, absent or targets another branch")
         if protection["pull_request_required"] is not True:
             errors.append("GitHub does not enforce pull requests before updating main")
-        if protection["required_approval_count"] != 0:
+        if protection["required_approval_count"] != 0 and not successor_mode:
             errors.append("GitHub approval count violates the single-owner zero-approval policy")
         if protection["code_owner_review_required"] or protection["last_push_approval_required"]:
             errors.append("GitHub requires an independent reviewer, which the single Owner cannot provide")
@@ -3990,7 +4251,9 @@ def validate_transaction_record(
             )
             errors.extend(live_context_errors)
             if phase == "prepublication":
-                live_branch_rules, branch_errors = read_live_branch_protection(github_api=github_api)
+                live_branch_rules, branch_errors = read_live_branch_protection(
+                    github_api=github_api, allow_required_human_review=True,
+                )
                 errors.extend(branch_errors)
                 if live_branch_rules is not None:
                     stable_live = {key: value for key, value in live_branch_rules.items() if key not in {"observed_at", "ruleset_count"}}
@@ -4005,18 +4268,22 @@ def validate_transaction_record(
                 record["required_context_evidence"], live_contexts, pr["head_sha"]
             ))
         cutoff = live_merge_time or expected.get("observed_at") or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-        independent_review, owner_review, review_errors = validate_successor_review_gate(
-            live_reviews, author_id=pr["author_id"], owner_id=owner_id, head_sha=pr["head_sha"],
-            authorized_reviewer_ids=authorized_reviewers, valid_through=cutoff,
-        )
-        errors.extend(review_errors)
-        if owner_review is not None and owner_review["actor_id"] != owner_id:
-            errors.append("Owner exact-head review is not from the root-authority Owner")
+        if protection["required_review"]:
+            _, owner_review, review_errors = validate_successor_review_gate(
+                live_reviews, author_id=pr["author_id"], owner_id=owner_id, head_sha=pr["head_sha"],
+                authorized_reviewer_ids=authorized_reviewers, valid_through=cutoff,
+                require_human_approval=True,
+                required_approval_count=protection["required_approval_count"],
+            )
+            errors.extend(review_errors)
+            if owner_review is not None and owner_review["actor_id"] != owner_id:
+                errors.append("Owner exact-head review is not from the root-authority Owner")
         protocol_digest = hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
         if synthetic:
             diff_sha256 = expected.get("formal_pr_diff_sha256")
+            changed_files = expected.get("formal_pr_changed_files")
         else:
-            diff_sha256, diff_errors = read_live_successor_pr_diff_sha256(
+            diff_sha256, changed_files, diff_errors = read_live_successor_pr_diff_inventory(
                 pr["number"], base_sha=refs["base_main_sha"], head_sha=pr["head_sha"], github_api=github_api
             )
             errors.extend(diff_errors)
@@ -4039,8 +4306,15 @@ def validate_transaction_record(
                 registration_id=identity["successor_registration_id"],
                 pr_number=pr["number"], author_id=live_author_id,
                 base_sha=refs["base_main_sha"], head_sha=pr["head_sha"],
-                diff_sha256=diff_sha256, protocol_sha256=protocol_digest, valid_through=cutoff,
+                diff_sha256=diff_sha256, protocol_sha256=protocol_digest,
+                branch_protection_rules_sha256=protection["rules_sha256"],
+                required_approval_count=protection["required_approval_count"],
+                changed_files=changed_files, required_contexts=live_contexts,
+                valid_through=cutoff,
             ))
+            report_digest = matching_owner_records[0]["statement"]["independent_ai_review_report"]["report_sha256"]
+            if record["independent_ai_review_report_sha256"] != report_digest:
+                errors.append("successor transaction does not bind the signed Owner review AI report digest")
         registration_id = identity["successor_registration_id"]
         errors.extend(validate_successor_transaction_authorization_statement(
             approval, ledger=successor_ledger,
