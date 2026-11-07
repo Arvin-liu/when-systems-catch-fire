@@ -252,6 +252,73 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(item["authorized_overlap"]["authority_source"], "FOUNDATION.md")
         self.assertIn("formal-objects.jsonl", item["path"])
 
+    def test_r3_successor_paths_route_to_the_registered_component_and_targets(self):
+        patterns_by_path = {
+            "data/operations/release-transaction-protocol-r3-successor-r1.json":
+                "data/operations/release-transaction-protocol-r3-successor-r1.json",
+            "docs/governance/r3-successor-protocol-r1.md":
+                "docs/governance/r3-successor-protocol-r1.md",
+            "schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json":
+                "schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json",
+        }
+        paths = [f"ignition/{path}" for path in patterns_by_path]
+        result = self.plan(paths)
+
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["seed_components"], ["release_transaction_protocol_r3"])
+        self.assertEqual(result["domains"], ["G"])
+        self.assertEqual(result["selected_target_ids"], ["g_component_release_controls"])
+        evidence = {item["path"]: item for item in result["path_component_evidence"]}
+        for path, pattern in patterns_by_path.items():
+            with self.subTest(path=path):
+                self.assertEqual(
+                    evidence[path]["components"],
+                    [{"component_id": "release_transaction_protocol_r3", "patterns": [pattern]}],
+                )
+
+    def test_r3_successor_paths_remain_visible_when_registry_change_requires_full(self):
+        paths = [
+            "ignition/data/operations/project-components.json",
+            "ignition/data/operations/release-transaction-protocol-r3-successor-r1.json",
+            "ignition/docs/governance/r3-successor-protocol-r1.md",
+            "ignition/schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json",
+        ]
+        result = self.plan(paths)
+        evidence = {item["path"]: item for item in result["path_component_evidence"]}
+
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("g_component_release_controls", result["selected_target_ids"])
+        for path in paths[1:]:
+            normalized = path.removeprefix("ignition/")
+            with self.subTest(path=path):
+                self.assertEqual(
+                    evidence[normalized]["components"][0]["component_id"],
+                    "release_transaction_protocol_r3",
+                )
+
+    def test_missing_r3_successor_ownership_blocks_even_with_full_trigger(self):
+        cases = {
+            "ignition/data/operations/release-transaction-protocol-r3-successor-r1.json":
+                "data/operations/release-transaction-protocol-r3-successor-r1.json",
+            "ignition/docs/governance/r3-successor-protocol-r1.md":
+                "docs/governance/r3-successor-protocol-r1.md",
+            "ignition/schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json":
+                "schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json",
+        }
+        for path, pattern in cases.items():
+            with self.subTest(path=path):
+                registry = copy.deepcopy(self.registry)
+                component = next(
+                    item for item in registry["components"]
+                    if item["component_id"] == "release_transaction_protocol_r3"
+                )
+                component["path_patterns"].remove(pattern)
+                with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
+                    self.plan(
+                        ["ignition/data/operations/project-components.json", path],
+                        registry=registry,
+                    )
+
     def test_unmapped_path_is_not_hidden_by_an_independent_full_trigger(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
             self.plan([".github/workflows/foundation-validation.yml", "tools/unregistered-output.py"])

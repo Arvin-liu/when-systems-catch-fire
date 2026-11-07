@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import copy
 import fnmatch
 import hashlib
 import json
@@ -19,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable
 from urllib.parse import quote, urlparse
+from urllib.request import Request, urlopen
 
 from jsonschema import Draft202012Validator, FormatChecker
 
@@ -38,6 +40,61 @@ SUCCESSOR_REGISTRATION_PATH = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCC
 R2_RESTORE_AUTHORIZATION_PATH = "instructions/goal-mode/IGNITION-R3-TO-R2-RESTORE-AUTHORIZATION-R1.json"
 TRANSITION_WITNESS_PATH = "reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json"
 R2_RESTORATION_WITNESS_PATH = "reports/operations/IGNITION-R3-TO-R2-RESTORED-AND-VERIFIED-R1.json"
+SUCCESSOR_PROTOCOL_PATH = ROOT / "data/operations/release-transaction-protocol-r3-successor-r1.json"
+SUCCESSOR_SCHEMA_PATH = ROOT / "schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json"
+SUCCESSOR_REGISTRATION_PREFIX = "instructions/goal-mode/r3-successors/registrations/"
+SUCCESSOR_AUTHORIZATION_PREFIX = "instructions/goal-mode/r3-successors/authorizations/"
+SUCCESSOR_REVOCATION_PREFIX = "instructions/goal-mode/r3-successors/revocations/"
+SUCCESSOR_SUPERSESSION_PREFIX = "instructions/goal-mode/r3-successors/supersessions/"
+SUCCESSOR_REVIEW_PREFIX = "instructions/goal-mode/r3-successors/reviews/"
+SUCCESSOR_PUBLICATION_PREFIX = "reports/operations/r3-successors/publications/"
+SUCCESSOR_MIGRATION_PREFIX = "reports/operations/r3-successors/migrations/"
+SUCCESSOR_LEDGER_PREFIXES = (
+    SUCCESSOR_REGISTRATION_PREFIX,
+    SUCCESSOR_AUTHORIZATION_PREFIX,
+    SUCCESSOR_REVOCATION_PREFIX,
+    SUCCESSOR_SUPERSESSION_PREFIX,
+    SUCCESSOR_REVIEW_PREFIX,
+    SUCCESSOR_PUBLICATION_PREFIX,
+    SUCCESSOR_MIGRATION_PREFIX,
+)
+SUCCESSOR_PROTOCOL_ID = "RELEASE_TRANSACTION_PROTOCOL_R3_SUCCESSOR_R1"
+SUCCESSOR_ROOT_PR_NUMBER = 163
+SUCCESSOR_ROOT_MERGE_SHA = "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"
+SUCCESSOR_ROOT_HEAD_SHA = "9742a6c229bfbc9d403124e8f78b7613ea05b2c8"
+SUCCESSOR_ROOT_BASE_SHA = "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d"
+SUCCESSOR_ROOT_TREE_SHA = "1eac0c48bae58e7df78f764cff516ec2436e342b"
+SUCCESSOR_ROOT_PARENTS = [SUCCESSOR_ROOT_BASE_SHA, SUCCESSOR_ROOT_HEAD_SHA]
+SUCCESSOR_ROOT_AUTHORITY_PATH = "instructions/goal-mode/IGNITION-2026-11-04-OWNER-ROOT-GOVERNANCE-AUTHORITY-R0.json"
+SUCCESSOR_ROOT_AUTHORITY_BLOB = "dc63d9a94c1edb9f633a15918def762c17eafe1d"
+SUCCESSOR_ROOT_AUTHORITY_SHA256 = "995b12e2c86d9af6788c92b6a04780dbb513af4b92aefe2bf194838549c751bc"
+SUCCESSOR_ROOT_INSTRUCTION_PATH = "instructions/IGNITION-2026-11-04-R3-SUCCESSOR-PROTOCOL-AMENDMENT-INSTRUCTION-R0.md"
+SUCCESSOR_ROOT_INSTRUCTION_BLOB = "cdf9f4783eae4f509d2a44f4bcacbaf4eb97a687"
+SUCCESSOR_ROOT_INSTRUCTION_SHA256 = "e6ae8406ddf68904e4d85f1aff3f823686e0e0a6b7a4f428e8eaca19e887dea9"
+TASK22_IDENTITY_PR_NUMBER = 165
+TASK22_IDENTITY_BASE_SHA = "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"
+TASK22_IDENTITY_HEAD_SHA = "17ed13c274630269062e84834d52b49f34236931"
+TASK22_IDENTITY_MERGE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
+TASK22_IDENTITY_TREE_BLOB = "146df919b91ddf2bf189a106441abee80486056d"
+TASK22_IDENTITY_FILE_SHA256 = "f4300d22378458b1ed36ccb168cbe67be71c8056706005af331e3bd93c6ccc05"
+TASK22_IDENTITY_PATH = "instructions/goal-mode/IGNITION-2026-11-05-TASK22-OWNER-IDENTITY-ASSIGNMENT-R0.json"
+OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER = 166
+OWNER_AI_REVIEW_AUTHORITY_BASE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
+OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA = "9f6433041cf8d44d353d1ebcc32a68517a74552b"
+OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA = "064c0112ba7a8672b77a507f8763e79b6914cb0c"
+OWNER_AI_REVIEW_AUTHORITY_TREE_SHA = "b027b3ff7afa0786f22ae79adcd65abd16d0bdf8"
+OWNER_AI_REVIEW_AUTHORITY_PARENTS = [OWNER_AI_REVIEW_AUTHORITY_BASE_SHA, OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA]
+OWNER_AI_REVIEW_AUTHORITY_PATH = "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json"
+OWNER_AI_REVIEW_AUTHORITY_BLOB = "de54df684593a98c33c14847465eb1a7a896a919"
+OWNER_AI_REVIEW_AUTHORITY_SHA256 = "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"
+HISTORICAL_ADJUDICATION_PR_NUMBER = 162
+HISTORICAL_ADJUDICATION_MERGE_SHA = "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d"
+HISTORICAL_AUDIT_PATH = "reports/operations/IGNITION-2026-11-04-TASK21-PR267-POSTMERGE-INDEPENDENT-AUDIT-R0.md"
+HISTORICAL_AUDIT_BLOB = "d8ca4bd6a3d40af88655b3c8e13917810ff99998"
+HISTORICAL_R3_BLOCKER_PATH = "reports/operations/IGNITION-2026-11-04-TASK21-NEW-MAIN-R3-WITNESS-BLOCKER-R0.md"
+HISTORICAL_R3_BLOCKER_BLOB = "d335fb700e6ce50fcb75195fe09d8919b7d833d8"
+HISTORICAL_OWNER_DECISION_PATH = "reports/operations/IGNITION-2026-11-04-TASK21-OWNER-FINAL-ADJUDICATION-CANDIDATE-R0.md"
+HISTORICAL_OWNER_DECISION_BLOB = "3744b481d6a2688c15022bbd9dbee0c004a979e9"
 PUBLIC_REPOSITORY = "Arvin-liu/when-systems-catch-fire"
 R2_CANONICAL_SUITE_MINIMUM_SECONDS = 14400
 GITHUB_WEB_FLOW_ACCOUNT_ID = 19864447
@@ -152,6 +209,37 @@ def git_blob_sha(path: Path = PROTOCOL_PATH) -> str:
     return hashlib.sha1(header + content).hexdigest()
 
 
+def validate_successor_protocol_contract(
+    document: dict[str, Any] | None = None,
+) -> list[str]:
+    """Validate the forward-only successor profile without changing effective R3.
+
+    R3's signed bootstrap protocol and #266 receipt remain byte-for-byte fixed.
+    This profile is inert until the later, exact Formal-merge migration witness
+    has itself been verified on 1111/main.
+    """
+    try:
+        successor = document if document is not None else load_json(SUCCESSOR_PROTOCOL_PATH)
+        schema = load_json(SUCCESSOR_SCHEMA_PATH)
+        legacy = load_json(PROTOCOL_PATH)
+    except (OSError, json.JSONDecodeError) as error:
+        return [f"R3 successor protocol or schema is unreadable: {error}"]
+    errors = _schema_errors(successor, schema)
+    if errors:
+        return errors
+    if git_blob_sha(PROTOCOL_PATH) != successor["inherits_from"]["bootstrap_protocol_blob_sha"]:
+        errors.append("successor profile must inherit the byte-exact R3 bootstrap protocol blob")
+    if legacy["owner_authorization_integrity"]["record_path"] != successor["inherits_from"]["legacy_bootstrap_authorization_path"]:
+        errors.append("successor profile changed the historical R3 bootstrap authorization path")
+    if legacy["identity_binding"]["successor_registration"]["authority_path"] != successor["inherits_from"]["legacy_successor_registration_path"]:
+        errors.append("successor profile changed the historical R3 successor registration path")
+    if legacy["independent_witness"]["path"] != successor["inherits_from"]["legacy_publication_witness_path"]:
+        errors.append("successor profile changed the historical #266 publication witness path")
+    if successor["status"] != "CANDIDATE_NOT_EFFECTIVE":
+        errors.append("successor profile cannot activate itself from repository content")
+    return errors
+
+
 def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
     """Load formal identity from the checked-out canonical sources; never infer it."""
     errors: list[str] = []
@@ -198,12 +286,19 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
     if not isinstance(registration, dict):
         errors.append("canonical execution contract does not bind a signed 1111 successor registration")
         registration = {}
+    registration_profile = registration.get("protocol_id", "R3_BOOTSTRAP_FIXED_PATH")
+    successor_registration_path = registration.get("path")
+    successor_registration_id = registration.get("registration_id")
+    successor_protocol_blob_sha = registration.get("protocol_blob_sha")
+    successor_protocol_file_sha256 = registration.get("protocol_file_sha256")
     registration_sha = registration.get("commit_sha")
     registration_file_sha256 = registration.get("file_sha256")
     registration_nonce = registration.get("registration_nonce")
     registration_parent_shas = registration.get("parent_shas")
     if not isinstance(registration_sha, str) or len(registration_sha) != 40:
         errors.append("execution contract does not bind the exact Owner-signed successor-registration commit")
+    if registration_profile not in {"R3_BOOTSTRAP_FIXED_PATH", SUCCESSOR_PROTOCOL_ID}:
+        errors.append("execution contract names an unsupported successor-registration profile")
     if not isinstance(registration_file_sha256, str) or len(registration_file_sha256) != 64:
         errors.append("execution contract does not bind the successor-registration file digest")
     if not isinstance(registration_nonce, str) or len(registration_nonce) < 32:
@@ -238,29 +333,85 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
         "successor_registration_file_sha256": registration_file_sha256,
         "successor_registration_nonce": registration_nonce,
         "successor_registration_parent_shas": registration_parent_shas,
+        "successor_registration_profile": registration_profile,
+        "successor_registration_path": successor_registration_path,
+        "successor_registration_id": successor_registration_id,
+        "successor_protocol_blob_sha": successor_protocol_blob_sha,
+        "successor_protocol_file_sha256": successor_protocol_file_sha256,
     }
     if not errors:
-        registration_evidence, registration_errors = read_authenticated_successor_registration(
-            registration_sha,
-            expected_file_sha256=registration_file_sha256,
-            expected_formal_base_main_sha=formal_base_main_sha,
-            expected_nonce=registration_nonce,
-            expected_parent_shas=registration_parent_shas,
-        )
-        errors.extend(registration_errors)
-        if registration_evidence is not None:
-            statement = registration_evidence["statement"]
-            if (
-                statement["task_id"] != task_id or statement["formal_ordinal"] != ordinal
-                or statement["work_branch"] != branch or statement["receipt_branch"] != receipt_branch
-                or statement["formal_base_main_sha"] != formal_base_main_sha
-                or statement["registration_nonce"] != registration_nonce
-                or registration_evidence["parents"] != registration_parent_shas
-            ):
-                errors.append("Owner-signed successor registration does not match the exact task, ordinal, branches, base, nonce and ordered signed-merge parents")
-            if statement["r3_protocol_candidate_blob_sha"] != git_blob_sha():
-                errors.append("Owner-signed successor registration is stale for the exact R3 protocol blob")
-            context["successor_registration"] = registration_evidence
+        if registration_profile == SUCCESSOR_PROTOCOL_ID:
+            ledger, ledger_errors = read_authenticated_successor_control_ledger()
+            errors.extend(ledger_errors)
+            if ledger is not None:
+                matches = [row for row in ledger["registrations"] if row["path"] == successor_registration_path]
+                if len(matches) != 1:
+                    errors.append("execution contract does not resolve to exactly one append-only successor registration")
+                else:
+                    registration_evidence = matches[0]
+                    statement = registration_evidence["statement"]
+                    predecessor_match = re.fullmatch(r"IGNITION-[0-9]{8}-(?P<ordinal>[0-9]{3})", statement["predecessor_task_id"])
+                    inventory_errors = validate_successor_registration_statement(
+                        statement,
+                        expected_base_main_sha=formal_base_main_sha,
+                        expected_predecessor_task_id=statement["predecessor_task_id"],
+                        expected_predecessor_ordinal=int(predecessor_match.group("ordinal")) if predecessor_match else -1,
+                        existing_registrations=[row for row in ledger["registrations"] if row["path"] != successor_registration_path],
+                    )
+                    errors.extend(inventory_errors)
+                    if registration_evidence["statement"]["registration_id"] in ledger["superseded_registration_ids"]:
+                        errors.append("execution contract selects an Owner-superseded task registration")
+                    protocol_digest = hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
+                    if not any(row["statement"]["protocol_sha256"] == protocol_digest for row in ledger["migrations"]):
+                        errors.append("successor protocol has no effective Owner-verified Formal migration witness")
+                    if (
+                        statement["task_id"] != task_id or statement["formal_ordinal"] != ordinal
+                        or statement["work_branch"] != branch or statement["receipt_branch"] != receipt_branch
+                        or statement["formal_base_main_sha"] != formal_base_main_sha
+                        or statement["registration_nonce"] != registration_nonce
+                        or registration_evidence["commit_sha"] != registration_sha
+                        or registration_evidence["file_sha256"] != registration_file_sha256
+                        or registration_evidence["parents"] != registration_parent_shas
+                        or registration.get("registration_id") != statement["registration_id"]
+                        or registration.get("protocol_blob_sha") != statement["protocol_blob_sha"]
+                        or registration.get("protocol_file_sha256") != statement["protocol_file_sha256"]
+                        or statement["protocol_blob_sha"] != git_blob_sha(SUCCESSOR_PROTOCOL_PATH)
+                    ):
+                        errors.append("Owner-signed successor registration differs from the exact task contract, protocol, base, nonce or ordered parents")
+                    try:
+                        current_task_content = _gh_api_json(
+                            f"repos/{PUBLIC_REPOSITORY}/contents/{quote(relative(CURRENT_TASK_PATH), safe='/')}?ref={quote(formal_base_main_sha, safe='')}"
+                        )
+                        task_bytes, _ = _decode_control_file(current_task_content, PUBLIC_REPOSITORY, relative(CURRENT_TASK_PATH), formal_base_main_sha)
+                        predecessor_id = json.loads(task_bytes.decode("utf-8"))["current_task"]["task_id"]
+                        if statement["predecessor_task_id"] != predecessor_id:
+                            errors.append("successor registration predecessor does not equal the canonical task at its signed Formal base")
+                    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+                        errors.append(f"canonical predecessor readback failed closed: {error}")
+                    context["successor_registration"] = registration_evidence
+                    context["successor_control_ledger"] = ledger
+        else:
+            registration_evidence, registration_errors = read_authenticated_successor_registration(
+                registration_sha,
+                expected_file_sha256=registration_file_sha256,
+                expected_formal_base_main_sha=formal_base_main_sha,
+                expected_nonce=registration_nonce,
+                expected_parent_shas=registration_parent_shas,
+            )
+            errors.extend(registration_errors)
+            if registration_evidence is not None:
+                statement = registration_evidence["statement"]
+                if (
+                    statement["task_id"] != task_id or statement["formal_ordinal"] != ordinal
+                    or statement["work_branch"] != branch or statement["receipt_branch"] != receipt_branch
+                    or statement["formal_base_main_sha"] != formal_base_main_sha
+                    or statement["registration_nonce"] != registration_nonce
+                    or registration_evidence["parents"] != registration_parent_shas
+                ):
+                    errors.append("Owner-signed successor registration does not match the exact task, ordinal, branches, base, nonce and ordered signed-merge parents")
+                if statement["r3_protocol_candidate_blob_sha"] != git_blob_sha():
+                    errors.append("Owner-signed successor registration is stale for the exact R3 protocol blob")
+                context["successor_registration"] = registration_evidence
     return context, errors
 
 
@@ -270,6 +421,31 @@ def _gh_api_json(endpoint: str) -> dict[str, Any] | list[Any]:
         ["gh", "api", endpoint], check=True, capture_output=True, text=True, timeout=30
     )
     return json.loads(result.stdout)
+
+
+def _gh_api_raw_diff(endpoint: str) -> bytes:
+    """Read an exact GitHub unified diff without the per-file patch size cap."""
+    token_result = subprocess.run(
+        ["gh", "auth", "token"], check=True, capture_output=True, text=True, timeout=10,
+    )
+    token = token_result.stdout.strip()
+    if not token:
+        raise ValueError("authenticated GitHub token is unavailable for the raw PR diff")
+    request = Request(
+        f"https://api.github.com/{endpoint}",
+        headers={
+            "Accept": "application/vnd.github.v3.diff",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "Codex-successor-review-validator",
+        },
+    )
+    with urlopen(request, timeout=240) as response:
+        body = response.read()
+        declared_length = response.headers.get("Content-Length")
+    if declared_length is not None and int(declared_length) != len(body):
+        raise OSError("GitHub returned a truncated raw PR diff response")
+    return body
 
 
 def _verified_owner_commit(commit: dict[str, Any], owner_id: int) -> tuple[bool, str]:
@@ -513,6 +689,2186 @@ def _read_authenticated_control_path_commit(
         }, []
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
         return None, [f"authenticated fixed control-path readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_authenticated_successor_root_authority(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Authenticate the one-time governance mandate from its exact Owner merge.
+
+    This root act is external to R3. The function deliberately does not use the
+    R3 transition receipt or its fixed bootstrap authorization as the source of
+    authority for this amendment.
+    """
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["root_authority"]
+        public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
+        control_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (public_repo.get("owner") or {}).get("id")
+        if not isinstance(owner_id, int) or owner_id != contract["owner_actor_id"]:
+            return None, ["Formal repository Owner differs from the exact Owner identified by the root governance mandate"]
+        if (control_repo.get("owner") or {}).get("id") != owner_id:
+            return None, ["1111 owner identity differs from the Formal repository Owner"]
+        if control_repo.get("private") is not True or control_repo.get("default_branch") != "main":
+            return None, ["root-authority source is not confirmed as private 1111/main"]
+
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{SUCCESSOR_ROOT_PR_NUMBER}")
+        if not isinstance(pr, dict):
+            return None, ["root-authority PR #163 metadata is unreadable"]
+        base = pr.get("base") or {}
+        head = pr.get("head") or {}
+        merged_by = pr.get("merged_by") or {}
+        if (
+            pr.get("number") != SUCCESSOR_ROOT_PR_NUMBER
+            or pr.get("state") != "closed"
+            or pr.get("merged") is not True
+            or merged_by.get("id") != owner_id
+            or base.get("ref") != "main"
+            or base.get("sha") != SUCCESSOR_ROOT_BASE_SHA
+            or head.get("sha") != SUCCESSOR_ROOT_HEAD_SHA
+            or pr.get("merge_commit_sha") != SUCCESSOR_ROOT_MERGE_SHA
+            or not isinstance(pr.get("merged_at"), str)
+        ):
+            return None, ["PR #163 is not the exact manually Owner-merged root-authority transaction"]
+
+        files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{SUCCESSOR_ROOT_PR_NUMBER}/files?per_page=100")
+        expected_files = {
+            SUCCESSOR_ROOT_AUTHORITY_PATH: SUCCESSOR_ROOT_AUTHORITY_BLOB,
+            SUCCESSOR_ROOT_INSTRUCTION_PATH: SUCCESSOR_ROOT_INSTRUCTION_BLOB,
+        }
+        if not isinstance(files, list) or len(files) != len(expected_files):
+            return None, ["PR #163 changed-file inventory is incomplete or contains unexpected paths"]
+        observed_files = {
+            row.get("filename"): row for row in files if isinstance(row, dict)
+        }
+        if set(observed_files) != set(expected_files) or any(
+            observed_files[path].get("status") != "added"
+            or observed_files[path].get("sha") != blob
+            for path, blob in expected_files.items()
+        ):
+            return None, ["PR #163 file paths/status/blob IDs differ from the exact reviewed root-authority proposal"]
+
+        merge = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, SUCCESSOR_ROOT_MERGE_SHA, api, {})
+        parents = [row.get("sha") for row in merge.get("parents", []) if isinstance(row, dict)]
+        if parents != SUCCESSOR_ROOT_PARENTS:
+            return None, ["PR #163 Owner merge has wrong ordered base/head parents"]
+        if (merge.get("commit", {}).get("tree") or {}).get("sha") != SUCCESSOR_ROOT_TREE_SHA:
+            return None, ["PR #163 Owner merge tree differs from the verified reviewed tree"]
+        signed, signature_error = _verified_owner_commit(merge, owner_id)
+        if not signed:
+            return None, [f"PR #163 Owner merge signature is invalid: {signature_error}"]
+        main_branch = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (main_branch.get("commit") or {}).get("sha") if isinstance(main_branch, dict) else None
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{SUCCESSOR_ROOT_MERGE_SHA}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["PR #163 root-authority merge is not an ancestor of current 1111/main"]
+
+        readbacks: dict[str, dict[str, Any]] = {}
+        for path, blob_sha, file_sha256 in (
+            (SUCCESSOR_ROOT_AUTHORITY_PATH, SUCCESSOR_ROOT_AUTHORITY_BLOB, SUCCESSOR_ROOT_AUTHORITY_SHA256),
+            (SUCCESSOR_ROOT_INSTRUCTION_PATH, SUCCESSOR_ROOT_INSTRUCTION_BLOB, SUCCESSOR_ROOT_INSTRUCTION_SHA256),
+        ):
+            binding, binding_errors = _read_authenticated_control_path_commit(
+                OWNER_AUTHORIZATION_REPOSITORY,
+                path,
+                SUCCESSOR_ROOT_MERGE_SHA,
+                owner_id,
+                expected_file_sha256=file_sha256,
+                expected_parent_shas=SUCCESSOR_ROOT_PARENTS,
+                api=api,
+            )
+            if binding_errors or binding is None:
+                return None, [f"root-authority file {path} failed exact readback: {error}" for error in binding_errors]
+            if binding["blob_sha"] != blob_sha:
+                return None, [f"root-authority file {path} Git blob differs from the reviewed file"]
+            readbacks[path] = binding
+
+        authority = json.loads(readbacks[SUCCESSOR_ROOT_AUTHORITY_PATH]["raw"].decode("utf-8"))
+        if (
+            authority.get("record_id") != "IGNITION-20261104-OWNER-ROOT-GOVERNANCE-AUTHORITY-R0"
+            or authority.get("status") != "PROPOSED_PENDING_OWNER_VERIFIED_MERGE"
+            or authority.get("activation", {}).get("effective_only_after_verified_owner_merge") is not True
+            or authority.get("activation", {}).get("r3_validator_is_not_the_authority_for_this_root_act") is not True
+            or authority.get("scope", {}).get("kind") != "ONE_TIME_GOVERNANCE_PROTOCOL_AMENDMENT_MANDATE"
+            or authority.get("scope", {}).get("task_identity_rule") is None
+            or authority.get("immutable_history", {}).get("retroactive_cure_for_pr_267") != "FORBIDDEN"
+        ):
+            return None, ["merged root-authority record does not contain the exact narrow external-to-R3 authority terms"]
+        return {
+            "repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "branch": "main",
+            "pull_request_number": SUCCESSOR_ROOT_PR_NUMBER,
+            "merge_commit_sha": SUCCESSOR_ROOT_MERGE_SHA,
+            "merge_tree_sha": SUCCESSOR_ROOT_TREE_SHA,
+            "ordered_parents": parents,
+            "owner_actor_id": owner_id,
+            "merged_by_id": merged_by.get("id"),
+            "signature_verified": True,
+            "signature_reason": "valid",
+            "main_sha": main_sha,
+            "files": {
+                path: {
+                    "blob_sha": binding["blob_sha"],
+                    "sha256": binding["file_sha256"],
+                    "update_commit_sha": binding["path_update_commit_sha"],
+                }
+                for path, binding in readbacks.items()
+            },
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"root governance authority readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_authenticated_owner_ai_review_authority(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Read back the effective Owner clarification from its exact #166 merge."""
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]
+        repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (repo.get("owner") or {}).get("id") if isinstance(repo, dict) else None
+        if owner_id != contract["owner_actor_id"] or repo.get("private") is not True or repo.get("default_branch") != "main":
+            return None, ["Owner AI-review authority source is not the exact private 1111/main repository"]
+
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER}")
+        base, head = (pr.get("base") or {}), (pr.get("head") or {})
+        if (
+            pr.get("number") != OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER
+            or pr.get("state") != "closed" or pr.get("merged") is not True
+            or (pr.get("merged_by") or {}).get("id") != owner_id
+            or base.get("ref") != "main" or base.get("sha") != OWNER_AI_REVIEW_AUTHORITY_BASE_SHA
+            or head.get("sha") != OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA
+            or pr.get("merge_commit_sha") != OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA
+            or not isinstance(pr.get("merged_at"), str)
+        ):
+            return None, ["PR #166 is not the exact manually Owner-merged independent-review clarification"]
+
+        files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER}/files?per_page=100")
+        if (
+            not isinstance(files, list) or len(files) != 1
+            or files[0].get("filename") != OWNER_AI_REVIEW_AUTHORITY_PATH
+            or files[0].get("status") != "added"
+            or files[0].get("sha") != OWNER_AI_REVIEW_AUTHORITY_BLOB
+        ):
+            return None, ["PR #166 changed-file inventory is not the exact single added Owner clarification"]
+
+        merge = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA, api, {})
+        parents = [row.get("sha") for row in merge.get("parents", []) if isinstance(row, dict)]
+        if parents != OWNER_AI_REVIEW_AUTHORITY_PARENTS:
+            return None, ["PR #166 Owner merge has incorrect ordered base/head parents"]
+        if (merge.get("commit", {}).get("tree") or {}).get("sha") != OWNER_AI_REVIEW_AUTHORITY_TREE_SHA:
+            return None, ["PR #166 Owner merge tree differs from the exact reviewed tree"]
+        signed, signature_error = _verified_owner_commit(merge, owner_id)
+        if not signed:
+            return None, [f"PR #166 Owner merge signature is invalid: {signature_error}"]
+
+        main = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        if not isinstance(main_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", main_sha):
+            return None, ["current 1111/main SHA is unreadable for Owner AI-review authority"]
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["PR #166 merge is not an ancestor of current 1111/main"]
+
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, OWNER_AI_REVIEW_AUTHORITY_PATH,
+            OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA, owner_id,
+            expected_file_sha256=OWNER_AI_REVIEW_AUTHORITY_SHA256,
+            expected_parent_shas=OWNER_AI_REVIEW_AUTHORITY_PARENTS, api=api,
+        )
+        if binding_errors or binding is None:
+            return None, [f"PR #166 signed Owner clarification failed exact readback: {error}" for error in binding_errors]
+        if binding["blob_sha"] != OWNER_AI_REVIEW_AUTHORITY_BLOB:
+            return None, ["PR #166 Owner clarification blob differs from the exact reviewed file"]
+
+        authority = json.loads(binding["raw"].decode("utf-8"))
+        evidence = authority.get("review_evidence_contract") or {}
+        owner_decision = authority.get("owner_decision") or {}
+        activation = authority.get("activation") or {}
+        change_control = authority.get("change_control") or {}
+        expected_evidence = {
+            "reviewer tool/model/session identity and separation from the code-generating process",
+            "PR URL, task identity, exact head SHA, exact base SHA and canonical change inventory digest",
+            "independent readback of original changed code, schemas and governance contract rather than executor summaries alone",
+            "explicit assessed invariants, threat cases, and adversarial/negative evidence",
+            "specific findings with supporting file/line references and genuine PASS/FAIL/INCONCLUSIVE outcome",
+            "actual test or CI evidence, with unverified claims labeled and remaining limitations",
+            "immutable review artifact identifier, content digest and timestamp bound in an Owner-verified review/decision record",
+        }
+        prohibited = authority.get("scope_of_prospective_repair", {}).get("prohibited", [])
+        if (
+            authority.get("record_id") != "IGNITION-20261106-OWNER-INDEPENDENT-AI-REVIEW-CLARIFICATION-R0"
+            or authority.get("authority_basis", {}).get("owner_actor_id") != owner_id
+            or authority.get("authority_basis", {}).get("scoped_formal_candidate_pr") != 268
+            or authority.get("authority_basis", {}).get("predecessor_root_authority_merge_sha") != SUCCESSOR_ROOT_MERGE_SHA
+            or authority.get("authority_basis", {}).get("original_task22_identity_merge_sha") != TASK22_IDENTITY_MERGE_SHA
+            or not all(activation.get(key) is True for key in (
+                "effective_only_after_exact_owner_reviewed_github_verified_merge_to_1111_main",
+                "require_github_signature_verified_valid",
+                "require_exact_added_file_blob_and_sha256_readback",
+                "require_merged_commit_ancestry_on_1111_main", "unsigned_or_unmerged_candidate_is_not_authority",
+                "no_retroactive_validation",
+            ))
+            or activation.get("require_owner_actor_id") != owner_id
+            or owner_decision.get("independent_review_requirement") != "RETAIN_REAL_NON_AUTHOR_INDEPENDENT_REVIEW"
+            or owner_decision.get("ordinary_default") != "SUBSTANTIVE_INDEPENDENT_AI_REVIEW_ACCEPTABLE_WITH_EVIDENCE"
+            or owner_decision.get("external_human_review") != "OPTIONAL_OWNER_SELECTED_NOT_A_DEFAULT_MANDATORY_GATE"
+            or owner_decision.get("final_publication_and_merge_authority") != "OWNER_ONLY"
+            or owner_decision.get("reviewer_workflow") != "SEPARATE_READ_ONLY_REVIEW_CONTEXT_ON_FROZEN_EXACT_HEAD"
+            or owner_decision.get("owner_acceptance") != "EXPLICIT_SIGNED_OWNER_EXACT_HEAD_REVIEW_AND_SEPARATE_MERGE_DECISION"
+            or evidence.get("review_must_be_substantive_and_independent") is not True
+            or evidence.get("reviewer_must_not_author_candidate_changes") is not True
+            or evidence.get("reviewer_identity") != "ACTUAL_MODEL_AND_EXECUTION_IDENTITY_WITH_LIMITATIONS_RECORDED"
+            or not expected_evidence.issubset(set(evidence.get("independent_process_evidence", [])))
+            or evidence.get("if_independence_cannot_be_established") != "BLOCKED_WITH_EVIDENCE"
+            or not any("invent" in item.lower() and "identity" in item.lower() for item in prohibited)
+            or change_control.get("merge_pr268", "").find("separate explicit Owner review") < 0
+        ):
+            return None, ["signed PR #166 clarification content does not retain the exact independent-review and Owner-decision terms"]
+
+        return {
+            "repository": OWNER_AUTHORIZATION_REPOSITORY, "branch": "main",
+            "pull_request_number": OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER,
+            "merge_commit_sha": OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA,
+            "merge_tree_sha": OWNER_AI_REVIEW_AUTHORITY_TREE_SHA,
+            "ordered_parents": parents, "owner_actor_id": owner_id,
+            "merged_by_id": (pr.get("merged_by") or {}).get("id"),
+            "signature_verified": True, "signature_reason": "valid", "main_sha": main_sha,
+            "file_path": OWNER_AI_REVIEW_AUTHORITY_PATH,
+            "file_blob_sha": binding["blob_sha"], "file_sha256": binding["file_sha256"],
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Owner AI-review authority readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_authenticated_task22_amendment_preparation_authority(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Verify the external #163 + #165 authority for this candidate's Draft prep.
+
+    This one-time amendment bootstrap is intentionally independent of the
+    successor PREPARATION_ONLY ledger, which is part of the candidate and is
+    not effective yet.
+    """
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
+        root, root_errors = read_authenticated_successor_root_authority(github_api=api)
+        if root_errors or root is None:
+            return None, [f"Task22 preparation lacks the live #163 root authority: {error}" for error in root_errors]
+        if root["merge_commit_sha"] != contract["root_authority_merge_commit_sha"]:
+            return None, ["Task22 preparation root merge differs from the exact #163 mandate"]
+
+        ai_review_authority, ai_review_errors = read_authenticated_owner_ai_review_authority(github_api=api)
+        if ai_review_errors or ai_review_authority is None:
+            return None, [f"Task22 preparation lacks the live #166 Owner review clarification: {error}" for error in ai_review_errors]
+        if ai_review_authority["merge_commit_sha"] != load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]["merge_commit_sha"]:
+            return None, ["Task22 review authority differs from the exact #166 Owner merge"]
+
+        repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (repo.get("owner") or {}).get("id")
+        if owner_id != 49422864 or repo.get("private") is not True or repo.get("default_branch") != "main":
+            return None, ["Task22 identity source is not the verified private 1111/main Owner repository"]
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{TASK22_IDENTITY_PR_NUMBER}")
+        base, head = (pr.get("base") or {}), (pr.get("head") or {})
+        if (
+            pr.get("number") != TASK22_IDENTITY_PR_NUMBER or pr.get("state") != "closed"
+            or pr.get("merged") is not True or (pr.get("merged_by") or {}).get("id") != owner_id
+            or base.get("ref") != "main" or base.get("sha") != TASK22_IDENTITY_BASE_SHA
+            or head.get("sha") != TASK22_IDENTITY_HEAD_SHA
+            or pr.get("merge_commit_sha") != TASK22_IDENTITY_MERGE_SHA
+        ):
+            return None, ["Task22 identity assignment is not the exact Owner-merged #165 transaction"]
+
+        files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{TASK22_IDENTITY_PR_NUMBER}/files?per_page=100")
+        if (
+            not isinstance(files, list) or len(files) != 1
+            or files[0].get("filename") != TASK22_IDENTITY_PATH
+            or files[0].get("status") != "added"
+            or files[0].get("sha") != TASK22_IDENTITY_TREE_BLOB
+        ):
+            return None, ["PR #165 does not add exactly the expected Task22 identity-assignment file"]
+
+        merge = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, TASK22_IDENTITY_MERGE_SHA, api, {})
+        parents = [row.get("sha") for row in merge.get("parents", []) if isinstance(row, dict)]
+        if parents != [TASK22_IDENTITY_BASE_SHA, TASK22_IDENTITY_HEAD_SHA]:
+            return None, ["PR #165 Owner merge has wrong ordered base/head parents"]
+        signed, signature_error = _verified_owner_commit(merge, owner_id)
+        if not signed:
+            return None, [f"PR #165 Owner merge signature is invalid: {signature_error}"]
+        main = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{TASK22_IDENTITY_MERGE_SHA}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["PR #165 identity assignment is not ancestral to current 1111/main"]
+        identity = contract["identity_assignment_file"]
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, identity["path"], TASK22_IDENTITY_MERGE_SHA, owner_id,
+            expected_file_sha256=identity["sha256"],
+            expected_parent_shas=[TASK22_IDENTITY_BASE_SHA, TASK22_IDENTITY_HEAD_SHA], api=api,
+        )
+        if binding_errors or binding is None:
+            return None, [f"PR #165 identity file failed exact signed readback: {error}" for error in binding_errors]
+        if binding["blob_sha"] != identity["git_blob_sha"]:
+            return None, ["PR #165 identity-assignment blob differs from the Owner-merged file"]
+        assignment = json.loads(binding["raw"].decode("utf-8"))
+        assigned = assignment["explicit_identity_assignment"]
+        root_binding = assignment["root_authority_binding"]
+        scope = assignment["authorization_scope_after_verified_owner_merge"]
+        prohibited_actions = scope.get("prohibited")
+        if (
+            root_binding.get("verified_owner_merge_sha") != root["merge_commit_sha"]
+            or root_binding.get("effective") is not True
+            or assigned.get("task_id") != contract["task_id"]
+            or assigned.get("formal_ordinal") != contract["formal_ordinal"]
+            or assigned.get("formal_base_main_sha_observed") != "87d7f8d3114e859a59585da336fb6301ee4cbbd3"
+            or assigned.get("proposed_work_branch") != contract["work_branch"]
+            or assigned.get("proposed_receipt_branch") != contract["receipt_branch"]
+            or not isinstance(prohibited_actions, list)
+            or not any("Stage A 023" in item for item in prohibited_actions)
+            or not any("Branch-protection" in item for item in prohibited_actions)
+            or not any("Formal main direct write" in item for item in prohibited_actions)
+            or "Draft PR" not in scope.get("permitted", "")
+        ):
+            return None, ["Owner-merged #165 identity, #163 root binding, or narrow preparation scope differs from this candidate"]
+        return {
+            "root_authority": root,
+            "owner_independent_ai_review_authority": ai_review_authority,
+            "repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "pull_request_number": TASK22_IDENTITY_PR_NUMBER,
+            "merge_commit_sha": TASK22_IDENTITY_MERGE_SHA,
+            "ordered_parents": parents,
+            "owner_actor_id": owner_id,
+            "signature_verified": True,
+            "signature_reason": "valid",
+            "main_sha": main_sha,
+            "file_path": identity["path"],
+            "file_blob_sha": binding["blob_sha"],
+            "file_sha256": binding["file_sha256"],
+            "task_id": assigned["task_id"],
+            "formal_ordinal": assigned["formal_ordinal"],
+            "work_branch": assigned["proposed_work_branch"],
+            "receipt_branch": assigned["proposed_receipt_branch"],
+            "permitted": contract["permitted"],
+            "prohibited": contract["prohibited"],
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Task22 #163/#165 preparation authority failed closed: {error.__class__.__name__}: {error}"]
+
+
+def validate_task22_local_preparation_checkout(
+    authority: dict[str, Any],
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Confirm this exact assigned branch is clean, pushed, and based on main."""
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
+        branch = subprocess.run(
+            ["git", "branch", "--show-current"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+        ).stdout.strip()
+        head_sha = subprocess.run(
+            ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+        ).stdout.strip()
+        status = subprocess.run(
+            ["git", "status", "--porcelain"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+        ).stdout
+        if branch != contract["work_branch"]:
+            return None, ["local checkout is not the Owner-assigned Task22 work branch"]
+        if status:
+            return None, ["Task22 checkout has uncommitted changes; exact branch head cannot be presented for Draft review"]
+        main = api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        if main_sha != "87d7f8d3114e859a59585da336fb6301ee4cbbd3":
+            return None, ["Formal main advanced from the exact #165-assigned Task22 base; stop and rebase only under renewed evidence"]
+        task_branch = api(f"repos/{PUBLIC_REPOSITORY}/branches/{quote(branch, safe='')}")
+        remote_head = (task_branch.get("commit") or {}).get("sha") if isinstance(task_branch, dict) else None
+        if remote_head != head_sha:
+            return None, ["pushed Task22 branch head differs from the exact locally verified candidate head"]
+        ancestry = api(f"repos/{PUBLIC_REPOSITORY}/compare/{main_sha}...{head_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["exact Task22 candidate head is not based on the authorized Formal main SHA"]
+        if authority.get("task_id") != contract["task_id"] or authority.get("work_branch") != branch:
+            return None, ["verified #165 assignment does not match the exact local task branch identity"]
+        return {"branch": branch, "head_sha": head_sha, "base_main_sha": main_sha, "remote_head_sha": remote_head}, []
+    except (OSError, subprocess.SubprocessError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Task22 local Draft-preparation checkout failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_authenticated_historical_adjudication(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Re-read the signed #162 control record and preserve #267's disposition."""
+    api = github_api or _gh_api_json
+    try:
+        public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
+        control_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (public_repo.get("owner") or {}).get("id")
+        if not isinstance(owner_id, int) or owner_id != (control_repo.get("owner") or {}).get("id"):
+            return None, ["Formal and 1111 repository Owner identities do not match"]
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{HISTORICAL_ADJUDICATION_PR_NUMBER}")
+        if (
+            not isinstance(pr, dict)
+            or pr.get("merged") is not True
+            or pr.get("merge_commit_sha") != HISTORICAL_ADJUDICATION_MERGE_SHA
+            or (pr.get("merged_by") or {}).get("id") != owner_id
+        ):
+            return None, ["1111 PR #162 is not the exact Owner-merged historical adjudication transaction"]
+        expected_files = {
+            HISTORICAL_R3_BLOCKER_PATH: HISTORICAL_R3_BLOCKER_BLOB,
+            HISTORICAL_OWNER_DECISION_PATH: HISTORICAL_OWNER_DECISION_BLOB,
+            HISTORICAL_AUDIT_PATH: HISTORICAL_AUDIT_BLOB,
+        }
+        files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{HISTORICAL_ADJUDICATION_PR_NUMBER}/files?per_page=100")
+        observed = {row.get("filename"): row for row in files if isinstance(row, dict)} if isinstance(files, list) else {}
+        if set(observed) != set(expected_files) or any(
+            observed[path].get("status") != "added" or observed[path].get("sha") != blob
+            for path, blob in expected_files.items()
+        ):
+            return None, ["PR #162 historical adjudication file inventory differs from its Owner-merged immutable contents"]
+        merge = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, HISTORICAL_ADJUDICATION_MERGE_SHA, api, {})
+        expected_parents = ["e6cbef3dc78b541a8c3a9382e49b587562051c87", "6d998d35f07ff98fb63c7861d27b4e222dc0e3f2"]
+        parents = [row.get("sha") for row in merge.get("parents", []) if isinstance(row, dict)]
+        if parents != expected_parents:
+            return None, ["PR #162 merge parent order differs from the exact adjudication base and reviewed head"]
+        signed, signature_error = _verified_owner_commit(merge, owner_id)
+        if not signed:
+            return None, [f"PR #162 Owner merge signature is invalid: {signature_error}"]
+        main_branch = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (main_branch.get("commit") or {}).get("sha") if isinstance(main_branch, dict) else None
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{HISTORICAL_ADJUDICATION_MERGE_SHA}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["Owner-merged historical adjudication PR #162 is not ancestral to current 1111/main"]
+        contents: dict[str, str] = {}
+        for path, blob_sha in expected_files.items():
+            binding, binding_errors = _read_authenticated_control_path_commit(
+                OWNER_AUTHORIZATION_REPOSITORY,
+                path,
+                HISTORICAL_ADJUDICATION_MERGE_SHA,
+                owner_id,
+                expected_parent_shas=expected_parents,
+                api=api,
+            )
+            if binding_errors or binding is None:
+                return None, [f"historical adjudication path {path} failed exact readback: {error}" for error in binding_errors]
+            if binding["blob_sha"] != blob_sha:
+                return None, [f"historical adjudication path {path} was changed after PR #162"]
+            contents[path] = binding["raw"].decode("utf-8")
+        audit = contents[HISTORICAL_AUDIT_PATH]
+        blocker = contents[HISTORICAL_R3_BLOCKER_PATH]
+        decision = contents[HISTORICAL_OWNER_DECISION_PATH]
+        if "NOT_COMPLIANT" not in audit or "NOT_COMPLIANT" not in decision:
+            return None, ["Owner-merged PR #162 does not preserve the #267 NOT_COMPLIANT adjudication"]
+        if "BLOCKED_WITH_EVIDENCE" not in blocker:
+            return None, ["Owner-merged PR #162 does not preserve the separate #267 R3 witness blocker"]
+        return {
+            "repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "pr_number": HISTORICAL_ADJUDICATION_PR_NUMBER,
+            "merge_commit_sha": HISTORICAL_ADJUDICATION_MERGE_SHA,
+            "ordered_parents": parents,
+            "main_sha": main_sha,
+            "owner_actor_id": owner_id,
+            "signature_verified": True,
+            "signature_reason": "valid",
+            "pr_267_disposition": "NOT_COMPLIANT",
+            "r3_witness_disposition": "BLOCKED_WITH_EVIDENCE",
+            "files": expected_files,
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"historical #267 adjudication readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def _require_owner_verified_control_pr_merge(
+    commit_sha: str,
+    owner_id: int,
+    api: Callable[[str], dict[str, Any] | list[Any]],
+    cache: dict[str, dict[str, Any]],
+    expected_path: str,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Require a signed Owner-authored, web-flow, main-targeted PR merge."""
+    try:
+        commit = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, commit_sha, api, cache)
+        valid, signature_error = _verified_owner_commit(commit, owner_id)
+        if not valid:
+            return None, [signature_error]
+        parents = commit.get("parents")
+        if not isinstance(parents, list) or len(parents) != 2:
+            return None, ["append-only control record must enter through a two-parent merge commit"]
+        committer = commit.get("committer") or {}
+        if committer.get("id") != GITHUB_WEB_FLOW_ACCOUNT_ID or committer.get("login") != "web-flow":
+            return None, ["append-only control record must use GitHub's verified web-flow PR merger attribution"]
+        linked_prs = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}/pulls")
+        if not isinstance(linked_prs, list) or len(linked_prs) != 1:
+            return None, ["control-record merge commit must resolve to exactly one GitHub pull request"]
+        pr = linked_prs[0]
+        if (
+            not isinstance(pr, dict)
+            or pr.get("merged") is not True
+            or pr.get("merge_commit_sha") != commit_sha
+            or (pr.get("merged_by") or {}).get("id") != owner_id
+            or (pr.get("base") or {}).get("ref") != "main"
+            or (pr.get("base") or {}).get("sha") != parents[0].get("sha")
+            or (pr.get("head") or {}).get("sha") != parents[1].get("sha")
+        ):
+            return None, ["control-record PR was not merged by the Owner into 1111/main"]
+        changed_files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{pr['number']}/files?per_page=100")
+        if not isinstance(changed_files, list) or len(changed_files) != 1 or changed_files[0].get("filename") != expected_path or changed_files[0].get("status") != "added":
+            return None, ["each Owner control-record PR must add exactly its one immutable ledger file"]
+        signed_path = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, commit_sha, expected_path, api, cache)
+        if signed_path is None or changed_files[0].get("sha") != signed_path.get("sha"):
+            return None, ["Owner control-record PR file blob differs from the signed merge tree"]
+        return {"commit": commit, "pr": pr, "path": expected_path}, []
+    except (OSError, subprocess.SubprocessError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Owner verified control-PR readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def validate_successor_append_only_addition(
+    path: str,
+    *,
+    status: str,
+    already_added: bool,
+    blob_sha: Any,
+    first_parent_sha: Any,
+    before_entry: dict[str, Any] | None,
+    after_entry: dict[str, Any] | None,
+    second_parent_entry: dict[str, Any] | None,
+) -> list[str]:
+    """Validate that a ledger path is introduced once, unchanged from PR head."""
+    errors: list[str] = []
+    if status != "added":
+        errors.append(f"append-only control ledger path was modified, deleted or renamed: {path}")
+    if already_added:
+        errors.append(f"append-only control ledger path was added more than once: {path}")
+    if not isinstance(blob_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", blob_sha):
+        errors.append(f"ledger addition does not expose the exact blob SHA: {path}")
+    if not isinstance(first_parent_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", first_parent_sha):
+        errors.append(f"ledger addition has no exact first-parent merge base: {path}")
+    if before_entry is not None or after_entry is None:
+        errors.append(f"ledger path must be newly added to its first-parent tree: {path}")
+    if after_entry is not None and after_entry.get("sha") != blob_sha:
+        errors.append(f"ledger file differs from the exact added blob SHA: {path}")
+    if after_entry is None or second_parent_entry != after_entry:
+        errors.append(f"ledger file was not added with identical reviewed second-parent bytes: {path}")
+    return errors
+
+
+def validate_successor_ledger_uniqueness(records: list[dict[str, Any]]) -> list[str]:
+    """Enforce non-replayable identities/nonces across the append-only ledger."""
+    errors: list[str] = []
+    groups = {
+        record_type: [row for row in records if row.get("statement", {}).get("record_type") == record_type]
+        for record_type in (
+            "TASK_REGISTRATION", "PREPARATION_AUTHORIZATION", "FINAL_TRANSACTION_AUTHORIZATION",
+            "AUTHORIZATION_REVOCATION", "REGISTRATION_SUPERSESSION", "OWNER_EXACT_HEAD_REVIEW",
+            "PUBLICATION_WITNESS", "PROTOCOL_MIGRATION_WITNESS",
+        )
+    }
+
+    def unique(rows: list[dict[str, Any]], key: str, label: str) -> None:
+        values = [row["statement"].get(key) for row in rows]
+        if len(values) != len(set(values)):
+            errors.append(f"successor ledger repeats {label}")
+
+    for key, label in (
+        ("registration_id", "registration_id"), ("task_id", "task_id"),
+        ("formal_ordinal", "formal_ordinal"), ("work_branch", "work branch"),
+        ("receipt_branch", "receipt branch"),
+    ):
+        unique(groups["TASK_REGISTRATION"], key, label)
+    unique(groups["PREPARATION_AUTHORIZATION"], "preparation_id", "preparation_id")
+    unique(groups["FINAL_TRANSACTION_AUTHORIZATION"], "authorization_id", "authorization_id")
+    all_auth_ids = [
+        row["statement"].get(key)
+        for row, key in (
+            *((row, "preparation_id") for row in groups["PREPARATION_AUTHORIZATION"]),
+            *((row, "authorization_id") for row in groups["FINAL_TRANSACTION_AUTHORIZATION"]),
+        )
+    ]
+    if len(all_auth_ids) != len(set(all_auth_ids)):
+        errors.append("successor ledger repeats an authorization ID across preparation and final phases")
+    unique(groups["FINAL_TRANSACTION_AUTHORIZATION"], "transaction_id", "transaction_id")
+    unique(groups["AUTHORIZATION_REVOCATION"], "revocation_id", "revocation_id")
+    unique(groups["REGISTRATION_SUPERSESSION"], "supersession_id", "supersession_id")
+    unique(groups["OWNER_EXACT_HEAD_REVIEW"], "review_id", "owner exact-head review ID")
+    unique(groups["PUBLICATION_WITNESS"], "transaction_id", "published transaction ID")
+    unique(groups["PROTOCOL_MIGRATION_WITNESS"], "protocol_sha256", "protocol migration digest")
+
+    nonce_fields = ("registration_nonce", "preparation_nonce", "authorization_nonce", "revocation_nonce", "supersession_nonce", "review_nonce")
+    nonces = [
+        row["statement"].get(field)
+        for row in records
+        for field in nonce_fields
+        if row.get("statement", {}).get(field) is not None
+    ]
+    if len(nonces) != len(set(nonces)):
+        errors.append("successor ledger repeats a nonce across record types")
+    return errors
+
+
+def validate_successor_registration_statement(
+    statement: dict[str, Any],
+    *,
+    expected_base_main_sha: str,
+    expected_predecessor_task_id: str,
+    expected_predecessor_ordinal: int,
+    existing_registrations: list[dict[str, Any]] | None = None,
+) -> list[str]:
+    """Validate an Owner-proposed identity against its signed full collision inventory."""
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors = _schema_errors(statement, {"$ref": "#/$defs/taskRegistrationRecord", "$defs": schema["$defs"]})
+    if errors:
+        return errors
+    if statement["formal_base_main_sha"] != expected_base_main_sha:
+        errors.append("successor registration does not bind the exact observed Formal main base")
+    if statement["predecessor_task_id"] != expected_predecessor_task_id or statement["predecessor_ordinal"] != expected_predecessor_ordinal:
+        errors.append("successor registration predecessor differs from the canonical task identity at its exact base")
+    if statement["protocol_blob_sha"] != git_blob_sha(SUCCESSOR_PROTOCOL_PATH):
+        errors.append("successor registration is stale for the exact successor protocol blob")
+    if statement["protocol_file_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest():
+        errors.append("successor registration is stale for the exact successor protocol file bytes")
+    task_match = re.fullmatch(r"IGNITION-[0-9]{8}-(?P<ordinal>[0-9]{3})", statement["task_id"])
+    predecessor_match = re.fullmatch(r"IGNITION-[0-9]{8}-(?P<ordinal>[0-9]{3})", statement["predecessor_task_id"])
+    if task_match is None or int(task_match.group("ordinal")) != statement["formal_ordinal"]:
+        errors.append("Owner-selected task_id does not encode its explicitly registered formal ordinal")
+    if predecessor_match is None or int(predecessor_match.group("ordinal")) != statement["predecessor_ordinal"]:
+        errors.append("registered predecessor task_id does not encode its explicitly recorded ordinal")
+    if statement["transaction_protocol_id"] != SUCCESSOR_PROTOCOL_ID or statement["owner_actor_id"] != 49422864:
+        errors.append("successor registration is not an Owner record for the exact versioned protocol")
+    inventory = statement["conflict_inventory"]
+    inventory_payload = {key: value for key, value in inventory.items() if key != "inventory_sha256"}
+    computed_inventory_sha = hashlib.sha256(
+        json.dumps(inventory_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    if computed_inventory_sha != inventory["inventory_sha256"]:
+        errors.append("successor registration collision-inventory digest differs from its exact canonical bytes")
+    identities = inventory["formal_task_identities"]
+    task_ids = [row["task_id"] for row in identities]
+    ordinals = [row["formal_ordinal"] for row in identities]
+    work_branches = [row["work_branch"] for row in identities]
+    receipt_branches = [row["receipt_branch"] for row in identities]
+    if any(len(values) != len(set(values)) for values in (task_ids, ordinals, work_branches, receipt_branches)):
+        errors.append("signed successor collision inventory contains duplicate task IDs, ordinals or branches")
+    identity_by_id = {row["task_id"]: row for row in identities}
+    merged_ids = set(inventory["merged_task_ids"])
+    open_ids = set(inventory["open_task_ids"])
+    if merged_ids & open_ids:
+        errors.append("collision inventory marks a task both merged and open")
+    if not merged_ids.issubset(identity_by_id) or not open_ids.issubset(identity_by_id):
+        errors.append("collision inventory merged/open task sets reference missing identities")
+    if any(identity_by_id[task_id]["lifecycle_state"] != "MERGED" for task_id in merged_ids):
+        errors.append("collision inventory merged-task set disagrees with task lifecycle values")
+    if any(identity_by_id[task_id]["lifecycle_state"] != "OPEN" for task_id in open_ids):
+        errors.append("collision inventory open-task set disagrees with task lifecycle values")
+    expected_merged_ids = {row["task_id"] for row in identities if row["lifecycle_state"] == "MERGED"}
+    expected_open_ids = {row["task_id"] for row in identities if row["lifecycle_state"] == "OPEN"}
+    if merged_ids != expected_merged_ids or open_ids != expected_open_ids:
+        errors.append("collision inventory merged/open ID lists do not cover every declared task identity")
+    prior = identity_by_id.get(expected_predecessor_task_id)
+    if prior is None or prior["formal_ordinal"] != expected_predecessor_ordinal or expected_predecessor_task_id not in merged_ids:
+        errors.append("successor predecessor is not an exact merged identity in the signed conflict inventory")
+    if (
+        statement["task_id"] in identity_by_id
+        or statement["formal_ordinal"] in ordinals
+        or statement["work_branch"] in work_branches
+        or statement["receipt_branch"] in receipt_branches
+    ):
+        errors.append("successor task identity, ordinal or branch is already assigned in the signed conflict inventory")
+    if statement["task_id"] in {"IGNITION-20260829-148", "IGNITION-20261024-020", "IGNITION-20261101-021"} or statement["formal_ordinal"] in {20, 21, 148}:
+        errors.append("successor registration may not reuse Task20, Task21 or the fixed Task148 registration identity")
+    for existing in existing_registrations or []:
+        prior_statement = existing.get("statement", existing)
+        if (
+            statement["registration_id"] == prior_statement.get("registration_id")
+            or statement["task_id"] == prior_statement.get("task_id")
+            or statement["formal_ordinal"] == prior_statement.get("formal_ordinal")
+            or statement["registration_nonce"] == prior_statement.get("registration_nonce")
+            or statement["work_branch"] == prior_statement.get("work_branch")
+            or statement["receipt_branch"] == prior_statement.get("receipt_branch")
+        ):
+            errors.append("successor registration duplicates a prior immutable registration identity or nonce")
+            break
+    return errors
+
+
+def read_authenticated_successor_control_ledger(
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    require_root_authority: bool = True,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Read and verify the append-only R3 successor registration/auth ledger.
+
+    The complete 1111 first-parent history is inspected so a later edit,
+    deletion, rename, replay, or unsigned addition cannot be hidden by the
+    latest tree. Every ledger addition must be an Owner-signed web-flow PR
+    merge. Historical fixed R3 records live outside these new ledger paths.
+    """
+    api = github_api or _gh_api_json
+    errors: list[str] = []
+    try:
+        if require_root_authority:
+            root, root_errors = read_authenticated_successor_root_authority(github_api=api)
+            errors.extend(root_errors)
+            if root_errors or root is None:
+                return None, errors
+            history, history_errors = read_authenticated_historical_adjudication(github_api=api)
+            errors.extend(history_errors)
+            if history_errors or history is None:
+                return None, errors
+
+        repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (repo.get("owner") or {}).get("id")
+        if owner_id != 49422864:
+            return None, ["1111 repository Owner differs from the root governance authority"]
+        if repo.get("private") is not True or repo.get("default_branch") != "main":
+            return None, ["successor control ledger is not confirmed on private 1111/main"]
+        branch = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (branch.get("commit") or {}).get("sha") if isinstance(branch, dict) else None
+        if not isinstance(main_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", main_sha):
+            return None, ["1111/main exact tip is unreadable"]
+        cache: dict[str, dict[str, Any]] = {}
+        main_commit = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, main_sha, api, cache)
+        main_tree_sha = (main_commit.get("commit", {}).get("tree") or {}).get("sha")
+        tree = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/git/trees/{main_tree_sha}?recursive=1")
+        if not isinstance(tree, dict) or tree.get("truncated") is True or not isinstance(tree.get("tree"), list):
+            return None, ["1111/main recursive tree is incomplete; append-only ledger inventory cannot be established"]
+        current_entries = {
+            row.get("path"): row for row in tree["tree"]
+            if isinstance(row, dict) and any(row.get("path", "").startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES)
+        }
+        for path, entry in current_entries.items():
+            if not isinstance(path, str) or not any(path.startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES):
+                continue
+            relative_name = path.rsplit("/", 1)[-1]
+            if not relative_name.endswith(".json") or relative_name == ".json" or entry.get("type") != "blob":
+                errors.append(f"successor ledger contains an invalid path or non-file entry: {path}")
+        if errors:
+            return None, errors
+
+        # Track every path creation/change along 1111/main's first-parent chain.
+        additions: dict[str, dict[str, Any]] = {}
+        cursor = main_sha
+        control_merge_cache: dict[str, dict[str, Any]] = {}
+        for _ in range(MAX_FIRST_PARENT_CONTROL_PATH_SCAN):
+            commit = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, cursor, api, cache)
+            changed = commit.get("files")
+            if not isinstance(changed, list) or len(changed) >= 300:
+                return None, [f"first-parent commit file inventory is missing or truncated at {cursor}; ledger immutability cannot be proved"]
+            parent_list = commit.get("parents")
+            if not isinstance(parent_list, list):
+                return None, [f"first-parent ancestry is unreadable at {cursor}"]
+            parent_sha = parent_list[0].get("sha") if parent_list and isinstance(parent_list[0], dict) else None
+            for file_change in changed:
+                if not isinstance(file_change, dict):
+                    continue
+                path = file_change.get("filename")
+                if not isinstance(path, str) or not any(path.startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES):
+                    continue
+                if file_change.get("status") != "added" or path in additions:
+                    addition_errors = validate_successor_append_only_addition(
+                        path, status=file_change.get("status"), already_added=path in additions,
+                        blob_sha=file_change.get("sha"), first_parent_sha=parent_sha,
+                        before_entry=None, after_entry=None, second_parent_entry=None,
+                    )
+                    return None, [f"ledger path history failed closed at {cursor}: {item}" for item in addition_errors]
+                if not isinstance(file_change.get("sha"), str) or not re.fullmatch(r"[0-9a-f]{40}", file_change["sha"]):
+                    return None, [f"ledger addition does not expose the exact blob SHA: {path}"]
+                if not parent_sha:
+                    return None, [f"ledger addition has no first-parent merge base: {path}"]
+                control_merge, merge_errors = _require_owner_verified_control_pr_merge(
+                    cursor, owner_id, api, control_merge_cache, path
+                )
+                if merge_errors or control_merge is None:
+                    return None, [f"ledger path addition is not a verified Owner PR merge: {error}" for error in merge_errors]
+                after = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, cursor, path, api, cache)
+                before = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, parent_sha, path, api, cache)
+                second_parent_sha = parent_list[1].get("sha") if len(parent_list) == 2 and isinstance(parent_list[1], dict) else None
+                second_parent = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, second_parent_sha, path, api, cache) if second_parent_sha else None
+                addition_errors = validate_successor_append_only_addition(
+                    path, status=file_change.get("status"), already_added=path in additions,
+                    blob_sha=file_change.get("sha"), first_parent_sha=parent_sha,
+                    before_entry=before, after_entry=after, second_parent_entry=second_parent,
+                )
+                if addition_errors:
+                    return None, [f"ledger path history failed closed at {cursor}: {item}" for item in addition_errors]
+                additions[path] = {"commit_sha": cursor, "blob_sha": after["sha"], "parents": [row.get("sha") for row in parent_list]}
+            if not parent_list:
+                break
+            if not isinstance(parent_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", parent_sha):
+                return None, [f"first parent is malformed at {cursor}"]
+            cursor = parent_sha
+        else:
+            return None, [f"1111/main first-parent scan exceeded {MAX_FIRST_PARENT_CONTROL_PATH_SCAN} commits"]
+
+        if set(additions) != set(current_entries):
+            missing = sorted(set(additions) - set(current_entries))
+            unregistered = sorted(set(current_entries) - set(additions))
+            return None, [f"append-only ledger tree/history mismatch: deleted={missing}, unsigned_or_untracked={unregistered}"]
+
+        schema = load_json(SUCCESSOR_SCHEMA_PATH)
+        records: list[dict[str, Any]] = []
+        for path in sorted(current_entries):
+            raw_content = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{quote(path, safe='/')}?ref={quote(main_sha, safe='')}")
+            raw, blob_sha = _decode_control_file(raw_content, OWNER_AUTHORIZATION_REPOSITORY, path, main_sha)
+            if blob_sha != current_entries[path].get("sha") or blob_sha != additions[path]["blob_sha"]:
+                return None, [f"main ledger bytes differ from the signed append-only tree entry: {path}"]
+            statement = json.loads(raw.decode("utf-8"))
+            if path.startswith(SUCCESSOR_REGISTRATION_PREFIX):
+                def_name = "taskRegistrationRecord"
+                expected_id = statement.get("registration_id")
+            elif path.startswith(SUCCESSOR_AUTHORIZATION_PREFIX):
+                if statement.get("record_type") == "PREPARATION_AUTHORIZATION":
+                    def_name = "preparationAuthorizationRecord"
+                    expected_id = statement.get("preparation_id")
+                elif statement.get("record_type") == "FINAL_TRANSACTION_AUTHORIZATION":
+                    def_name = "finalTransactionAuthorizationRecord"
+                    expected_id = statement.get("authorization_id")
+                else:
+                    return None, [f"successor authorization path has an unsupported record type: {path}"]
+            elif path.startswith(SUCCESSOR_REVOCATION_PREFIX):
+                def_name = "authorizationRevocationRecord"
+                expected_id = statement.get("revocation_id")
+            elif path.startswith(SUCCESSOR_SUPERSESSION_PREFIX):
+                def_name = "registrationSupersessionRecord"
+                expected_id = statement.get("supersession_id")
+            elif path.startswith(SUCCESSOR_REVIEW_PREFIX):
+                def_name = "ownerExactHeadReviewRecord"
+                expected_id = statement.get("review_id")
+            elif path.startswith(SUCCESSOR_PUBLICATION_PREFIX):
+                def_name = "publicationWitnessRecord"
+                expected_id = statement.get("transaction_id")
+            else:
+                def_name = "migrationWitness"
+                expected_id = statement.get("protocol_sha256")
+            schema_errors = _schema_errors(statement, {"$ref": f"#/$defs/{def_name}", "$defs": schema["$defs"]})
+            if schema_errors:
+                return None, [f"invalid signed successor control record at {path}: {item}" for item in schema_errors]
+            if path.rsplit("/", 1)[-1] != f"{expected_id}.json":
+                return None, [f"successor control-record path does not bind its immutable record ID: {path}"]
+            metadata = additions[path]
+            binding, binding_errors = _read_authenticated_control_path_commit(
+                OWNER_AUTHORIZATION_REPOSITORY,
+                path,
+                metadata["commit_sha"],
+                owner_id,
+                expected_file_sha256=hashlib.sha256(raw).hexdigest(),
+                expected_parent_shas=metadata["parents"],
+                api=api,
+            )
+            if binding_errors or binding is None:
+                return None, [f"successor control record failed Owner signature/path readback: {item}" for item in binding_errors]
+            records.append({
+                "path": path,
+                "statement": statement,
+                "commit_sha": metadata["commit_sha"],
+                "parents": metadata["parents"],
+                "blob_sha": blob_sha,
+                "file_sha256": hashlib.sha256(raw).hexdigest(),
+                "committed_at": binding["committed_at"],
+                "signature_verified": True,
+                "signature_reason": "valid",
+            })
+
+        # Enforce global uniqueness, including across different ledger record types.
+        registrations = [row for row in records if row["statement"]["record_type"] == "TASK_REGISTRATION"]
+        preparation_authorizations = [row for row in records if row["statement"]["record_type"] == "PREPARATION_AUTHORIZATION"]
+        authorizations = [row for row in records if row["statement"]["record_type"] == "FINAL_TRANSACTION_AUTHORIZATION"]
+        revocations = [row for row in records if row["statement"]["record_type"] == "AUTHORIZATION_REVOCATION"]
+        supersessions = [row for row in records if row["statement"]["record_type"] == "REGISTRATION_SUPERSESSION"]
+        owner_reviews = [row for row in records if row["statement"]["record_type"] == "OWNER_EXACT_HEAD_REVIEW"]
+        publications = [row for row in records if row["statement"]["record_type"] == "PUBLICATION_WITNESS"]
+        migrations = [row for row in records if row["statement"]["record_type"] == "PROTOCOL_MIGRATION_WITNESS"]
+        errors.extend(validate_successor_ledger_uniqueness(records))
+        for row in registrations:
+            statement = row["statement"]
+            registration_errors = validate_successor_registration_statement(
+                statement,
+                expected_base_main_sha=statement["formal_base_main_sha"],
+                expected_predecessor_task_id=statement["predecessor_task_id"],
+                expected_predecessor_ordinal=statement["predecessor_ordinal"],
+                existing_registrations=[other for other in registrations if other["path"] != row["path"]],
+            )
+            errors.extend(f"successor registration {statement['registration_id']}: {item}" for item in registration_errors)
+            task_match = re.fullmatch(r"IGNITION-[0-9]{8}-(?P<ordinal>[0-9]{3})", statement["task_id"])
+            if task_match is None or int(task_match.group("ordinal")) != statement["formal_ordinal"]:
+                errors.append("successor task_id is not the Owner-selected task identity matching its explicit formal ordinal")
+            try:
+                current_formal_main = api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
+                current_formal_main_sha = (current_formal_main.get("commit") or {}).get("sha") if isinstance(current_formal_main, dict) else None
+                base_ancestry = api(
+                    f"repos/{PUBLIC_REPOSITORY}/compare/{statement['formal_base_main_sha']}...{current_formal_main_sha}"
+                )
+                if not isinstance(base_ancestry, dict) or base_ancestry.get("status") not in {"ahead", "identical"}:
+                    errors.append("successor registration Formal base is not ancestral to current Formal main")
+                protocol_at_base = api(
+                    f"repos/{PUBLIC_REPOSITORY}/contents/{quote(relative(SUCCESSOR_PROTOCOL_PATH), safe='/')}?ref={quote(statement['formal_base_main_sha'], safe='')}"
+                )
+                protocol_raw, protocol_blob = _decode_control_file(
+                    protocol_at_base, PUBLIC_REPOSITORY, relative(SUCCESSOR_PROTOCOL_PATH), statement["formal_base_main_sha"]
+                )
+                if (
+                    protocol_blob != statement["protocol_blob_sha"]
+                    or hashlib.sha256(protocol_raw).hexdigest() != statement["protocol_file_sha256"]
+                ):
+                    errors.append("successor registration base does not contain its exact migrated protocol version")
+                public_main_content = api(
+                    f"repos/{PUBLIC_REPOSITORY}/contents/{quote(relative(CURRENT_TASK_PATH), safe='/')}?ref={quote(statement['formal_base_main_sha'], safe='')}"
+                )
+                predecessor_raw, _ = _decode_control_file(
+                    public_main_content, PUBLIC_REPOSITORY, relative(CURRENT_TASK_PATH), statement["formal_base_main_sha"]
+                )
+                predecessor_task = json.loads(predecessor_raw.decode("utf-8"))["current_task"]["task_id"]
+                if predecessor_task != statement["predecessor_task_id"]:
+                    errors.append("successor registration predecessor differs from the canonical current task at its exact Formal base")
+                commit_time = datetime.fromisoformat(row["committed_at"].replace("Z", "+00:00"))
+                registered_time = datetime.fromisoformat(statement["registered_at"].replace("Z", "+00:00"))
+                if registered_time > commit_time:
+                    errors.append("successor registration timestamp is later than its Owner-signed merge commit")
+            except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+                errors.append(f"successor registration exact-base predecessor check failed closed: {error}")
+        registration_by_id = {row["statement"]["registration_id"]: row for row in registrations}
+        preparation_by_id = {row["statement"]["preparation_id"]: row for row in preparation_authorizations}
+        authorization_by_id = {row["statement"]["authorization_id"]: row for row in authorizations}
+        revoked_ids: set[str] = set()
+        for row in revocations:
+            statement = row["statement"]
+            if statement["authorization_record_type"] == "PREPARATION_AUTHORIZATION":
+                target = preparation_by_id.get(statement["authorization_id"])
+                target_type = "PREPARATION_AUTHORIZATION"
+            else:
+                target = authorization_by_id.get(statement["authorization_id"])
+                target_type = "FINAL_TRANSACTION_AUTHORIZATION"
+            if (
+                target is None
+                or target["file_sha256"] != statement["authorization_file_sha256"]
+                or target["statement"]["record_type"] != target_type
+            ):
+                errors.append("revocation does not bind an exact existing Owner authorization")
+            else:
+                target_time, target_errors = _parse_control_time(target["committed_at"], "authorization commit time")
+                record_time, record_errors = _parse_control_time(row["committed_at"], "revocation commit time")
+                revoked_at, revoked_errors = _parse_control_time(statement["revoked_at"], "authorization revoked_at")
+                errors.extend(target_errors + record_errors + revoked_errors)
+                if target_time and record_time and record_time <= target_time:
+                    errors.append("authorization revocation must be Owner-signed after the exact authorization")
+                if revoked_at and record_time and revoked_at > record_time:
+                    errors.append("revocation effective timestamp is later than its signed control merge")
+            if statement["authorization_id"] in revoked_ids:
+                errors.append("one authorization has more than one immutable revocation record")
+            revoked_ids.add(statement["authorization_id"])
+        superseded_ids: set[str] = set()
+        for row in supersessions:
+            statement = row["statement"]
+            prior_id = statement["supersedes_registration_id"]
+            replacement_id = statement["replacement_registration_id"]
+            prior = registration_by_id.get(prior_id)
+            replacement = registration_by_id.get(replacement_id)
+            if prior is None or replacement is None or prior_id == replacement_id:
+                errors.append("registration supersession must bind two distinct immutable existing registrations")
+            elif (
+                prior["statement"]["task_id"] == replacement["statement"]["task_id"]
+                or prior["statement"]["formal_ordinal"] == replacement["statement"]["formal_ordinal"]
+            ):
+                errors.append("supersession may not release or reuse a task ID or formal ordinal")
+            else:
+                supersession_time, supersession_errors = _parse_control_time(row["committed_at"], "supersession commit time")
+                signed_time, signed_errors = _parse_control_time(statement["superseded_at"], "registration superseded_at")
+                errors.extend(supersession_errors + signed_errors)
+                if supersession_time and signed_time and signed_time > supersession_time:
+                    errors.append("registration supersession timestamp is later than its Owner-signed merge")
+                for related in (prior, replacement):
+                    related_time, related_errors = _parse_control_time(related["committed_at"], "registration merge time")
+                    errors.extend(related_errors)
+                    if related_time and supersession_time and related_time >= supersession_time:
+                        errors.append("registration supersession must follow both immutable task-registration merges")
+            if prior_id in superseded_ids:
+                errors.append("one registration has more than one supersession record")
+            superseded_ids.add(prior_id)
+        for row in preparation_authorizations:
+            statement = row["statement"]
+            registration = registration_by_id.get(statement["registration_id"])
+            if registration is None or registration["statement"]["task_id"] != statement["task_id"] or registration["statement"]["formal_ordinal"] != statement["formal_ordinal"]:
+                errors.append("preparation authorization does not bind its exact signed task registration")
+            else:
+                if (
+                    statement["protocol_blob_sha"] != git_blob_sha(SUCCESSOR_PROTOCOL_PATH)
+                    or statement["protocol_file_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
+                    or registration["statement"]["protocol_blob_sha"] != statement["protocol_blob_sha"]
+                    or registration["statement"]["protocol_file_sha256"] != statement["protocol_file_sha256"]
+                    or statement["base_main_sha"] != registration["statement"]["formal_base_main_sha"]
+                    or statement["work_branch"] != registration["statement"]["work_branch"]
+                ):
+                    errors.append("preparation authorization differs from its exact registered branch, base or protocol version")
+                registration_time, registration_errors = _parse_control_time(registration["committed_at"], "registration commit time")
+                authorization_time, authorization_errors = _parse_control_time(row["committed_at"], "preparation authorization commit time")
+                approved_at, approved_errors = _parse_control_time(statement["approved_at"], "preparation authorization approved_at")
+                expires_at, expiry_errors = _parse_control_time(statement["expires_at"], "preparation authorization expires_at")
+                errors.extend(registration_errors + authorization_errors + approved_errors + expiry_errors)
+                if registration_time and authorization_time and authorization_time <= registration_time:
+                    errors.append("preparation authorization must follow its immutable registration")
+                if approved_at and authorization_time and approved_at > authorization_time:
+                    errors.append("preparation authorization approval timestamp is later than its signed merge")
+                if approved_at and expires_at and expires_at <= approved_at:
+                    errors.append("preparation authorization expiry does not follow its approval timestamp")
+        for row in authorizations:
+            statement = row["statement"]
+            registration = registration_by_id.get(statement["registration_id"])
+            preparation = preparation_by_id.get(statement["preparation_id"])
+            if registration is None or preparation is None:
+                errors.append("final transaction authorization does not bind an existing signed registration and preparation grant")
+                continue
+            prep_statement = preparation["statement"]
+            if (
+                statement["task_id"] != registration["statement"]["task_id"]
+                or statement["formal_ordinal"] != registration["statement"]["formal_ordinal"]
+                or statement["registration_id"] != prep_statement["registration_id"]
+                or statement["task_id"] != prep_statement["task_id"]
+                or statement["formal_ordinal"] != prep_statement["formal_ordinal"]
+                or statement["base_main_sha"] != prep_statement["base_main_sha"]
+                or statement["protocol_blob_sha"] != prep_statement["protocol_blob_sha"]
+                or statement["protocol_file_sha256"] != prep_statement["protocol_file_sha256"]
+            ):
+                errors.append("final transaction authorization differs from its exact preparation grant or task registration")
+            registration_time, registration_errors = _parse_control_time(registration["committed_at"], "registration commit time")
+            preparation_time, prep_errors = _parse_control_time(preparation["committed_at"], "preparation commit time")
+            authorization_time, authorization_errors = _parse_control_time(row["committed_at"], "final transaction authorization commit time")
+            approved_at, approved_errors = _parse_control_time(statement["approved_at"], "final transaction authorization approved_at")
+            expires_at, expiry_errors = _parse_control_time(statement["expires_at"], "final transaction authorization expires_at")
+            errors.extend(registration_errors + prep_errors + authorization_errors + approved_errors + expiry_errors)
+            if registration_time and authorization_time and authorization_time <= registration_time:
+                errors.append("final transaction authorization must follow its immutable registration")
+            if preparation_time and authorization_time and authorization_time <= preparation_time:
+                errors.append("final transaction authorization must follow its signed preparation grant")
+            if approved_at and authorization_time and approved_at > authorization_time:
+                errors.append("final transaction authorization approval timestamp is later than its signed merge")
+            if approved_at and expires_at and expires_at <= approved_at:
+                errors.append("final transaction authorization expiry does not follow its approval timestamp")
+        for row in publications:
+            statement = row["statement"]
+            auth = authorization_by_id.get(statement["authorization_id"])
+            registration = registration_by_id.get(statement["registration_id"])
+            if auth is None or registration is None:
+                errors.append("publication witness does not bind an existing authorization and registration")
+                continue
+            auth_statement = auth["statement"]
+            reg_statement = registration["statement"]
+            if (
+                auth_statement["preparation_id"] != statement["preparation_id"]
+                or auth_statement["transaction_id"] != statement["transaction_id"]
+                or auth_statement["authorization_id"] != statement["authorization_id"]
+                or auth_statement["registration_id"] != statement["registration_id"]
+                or auth_statement["task_id"] != statement["task_id"]
+                or auth_statement["formal_ordinal"] != statement["formal_ordinal"]
+                or auth_statement["pr_number"] != statement["pr_number"]
+                or auth_statement["candidate_head_sha"] != statement["candidate_head_sha"]
+                or auth_statement["base_main_sha"] != statement["base_main_sha"]
+                or auth_statement["protocol_blob_sha"] != statement["protocol_blob_sha"]
+                or auth_statement["protocol_file_sha256"] != statement["protocol_file_sha256"]
+                or reg_statement["task_id"] != statement["task_id"]
+                or reg_statement["formal_ordinal"] != statement["formal_ordinal"]
+            ):
+                errors.append("publication witness fields differ from its signed authorization or task registration")
+            if statement["actual_final_main_parents"] != [statement["base_main_sha"], statement["candidate_head_sha"]]:
+                errors.append("publication witness merge parents are not ordered [base, candidate head]")
+            if statement["remote_main_sha"] != statement["actual_final_main_sha"] or statement["fresh_clone_sha"] != statement["actual_final_main_sha"]:
+                errors.append("publication witness remote main and fresh clone must equal its exact final main SHA")
+            if statement["projection_check"]["source_sha"] != statement["actual_final_main_sha"] or statement["projection_check"]["unexpected_changed_paths"]:
+                errors.append("publication witness projection receipt is stale or reports unexpected changed paths")
+        for row in migrations:
+            statement = row["statement"]
+            if statement["protocol_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest():
+                errors.append("migration witness digest does not match the exact successor protocol bytes")
+            if statement["root_authority_merge_commit_sha"] != SUCCESSOR_ROOT_MERGE_SHA:
+                errors.append("migration witness does not bind the verified external Owner root authority")
+        if errors:
+            return None, errors
+        for row in migrations:
+            errors.extend(
+                f"successor migration witness {row['statement']['protocol_sha256']}: {item}"
+                for item in validate_successor_migration_witness_live(
+                    row["statement"], signed_record=row, owner_id=owner_id,
+                    owner_review_records=owner_reviews, github_api=api
+                )
+            )
+        for row in publications:
+            errors.extend(
+                f"successor publication witness {row['statement']['transaction_id']}: {item}"
+                for item in validate_successor_publication_witness_live(
+                    row["statement"], signed_record=row, owner_id=owner_id, github_api=api
+                )
+            )
+        if errors:
+            return None, errors
+        return {
+            "repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "main_sha": main_sha,
+            "records": records,
+            "registrations": registrations,
+            "authorizations": authorizations,
+            "preparation_authorizations": preparation_authorizations,
+            "revocations": revocations,
+            "supersessions": supersessions,
+            "owner_reviews": owner_reviews,
+            "publications": publications,
+            "migrations": migrations,
+            "revoked_authorization_ids": sorted(revoked_ids),
+            "superseded_registration_ids": sorted(superseded_ids),
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"successor append-only control ledger failed closed: {error.__class__.__name__}: {error}"]
+
+
+def _parse_control_time(value: str, label: str) -> tuple[datetime | None, list[str]]:
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            return None, [f"{label} must include an explicit timezone"]
+        return parsed.astimezone(timezone.utc), []
+    except (AttributeError, TypeError, ValueError):
+        return None, [f"{label} is not a valid timezone-aware timestamp"]
+
+
+def _successor_authorization_revocation_errors(
+    ledger: dict[str, Any], *, authorization_id: str, authorization_record_type: str,
+    authorization_file_sha256: str, valid_through: str,
+) -> list[str]:
+    errors: list[str] = []
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "authorization revocation cutoff")
+    errors.extend(cutoff_errors)
+    for revoked in ledger.get("revocations", []):
+        revocation = revoked["statement"]
+        if (
+            revocation.get("authorization_id") != authorization_id
+            or revocation.get("authorization_record_type") != authorization_record_type
+        ):
+            continue
+        if revocation.get("authorization_file_sha256") != authorization_file_sha256:
+            errors.append("authorization revocation does not bind the exact signed authorization bytes")
+        revoked_at, revoked_errors = _parse_control_time(revocation.get("revoked_at"), "authorization revoked_at")
+        errors.extend(revoked_errors)
+        if revoked_at and cutoff and revoked_at <= cutoff:
+            errors.append(f"Owner {authorization_record_type.lower()} was revoked before the authorized boundary")
+    return errors
+
+
+def validate_successor_preparation_authorization_statement(
+    preparation_id: str,
+    *,
+    ledger: dict[str, Any],
+    task_id: str,
+    formal_ordinal: int,
+    registration_id: str,
+    work_branch: str,
+    base_main_sha: str,
+    protocol_blob_sha: str,
+    protocol_file_sha256: str,
+    candidate_seed_sha256: str,
+    action: str,
+    valid_through: str,
+) -> list[str]:
+    """Validate the no-PR-yet PREPARATION_ONLY grant for one allowed action."""
+    errors: list[str] = []
+    rows = [
+        row for row in ledger.get("preparation_authorizations", [])
+        if row["statement"].get("preparation_id") == preparation_id
+    ]
+    if len(rows) != 1:
+        return ["preparation grant does not resolve to exactly one immutable signed 1111 ledger record"]
+    row = rows[0]
+    signed = row["statement"]
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors.extend(_schema_errors(signed, {"$ref": "#/$defs/preparationAuthorizationRecord", "$defs": schema["$defs"]}))
+    for field, expected_value in (
+        ("preparation_id", preparation_id), ("task_id", task_id), ("formal_ordinal", formal_ordinal),
+        ("registration_id", registration_id), ("work_branch", work_branch), ("base_main_sha", base_main_sha),
+        ("protocol_blob_sha", protocol_blob_sha), ("protocol_file_sha256", protocol_file_sha256),
+        ("candidate_seed_sha256", candidate_seed_sha256), ("scope", "PREPARATION_ONLY"),
+        ("allowed_actions", ["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"]),
+        ("owner_actor_id", 49422864),
+    ):
+        if signed.get(field) != expected_value:
+            errors.append(f"PREPARATION_ONLY {field} does not bind the exact registered candidate scope")
+    if action not in signed.get("allowed_actions", []):
+        errors.append("PREPARATION_ONLY grant does not authorize this action")
+    expected_evidence = {
+        "path": f"{SUCCESSOR_AUTHORIZATION_PREFIX}{preparation_id}.json",
+        "statement": signed, "file_sha256": row.get("file_sha256"),
+        "signature_verified": True, "signature_reason": "valid",
+    }
+    if row.get("path") != expected_evidence["path"] or row.get("signature_verified") is not True or row.get("signature_reason") != "valid":
+        errors.append("PREPARATION_ONLY evidence differs from the exact Owner-signed append-only record")
+    registration_rows = [
+        item for item in ledger.get("registrations", [])
+        if item["statement"].get("registration_id") == registration_id
+    ]
+    if len(registration_rows) != 1:
+        errors.append("PREPARATION_ONLY grant has no unique exact signed task registration")
+    else:
+        registration = registration_rows[0]["statement"]
+        if (
+            registration.get("task_id") != task_id
+            or registration.get("formal_ordinal") != formal_ordinal
+            or registration.get("work_branch") != work_branch
+            or registration.get("formal_base_main_sha") != base_main_sha
+            or registration.get("protocol_blob_sha") != protocol_blob_sha
+            or registration.get("protocol_file_sha256") != protocol_file_sha256
+        ):
+            errors.append("PREPARATION_ONLY grant differs from its exact signed task registration")
+        registration_time, reg_errors = _parse_control_time(registration_rows[0]["committed_at"], "registration commit time")
+        prep_commit_time, commit_errors = _parse_control_time(row["committed_at"], "preparation authorization commit time")
+        errors.extend(reg_errors + commit_errors)
+        if registration_time and prep_commit_time and prep_commit_time <= registration_time:
+            errors.append("PREPARATION_ONLY grant must be Owner-signed after its task registration")
+    approved_at, approved_errors = _parse_control_time(signed.get("approved_at"), "preparation authorization approved_at")
+    committed_at, committed_errors = _parse_control_time(row.get("committed_at"), "preparation authorization signed commit time")
+    expires_at, expiry_errors = _parse_control_time(signed.get("expires_at"), "preparation authorization expires_at")
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "preparation action cutoff")
+    errors.extend(approved_errors + committed_errors + expiry_errors + cutoff_errors)
+    if approved_at and committed_at and approved_at > committed_at:
+        errors.append("PREPARATION_ONLY approval timestamp is later than its Owner-signed merge")
+    if committed_at and cutoff and committed_at >= cutoff:
+        errors.append("PREPARATION_ONLY grant was not signed before the authorized action")
+    if approved_at and cutoff and approved_at >= cutoff:
+        errors.append("PREPARATION_ONLY grant was not approved before the authorized action")
+    if approved_at and expires_at and expires_at <= approved_at:
+        errors.append("PREPARATION_ONLY expiry does not follow its approval timestamp")
+    if expires_at and cutoff and expires_at <= cutoff:
+        errors.append("PREPARATION_ONLY grant is expired at the authorized action")
+    errors.extend(_successor_authorization_revocation_errors(
+        ledger, authorization_id=preparation_id, authorization_record_type="PREPARATION_AUTHORIZATION",
+        authorization_file_sha256=row.get("file_sha256", ""), valid_through=valid_through,
+    ))
+    return errors
+
+
+def validate_successor_transaction_authorization_statement(
+    evidence: dict[str, Any],
+    *,
+    ledger: dict[str, Any],
+    task_id: str,
+    formal_ordinal: int,
+    registration_id: str,
+    transaction_id: str,
+    pr_number: int,
+    candidate_head_sha: str,
+    base_main_sha: str,
+    protocol_blob_sha: str,
+    protocol_file_sha256: str,
+    preparation_valid_through: str,
+    valid_through: str,
+) -> list[str]:
+    """Require both stages: valid prep at PR creation, then exact final grant."""
+    errors: list[str] = []
+    statement = evidence.get("statement") if isinstance(evidence, dict) else None
+    if not isinstance(statement, dict):
+        return ["successor final transaction authorization evidence has no signed statement"]
+    auth_rows = [
+        row for row in ledger.get("authorizations", [])
+        if row["statement"].get("authorization_id") == statement.get("authorization_id")
+    ]
+    if len(auth_rows) != 1:
+        return ["final transaction authorization does not resolve to exactly one immutable signed 1111 ledger record"]
+    row = auth_rows[0]
+    signed = row["statement"]
+    for field, expected_value in (
+        ("record_type", "FINAL_TRANSACTION_AUTHORIZATION"), ("scope", "FINAL_TRANSACTION"),
+        ("task_id", task_id), ("formal_ordinal", formal_ordinal), ("registration_id", registration_id),
+        ("transaction_id", transaction_id), ("pr_number", pr_number),
+        ("candidate_head_sha", candidate_head_sha), ("base_main_sha", base_main_sha),
+        ("protocol_blob_sha", protocol_blob_sha), ("protocol_file_sha256", protocol_file_sha256),
+        ("owner_actor_id", 49422864),
+    ):
+        if signed.get(field) != expected_value:
+            errors.append(f"FINAL_TRANSACTION {field} does not bind the exact PR transaction")
+    expected_evidence = {
+        "record_type": "FINAL_TRANSACTION_AUTHORIZATION", "statement": signed,
+        "authorization_repository": OWNER_AUTHORIZATION_REPOSITORY,
+        "authorization_path": row["path"], "authorization_commit_sha": row["commit_sha"],
+        "authorization_parent_shas": row["parents"], "authorization_file_sha256": row["file_sha256"],
+        "authorization_blob_sha": row["blob_sha"], "authorization_committed_at": row["committed_at"],
+        "authorization_signature_verified": True, "authorization_signature_reason": "valid",
+    }
+    if evidence != expected_evidence:
+        errors.append("transaction authorization evidence differs from the exact signed 1111 final-authorization record")
+
+    preparation_id = signed.get("preparation_id")
+    preparation_rows = [
+        item for item in ledger.get("preparation_authorizations", [])
+        if item["statement"].get("preparation_id") == preparation_id
+    ]
+    registration_rows = [
+        item for item in ledger.get("registrations", [])
+        if item["statement"].get("registration_id") == registration_id
+    ]
+    if len(preparation_rows) != 1 or len(registration_rows) != 1:
+        errors.append("FINAL_TRANSACTION lacks one exact signed preparation grant and task registration")
+    else:
+        prep_row, reg_row = preparation_rows[0], registration_rows[0]
+        prep = prep_row["statement"]
+        errors.extend(validate_successor_preparation_authorization_statement(
+            preparation_id, ledger=ledger, task_id=task_id, formal_ordinal=formal_ordinal,
+            registration_id=registration_id, work_branch=reg_row["statement"]["work_branch"],
+            base_main_sha=base_main_sha, protocol_blob_sha=protocol_blob_sha,
+            protocol_file_sha256=protocol_file_sha256, candidate_seed_sha256=prep.get("candidate_seed_sha256", ""),
+            action="CREATE_DRAFT_PULL_REQUEST", valid_through=preparation_valid_through,
+        ))
+        if (
+            prep_row["commit_sha"] == row["commit_sha"]
+            or signed.get("preparation_id") != prep.get("preparation_id")
+            or signed.get("registration_id") != prep.get("registration_id")
+            or signed.get("task_id") != prep.get("task_id")
+            or signed.get("formal_ordinal") != prep.get("formal_ordinal")
+            or signed.get("base_main_sha") != prep.get("base_main_sha")
+            or signed.get("protocol_blob_sha") != prep.get("protocol_blob_sha")
+            or signed.get("protocol_file_sha256") != prep.get("protocol_file_sha256")
+        ):
+            errors.append("FINAL_TRANSACTION does not extend the exact preceding PREPARATION_ONLY grant")
+
+    approved_at, approved_errors = _parse_control_time(signed.get("approved_at"), "final authorization approved_at")
+    signed_at, signed_errors = _parse_control_time(row.get("committed_at"), "final authorization signed commit time")
+    expires_at, expiry_errors = _parse_control_time(signed.get("expires_at"), "final authorization expires_at")
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "final authorization validity cutoff")
+    errors.extend(approved_errors + signed_errors + expiry_errors + cutoff_errors)
+    if approved_at and signed_at and approved_at > signed_at:
+        errors.append("FINAL_TRANSACTION approval timestamp is later than its Owner-signed merge")
+    if signed_at and cutoff and signed_at >= cutoff:
+        errors.append("FINAL_TRANSACTION was not signed before validation or PR merge")
+    if approved_at and cutoff and approved_at >= cutoff:
+        errors.append("FINAL_TRANSACTION was not approved before validation or PR merge")
+    if approved_at and expires_at and expires_at <= approved_at:
+        errors.append("FINAL_TRANSACTION expiry does not follow its approval timestamp")
+    if expires_at and cutoff and expires_at <= cutoff:
+        errors.append("FINAL_TRANSACTION is expired at validation or PR merge")
+    errors.extend(_successor_authorization_revocation_errors(
+        ledger, authorization_id=signed.get("authorization_id", ""),
+        authorization_record_type="FINAL_TRANSACTION_AUTHORIZATION",
+        authorization_file_sha256=row.get("file_sha256", ""), valid_through=valid_through,
+    ))
+    if registration_id in ledger.get("superseded_registration_ids", []):
+        supersessions = [
+            item for item in ledger.get("supersessions", [])
+            if item["statement"].get("supersedes_registration_id") == registration_id
+        ]
+        if any(
+            (lambda parsed: parsed is not None and cutoff is not None and parsed <= cutoff)(
+                _parse_control_time(item["statement"].get("superseded_at"), "registration superseded_at")[0]
+            ) for item in supersessions
+        ):
+            errors.append("successor task registration was superseded before the authorized PR merge")
+    return errors
+
+
+SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS = {
+    "same_author_self_review", "reviewer_work_not_separate_or_self_review", "missing_raw_diff",
+    "task_pr_base_head_diff_mismatch", "tampered_report_digest", "missing_or_expired_artifact",
+    "outdated_head", "failed_ci", "unsafe_scope", "forged_github_approval",
+    "missing_owner_signature", "reject_or_inconclusive_verdict",
+    "supersession_rollback_or_history_rewrite",
+}
+
+
+def validate_successor_ai_review_report(
+    report: dict[str, Any] | None,
+    *,
+    task_id: str,
+    formal_ordinal: int,
+    pr_number: int,
+    author_id: int,
+    base_sha: str,
+    head_sha: str,
+    diff_sha256: str,
+    raw_diff_sha256: str,
+    protocol_sha256: str,
+    branch_protection_rules_sha256: str,
+    required_approval_count: int,
+    changed_files: list[dict[str, Any]] | None,
+    required_contexts: list[dict[str, Any]] | None,
+    valid_through: str,
+) -> list[str]:
+    """Validate the independently authored, immutable AI review artifact."""
+    if not isinstance(report, dict):
+        return ["independent AI review report is missing or malformed"]
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors = _schema_errors(report, {"$ref": "#/$defs/independentAiReviewReport", "$defs": schema["$defs"]})
+    if errors:
+        return [f"independent AI review report schema: {item}" for item in errors]
+
+    for field, value in (
+        ("task_id", task_id), ("formal_ordinal", formal_ordinal),
+        ("formal_pr_number", pr_number), ("pr_author_id", author_id),
+        ("formal_base_sha", base_sha), ("formal_candidate_head_sha", head_sha),
+        ("formal_pr_diff_sha256", diff_sha256), ("protocol_sha256", protocol_sha256),
+        ("branch_protection_rules_sha256", branch_protection_rules_sha256),
+        ("required_approval_count", required_approval_count),
+    ):
+        if report.get(field) != value:
+            errors.append(f"independent AI review report {field} does not bind the exact successor task and PR")
+
+    report_payload = {key: value for key, value in report.items() if key != "report_sha256"}
+    canonical_digest = hashlib.sha256(
+        json.dumps(report_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    if report.get("report_sha256") != canonical_digest:
+        errors.append("independent AI review report digest does not match its canonical artifact bytes")
+
+    authoring = report.get("authoring_context") or {}
+    reviewer = report.get("reviewer_context") or {}
+    if authoring.get("role") != "AUTHORING_EXECUTOR":
+        errors.append("independent AI review authoring context has the wrong role")
+    if reviewer.get("role") != "INDEPENDENT_AI_REVIEWER":
+        errors.append("independent AI review context has the wrong reviewer role")
+    for label, context in (("authoring", authoring), ("reviewer", reviewer)):
+        if context.get("identity_status") != "NOT_PLATFORM_VERIFIED":
+            errors.append(f"independent AI review {label} identity must not be represented as platform-verified")
+        limitations = context.get("limitations", [])
+        if not any(
+            ("identity" in item.lower() and ("unverified" in item.lower() or "not verified" in item.lower()))
+            or ("platform" in item.lower() and "verified" in item.lower())
+            for item in limitations if isinstance(item, str)
+        ):
+            errors.append(f"independent AI review {label} context must disclose identity verification limits")
+
+    process = report.get("review_process") or {}
+    required_actions = {
+        "READ_FULL_RAW_DIFF", "READ_CHANGED_SOURCE_FILES", "READ_RELEVANT_SCHEMA_VALIDATOR_TESTS",
+        "READ_OWNER_AUTHORITY", "CHECK_LIVE_CI_AND_SCOPE",
+    }
+    if (
+        process.get("reviewer_role") != "INDEPENDENT_NON_AUTHOR_AI_REVIEWER"
+        or process.get("method") != "DIRECT_READ_ONLY_EXACT_HEAD_REVIEW"
+        or not isinstance(process.get("independence_basis"), str)
+        or len(process.get("independence_basis", "").strip()) < 80
+        or set(process.get("reviewed_actions", [])) != required_actions
+    ):
+        errors.append("independent AI review does not document a substantive separate read-only exact-head process")
+    authority_binding = report.get("owner_independent_ai_review_authority") or {}
+    authority_contract = load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]
+    expected_binding = {
+        "repository": authority_contract["repository"], "branch": authority_contract["branch"],
+        "pull_request_number": authority_contract["pull_request_number"],
+        "merge_commit_sha": authority_contract["merge_commit_sha"],
+        "file_path": authority_contract["files"][0]["path"],
+        "git_blob_sha": authority_contract["files"][0]["git_blob_sha"],
+        "sha256": authority_contract["files"][0]["sha256"],
+    }
+    if authority_binding != expected_binding:
+        errors.append("independent AI review report does not bind the exact #166 Owner authority and file digest")
+
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "AI review validity cutoff")
+    created, created_errors = _parse_control_time(report.get("created_at"), "AI review artifact created_at")
+    expires, expires_errors = _parse_control_time(report.get("expires_at"), "AI review artifact expires_at")
+    errors.extend(cutoff_errors + created_errors + expires_errors)
+    if created and expires:
+        if expires <= created or (expires - created).total_seconds() > 24 * 60 * 60:
+            errors.append("independent AI review artifact expiry must be within 24 hours of creation")
+        if cutoff and created >= cutoff:
+            errors.append("independent AI review report was not created before the Owner merge decision")
+        if cutoff and expires <= cutoff:
+            errors.append("independent AI review artifact was expired at the Owner merge decision")
+
+    source = report.get("source_readback") or {}
+    if (
+        source.get("source_base_sha") != base_sha
+        or source.get("source_head_sha") != head_sha
+        or source.get("formal_pr_diff_sha256") != diff_sha256
+        or source.get("raw_diff_sha256") != raw_diff_sha256
+    ):
+        errors.append("independent AI review source readback is not bound to the exact base, head and raw diff")
+    if changed_files is None:
+        errors.append("live exact-head changed-file inventory is unavailable for independent AI review")
+    elif source.get("files") != changed_files:
+        errors.append("independent AI report did not read back the complete exact changed-file inventory")
+
+    reviewed_contexts = report.get("required_ci_contexts")
+    if required_contexts is None:
+        errors.append("live exact-head required CI evidence is unavailable to compare with the AI report")
+    elif reviewed_contexts != required_contexts:
+        errors.append("independent AI report did not inspect the exact live required CI context set")
+
+    controls = report.get("negative_controls", [])
+    control_ids = [item.get("control_id") for item in controls if isinstance(item, dict)]
+    if set(control_ids) != SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS or len(control_ids) != len(SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS):
+        errors.append("independent AI report does not assess every required negative control exactly once")
+    if any(item.get("result") != "PASS" for item in controls if isinstance(item, dict)):
+        errors.append("independent AI review negative controls contain a failure or inconclusive result")
+    assessment = report.get("assessment") or {}
+    required_assessments = {
+        "implementation", "threat_model", "exact_source_and_diff",
+        "required_ci_and_scope", "history_and_rollback", "authority_separation",
+    }
+    if set(assessment) != required_assessments or any(
+        not isinstance(value, str) or len(value.strip()) < 40 for value in assessment.values()
+    ):
+        errors.append("independent AI report lacks a substantive assessment across every required area")
+    if any(
+        item.get("severity") in {"BLOCKER", "HIGH"} and item.get("status") == "OPEN"
+        for item in report.get("findings", []) if isinstance(item, dict)
+    ):
+        errors.append("independent AI report has an unresolved blocker or high-severity finding")
+    if report.get("verdict") != "ACCEPT":
+        errors.append("independent AI review verdict is not ACCEPT")
+    if report.get("scope_expansion_proposed") is not False:
+        errors.append("independent AI review proposes an unauthorized scope expansion")
+    if report.get("claims_github_approved") is not False:
+        errors.append("independent AI review incorrectly claims GitHub approval")
+    return errors
+
+
+def validate_successor_owner_exact_head_review_record(
+    review_row: dict[str, Any] | None,
+    *,
+    owner_id: int,
+    task_id: str,
+    formal_ordinal: int,
+    registration_id: str,
+    pr_number: int,
+    author_id: int,
+    base_sha: str,
+    head_sha: str,
+    diff_sha256: str,
+    raw_diff_sha256: str,
+    protocol_sha256: str,
+    branch_protection_rules_sha256: str,
+    required_approval_count: int,
+    changed_files: list[dict[str, Any]] | None,
+    required_contexts: list[dict[str, Any]] | None,
+    valid_through: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> list[str]:
+    """Require a separate Owner-signed, append-only review of this exact PR diff."""
+    if review_row is None:
+        return ["Owner exact-head review record is missing"]
+    signed = review_row.get("statement")
+    if not isinstance(signed, dict):
+        return ["Owner exact-head review record has no signed statement"]
+    errors: list[str] = []
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors.extend(_schema_errors(signed, {"$ref": "#/$defs/ownerExactHeadReviewRecord", "$defs": schema["$defs"]}))
+    for field, value in (
+        ("record_type", "OWNER_EXACT_HEAD_REVIEW"), ("owner_actor_id", owner_id),
+        ("task_id", task_id), ("formal_ordinal", formal_ordinal), ("registration_id", registration_id),
+        ("formal_pr_number", pr_number), ("pr_author_id", author_id),
+        ("formal_base_sha", base_sha), ("formal_candidate_head_sha", head_sha),
+        ("formal_pr_diff_sha256", diff_sha256), ("protocol_sha256", protocol_sha256),
+        ("decision", "APPROVE"), ("scope", "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD"),
+    ):
+        if signed.get(field) != value:
+            errors.append(f"Owner exact-head review {field} does not bind the exact PR diff and head")
+    if review_row.get("path") != f"{SUCCESSOR_REVIEW_PREFIX}{signed.get('review_id')}.json":
+        errors.append("Owner exact-head review ledger path differs from its immutable review ID")
+    if review_row.get("signature_verified") is not True or review_row.get("signature_reason") != "valid":
+        errors.append("Owner exact-head review record lacks a verified Owner signature")
+    report = signed.get("independent_ai_review_report")
+    errors.extend(validate_successor_ai_review_report(
+        report, task_id=task_id, formal_ordinal=formal_ordinal,
+        pr_number=pr_number, author_id=author_id, base_sha=base_sha,
+        head_sha=head_sha, diff_sha256=diff_sha256,
+        raw_diff_sha256=raw_diff_sha256,
+        protocol_sha256=protocol_sha256,
+        branch_protection_rules_sha256=branch_protection_rules_sha256,
+        required_approval_count=required_approval_count,
+        changed_files=changed_files,
+        required_contexts=required_contexts, valid_through=valid_through,
+    ))
+    live_authority, authority_errors = read_authenticated_owner_ai_review_authority(github_api=github_api)
+    errors.extend(authority_errors)
+    if live_authority is None:
+        errors.append("live #166 Owner independent-review authority readback is unavailable")
+    elif (
+        live_authority.get("pull_request_number") != OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER
+        or live_authority.get("merge_commit_sha") != OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA
+        or live_authority.get("file_blob_sha") != OWNER_AI_REVIEW_AUTHORITY_BLOB
+        or live_authority.get("file_sha256") != OWNER_AI_REVIEW_AUTHORITY_SHA256
+        or live_authority.get("signature_verified") is not True
+        or not live_authority.get("main_sha")
+    ):
+        errors.append("live #166 Owner authority evidence differs from its exact signed merge, file, or main ancestry")
+    reviewed_at, reviewed_errors = _parse_control_time(signed.get("reviewed_at"), "Owner reviewed_at")
+    committed_at, committed_errors = _parse_control_time(review_row.get("committed_at"), "Owner review signed commit time")
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "Owner review validity cutoff")
+    errors.extend(reviewed_errors + committed_errors + cutoff_errors)
+    if reviewed_at and committed_at and reviewed_at > committed_at:
+        errors.append("Owner exact-head review time is later than its signed append-only record")
+    report_created, report_created_errors = _parse_control_time(
+        (report or {}).get("created_at"), "AI review report created_at"
+    )
+    errors.extend(report_created_errors)
+    if report_created and reviewed_at and report_created >= reviewed_at:
+        errors.append("independent AI review report was not created before the Owner exact-head review")
+    if reviewed_at and cutoff and reviewed_at >= cutoff:
+        errors.append("Owner exact-head review was not completed before the Formal merge")
+    if committed_at and cutoff and committed_at >= cutoff:
+        errors.append("Owner exact-head review record was not signed before the Formal merge")
+    if not isinstance(signed.get("review_summary"), str) or not signed["review_summary"].strip():
+        errors.append("Owner exact-head review summary is empty")
+    return errors
+
+
+def _review_body_evidence_errors(body: Any) -> list[str]:
+    if not isinstance(body, str) or not body.strip():
+        return ["independent GitHub review body is empty"]
+    independence = re.search(r"(?im)^\s*independence\s*:\s*(\S.*)$", body)
+    assessment = re.search(r"(?im)^\s*assessment\s*:\s*(\S.*)$", body)
+    errors = []
+    if independence is None or not independence.group(1).strip():
+        errors.append("independent reviewer must include a non-empty Independence: attestation")
+    if assessment is None or not assessment.group(1).strip():
+        errors.append("independent reviewer must include a substantive Assessment: section")
+    return errors
+
+
+def read_live_successor_pr_diff_inventory(
+    pr_number: int,
+    *,
+    base_sha: str,
+    head_sha: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[str | None, list[dict[str, Any]] | None, list[str]]:
+    """Read and hash the exact changed-file inventory used by independent review."""
+    api = github_api or _gh_api_json
+    try:
+        files: list[dict[str, Any]] = []
+        for page in range(1, 101):
+            batch = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}/files?per_page=100&page={page}")
+            if not isinstance(batch, list):
+                return None, None, ["Formal PR changed-file inventory is unreadable"]
+            files.extend(row for row in batch if isinstance(row, dict))
+            if len(batch) < 100:
+                break
+        else:
+            return None, None, ["Formal PR changed-file inventory exceeded its bounded pagination limit"]
+        normalized = []
+        for item in files:
+            normalized.append({
+                "filename": item.get("filename"), "status": item.get("status"), "sha": item.get("sha"),
+                "additions": item.get("additions"), "deletions": item.get("deletions"), "changes": item.get("changes"),
+                "patch_sha256": hashlib.sha256(item.get("patch", "").encode("utf-8")).hexdigest()
+                if isinstance(item.get("patch"), str) else None,
+            })
+        paths = [item["filename"] for item in normalized]
+        if not normalized or any(not isinstance(path, str) for path in paths) or len(paths) != len(set(paths)):
+            return None, None, ["Formal PR changed-file inventory is empty, duplicated, or missing a path"]
+        ordered = sorted(normalized, key=lambda item: item["filename"])
+        payload = {"pr_number": pr_number, "base_sha": base_sha, "head_sha": head_sha, "files": ordered}
+        digest = hashlib.sha256(json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+        return digest, ordered, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, None, [f"Formal PR changed-file inventory failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_live_successor_pr_diff_sha256(
+    pr_number: int,
+    *,
+    base_sha: str,
+    head_sha: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[str | None, list[str]]:
+    """Compatibility wrapper for callers that only need the canonical diff digest."""
+    digest, _, errors = read_live_successor_pr_diff_inventory(
+        pr_number, base_sha=base_sha, head_sha=head_sha, github_api=github_api,
+    )
+    return digest, errors
+
+
+def read_live_successor_pr_raw_diff_sha256(
+    pr_number: int,
+    *,
+    base_sha: str,
+    head_sha: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    raw_diff_reader: Callable[[str], bytes] | None = None,
+) -> tuple[str | None, list[str]]:
+    """Hash the complete PR unified diff, including files omitted by the patch API."""
+    api = github_api or _gh_api_json
+    endpoint = f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}"
+    try:
+        pr_before = api(endpoint)
+        if (
+            not isinstance(pr_before, dict)
+            or (pr_before.get("base") or {}).get("sha") != base_sha
+            or (pr_before.get("head") or {}).get("sha") != head_sha
+        ):
+            return None, ["Formal PR raw diff is not bound to the exact live base and head"]
+        raw = (raw_diff_reader or _gh_api_raw_diff)(endpoint)
+        if isinstance(raw, str):
+            raw = raw.encode("utf-8")
+        if not isinstance(raw, bytes) or not raw.startswith(b"diff --git "):
+            return None, ["Formal PR raw unified diff is empty or unreadable"]
+        pr_after = api(endpoint)
+        if (
+            not isinstance(pr_after, dict)
+            or (pr_after.get("base") or {}).get("sha") != base_sha
+            or (pr_after.get("head") or {}).get("sha") != head_sha
+        ):
+            return None, ["Formal PR base or head changed while reading the raw diff"]
+        return hashlib.sha256(raw).hexdigest(), []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Formal PR raw diff read failed closed: {error.__class__.__name__}: {error}"]
+
+
+def validate_successor_review_gate(
+    reviews: list[dict[str, Any]],
+    *,
+    author_id: int,
+    owner_id: int,
+    head_sha: str,
+    authorized_reviewer_ids: set[int] | None = None,
+    valid_through: str,
+    require_human_approval: bool = False,
+    required_approval_count: int = 1,
+) -> tuple[dict[str, Any] | None, dict[str, Any] | None, list[str]]:
+    """Validate a human GitHub approval only when live branch rules require one."""
+    errors: list[str] = []
+    cutoff, cutoff_errors = _parse_control_time(valid_through, "review validity cutoff")
+    errors.extend(cutoff_errors)
+    latest: dict[int, dict[str, Any]] = {}
+    for review in reviews:
+        actor_id = review.get("actor_id")
+        if not isinstance(actor_id, int):
+            errors.append("live PR review lacks an exact reviewer actor ID")
+            continue
+        submitted, submitted_errors = _parse_control_time(review.get("submitted_at"), "review submitted_at")
+        if submitted_errors:
+            errors.extend(submitted_errors)
+            continue
+        if cutoff is not None and submitted is not None and submitted > cutoff:
+            continue
+        old = latest.get(actor_id)
+        key = (review.get("submitted_at", ""), review.get("review_id", 0))
+        old_key = (old.get("submitted_at", ""), old.get("review_id", 0)) if old else None
+        if old is None or key > old_key:
+            latest[actor_id] = review
+
+    def is_valid(review: dict[str, Any] | None) -> bool:
+        if (
+            not review or review.get("state") != "APPROVED"
+            or review.get("commit_sha") != head_sha or review.get("user_type") != "User"
+        ):
+            return False
+        submitted, submitted_errors = _parse_control_time(review.get("submitted_at"), "review submitted_at")
+        if submitted_errors:
+            errors.extend(submitted_errors)
+            return False
+        return cutoff is None or submitted is not None and submitted <= cutoff
+
+    owner_review = latest.get(owner_id)
+    if (
+        not owner_review or owner_review.get("state") != "APPROVED"
+        or owner_review.get("commit_sha") != head_sha or owner_review.get("user_type") != "User"
+    ):
+        owner_review = None
+    independent = next((
+        review for actor_id, review in latest.items()
+        if actor_id != author_id and actor_id != owner_id
+        and (authorized_reviewer_ids is None or actor_id in authorized_reviewer_ids)
+        and is_valid(review)
+    ), None)
+    if author_id == owner_id:
+        # GitHub bars the PR author from approving their own pull request. The
+        # separately signed Owner exact-head record is checked by its caller.
+        pass
+    eligible = [
+        review for actor_id, review in latest.items()
+        if actor_id != author_id and actor_id != owner_id
+        and (authorized_reviewer_ids is None or actor_id in authorized_reviewer_ids)
+        and is_valid(review)
+    ]
+    if require_human_approval and (
+        type(required_approval_count) is not int or required_approval_count < 1
+        or len({review["actor_id"] for review in eligible}) < required_approval_count
+    ):
+        errors.append("no distinct non-author, non-Owner human reviewer approved the exact head with review evidence")
+    return independent, owner_review, errors
+
+
+def select_successor_human_approvals(
+    reviews: list[dict[str, Any]],
+    *,
+    author_id: int,
+    owner_id: int,
+    head_sha: str,
+    valid_through: str,
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """Return latest distinct non-author, non-Owner approvals on one exact head."""
+    cutoff, errors = _parse_control_time(valid_through, "review validity cutoff")
+    latest: dict[int, dict[str, Any]] = {}
+    for review in reviews:
+        actor_id = review.get("actor_id")
+        if not isinstance(actor_id, int):
+            errors.append("live PR review lacks an exact reviewer actor ID")
+            continue
+        submitted, submitted_errors = _parse_control_time(review.get("submitted_at"), "review submitted_at")
+        if submitted_errors:
+            errors.extend(submitted_errors)
+            continue
+        if cutoff and submitted and submitted > cutoff:
+            continue
+        old = latest.get(actor_id)
+        if old is None or (review.get("submitted_at", ""), review.get("review_id", 0)) > (
+            old.get("submitted_at", ""), old.get("review_id", 0)
+        ):
+            latest[actor_id] = review
+    approved = [
+        review for actor_id, review in latest.items()
+        if actor_id != author_id and actor_id != owner_id
+        and review.get("state") == "APPROVED"
+        and review.get("commit_sha") == head_sha
+        and review.get("user_type") == "User"
+    ]
+    return sorted(approved, key=lambda review: (review.get("actor_id", 0), review.get("review_id", 0))), errors
+
+
+def read_live_successor_pr_reviews(
+    pr_number: int,
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[dict[str, Any]] | None, list[str]]:
+    """Read live exact-head reviews without imposing repository write access."""
+    api = github_api or _gh_api_json
+    try:
+        repo = api(f"repos/{PUBLIC_REPOSITORY}")
+        owner_id = (repo.get("owner") or {}).get("id")
+        pr = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}")
+        if not isinstance(owner_id, int) or owner_id != 49422864 or pr.get("number") != pr_number:
+            return None, None, ["Formal repository Owner or requested pull request identity differs from the successor policy"]
+        raw_reviews: list[dict[str, Any]] = []
+        for page in range(1, 51):
+            batch = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{pr_number}/reviews?per_page=100&page={page}")
+            if not isinstance(batch, list):
+                return None, None, ["GitHub PR review list is unreadable"]
+            raw_reviews.extend(row for row in batch if isinstance(row, dict))
+            if len(batch) < 100:
+                break
+        else:
+            return None, None, ["GitHub PR review history exceeded the bounded pagination limit"]
+        normalized: list[dict[str, Any]] = []
+        for review in raw_reviews:
+            user = review.get("user") or {}
+            actor_id = user.get("id")
+            if not isinstance(actor_id, int):
+                return None, None, ["GitHub PR review lacks its exact reviewer identity"]
+            normalized.append({
+                "review_id": review.get("id"), "actor_id": actor_id,
+                "state": review.get("state"), "commit_sha": review.get("commit_id"),
+                "submitted_at": review.get("submitted_at"), "review_url": review.get("html_url"),
+                "author_association": review.get("author_association", "NONE"),
+                "user_type": user.get("type"), "body": review.get("body", ""),
+            })
+        return {"pull_request": pr, "owner_id": owner_id}, normalized, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, None, [f"live successor PR/review readback failed closed: {error.__class__.__name__}: {error}"]
+def read_live_successor_required_contexts(
+    head_sha: str,
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[list[dict[str, Any]] | None, list[str]]:
+    """Require the exact inherited check contexts and app IDs on one exact candidate SHA."""
+    api = github_api or _gh_api_json
+    errors: list[str] = []
+    try:
+        payload = api(f"repos/{PUBLIC_REPOSITORY}/commits/{head_sha}/check-runs?per_page=100")
+        check_runs = payload.get("check_runs", []) if isinstance(payload, dict) else None
+        if not isinstance(check_runs, list):
+            return None, ["exact-head GitHub check-run readback is unreadable"]
+        observed: list[dict[str, Any]] = []
+        for requirement in load_json(SUCCESSOR_PROTOCOL_PATH)["inherits_from"]["required_status_check_contexts"]:
+            candidates = [
+                row for row in check_runs
+                if isinstance(row, dict)
+                and row.get("name") == requirement["context"]
+                and (row.get("app") or {}).get("id") == requirement["app_id"]
+                and row.get("head_sha") == head_sha
+            ]
+            if not candidates:
+                errors.append(f"required context {requirement['context']} has no exact-head GitHub check run")
+                continue
+            latest = max(candidates, key=lambda row: (row.get("started_at") or "", row.get("id", 0)))
+            if latest.get("status") != "completed" or latest.get("conclusion") != "success":
+                errors.append(f"required context {requirement['context']} did not pass on the exact candidate head")
+                continue
+            observed.append({
+                "context": requirement["context"], "app_id": requirement["app_id"], "sha": head_sha,
+                "conclusion": "success", "check_run_id": latest["id"],
+                "check_url": latest.get("html_url"), "completed_at": latest.get("completed_at"),
+            })
+        return observed, errors
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"exact-head required context readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def _valid_successor_context_set(
+    observed: list[dict[str, Any]], expected: list[dict[str, Any]], exact_sha: str
+) -> list[str]:
+    def key(row: dict[str, Any]) -> tuple[Any, ...]:
+        return (
+            row.get("context"), row.get("app_id"), row.get("sha"), row.get("conclusion"),
+            row.get("check_run_id"), row.get("check_url"), row.get("completed_at"),
+        )
+    if sorted(map(key, observed)) != sorted(map(key, expected)):
+        return ["signed required-context evidence differs from the live exact-SHA GitHub readback"]
+    if len(observed) != len(expected) or any(row.get("sha") != exact_sha or row.get("conclusion") != "success" for row in observed):
+        return ["required contexts are missing, duplicated, stale or unsuccessful"]
+    return []
+
+
+def validate_successor_migration_witness_live(
+    statement: dict[str, Any],
+    *,
+    signed_record: dict[str, Any],
+    owner_id: int,
+    github_api: Callable[[str], dict[str, Any] | list[Any]],
+    owner_review_records: list[dict[str, Any]] | None = None,
+) -> list[str]:
+    """Revalidate the exact merge, independent review, Owner record and checks."""
+    errors: list[str] = []
+    try:
+        if statement["protocol_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest():
+            return ["migration witness does not bind the exact successor protocol bytes"]
+        pr = github_api(f"repos/{PUBLIC_REPOSITORY}/pulls/{statement['formal_pr_number']}")
+        if not isinstance(pr, dict):
+            return ["successor-protocol Formal migration PR is unreadable"]
+        base, head = pr.get("base") or {}, pr.get("head") or {}
+        if (
+            pr.get("number") != statement["formal_pr_number"]
+            or pr.get("state") != "closed" or pr.get("merged") is not True
+            or base.get("ref") != "main" or base.get("sha") != statement["formal_base_sha"]
+            or head.get("sha") != statement["formal_candidate_head_sha"]
+            or pr.get("merge_commit_sha") != statement["formal_merge_commit_sha"]
+            or (pr.get("merged_by") or {}).get("id") != owner_id
+            or pr.get("draft") is True
+        ):
+            return ["Formal migration witness does not match the exact Owner-merged non-draft PR refs"]
+        merge = _commit_from_api(PUBLIC_REPOSITORY, statement["formal_merge_commit_sha"], github_api, {})
+        parents = [item.get("sha") for item in merge.get("parents", []) if isinstance(item, dict)]
+        tree_sha = (merge.get("commit", {}).get("tree") or {}).get("sha")
+        if parents != [statement["formal_base_sha"], statement["formal_candidate_head_sha"]]:
+            errors.append("Formal migration merge does not have exact ordered [base, candidate head] parents")
+        if parents != statement["formal_merge_parents"] or tree_sha != statement["formal_merge_tree_sha"]:
+            errors.append("Formal migration witness tree or ordered parents differ from the live merge commit")
+        protocol_content = github_api(
+            f"repos/{PUBLIC_REPOSITORY}/contents/{quote(relative(SUCCESSOR_PROTOCOL_PATH), safe='/')}?ref={quote(statement['formal_merge_commit_sha'], safe='')}"
+        )
+        protocol_raw, protocol_blob = _decode_control_file(
+            protocol_content, PUBLIC_REPOSITORY, relative(SUCCESSOR_PROTOCOL_PATH), statement["formal_merge_commit_sha"]
+        )
+        if protocol_blob != git_blob_sha(SUCCESSOR_PROTOCOL_PATH) or hashlib.sha256(protocol_raw).hexdigest() != statement["protocol_sha256"]:
+            errors.append("merged Formal main does not contain the exact witnessed successor-protocol blob and digest")
+        current_main = github_api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
+        current_main_sha = (current_main.get("commit") or {}).get("sha") if isinstance(current_main, dict) else None
+        ancestry = github_api(f"repos/{PUBLIC_REPOSITORY}/compare/{statement['formal_merge_commit_sha']}...{current_main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            errors.append("Formal migration merge is not an ancestor of current Formal main")
+
+        pr_meta, reviews, review_errors = read_live_successor_pr_reviews(statement["formal_pr_number"], github_api=github_api)
+        errors.extend(review_errors)
+        author_id = None
+        if pr_meta is not None:
+            normalized_pr = pr_meta["pull_request"]
+            author_id = (normalized_pr.get("user") or {}).get("id")
+            if author_id != statement["pr_author_id"]:
+                errors.append("migration witness PR author differs from live GitHub PR metadata")
+        live_contexts, context_errors = read_live_successor_required_contexts(
+            statement["formal_candidate_head_sha"], github_api=github_api
+        )
+        errors.extend(context_errors)
+        if live_contexts is not None:
+            errors.extend(_valid_successor_context_set(statement["required_check_contexts"], live_contexts, statement["formal_candidate_head_sha"]))
+        diff_sha256, changed_files, diff_errors = read_live_successor_pr_diff_inventory(
+            statement["formal_pr_number"], base_sha=statement["formal_base_sha"],
+            head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
+        )
+        errors.extend(diff_errors)
+        raw_diff_sha256, raw_diff_errors = read_live_successor_pr_raw_diff_sha256(
+            statement["formal_pr_number"], base_sha=statement["formal_base_sha"],
+            head_sha=statement["formal_candidate_head_sha"], github_api=github_api,
+        )
+        errors.extend(raw_diff_errors)
+        live_protection, protection_errors = read_live_branch_protection(
+            github_api=github_api, allow_required_human_review=True,
+        )
+        errors.extend(protection_errors)
+        owner_review_matches = [
+            row for row in (owner_review_records or [])
+            if row.get("statement", {}).get("review_id") == statement["owner_review_record_id"]
+        ]
+        if len(owner_review_matches) != 1:
+            errors.append("migration witness Owner exact-head review ID does not resolve to one signed ledger record")
+        else:
+            owner_review_record = owner_review_matches[0]
+            owner_statement = owner_review_record["statement"]
+            if (
+                owner_review_record.get("commit_sha") != statement["owner_review_record_commit_sha"]
+                or owner_review_record.get("file_sha256") != statement["owner_review_record_file_sha256"]
+                or owner_statement.get("formal_candidate_head_sha") != statement["owner_reviewed_head_sha"]
+            ):
+                errors.append("migration witness differs from the signed Owner review record identity or bytes")
+            ai_report = owner_statement.get("independent_ai_review_report") or {}
+            if (
+                statement.get("independent_review_mode") != "SUBSTANTIVE_INDEPENDENT_AI_REVIEW"
+                or statement.get("independent_ai_review_artifact_id") != ai_report.get("artifact_id")
+                or statement.get("independent_ai_review_report_sha256") != ai_report.get("report_sha256")
+            ):
+                errors.append("migration witness does not bind the signed independent AI review artifact")
+            errors.extend(validate_successor_owner_exact_head_review_record(
+                owner_review_record, owner_id=owner_id,
+                task_id=owner_statement.get("task_id", ""),
+                formal_ordinal=owner_statement.get("formal_ordinal", -1),
+                registration_id=owner_statement.get("registration_id", ""),
+                pr_number=statement["formal_pr_number"], author_id=author_id or statement["pr_author_id"],
+                base_sha=statement["formal_base_sha"], head_sha=statement["formal_candidate_head_sha"],
+                diff_sha256=diff_sha256 or "", raw_diff_sha256=raw_diff_sha256 or "",
+                protocol_sha256=statement["protocol_sha256"],
+                branch_protection_rules_sha256=(live_protection or {}).get("rules_sha256", ""),
+                required_approval_count=(live_protection or {}).get("required_approval_count", -1),
+                changed_files=changed_files, required_contexts=live_contexts,
+                valid_through=pr["merged_at"], github_api=github_api,
+            ))
+        merged_at, merged_errors = _parse_control_time(pr["merged_at"], "Formal migration merged_at")
+        witnessed_at, witnessed_errors = _parse_control_time(statement["witnessed_at"], "migration witness witnessed_at")
+        control_commit_at, commit_errors = _parse_control_time(signed_record["committed_at"], "migration witness signed commit time")
+        errors.extend(merged_errors + witnessed_errors + commit_errors)
+        if merged_at and witnessed_at and witnessed_at <= merged_at:
+            errors.append("migration witness must be created after the actual Formal PR merge")
+        if merged_at and live_contexts is not None:
+            for context in live_contexts:
+                completed_at, completed_errors = _parse_control_time(context.get("completed_at"), "required check completed_at")
+                errors.extend(completed_errors)
+                if completed_at and completed_at >= merged_at:
+                    errors.append(f"migration required context {context.get('context')} did not finish before the Formal merge")
+        if witnessed_at and control_commit_at and witnessed_at > control_commit_at:
+            errors.append("migration witness timestamp is later than its Owner-signed 1111 merge")
+        if statement["merge_method"] != "MERGE_COMMIT" or statement["branch_protection_verified"] is not True:
+            errors.append("migration witness does not attest a protected normal merge-commit transaction")
+        if live_protection is not None and (
+            live_protection.get("rules_sha256") != statement["branch_protection_rules_sha256"]
+            or live_protection.get("protected") is not True
+            or live_protection.get("admin_enforcement_enabled") is not True
+        ):
+            errors.append("migration witness branch-protection digest differs from the live protected-main readback")
+        if live_protection is not None and live_protection.get("required_review"):
+            if reviews is None or author_id is None:
+                errors.append("live branch rules require a human GitHub approval, but exact review history is unavailable")
+            else:
+                live_human_reviews, human_errors = select_successor_human_approvals(
+                    reviews, author_id=author_id, owner_id=owner_id,
+                    head_sha=statement["formal_candidate_head_sha"],
+                    valid_through=pr["merged_at"],
+                )
+                errors.extend(human_errors)
+                witness_human = statement.get("branch_required_github_reviews", [])
+                required_count = live_protection["required_approval_count"]
+                if len(live_human_reviews) < required_count:
+                    errors.append("live branch rules lack enough distinct non-author human approvals on the exact head")
+                if len(witness_human) < required_count or len(witness_human) != len(live_human_reviews):
+                    errors.append("migration witness does not bind the live branch-required GitHub approval")
+                live_by_review_id = {review["review_id"]: review for review in live_human_reviews}
+                seen_ids: set[int] = set()
+                for witness_row in witness_human:
+                    live_review = live_by_review_id.get(witness_row.get("review_id"))
+                    if (
+                        live_review is None or witness_row.get("review_id") in seen_ids
+                        or witness_row.get("reviewer_id") != live_review.get("actor_id")
+                        or witness_row.get("commit_sha") != live_review.get("commit_sha")
+                        or witness_row.get("body_sha256") != hashlib.sha256(live_review.get("body", "").encode("utf-8")).hexdigest()
+                    ):
+                        errors.append("migration witness human approval reference differs from exact live GitHub reviews")
+                    seen_ids.add(witness_row.get("review_id"))
+        elif statement.get("branch_required_github_reviews") is not None:
+            if reviews is None or author_id is None:
+                errors.append("optional GitHub review reference cannot be verified from live review history")
+            else:
+                optional_human_reviews, _ = select_successor_human_approvals(
+                    reviews, author_id=author_id, owner_id=owner_id,
+                    head_sha=statement["formal_candidate_head_sha"],
+                    valid_through=pr["merged_at"],
+                )
+                witness_human = statement["branch_required_github_reviews"]
+                optional_by_id = {review["review_id"]: review for review in optional_human_reviews}
+                if len(witness_human) != len(optional_human_reviews):
+                    errors.append("optional migration witness human review list differs from exact live GitHub reviews")
+                for witness_row in witness_human:
+                    live_review = optional_by_id.get(witness_row.get("review_id"))
+                    if (
+                        live_review is None
+                        or witness_row.get("reviewer_id") != live_review.get("actor_id")
+                        or witness_row.get("commit_sha") != live_review.get("commit_sha")
+                        or witness_row.get("body_sha256") != hashlib.sha256(live_review.get("body", "").encode("utf-8")).hexdigest()
+                    ):
+                        errors.append("optional migration witness human approval differs from exact live GitHub reviews")
+        return errors
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return [f"successor migration live verification failed closed: {error.__class__.__name__}: {error}"]
+
+
+def validate_successor_publication_witness_live(
+    statement: dict[str, Any],
+    *,
+    signed_record: dict[str, Any],
+    owner_id: int,
+    github_api: Callable[[str], dict[str, Any] | list[Any]],
+) -> list[str]:
+    """Verify a successor publication witness against its merged PR and final main SHA."""
+    errors: list[str] = []
+    try:
+        pr = github_api(f"repos/{PUBLIC_REPOSITORY}/pulls/{statement['pr_number']}")
+        if not isinstance(pr, dict):
+            return ["successor publication PR is unreadable"]
+        base, head = pr.get("base") or {}, pr.get("head") or {}
+        if (
+            pr.get("merged") is not True or pr.get("state") != "closed"
+            or base.get("ref") != "main" or base.get("sha") != statement["base_main_sha"]
+            or head.get("sha") != statement["candidate_head_sha"]
+            or pr.get("merge_commit_sha") != statement["actual_final_main_sha"]
+            or (pr.get("merged_by") or {}).get("id") != owner_id
+        ):
+            return ["publication witness does not bind the exact Owner-merged release PR"]
+        merge = _commit_from_api(PUBLIC_REPOSITORY, statement["actual_final_main_sha"], github_api, {})
+        parents = [item.get("sha") for item in merge.get("parents", []) if isinstance(item, dict)]
+        tree_sha = (merge.get("commit", {}).get("tree") or {}).get("sha")
+        if parents != statement["actual_final_main_parents"] or parents != [statement["base_main_sha"], statement["candidate_head_sha"]]:
+            errors.append("successor release final-main merge has wrong ordered parents")
+        if tree_sha != statement["actual_final_main_tree_sha"]:
+            errors.append("successor release final-main tree differs from the signed witness")
+        main = github_api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        ancestry = github_api(f"repos/{PUBLIC_REPOSITORY}/compare/{statement['actual_final_main_sha']}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            errors.append("published final main SHA is not ancestral to current Formal main")
+        contexts, context_errors = read_live_successor_required_contexts(statement["actual_final_main_sha"], github_api=github_api)
+        errors.extend(context_errors)
+        if contexts is not None:
+            errors.extend(_valid_successor_context_set(statement["required_postpublication_checks"], contexts, statement["actual_final_main_sha"]))
+        workflow_checks, workflow_errors = read_live_postpublication_checks(
+            statement["actual_final_main_sha"],
+            required_workflows=load_json(PROTOCOL_PATH)["postpublication"]["required_workflow_names"],
+            github_api=github_api,
+        )
+        errors.extend(workflow_errors)
+        if statement["remote_main_sha"] != statement["actual_final_main_sha"] or statement["fresh_clone_sha"] != statement["actual_final_main_sha"]:
+            errors.append("signed publication witness remote main and fresh clone do not equal the exact final main SHA")
+        if statement["projection_check"]["source_sha"] != statement["actual_final_main_sha"] or statement["projection_check"]["unexpected_changed_paths"]:
+            errors.append("successor publication projection check is stale or reports unexpected changed paths")
+        witness_time, witness_errors = _parse_control_time(statement["witnessed_at"], "publication witnessed_at")
+        merge_time, merge_errors = _parse_control_time(pr["merged_at"], "release PR merged_at")
+        commit_time, commit_errors = _parse_control_time(signed_record["committed_at"], "publication witness signed commit time")
+        errors.extend(witness_errors + merge_errors + commit_errors)
+        if merge_time and witness_time and witness_time <= merge_time:
+            errors.append("publication witness must be created after the release PR merge")
+        if witness_time and commit_time and witness_time > commit_time:
+            errors.append("publication witness timestamp is later than its Owner-signed 1111 merge")
+        if merge_time:
+            for context in statement["required_postpublication_checks"]:
+                completed_at, completed_errors = _parse_control_time(context.get("completed_at"), "postpublication check completed_at")
+                errors.extend(completed_errors)
+                if completed_at and completed_at <= merge_time:
+                    errors.append(f"postpublication required context {context.get('context')} did not finish after the Formal merge")
+        if not workflow_checks:
+            errors.append("successor publication witness lacks successful final-main postpublication workflows")
+        return errors
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return [f"successor publication live verification failed closed: {error.__class__.__name__}: {error}"]
 
 
 def read_authenticated_successor_registration(
@@ -784,7 +3140,9 @@ def read_live_transition_witness(
 
 
 def read_live_branch_protection(
-    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None
+    *,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    allow_required_human_review: bool = False,
 ) -> tuple[dict[str, Any] | None, list[str]]:
     """Read and enforce actual PR-only, required-check and no-bypass rules."""
     api = github_api or _gh_api_json
@@ -1030,7 +3388,7 @@ def read_live_branch_protection(
         errors: list[str] = []
         if not snapshot["pull_request_required"]:
             errors.append("GitHub does not require a pull request before main can be updated")
-        if approval_count != expected_policy["minimum_approving_reviews"]:
+        if not allow_required_human_review and approval_count != expected_policy["minimum_approving_reviews"]:
             errors.append("live approval count differs from the single-owner zero-approval policy")
         if code_owner_review_required or last_push_approval_required:
             errors.append("live review rules require an independent reviewer and cannot be satisfied by the single Owner")
@@ -1167,11 +3525,13 @@ def resolve_effective_protocol(
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
     allow_main_descendant: bool = False,
 ) -> tuple[str, list[str]]:
-    """Return R3 only after Owner, immutable 1111, live rules and final-SHA evidence agree.
+    """Resolve the transition profile from exact Owner, 1111 and main evidence.
 
-    Before activation, R2 remains current. Once a merge-bound activation claim
-    exists, failed or unavailable revalidation leaves R3 blocked and effective;
-    only the separate signed protected-PR restoration path can select R2 again.
+    This selector returns the legacy R2 profile when no independent R3
+    transition receipt is supplied. That fallback is not evidence that R2 is
+    the repository's current effective protocol. A merge-bound activation
+    claim keeps R3 effective during failed or unavailable revalidation; only
+    the separate signed protected-PR restoration path can select R2 again.
     """
     activation_claimed = (
         allow_main_descendant
@@ -1848,12 +4208,63 @@ def validate_suite_receipt(
     return _suite_receipt_errors(receipt, canonical_identity=canonical_identity, expected=expected, candidate_sha=candidate_sha)
 
 
+def _successor_transaction_record_schema() -> dict[str, Any]:
+    """Use the unchanged R3 evidence shape with successor-only auth/review fields."""
+    schema = copy.deepcopy(load_json(SCHEMA_PATH))
+    successor_schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    definitions = schema["$defs"]
+    definitions["successorTransactionAuthorizationRecord"] = successor_schema["$defs"]["finalTransactionAuthorizationRecord"]
+    definitions["successorAuthorizationEvidence"] = copy.deepcopy(
+        successor_schema["$defs"]["successorAuthorizationEvidence"]
+    )
+    definitions["successorAuthorizationEvidence"]["properties"]["statement"]["$ref"] = (
+        "#/$defs/successorTransactionAuthorizationRecord"
+    )
+    definitions["successorPullRequestReview"] = successor_schema["$defs"]["successorPullRequestReview"]
+    definitions["successorRequiredCheck"] = successor_schema["$defs"]["requiredCheck"]
+    definitions["requiredCheck"] = successor_schema["$defs"]["requiredCheck"]
+    for name in ("independentAiReviewReport", "aiReviewContext", "independentAiReviewProcess", "ownerReviewAuthorityBinding", "aiSourceReadback"):
+        definitions[name] = copy.deepcopy(successor_schema["$defs"][name])
+    transaction = definitions["transactionRecord"]
+    transaction["properties"]["owner_approval"] = {"$ref": "#/$defs/successorAuthorizationEvidence"}
+    transaction["required"].append("transaction_id")
+    transaction["properties"]["transaction_id"] = {"$ref": "#/$defs/safeId"}
+    transaction["required"].append("required_context_evidence")
+    transaction["properties"]["required_context_evidence"] = {
+        "type": "array", "minItems": 3, "items": {"$ref": "#/$defs/successorRequiredCheck"}
+    }
+    transaction["required"].append("independent_ai_review_report_sha256")
+    transaction["properties"]["independent_ai_review_report_sha256"] = {"$ref": "#/$defs/sha256"}
+    transaction["properties"]["pull_request_reviews"]["items"] = {
+        "$ref": "#/$defs/successorPullRequestReview"
+    }
+    identity = transaction["properties"]["task_identity"]
+    for field in (
+        "successor_registration_profile", "successor_registration_path", "successor_registration_id",
+        "successor_protocol_blob_sha", "successor_protocol_file_sha256",
+    ):
+        identity["required"].append(field)
+    identity["properties"].update({
+        "successor_registration_profile": {"const": SUCCESSOR_PROTOCOL_ID},
+        "successor_registration_path": {
+            "type": "string",
+            "pattern": "^instructions/goal-mode/r3-successors/registrations/[A-Za-z0-9][A-Za-z0-9._-]{7,127}\\.json$",
+        },
+        "successor_registration_id": {"$ref": "#/$defs/safeId"},
+        "successor_protocol_blob_sha": {"$ref": "#/$defs/sha1"},
+        "successor_protocol_file_sha256": {"$ref": "#/$defs/sha256"},
+    })
+    return schema
+
+
 def validate_transaction_record(
     record: dict[str, Any],
     *,
     phase: str,
     expected: dict[str, Any],
     synthetic: bool = False,
+    successor_mode: bool = False,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
 ) -> list[str]:
     """Validate a future R3 transaction against live observations.
 
@@ -1863,7 +4274,7 @@ def validate_transaction_record(
     fixtures; the CLI never enables it.
     """
     errors: list[str] = []
-    schema = load_json(SCHEMA_PATH)
+    schema = _successor_transaction_record_schema() if successor_mode else load_json(SCHEMA_PATH)
     errors.extend(_schema_errors(record, {"$ref": "#/$defs/transactionRecord", "$defs": schema["$defs"]}))
     if errors:
         return errors
@@ -1878,6 +4289,24 @@ def validate_transaction_record(
         if identity_errors:
             return errors
 
+    if successor_mode and canonical_identity.get("successor_registration_profile") != SUCCESSOR_PROTOCOL_ID:
+        errors.append("successor transaction validation requires a canonical task bound to the effective successor profile")
+    if not successor_mode and canonical_identity.get("successor_registration_profile") == SUCCESSOR_PROTOCOL_ID:
+        errors.append("successor-profile task cannot use the legacy fixed-bootstrap transaction validator")
+    successor_ledger = (
+        expected.get("successor_control_ledger") if synthetic
+        else canonical_identity.get("successor_control_ledger")
+    ) if successor_mode else None
+    if successor_mode:
+        if not isinstance(successor_ledger, dict):
+            errors.append("successor transaction lacks the authenticated append-only 1111 control ledger")
+        else:
+            protocol_digest = hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
+            if len([row for row in successor_ledger.get("migrations", []) if row["statement"].get("protocol_sha256") == protocol_digest]) != 1:
+                errors.append("successor transaction protocol is not uniquely effective through a verified migration witness")
+    if errors:
+        return errors
+
     identity = record["task_identity"]
     for key in (
         "task_id", "formal_ordinal", "task_branch", "current_task_source_sha256",
@@ -1887,6 +4316,19 @@ def validate_transaction_record(
     ):
         if identity[key] != canonical_identity.get(key):
             errors.append(f"task identity field {key} differs from the exact authorized current task source")
+    if successor_mode:
+        for key in (
+            "successor_registration_profile", "successor_registration_path", "successor_registration_id",
+            "successor_protocol_blob_sha", "successor_protocol_file_sha256",
+        ):
+            if identity[key] != canonical_identity.get(key):
+                errors.append(f"task identity field {key} differs from the exact successor registration")
+        if identity["successor_protocol_blob_sha"] != git_blob_sha(SUCCESSOR_PROTOCOL_PATH):
+            errors.append("task contract does not bind the exact successor protocol blob")
+        if identity["successor_protocol_file_sha256"] != hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest():
+            errors.append("task contract does not bind the exact successor protocol bytes")
+        if record["transaction_id"] != record["owner_approval"]["statement"]["transaction_id"]:
+            errors.append("transaction ID differs from its exact Owner authorization record")
 
     pr = record["pull_request"]
     refs = record["refs"]
@@ -1934,7 +4376,7 @@ def validate_transaction_record(
             errors.append("main branch protection is unknown, absent or targets another branch")
         if protection["pull_request_required"] is not True:
             errors.append("GitHub does not enforce pull requests before updating main")
-        if protection["required_approval_count"] != 0:
+        if protection["required_approval_count"] != 0 and not successor_mode:
             errors.append("GitHub approval count violates the single-owner zero-approval policy")
         if protection["code_owner_review_required"] or protection["last_push_approval_required"]:
             errors.append("GitHub requires an independent reviewer, which the single Owner cannot provide")
@@ -2004,19 +4446,161 @@ def validate_transaction_record(
         errors.append("independent canonical-suite revalidation is not bound to one successful exact-head PR validator check")
 
     approval = record["owner_approval"]
-    if approval["owner_actor_id"] != expected.get("repository_owner_id"):
-        errors.append("approval actor is not the observed repository Owner")
-    if approval["task_id"] != identity["task_id"] or approval["formal_ordinal"] != identity["formal_ordinal"]:
-        errors.append("Owner transition authorization does not bind the exact registered task ID and ordinal")
-    if approval["successor_registration_commit_sha"] != identity["successor_registration_commit_sha"] or approval["successor_registration_file_sha256"] != identity["successor_registration_file_sha256"]:
-        errors.append("Owner transition authorization does not bind the exact signed successor-registration record")
-    if approval["approved_pr_number"] != pr["number"] or approval["approved_head_sha"] != pr["head_sha"] or approval["approved_base_sha"] != refs["base_main_sha"]:
-        errors.append("Owner transition authorization does not bind the exact PR, head and base")
-    if approval["r3_protocol_blob_sha"] != expected.get("r3_protocol_blob_sha", git_blob_sha()):
-        errors.append("Owner transition authorization does not bind the exact R3 protocol version")
-    if approval["authorization_commit_sha"] != expected.get("owner_authorization_commit_sha") or approval["authorization_file_sha256"] != expected.get("owner_authorization_file_sha256"):
-        errors.append("Owner transition authorization differs from the immutable 1111 readback")
-    if protection["required_review"]:
+    if successor_mode:
+        owner_id = expected.get("repository_owner_id", 49422864)
+        if owner_id != 49422864:
+            errors.append("successor transaction Owner identity differs from the verified root-authority Owner")
+        if synthetic:
+            live_pr_meta = None
+            live_reviews = record["pull_request_reviews"]
+            authorized_reviewers = expected.get("authorized_reviewer_ids")
+            live_contexts = expected.get("live_required_contexts")
+            live_merge_time = expected.get("pr_merged_at") if phase == "postpublication" else None
+            live_pull = {}
+            live_author_id = pr["author_id"]
+            preparation_valid_through = expected.get("pr_created_at")
+        else:
+            live_pr_meta, live_reviews, pr_review_errors = read_live_successor_pr_reviews(
+                pr["number"], github_api=github_api
+            )
+            errors.extend(pr_review_errors)
+            if live_pr_meta is None or live_reviews is None:
+                live_reviews = []
+                live_pull = {}
+                live_author_id = pr["author_id"]
+                preparation_valid_through = expected.get("pr_created_at")
+            else:
+                live_pull = live_pr_meta["pull_request"]
+                live_author_id = (live_pull.get("user") or {}).get("id")
+                preparation_valid_through = live_pull.get("created_at")
+                if (
+                    live_pull.get("number") != pr["number"]
+                    or (live_pull.get("base") or {}).get("ref") != "main"
+                    or (live_pull.get("base") or {}).get("sha") != refs["base_main_sha"]
+                    or (live_pull.get("head") or {}).get("ref") != pr["head_branch"]
+                    or (live_pull.get("head") or {}).get("sha") != pr["head_sha"]
+                    or live_pull.get("html_url") != pr["url"]
+                    or live_author_id != pr["author_id"]
+                    or live_pull.get("draft") is not False
+                ):
+                    errors.append("successor transaction PR metadata differs from exact live GitHub refs, author or non-draft state")
+                if phase == "prepublication":
+                    if live_pull.get("state") != "open" or live_pull.get("merged") is True:
+                        errors.append("successor prepublication validation requires the exact PR to remain open and unmerged")
+                else:
+                    if (
+                        live_pull.get("state") != "closed" or live_pull.get("merged") is not True
+                        or (live_pull.get("merged_by") or {}).get("id") != owner_id
+                        or live_pull.get("merge_commit_sha") != record["publication"]["actual_final_main_sha"]
+                    ):
+                        errors.append("successor postpublication validation requires the exact Owner-merged PR")
+                if live_reviews != record["pull_request_reviews"]:
+                    errors.append("recorded successor PR reviews differ from the exact live GitHub review history")
+                authorized_reviewers = None
+                live_merge_time = live_pull.get("merged_at") if phase == "postpublication" else None
+            live_contexts, live_context_errors = read_live_successor_required_contexts(
+                pr["head_sha"], github_api=github_api
+            )
+            errors.extend(live_context_errors)
+            if phase == "prepublication":
+                live_branch_rules, branch_errors = read_live_branch_protection(
+                    github_api=github_api, allow_required_human_review=True,
+                )
+                errors.extend(branch_errors)
+                if live_branch_rules is not None:
+                    stable_live = {key: value for key, value in live_branch_rules.items() if key not in {"observed_at", "ruleset_count"}}
+                    stable_recorded = {key: value for key, value in protection.items() if key not in {"observed_at", "ruleset_count"}}
+                    if stable_recorded != stable_live:
+                        errors.append("successor candidate branch-protection record differs from the live GitHub rules")
+
+        if live_contexts is None:
+            errors.append("successor transaction has no live exact-head required-context readback")
+        else:
+            errors.extend(_valid_successor_context_set(
+                record["required_context_evidence"], live_contexts, pr["head_sha"]
+            ))
+        cutoff = live_merge_time or expected.get("observed_at") or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        if protection["required_review"]:
+            _, owner_review, review_errors = validate_successor_review_gate(
+                live_reviews, author_id=pr["author_id"], owner_id=owner_id, head_sha=pr["head_sha"],
+                authorized_reviewer_ids=authorized_reviewers, valid_through=cutoff,
+                require_human_approval=True,
+                required_approval_count=protection["required_approval_count"],
+            )
+            errors.extend(review_errors)
+            if owner_review is not None and owner_review["actor_id"] != owner_id:
+                errors.append("Owner exact-head review is not from the root-authority Owner")
+        protocol_digest = hashlib.sha256(SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest()
+        if synthetic:
+            diff_sha256 = expected.get("formal_pr_diff_sha256")
+            changed_files = expected.get("formal_pr_changed_files")
+        else:
+            diff_sha256, changed_files, diff_errors = read_live_successor_pr_diff_inventory(
+                pr["number"], base_sha=refs["base_main_sha"], head_sha=pr["head_sha"], github_api=github_api
+            )
+            errors.extend(diff_errors)
+        if synthetic:
+            raw_diff_sha256 = expected.get("formal_pr_raw_diff_sha256") or ""
+        else:
+            raw_diff_sha256, raw_diff_errors = read_live_successor_pr_raw_diff_sha256(
+                pr["number"], base_sha=refs["base_main_sha"], head_sha=pr["head_sha"],
+                github_api=github_api,
+            )
+            errors.extend(raw_diff_errors)
+        owner_review_records = successor_ledger.get("owner_reviews", [])
+        matching_owner_records = [
+            row for row in owner_review_records
+            if row["statement"].get("formal_pr_number") == pr["number"]
+            and row["statement"].get("pr_author_id") == live_author_id
+            and row["statement"].get("formal_base_sha") == refs["base_main_sha"]
+            and row["statement"].get("formal_candidate_head_sha") == pr["head_sha"]
+            and row["statement"].get("formal_pr_diff_sha256") == diff_sha256
+            and row["statement"].get("protocol_sha256") == protocol_digest
+        ]
+        if len(matching_owner_records) != 1:
+            errors.append("successor PR lacks exactly one Owner-signed exact-head review record for its live diff")
+        else:
+            errors.extend(validate_successor_owner_exact_head_review_record(
+                matching_owner_records[0], owner_id=owner_id,
+                task_id=identity["task_id"], formal_ordinal=identity["formal_ordinal"],
+                registration_id=identity["successor_registration_id"],
+                pr_number=pr["number"], author_id=live_author_id,
+                base_sha=refs["base_main_sha"], head_sha=pr["head_sha"],
+                diff_sha256=diff_sha256, raw_diff_sha256=raw_diff_sha256,
+                protocol_sha256=protocol_digest,
+                branch_protection_rules_sha256=protection["rules_sha256"],
+                required_approval_count=protection["required_approval_count"],
+                changed_files=changed_files, required_contexts=live_contexts,
+                valid_through=cutoff, github_api=github_api,
+            ))
+            report_digest = matching_owner_records[0]["statement"]["independent_ai_review_report"]["report_sha256"]
+            if record["independent_ai_review_report_sha256"] != report_digest:
+                errors.append("successor transaction does not bind the signed Owner review AI report digest")
+        registration_id = identity["successor_registration_id"]
+        errors.extend(validate_successor_transaction_authorization_statement(
+            approval, ledger=successor_ledger,
+            task_id=identity["task_id"], formal_ordinal=identity["formal_ordinal"],
+            registration_id=registration_id, transaction_id=record["transaction_id"],
+            pr_number=pr["number"], candidate_head_sha=pr["head_sha"], base_main_sha=refs["base_main_sha"],
+            protocol_blob_sha=identity["successor_protocol_blob_sha"],
+            protocol_file_sha256=identity["successor_protocol_file_sha256"],
+            preparation_valid_through=preparation_valid_through,
+            valid_through=cutoff,
+        ))
+    else:
+        if approval["owner_actor_id"] != expected.get("repository_owner_id"):
+            errors.append("approval actor is not the observed repository Owner")
+        if approval["task_id"] != identity["task_id"] or approval["formal_ordinal"] != identity["formal_ordinal"]:
+            errors.append("Owner transition authorization does not bind the exact registered task ID and ordinal")
+        if approval["successor_registration_commit_sha"] != identity["successor_registration_commit_sha"] or approval["successor_registration_file_sha256"] != identity["successor_registration_file_sha256"]:
+            errors.append("Owner transition authorization does not bind the exact signed successor-registration record")
+        if approval["approved_pr_number"] != pr["number"] or approval["approved_head_sha"] != pr["head_sha"] or approval["approved_base_sha"] != refs["base_main_sha"]:
+            errors.append("Owner transition authorization does not bind the exact PR, head and base")
+        if approval["r3_protocol_blob_sha"] != expected.get("r3_protocol_blob_sha", git_blob_sha()):
+            errors.append("Owner transition authorization does not bind the exact R3 protocol version")
+        if approval["authorization_commit_sha"] != expected.get("owner_authorization_commit_sha") or approval["authorization_file_sha256"] != expected.get("owner_authorization_file_sha256"):
+            errors.append("Owner transition authorization differs from the immutable 1111 readback")
+    if protection["required_review"] and not successor_mode:
         author_id = pr.get("author_id")
         valid_review = any(
             review["state"] == "APPROVED" and review["actor_id"] != author_id and review["commit_sha"] == pr["head_sha"]
@@ -2027,6 +4611,11 @@ def validate_transaction_record(
     if phase == "prepublication":
         if pr["state"] != "OPEN" or record["publication"]["status"] != "NOT_MERGED":
             errors.append("prepublication evidence requires an open PR and NOT_MERGED state")
+        if successor_mode and any(
+            row["statement"].get("transaction_id") == record["transaction_id"]
+            for row in successor_ledger.get("publications", [])
+        ):
+            errors.append("successor transaction already has an immutable publication witness and cannot be replayed")
     else:
         if pr["state"] != "MERGED":
             errors.append("postpublication validation requires the PR to be actually merged")
@@ -2061,12 +4650,53 @@ def validate_transaction_record(
             errors.append("final-SHA projection check is missing, stale or reports unexpected generated paths")
         if projection != expected.get("projection_check"):
             errors.append("projection check differs from the exact final-main validation receipt")
+        if successor_mode:
+            witnesses = [
+                row for row in successor_ledger.get("publications", [])
+                if row["statement"].get("transaction_id") == record["transaction_id"]
+            ]
+            if len(witnesses) != 1:
+                errors.append("postpublication successor transaction lacks exactly one signed append-only 1111 publication witness")
+            else:
+                witness_row = witnesses[0]
+                witness = witness_row["statement"]
+                auth_statement = approval["statement"]
+                expected_witness_fields = {
+                    "status": "PUBLISHED_AND_VERIFIED",
+                    "transaction_id": record["transaction_id"],
+                    "preparation_id": auth_statement["preparation_id"],
+                    "registration_id": identity["successor_registration_id"],
+                    "authorization_id": auth_statement["authorization_id"],
+                    "task_id": identity["task_id"], "formal_ordinal": identity["formal_ordinal"],
+                    "pr_number": pr["number"], "candidate_head_sha": pr["head_sha"],
+                    "base_main_sha": refs["base_main_sha"],
+                    "protocol_blob_sha": identity["successor_protocol_blob_sha"],
+                    "protocol_file_sha256": identity["successor_protocol_file_sha256"],
+                    "actual_final_main_sha": final_sha,
+                    "actual_final_main_tree_sha": publication["actual_final_main_tree_sha"],
+                    "actual_final_main_parents": publication["actual_final_main_parents"],
+                    "remote_main_sha": publication["observed_remote_main_sha"],
+                    "fresh_clone_sha": publication["fresh_main_checkout_sha"],
+                    "projection_check": projection,
+                }
+                for key, value in expected_witness_fields.items():
+                    if witness.get(key) != value:
+                        errors.append(f"signed successor publication witness does not bind exact transaction field {key}")
+                if witness["prepublication_record_sha256"] != expected.get("prepublication_record_sha256"):
+                    errors.append("publication witness does not bind the exact prepublication transaction record digest")
     return errors
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--check-successor", action="store_true")
+    parser.add_argument("--verify-amendment-preparation", action="store_true")
+    parser.add_argument("--verify-owner-review-authority", action="store_true")
+    parser.add_argument("--preparation-id")
+    parser.add_argument("--preparation-action", choices=["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"])
+    parser.add_argument("--preparation-candidate-seed-sha256")
+    parser.add_argument("--preparation-at")
     parser.add_argument("--transition-receipt", type=Path)
     parser.add_argument("--observations", type=Path)
     parser.add_argument("--repository-owner-id", type=int)
@@ -2075,6 +4705,7 @@ def main() -> int:
     parser.add_argument("--transaction-record", type=Path)
     parser.add_argument("--expected-context", type=Path)
     parser.add_argument("--phase", choices=["prepublication", "postpublication"])
+    parser.add_argument("--successor-profile", action="store_true")
     args = parser.parse_args()
     if not args.check:
         parser.error("--check is required")
@@ -2088,13 +4719,93 @@ def main() -> int:
         parser.error("--transaction-record requires --expected-context and --phase")
     if args.phase and not args.transaction_record:
         parser.error("--phase requires --transaction-record")
+    if args.successor_profile and not args.transaction_record:
+        parser.error("--successor-profile requires --transaction-record")
+    if args.verify_owner_review_authority and any((args.transaction_record, args.preparation_id, args.verify_amendment_preparation)):
+        parser.error("--verify-owner-review-authority is a standalone live-readback action")
+    if args.check_successor and not SUCCESSOR_PROTOCOL_PATH.is_file():
+        parser.error("--check-successor requires the versioned successor protocol file")
 
     contract_errors = validate_contract()
+    if args.check_successor or args.successor_profile:
+        contract_errors.extend(validate_successor_protocol_contract())
     if contract_errors:
         print("RELEASE_TRANSACTION_PROTOCOL_R3_INVALID", file=sys.stderr)
         for error in contract_errors:
             print(f"- {error}", file=sys.stderr)
         return 1
+
+    if args.verify_amendment_preparation:
+        authority, authority_errors = read_authenticated_task22_amendment_preparation_authority()
+        if authority_errors or authority is None:
+            print("TASK22_AMENDMENT_PREPARATION_AUTHORITY_INVALID", file=sys.stderr)
+            for error in authority_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        checkout, checkout_errors = validate_task22_local_preparation_checkout(authority)
+        if checkout_errors or checkout is None:
+            print("TASK22_AMENDMENT_DRAFT_CHECKOUT_INVALID", file=sys.stderr)
+            for error in checkout_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        print(
+            "TASK22_AMENDMENT_DRAFT_PREPARATION_AUTHORIZED "
+            f"task={authority['task_id']} branch={checkout['branch']} head={checkout['head_sha']} base={checkout['base_main_sha']} "
+            "scope=prepare/push/draft/collect-checks-only"
+        )
+        return 0
+
+    if args.verify_owner_review_authority:
+        authority, authority_errors = read_authenticated_owner_ai_review_authority()
+        if authority_errors or authority is None:
+            print("OWNER_INDEPENDENT_AI_REVIEW_AUTHORITY_INVALID", file=sys.stderr)
+            for error in authority_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        print(
+            "OWNER_INDEPENDENT_AI_REVIEW_AUTHORITY_VERIFIED "
+            f"merge={authority['merge_commit_sha']} file_blob={authority['file_blob_sha']} "
+            f"main={authority['main_sha']}"
+        )
+        return 0
+
+    preparation_args = (args.preparation_id, args.preparation_action, args.preparation_candidate_seed_sha256)
+    if any(preparation_args):
+        if not all(preparation_args):
+            parser.error("PREPARATION_ONLY validation requires --preparation-id, --preparation-action and --preparation-candidate-seed-sha256")
+        if any((args.transaction_record, args.phase, args.successor_profile, args.verify_amendment_preparation)):
+            parser.error("PREPARATION_ONLY validation is a separate action and cannot be combined with a transaction or amendment-prep check")
+        identity, identity_errors = authoritative_task_context()
+        if identity_errors:
+            print("R3_SUCCESSOR_PREPARATION_IDENTITY_INVALID", file=sys.stderr)
+            for error in identity_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        ledger = identity.get("successor_control_ledger")
+        if not isinstance(ledger, dict):
+            print("R3_SUCCESSOR_PREPARATION_LEDGER_MISSING", file=sys.stderr)
+            return 1
+        authorized_at = args.preparation_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        errors = validate_successor_preparation_authorization_statement(
+            args.preparation_id, ledger=ledger, task_id=identity["task_id"],
+            formal_ordinal=identity["formal_ordinal"], registration_id=identity["successor_registration_id"],
+            work_branch=identity["task_branch"], base_main_sha=identity["formal_base_main_sha"],
+            protocol_blob_sha=identity["successor_protocol_blob_sha"],
+            protocol_file_sha256=identity["successor_protocol_file_sha256"],
+            candidate_seed_sha256=args.preparation_candidate_seed_sha256,
+            action=args.preparation_action, valid_through=authorized_at,
+        )
+        if errors:
+            print("R3_SUCCESSOR_PREPARATION_AUTHORIZATION_INVALID", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        print(
+            "R3_SUCCESSOR_PREPARATION_ONLY_OK "
+            f"preparation_id={args.preparation_id} action={args.preparation_action} "
+            f"task={identity['task_id']} branch={identity['task_branch']}"
+        )
+        return 0
 
     current = "R2"
     activation_errors = ["no independent R3 transition receipt was supplied"]
@@ -2109,13 +4820,28 @@ def main() -> int:
             recovery_observations=load_json(args.recovery_observations) if args.recovery_observations else None,
         )
     if args.transaction_record:
+        if args.successor_profile:
+            errors = validate_transaction_record(
+                load_json(args.transaction_record), phase=args.phase,
+                expected=load_json(args.expected_context), successor_mode=True,
+            )
+            if errors:
+                print("RELEASE_TRANSACTION_R3_SUCCESSOR_RECORD_INVALID", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                return 1
+            if args.phase == "prepublication":
+                print("RELEASE_TRANSACTION_R3_SUCCESSOR_PREFLIGHT_OK")
+            else:
+                print("RELEASE_TRANSACTION_R3_SUCCESSOR_RECORD_OK phase=postpublication")
+            return 0
         if current == "R3" and activation_errors:
             print("R3_TRANSACTION_REJECTED: R3 remains effective but its live governance evidence is blocked", file=sys.stderr)
             for error in activation_errors:
                 print(f"- {error}", file=sys.stderr)
             return 2
         if args.phase == "postpublication" and current != "R3":
-            print("R3_TRANSACTION_REJECTED: R2 remains the effective policy", file=sys.stderr)
+            print("R3_TRANSACTION_REJECTED: this invocation has no verified R3 transition evidence; the R2 compatibility selection does not establish the repository's effective policy", file=sys.stderr)
             for error in activation_errors:
                 print(f"- {error}", file=sys.stderr)
             return 2
@@ -2143,9 +4869,11 @@ def main() -> int:
             return 2
         print("RELEASE_TRANSACTION_PROTOCOL_R3_CURRENT")
     else:
-        print(f"RELEASE_TRANSACTION_PROTOCOL_R3_CANDIDATE_OK current=R2 path={relative(PROTOCOL_PATH)}")
+        print(f"RELEASE_TRANSACTION_PROTOCOL_R3_COMPATIBILITY_CHECK_OK profile=R2 path={relative(PROTOCOL_PATH)}")
         for error in activation_errors:
             print(f"- {error}")
+    if args.check_successor:
+        print("RELEASE_TRANSACTION_PROTOCOL_R3_SUCCESSOR_CANDIDATE_NOT_EFFECTIVE")
     return 0
 
 

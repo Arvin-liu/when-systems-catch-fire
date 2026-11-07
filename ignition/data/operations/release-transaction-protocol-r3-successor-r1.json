@@ -1,0 +1,273 @@
+{
+  "schema_version": "release-transaction-protocol-r3-successor-r1",
+  "contract_id": "RELEASE_TRANSACTION_PROTOCOL_R3_SUCCESSOR_R1",
+  "status": "CANDIDATE_NOT_EFFECTIVE",
+  "supersedes": "R3 fixed-path successor authorization and registration limits only",
+  "inherits_from": {
+    "contract_id": "RELEASE_TRANSACTION_PROTOCOL_R3",
+    "bootstrap_protocol_blob_sha": "1fd53f8023ab96d694e71c6ed28f81e30a32ca6c",
+    "legacy_bootstrap_authorization_path": "instructions/goal-mode/IGNITION-2026-10-24-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R1.json",
+    "legacy_successor_registration_path": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json",
+    "legacy_publication_witness_path": "reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json",
+    "required_status_check_contexts": [
+      {"context": "release-transaction-protocol-validation", "app_id": 15368},
+      {"context": "foundation-validation", "app_id": 15368},
+      {"context": "repository-path-accounting-preflight", "app_id": 15368}
+    ],
+    "merge_method": "MERGE_COMMIT",
+    "force_push_allowed": false,
+    "bypass_allowed": false
+  },
+  "root_authority": {
+    "source": "DIRECT_OWNER_FOUNDING_GOVERNANCE_ACT_OUTSIDE_R3",
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "pull_request_number": 163,
+    "pull_request_url": "https://github.com/Arvin-liu/1111/pull/163",
+    "owner_actor_id": 49422864,
+    "base_sha": "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d",
+    "candidate_head_sha": "9742a6c229bfbc9d403124e8f78b7613ea05b2c8",
+    "merge_commit_sha": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6",
+    "merge_tree_sha": "1eac0c48bae58e7df78f764cff516ec2436e342b",
+    "ordered_merge_parents": [
+      "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d",
+      "9742a6c229bfbc9d403124e8f78b7613ea05b2c8"
+    ],
+    "require_owner_manual_merge": true,
+    "require_github_signature_verified_valid": true,
+    "require_exact_current_main_ancestry": true,
+    "require_pr_changed_paths_exact": true,
+    "files": [
+      {
+        "path": "instructions/goal-mode/IGNITION-2026-11-04-OWNER-ROOT-GOVERNANCE-AUTHORITY-R0.json",
+        "git_blob_sha": "dc63d9a94c1edb9f633a15918def762c17eafe1d",
+        "sha256": "995b12e2c86d9af6788c92b6a04780dbb513af4b92aefe2bf194838549c751bc"
+      },
+      {
+        "path": "instructions/IGNITION-2026-11-04-R3-SUCCESSOR-PROTOCOL-AMENDMENT-INSTRUCTION-R0.md",
+        "git_blob_sha": "cdf9f4783eae4f509d2a44f4bcacbaf4eb97a687",
+        "sha256": "e6ae8406ddf68904e4d85f1aff3f823686e0e0a6b7a4f428e8eaca19e887dea9"
+      }
+    ],
+    "activation_rule": "This exact Owner-verified merge authorizes preparation of this one Formal amendment candidate; it does not authorize a Formal merge, release, V1 completion, or any retroactive cure."
+  },
+  "amendment_preparation_authority": {
+    "purpose": "Non-circular Task22 bootstrap for this one governance amendment; it is separate from the not-yet-effective successor PREPARATION_ONLY mechanism.",
+    "root_authority_merge_commit_sha": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6",
+    "identity_assignment_repository": "Arvin-liu/1111",
+    "identity_assignment_pull_request_number": 165,
+    "identity_assignment_base_sha": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6",
+    "identity_assignment_head_sha": "17ed13c274630269062e84834d52b49f34236931",
+    "identity_assignment_merge_commit_sha": "5449650811882f0c107e58680ee43d92577f7288",
+    "identity_assignment_file": {
+      "path": "instructions/goal-mode/IGNITION-2026-11-05-TASK22-OWNER-IDENTITY-ASSIGNMENT-R0.json",
+      "git_blob_sha": "146df919b91ddf2bf189a106441abee80486056d",
+      "sha256": "f4300d22378458b1ed36ccb168cbe67be71c8056706005af331e3bd93c6ccc05"
+    },
+    "task_id": "IGNITION-20261105-022",
+    "formal_ordinal": 22,
+    "work_branch": "codex/r3-successor-protocol-amendment-20261105-022",
+    "receipt_branch": "relay/receipts/IGNITION-20261105-022-r3-successor-protocol-amendment",
+    "permitted": ["PREPARE_CANDIDATE", "PUSH_TASK_BRANCH", "CREATE_DRAFT_PR", "COLLECT_REQUIRED_CHECKS"],
+    "prohibited": ["READY", "MERGE", "PUBLISH", "CHANGE_BRANCH_PROTECTION", "ACTIVATE_SUCCESSOR_PROTOCOL"],
+    "effectiveness": "Requires live Owner-verified merge, exact blob and ancestry readback for #165 and #166 in addition to #163. This one-time bootstrap does not rely on the successor candidate to authorize itself."
+  },
+  "owner_independent_ai_review_authority": {
+    "source": "OWNER_VERIFIED_GITHUB_MERGE",
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "pull_request_number": 166,
+    "pull_request_url": "https://github.com/Arvin-liu/1111/pull/166",
+    "owner_actor_id": 49422864,
+    "base_sha": "5449650811882f0c107e58680ee43d92577f7288",
+    "candidate_head_sha": "9f6433041cf8d44d353d1ebcc32a68517a74552b",
+    "merge_commit_sha": "064c0112ba7a8672b77a507f8763e79b6914cb0c",
+    "merge_tree_sha": "b027b3ff7afa0786f22ae79adcd65abd16d0bdf8",
+    "ordered_merge_parents": ["5449650811882f0c107e58680ee43d92577f7288", "9f6433041cf8d44d353d1ebcc32a68517a74552b"],
+    "require_owner_manual_merge": true,
+    "require_github_signature_verified_valid": true,
+    "require_exact_current_main_ancestry": true,
+    "require_pr_changed_paths_exact": true,
+    "files": [
+      {
+        "path": "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json",
+        "git_blob_sha": "de54df684593a98c33c14847465eb1a7a896a919",
+        "sha256": "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"
+      }
+    ],
+    "activation_rule": "The signed Owner clarification is effective only after verified merge and exact file, signature, and current-main ancestry readback; it permits substantive independent AI review with truthful identity limitations and does not authorize merging PR #268."
+  },
+  "historical_adjudication": {
+    "repository": "Arvin-liu/1111",
+    "pull_request_number": 162,
+    "merge_commit_sha": "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d",
+    "required_status": "NOT_COMPLIANT",
+    "separate_r3_witness_status": "BLOCKED_WITH_EVIDENCE",
+    "immutable_paths": [
+      {"path": "reports/operations/IGNITION-2026-11-04-TASK21-PR267-POSTMERGE-INDEPENDENT-AUDIT-R0.md", "git_blob_sha": "d8ca4bd6a3d40af88655b3c8e13917810ff99998"},
+      {"path": "reports/operations/IGNITION-2026-11-04-TASK21-NEW-MAIN-R3-WITNESS-BLOCKER-R0.md", "git_blob_sha": "d335fb700e6ce50fcb75195fe09d8919b7d833d8"},
+      {"path": "reports/operations/IGNITION-2026-11-04-TASK21-OWNER-FINAL-ADJUDICATION-CANDIDATE-R0.md", "git_blob_sha": "3744b481d6a2688c15022bbd9dbee0c004a979e9"}
+    ],
+    "later_records_may_not_upgrade_or_rewrite_it": true
+  },
+  "activation": {
+    "candidate_is_not_effective": true,
+    "required_migration_witness": "reports/operations/r3-successors/migrations/<successor_protocol_sha256>.json",
+    "migration_witness_repository": "Arvin-liu/1111",
+    "migration_witness_branch": "main",
+    "effective_only_after_formal_merge_and_owner_verified_migration_witness": true,
+    "witness_must_bind_formal_pr_head_base_merge_tree_ordered_parents_and_required_checks": true,
+    "witness_must_bind_independent_non_author_review_and_owner_signed_exact_head_review_record": true,
+    "witness_must_be_signed_and_ancestral_to_1111_main": true,
+    "no_retroactive_activation": true
+  },
+  "successor_registration": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path_pattern": "instructions/goal-mode/r3-successors/registrations/<registration_id>.json",
+    "supersession_path_pattern": "instructions/goal-mode/r3-successors/supersessions/<supersession_id>.json",
+    "append_only": true,
+    "owner_verified_pr_merge_required": true,
+    "required_bindings": [
+      "registration_id", "task_id", "formal_ordinal", "transaction_protocol_id",
+      "protocol_blob_sha", "protocol_file_sha256", "work_branch", "receipt_branch",
+      "formal_base_main_sha", "predecessor_task_id", "predecessor_ordinal",
+      "conflict_inventory", "registration_nonce", "scope", "registered_at", "owner_actor_id"
+    ],
+    "uniqueness": ["registration_id", "task_id", "formal_ordinal", "registration_nonce", "work_branch", "receipt_branch"],
+    "task20_task21_reuse": "FORBIDDEN",
+    "ordinal_inference": "FORBIDDEN",
+    "supersession": "A separate immutable supersession record may retire a registration; it never frees its task ID or ordinal for reuse."
+  },
+  "transaction_authorization": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path_pattern": "instructions/goal-mode/r3-successors/authorizations/<record_id>.json",
+    "append_only": true,
+    "one_owner_verified_pr_merge_per_record": true,
+    "required_bindings": [
+      "authorization_id", "preparation_id", "task_id", "formal_ordinal", "registration_id", "transaction_id",
+      "pr_number", "candidate_head_sha", "base_main_sha", "protocol_blob_sha",
+      "protocol_file_sha256", "authorization_nonce", "scope", "approved_at",
+      "expires_at", "owner_actor_id"
+    ],
+    "record_type": "FINAL_TRANSACTION_AUTHORIZATION",
+    "scope_constant": "FINAL_TRANSACTION",
+    "expiry_required": true,
+    "preparation_id_required": true,
+    "exact_pr_and_head_required": true,
+    "revocation_path_pattern": "instructions/goal-mode/r3-successors/revocations/<revocation_id>.json",
+    "revocations_are_append_only": true,
+    "any_matching_revocation_blocks_transaction": true,
+    "new_head_or_base_requires_new_authorization": true,
+    "nonce_uniqueness_across_all_record_types": true
+  },
+  "preparation_authorization": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path_pattern": "instructions/goal-mode/r3-successors/authorizations/<preparation_id>.json",
+    "append_only": true,
+    "one_owner_verified_pr_merge_per_record": true,
+    "record_type": "PREPARATION_AUTHORIZATION",
+    "scope_constant": "PREPARATION_ONLY",
+    "required_bindings": [
+      "preparation_id", "task_id", "formal_ordinal", "registration_id", "work_branch",
+      "base_main_sha", "protocol_blob_sha", "protocol_file_sha256", "candidate_seed_sha256",
+      "preparation_nonce", "approved_at", "expires_at", "owner_actor_id"
+    ],
+    "allowed_actions": ["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"],
+    "forbidden_actions": ["MARK_READY", "MERGE", "PUBLISH", "CHANGE_BRANCH_PROTECTION"],
+    "pr_number_required_before_preparation": false,
+    "candidate_head_required_before_preparation": false,
+    "candidate_seed_digest_required": true,
+    "registration_and_exact_base_required": true,
+    "expiry_required": true,
+    "revocation_supported": true,
+    "final_transaction_authorization_required_after_pr_number_and_head_exist": true
+  },
+  "owner_exact_head_review": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path_pattern": "instructions/goal-mode/r3-successors/reviews/<review_id>.json",
+    "append_only": true,
+    "one_owner_verified_pr_merge_per_record": true,
+    "required_bindings": ["review_id", "task_id", "formal_ordinal", "registration_id", "formal_pr_number", "pr_author_id", "formal_base_sha", "formal_candidate_head_sha", "formal_pr_diff_sha256", "protocol_sha256", "independent_ai_review_report", "decision", "review_summary", "reviewed_at", "review_nonce", "owner_actor_id"],
+    "scope_constant": "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD",
+    "ai_review_report_must_precede_formal_merge": true,
+    "ai_review_report_must_bind_exact_source_and_diff": true,
+    "ai_review_context_and_limitations_required": true,
+    "owner_must_assess_non_author_review_from_substantive_evidence": true,
+    "platform_execution_attestation_required": false,
+    "github_owner_approval_is_optional_corroboration": true,
+    "required_before_formal_merge": true,
+    "final_merge_decision_is_separate": true,
+    "author_cannot_self_approve_on_github": true
+  },
+  "publication_witness": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path_pattern": "reports/operations/r3-successors/publications/<transaction_id>.json",
+    "append_only": true,
+    "owner_verified_pr_merge_required": true,
+    "must_bind": ["transaction_id", "preparation_id", "registration_id", "authorization_id", "task_id", "formal_ordinal", "pr_number", "candidate_head_sha", "base_main_sha", "protocol_blob_sha", "protocol_file_sha256", "actual_final_main_sha", "actual_final_main_tree_sha", "actual_final_main_parents", "remote_main_sha", "fresh_clone_sha", "required_postpublication_checks", "witnessed_at", "owner_actor_id"],
+    "status": "PUBLISHED_AND_VERIFIED",
+    "does_not_overwrite_legacy_r3_witness": true
+  },
+  "protocol_migration_witness": {
+    "required_bindings": ["protocol_sha256", "root_authority_merge_commit_sha", "formal_pr_number", "formal_base_sha", "formal_candidate_head_sha", "formal_merge_commit_sha", "formal_merge_tree_sha", "formal_merge_parents", "required_check_contexts", "branch_protection_rules_sha256", "branch_protection_verified", "merge_method", "independent_review_mode", "independent_ai_review_artifact_id", "independent_ai_review_report_sha256", "pr_author_id", "owner_review_record_id", "owner_review_record_commit_sha", "owner_review_record_file_sha256", "owner_reviewed_head_sha", "witnessed_at", "owner_actor_id"],
+    "owner_review_record_path_pattern": "instructions/goal-mode/r3-successors/reviews/<review_id>.json",
+    "review_record_must_precede_formal_merge": true,
+    "review_record_must_be_owner_verified_and_append_only": true,
+    "ai_review_report_must_precede_formal_merge": true,
+    "ai_report_is_not_github_approval": true,
+    "ai_report_binds_owner_governance_authority": true,
+    "github_owner_approval_is_optional_corroboration": true
+  },
+  "release_gates": {
+    "inherit_r3_required_checks_and_full_evidence_validation": true,
+    "independent_non_author_ai_review_required": true,
+    "reviewer_work_must_be_separate_from_authoring_steps": true,
+    "ai_model_and_execution_metadata_may_be_unverified_when_disclosed": true,
+    "platform_execution_attestation_required": false,
+    "execution_id_string_difference_is_independence_proof": false,
+    "third_party_human_review_optional_by_default": true,
+    "live_github_approval_required_only_when_branch_rules_require_it": true,
+    "ai_report_is_not_github_approval": true,
+    "ai_report_binds_exact_raw_diff_inventory_required_ci_and_branch_protection": true,
+    "ai_report_requires_negative_control_assessment": true,
+    "ai_report_context_limitations_and_digest_required": true,
+    "reviewer_write_permission_required_only_when_a_live_branch_rule_requires_it": true,
+    "owner_signed_exact_head_review_record_required": true,
+    "owner_github_approval_is_optional_when_owner_is_not_pr_author": true,
+    "owner_review_record_and_final_merge_decision_are_separate": true,
+    "review_states_must_be_live_github_readbacks": true,
+    "all_required_contexts_must_pass_exact_head_and_base": true,
+    "normal_protected_merge_commit_only": true,
+    "no_bypass_or_force_push": true,
+    "postpublication_main_and_fresh_clone_verification_required": true,
+    "separate_1111_postpublication_witness_required": true
+  },
+  "historical_compatibility": {
+    "legacy_r3_bootstrap_authorization_unchanged": true,
+    "pr_266_activation_and_published_receipt_unchanged": true,
+    "pr_266_legacy_validator_profile_remains_supported": true,
+    "pr_267_adjudication": "NOT_COMPLIANT",
+    "pr_267_cannot_be_retroactively_certified": true,
+    "task20_task21_r6_r7_unchanged": true,
+    "scientific_open_obligations_unchanged": true,
+    "phase2_not_started": true
+  },
+  "failure_states": [
+    "ROOT_AUTHORITY_INVALID",
+    "SUCCESSOR_PROTOCOL_NOT_EFFECTIVE",
+    "SUCCESSOR_REGISTRATION_INVALID",
+    "PREPARATION_AUTHORIZATION_INVALID",
+    "TRANSACTION_AUTHORIZATION_INVALID",
+    "AUTHORIZATION_EXPIRED_OR_REVOKED",
+    "INDEPENDENT_REVIEW_MISSING_OR_UNVERIFIABLE",
+    "OWNER_EXACT_HEAD_REVIEW_MISSING",
+    "REVIEW_OR_REQUIRED_CHECK_MISSING",
+    "PUBLISHED_UNVERIFIED"
+  ],
+  "claim_ceiling": "Candidate successor-protocol implementation and repository-local adversarial validation only. It does not activate this protocol, authorize a release, cure PR #267, complete Phase 1 V1, resolve research obligations, or establish external truth."
+}

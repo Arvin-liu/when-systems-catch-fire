@@ -190,6 +190,7 @@
 |`docs/governance/next-semantic-leap-assessment-2026-09-07.md`|0|0|是|
 |`docs/governance/non-sycophancy-output-protocol.md`|15|0|否|
 |`docs/governance/problem-space-rewrite-ablation-2026-09-08.md`|2|0|否|
+|`docs/governance/r3-successor-protocol-r1.md`|15|0|否|
 |`docs/governance/representation-residual-casebook-2026-09-06.md`|0|0|是|
 |`docs/governance/self-correction-engine.md`|11|0|否|
 |`docs/governance/semantic-leap-detector-v2-2026-09-07.md`|0|0|是|

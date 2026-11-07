@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-2946ab5e0da1108b"></a>
+### 2026-11-04 · R3 Successor Protocol R1 — Candidate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: CANDIDATENOTEFFECTIVE Normative machine contract: release-transaction-protocol-r3-successor-r1.json Schema: release-transaction-protocol-r3-successor-r1.schema.json
+- **来源：** [r3-successor-protocol-r1.md](../docs/governance/r3-successor-protocol-r1.md)
+- **资产卡：** [HR-2946AB5E0DA1108B](./ASSET-CARDS.md#asset-hr-2946ab5e0da1108b)
+
 <a id="change-src-hr-3f1b23502128513c"></a>
 ### 2026-10-31 · Slower methane growth and emissions: bounded source review
 
