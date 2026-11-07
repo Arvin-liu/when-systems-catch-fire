@@ -5057,7 +5057,7 @@
       "title": "R3 Successor Protocol R1 — Candidate",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "1203fc24dde3850a0dcecdcf11922f2d49e0253431783ad6ae48be3392f14868",
+      "source_sha256": "17f50809fce5215f145ecde56a0c4c3e8efc65a38095e0b9256aac38404df352",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -5183,7 +5183,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "4567bf3ef48c4b493d8c1ca774a5cee335f37aac86cca47fe1cc6dbf06413f4a",
+      "source_sha256": "a2f19e82bffae861895d395cc9120a29cc06d5dd3e8617fa7a41188d34a95e89",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",
