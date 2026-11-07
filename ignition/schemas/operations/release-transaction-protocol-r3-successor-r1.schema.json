@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [
     "schema_version", "contract_id", "status", "supersedes", "inherits_from",
-    "root_authority", "amendment_preparation_authority", "activation", "successor_registration",
+    "root_authority", "amendment_preparation_authority", "owner_independent_ai_review_authority", "activation", "successor_registration",
     "historical_adjudication", "preparation_authorization", "transaction_authorization",
     "owner_exact_head_review", "publication_witness", "protocol_migration_witness", "release_gates", "historical_compatibility",
     "failure_states", "claim_ceiling"
@@ -19,6 +19,7 @@
     "inherits_from": {"$ref": "#/$defs/inheritance"},
     "root_authority": {"$ref": "#/$defs/rootAuthority"},
     "amendment_preparation_authority": {"$ref": "#/$defs/amendmentPreparationAuthority"},
+    "owner_independent_ai_review_authority": {"$ref": "#/$defs/ownerIndependentAiReviewAuthority"},
     "historical_adjudication": {"$ref": "#/$defs/historicalAdjudication"},
     "activation": {"$ref": "#/$defs/activation"},
     "successor_registration": {"$ref": "#/$defs/registrationPolicy"},
@@ -147,7 +148,30 @@
         "receipt_branch": {"const": "relay/receipts/IGNITION-20261105-022-r3-successor-protocol-amendment"},
         "permitted": {"const": ["PREPARE_CANDIDATE", "PUSH_TASK_BRANCH", "CREATE_DRAFT_PR", "COLLECT_REQUIRED_CHECKS"]},
         "prohibited": {"const": ["READY", "MERGE", "PUBLISH", "CHANGE_BRANCH_PROTECTION", "ACTIVATE_SUCCESSOR_PROTOCOL"]},
-        "effectiveness": {"type": "string", "minLength": 1}
+        "effectiveness": {"const": "Requires live Owner-verified merge, exact blob and ancestry readback for #165 and #166 in addition to #163. This one-time bootstrap does not rely on the successor candidate to authorize itself."}
+      }
+    },
+    "ownerIndependentAiReviewAuthority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source", "repository", "branch", "pull_request_number", "pull_request_url", "owner_actor_id", "base_sha", "candidate_head_sha", "merge_commit_sha", "merge_tree_sha", "ordered_merge_parents", "require_owner_manual_merge", "require_github_signature_verified_valid", "require_exact_current_main_ancestry", "require_pr_changed_paths_exact", "files", "activation_rule"],
+      "properties": {
+        "source": {"const": "OWNER_VERIFIED_GITHUB_MERGE"},
+        "repository": {"const": "Arvin-liu/1111"},
+        "branch": {"const": "main"},
+        "pull_request_number": {"const": 166},
+        "pull_request_url": {"const": "https://github.com/Arvin-liu/1111/pull/166"},
+        "owner_actor_id": {"const": 49422864},
+        "base_sha": {"const": "5449650811882f0c107e58680ee43d92577f7288"},
+        "candidate_head_sha": {"const": "9f6433041cf8d44d353d1ebcc32a68517a74552b"},
+        "merge_commit_sha": {"const": "064c0112ba7a8672b77a507f8763e79b6914cb0c"},
+        "merge_tree_sha": {"const": "b027b3ff7afa0786f22ae79adcd65abd16d0bdf8"},
+        "ordered_merge_parents": {"const": ["5449650811882f0c107e58680ee43d92577f7288", "9f6433041cf8d44d353d1ebcc32a68517a74552b"]},
+        "require_owner_manual_merge": {"const": true},
+        "require_github_signature_verified_valid": {"const": true},
+        "require_exact_current_main_ancestry": {"const": true},
+        "require_pr_changed_paths_exact": {"const": true},
+        "files": {"const": [{"path": "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json", "git_blob_sha": "de54df684593a98c33c14847465eb1a7a896a919", "sha256": "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"}]},
+        "activation_rule": {"const": "The signed Owner clarification is effective only after verified merge and exact file, signature, and current-main ancestry readback; it permits substantive independent AI review with truthful identity limitations and does not authorize merging PR #268."}
       }
     },
     "historicalAdjudication": {
@@ -248,7 +272,7 @@
     },
     "ownerExactHeadReviewPolicy": {
       "type": "object", "additionalProperties": false,
-      "required": ["repository", "branch", "path_pattern", "append_only", "one_owner_verified_pr_merge_per_record", "required_bindings", "scope_constant", "ai_review_report_must_precede_formal_merge", "ai_review_report_must_bind_exact_source_and_diff", "ai_review_provenance_required", "github_owner_approval_is_optional_corroboration", "required_before_formal_merge", "final_merge_decision_is_separate", "author_cannot_self_approve_on_github"],
+      "required": ["repository", "branch", "path_pattern", "append_only", "one_owner_verified_pr_merge_per_record", "required_bindings", "scope_constant", "ai_review_report_must_precede_formal_merge", "ai_review_report_must_bind_exact_source_and_diff", "ai_review_context_and_limitations_required", "owner_must_assess_non_author_review_from_substantive_evidence", "platform_execution_attestation_required", "github_owner_approval_is_optional_corroboration", "required_before_formal_merge", "final_merge_decision_is_separate", "author_cannot_self_approve_on_github"],
       "properties": {
         "repository": {"const": "Arvin-liu/1111"},
         "branch": {"const": "main"},
@@ -259,7 +283,9 @@
         "scope_constant": {"const": "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD"},
         "ai_review_report_must_precede_formal_merge": {"const": true},
         "ai_review_report_must_bind_exact_source_and_diff": {"const": true},
-        "ai_review_provenance_required": {"const": true},
+        "ai_review_context_and_limitations_required": {"const": true},
+        "owner_must_assess_non_author_review_from_substantive_evidence": {"const": true},
+        "platform_execution_attestation_required": {"const": false},
         "github_owner_approval_is_optional_corroboration": {"const": true},
         "required_before_formal_merge": {"const": true},
         "final_merge_decision_is_separate": {"const": true},
@@ -282,7 +308,7 @@
     },
     "protocolMigrationWitnessPolicy": {
       "type": "object", "additionalProperties": false,
-      "required": ["required_bindings", "owner_review_record_path_pattern", "review_record_must_precede_formal_merge", "review_record_must_be_owner_verified_and_append_only", "ai_review_report_must_precede_formal_merge", "ai_report_is_not_github_approval", "github_owner_approval_is_optional_corroboration"],
+      "required": ["required_bindings", "owner_review_record_path_pattern", "review_record_must_precede_formal_merge", "review_record_must_be_owner_verified_and_append_only", "ai_review_report_must_precede_formal_merge", "ai_report_is_not_github_approval", "ai_report_binds_owner_governance_authority", "github_owner_approval_is_optional_corroboration"],
       "properties": {
         "required_bindings": {"const": ["protocol_sha256", "root_authority_merge_commit_sha", "formal_pr_number", "formal_base_sha", "formal_candidate_head_sha", "formal_merge_commit_sha", "formal_merge_tree_sha", "formal_merge_parents", "required_check_contexts", "branch_protection_rules_sha256", "branch_protection_verified", "merge_method", "independent_review_mode", "independent_ai_review_artifact_id", "independent_ai_review_report_sha256", "pr_author_id", "owner_review_record_id", "owner_review_record_commit_sha", "owner_review_record_file_sha256", "owner_reviewed_head_sha", "witnessed_at", "owner_actor_id"]},
         "owner_review_record_path_pattern": {"const": "instructions/goal-mode/r3-successors/reviews/<review_id>.json"},
@@ -290,22 +316,26 @@
         "review_record_must_be_owner_verified_and_append_only": {"const": true},
         "ai_review_report_must_precede_formal_merge": {"const": true},
         "ai_report_is_not_github_approval": {"const": true},
+        "ai_report_binds_owner_governance_authority": {"const": true},
         "github_owner_approval_is_optional_corroboration": {"const": true}
       }
     },
     "releaseGates": {
       "type": "object", "additionalProperties": false,
-      "required": ["inherit_r3_required_checks_and_full_evidence_validation", "independent_non_author_ai_review_required", "ai_reviewer_execution_must_differ_from_authoring_execution", "third_party_human_review_optional_by_default", "live_github_approval_required_only_when_branch_rules_require_it", "ai_report_is_not_github_approval", "ai_report_binds_exact_raw_diff_inventory_required_ci_and_branch_protection", "ai_report_requires_negative_control_assessment", "ai_report_provenance_and_digest_required", "reviewer_write_permission_required_only_when_a_live_branch_rule_requires_it", "owner_signed_exact_head_review_record_required", "owner_github_approval_is_optional_when_owner_is_not_pr_author", "owner_review_record_and_final_merge_decision_are_separate", "review_states_must_be_live_github_readbacks", "all_required_contexts_must_pass_exact_head_and_base", "normal_protected_merge_commit_only", "no_bypass_or_force_push", "postpublication_main_and_fresh_clone_verification_required", "separate_1111_postpublication_witness_required"],
+      "required": ["inherit_r3_required_checks_and_full_evidence_validation", "independent_non_author_ai_review_required", "reviewer_work_must_be_separate_from_authoring_steps", "ai_model_and_execution_metadata_may_be_unverified_when_disclosed", "platform_execution_attestation_required", "execution_id_string_difference_is_independence_proof", "third_party_human_review_optional_by_default", "live_github_approval_required_only_when_branch_rules_require_it", "ai_report_is_not_github_approval", "ai_report_binds_exact_raw_diff_inventory_required_ci_and_branch_protection", "ai_report_requires_negative_control_assessment", "ai_report_context_limitations_and_digest_required", "reviewer_write_permission_required_only_when_a_live_branch_rule_requires_it", "owner_signed_exact_head_review_record_required", "owner_github_approval_is_optional_when_owner_is_not_pr_author", "owner_review_record_and_final_merge_decision_are_separate", "review_states_must_be_live_github_readbacks", "all_required_contexts_must_pass_exact_head_and_base", "normal_protected_merge_commit_only", "no_bypass_or_force_push", "postpublication_main_and_fresh_clone_verification_required", "separate_1111_postpublication_witness_required"],
       "properties": {
         "inherit_r3_required_checks_and_full_evidence_validation": {"const": true},
         "independent_non_author_ai_review_required": {"const": true},
-        "ai_reviewer_execution_must_differ_from_authoring_execution": {"const": true},
+        "reviewer_work_must_be_separate_from_authoring_steps": {"const": true},
+        "ai_model_and_execution_metadata_may_be_unverified_when_disclosed": {"const": true},
+        "platform_execution_attestation_required": {"const": false},
+        "execution_id_string_difference_is_independence_proof": {"const": false},
         "third_party_human_review_optional_by_default": {"const": true},
         "live_github_approval_required_only_when_branch_rules_require_it": {"const": true},
         "ai_report_is_not_github_approval": {"const": true},
         "ai_report_binds_exact_raw_diff_inventory_required_ci_and_branch_protection": {"const": true},
         "ai_report_requires_negative_control_assessment": {"const": true},
-        "ai_report_provenance_and_digest_required": {"const": true},
+        "ai_report_context_limitations_and_digest_required": {"const": true},
         "reviewer_write_permission_required_only_when_a_live_branch_rule_requires_it": {"const": true},
         "owner_signed_exact_head_review_record_required": {"const": true},
         "owner_github_approval_is_optional_when_owner_is_not_pr_author": {"const": true},
@@ -422,7 +452,7 @@
     },
     "independentAiReviewReport": {
       "type": "object", "additionalProperties": false,
-      "required": ["schema_version", "report_id", "artifact_id", "created_at", "expires_at", "task_id", "formal_ordinal", "formal_pr_number", "pr_author_id", "formal_base_sha", "formal_candidate_head_sha", "formal_pr_diff_sha256", "protocol_sha256", "branch_protection_rules_sha256", "required_approval_count", "authoring_provenance", "reviewer_provenance", "source_readback", "required_ci_contexts", "assessment", "negative_controls", "findings", "limitations", "verdict", "scope_expansion_proposed", "claims_github_approved", "report_sha256"],
+      "required": ["schema_version", "report_id", "artifact_id", "created_at", "expires_at", "task_id", "formal_ordinal", "formal_pr_number", "pr_author_id", "formal_base_sha", "formal_candidate_head_sha", "formal_pr_diff_sha256", "protocol_sha256", "branch_protection_rules_sha256", "required_approval_count", "authoring_context", "reviewer_context", "review_process", "owner_independent_ai_review_authority", "source_readback", "required_ci_contexts", "assessment", "negative_controls", "findings", "limitations", "verdict", "scope_expansion_proposed", "claims_github_approved", "report_sha256"],
       "properties": {
         "schema_version": {"const": "r3-successor-independent-ai-review-r1"},
         "report_id": {"$ref": "#/$defs/safeId"},
@@ -439,8 +469,10 @@
         "protocol_sha256": {"$ref": "#/$defs/sha256"},
         "branch_protection_rules_sha256": {"$ref": "#/$defs/sha256"},
         "required_approval_count": {"type": "integer", "minimum": 0},
-        "authoring_provenance": {"$ref": "#/$defs/aiExecutionProvenance"},
-        "reviewer_provenance": {"$ref": "#/$defs/aiExecutionProvenance"},
+        "authoring_context": {"$ref": "#/$defs/aiReviewContext"},
+        "reviewer_context": {"$ref": "#/$defs/aiReviewContext"},
+        "review_process": {"$ref": "#/$defs/independentAiReviewProcess"},
+        "owner_independent_ai_review_authority": {"$ref": "#/$defs/ownerReviewAuthorityBinding"},
         "source_readback": {"$ref": "#/$defs/aiSourceReadback"},
         "required_ci_contexts": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/requiredCheck"}},
         "assessment": {
@@ -461,7 +493,7 @@
             "type": "object", "additionalProperties": false,
             "required": ["control_id", "result", "evidence"],
             "properties": {
-              "control_id": {"enum": ["same_author_self_review", "fake_or_reused_reviewer_identity", "missing_raw_diff", "task_pr_base_head_diff_mismatch", "tampered_report_digest", "missing_or_expired_artifact", "outdated_head", "failed_ci", "unsafe_scope", "forged_github_approval", "missing_owner_signature", "reject_or_inconclusive_verdict", "supersession_rollback_or_history_rewrite"]},
+              "control_id": {"enum": ["same_author_self_review", "reviewer_work_not_separate_or_self_review", "missing_raw_diff", "task_pr_base_head_diff_mismatch", "tampered_report_digest", "missing_or_expired_artifact", "outdated_head", "failed_ci", "unsafe_scope", "forged_github_approval", "missing_owner_signature", "reject_or_inconclusive_verdict", "supersession_rollback_or_history_rewrite"]},
               "result": {"enum": ["PASS", "FAIL", "INCONCLUSIVE"]},
               "evidence": {"type": "string", "minLength": 1}
             }
@@ -486,14 +518,42 @@
         "report_sha256": {"$ref": "#/$defs/sha256"}
       }
     },
-    "aiExecutionProvenance": {
+    "aiReviewContext": {
       "type": "object", "additionalProperties": false,
-      "required": ["source", "model", "execution_id", "instance_id"],
+      "required": ["role", "work_channel", "model_name", "observed_execution_reference", "identity_status", "limitations"],
       "properties": {
-        "source": {"const": "PLATFORM_EXECUTION_METADATA"},
-        "model": {"type": "string", "minLength": 1},
-        "execution_id": {"type": "string", "minLength": 8, "maxLength": 256},
-        "instance_id": {"type": "string", "minLength": 8, "maxLength": 256}
+        "role": {"enum": ["AUTHORING_EXECUTOR", "INDEPENDENT_AI_REVIEWER"]},
+        "work_channel": {"enum": ["CODEX", "CHATGPT", "OTHER_AI"]},
+        "model_name": {"type": ["string", "null"]},
+        "observed_execution_reference": {"type": ["string", "null"]},
+        "identity_status": {"const": "NOT_PLATFORM_VERIFIED"},
+        "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "independentAiReviewProcess": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewer_role", "method", "independence_basis", "reviewed_actions"],
+      "properties": {
+        "reviewer_role": {"const": "INDEPENDENT_NON_AUTHOR_AI_REVIEWER"},
+        "method": {"const": "DIRECT_READ_ONLY_EXACT_HEAD_REVIEW"},
+        "independence_basis": {"type": "string", "minLength": 1},
+        "reviewed_actions": {
+          "type": "array", "minItems": 5, "uniqueItems": true,
+          "items": {"enum": ["READ_FULL_RAW_DIFF", "READ_CHANGED_SOURCE_FILES", "READ_RELEVANT_SCHEMA_VALIDATOR_TESTS", "READ_OWNER_AUTHORITY", "CHECK_LIVE_CI_AND_SCOPE"]}
+        }
+      }
+    },
+    "ownerReviewAuthorityBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "branch", "pull_request_number", "merge_commit_sha", "file_path", "git_blob_sha", "sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "branch": {"const": "main"},
+        "pull_request_number": {"const": 166},
+        "merge_commit_sha": {"const": "064c0112ba7a8672b77a507f8763e79b6914cb0c"},
+        "file_path": {"const": "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json"},
+        "git_blob_sha": {"const": "de54df684593a98c33c14847465eb1a7a896a919"},
+        "sha256": {"const": "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"}
       }
     },
     "aiSourceReadback": {
@@ -677,7 +737,7 @@
         "branch_protection_rules_sha256": {"$ref": "#/$defs/sha256"},
         "branch_protection_verified": {"const": true},
         "merge_method": {"const": "MERGE_COMMIT"},
-        "independent_review_mode": {"const": "INDEPENDENT_AI_EXECUTION"},
+        "independent_review_mode": {"const": "SUBSTANTIVE_INDEPENDENT_AI_REVIEW"},
         "independent_ai_review_artifact_id": {"type": "string", "minLength": 8, "maxLength": 256},
         "independent_ai_review_report_sha256": {"$ref": "#/$defs/sha256"},
         "branch_required_github_reviews": {

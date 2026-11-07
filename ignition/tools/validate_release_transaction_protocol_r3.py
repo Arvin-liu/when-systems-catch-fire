@@ -78,6 +78,15 @@ TASK22_IDENTITY_MERGE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
 TASK22_IDENTITY_TREE_BLOB = "146df919b91ddf2bf189a106441abee80486056d"
 TASK22_IDENTITY_FILE_SHA256 = "f4300d22378458b1ed36ccb168cbe67be71c8056706005af331e3bd93c6ccc05"
 TASK22_IDENTITY_PATH = "instructions/goal-mode/IGNITION-2026-11-05-TASK22-OWNER-IDENTITY-ASSIGNMENT-R0.json"
+OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER = 166
+OWNER_AI_REVIEW_AUTHORITY_BASE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
+OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA = "9f6433041cf8d44d353d1ebcc32a68517a74552b"
+OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA = "064c0112ba7a8672b77a507f8763e79b6914cb0c"
+OWNER_AI_REVIEW_AUTHORITY_TREE_SHA = "b027b3ff7afa0786f22ae79adcd65abd16d0bdf8"
+OWNER_AI_REVIEW_AUTHORITY_PARENTS = [OWNER_AI_REVIEW_AUTHORITY_BASE_SHA, OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA]
+OWNER_AI_REVIEW_AUTHORITY_PATH = "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json"
+OWNER_AI_REVIEW_AUTHORITY_BLOB = "de54df684593a98c33c14847465eb1a7a896a919"
+OWNER_AI_REVIEW_AUTHORITY_SHA256 = "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"
 HISTORICAL_ADJUDICATION_PR_NUMBER = 162
 HISTORICAL_ADJUDICATION_MERGE_SHA = "dda58027561c1c8fc99e3fa22e2e3eab6e20b69d"
 HISTORICAL_AUDIT_PATH = "reports/operations/IGNITION-2026-11-04-TASK21-PR267-POSTMERGE-INDEPENDENT-AUDIT-R0.md"
@@ -811,6 +820,129 @@ def read_authenticated_successor_root_authority(
         return None, [f"root governance authority readback failed closed: {error.__class__.__name__}: {error}"]
 
 
+def read_authenticated_owner_ai_review_authority(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Read back the effective Owner clarification from its exact #166 merge."""
+    api = github_api or _gh_api_json
+    try:
+        contract = load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]
+        repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        owner_id = (repo.get("owner") or {}).get("id") if isinstance(repo, dict) else None
+        if owner_id != contract["owner_actor_id"] or repo.get("private") is not True or repo.get("default_branch") != "main":
+            return None, ["Owner AI-review authority source is not the exact private 1111/main repository"]
+
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER}")
+        base, head = (pr.get("base") or {}), (pr.get("head") or {})
+        if (
+            pr.get("number") != OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER
+            or pr.get("state") != "closed" or pr.get("merged") is not True
+            or (pr.get("merged_by") or {}).get("id") != owner_id
+            or base.get("ref") != "main" or base.get("sha") != OWNER_AI_REVIEW_AUTHORITY_BASE_SHA
+            or head.get("sha") != OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA
+            or pr.get("merge_commit_sha") != OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA
+            or not isinstance(pr.get("merged_at"), str)
+        ):
+            return None, ["PR #166 is not the exact manually Owner-merged independent-review clarification"]
+
+        files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER}/files?per_page=100")
+        if (
+            not isinstance(files, list) or len(files) != 1
+            or files[0].get("filename") != OWNER_AI_REVIEW_AUTHORITY_PATH
+            or files[0].get("status") != "added"
+            or files[0].get("sha") != OWNER_AI_REVIEW_AUTHORITY_BLOB
+        ):
+            return None, ["PR #166 changed-file inventory is not the exact single added Owner clarification"]
+
+        merge = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA, api, {})
+        parents = [row.get("sha") for row in merge.get("parents", []) if isinstance(row, dict)]
+        if parents != OWNER_AI_REVIEW_AUTHORITY_PARENTS:
+            return None, ["PR #166 Owner merge has incorrect ordered base/head parents"]
+        if (merge.get("commit", {}).get("tree") or {}).get("sha") != OWNER_AI_REVIEW_AUTHORITY_TREE_SHA:
+            return None, ["PR #166 Owner merge tree differs from the exact reviewed tree"]
+        signed, signature_error = _verified_owner_commit(merge, owner_id)
+        if not signed:
+            return None, [f"PR #166 Owner merge signature is invalid: {signature_error}"]
+
+        main = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/branches/main")
+        main_sha = (main.get("commit") or {}).get("sha") if isinstance(main, dict) else None
+        if not isinstance(main_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", main_sha):
+            return None, ["current 1111/main SHA is unreadable for Owner AI-review authority"]
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["PR #166 merge is not an ancestor of current 1111/main"]
+
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, OWNER_AI_REVIEW_AUTHORITY_PATH,
+            OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA, owner_id,
+            expected_file_sha256=OWNER_AI_REVIEW_AUTHORITY_SHA256,
+            expected_parent_shas=OWNER_AI_REVIEW_AUTHORITY_PARENTS, api=api,
+        )
+        if binding_errors or binding is None:
+            return None, [f"PR #166 signed Owner clarification failed exact readback: {error}" for error in binding_errors]
+        if binding["blob_sha"] != OWNER_AI_REVIEW_AUTHORITY_BLOB:
+            return None, ["PR #166 Owner clarification blob differs from the exact reviewed file"]
+
+        authority = json.loads(binding["raw"].decode("utf-8"))
+        evidence = authority.get("review_evidence_contract") or {}
+        owner_decision = authority.get("owner_decision") or {}
+        activation = authority.get("activation") or {}
+        change_control = authority.get("change_control") or {}
+        expected_evidence = {
+            "reviewer tool/model/session identity and separation from the code-generating process",
+            "PR URL, task identity, exact head SHA, exact base SHA and canonical change inventory digest",
+            "independent readback of original changed code, schemas and governance contract rather than executor summaries alone",
+            "explicit assessed invariants, threat cases, and adversarial/negative evidence",
+            "specific findings with supporting file/line references and genuine PASS/FAIL/INCONCLUSIVE outcome",
+            "actual test or CI evidence, with unverified claims labeled and remaining limitations",
+            "immutable review artifact identifier, content digest and timestamp bound in an Owner-verified review/decision record",
+        }
+        prohibited = authority.get("scope_of_prospective_repair", {}).get("prohibited", [])
+        if (
+            authority.get("record_id") != "IGNITION-20261106-OWNER-INDEPENDENT-AI-REVIEW-CLARIFICATION-R0"
+            or authority.get("authority_basis", {}).get("owner_actor_id") != owner_id
+            or authority.get("authority_basis", {}).get("scoped_formal_candidate_pr") != 268
+            or authority.get("authority_basis", {}).get("predecessor_root_authority_merge_sha") != SUCCESSOR_ROOT_MERGE_SHA
+            or authority.get("authority_basis", {}).get("original_task22_identity_merge_sha") != TASK22_IDENTITY_MERGE_SHA
+            or not all(activation.get(key) is True for key in (
+                "effective_only_after_exact_owner_reviewed_github_verified_merge_to_1111_main",
+                "require_github_signature_verified_valid",
+                "require_exact_added_file_blob_and_sha256_readback",
+                "require_merged_commit_ancestry_on_1111_main", "unsigned_or_unmerged_candidate_is_not_authority",
+                "no_retroactive_validation",
+            ))
+            or activation.get("require_owner_actor_id") != owner_id
+            or owner_decision.get("independent_review_requirement") != "RETAIN_REAL_NON_AUTHOR_INDEPENDENT_REVIEW"
+            or owner_decision.get("ordinary_default") != "SUBSTANTIVE_INDEPENDENT_AI_REVIEW_ACCEPTABLE_WITH_EVIDENCE"
+            or owner_decision.get("external_human_review") != "OPTIONAL_OWNER_SELECTED_NOT_A_DEFAULT_MANDATORY_GATE"
+            or owner_decision.get("final_publication_and_merge_authority") != "OWNER_ONLY"
+            or owner_decision.get("reviewer_workflow") != "SEPARATE_READ_ONLY_REVIEW_CONTEXT_ON_FROZEN_EXACT_HEAD"
+            or owner_decision.get("owner_acceptance") != "EXPLICIT_SIGNED_OWNER_EXACT_HEAD_REVIEW_AND_SEPARATE_MERGE_DECISION"
+            or evidence.get("review_must_be_substantive_and_independent") is not True
+            or evidence.get("reviewer_must_not_author_candidate_changes") is not True
+            or evidence.get("reviewer_identity") != "ACTUAL_MODEL_AND_EXECUTION_IDENTITY_WITH_LIMITATIONS_RECORDED"
+            or not expected_evidence.issubset(set(evidence.get("independent_process_evidence", [])))
+            or evidence.get("if_independence_cannot_be_established") != "BLOCKED_WITH_EVIDENCE"
+            or not any("invent" in item.lower() and "identity" in item.lower() for item in prohibited)
+            or change_control.get("merge_pr268", "").find("separate explicit Owner review") < 0
+        ):
+            return None, ["signed PR #166 clarification content does not retain the exact independent-review and Owner-decision terms"]
+
+        return {
+            "repository": OWNER_AUTHORIZATION_REPOSITORY, "branch": "main",
+            "pull_request_number": OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER,
+            "merge_commit_sha": OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA,
+            "merge_tree_sha": OWNER_AI_REVIEW_AUTHORITY_TREE_SHA,
+            "ordered_parents": parents, "owner_actor_id": owner_id,
+            "merged_by_id": (pr.get("merged_by") or {}).get("id"),
+            "signature_verified": True, "signature_reason": "valid", "main_sha": main_sha,
+            "file_path": OWNER_AI_REVIEW_AUTHORITY_PATH,
+            "file_blob_sha": binding["blob_sha"], "file_sha256": binding["file_sha256"],
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"Owner AI-review authority readback failed closed: {error.__class__.__name__}: {error}"]
+
+
 def read_authenticated_task22_amendment_preparation_authority(
     *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
 ) -> tuple[dict[str, Any] | None, list[str]]:
@@ -828,6 +960,12 @@ def read_authenticated_task22_amendment_preparation_authority(
             return None, [f"Task22 preparation lacks the live #163 root authority: {error}" for error in root_errors]
         if root["merge_commit_sha"] != contract["root_authority_merge_commit_sha"]:
             return None, ["Task22 preparation root merge differs from the exact #163 mandate"]
+
+        ai_review_authority, ai_review_errors = read_authenticated_owner_ai_review_authority(github_api=api)
+        if ai_review_errors or ai_review_authority is None:
+            return None, [f"Task22 preparation lacks the live #166 Owner review clarification: {error}" for error in ai_review_errors]
+        if ai_review_authority["merge_commit_sha"] != load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]["merge_commit_sha"]:
+            return None, ["Task22 review authority differs from the exact #166 Owner merge"]
 
         repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
         owner_id = (repo.get("owner") or {}).get("id")
@@ -897,6 +1035,7 @@ def read_authenticated_task22_amendment_preparation_authority(
             return None, ["Owner-merged #165 identity, #163 root binding, or narrow preparation scope differs from this candidate"]
         return {
             "root_authority": root,
+            "owner_independent_ai_review_authority": ai_review_authority,
             "repository": OWNER_AUTHORIZATION_REPOSITORY,
             "pull_request_number": TASK22_IDENTITY_PR_NUMBER,
             "merge_commit_sha": TASK22_IDENTITY_MERGE_SHA,
@@ -1643,8 +1782,6 @@ def read_authenticated_successor_control_ledger(
                 errors.append("migration witness digest does not match the exact successor protocol bytes")
             if statement["root_authority_merge_commit_sha"] != SUCCESSOR_ROOT_MERGE_SHA:
                 errors.append("migration witness does not bind the verified external Owner root authority")
-            if statement["independent_reviewer_id"] == statement["pr_author_id"] or statement["independent_reviewer_id"] == owner_id:
-                errors.append("migration witness independent reviewer must differ from both PR author and Owner")
         if errors:
             return None, errors
         for row in migrations:
@@ -1924,7 +2061,7 @@ def validate_successor_transaction_authorization_statement(
 
 
 SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS = {
-    "same_author_self_review", "fake_or_reused_reviewer_identity", "missing_raw_diff",
+    "same_author_self_review", "reviewer_work_not_separate_or_self_review", "missing_raw_diff",
     "task_pr_base_head_diff_mismatch", "tampered_report_digest", "missing_or_expired_artifact",
     "outdated_head", "failed_ci", "unsafe_scope", "forged_github_approval",
     "missing_owner_signature", "reject_or_inconclusive_verdict",
@@ -1976,19 +2113,48 @@ def validate_successor_ai_review_report(
     if report.get("report_sha256") != canonical_digest:
         errors.append("independent AI review report digest does not match its canonical artifact bytes")
 
-    authoring = report.get("authoring_provenance") or {}
-    reviewer = report.get("reviewer_provenance") or {}
-    unavailable = {"unknown", "not_exposed", "unavailable", "redacted", "none", "null", "n/a", "na"}
-    for role, provenance in (("authoring", authoring), ("reviewer", reviewer)):
-        for field in ("model", "execution_id", "instance_id"):
-            value = provenance.get(field)
-            if not isinstance(value, str) or not value.strip() or value.strip().casefold() in unavailable:
-                errors.append(f"independent AI review {role} {field} provenance is missing or unverifiable")
+    authoring = report.get("authoring_context") or {}
+    reviewer = report.get("reviewer_context") or {}
+    if authoring.get("role") != "AUTHORING_EXECUTOR":
+        errors.append("independent AI review authoring context has the wrong role")
+    if reviewer.get("role") != "INDEPENDENT_AI_REVIEWER":
+        errors.append("independent AI review context has the wrong reviewer role")
+    for label, context in (("authoring", authoring), ("reviewer", reviewer)):
+        if context.get("identity_status") != "NOT_PLATFORM_VERIFIED":
+            errors.append(f"independent AI review {label} identity must not be represented as platform-verified")
+        limitations = context.get("limitations", [])
+        if not any(
+            ("identity" in item.lower() and ("unverified" in item.lower() or "not verified" in item.lower()))
+            or ("platform" in item.lower() and "verified" in item.lower())
+            for item in limitations if isinstance(item, str)
+        ):
+            errors.append(f"independent AI review {label} context must disclose identity verification limits")
+
+    process = report.get("review_process") or {}
+    required_actions = {
+        "READ_FULL_RAW_DIFF", "READ_CHANGED_SOURCE_FILES", "READ_RELEVANT_SCHEMA_VALIDATOR_TESTS",
+        "READ_OWNER_AUTHORITY", "CHECK_LIVE_CI_AND_SCOPE",
+    }
     if (
-        authoring.get("execution_id") == reviewer.get("execution_id")
-        or authoring.get("instance_id") == reviewer.get("instance_id")
+        process.get("reviewer_role") != "INDEPENDENT_NON_AUTHOR_AI_REVIEWER"
+        or process.get("method") != "DIRECT_READ_ONLY_EXACT_HEAD_REVIEW"
+        or not isinstance(process.get("independence_basis"), str)
+        or len(process.get("independence_basis", "").strip()) < 80
+        or set(process.get("reviewed_actions", [])) != required_actions
     ):
-        errors.append("independent AI reviewer execution and instance must differ from the authoring execution")
+        errors.append("independent AI review does not document a substantive separate read-only exact-head process")
+    authority_binding = report.get("owner_independent_ai_review_authority") or {}
+    authority_contract = load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]
+    expected_binding = {
+        "repository": authority_contract["repository"], "branch": authority_contract["branch"],
+        "pull_request_number": authority_contract["pull_request_number"],
+        "merge_commit_sha": authority_contract["merge_commit_sha"],
+        "file_path": authority_contract["files"][0]["path"],
+        "git_blob_sha": authority_contract["files"][0]["git_blob_sha"],
+        "sha256": authority_contract["files"][0]["sha256"],
+    }
+    if authority_binding != expected_binding:
+        errors.append("independent AI review report does not bind the exact #166 Owner authority and file digest")
 
     cutoff, cutoff_errors = _parse_control_time(valid_through, "AI review validity cutoff")
     created, created_errors = _parse_control_time(report.get("created_at"), "AI review artifact created_at")
@@ -2033,7 +2199,7 @@ def validate_successor_ai_review_report(
         "required_ci_and_scope", "history_and_rollback", "authority_separation",
     }
     if set(assessment) != required_assessments or any(
-        not isinstance(value, str) or not value.strip() for value in assessment.values()
+        not isinstance(value, str) or len(value.strip()) < 40 for value in assessment.values()
     ):
         errors.append("independent AI report lacks a substantive assessment across every required area")
     if any(
@@ -2069,6 +2235,7 @@ def validate_successor_owner_exact_head_review_record(
     changed_files: list[dict[str, Any]] | None,
     required_contexts: list[dict[str, Any]] | None,
     valid_through: str,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
 ) -> list[str]:
     """Require a separate Owner-signed, append-only review of this exact PR diff."""
     if review_row is None:
@@ -2105,6 +2272,19 @@ def validate_successor_owner_exact_head_review_record(
         changed_files=changed_files,
         required_contexts=required_contexts, valid_through=valid_through,
     ))
+    live_authority, authority_errors = read_authenticated_owner_ai_review_authority(github_api=github_api)
+    errors.extend(authority_errors)
+    if live_authority is None:
+        errors.append("live #166 Owner independent-review authority readback is unavailable")
+    elif (
+        live_authority.get("pull_request_number") != OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER
+        or live_authority.get("merge_commit_sha") != OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA
+        or live_authority.get("file_blob_sha") != OWNER_AI_REVIEW_AUTHORITY_BLOB
+        or live_authority.get("file_sha256") != OWNER_AI_REVIEW_AUTHORITY_SHA256
+        or live_authority.get("signature_verified") is not True
+        or not live_authority.get("main_sha")
+    ):
+        errors.append("live #166 Owner authority evidence differs from its exact signed merge, file, or main ancestry")
     reviewed_at, reviewed_errors = _parse_control_time(signed.get("reviewed_at"), "Owner reviewed_at")
     committed_at, committed_errors = _parse_control_time(review_row.get("committed_at"), "Owner review signed commit time")
     cutoff, cutoff_errors = _parse_control_time(valid_through, "Owner review validity cutoff")
@@ -2526,7 +2706,7 @@ def validate_successor_migration_witness_live(
                 errors.append("migration witness differs from the signed Owner review record identity or bytes")
             ai_report = owner_statement.get("independent_ai_review_report") or {}
             if (
-                statement.get("independent_review_mode") != "INDEPENDENT_AI_EXECUTION"
+                statement.get("independent_review_mode") != "SUBSTANTIVE_INDEPENDENT_AI_REVIEW"
                 or statement.get("independent_ai_review_artifact_id") != ai_report.get("artifact_id")
                 or statement.get("independent_ai_review_report_sha256") != ai_report.get("report_sha256")
             ):
@@ -2543,7 +2723,7 @@ def validate_successor_migration_witness_live(
                 branch_protection_rules_sha256=(live_protection or {}).get("rules_sha256", ""),
                 required_approval_count=(live_protection or {}).get("required_approval_count", -1),
                 changed_files=changed_files, required_contexts=live_contexts,
-                valid_through=pr["merged_at"],
+                valid_through=pr["merged_at"], github_api=github_api,
             ))
         merged_at, merged_errors = _parse_control_time(pr["merged_at"], "Formal migration merged_at")
         witnessed_at, witnessed_errors = _parse_control_time(statement["witnessed_at"], "migration witness witnessed_at")
@@ -4043,7 +4223,7 @@ def _successor_transaction_record_schema() -> dict[str, Any]:
     definitions["successorPullRequestReview"] = successor_schema["$defs"]["successorPullRequestReview"]
     definitions["successorRequiredCheck"] = successor_schema["$defs"]["requiredCheck"]
     definitions["requiredCheck"] = successor_schema["$defs"]["requiredCheck"]
-    for name in ("independentAiReviewReport", "aiExecutionProvenance", "aiSourceReadback"):
+    for name in ("independentAiReviewReport", "aiReviewContext", "independentAiReviewProcess", "ownerReviewAuthorityBinding", "aiSourceReadback"):
         definitions[name] = copy.deepcopy(successor_schema["$defs"][name])
     transaction = definitions["transactionRecord"]
     transaction["properties"]["owner_approval"] = {"$ref": "#/$defs/successorAuthorizationEvidence"}
@@ -4391,7 +4571,7 @@ def validate_transaction_record(
                 branch_protection_rules_sha256=protection["rules_sha256"],
                 required_approval_count=protection["required_approval_count"],
                 changed_files=changed_files, required_contexts=live_contexts,
-                valid_through=cutoff,
+                valid_through=cutoff, github_api=github_api,
             ))
             report_digest = matching_owner_records[0]["statement"]["independent_ai_review_report"]["report_sha256"]
             if record["independent_ai_review_report_sha256"] != report_digest:
@@ -4512,6 +4692,7 @@ def main() -> int:
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--check-successor", action="store_true")
     parser.add_argument("--verify-amendment-preparation", action="store_true")
+    parser.add_argument("--verify-owner-review-authority", action="store_true")
     parser.add_argument("--preparation-id")
     parser.add_argument("--preparation-action", choices=["PUSH_REGISTERED_BRANCH", "CREATE_DRAFT_PULL_REQUEST", "COLLECT_REQUIRED_CHECKS"])
     parser.add_argument("--preparation-candidate-seed-sha256")
@@ -4540,6 +4721,8 @@ def main() -> int:
         parser.error("--phase requires --transaction-record")
     if args.successor_profile and not args.transaction_record:
         parser.error("--successor-profile requires --transaction-record")
+    if args.verify_owner_review_authority and any((args.transaction_record, args.preparation_id, args.verify_amendment_preparation)):
+        parser.error("--verify-owner-review-authority is a standalone live-readback action")
     if args.check_successor and not SUCCESSOR_PROTOCOL_PATH.is_file():
         parser.error("--check-successor requires the versioned successor protocol file")
 
@@ -4569,6 +4752,20 @@ def main() -> int:
             "TASK22_AMENDMENT_DRAFT_PREPARATION_AUTHORIZED "
             f"task={authority['task_id']} branch={checkout['branch']} head={checkout['head_sha']} base={checkout['base_main_sha']} "
             "scope=prepare/push/draft/collect-checks-only"
+        )
+        return 0
+
+    if args.verify_owner_review_authority:
+        authority, authority_errors = read_authenticated_owner_ai_review_authority()
+        if authority_errors or authority is None:
+            print("OWNER_INDEPENDENT_AI_REVIEW_AUTHORITY_INVALID", file=sys.stderr)
+            for error in authority_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+        print(
+            "OWNER_INDEPENDENT_AI_REVIEW_AUTHORITY_VERIFIED "
+            f"merge={authority['merge_commit_sha']} file_blob={authority['file_blob_sha']} "
+            f"main={authority['main_sha']}"
         )
         return 0
 

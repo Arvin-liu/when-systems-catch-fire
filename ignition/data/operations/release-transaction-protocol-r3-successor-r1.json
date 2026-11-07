@@ -70,7 +70,32 @@
     "receipt_branch": "relay/receipts/IGNITION-20261105-022-r3-successor-protocol-amendment",
     "permitted": ["PREPARE_CANDIDATE", "PUSH_TASK_BRANCH", "CREATE_DRAFT_PR", "COLLECT_REQUIRED_CHECKS"],
     "prohibited": ["READY", "MERGE", "PUBLISH", "CHANGE_BRANCH_PROTECTION", "ACTIVATE_SUCCESSOR_PROTOCOL"],
-    "effectiveness": "Requires live Owner-verified merge, exact blob and ancestry readback for #165 in addition to #163. This one-time bootstrap does not rely on the successor candidate to authorize itself."
+    "effectiveness": "Requires live Owner-verified merge, exact blob and ancestry readback for #165 and #166 in addition to #163. This one-time bootstrap does not rely on the successor candidate to authorize itself."
+  },
+  "owner_independent_ai_review_authority": {
+    "source": "OWNER_VERIFIED_GITHUB_MERGE",
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "pull_request_number": 166,
+    "pull_request_url": "https://github.com/Arvin-liu/1111/pull/166",
+    "owner_actor_id": 49422864,
+    "base_sha": "5449650811882f0c107e58680ee43d92577f7288",
+    "candidate_head_sha": "9f6433041cf8d44d353d1ebcc32a68517a74552b",
+    "merge_commit_sha": "064c0112ba7a8672b77a507f8763e79b6914cb0c",
+    "merge_tree_sha": "b027b3ff7afa0786f22ae79adcd65abd16d0bdf8",
+    "ordered_merge_parents": ["5449650811882f0c107e58680ee43d92577f7288", "9f6433041cf8d44d353d1ebcc32a68517a74552b"],
+    "require_owner_manual_merge": true,
+    "require_github_signature_verified_valid": true,
+    "require_exact_current_main_ancestry": true,
+    "require_pr_changed_paths_exact": true,
+    "files": [
+      {
+        "path": "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json",
+        "git_blob_sha": "de54df684593a98c33c14847465eb1a7a896a919",
+        "sha256": "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"
+      }
+    ],
+    "activation_rule": "The signed Owner clarification is effective only after verified merge and exact file, signature, and current-main ancestry readback; it permits substantive independent AI review with truthful identity limitations and does not authorize merging PR #268."
   },
   "historical_adjudication": {
     "repository": "Arvin-liu/1111",
@@ -170,7 +195,9 @@
     "scope_constant": "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD",
     "ai_review_report_must_precede_formal_merge": true,
     "ai_review_report_must_bind_exact_source_and_diff": true,
-    "ai_review_provenance_required": true,
+    "ai_review_context_and_limitations_required": true,
+    "owner_must_assess_non_author_review_from_substantive_evidence": true,
+    "platform_execution_attestation_required": false,
     "github_owner_approval_is_optional_corroboration": true,
     "required_before_formal_merge": true,
     "final_merge_decision_is_separate": true,
@@ -193,18 +220,22 @@
     "review_record_must_be_owner_verified_and_append_only": true,
     "ai_review_report_must_precede_formal_merge": true,
     "ai_report_is_not_github_approval": true,
+    "ai_report_binds_owner_governance_authority": true,
     "github_owner_approval_is_optional_corroboration": true
   },
   "release_gates": {
     "inherit_r3_required_checks_and_full_evidence_validation": true,
     "independent_non_author_ai_review_required": true,
-    "ai_reviewer_execution_must_differ_from_authoring_execution": true,
+    "reviewer_work_must_be_separate_from_authoring_steps": true,
+    "ai_model_and_execution_metadata_may_be_unverified_when_disclosed": true,
+    "platform_execution_attestation_required": false,
+    "execution_id_string_difference_is_independence_proof": false,
     "third_party_human_review_optional_by_default": true,
     "live_github_approval_required_only_when_branch_rules_require_it": true,
     "ai_report_is_not_github_approval": true,
     "ai_report_binds_exact_raw_diff_inventory_required_ci_and_branch_protection": true,
     "ai_report_requires_negative_control_assessment": true,
-    "ai_report_provenance_and_digest_required": true,
+    "ai_report_context_limitations_and_digest_required": true,
     "reviewer_write_permission_required_only_when_a_live_branch_rule_requires_it": true,
     "owner_signed_exact_head_review_record_required": true,
     "owner_github_approval_is_optional_when_owner_is_not_pr_author": true,

@@ -589,13 +589,28 @@ def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 4
         "formal_pr_diff_sha256": "c" * 64,
         "protocol_sha256": hashlib.sha256(r3.SUCCESSOR_PROTOCOL_PATH.read_bytes()).hexdigest(),
         "branch_protection_rules_sha256": "e" * 64, "required_approval_count": 0,
-        "authoring_provenance": {
-            "source": "PLATFORM_EXECUTION_METADATA", "model": "GPT-6 Codex",
-            "execution_id": "test-author-execution-001", "instance_id": "test-author-instance-001",
+        "authoring_context": {
+            "role": "AUTHORING_EXECUTOR", "work_channel": "CODEX", "model_name": "GPT-6 Codex",
+            "observed_execution_reference": None, "identity_status": "NOT_PLATFORM_VERIFIED",
+            "limitations": ["Authoring identity is unverified; platform verification is unavailable."],
         },
-        "reviewer_provenance": {
-            "source": "PLATFORM_EXECUTION_METADATA", "model": "GPT-6 Codex",
-            "execution_id": "test-reviewer-execution-001", "instance_id": "test-reviewer-instance-001",
+        "reviewer_context": {
+            "role": "INDEPENDENT_AI_REVIEWER", "work_channel": "CHATGPT", "model_name": "GPT-6",
+            "observed_execution_reference": None, "identity_status": "NOT_PLATFORM_VERIFIED",
+            "limitations": ["Execution reference is unavailable; reviewer identity is not platform verified."],
+        },
+        "review_process": {
+            "reviewer_role": "INDEPENDENT_NON_AUTHOR_AI_REVIEWER",
+            "method": "DIRECT_READ_ONLY_EXACT_HEAD_REVIEW",
+            "independence_basis": "The reviewer used a separate read-only ChatGPT context, fetched the frozen PR head directly, and did not author or modify the candidate files.",
+            "reviewed_actions": ["READ_FULL_RAW_DIFF", "READ_CHANGED_SOURCE_FILES", "READ_RELEVANT_SCHEMA_VALIDATOR_TESTS", "READ_OWNER_AUTHORITY", "CHECK_LIVE_CI_AND_SCOPE"],
+        },
+        "owner_independent_ai_review_authority": {
+            "repository": "Arvin-liu/1111", "branch": "main", "pull_request_number": 166,
+            "merge_commit_sha": r3.OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA,
+            "file_path": r3.OWNER_AI_REVIEW_AUTHORITY_PATH,
+            "git_blob_sha": r3.OWNER_AI_REVIEW_AUTHORITY_BLOB,
+            "sha256": r3.OWNER_AI_REVIEW_AUTHORITY_SHA256,
         },
         "source_readback": {
             "mode": "GITHUB_READ_ONLY_EXACT_HEAD", "repository": "Arvin-liu/when-systems-catch-fire",
@@ -605,12 +620,12 @@ def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 4
         },
         "required_ci_contexts": ci_contexts,
         "assessment": {
-            "implementation": "The validator binds the report and Owner record to one exact successor PR.",
-            "threat_model": "Identity substitution and stale-head cases are rejected.",
-            "exact_source_and_diff": "The report lists the exact changed-file inventory and patch digests.",
-            "required_ci_and_scope": "All required contexts are successful on the exact head.",
-            "history_and_rollback": "Append-only controls preserve prior decisions and reject replay.",
-            "authority_separation": "The AI report is advisory evidence; Owner signature and merge remain separate.",
+            "implementation": "The validator binds the report and Owner record to one exact successor PR and checks the report digest.",
+            "threat_model": "Identity substitution, self-review, stale-head and unverified-context cases remain explicit review risks.",
+            "exact_source_and_diff": "The report lists the exact changed-file inventory, raw diff digest and available patch digests.",
+            "required_ci_and_scope": "All inherited required contexts are read from GitHub and checked against this exact head.",
+            "history_and_rollback": "Append-only controls preserve prior decisions and reject replay or historical rewriting.",
+            "authority_separation": "The AI report is advisory evidence; Owner signature, risk acceptance and merge remain separate.",
         },
         "negative_controls": [
             {"control_id": control_id, "result": "PASS", "evidence": "Synthetic negative-control assertion."}
@@ -641,6 +656,63 @@ def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 4
         "commit_sha": "e" * 40, "parents": ["d" * 40, "f" * 40],
         "blob_sha": r3._git_blob_sha(raw), "file_sha256": hashlib.sha256(raw).hexdigest(),
         "committed_at": "2026-11-04T09:40:00Z", "signature_verified": True, "signature_reason": "valid",
+    }
+
+
+def _owner_ai_review_authority_snapshot() -> dict[str, object]:
+    return {
+        "repository": "1111", "branch": "main", "pull_request_number": 166,
+        "merge_commit_sha": r3.OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA,
+        "file_blob_sha": r3.OWNER_AI_REVIEW_AUTHORITY_BLOB,
+        "file_sha256": r3.OWNER_AI_REVIEW_AUTHORITY_SHA256,
+        "signature_verified": True, "main_sha": "9" * 40,
+    }
+
+
+def _owner_ai_review_authority_document() -> dict[str, object]:
+    evidence_items = [
+        "reviewer tool/model/session identity and separation from the code-generating process",
+        "PR URL, task identity, exact head SHA, exact base SHA and canonical change inventory digest",
+        "independent readback of original changed code, schemas and governance contract rather than executor summaries alone",
+        "explicit assessed invariants, threat cases, and adversarial/negative evidence",
+        "specific findings with supporting file/line references and genuine PASS/FAIL/INCONCLUSIVE outcome",
+        "actual test or CI evidence, with unverified claims labeled and remaining limitations",
+        "immutable review artifact identifier, content digest and timestamp bound in an Owner-verified review/decision record",
+    ]
+    return {
+        "record_id": "IGNITION-20261106-OWNER-INDEPENDENT-AI-REVIEW-CLARIFICATION-R0",
+        "authority_basis": {
+            "owner_actor_id": 49422864, "scoped_formal_candidate_pr": 268,
+            "predecessor_root_authority_merge_sha": r3.SUCCESSOR_ROOT_MERGE_SHA,
+            "original_task22_identity_merge_sha": r3.TASK22_IDENTITY_MERGE_SHA,
+        },
+        "activation": {**{key: True for key in (
+            "effective_only_after_exact_owner_reviewed_github_verified_merge_to_1111_main",
+            "require_github_signature_verified_valid",
+            "require_exact_added_file_blob_and_sha256_readback", "require_merged_commit_ancestry_on_1111_main",
+            "unsigned_or_unmerged_candidate_is_not_authority", "no_retroactive_validation",
+        )}, "require_owner_actor_id": 49422864},
+        "owner_decision": {
+            "independent_review_requirement": "RETAIN_REAL_NON_AUTHOR_INDEPENDENT_REVIEW",
+            "ordinary_default": "SUBSTANTIVE_INDEPENDENT_AI_REVIEW_ACCEPTABLE_WITH_EVIDENCE",
+            "external_human_review": "OPTIONAL_OWNER_SELECTED_NOT_A_DEFAULT_MANDATORY_GATE",
+            "final_publication_and_merge_authority": "OWNER_ONLY",
+            "reviewer_workflow": "SEPARATE_READ_ONLY_REVIEW_CONTEXT_ON_FROZEN_EXACT_HEAD",
+            "owner_acceptance": "EXPLICIT_SIGNED_OWNER_EXACT_HEAD_REVIEW_AND_SEPARATE_MERGE_DECISION",
+        },
+        "review_evidence_contract": {
+            "review_must_be_substantive_and_independent": True,
+            "reviewer_must_not_author_candidate_changes": True,
+            "reviewer_identity": "ACTUAL_MODEL_AND_EXECUTION_IDENTITY_WITH_LIMITATIONS_RECORDED",
+            "independent_process_evidence": evidence_items,
+            "if_independence_cannot_be_established": "BLOCKED_WITH_EVIDENCE",
+        },
+        "scope_of_prospective_repair": {
+            "prohibited": ["Do not invent an AI identity, session, verification run, signature, human approval, or GitHub review state."]
+        },
+        "change_control": {
+            "merge_pr268": "Requires separate explicit Owner review of final exact head, live required contexts, protected merge and post-merge witness."
+        },
     }
 
 
@@ -2243,13 +2315,15 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "required_contexts": signed["independent_ai_review_report"]["required_ci_contexts"],
             "valid_through": "2026-11-04T10:00:00Z",
         }
-        self.assertEqual(r3.validate_successor_owner_exact_head_review_record(row, **kwargs), [])
-        self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, head_sha="d" * 40)))
-        self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, diff_sha256="e" * 64)))
-        self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, valid_through="2026-11-04T09:35:00Z")))
+        with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
+            self.assertEqual(r3.validate_successor_owner_exact_head_review_record(row, **kwargs), [])
+            self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, head_sha="d" * 40)))
+            self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, diff_sha256="e" * 64)))
+            self.assertTrue(r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, valid_through="2026-11-04T09:35:00Z")))
         missing_owner_signature = json.loads(json.dumps(row))
         missing_owner_signature["signature_verified"] = False
-        errors = r3.validate_successor_owner_exact_head_review_record(missing_owner_signature, **kwargs)
+        with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
+            errors = r3.validate_successor_owner_exact_head_review_record(missing_owner_signature, **kwargs)
         self.assertTrue(any("verified Owner signature" in error for error in errors), errors)
 
     def test_independent_ai_review_report_binds_exact_evidence_and_fails_closed(self) -> None:
@@ -2270,13 +2344,46 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         }
         self.assertEqual(r3.validate_successor_ai_review_report(report, **kwargs), [])
 
-        same_execution = json.loads(json.dumps(report))
-        same_execution["reviewer_provenance"]["execution_id"] = same_execution["authoring_provenance"]["execution_id"]
-        same_execution["report_sha256"] = hashlib.sha256(
-            json.dumps({k: v for k, v in same_execution.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        unknown_context = json.loads(json.dumps(report))
+        unknown_context["authoring_context"]["model_name"] = None
+        unknown_context["reviewer_context"]["model_name"] = None
+        unknown_context["authoring_context"]["observed_execution_reference"] = "observed-reference-not-verified"
+        unknown_context["reviewer_context"]["observed_execution_reference"] = "observed-reference-not-verified"
+        unknown_context["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in unknown_context.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
         ).hexdigest()
-        errors = r3.validate_successor_ai_review_report(same_execution, **kwargs)
-        self.assertTrue(any("must differ" in error for error in errors), errors)
+        self.assertEqual(r3.validate_successor_ai_review_report(unknown_context, **kwargs), [])
+
+        fabricated_ids = json.loads(json.dumps(report))
+        fabricated_ids["reviewer_context"]["execution_id"] = "made-up-independent-id"
+        errors = r3.validate_successor_ai_review_report(fabricated_ids, **kwargs)
+        self.assertTrue(any("Additional properties" in error for error in errors), errors)
+
+        wrong_role = json.loads(json.dumps(report))
+        wrong_role["reviewer_context"]["role"] = "AUTHORING_EXECUTOR"
+        wrong_role["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in wrong_role.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(wrong_role, **kwargs)
+        self.assertTrue(any("reviewer role" in error for error in errors), errors)
+
+        missing_process = json.loads(json.dumps(report))
+        missing_process.pop("review_process")
+        errors = r3.validate_successor_ai_review_report(missing_process, **kwargs)
+        self.assertTrue(any("review_process" in error for error in errors), errors)
+
+        undisclosed_identity = json.loads(json.dumps(report))
+        undisclosed_identity["reviewer_context"]["limitations"] = ["No known limitations."]
+        errors = r3.validate_successor_ai_review_report(undisclosed_identity, **kwargs)
+        self.assertTrue(any("identity verification limits" in error for error in errors), errors)
+
+        wrong_authority = json.loads(json.dumps(report))
+        wrong_authority["owner_independent_ai_review_authority"]["merge_commit_sha"] = "1" * 40
+        wrong_authority["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in wrong_authority.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(wrong_authority, **kwargs)
+        self.assertTrue(errors)
 
         tampered = json.loads(json.dumps(report))
         tampered["assessment"]["implementation"] = "Changed after report signing."
@@ -2359,7 +2466,83 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         errors = r3.validate_successor_ai_review_report(negative_control_failure, **kwargs)
         self.assertTrue(any("negative controls contain a failure" in error for error in errors), errors)
 
-    def test_task22_preparation_authority_uses_effective_163_and_165_not_candidate_self_authority(self) -> None:
+    def test_owner_ai_review_authority_requires_exact_signed_166_merge_and_main_ancestry(self) -> None:
+        raw = json.dumps(_owner_ai_review_authority_document(), sort_keys=True).encode("utf-8")
+
+        def run(*, pr_override=None, file_override=None, ancestry="ahead", signed=(True, "valid"), document=None):
+            pr = {
+                "number": 166, "state": "closed", "merged": True, "merged_at": "2026-11-06T10:00:00Z",
+                "merged_by": {"id": 49422864},
+                "base": {"ref": "main", "sha": r3.OWNER_AI_REVIEW_AUTHORITY_BASE_SHA},
+                "head": {"sha": r3.OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA},
+                "merge_commit_sha": r3.OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA,
+            }
+            pr.update(pr_override or {})
+            file_row = {
+                "filename": r3.OWNER_AI_REVIEW_AUTHORITY_PATH, "status": "added",
+                "sha": r3.OWNER_AI_REVIEW_AUTHORITY_BLOB,
+            }
+            file_row.update(file_override or {})
+            main_sha = "9" * 40
+            def api(endpoint: str):
+                if endpoint == "repos/Arvin-liu/1111":
+                    return {"owner": {"id": 49422864}, "private": True, "default_branch": "main"}
+                if endpoint == "repos/Arvin-liu/1111/pulls/166":
+                    return pr
+                if endpoint.endswith("/pulls/166/files?per_page=100"):
+                    return [file_row]
+                if endpoint == "repos/Arvin-liu/1111/branches/main":
+                    return {"commit": {"sha": main_sha}}
+                if endpoint == f"repos/Arvin-liu/1111/compare/{r3.OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA}...{main_sha}":
+                    return {"status": ancestry}
+                raise AssertionError(endpoint)
+            commit = {
+                "parents": [{"sha": sha} for sha in r3.OWNER_AI_REVIEW_AUTHORITY_PARENTS],
+                "commit": {"tree": {"sha": r3.OWNER_AI_REVIEW_AUTHORITY_TREE_SHA}},
+            }
+            body = raw if document is None else json.dumps(document, sort_keys=True).encode("utf-8")
+            binding = {
+                "raw": body, "blob_sha": r3.OWNER_AI_REVIEW_AUTHORITY_BLOB,
+                "file_sha256": r3.OWNER_AI_REVIEW_AUTHORITY_SHA256, "main_sha": main_sha,
+            }
+            with patch.object(r3, "_commit_from_api", return_value=commit), \
+                 patch.object(r3, "_verified_owner_commit", return_value=signed), \
+                 patch.object(r3, "_read_authenticated_control_path_commit", return_value=(binding, [])) as readback:
+                authority, errors = r3.read_authenticated_owner_ai_review_authority(github_api=api)
+            return authority, errors, readback
+
+        authority, errors, readback = run()
+        self.assertEqual(errors, [])
+        self.assertEqual(authority["merge_commit_sha"], r3.OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA)
+        self.assertEqual(authority["file_sha256"], r3.OWNER_AI_REVIEW_AUTHORITY_SHA256)
+        self.assertEqual(authority["main_sha"], "9" * 40)
+        args, kwargs = readback.call_args
+        self.assertEqual(args[1:3], (r3.OWNER_AI_REVIEW_AUTHORITY_PATH, r3.OWNER_AI_REVIEW_AUTHORITY_MERGE_SHA))
+        self.assertEqual(kwargs["expected_file_sha256"], r3.OWNER_AI_REVIEW_AUTHORITY_SHA256)
+        self.assertEqual(kwargs["expected_parent_shas"], r3.OWNER_AI_REVIEW_AUTHORITY_PARENTS)
+
+        cases = (
+            ("unmerged", {"merged": False}, None, "ahead", (True, "valid"), None, "exact manually Owner-merged"),
+            ("changed path", None, {"filename": "other.json"}, "ahead", (True, "valid"), None, "changed-file inventory"),
+            ("invalid signature", None, None, "ahead", (False, "invalid"), None, "signature is invalid"),
+            ("not ancestral", None, None, "behind", (True, "valid"), None, "not an ancestor"),
+        )
+        for label, pr_override, file_override, ancestry, signature, document, expected in cases:
+            with self.subTest(label=label):
+                authority, errors, _ = run(
+                    pr_override=pr_override, file_override=file_override, ancestry=ancestry,
+                    signed=signature, document=document,
+                )
+                self.assertIsNone(authority)
+                self.assertTrue(any(expected in error for error in errors), errors)
+
+        malformed = _owner_ai_review_authority_document()
+        malformed["owner_decision"]["final_publication_and_merge_authority"] = "AI_ONLY"
+        authority, errors, _ = run(document=malformed)
+        self.assertIsNone(authority)
+        self.assertTrue(any("content does not retain" in error for error in errors), errors)
+
+    def test_task22_preparation_authority_uses_effective_163_165_166_not_candidate_self_authority(self) -> None:
         contract = r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
         raw = json.dumps({
             "root_authority_binding": {
@@ -2392,6 +2575,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
                 return {"status": "ahead"}
             raise AssertionError(endpoint)
         with patch.object(r3, "read_authenticated_successor_root_authority", return_value=({"merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA}, [])), \
+             patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])), \
              patch.object(r3, "_commit_from_api", return_value={"parents": [{"sha": r3.TASK22_IDENTITY_BASE_SHA}, {"sha": r3.TASK22_IDENTITY_HEAD_SHA}]}), \
              patch.object(r3, "_verified_owner_commit", return_value=(True, "valid")), \
              patch.object(r3, "_read_authenticated_control_path_commit", return_value=({"raw": raw, "blob_sha": r3.TASK22_IDENTITY_TREE_BLOB, "file_sha256": r3.TASK22_IDENTITY_FILE_SHA256}, [])):
@@ -2423,7 +2607,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "formal_merge_commit_sha": merge_sha, "formal_merge_tree_sha": tree_sha,
             "formal_merge_parents": [base, head], "required_check_contexts": contexts,
             "branch_protection_rules_sha256": rules_sha, "branch_protection_verified": True,
-            "merge_method": "MERGE_COMMIT", "independent_review_mode": "INDEPENDENT_AI_EXECUTION",
+            "merge_method": "MERGE_COMMIT", "independent_review_mode": "SUBSTANTIVE_INDEPENDENT_AI_REVIEW",
             "independent_ai_review_artifact_id": owner_row["statement"]["independent_ai_review_report"]["artifact_id"],
             "independent_ai_review_report_sha256": owner_row["statement"]["independent_ai_review_report"]["report_sha256"],
             "pr_author_id": 49422864, "owner_review_record_id": owner_row["statement"]["review_id"],
@@ -2452,6 +2636,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
              patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])), \
              patch.object(r3, "read_live_branch_protection", return_value=({"rules_sha256": rules_sha, "protected": True, "admin_enforcement_enabled": True, "required_review": False, "required_approval_count": 0}, [])):
             errors = r3.validate_successor_migration_witness_live(
                 statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
@@ -2486,6 +2671,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
              patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])), \
              patch.object(r3, "read_live_branch_protection", return_value=(required_review_protection, [])):
             branch_review_errors = r3.validate_successor_migration_witness_live(
                 branch_review_statement, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
@@ -2499,6 +2685,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
              patch.object(r3, "read_live_successor_pr_diff_inventory", return_value=(diff_sha, changed_files, [])), \
              patch.object(r3, "read_live_successor_pr_raw_diff_sha256", return_value=(raw_diff_sha, [])), \
              patch.object(r3, "read_live_successor_required_contexts", return_value=(contexts, [])), \
+             patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])), \
              patch.object(r3, "read_live_branch_protection", return_value=(required_review_protection, [])):
             missing_branch_review_errors = r3.validate_successor_migration_witness_live(
                 missing_branch_review, signed_record={"committed_at": "2026-11-04T10:20:00Z"}, owner_id=49422864,
