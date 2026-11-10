@@ -1509,11 +1509,6 @@
   - 可搜索名称：NFC-502e5aa75df1bd1d / If the local root or a referenced artifact is unavailable, report the typed
   - 来源：`docs/operations/toolbox-handoff-artifact-byte-check.md`
   - 依赖：—；被引用：—
-- [If the platform does not expose verifiable model and execution/instance provenance, the result remains `BLOCKED_WITH_EVI](../../../docs/governance/r3-successor-protocol-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e9ba98e9a2162944 / If the platform does not expose verifiable model and execution/instance provenance, the result remains `BLOCKED_WITH_EVI
-  - 来源：`docs/governance/r3-successor-protocol-r1.md`
-  - 依赖：—；被引用：—
 - [if total_success_verified != 79:](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0e67ef5e62409275 / if total_success_verified != 79:
@@ -2139,15 +2134,15 @@
   - 可搜索名称：NFC-de292ce3648cb60e / Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is Current. It adds a separate publication-status axis
   - 来源：`docs/VERSIONING.md`
   - 依赖：—；被引用：—
+- [Its direct read-only report binds the task and ordinal, PR author and number, base and head, complete changed-file inven](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e20beb21b726d62 / Its direct read-only report binds the task and ordinal, PR author and number, base and head, complete changed-file inven
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [Its final source binding and public smoke are recorded in `ignition/data/operations/toolbox-openalex-query-search-source](../../../docs/operations/openalex-query-search.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cfe7f119c4fcb54a / Its final source binding and public smoke are recorded in `ignition/data/operations/toolbox-openalex-query-search-source
   - 来源：`docs/operations/openalex-query-search.md`
-  - 依赖：—；被引用：—
-- [Its read-only report binds the task and ordinal, PR author and number, base and head, changed-file inventory, per-file p](../../../docs/governance/r3-successor-protocol-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-08f37ed35baf9cb8 / Its read-only report binds the task and ordinal, PR author and number, base and head, changed-file inventory, per-file p
-  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [its status is partial/disputed evidence, target absent, underspecified](../../../evidence-program/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9226cd8f34b134f7 / Layout remains an editorial overlay. Node identity, canonical target, lifecycle status and visible relation metadata com
   - 来源：`docs/architecture/typed-change-propagation.md`
+  - 依赖：—；被引用：—
+- [LEAD_DISCOVERED → IDENTIFIER_RESOLVED \(DOI/format check passes\)](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-67ab343c67223d61 / LEAD_DISCOVERED → IDENTIFIER_RESOLVED \(DOI/format check passes\)
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
   - 依赖：—；被引用：—

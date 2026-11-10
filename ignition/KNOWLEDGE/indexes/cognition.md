@@ -5,5 +5,5 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → family = "OpenClaw"
-- [第 002 片](./cognition/part-002.md)：501—1000；FEDERATION --> OPENCLAW\[OpenClaw adapter\] → The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r
-- [第 003 片](./cognition/part-003.md)：1001—1358；The residual delta matrix passes 18/18. The live ledger preserves the historical Task104–106 mismatch and environmental → 高维认知必然多轨，dim>1 ⟹ P_track>1。
+- [第 002 片](./cognition/part-002.md)：501—1000；FEDERATION --> OPENCLAW\[OpenClaw adapter\] → The machine rule is explicit: only `AGENTIC_EXECUTOR` can enter the live validated-completion path. A reasoner runtime's
+- [第 003 片](./cognition/part-003.md)：1001—1360；The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human → 高维认知必然多轨，dim>1 ⟹ P_track>1。

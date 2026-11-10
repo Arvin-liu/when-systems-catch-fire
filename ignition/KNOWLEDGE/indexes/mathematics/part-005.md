@@ -379,9 +379,9 @@
   - 可搜索名称：NFC-775e138c41ced468 / Formal charter text, Function OS code, frozen assets, legacy tables, historical evidence cards, license terms, and the 1
   - 来源：`reports/readme/121Q19-readme-frontdoor-validation.md`
   - 依赖：—；被引用：—
-- [Formal merge and activation remain blocked until the exact candidate head has all inherited required contexts, a distinc](../../../docs/governance/r3-successor-protocol-r1.md)
+- [Formal merge and activation remain blocked until the exact candidate head has all inherited required contexts, a genuine](../../../docs/governance/r3-successor-protocol-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-947adefb285a5203 / Formal merge and activation remain blocked until the exact candidate head has all inherited required contexts, a distinc
+  - 可搜索名称：NFC-b0f8633486c89ec8 / Formal merge and activation remain blocked until the exact candidate head has all inherited required contexts, a genuine
   - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [formal objects + 22 candidate-only records + 34 pending claims = 678 scoped claim entities. The separate evidence regist](../../../reports/foundation-architecture/count-reconciliation-20260712.md)
