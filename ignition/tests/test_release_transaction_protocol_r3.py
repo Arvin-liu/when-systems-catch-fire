@@ -1351,7 +1351,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(r2.load_json(r2.PROTOCOL_PATH)["pre_publication_hard_gates"]["canonical_full_suite"]["required_runs"], 2)
         self.assertEqual(r2.load_json(r2.PROTOCOL_PATH)["main_mutation_policy"]["mode"], "ORDINARY_FAST_FORWARD_ONLY")
 
-    def test_successor_candidate_cli_labels_r2_only_as_compatibility_profile(self) -> None:
+    def test_successor_candidate_cli_marks_live_profile_unknown_without_receipt(self) -> None:
         output = StringIO()
         argv = ["validate_release_transaction_protocol_r3.py", "--check", "--check-successor"]
         with patch.object(sys, "argv", argv), patch.object(r3, "validate_contract", return_value=[]), patch.object(
@@ -1359,10 +1359,25 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         ), redirect_stdout(output):
             self.assertEqual(r3.main(), 0)
         text = output.getvalue()
-        self.assertIn("RELEASE_TRANSACTION_PROTOCOL_R3_COMPATIBILITY_CHECK_OK profile=R2", text)
+        self.assertIn(
+            "RELEASE_TRANSACTION_PROTOCOL_R3_STATIC_COMPATIBILITY_CHECK_OK pre_activation_baseline=R2",
+            text,
+        )
+        self.assertIn("LIVE_EFFECTIVE_PROFILE_UNDETERMINED", text)
         self.assertIn("RELEASE_TRANSACTION_PROTOCOL_R3_SUCCESSOR_CANDIDATE_NOT_EFFECTIVE", text)
         self.assertNotIn("current=R2", text)
         self.assertNotIn("R2 remains the effective policy", text)
+
+    def test_task22_successor_stays_inert_after_bootstrap_r3_witness(self) -> None:
+        active, errors = r3.resolve_effective_protocol(
+            _activation_receipt(), observations=_live_observations(),
+            repository_owner_id=49422864, github_api=_github_api(),
+        )
+        self.assertEqual((active, errors), ("R3", []))
+
+        successor = r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)
+        self.assertEqual(successor["status"], "CANDIDATE_NOT_EFFECTIVE")
+        self.assertEqual(r3.validate_successor_protocol_contract(successor), [])
 
     def test_short_real_natural_suite_process_passes(self) -> None:
         receipt = _record()["canonical_full_suite_receipts"][0]

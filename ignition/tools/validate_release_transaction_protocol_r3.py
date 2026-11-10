@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Validate the R3 candidate contract and exact protected-PR evidence.
+"""Validate the preserved R3 bootstrap contract and forward-only successor.
 
-R3 remains a candidate until an independent Owner-approved 1111 witness binds
-the actual final main SHA. Without that witness, R2 remains effective.
+The bootstrap file's candidate marker and R2 baseline describe the original
+pre-activation state. They do not establish the live effective profile, which
+must be resolved from the exact independent 1111 witness and live-main evidence.
+The Task22 successor amendment is separate and remains inert until its own
+Formal merge and Owner-verified migration witness are observed.
 """
 
 from __future__ import annotations
@@ -165,7 +168,7 @@ def validate_contract(document: dict[str, Any] | None = None) -> list[str]:
     if not duration_policy["natural_process_exit_required"] or not duration_policy["watchdog_termination_fails"]:
         errors.append("R3 must require successful natural process exit and fail watchdog termination")
     if protocol["effective_policy_before_activation"] != r2["contract_id"]:
-        errors.append("R2 remains current until a matching independent transition receipt is verified")
+        errors.append("R3 bootstrap must retain R2 only as its historical pre-activation policy baseline")
     if protocol["status"] != "CANDIDATE_NOT_EFFECTIVE":
         errors.append("an unmerged R3 candidate cannot declare itself effective")
     required_contexts = protocol["prepublication"]["required_status_check_contexts"]
@@ -4869,7 +4872,11 @@ def main() -> int:
             return 2
         print("RELEASE_TRANSACTION_PROTOCOL_R3_CURRENT")
     else:
-        print(f"RELEASE_TRANSACTION_PROTOCOL_R3_COMPATIBILITY_CHECK_OK profile=R2 path={relative(PROTOCOL_PATH)}")
+        print(
+            "RELEASE_TRANSACTION_PROTOCOL_R3_STATIC_COMPATIBILITY_CHECK_OK "
+            f"pre_activation_baseline=R2 path={relative(PROTOCOL_PATH)}"
+        )
+        print("LIVE_EFFECTIVE_PROFILE_UNDETERMINED: this static check has no transition receipt")
         for error in activation_errors:
             print(f"- {error}")
     if args.check_successor:
