@@ -581,7 +581,8 @@ def _owner_exact_head_review_fixture(*, pr_number: int = 801, author_id: int = 4
     ]
     report = {
         "schema_version": "r3-successor-independent-ai-review-r1",
-        "report_id": "ai-review-fixture-001", "artifact_id": "codex-reviewer-fixture-001",
+        "report_id": "owner-review-fixture-001",
+        "artifact_id": f"{r3.OWNER_AUTHORIZATION_REPOSITORY}:{r3.SUCCESSOR_REVIEW_PREFIX}owner-review-fixture-001.json",
         "created_at": "2026-11-04T09:20:00Z", "expires_at": "2026-11-04T10:30:00Z",
         "task_id": "IGNITION-20991231-999", "formal_ordinal": 999,
         "formal_pr_number": pr_number, "pr_author_id": author_id,
@@ -667,6 +668,38 @@ def _owner_ai_review_authority_snapshot() -> dict[str, object]:
         "file_sha256": r3.OWNER_AI_REVIEW_AUTHORITY_SHA256,
         "signature_verified": True, "main_sha": "9" * 40,
     }
+
+
+def _owner_review_artifact_api(row: dict[str, object], *, raw_override: bytes | None = None):
+    path = row["path"]
+    commit_sha = row["commit_sha"]
+    statement = row["statement"]
+    raw = raw_override or json.dumps(statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    parents = row["parents"]
+    commit_time = row["committed_at"]
+    content = {
+        "path": path, "type": "file", "encoding": "base64",
+        "content": base64.b64encode(raw).decode("ascii"), "sha": r3._git_blob_sha(raw),
+    }
+    commit = {
+        "sha": commit_sha, "author": {"id": 49422864},
+        "committer": {"id": r3.GITHUB_WEB_FLOW_ACCOUNT_ID, "login": "web-flow"},
+        "parents": [{"sha": parent} for parent in parents],
+        "commit": {
+            "tree": {"sha": "8" * 40}, "committer": {"date": commit_time},
+            "verification": {"verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload"},
+        },
+    }
+
+    def api(endpoint: str):
+        expected_prefix = f"repos/{r3.OWNER_AUTHORIZATION_REPOSITORY}/contents/{path}?ref={commit_sha}"
+        if endpoint == expected_prefix:
+            return content
+        if endpoint == f"repos/{r3.OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}":
+            return commit
+        raise AssertionError(f"unexpected artifact readback endpoint: {endpoint}")
+
+    return api
 
 
 def _owner_ai_review_authority_document() -> dict[str, object]:
@@ -2329,6 +2362,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "changed_files": signed["independent_ai_review_report"]["source_readback"]["files"],
             "required_contexts": signed["independent_ai_review_report"]["required_ci_contexts"],
             "valid_through": "2026-11-04T10:00:00Z",
+            "github_api": _owner_review_artifact_api(row),
         }
         with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
             self.assertEqual(r3.validate_successor_owner_exact_head_review_record(row, **kwargs), [])
@@ -2340,6 +2374,33 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
             errors = r3.validate_successor_owner_exact_head_review_record(missing_owner_signature, **kwargs)
         self.assertTrue(any("verified Owner signature" in error for error in errors), errors)
+
+        with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
+            errors = r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, github_api=None))
+        self.assertTrue(any("requires readback" in error for error in errors), errors)
+
+        wrong_statement = json.loads(json.dumps(signed))
+        wrong_statement["review_summary"] = "Different bytes were returned by the artifact store."
+        wrong_raw = json.dumps(wrong_statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        wrong_storage_api = _owner_review_artifact_api(row, raw_override=wrong_raw)
+        with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
+            errors = r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, github_api=wrong_storage_api))
+        self.assertTrue(any("stored bytes differ" in error or "do not contain the validated signed statement" in error for error in errors), errors)
+
+        expired_row = json.loads(json.dumps(row))
+        expired_statement = expired_row["statement"]
+        expired_report = expired_statement["independent_ai_review_report"]
+        expired_report["expires_at"] = "2026-11-04T09:35:00Z"
+        expired_report["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in expired_report.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        expired_raw = json.dumps(expired_statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        expired_row["blob_sha"] = r3._git_blob_sha(expired_raw)
+        expired_row["file_sha256"] = hashlib.sha256(expired_raw).hexdigest()
+        expired_api = _owner_review_artifact_api(expired_row, raw_override=expired_raw)
+        with patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
+            errors = r3.validate_successor_owner_exact_head_review_record(expired_row, **dict(kwargs, github_api=expired_api))
+        self.assertTrue(any("stored after the report expired" in error for error in errors), errors)
 
     def test_independent_ai_review_report_binds_exact_evidence_and_fails_closed(self) -> None:
         row = _owner_exact_head_review_fixture()
@@ -2362,12 +2423,47 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         unknown_context = json.loads(json.dumps(report))
         unknown_context["authoring_context"]["model_name"] = None
         unknown_context["reviewer_context"]["model_name"] = None
-        unknown_context["authoring_context"]["observed_execution_reference"] = "observed-reference-not-verified"
-        unknown_context["reviewer_context"]["observed_execution_reference"] = "observed-reference-not-verified"
+        unknown_context["authoring_context"]["observed_execution_reference"] = None
+        unknown_context["reviewer_context"]["observed_execution_reference"] = None
         unknown_context["report_sha256"] = hashlib.sha256(
             json.dumps({k: v for k, v in unknown_context.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
         ).hexdigest()
         self.assertEqual(r3.validate_successor_ai_review_report(unknown_context, **kwargs), [])
+
+        colliding_execution = json.loads(json.dumps(report))
+        colliding_execution["authoring_context"]["observed_execution_reference"] = "same-nonempty-reference"
+        colliding_execution["reviewer_context"]["observed_execution_reference"] = "same-nonempty-reference"
+        colliding_execution["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in colliding_execution.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(colliding_execution, **kwargs)
+        self.assertTrue(any("same non-empty execution reference" in error for error in errors), errors)
+
+        distinct_execution = json.loads(json.dumps(unknown_context))
+        distinct_execution["authoring_context"]["observed_execution_reference"] = "authoring-run-001"
+        distinct_execution["reviewer_context"]["observed_execution_reference"] = "reviewer-run-002"
+        distinct_execution["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in distinct_execution.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        self.assertEqual(r3.validate_successor_ai_review_report(distinct_execution, **kwargs), [])
+
+        admitted_self_review = json.loads(json.dumps(report))
+        admitted_self_review["review_process"]["independence_basis"] = (
+            "The same authoring process reviewed its own writable worktree, and no separate read-only reviewer process occurred."
+        )
+        admitted_self_review["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in admitted_self_review.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(admitted_self_review, **kwargs)
+        self.assertTrue(any("explicitly admits review by the authoring process" in error for error in errors), errors)
+
+        fabricated_artifact = json.loads(json.dumps(report))
+        fabricated_artifact["artifact_id"] = "Arvin-liu/1111:instructions/goal-mode/r3-successors/reviews/nonexistent-valid-id.json"
+        fabricated_artifact["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in fabricated_artifact.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(fabricated_artifact, **kwargs)
+        self.assertTrue(any("artifact_id is not the existing Owner review-record storage path" in error for error in errors), errors)
 
         fabricated_ids = json.loads(json.dumps(report))
         fabricated_ids["reviewer_context"]["execution_id"] = "made-up-independent-id"
@@ -2446,10 +2542,21 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         wrong_raw_diff = dict(kwargs, raw_diff_sha256="8" * 64)
         errors = r3.validate_successor_ai_review_report(report, **wrong_raw_diff)
         self.assertTrue(any("raw diff" in error for error in errors), errors)
+        missing_raw_diff = dict(kwargs, raw_diff_sha256="")
+        errors = r3.validate_successor_ai_review_report(report, **missing_raw_diff)
+        self.assertTrue(any("raw diff" in error for error in errors), errors)
 
         failed_ci = json.loads(json.dumps(report))
         failed_ci["required_ci_contexts"][0]["conclusion"] = "failure"
         errors = r3.validate_successor_ai_review_report(failed_ci, **kwargs)
+        self.assertTrue(errors)
+
+        forged_github_approval = json.loads(json.dumps(report))
+        forged_github_approval["claims_github_approved"] = True
+        forged_github_approval["report_sha256"] = hashlib.sha256(
+            json.dumps({k: v for k, v in forged_github_approval.items() if k != "report_sha256"}, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        errors = r3.validate_successor_ai_review_report(forged_github_approval, **kwargs)
         self.assertTrue(errors)
 
         expanded_scope = json.loads(json.dumps(report))
@@ -2636,7 +2743,10 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "merge_commit_sha": merge_sha, "merged_by": {"id": 49422864}, "merged_at": "2026-11-04T10:00:00Z",
             "user": {"id": 49422864, "type": "User"},
         }
+        owner_artifact_api = _owner_review_artifact_api(owner_row)
         def api(endpoint: str):
+            if endpoint.startswith(f"repos/{r3.OWNER_AUTHORIZATION_REPOSITORY}/"):
+                return owner_artifact_api(endpoint)
             if endpoint == "repos/Arvin-liu/when-systems-catch-fire/pulls/801": return pr
             if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/commits/{merge_sha}":
                 return {"sha": merge_sha, "parents": [{"sha": base}, {"sha": head}], "commit": {"tree": {"sha": tree_sha}}}
@@ -2669,6 +2779,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         branch_raw = json.dumps(branch_owner_row["statement"], sort_keys=True, separators=(",", ":")).encode()
         branch_owner_row["blob_sha"] = r3._git_blob_sha(branch_raw)
         branch_owner_row["file_sha256"] = hashlib.sha256(branch_raw).hexdigest()
+        owner_artifact_api = _owner_review_artifact_api(branch_owner_row)
         branch_review_statement = json.loads(json.dumps(statement))
         branch_review_statement["branch_protection_rules_sha256"] = "f" * 64
         branch_review_statement["owner_review_record_file_sha256"] = branch_owner_row["file_sha256"]

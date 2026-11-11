@@ -2072,6 +2072,119 @@ SUCCESSOR_AI_REVIEW_NEGATIVE_CONTROLS = {
 }
 
 
+def _reported_execution_reference(context: Any) -> str | None:
+    if not isinstance(context, dict):
+        return None
+    value = context.get("observed_execution_reference")
+    if not isinstance(value, str) or not value.strip():
+        return None
+    return value.strip()
+
+
+def _explicit_self_review_admission(value: Any) -> bool:
+    """Recognize direct admissions that contradict a claimed separate review.
+
+    This is a one-way contradiction guard: absence of these phrases is not
+    evidence of independence. Exact source readback, the process record, and
+    the later Owner-signed artifact remain separate evidence requirements.
+    """
+    if not isinstance(value, str):
+        return False
+    text = re.sub(r"\s+", " ", value.casefold().replace("writeable", "writable"))
+    patterns = (
+        r"\b(?:same )?authoring process\b.{0,100}\breviewed\b.{0,80}\b(?:its own|own)\b.{0,50}\bwritable worktree\b",
+        r"\bno separate read-only reviewer process occurred\b",
+        r"\bno separate read-only review context was used\b",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, text)
+        if match is None:
+            continue
+        clause_start = max(text.rfind(".", 0, match.start()), text.rfind(";", 0, match.start())) + 1
+        clause = text[clause_start:match.end()]
+        if re.search(r"\b(?:not|never|did not|didn't)\b.{0,35}\b(?:same authoring process|reviewed its own|no separate)\b", clause):
+            continue
+        return True
+    return False
+
+
+def _validate_owner_stored_ai_review_artifact(
+    report: dict[str, Any],
+    review_row: dict[str, Any],
+    signed_statement: dict[str, Any],
+    *,
+    owner_id: int,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None,
+) -> list[str]:
+    """Resolve the report from the existing Owner-signed append-only review blob.
+
+    Before that Owner record exists, a report can be content-validated and its
+    intended record path checked, but storage is still pending. Final
+    acceptance requires this exact signed Git blob readback.
+    """
+    errors: list[str] = []
+    if github_api is None:
+        return ["final AI review acceptance requires readback from its Owner-signed append-only record"]
+    report_id = report.get("report_id")
+    if not isinstance(report_id, str) or re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{7,127}", report_id) is None:
+        return ["AI review artifact has no safe report ID for Owner-record resolution"]
+    path = f"{SUCCESSOR_REVIEW_PREFIX}{report_id}.json"
+    expected_artifact_id = f"{OWNER_AUTHORIZATION_REPOSITORY}:{path}"
+    if (
+        report_id != signed_statement.get("review_id")
+        or review_row.get("path") != path
+        or report.get("artifact_id") != expected_artifact_id
+    ):
+        errors.append("AI review artifact reference does not resolve to this exact Owner review-record path")
+    if review_row.get("signature_verified") is not True or review_row.get("signature_reason") != "valid":
+        errors.append("AI review artifact storage is not in a verified Owner-signed append-only record")
+
+    commit_sha = review_row.get("commit_sha")
+    if not isinstance(commit_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", commit_sha):
+        return errors + ["AI review artifact Owner-record commit SHA is unavailable"]
+    try:
+        content = github_api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{quote(path, safe='/')}?ref={quote(commit_sha, safe='')}"
+        )
+        raw, blob_sha = _decode_control_file(content, OWNER_AUTHORIZATION_REPOSITORY, path, commit_sha)
+        actual_file_sha256 = hashlib.sha256(raw).hexdigest()
+        if blob_sha != review_row.get("blob_sha"):
+            errors.append("AI review artifact Git blob differs from the authenticated Owner ledger readback")
+        if actual_file_sha256 != review_row.get("file_sha256"):
+            errors.append("AI review artifact stored bytes differ from the authenticated Owner ledger digest")
+        stored_statement = json.loads(raw.decode("utf-8"))
+        if not isinstance(stored_statement, dict):
+            errors.append("retrieved Owner review-record bytes are not a JSON object")
+        elif stored_statement != signed_statement:
+            errors.append("retrieved Owner review-record bytes do not contain the validated signed statement")
+        elif stored_statement.get("independent_ai_review_report") != report:
+            errors.append("retrieved Owner review-record bytes do not contain the exact AI review report")
+
+        commit = _commit_from_api(OWNER_AUTHORIZATION_REPOSITORY, commit_sha, github_api, {})
+        valid_signature, signature_error = _verified_owner_commit(commit, owner_id)
+        if not valid_signature:
+            errors.append(f"AI review artifact storage commit lacks a verified Owner signature: {signature_error}")
+        parents = [row.get("sha") for row in commit.get("parents", []) if isinstance(row, dict)]
+        if len(parents) != 2 or parents != review_row.get("parents"):
+            errors.append("AI review artifact storage commit parents differ from the append-only Owner record")
+        actual_committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        row_committed_at, row_time_errors = _parse_control_time(review_row.get("committed_at"), "AI review artifact storage time")
+        actual_time, actual_time_errors = _parse_control_time(actual_committed_at, "AI review artifact Git commit time")
+        errors.extend(row_time_errors + actual_time_errors)
+        if row_committed_at and actual_time and row_committed_at != actual_time:
+            errors.append("AI review artifact storage time differs from its signed Git commit time")
+        report_created, created_errors = _parse_control_time(report.get("created_at"), "AI review report created_at")
+        report_expires, expiry_errors = _parse_control_time(report.get("expires_at"), "AI review report expires_at")
+        errors.extend(created_errors + expiry_errors)
+        if report_created and row_committed_at and row_committed_at < report_created:
+            errors.append("AI review artifact was stored before the report was created")
+        if report_expires and row_committed_at and row_committed_at >= report_expires:
+            errors.append("AI review artifact was stored after the report expired")
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        errors.append(f"AI review artifact storage readback failed closed: {error.__class__.__name__}: {error}")
+    return errors
+
+
 def validate_successor_ai_review_report(
     report: dict[str, Any] | None,
     *,
@@ -2090,7 +2203,11 @@ def validate_successor_ai_review_report(
     required_contexts: list[dict[str, Any]] | None,
     valid_through: str,
 ) -> list[str]:
-    """Validate the independently authored, immutable AI review artifact."""
+    """Validate report contents before signature; this alone does not prove storage.
+
+    Final artifact acceptance occurs only when the enclosing Owner-signed
+    append-only review record resolves and verifies the referenced Git blob.
+    """
     if not isinstance(report, dict):
         return ["independent AI review report is missing or malformed"]
     schema = load_json(SUCCESSOR_SCHEMA_PATH)
@@ -2115,6 +2232,9 @@ def validate_successor_ai_review_report(
     ).hexdigest()
     if report.get("report_sha256") != canonical_digest:
         errors.append("independent AI review report digest does not match its canonical artifact bytes")
+    expected_artifact_id = f"{OWNER_AUTHORIZATION_REPOSITORY}:{SUCCESSOR_REVIEW_PREFIX}{report.get('report_id')}.json"
+    if report.get("artifact_id") != expected_artifact_id:
+        errors.append("independent AI review artifact_id is not the existing Owner review-record storage path")
 
     authoring = report.get("authoring_context") or {}
     reviewer = report.get("reviewer_context") or {}
@@ -2132,6 +2252,10 @@ def validate_successor_ai_review_report(
             for item in limitations if isinstance(item, str)
         ):
             errors.append(f"independent AI review {label} context must disclose identity verification limits")
+    authoring_ref = _reported_execution_reference(authoring)
+    reviewer_ref = _reported_execution_reference(reviewer)
+    if authoring_ref is not None and reviewer_ref is not None and authoring_ref == reviewer_ref:
+        errors.append("independent AI review reports the same non-empty execution reference for author and reviewer")
 
     process = report.get("review_process") or {}
     required_actions = {
@@ -2142,10 +2266,12 @@ def validate_successor_ai_review_report(
         process.get("reviewer_role") != "INDEPENDENT_NON_AUTHOR_AI_REVIEWER"
         or process.get("method") != "DIRECT_READ_ONLY_EXACT_HEAD_REVIEW"
         or not isinstance(process.get("independence_basis"), str)
-        or len(process.get("independence_basis", "").strip()) < 80
+        or not process.get("independence_basis", "").strip()
         or set(process.get("reviewed_actions", [])) != required_actions
     ):
         errors.append("independent AI review does not document a substantive separate read-only exact-head process")
+    if _explicit_self_review_admission(process.get("independence_basis")):
+        errors.append("independent AI review basis explicitly admits review by the authoring process or its writable worktree")
     authority_binding = report.get("owner_independent_ai_review_authority") or {}
     authority_contract = load_json(SUCCESSOR_PROTOCOL_PATH)["owner_independent_ai_review_authority"]
     expected_binding = {
@@ -2275,6 +2401,12 @@ def validate_successor_owner_exact_head_review_record(
         changed_files=changed_files,
         required_contexts=required_contexts, valid_through=valid_through,
     ))
+    if isinstance(report, dict):
+        if report.get("report_id") != signed.get("review_id"):
+            errors.append("AI review report ID does not bind its containing Owner review-record ID")
+        errors.extend(_validate_owner_stored_ai_review_artifact(
+            report, review_row, signed, owner_id=owner_id, github_api=github_api,
+        ))
     live_authority, authority_errors = read_authenticated_owner_ai_review_authority(github_api=github_api)
     errors.extend(authority_errors)
     if live_authority is None:
