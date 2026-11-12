@@ -2673,6 +2673,7 @@
         "schemas/operations/release-transaction-protocol-r2.schema.json",
         "schemas/operations/release-transaction-protocol-r3.schema.json",
         "schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json",
+        "schemas/operations/task22-bootstrap-registration-r0.schema.json",
         "tests/test_release_transaction_protocol.py",
         "tests/test_release_transaction_protocol_r3.py",
         "tools/validate_release_transaction_protocol.py",
