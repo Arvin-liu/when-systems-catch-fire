@@ -75,12 +75,19 @@ SUCCESSOR_ROOT_INSTRUCTION_PATH = "instructions/IGNITION-2026-11-04-R3-SUCCESSOR
 SUCCESSOR_ROOT_INSTRUCTION_BLOB = "cdf9f4783eae4f509d2a44f4bcacbaf4eb97a687"
 SUCCESSOR_ROOT_INSTRUCTION_SHA256 = "e6ae8406ddf68904e4d85f1aff3f823686e0e0a6b7a4f428e8eaca19e887dea9"
 TASK22_IDENTITY_PR_NUMBER = 165
+TASK22_IDENTITY_TASK_ID = "IGNITION-20261105-022"
 TASK22_IDENTITY_BASE_SHA = "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"
 TASK22_IDENTITY_HEAD_SHA = "17ed13c274630269062e84834d52b49f34236931"
 TASK22_IDENTITY_MERGE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
 TASK22_IDENTITY_TREE_BLOB = "146df919b91ddf2bf189a106441abee80486056d"
 TASK22_IDENTITY_FILE_SHA256 = "f4300d22378458b1ed36ccb168cbe67be71c8056706005af331e3bd93c6ccc05"
 TASK22_IDENTITY_PATH = "instructions/goal-mode/IGNITION-2026-11-05-TASK22-OWNER-IDENTITY-ASSIGNMENT-R0.json"
+TASK22_FORMAL_PR_NUMBER = 268
+TASK22_PREDECESSOR_ID = "IGNITION-20261101-021"
+TASK22_BOOTSTRAP_REGISTRATION_PATH = "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json"
+TASK22_BOOTSTRAP_REGISTRATION_PREFIX = "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-"
+TASK22_BOOTSTRAP_SCHEMA_PATH = ROOT / "schemas/operations/task22-bootstrap-registration-r0.schema.json"
+TASK22_BOOTSTRAP_SCOPE = "TASK22_BOOTSTRAP_REGISTRATION_ONLY"
 OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER = 166
 OWNER_AI_REVIEW_AUTHORITY_BASE_SHA = "5449650811882f0c107e58680ee43d92577f7288"
 OWNER_AI_REVIEW_AUTHORITY_HEAD_SHA = "9f6433041cf8d44d353d1ebcc32a68517a74552b"
@@ -243,8 +250,11 @@ def validate_successor_protocol_contract(
     return errors
 
 
-def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
+def authoritative_task_context(
+    *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any], list[str]]:
     """Load formal identity from the checked-out canonical sources; never infer it."""
+    api = github_api or _gh_api_json
     errors: list[str] = []
     try:
         lineage = load_json(CURRENT_TASK_PATH)
@@ -344,7 +354,7 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
     }
     if not errors:
         if registration_profile == SUCCESSOR_PROTOCOL_ID:
-            ledger, ledger_errors = read_authenticated_successor_control_ledger()
+            ledger, ledger_errors = read_authenticated_successor_control_ledger(github_api=api)
             errors.extend(ledger_errors)
             if ledger is not None:
                 matches = [row for row in ledger["registrations"] if row["path"] == successor_registration_path]
@@ -382,7 +392,7 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
                     ):
                         errors.append("Owner-signed successor registration differs from the exact task contract, protocol, base, nonce or ordered parents")
                     try:
-                        current_task_content = _gh_api_json(
+                        current_task_content = api(
                             f"repos/{PUBLIC_REPOSITORY}/contents/{quote(relative(CURRENT_TASK_PATH), safe='/')}?ref={quote(formal_base_main_sha, safe='')}"
                         )
                         task_bytes, _ = _decode_control_file(current_task_content, PUBLIC_REPOSITORY, relative(CURRENT_TASK_PATH), formal_base_main_sha)
@@ -400,6 +410,7 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
                 expected_formal_base_main_sha=formal_base_main_sha,
                 expected_nonce=registration_nonce,
                 expected_parent_shas=registration_parent_shas,
+                github_api=api,
             )
             errors.extend(registration_errors)
             if registration_evidence is not None:
@@ -1018,6 +1029,7 @@ def read_authenticated_task22_amendment_preparation_authority(
             return None, ["PR #165 identity-assignment blob differs from the Owner-merged file"]
         assignment = json.loads(binding["raw"].decode("utf-8"))
         assigned = assignment["explicit_identity_assignment"]
+        allocation = assigned.get("allocation_qualification")
         root_binding = assignment["root_authority_binding"]
         scope = assignment["authorization_scope_after_verified_owner_merge"]
         prohibited_actions = scope.get("prohibited")
@@ -1026,9 +1038,20 @@ def read_authenticated_task22_amendment_preparation_authority(
             or root_binding.get("effective") is not True
             or assigned.get("task_id") != contract["task_id"]
             or assigned.get("formal_ordinal") != contract["formal_ordinal"]
+            or assigned.get("predecessor_task_id") != TASK22_PREDECESSOR_ID
             or assigned.get("formal_base_main_sha_observed") != "87d7f8d3114e859a59585da336fb6301ee4cbbd3"
             or assigned.get("proposed_work_branch") != contract["work_branch"]
             or assigned.get("proposed_receipt_branch") != contract["receipt_branch"]
+            or not isinstance(allocation, dict)
+            or allocation.get("current_registration", {}).get("path") != SUCCESSOR_REGISTRATION_PATH
+            or allocation.get("current_registration", {}).get("blob_sha") != "bb9cf4d0f4c05ce6d73f67de0958bcae778c039f"
+            or allocation.get("current_registration", {}).get("task_id") != TASK22_PREDECESSOR_ID
+            or allocation.get("current_registration", {}).get("identity_inventory_size") != 106
+            or allocation.get("current_registration", {}).get("candidate_022_or_ordinal22_collision") is not False
+            or allocation.get("fresh_exact_checks_2026_11_06", {}).get("formal_main_sha") != "87d7f8d3114e859a59585da336fb6301ee4cbbd3"
+            or allocation.get("fresh_exact_checks_2026_11_06", {}).get("target_file_absent_on_1111_main") is not True
+            or allocation.get("fresh_exact_checks_2026_11_06", {}).get("exact_candidate_task_id_open_pr_search_count") != 0
+            or allocation.get("fresh_exact_checks_2026_11_06", {}).get("exact_candidate_work_and_receipt_branch_refs_absent") is not True
             or not isinstance(prohibited_actions, list)
             or not any("Stage A 023" in item for item in prohibited_actions)
             or not any("Branch-protection" in item for item in prohibited_actions)
@@ -1050,8 +1073,11 @@ def read_authenticated_task22_amendment_preparation_authority(
             "file_path": identity["path"],
             "file_blob_sha": binding["blob_sha"],
             "file_sha256": binding["file_sha256"],
+            "identity_allocation_qualification": allocation,
             "task_id": assigned["task_id"],
             "formal_ordinal": assigned["formal_ordinal"],
+            "predecessor_task_id": assigned["predecessor_task_id"],
+            "formal_base_main_sha": assigned["formal_base_main_sha_observed"],
             "work_branch": assigned["proposed_work_branch"],
             "receipt_branch": assigned["proposed_receipt_branch"],
             "permitted": contract["permitted"],
@@ -1059,6 +1085,252 @@ def read_authenticated_task22_amendment_preparation_authority(
         }, []
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
         return None, [f"Task22 #163/#165 preparation authority failed closed: {error.__class__.__name__}: {error}"]
+
+
+def _canonical_control_sha256(value: dict[str, Any]) -> str:
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+
+
+def task22_bootstrap_registration_binding(row: dict[str, Any] | None) -> dict[str, Any] | None:
+    """Return the immutable identity of the verified external Task22 registration."""
+    if not isinstance(row, dict) or not isinstance(row.get("statement"), dict):
+        return None
+    statement = row["statement"]
+    return {
+        "registration_id": statement.get("registration_id"),
+        "path": row.get("path"),
+        "pull_request_number": row.get("pull_request_number"),
+        "commit_sha": row.get("commit_sha"),
+        "blob_sha": row.get("blob_sha"),
+        "file_sha256": row.get("file_sha256"),
+        "registration_nonce": statement.get("registration_nonce"),
+        "ordered_parent_shas": row.get("parents"),
+        "committed_at": row.get("committed_at"),
+    }
+
+
+def validate_task22_bootstrap_registration_statement(
+    statement: dict[str, Any],
+    *,
+    authority: dict[str, Any],
+    task21_registration: dict[str, Any],
+    expected_formal_candidate_head_sha: str | None = None,
+) -> list[str]:
+    """Validate the one-time Task22 record against live #163/#165 and Task21 evidence.
+
+    This function only validates a proposed statement. It never makes the file
+    effective; effectiveness is established by the separate Owner web-flow
+    merge/readback path.
+    """
+    errors: list[str] = []
+    try:
+        schema = load_json(TASK22_BOOTSTRAP_SCHEMA_PATH)
+        errors.extend(_schema_errors(statement, schema))
+        if errors:
+            return errors
+        root = authority["root_authority"]
+        identity = authority
+        review_authority = authority["owner_independent_ai_review_authority"]
+        expected_root = {
+            "repository": root["repository"], "pull_request_number": root["pull_request_number"],
+            "merge_commit_sha": root["merge_commit_sha"], "file_path": root["file_path"],
+            "blob_sha": root["file_blob_sha"], "file_sha256": root["file_sha256"],
+        }
+        expected_identity = {
+            "repository": identity["repository"], "pull_request_number": identity["pull_request_number"],
+            "merge_commit_sha": identity["merge_commit_sha"], "file_path": identity["file_path"],
+            "blob_sha": identity["file_blob_sha"], "file_sha256": identity["file_sha256"],
+        }
+        expected_review_authority = {
+            "repository": review_authority["repository"], "pull_request_number": review_authority["pull_request_number"],
+            "merge_commit_sha": review_authority["merge_commit_sha"], "file_path": review_authority["file_path"],
+            "blob_sha": review_authority["file_blob_sha"], "file_sha256": review_authority["file_sha256"],
+        }
+        if statement["root_authority_binding"] != expected_root:
+            errors.append("Task22 bootstrap record does not bind the verified #163 root file and Owner merge")
+        if statement["identity_assignment_binding"] != expected_identity:
+            errors.append("Task22 bootstrap record does not bind the verified #165 identity file and Owner merge")
+        if statement["independent_review_authority_binding"] != expected_review_authority:
+            errors.append("Task22 bootstrap record does not bind the verified #166 review-governance clarification")
+        task = statement["task_identity"]
+        if (
+            task["task_id"] != identity["task_id"] or task["formal_ordinal"] != identity["formal_ordinal"]
+            or task["predecessor_task_id"] != identity["predecessor_task_id"]
+            or task["formal_base_main_sha"] != identity["formal_base_main_sha"]
+            or task["work_branch"] != identity["work_branch"]
+            or task["receipt_branch"] != identity["receipt_branch"]
+        ):
+            errors.append("Task22 bootstrap record differs from the exact #165 task, predecessor, base or assigned branches")
+        pr = statement["formal_pr_binding"]
+        if (
+            pr["repository"] != PUBLIC_REPOSITORY or pr["pull_request_number"] != TASK22_FORMAL_PR_NUMBER
+            or pr["base_sha"] != identity["formal_base_main_sha"] or pr["head_branch"] != identity["work_branch"]
+            or (expected_formal_candidate_head_sha is not None
+                and pr["candidate_head_sha"] != expected_formal_candidate_head_sha)
+        ):
+            errors.append("Task22 bootstrap record does not bind the assigned #268 branch, exact base and candidate head")
+
+        prior = task21_registration.get("statement")
+        inventory = prior.get("conflict_inventory") if isinstance(prior, dict) else None
+        if (
+            not isinstance(prior, dict) or prior.get("task_id") != TASK22_PREDECESSOR_ID
+            or prior.get("formal_ordinal") != 21
+        ):
+            errors.append("Task22 bootstrap predecessor is not the exact authenticated Task21 registration")
+        elif statement["registration_id"] == prior.get("registration_id"):
+            errors.append("Task22 bootstrap registration ID replays the authenticated Task21 registration ID")
+        if not isinstance(inventory, dict):
+            return errors + ["authenticated Task21 registration has no complete conflict inventory"]
+        inventory_payload = {key: value for key, value in inventory.items() if key != "inventory_sha256"}
+        inventory_sha = _canonical_control_sha256(inventory_payload)
+        identities = inventory.get("formal_task_identities")
+        if not isinstance(identities, list):
+            return errors + ["authenticated Task21 conflict inventory is incomplete"]
+        ids = [row.get("task_id") for row in identities if isinstance(row, dict)]
+        ordinals = [row.get("formal_ordinal") for row in identities if isinstance(row, dict)]
+        work_branches = [row.get("work_branch") for row in identities if isinstance(row, dict)]
+        receipt_branches = [row.get("receipt_branch") for row in identities if isinstance(row, dict)]
+        if any(len(values) != len(set(values)) for values in (ids, ordinals, work_branches, receipt_branches)):
+            errors.append("authenticated Task21 conflict inventory contains duplicate task IDs, ordinals or branches")
+        assigned = identity["task_id"]
+        available = {
+            "task_id_available": assigned not in ids,
+            "ordinal_available": identity["formal_ordinal"] not in ordinals,
+            "work_branch_available": identity["work_branch"] not in work_branches,
+            "receipt_branch_available": identity["receipt_branch"] not in receipt_branches,
+        }
+        if not all(available.values()):
+            errors.append("Task22 identity collides with the authenticated Task21 conflict inventory")
+        source = statement["conflict_inventory"]["task21_registration"]
+        expected_source = {
+            "path": task21_registration["path"], "commit_sha": task21_registration["commit_sha"],
+            "blob_sha": task21_registration["git_blob_sha"], "file_sha256": task21_registration["file_sha256"],
+            "inventory_sha256": inventory_sha, "identity_count": len(identities),
+        }
+        if source != expected_source:
+            errors.append("Task22 bootstrap conflict inventory differs from the authenticated Task21 source inventory")
+        if statement["conflict_inventory"]["task22_identity_assignment_scan_sha256"] != _canonical_control_sha256(identity["identity_allocation_qualification"]):
+            errors.append("Task22 bootstrap conflict inventory does not bind the effective #165 allocation collision scan")
+        if statement["conflict_inventory"]["task22_identity_collision_checks"] != available:
+            errors.append("Task22 bootstrap conflict inventory does not report the recomputed identity collision results")
+        candidate = statement["conflict_inventory"]["formal_candidate_pr"]
+        if candidate != {
+            "repository": PUBLIC_REPOSITORY, "pull_request_number": TASK22_FORMAL_PR_NUMBER,
+            "base_sha": identity["formal_base_main_sha"], "candidate_head_sha": pr["candidate_head_sha"],
+            "head_branch": identity["work_branch"],
+        }:
+            errors.append("Task22 bootstrap conflict inventory differs from the exact existing assigned Formal PR")
+        conflict_payload = {key: value for key, value in statement["conflict_inventory"].items() if key != "inventory_sha256"}
+        if statement["conflict_inventory"]["inventory_sha256"] != _canonical_control_sha256(conflict_payload):
+            errors.append("Task22 bootstrap conflict-inventory digest differs from its exact canonical contents")
+        if statement["registration_nonce"] == prior.get("registration_nonce"):
+            errors.append("Task22 bootstrap nonce replays the immutable Task21 registration nonce")
+        recorded_at, time_errors = _parse_control_time(statement["prepared_at_utc"], "Task22 bootstrap prepared_at_utc")
+        errors.extend(time_errors)
+        if not isinstance(recorded_at, datetime):
+            errors.append("Task22 bootstrap prepared_at_utc is not an authentic parseable timestamp")
+    except (KeyError, TypeError, ValueError, OSError, json.JSONDecodeError) as error:
+        errors.append(f"Task22 bootstrap registration statement is incomplete: {error.__class__.__name__}: {error}")
+    return errors
+
+
+def validate_task22_bootstrap_registration_evidence(
+    row: dict[str, Any] | None,
+    *,
+    authority: dict[str, Any],
+    task21_registration: dict[str, Any],
+    expected_formal_base_sha: str,
+    expected_formal_candidate_head_sha: str,
+    existing_registration_ids: list[str] | None = None,
+    existing_nonces: list[str] | None = None,
+) -> list[str]:
+    """Require the proposal to have become one immutable verified Owner merge."""
+    if not isinstance(row, dict):
+        return ["Task22 Owner review or migration lacks an authenticated bootstrap registration"]
+    statement = row.get("statement")
+    if not isinstance(statement, dict):
+        return ["Task22 bootstrap registration has no structured statement"]
+    errors = validate_task22_bootstrap_registration_statement(
+        statement, authority=authority,
+        task21_registration=task21_registration,
+        expected_formal_candidate_head_sha=expected_formal_candidate_head_sha,
+    )
+    if row.get("path") != TASK22_BOOTSTRAP_REGISTRATION_PATH:
+        errors.append("Task22 bootstrap registration is not stored at the one fixed root-governance path")
+    if row.get("signature_verified") is not True or row.get("signature_reason") != "valid":
+        errors.append("Task22 bootstrap registration lacks a GitHub-verified Owner signature")
+    if row.get("owner_web_flow_merge_verified") is not True:
+        errors.append("Task22 bootstrap registration was not introduced by the Owner's GitHub web-flow PR merge")
+    if row.get("append_only_first_write_verified") is not True or row.get("path_addition_count") != 1:
+        errors.append("Task22 bootstrap registration path was replayed or is not a single append-only first write")
+    if row.get("pull_request_number") is None or row.get("commit_sha") is None:
+        errors.append("Task22 bootstrap registration lacks the exact merged PR or commit identity")
+    raw = row.get("raw")
+    if not isinstance(raw, bytes):
+        errors.append("Task22 bootstrap registration has no exact raw file bytes")
+    elif (
+        row.get("file_sha256") != hashlib.sha256(raw).hexdigest()
+        or row.get("blob_sha") != _git_blob_sha(raw)
+    ):
+        errors.append("Task22 bootstrap registration blob or exact file SHA-256 does not match its bytes")
+    parents = row.get("parents")
+    pr_base = row.get("pr_base_sha")
+    pr_head = row.get("pr_head_sha")
+    if (
+        not isinstance(parents, list) or len(parents) != 2 or parents != [pr_base, pr_head]
+        or row.get("pr_merged_by_id") != authority.get("owner_actor_id")
+    ):
+        errors.append("Task22 bootstrap registration merge parents or Owner PR attribution are invalid")
+    if statement.get("formal_pr_binding", {}).get("base_sha") != expected_formal_base_sha:
+        errors.append("Task22 bootstrap registration is for a different Formal base")
+    if statement.get("registration_id") in (existing_registration_ids or []):
+        errors.append("Task22 bootstrap registration ID is replayed by an existing successor registration")
+    if statement.get("registration_nonce") in (existing_nonces or []):
+        errors.append("Task22 bootstrap registration nonce is replayed by an existing Owner control record")
+    commit_time, commit_errors = _parse_control_time(row.get("committed_at"), "Task22 bootstrap verified Owner merge time")
+    prepared_at, prepared_errors = _parse_control_time(statement.get("prepared_at_utc"), "Task22 bootstrap prepared_at_utc")
+    errors.extend(commit_errors + prepared_errors)
+    if commit_time and prepared_at and prepared_at > commit_time:
+        errors.append("Task22 bootstrap record claims preparation after its verified Owner merge time")
+    return errors
+
+
+def validate_task22_bootstrap_migration_binding(
+    migration_statement: dict[str, Any],
+    owner_review_statement: dict[str, Any] | None,
+    task22_bootstrap_registration: dict[str, Any] | None,
+) -> list[str]:
+    """Require PR #268 migration and its Owner review to name one real record."""
+    is_task22_migration = migration_statement.get("formal_pr_number") == TASK22_FORMAL_PR_NUMBER
+    review_is_task22 = isinstance(owner_review_statement, dict) and owner_review_statement.get("task_id") == TASK22_IDENTITY_TASK_ID
+    has_binding = migration_statement.get("task22_bootstrap_registration_binding") is not None
+    if not is_task22_migration and not review_is_task22 and not has_binding:
+        return []
+    errors: list[str] = []
+    expected = task22_bootstrap_registration_binding(task22_bootstrap_registration)
+    if expected is None:
+        return ["Task22 migration witness lacks the authenticated external bootstrap registration"]
+    if not is_task22_migration or not review_is_task22:
+        errors.append("Task22 bootstrap registration is attached to a different migration PR or review task")
+    if migration_statement.get("task22_bootstrap_registration_binding") != expected:
+        errors.append("Task22 migration witness does not bind the exact authenticated bootstrap registration record")
+    if owner_review_statement is None or owner_review_statement.get("task22_bootstrap_registration_binding") != expected:
+        errors.append("Task22 migration witness Owner review does not bind the exact authenticated bootstrap registration record")
+    if owner_review_statement is not None and (
+        owner_review_statement.get("registration_id") != expected.get("registration_id")
+        or owner_review_statement.get("formal_pr_number") != migration_statement.get("formal_pr_number")
+        or owner_review_statement.get("formal_base_sha") != migration_statement.get("formal_base_sha")
+        or owner_review_statement.get("formal_candidate_head_sha") != migration_statement.get("formal_candidate_head_sha")
+    ):
+        errors.append("Task22 migration and Owner review refer to different registration, PR, base or head")
+    bootstrap_statement = task22_bootstrap_registration["statement"]
+    if (
+        bootstrap_statement.get("registration_id") != expected.get("registration_id")
+        or bootstrap_statement.get("formal_pr_binding", {}).get("base_sha") != migration_statement.get("formal_base_sha")
+        or bootstrap_statement.get("formal_pr_binding", {}).get("candidate_head_sha") != migration_statement.get("formal_candidate_head_sha")
+    ):
+        errors.append("Task22 migration does not match the bootstrap record's exact PR base and candidate head")
+    return errors
 
 
 def validate_task22_local_preparation_checkout(
@@ -1441,6 +1713,16 @@ def read_authenticated_successor_control_ledger(
             row.get("path"): row for row in tree["tree"]
             if isinstance(row, dict) and any(row.get("path", "").startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES)
         }
+        bootstrap_paths = {
+            row.get("path"): row for row in tree["tree"]
+            if isinstance(row, dict) and isinstance(row.get("path"), str)
+            and row["path"].startswith(TASK22_BOOTSTRAP_REGISTRATION_PREFIX)
+        }
+        if set(bootstrap_paths) - {TASK22_BOOTSTRAP_REGISTRATION_PATH}:
+            return None, ["1111/main contains an unexpected second Task22 bootstrap-registration path"]
+        for path, entry in bootstrap_paths.items():
+            if entry.get("type") != "blob" or not path.endswith(".json"):
+                return None, [f"Task22 bootstrap-registration path is not one JSON file: {path}"]
         for path, entry in current_entries.items():
             if not isinstance(path, str) or not any(path.startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES):
                 continue
@@ -1452,6 +1734,7 @@ def read_authenticated_successor_control_ledger(
 
         # Track every path creation/change along 1111/main's first-parent chain.
         additions: dict[str, dict[str, Any]] = {}
+        bootstrap_additions: dict[str, dict[str, Any]] = {}
         cursor = main_sha
         control_merge_cache: dict[str, dict[str, Any]] = {}
         for _ in range(MAX_FIRST_PARENT_CONTROL_PATH_SCAN):
@@ -1467,7 +1750,39 @@ def read_authenticated_successor_control_ledger(
                 if not isinstance(file_change, dict):
                     continue
                 path = file_change.get("filename")
-                if not isinstance(path, str) or not any(path.startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES):
+                if not isinstance(path, str):
+                    continue
+                if path.startswith(TASK22_BOOTSTRAP_REGISTRATION_PREFIX) and path != TASK22_BOOTSTRAP_REGISTRATION_PATH:
+                    return None, [f"1111/main history contains an unexpected Task22 bootstrap-registration path: {path}"]
+                if path == TASK22_BOOTSTRAP_REGISTRATION_PATH:
+                    if file_change.get("status") != "added" or path in bootstrap_additions:
+                        return None, [f"Task22 bootstrap registration was changed, deleted, renamed or replayed at {cursor}"]
+                    if not isinstance(file_change.get("sha"), str) or not re.fullmatch(r"[0-9a-f]{40}", file_change["sha"]):
+                        return None, ["Task22 bootstrap-registration addition has no exact Git blob SHA"]
+                    if not parent_sha:
+                        return None, ["Task22 bootstrap-registration addition has no 1111/main first parent"]
+                    control_merge, merge_errors = _require_owner_verified_control_pr_merge(
+                        cursor, owner_id, api, control_merge_cache, path
+                    )
+                    if merge_errors or control_merge is None:
+                        return None, [f"Task22 bootstrap record is not a verified Owner web-flow PR merge: {error}" for error in merge_errors]
+                    after = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, cursor, path, api, cache)
+                    before = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, parent_sha, path, api, cache)
+                    second_parent_sha = parent_list[1].get("sha") if len(parent_list) == 2 and isinstance(parent_list[1], dict) else None
+                    second_parent = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, second_parent_sha, path, api, cache) if second_parent_sha else None
+                    addition_errors = validate_successor_append_only_addition(
+                        path, status=file_change.get("status"), already_added=False,
+                        blob_sha=file_change.get("sha"), first_parent_sha=parent_sha,
+                        before_entry=before, after_entry=after, second_parent_entry=second_parent,
+                    )
+                    if addition_errors:
+                        return None, [f"Task22 bootstrap path history failed closed at {cursor}: {item}" for item in addition_errors]
+                    bootstrap_additions[path] = {
+                        "commit_sha": cursor, "blob_sha": after["sha"],
+                        "parents": [row.get("sha") for row in parent_list], "control_merge": control_merge,
+                    }
+                    continue
+                if not any(path.startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES):
                     continue
                 if file_change.get("status") != "added" or path in additions:
                     addition_errors = validate_successor_append_only_addition(
@@ -1509,6 +1824,8 @@ def read_authenticated_successor_control_ledger(
             missing = sorted(set(additions) - set(current_entries))
             unregistered = sorted(set(current_entries) - set(additions))
             return None, [f"append-only ledger tree/history mismatch: deleted={missing}, unsigned_or_untracked={unregistered}"]
+        if set(bootstrap_additions) != set(bootstrap_paths):
+            return None, ["Task22 bootstrap-registration tree/history mismatch; deletion or unsigned addition is present"]
 
         schema = load_json(SUCCESSOR_SCHEMA_PATH)
         records: list[dict[str, Any]] = []
@@ -1573,6 +1890,114 @@ def read_authenticated_successor_control_ledger(
                 "signature_verified": True,
                 "signature_reason": "valid",
             })
+
+        bootstrap_registration = None
+        if TASK22_BOOTSTRAP_REGISTRATION_PATH in bootstrap_paths:
+            metadata = bootstrap_additions[TASK22_BOOTSTRAP_REGISTRATION_PATH]
+            raw_content = api(
+                f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{quote(TASK22_BOOTSTRAP_REGISTRATION_PATH, safe='/')}?ref={quote(main_sha, safe='')}"
+            )
+            raw, blob_sha = _decode_control_file(
+                raw_content, OWNER_AUTHORIZATION_REPOSITORY, TASK22_BOOTSTRAP_REGISTRATION_PATH, main_sha
+            )
+            if blob_sha != bootstrap_paths[TASK22_BOOTSTRAP_REGISTRATION_PATH].get("sha") or blob_sha != metadata["blob_sha"]:
+                return None, ["Task22 bootstrap file bytes differ from the exact Owner-merged main tree blob"]
+            statement = json.loads(raw.decode("utf-8"))
+            authority, authority_errors = read_authenticated_task22_amendment_preparation_authority(github_api=api)
+            if authority_errors or authority is None:
+                return None, [f"Task22 bootstrap registration lacks its live #163/#165/#166 authority: {error}" for error in authority_errors]
+            canonical_identity, identity_errors = authoritative_task_context(github_api=api)
+            if identity_errors or canonical_identity.get("task_id") != TASK22_PREDECESSOR_ID:
+                return None, [f"Task22 bootstrap predecessor identity readback failed closed: {error}" for error in identity_errors or ["Formal main no longer names Task21 as current"]]
+            task21_registration = canonical_identity.get("successor_registration")
+            if not isinstance(task21_registration, dict):
+                return None, ["Task22 bootstrap registration cannot authenticate the complete Task21 conflict inventory"]
+            statement_errors = validate_task22_bootstrap_registration_statement(
+                statement, authority=authority, task21_registration=task21_registration,
+            )
+            if statement_errors:
+                return None, [f"Task22 bootstrap registration statement failed: {error}" for error in statement_errors]
+            file_sha256 = hashlib.sha256(raw).hexdigest()
+            path_binding, path_errors = _read_authenticated_control_path_commit(
+                OWNER_AUTHORIZATION_REPOSITORY, TASK22_BOOTSTRAP_REGISTRATION_PATH,
+                metadata["commit_sha"], owner_id, expected_file_sha256=file_sha256,
+                expected_parent_shas=metadata["parents"], api=api,
+            )
+            if path_errors or path_binding is None:
+                return None, [f"Task22 bootstrap Owner-merge readback failed closed: {error}" for error in path_errors]
+            if path_binding["blob_sha"] != blob_sha:
+                return None, ["Task22 bootstrap signed commit blob differs from the exact file bytes"]
+            control_merge = metadata["control_merge"]
+            registration_commit_time = path_binding["committed_at"]
+            registration_pr = control_merge.get("pr") or {}
+            formal_pr = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{TASK22_FORMAL_PR_NUMBER}")
+            formal_base, formal_head = formal_pr.get("base") or {}, formal_pr.get("head") or {}
+            if (
+                formal_pr.get("number") != TASK22_FORMAL_PR_NUMBER
+                or formal_base.get("ref") != "main"
+                or formal_base.get("sha") != statement["formal_pr_binding"]["base_sha"]
+                or formal_head.get("ref") != statement["formal_pr_binding"]["head_branch"]
+                or formal_head.get("sha") != statement["formal_pr_binding"]["candidate_head_sha"]
+            ):
+                return None, ["Task22 bootstrap record is stale for the live exact PR #268 base, branch or candidate head"]
+            existing_registration_rows = [
+                row for row in records if row.get("statement", {}).get("record_type") == "TASK_REGISTRATION"
+            ]
+            if any(
+                row["statement"].get("registration_id") == statement["registration_id"]
+                or row["statement"].get("task_id") == TASK22_IDENTITY_TASK_ID
+                or row["statement"].get("formal_ordinal") == 22
+                for row in existing_registration_rows
+            ):
+                return None, ["Task22 bootstrap registration ID or assigned task identity is replayed in the future successor ledger"]
+            existing_nonces = {
+                row.get("statement", {}).get(field)
+                for row in records
+                for field in ("registration_nonce", "preparation_nonce", "authorization_nonce", "revocation_nonce", "supersession_nonce", "review_nonce")
+            }
+            if statement["registration_nonce"] in existing_nonces or statement["registration_nonce"] == task21_registration["statement"].get("registration_nonce"):
+                return None, ["Task22 bootstrap registration nonce is replayed by another Owner control record"]
+            bootstrap_registration = {
+                "path": TASK22_BOOTSTRAP_REGISTRATION_PATH,
+                "statement": statement,
+                "commit_sha": metadata["commit_sha"],
+                "parents": metadata["parents"],
+                "blob_sha": blob_sha,
+                "file_sha256": file_sha256,
+                "raw": raw,
+                "committed_at": registration_commit_time,
+                "pull_request_number": registration_pr.get("number"),
+                "pr_base_sha": (registration_pr.get("base") or {}).get("sha"),
+                "pr_head_sha": (registration_pr.get("head") or {}).get("sha"),
+                "pr_merged_by_id": (registration_pr.get("merged_by") or {}).get("id"),
+                "owner_web_flow_merge_verified": True,
+                "append_only_first_write_verified": True,
+                "path_addition_count": 1,
+                "signature_verified": True,
+                "signature_reason": "valid",
+                "main_sha": main_sha,
+            }
+            bootstrap_errors = validate_task22_bootstrap_registration_evidence(
+                bootstrap_registration, authority=authority, task21_registration=task21_registration,
+                expected_formal_base_sha=statement["formal_pr_binding"]["base_sha"],
+                expected_formal_candidate_head_sha=statement["formal_pr_binding"]["candidate_head_sha"],
+                existing_registration_ids=[row["statement"].get("registration_id", "") for row in existing_registration_rows],
+                existing_nonces=[nonce for nonce in existing_nonces if isinstance(nonce, str)],
+            )
+            if bootstrap_errors:
+                return None, [f"Task22 bootstrap registration evidence failed: {error}" for error in bootstrap_errors]
+
+        task22_review_rows = [
+            row for row in records if row.get("statement", {}).get("record_type") == "OWNER_EXACT_HEAD_REVIEW"
+            and (row.get("statement", {}).get("task_id") == TASK22_IDENTITY_TASK_ID
+                 or row.get("statement", {}).get("formal_pr_number") == TASK22_FORMAL_PR_NUMBER)
+        ]
+        task22_migration_rows = [
+            row for row in records if row.get("statement", {}).get("record_type") == "PROTOCOL_MIGRATION_WITNESS"
+            and row.get("statement", {}).get("formal_pr_number") == TASK22_FORMAL_PR_NUMBER
+        ]
+        if (task22_review_rows or task22_migration_rows) and bootstrap_registration is None:
+            return None, ["Task22 Owner review or migration witness exists without its external verified bootstrap registration"]
 
         # Enforce global uniqueness, including across different ledger record types.
         registrations = [row for row in records if row["statement"]["record_type"] == "TASK_REGISTRATION"]
@@ -1792,7 +2217,8 @@ def read_authenticated_successor_control_ledger(
                 f"successor migration witness {row['statement']['protocol_sha256']}: {item}"
                 for item in validate_successor_migration_witness_live(
                     row["statement"], signed_record=row, owner_id=owner_id,
-                    owner_review_records=owner_reviews, github_api=api
+                    owner_review_records=owner_reviews, github_api=api,
+                    task22_bootstrap_registration=bootstrap_registration,
                 )
             )
         for row in publications:
@@ -1814,6 +2240,7 @@ def read_authenticated_successor_control_ledger(
             "revocations": revocations,
             "supersessions": supersessions,
             "owner_reviews": owner_reviews,
+            "task22_bootstrap_registration": bootstrap_registration,
             "publications": publications,
             "migrations": migrations,
             "revoked_authorization_ids": sorted(revoked_ids),
@@ -2365,6 +2792,7 @@ def validate_successor_owner_exact_head_review_record(
     required_contexts: list[dict[str, Any]] | None,
     valid_through: str,
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    task22_bootstrap_registration: dict[str, Any] | None = None,
 ) -> list[str]:
     """Require a separate Owner-signed, append-only review of this exact PR diff."""
     if review_row is None:
@@ -2375,6 +2803,26 @@ def validate_successor_owner_exact_head_review_record(
     errors: list[str] = []
     schema = load_json(SUCCESSOR_SCHEMA_PATH)
     errors.extend(_schema_errors(signed, {"$ref": "#/$defs/ownerExactHeadReviewRecord", "$defs": schema["$defs"]}))
+    if task_id == TASK22_IDENTITY_TASK_ID:
+        bootstrap_statement = (task22_bootstrap_registration or {}).get("statement")
+        expected_bootstrap_binding = task22_bootstrap_registration_binding(task22_bootstrap_registration)
+        if not isinstance(bootstrap_statement, dict) or expected_bootstrap_binding is None:
+            errors.append("Task22 Owner exact-head review lacks an authenticated external bootstrap registration")
+        else:
+            bootstrap_task = bootstrap_statement.get("task_identity", {})
+            bootstrap_pr = bootstrap_statement.get("formal_pr_binding", {})
+            if (
+                signed.get("registration_id") != bootstrap_statement.get("registration_id")
+                or signed.get("task22_bootstrap_registration_binding") != expected_bootstrap_binding
+                or bootstrap_task.get("task_id") != task_id
+                or bootstrap_task.get("formal_ordinal") != formal_ordinal
+                or bootstrap_pr.get("pull_request_number") != pr_number
+                or bootstrap_pr.get("base_sha") != base_sha
+                or bootstrap_pr.get("candidate_head_sha") != head_sha
+            ):
+                errors.append("Task22 Owner exact-head review differs from the authenticated bootstrap registration ID or immutable record identity")
+    elif signed.get("task22_bootstrap_registration_binding") is not None:
+        errors.append("non-Task22 Owner review cannot claim the one-time Task22 bootstrap registration")
     for field, value in (
         ("record_type", "OWNER_EXACT_HEAD_REVIEW"), ("owner_actor_id", owner_id),
         ("task_id", task_id), ("formal_ordinal", formal_ordinal), ("registration_id", registration_id),
@@ -2755,6 +3203,7 @@ def validate_successor_migration_witness_live(
     owner_id: int,
     github_api: Callable[[str], dict[str, Any] | list[Any]],
     owner_review_records: list[dict[str, Any]] | None = None,
+    task22_bootstrap_registration: dict[str, Any] | None = None,
 ) -> list[str]:
     """Revalidate the exact merge, independent review, Owner record and checks."""
     errors: list[str] = []
@@ -2846,6 +3295,9 @@ def validate_successor_migration_witness_live(
                 or statement.get("independent_ai_review_report_sha256") != ai_report.get("report_sha256")
             ):
                 errors.append("migration witness does not bind the signed independent AI review artifact")
+            errors.extend(validate_task22_bootstrap_migration_binding(
+                statement, owner_statement, task22_bootstrap_registration
+            ))
             errors.extend(validate_successor_owner_exact_head_review_record(
                 owner_review_record, owner_id=owner_id,
                 task_id=owner_statement.get("task_id", ""),
@@ -2859,6 +3311,7 @@ def validate_successor_migration_witness_live(
                 required_approval_count=(live_protection or {}).get("required_approval_count", -1),
                 changed_files=changed_files, required_contexts=live_contexts,
                 valid_through=pr["merged_at"], github_api=github_api,
+                task22_bootstrap_registration=task22_bootstrap_registration,
             ))
         merged_at, merged_errors = _parse_control_time(pr["merged_at"], "Formal migration merged_at")
         witnessed_at, witnessed_errors = _parse_control_time(statement["witnessed_at"], "migration witness witnessed_at")
@@ -4707,6 +5160,7 @@ def validate_transaction_record(
                 required_approval_count=protection["required_approval_count"],
                 changed_files=changed_files, required_contexts=live_contexts,
                 valid_through=cutoff, github_api=github_api,
+                task22_bootstrap_registration=successor_ledger.get("task22_bootstrap_registration"),
             ))
             report_digest = matching_owner_records[0]["statement"]["independent_ai_review_report"]["report_sha256"]
             if record["independent_ai_review_report_sha256"] != report_digest:

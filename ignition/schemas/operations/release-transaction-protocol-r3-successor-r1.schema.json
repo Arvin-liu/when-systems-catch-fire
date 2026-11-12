@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [
     "schema_version", "contract_id", "status", "supersedes", "inherits_from",
-    "root_authority", "amendment_preparation_authority", "owner_independent_ai_review_authority", "activation", "successor_registration",
+    "root_authority", "amendment_preparation_authority", "task22_bootstrap_registration", "owner_independent_ai_review_authority", "activation", "successor_registration",
     "historical_adjudication", "preparation_authorization", "transaction_authorization",
     "owner_exact_head_review", "publication_witness", "protocol_migration_witness", "release_gates", "historical_compatibility",
     "failure_states", "claim_ceiling"
@@ -19,6 +19,7 @@
     "inherits_from": {"$ref": "#/$defs/inheritance"},
     "root_authority": {"$ref": "#/$defs/rootAuthority"},
     "amendment_preparation_authority": {"$ref": "#/$defs/amendmentPreparationAuthority"},
+    "task22_bootstrap_registration": {"$ref": "#/$defs/task22BootstrapRegistrationPolicy"},
     "owner_independent_ai_review_authority": {"$ref": "#/$defs/ownerIndependentAiReviewAuthority"},
     "historical_adjudication": {"$ref": "#/$defs/historicalAdjudication"},
     "activation": {"$ref": "#/$defs/activation"},
@@ -35,7 +36,7 @@
       "contains": {"const": "ROOT_AUTHORITY_INVALID"},
       "minItems": 9,
       "items": {"enum": [
-        "ROOT_AUTHORITY_INVALID", "SUCCESSOR_PROTOCOL_NOT_EFFECTIVE",
+        "ROOT_AUTHORITY_INVALID", "TASK22_BOOTSTRAP_REGISTRATION_INVALID", "SUCCESSOR_PROTOCOL_NOT_EFFECTIVE",
         "SUCCESSOR_REGISTRATION_INVALID", "PREPARATION_AUTHORIZATION_INVALID",
         "TRANSACTION_AUTHORIZATION_INVALID", "AUTHORIZATION_EXPIRED_OR_REVOKED",
         "INDEPENDENT_REVIEW_MISSING_OR_UNVERIFIABLE", "OWNER_EXACT_HEAD_REVIEW_MISSING",
@@ -149,6 +150,33 @@
         "permitted": {"const": ["PREPARE_CANDIDATE", "PUSH_TASK_BRANCH", "CREATE_DRAFT_PR", "COLLECT_REQUIRED_CHECKS"]},
         "prohibited": {"const": ["READY", "MERGE", "PUBLISH", "CHANGE_BRANCH_PROTECTION", "ACTIVATE_SUCCESSOR_PROTOCOL"]},
         "effectiveness": {"const": "Requires live Owner-verified merge, exact blob and ancestry readback for #165 and #166 in addition to #163. This one-time bootstrap does not rely on the successor candidate to authorize itself."}
+      }
+    },
+    "task22BootstrapRegistrationPolicy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "branch", "path", "record_type", "status_before_owner_verified_merge", "task_id", "formal_ordinal", "predecessor_task_id", "formal_base_sha", "formal_pr_number", "root_authority_merge_commit_sha", "identity_assignment_merge_commit_sha", "owner_review_authority_merge_commit_sha", "required_owner_web_flow_merge", "required_single_added_file", "required_ordered_parents", "required_owner_signature_verification", "append_only", "successor_protocol_at_formal_base_required", "effective_only_after_verified_owner_merge", "ordinary_successor_registration_unchanged"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "branch": {"const": "main"},
+        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json"},
+        "record_type": {"const": "TASK22_PRE_ACTIVATION_BOOTSTRAP_REGISTRATION"},
+        "status_before_owner_verified_merge": {"const": "PROPOSED_PENDING_OWNER_VERIFIED_MERGE"},
+        "task_id": {"const": "IGNITION-20261105-022"},
+        "formal_ordinal": {"const": 22},
+        "predecessor_task_id": {"const": "IGNITION-20261101-021"},
+        "formal_base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+        "formal_pr_number": {"const": 268},
+        "root_authority_merge_commit_sha": {"const": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"},
+        "identity_assignment_merge_commit_sha": {"const": "5449650811882f0c107e58680ee43d92577f7288"},
+        "owner_review_authority_merge_commit_sha": {"const": "064c0112ba7a8672b77a507f8763e79b6914cb0c"},
+        "required_owner_web_flow_merge": {"const": true},
+        "required_single_added_file": {"const": true},
+        "required_ordered_parents": {"const": ["1111_main_base", "registration_branch_head"]},
+        "required_owner_signature_verification": {"const": "verified=true/reason=valid"},
+        "append_only": {"const": true},
+        "successor_protocol_at_formal_base_required": {"const": false},
+        "effective_only_after_verified_owner_merge": {"const": true},
+        "ordinary_successor_registration_unchanged": {"const": true}
       }
     },
     "ownerIndependentAiReviewAuthority": {
@@ -556,6 +584,21 @@
         "sha256": {"const": "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"}
       }
     },
+    "task22BootstrapRegistrationBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["registration_id", "path", "pull_request_number", "commit_sha", "blob_sha", "file_sha256", "registration_nonce", "ordered_parent_shas", "committed_at"],
+      "properties": {
+        "registration_id": {"$ref": "#/$defs/safeId"},
+        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json"},
+        "pull_request_number": {"type": "integer", "minimum": 1},
+        "commit_sha": {"$ref": "#/$defs/sha1"},
+        "blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "file_sha256": {"$ref": "#/$defs/sha256"},
+        "registration_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
+        "ordered_parent_shas": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}},
+        "committed_at": {"type": "string", "format": "date-time"}
+      }
+    },
     "aiSourceReadback": {
       "type": "object", "additionalProperties": false,
       "required": ["mode", "repository", "source_base_sha", "source_head_sha", "formal_pr_diff_sha256", "raw_diff_sha256", "files"],
@@ -600,6 +643,7 @@
         "formal_candidate_head_sha": {"$ref": "#/$defs/sha1"},
         "formal_pr_diff_sha256": {"$ref": "#/$defs/sha256"},
         "protocol_sha256": {"$ref": "#/$defs/sha256"},
+        "task22_bootstrap_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
         "independent_ai_review_report": {"$ref": "#/$defs/independentAiReviewReport"},
         "decision": {"enum": ["APPROVE", "REQUEST_CHANGES"]},
         "review_summary": {"type": "string", "minLength": 1},
@@ -607,7 +651,11 @@
         "review_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
         "scope": {"const": "OWNER_REVIEW_EXACT_FORMAL_PR_HEAD"},
         "owner_actor_id": {"const": 49422864}
-      }
+      },
+      "allOf": [{
+        "if": {"properties": {"task_id": {"const": "IGNITION-20261105-022"}}, "required": ["task_id"]},
+        "then": {"required": ["task22_bootstrap_registration_binding"]}
+      }]
     },
     "successorPullRequestReview": {
       "type": "object", "additionalProperties": false,
@@ -740,6 +788,7 @@
         "independent_review_mode": {"const": "SUBSTANTIVE_INDEPENDENT_AI_REVIEW"},
         "independent_ai_review_artifact_id": {"type": "string", "minLength": 8, "maxLength": 256},
         "independent_ai_review_report_sha256": {"$ref": "#/$defs/sha256"},
+        "task22_bootstrap_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
         "branch_required_github_reviews": {
           "type": "array", "minItems": 1,
           "items": {
@@ -760,7 +809,11 @@
         "owner_reviewed_head_sha": {"$ref": "#/$defs/sha1"},
         "witnessed_at": {"type": "string", "format": "date-time"},
         "owner_actor_id": {"const": 49422864}
-      }
+      },
+      "allOf": [{
+        "if": {"properties": {"formal_pr_number": {"const": 268}}, "required": ["formal_pr_number"]},
+        "then": {"required": ["task22_bootstrap_registration_binding"]}
+      }]
     }
   }
 }

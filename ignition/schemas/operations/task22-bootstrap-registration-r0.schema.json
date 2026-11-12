@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.invalid/schemas/operations/task22-bootstrap-registration-r0.schema.json",
+  "title": "Task22 pre-activation bootstrap registration R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "status", "registration_id",
+    "root_authority_binding", "identity_assignment_binding", "independent_review_authority_binding",
+    "task_identity", "formal_pr_binding", "conflict_inventory", "registration_nonce",
+    "prepared_at_utc", "scope", "owner_actor_id", "effectiveness"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-task22-pre-activation-bootstrap-registration-r0"},
+    "record_type": {"const": "TASK22_PRE_ACTIVATION_BOOTSTRAP_REGISTRATION"},
+    "status": {"const": "PROPOSED_PENDING_OWNER_VERIFIED_MERGE"},
+    "registration_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{7,127}$"},
+    "root_authority_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "pull_request_number", "merge_commit_sha", "file_path", "blob_sha", "file_sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "pull_request_number": {"const": 163},
+        "merge_commit_sha": {"const": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"},
+        "file_path": {"const": "instructions/goal-mode/IGNITION-2026-11-04-OWNER-ROOT-GOVERNANCE-AUTHORITY-R0.json"},
+        "blob_sha": {"const": "dc63d9a94c1edb9f633a15918def762c17eafe1d"},
+        "file_sha256": {"const": "995b12e2c86d9af6788c92b6a04780dbb513af4b92aefe2bf194838549c751bc"}
+      }
+    },
+    "identity_assignment_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "pull_request_number", "merge_commit_sha", "file_path", "blob_sha", "file_sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "pull_request_number": {"const": 165},
+        "merge_commit_sha": {"const": "5449650811882f0c107e58680ee43d92577f7288"},
+        "file_path": {"const": "instructions/goal-mode/IGNITION-2026-11-05-TASK22-OWNER-IDENTITY-ASSIGNMENT-R0.json"},
+        "blob_sha": {"const": "146df919b91ddf2bf189a106441abee80486056d"},
+        "file_sha256": {"const": "f4300d22378458b1ed36ccb168cbe67be71c8056706005af331e3bd93c6ccc05"}
+      }
+    },
+    "independent_review_authority_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "pull_request_number", "merge_commit_sha", "file_path", "blob_sha", "file_sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "pull_request_number": {"const": 166},
+        "merge_commit_sha": {"const": "064c0112ba7a8672b77a507f8763e79b6914cb0c"},
+        "file_path": {"const": "instructions/goal-mode/IGNITION-2026-11-06-OWNER-INDEPENDENT-AI-REVIEW-GOVERNANCE-CLARIFICATION-R0.json"},
+        "blob_sha": {"const": "de54df684593a98c33c14847465eb1a7a896a919"},
+        "file_sha256": {"const": "92f9743246da9a9c5b5ccaf689e82a20b6fde86959addbfe446efecffe3885f1"}
+      }
+    },
+    "task_identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task_id", "formal_ordinal", "predecessor_task_id", "formal_base_main_sha", "work_branch", "receipt_branch"],
+      "properties": {
+        "task_id": {"const": "IGNITION-20261105-022"},
+        "formal_ordinal": {"const": 22},
+        "predecessor_task_id": {"const": "IGNITION-20261101-021"},
+        "formal_base_main_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+        "work_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"},
+        "receipt_branch": {"const": "relay/receipts/IGNITION-20261105-022-r3-successor-protocol-amendment"}
+      }
+    },
+    "formal_pr_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "pull_request_number", "base_sha", "candidate_head_sha", "head_branch"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "pull_request_number": {"const": 268},
+        "base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+        "candidate_head_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "head_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"}
+      }
+    },
+    "conflict_inventory": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task21_registration", "task22_identity_assignment_scan_sha256", "task22_identity_collision_checks", "formal_candidate_pr", "inventory_sha256"],
+      "properties": {
+        "task21_registration": {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "commit_sha", "blob_sha", "file_sha256", "inventory_sha256", "identity_count"],
+          "properties": {
+            "path": {"const": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R3.json"},
+            "commit_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            "blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            "file_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "inventory_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "identity_count": {"type": "integer", "minimum": 1}
+          }
+        },
+        "task22_identity_assignment_scan_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "task22_identity_collision_checks": {
+          "type": "object", "additionalProperties": false,
+          "required": ["task_id_available", "ordinal_available", "work_branch_available", "receipt_branch_available"],
+          "properties": {
+            "task_id_available": {"const": true},
+            "ordinal_available": {"const": true},
+            "work_branch_available": {"const": true},
+            "receipt_branch_available": {"const": true}
+          }
+        },
+        "formal_candidate_pr": {
+          "type": "object", "additionalProperties": false,
+          "required": ["repository", "pull_request_number", "base_sha", "candidate_head_sha", "head_branch"],
+          "properties": {
+            "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+            "pull_request_number": {"const": 268},
+            "base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+            "candidate_head_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            "head_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"}
+          }
+        },
+        "inventory_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "registration_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
+    "prepared_at_utc": {"type": "string", "format": "date-time"},
+    "scope": {"const": "TASK22_BOOTSTRAP_REGISTRATION_ONLY"},
+    "owner_actor_id": {"const": 49422864},
+    "effectiveness": {"const": "NOT_EFFECTIVE_UNTIL_VERIFIED_OWNER_WEB_FLOW_MERGE_TO_1111_MAIN"}
+  }
+}

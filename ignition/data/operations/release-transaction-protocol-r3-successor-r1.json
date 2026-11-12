@@ -72,6 +72,29 @@
     "prohibited": ["READY", "MERGE", "PUBLISH", "CHANGE_BRANCH_PROTECTION", "ACTIVATE_SUCCESSOR_PROTOCOL"],
     "effectiveness": "Requires live Owner-verified merge, exact blob and ancestry readback for #165 and #166 in addition to #163. This one-time bootstrap does not rely on the successor candidate to authorize itself."
   },
+  "task22_bootstrap_registration": {
+    "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path": "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json",
+    "record_type": "TASK22_PRE_ACTIVATION_BOOTSTRAP_REGISTRATION",
+    "status_before_owner_verified_merge": "PROPOSED_PENDING_OWNER_VERIFIED_MERGE",
+    "task_id": "IGNITION-20261105-022",
+    "formal_ordinal": 22,
+    "predecessor_task_id": "IGNITION-20261101-021",
+    "formal_base_sha": "87d7f8d3114e859a59585da336fb6301ee4cbbd3",
+    "formal_pr_number": 268,
+    "root_authority_merge_commit_sha": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6",
+    "identity_assignment_merge_commit_sha": "5449650811882f0c107e58680ee43d92577f7288",
+    "owner_review_authority_merge_commit_sha": "064c0112ba7a8672b77a507f8763e79b6914cb0c",
+    "required_owner_web_flow_merge": true,
+    "required_single_added_file": true,
+    "required_ordered_parents": ["1111_main_base", "registration_branch_head"],
+    "required_owner_signature_verification": "verified=true/reason=valid",
+    "append_only": true,
+    "successor_protocol_at_formal_base_required": false,
+    "effective_only_after_verified_owner_merge": true,
+    "ordinary_successor_registration_unchanged": true
+  },
   "owner_independent_ai_review_authority": {
     "source": "OWNER_VERIFIED_GITHUB_MERGE",
     "repository": "Arvin-liu/1111",
@@ -259,6 +282,7 @@
   },
   "failure_states": [
     "ROOT_AUTHORITY_INVALID",
+    "TASK22_BOOTSTRAP_REGISTRATION_INVALID",
     "SUCCESSOR_PROTOCOL_NOT_EFFECTIVE",
     "SUCCESSOR_REGISTRATION_INVALID",
     "PREPARATION_AUTHORIZATION_INVALID",
