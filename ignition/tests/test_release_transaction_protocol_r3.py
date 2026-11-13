@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 import base64
 from contextlib import redirect_stderr, redirect_stdout
 import hashlib
@@ -668,6 +669,16 @@ def _task22_bootstrap_authority_fixture() -> dict[str, object]:
             "file_path": r3.SUCCESSOR_ROOT_AUTHORITY_PATH,
             "file_blob_sha": r3.SUCCESSOR_ROOT_AUTHORITY_BLOB,
             "file_sha256": r3.SUCCESSOR_ROOT_AUTHORITY_SHA256,
+            "scope_kind": "ONE_TIME_GOVERNANCE_PROTOCOL_AMENDMENT_MANDATE",
+            "permitted_after_activation": [
+                "Implement append-only successor task registrations with unique task IDs and ordinals, immutable historical entries, replay protection and explicit supersession records."
+            ],
+            "files": {
+                r3.SUCCESSOR_ROOT_AUTHORITY_PATH: {
+                    "blob_sha": r3.SUCCESSOR_ROOT_AUTHORITY_BLOB,
+                    "sha256": r3.SUCCESSOR_ROOT_AUTHORITY_SHA256,
+                },
+            },
         },
         "owner_independent_ai_review_authority": {
             "repository": "Arvin-liu/1111", "pull_request_number": 166,
@@ -702,6 +713,7 @@ def _task22_bootstrap_authority_fixture() -> dict[str, object]:
             },
         },
         "owner_actor_id": 49422864,
+        "task22_bootstrap_head_correction_policy": r3.load_json(r3.SUCCESSOR_PROTOCOL_PATH)["task22_bootstrap_head_correction"],
     }
 
 
@@ -734,7 +746,7 @@ def _task22_bootstrap_statement_fixture() -> dict[str, object]:
     prior = _task22_bootstrap_prior_registration_fixture()
     prior_inventory = prior["statement"]["conflict_inventory"]
     prior_payload = {key: value for key, value in prior_inventory.items() if key != "inventory_sha256"}
-    head_sha = "b" * 40
+    head_sha = r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA
     conflict_inventory = {
         "task21_registration": {
             "path": prior["path"], "commit_sha": prior["commit_sha"], "blob_sha": prior["git_blob_sha"],
@@ -760,7 +772,7 @@ def _task22_bootstrap_statement_fixture() -> dict[str, object]:
         "schema_version": "ignition-task22-pre-activation-bootstrap-registration-r0",
         "record_type": "TASK22_PRE_ACTIVATION_BOOTSTRAP_REGISTRATION",
         "status": "PROPOSED_PENDING_OWNER_VERIFIED_MERGE",
-        "registration_id": "task22-bootstrap-IGNITION-20261105-022-r0",
+        "registration_id": "task22-bootstrap-r0-20261112-276411603215ece73a0aba86ae8322b3",
         "root_authority_binding": {
             "repository": "Arvin-liu/1111", "pull_request_number": 163,
             "merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA, "file_path": r3.SUCCESSOR_ROOT_AUTHORITY_PATH,
@@ -805,6 +817,87 @@ def _task22_bootstrap_evidence_fixture() -> dict[str, object]:
         "path_addition_count": 1, "signature_verified": True, "signature_reason": "valid",
         "main_sha": "9" * 40,
     }
+
+
+def _task22_bootstrap_head_correction_fixture(
+    *,
+    registration: dict[str, object] | None = None,
+    candidate_head_sha: str = "b" * 40,
+) -> tuple[dict[str, object], dict[str, object], dict[str, object]]:
+    """Build explicitly synthetic signed-control evidence for one H1-to-H2 correction."""
+    authority = _task22_bootstrap_authority_fixture()
+    registration = registration or _task22_bootstrap_evidence_fixture()
+    base_sha = registration["statement"]["formal_pr_binding"]["base_sha"]
+    raw_diff_sha256 = "e" * 64
+    formal_pr = {
+        "number": r3.TASK22_FORMAL_PR_NUMBER,
+        "base": {"ref": "main", "sha": base_sha},
+        "head": {"ref": authority["work_branch"], "sha": candidate_head_sha},
+    }
+    root = authority["root_authority"]
+    identity = authority
+    review_authority = authority["owner_independent_ai_review_authority"]
+    root_file = root["files"][r3.SUCCESSOR_ROOT_AUTHORITY_PATH]
+    statement = {
+        "schema_version": "task22-bootstrap-head-correction-r0",
+        "record_type": "TASK22_BOOTSTRAP_HEAD_CORRECTION",
+        "status": "PENDING_OWNER_VERIFIED_MERGE",
+        "correction_id": "task22-head-correction-synthetic-20261113",
+        "root_authority_binding": {
+            "repository": root["repository"], "pull_request_number": root["pull_request_number"],
+            "merge_commit_sha": root["merge_commit_sha"], "file_path": r3.SUCCESSOR_ROOT_AUTHORITY_PATH,
+            "blob_sha": root_file["blob_sha"], "file_sha256": root_file["sha256"],
+        },
+        "identity_assignment_binding": {
+            "repository": identity["repository"], "pull_request_number": identity["pull_request_number"],
+            "merge_commit_sha": identity["merge_commit_sha"], "file_path": identity["file_path"],
+            "blob_sha": identity["file_blob_sha"], "file_sha256": identity["file_sha256"],
+        },
+        "independent_review_authority_binding": {
+            "repository": review_authority["repository"], "pull_request_number": review_authority["pull_request_number"],
+            "merge_commit_sha": review_authority["merge_commit_sha"], "file_path": review_authority["file_path"],
+            "blob_sha": review_authority["file_blob_sha"], "file_sha256": review_authority["file_sha256"],
+        },
+        "task_identity": {"task_id": r3.TASK22_IDENTITY_TASK_ID, "formal_ordinal": 22},
+        "superseded_registration_binding": r3.task22_bootstrap_registration_binding(registration),
+        "formal_pr_binding": {
+            "repository": r3.PUBLIC_REPOSITORY,
+            "pull_request_number": r3.TASK22_FORMAL_PR_NUMBER,
+            "base_sha": base_sha,
+            "head_branch": authority["work_branch"],
+            "superseded_head_sha": r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA,
+            "candidate_head_sha": candidate_head_sha,
+            "raw_diff_sha256": raw_diff_sha256,
+        },
+        "correction_nonce": "d" * 64,
+        "prepared_at_utc": "2026-11-13T05:00:00Z",
+        "scope": "SUPERSEDE_ONE_TASK22_BOOTSTRAP_FORMAL_HEAD_BINDING_ONLY",
+        "owner_actor_id": 49422864,
+        "effectiveness": "NOT_EFFECTIVE_UNTIL_VERIFIED_OWNER_WEB_FLOW_MERGE_TO_1111_MAIN",
+    }
+    raw = json.dumps(statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    parents = ["6" * 40, "7" * 40]
+    row: dict[str, object] = {
+        "path": r3.TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH,
+        "statement": statement,
+        "pull_request_number": 170,
+        "commit_sha": "8" * 40,
+        "parents": parents,
+        "pr_base_sha": parents[0],
+        "pr_head_sha": parents[1],
+        "pr_merged_by_id": 49422864,
+        "blob_sha": r3._git_blob_sha(raw),
+        "file_sha256": hashlib.sha256(raw).hexdigest(),
+        "raw": raw,
+        "committed_at": "2026-11-13T05:05:00Z",
+        "owner_web_flow_merge_verified": True,
+        "append_only_first_write_verified": True,
+        "path_addition_count": 1,
+        "signature_verified": True,
+        "signature_reason": "valid",
+        "main_sha": "9" * 40,
+    }
+    return authority, formal_pr, row
 
 
 def _owner_ai_review_authority_snapshot() -> dict[str, object]:
@@ -2845,7 +2938,13 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             if endpoint == f"repos/Arvin-liu/1111/compare/{r3.TASK22_IDENTITY_MERGE_SHA}...{main_sha}":
                 return {"status": "ahead"}
             raise AssertionError(endpoint)
-        with patch.object(r3, "read_authenticated_successor_root_authority", return_value=({"merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA}, [])), \
+        with patch.object(r3, "read_authenticated_successor_root_authority", return_value=({
+                 "merge_commit_sha": r3.SUCCESSOR_ROOT_MERGE_SHA,
+                 "scope_kind": "ONE_TIME_GOVERNANCE_PROTOCOL_AMENDMENT_MANDATE",
+                 "permitted_after_activation": [
+                     "Implement append-only successor task registrations with unique task IDs and ordinals, immutable historical entries, replay protection and explicit supersession records."
+                 ],
+             }, [])), \
              patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])), \
              patch.object(r3, "_commit_from_api", return_value={"parents": [{"sha": r3.TASK22_IDENTITY_BASE_SHA}, {"sha": r3.TASK22_IDENTITY_HEAD_SHA}]}), \
              patch.object(r3, "_verified_owner_commit", return_value=(True, "valid")), \
@@ -2866,7 +2965,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         ))
         self.assertEqual(r3.validate_task22_bootstrap_registration_statement(
             statement, authority=authority, task21_registration=prior,
-            expected_formal_candidate_head_sha="b" * 40,
+            expected_formal_candidate_head_sha=r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA,
         ), [])
 
         mutations = (
@@ -2893,7 +2992,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
                 target[path[-1]] = value
                 errors = r3.validate_task22_bootstrap_registration_statement(
                     changed, authority=authority, task21_registration=prior,
-                    expected_formal_candidate_head_sha="b" * 40,
+                    expected_formal_candidate_head_sha=r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA,
                 )
                 self.assertTrue(errors, errors)
 
@@ -2901,7 +3000,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         replayed_id["registration_id"] = prior["statement"]["registration_id"]
         errors = r3.validate_task22_bootstrap_registration_statement(
             replayed_id, authority=authority, task21_registration=prior,
-            expected_formal_candidate_head_sha="b" * 40,
+            expected_formal_candidate_head_sha=r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA,
         )
         self.assertTrue(any("replays the authenticated Task21" in error for error in errors), errors)
 
@@ -2909,7 +3008,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         common = dict(
             authority=authority, task21_registration=prior,
             expected_formal_base_sha="87d7f8d3114e859a59585da336fb6301ee4cbbd3",
-            expected_formal_candidate_head_sha="b" * 40,
+            expected_formal_candidate_head_sha=r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA,
         )
         self.assertEqual(r3.validate_task22_bootstrap_registration_evidence(row, **common), [])
         self.assertTrue(any("lacks an authenticated" in error for error in r3.validate_task22_bootstrap_registration_evidence(None, **common)))
@@ -2946,45 +3045,83 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
                 },
             },
         }
-        pr = {
-            "number": 169, "merged": True, "merge_commit_sha": merge_sha,
-            "merged_by": {"id": 49422864}, "base": {"ref": "main", "sha": base_sha},
-            "head": {"sha": head_sha},
+        # The commit-associated PR-list endpoint omits merged and merged_by.
+        list_pr = {
+            "number": 169, "merge_commit_sha": merge_sha, "state": "closed",
+            "merged_at": "2026-11-13T02:12:27Z",
+            "base": {"ref": "main", "sha": base_sha}, "head": {"sha": head_sha},
+        }
+        full_pr = {
+            "number": 169, "state": "closed", "merged": True,
+            "merged_at": "2026-11-13T02:12:27Z", "merged_by": {"id": 49422864},
+            "merge_commit_sha": merge_sha,
+            "base": {"ref": "main", "sha": base_sha}, "head": {"sha": head_sha},
         }
         file = {"filename": r3.TASK22_BOOTSTRAP_REGISTRATION_PATH, "status": "added", "sha": blob_sha}
-        def api(endpoint: str):
-            if endpoint == f"repos/Arvin-liu/1111/commits/{merge_sha}": return commit
-            if endpoint == f"repos/Arvin-liu/1111/commits/{merge_sha}/pulls": return [pr]
-            if endpoint == "repos/Arvin-liu/1111/pulls/169/files?per_page=100": return [file]
-            raise AssertionError(endpoint)
-        with patch.object(r3, "_path_entry_for_commit", return_value={"sha": blob_sha}):
-            control, errors = r3._require_owner_verified_control_pr_merge(
-                merge_sha, 49422864, api, {}, r3.TASK22_BOOTSTRAP_REGISTRATION_PATH,
-            )
-        self.assertEqual(errors, [])
-        self.assertEqual(control["pr"]["number"], 169)
 
-        for label, mutation, expected in (
-            ("unsigned", lambda c, p, f: c["commit"]["verification"].update({"verified": False}), "signature"),
-            ("non-web-flow", lambda c, p, f: c["committer"].update({"login": "other"}), "web-flow"),
-            ("wrong Owner", lambda c, p, f: p["merged_by"].update({"id": 7}), "merged by the Owner"),
-            ("wrong parent order", lambda c, p, f: c["parents"].reverse(), "Owner into 1111/main"),
-            ("extra file", lambda c, p, f: f.append({"filename": "second.json", "status": "added", "sha": blob_sha}), "exactly its one"),
+        missing_detail = object()
+
+        def run_case(
+            *, changed_commit=None, linked_prs=None, detail=missing_detail, changed_files=None,
+        ):
+            observed_commit = changed_commit if changed_commit is not None else json.loads(json.dumps(commit))
+            observed_links = linked_prs if linked_prs is not None else [dict(list_pr)]
+            observed_detail = full_pr if detail is missing_detail else detail
+            observed_files = changed_files if changed_files is not None else [dict(file)]
+            calls = []
+
+            def api(endpoint: str):
+                calls.append(endpoint)
+                if endpoint == f"repos/Arvin-liu/1111/commits/{merge_sha}": return observed_commit
+                if endpoint == f"repos/Arvin-liu/1111/commits/{merge_sha}/pulls": return observed_links
+                if endpoint == "repos/Arvin-liu/1111/pulls/169": return observed_detail
+                if endpoint == "repos/Arvin-liu/1111/pulls/169/files?per_page=100": return observed_files
+                raise AssertionError(endpoint)
+
+            with patch.object(r3, "_path_entry_for_commit", return_value={"sha": blob_sha}):
+                control, errors = r3._require_owner_verified_control_pr_merge(
+                    merge_sha, 49422864, api, {}, r3.TASK22_BOOTSTRAP_REGISTRATION_PATH,
+                )
+            return control, errors, calls
+
+        self.assertNotIn("merged", list_pr)
+        self.assertNotIn("merged_by", list_pr)
+        control, errors, calls = run_case()
+        self.assertEqual(errors, [])
+        self.assertEqual(control["pr"], full_pr)
+        self.assertIn("repos/Arvin-liu/1111/pulls/169", calls)
+
+        unsigned_commit = json.loads(json.dumps(commit))
+        unsigned_commit["commit"]["verification"]["verified"] = False
+        forged_signature_commit = json.loads(json.dumps(commit))
+        forged_signature_commit["commit"]["verification"]["reason"] = "unsigned"
+        non_web_flow_commit = json.loads(json.dumps(commit))
+        non_web_flow_commit["committer"]["login"] = "other"
+        wrong_parent_order_commit = json.loads(json.dumps(commit))
+        wrong_parent_order_commit["parents"].reverse()
+        for label, kwargs, expected in (
+            ("unsigned", {"changed_commit": unsigned_commit}, "signature"),
+            ("forged GitHub signature", {"changed_commit": forged_signature_commit}, "signature"),
+            ("non-web-flow", {"changed_commit": non_web_flow_commit}, "web-flow"),
+            ("missing linked PR", {"linked_prs": []}, "exactly one"),
+            ("ambiguous linked PRs", {"linked_prs": [dict(list_pr), {**list_pr, "number": 170}]}, "exactly one"),
+            ("missing linked PR number", {"linked_prs": [{"state": "closed"}]}, "valid PR number"),
+            ("missing full PR detail", {"detail": None}, "full detail"),
+            ("wrong full-detail PR number", {"detail": {**full_pr, "number": 170}}, "full detail"),
+            ("unmerged full detail", {"detail": {**full_pr, "merged": False}}, "merged by the Owner"),
+            ("wrong Owner", {"detail": {**full_pr, "merged_by": {"id": 7}}}, "merged by the Owner"),
+            ("wrong merge commit", {"detail": {**full_pr, "merge_commit_sha": "f" * 40}}, "merged by the Owner"),
+            ("wrong base ref", {"detail": {**full_pr, "base": {**full_pr["base"], "ref": "other"}}}, "merged by the Owner"),
+            ("wrong base parent", {"detail": {**full_pr, "base": {**full_pr["base"], "sha": "f" * 40}}}, "merged by the Owner"),
+            ("wrong head parent", {"detail": {**full_pr, "head": {"sha": "f" * 40}}}, "merged by the Owner"),
+            ("wrong parent order", {"changed_commit": wrong_parent_order_commit}, "merged by the Owner"),
+            ("extra file", {"changed_files": [dict(file), {"filename": "second.json", "status": "added", "sha": blob_sha}]}, "exactly its one"),
+            ("moved file", {"changed_files": [{**file, "filename": "different.json"}]}, "exactly its one"),
+            ("changed bytes", {"changed_files": [{**file, "sha": "f" * 40}]}, "blob differs"),
+            ("modified existing path", {"changed_files": [{**file, "status": "modified"}]}, "exactly its one"),
         ):
             with self.subTest(label=label):
-                changed_commit = json.loads(json.dumps(commit))
-                changed_pr = json.loads(json.dumps(pr))
-                changed_files = [dict(file)]
-                mutation(changed_commit, changed_pr, changed_files)
-                def changed_api(endpoint: str):
-                    if endpoint == f"repos/Arvin-liu/1111/commits/{merge_sha}": return changed_commit
-                    if endpoint == f"repos/Arvin-liu/1111/commits/{merge_sha}/pulls": return [changed_pr]
-                    if endpoint == "repos/Arvin-liu/1111/pulls/169/files?per_page=100": return changed_files
-                    raise AssertionError(endpoint)
-                with patch.object(r3, "_path_entry_for_commit", return_value={"sha": blob_sha}):
-                    control, errors = r3._require_owner_verified_control_pr_merge(
-                        merge_sha, 49422864, changed_api, {}, r3.TASK22_BOOTSTRAP_REGISTRATION_PATH,
-                    )
+                control, errors, _calls = run_case(**kwargs)
                 self.assertIsNone(control)
                 self.assertTrue(any(expected.lower() in error.lower() for error in errors), errors)
 
@@ -3001,9 +3138,76 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertTrue(any("more than once" in error for error in replay), replay)
 
+    def test_synthetic_task22_head_correction_binds_one_exact_h2_and_verified_owner_merge(self) -> None:
+        bootstrap = _task22_bootstrap_evidence_fixture()
+        authority, formal_pr, row = _task22_bootstrap_head_correction_fixture(registration=bootstrap)
+        expected = row["statement"]["formal_pr_binding"]["raw_diff_sha256"]
+        common = {
+            "authority": authority,
+            "task22_bootstrap_registration": bootstrap,
+            "formal_pr": formal_pr,
+            "expected_raw_diff_sha256": expected,
+        }
+        self.assertEqual(
+            r3.validate_task22_bootstrap_head_correction_evidence(row, **common), []
+        )
+        self.assertTrue(any("missing" in error for error in r3.validate_task22_bootstrap_head_correction_evidence(None, **common)))
+        unsupported_authority = copy.deepcopy(authority)
+        unsupported_authority["root_authority"]["permitted_after_activation"] = []
+        unsupported_errors = r3.validate_task22_bootstrap_head_correction_statement(
+            row["statement"], **dict(common, authority=unsupported_authority),
+        )
+        self.assertTrue(any("#163 root-authority validator does not authorize" in error for error in unsupported_errors), unsupported_errors)
+        stale_diff_errors = r3.validate_task22_bootstrap_head_correction_evidence(
+            row, **dict(common, expected_raw_diff_sha256="f" * 64),
+        )
+        self.assertTrue(any("raw diff digest" in error for error in stale_diff_errors), stale_diff_errors)
+
+        cases = (
+            ("wrong superseded H1", "statement", ("formal_pr_binding", "superseded_head_sha"), "f" * 40, "H1"),
+            ("wrong exact H2", "statement", ("formal_pr_binding", "candidate_head_sha"), "c" * 40, "exact H2"),
+            ("wrong root authority", "statement", ("root_authority_binding", "merge_commit_sha"), "f" * 40, "authenticated root"),
+            ("replayed correction ID", "statement", ("correction_id",), "task22-head-correction-synthetic-other", "ID is replayed"),
+            ("replayed nonce", "statement", ("correction_nonce",), "c" * 64, "nonce is replayed"),
+        )
+        for label, target, fields, value, expected_error in cases:
+            with self.subTest(label=label):
+                changed = copy.deepcopy(row)
+                obj = changed[target]
+                for field in fields[:-1]:
+                    obj = obj[field]
+                obj[fields[-1]] = value
+                kwargs = dict(common)
+                if label == "replayed correction ID":
+                    kwargs["existing_correction_ids"] = [value]
+                    changed["statement"]["correction_id"] = "task22-head-correction-synthetic-other"
+                if label == "replayed nonce":
+                    kwargs["existing_nonces"] = [value]
+                errors = r3.validate_task22_bootstrap_head_correction_evidence(changed, **kwargs)
+                self.assertTrue(any(expected_error.lower() in error.lower() for error in errors), errors)
+
+        for label, field, value, expected_error in (
+            ("wrong path", "path", "instructions/goal-mode/r3-successors/correction.json", "fixed path"),
+            ("wrong Owner", "pr_merged_by_id", 7, "Owner attribution"),
+            ("unsigned", "signature_verified", False, "signature"),
+            ("forged signature", "signature_reason", "unknown", "signature"),
+            ("wrong parent order", "parents", ["7" * 40, "6" * 40], "ordered two-parent"),
+            ("replayed path", "path_addition_count", 2, "append-only first write"),
+            ("not web-flow", "owner_web_flow_merge_verified", False, "web-flow"),
+        ):
+            with self.subTest(label=label):
+                changed = copy.deepcopy(row)
+                changed[field] = value
+                errors = r3.validate_task22_bootstrap_head_correction_evidence(changed, **common)
+                self.assertTrue(any(expected_error.lower() in error.lower() for error in errors), errors)
+
     def test_task22_owner_review_and_migration_bind_the_same_authenticated_registration(self) -> None:
         bootstrap = _task22_bootstrap_evidence_fixture()
         binding = r3.task22_bootstrap_registration_binding(bootstrap)
+        _correction_authority, _correction_formal_pr, correction = _task22_bootstrap_head_correction_fixture(
+            registration=bootstrap, candidate_head_sha="b" * 40,
+        )
+        correction_binding = r3.task22_bootstrap_head_correction_binding(correction)
         row = _owner_exact_head_review_fixture(pr_number=268, author_id=49422864)
         statement = row["statement"]
         report = statement["independent_ai_review_report"]
@@ -3014,6 +3218,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "formal_base_sha": "87d7f8d3114e859a59585da336fb6301ee4cbbd3",
             "formal_candidate_head_sha": "b" * 40,
             "task22_bootstrap_registration_binding": binding,
+            "task22_bootstrap_head_correction_binding": correction_binding,
             "reviewed_at": "2026-11-12T02:30:00Z",
         })
         report.update({
@@ -3046,6 +3251,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "required_contexts": report["required_ci_contexts"],
             "valid_through": "2026-11-12T03:00:00Z",
             "task22_bootstrap_registration": bootstrap,
+            "task22_bootstrap_head_correction": correction,
         }
         with patch.object(r3, "_validate_owner_stored_ai_review_artifact", return_value=[]), \
              patch.object(r3, "read_authenticated_owner_ai_review_authority", return_value=(_owner_ai_review_authority_snapshot(), [])):
@@ -3054,27 +3260,51 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             wrong_registration["statement"]["task22_bootstrap_registration_binding"]["commit_sha"] = "0" * 40
             errors = r3.validate_successor_owner_exact_head_review_record(wrong_registration, **kwargs)
             self.assertTrue(any("immutable record identity" in error for error in errors), errors)
+            wrong_correction = json.loads(json.dumps(row))
+            wrong_correction["statement"]["task22_bootstrap_head_correction_binding"]["commit_sha"] = "0" * 40
+            errors = r3.validate_successor_owner_exact_head_review_record(wrong_correction, **kwargs)
+            self.assertTrue(any("correction binding" in error.lower() for error in errors), errors)
             errors = r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, task22_bootstrap_registration=None))
             self.assertTrue(any("lacks an authenticated external bootstrap" in error for error in errors), errors)
+            errors = r3.validate_successor_owner_exact_head_review_record(row, **dict(kwargs, task22_bootstrap_head_correction=None))
+            self.assertTrue(any("correction binding for H2" in error for error in errors), errors)
 
         migration = {
             "formal_pr_number": 268,
             "formal_base_sha": statement["formal_base_sha"],
             "formal_candidate_head_sha": statement["formal_candidate_head_sha"],
             "task22_bootstrap_registration_binding": binding,
+            "task22_bootstrap_head_correction_binding": correction_binding,
         }
-        self.assertEqual(r3.validate_task22_bootstrap_migration_binding(migration, statement, bootstrap), [])
+        self.assertEqual(r3.validate_task22_bootstrap_migration_binding(migration, statement, bootstrap, correction), [])
         for target in ("migration", "review"):
             with self.subTest(target=target):
                 changed_migration = json.loads(json.dumps(migration))
                 changed_review = json.loads(json.dumps(statement))
                 if target == "migration":
-                    changed_migration["task22_bootstrap_registration_binding"]["registration_nonce"] = "0" * 32
+                    changed_migration["task22_bootstrap_head_correction_binding"]["correction_nonce"] = "0" * 32
                 else:
-                    changed_review["task22_bootstrap_registration_binding"]["file_sha256"] = "0" * 64
-                errors = r3.validate_task22_bootstrap_migration_binding(changed_migration, changed_review, bootstrap)
+                    changed_review["task22_bootstrap_head_correction_binding"]["file_sha256"] = "0" * 64
+                errors = r3.validate_task22_bootstrap_migration_binding(changed_migration, changed_review, bootstrap, correction)
                 self.assertTrue(errors, errors)
-        self.assertTrue(r3.validate_task22_bootstrap_migration_binding(migration, statement, None))
+        self.assertTrue(r3.validate_task22_bootstrap_migration_binding(migration, statement, None, correction))
+        self.assertTrue(r3.validate_task22_bootstrap_migration_binding(migration, statement, bootstrap, None))
+
+        registered_head_review = copy.deepcopy(statement)
+        registered_head_review["formal_candidate_head_sha"] = r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA
+        registered_head_review.pop("task22_bootstrap_head_correction_binding")
+        registered_head_migration = {
+            "formal_pr_number": 268,
+            "formal_base_sha": statement["formal_base_sha"],
+            "formal_candidate_head_sha": r3.TASK22_BOOTSTRAP_INITIAL_HEAD_SHA,
+            "task22_bootstrap_registration_binding": binding,
+        }
+        self.assertEqual(
+            r3.validate_task22_bootstrap_migration_binding(
+                registered_head_migration, registered_head_review, bootstrap, None,
+            ),
+            [],
+        )
 
     def test_successor_migration_allows_owner_author_with_signed_review_record(self) -> None:
         base, head, merge_sha, tree_sha = "a" * 40, "b" * 40, "d" * 40, "c" * 40

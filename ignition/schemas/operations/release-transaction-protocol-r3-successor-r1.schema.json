@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [
     "schema_version", "contract_id", "status", "supersedes", "inherits_from",
-    "root_authority", "amendment_preparation_authority", "task22_bootstrap_registration", "owner_independent_ai_review_authority", "activation", "successor_registration",
+    "root_authority", "amendment_preparation_authority", "task22_bootstrap_registration", "task22_bootstrap_head_correction", "owner_independent_ai_review_authority", "activation", "successor_registration",
     "historical_adjudication", "preparation_authorization", "transaction_authorization",
     "owner_exact_head_review", "publication_witness", "protocol_migration_witness", "release_gates", "historical_compatibility",
     "failure_states", "claim_ceiling"
@@ -20,6 +20,7 @@
     "root_authority": {"$ref": "#/$defs/rootAuthority"},
     "amendment_preparation_authority": {"$ref": "#/$defs/amendmentPreparationAuthority"},
     "task22_bootstrap_registration": {"$ref": "#/$defs/task22BootstrapRegistrationPolicy"},
+    "task22_bootstrap_head_correction": {"$ref": "#/$defs/task22BootstrapHeadCorrectionPolicy"},
     "owner_independent_ai_review_authority": {"$ref": "#/$defs/ownerIndependentAiReviewAuthority"},
     "historical_adjudication": {"$ref": "#/$defs/historicalAdjudication"},
     "activation": {"$ref": "#/$defs/activation"},
@@ -175,6 +176,63 @@
         "required_owner_signature_verification": {"const": "verified=true/reason=valid"},
         "append_only": {"const": true},
         "successor_protocol_at_formal_base_required": {"const": false},
+        "effective_only_after_verified_owner_merge": {"const": true},
+        "ordinary_successor_registration_unchanged": {"const": true}
+      }
+    },
+    "task22BootstrapHeadCorrectionPolicy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "branch", "path", "record_type", "status_before_owner_verified_merge", "task_id", "formal_ordinal", "root_authority_merge_commit_sha", "identity_assignment_merge_commit_sha", "owner_review_authority_merge_commit_sha", "supersedes_registration", "formal_pr_binding", "required_root_permission_text", "authority_fit", "scope", "required_owner_web_flow_merge", "required_single_added_file", "required_ordered_parents", "required_owner_signature_verification", "append_only", "one_time_exact_head_only", "formal_pr_raw_diff_sha256_required", "owner_review_and_migration_bind_same_correction_identity", "preserves_original_registration", "no_task_id_or_ordinal_reallocation", "effective_only_after_verified_owner_merge", "ordinary_successor_registration_unchanged"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "branch": {"const": "main"},
+        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-13-TASK22-BOOTSTRAP-HEAD-CORRECTION-R0.json"},
+        "record_type": {"const": "TASK22_BOOTSTRAP_HEAD_CORRECTION"},
+        "status_before_owner_verified_merge": {"const": "PENDING_OWNER_VERIFIED_MERGE"},
+        "task_id": {"const": "IGNITION-20261105-022"},
+        "formal_ordinal": {"const": 22},
+        "root_authority_merge_commit_sha": {"const": "5f5af13ba5cd32b9e8a363ff8672f01f65d375c6"},
+        "identity_assignment_merge_commit_sha": {"const": "5449650811882f0c107e58680ee43d92577f7288"},
+        "owner_review_authority_merge_commit_sha": {"const": "064c0112ba7a8672b77a507f8763e79b6914cb0c"},
+        "supersedes_registration": {
+          "type": "object", "additionalProperties": false,
+          "required": ["registration_id", "path", "pull_request_number", "merge_commit_sha", "blob_sha", "file_sha256", "formal_base_sha", "formal_head_sha", "registration_nonce"],
+          "properties": {
+            "registration_id": {"const": "task22-bootstrap-r0-20261112-276411603215ece73a0aba86ae8322b3"},
+            "path": {"const": "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json"},
+            "pull_request_number": {"const": 169},
+            "merge_commit_sha": {"const": "7e246ec222f38797051d1d5d76985661621b489f"},
+            "blob_sha": {"const": "0a38ed8b2f83c4613ff9a94a303df64b8916f729"},
+            "file_sha256": {"const": "90cfc4112bed20896c5fc462c8cb2de62530ad241ae5b280a82f9a98fce72921"},
+            "formal_base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+            "formal_head_sha": {"const": "4a0b2dd462a0c8783b83b8d9f8a4fd9c9d7fb75a"},
+            "registration_nonce": {"const": "6b2565fb0b4b62bb8182992940c4cb72a65994d0b6a183b3a56a6858544c2bfb"}
+          }
+        },
+        "formal_pr_binding": {
+          "type": "object", "additionalProperties": false,
+          "required": ["repository", "pull_request_number", "base_sha", "head_branch", "superseded_head_sha"],
+          "properties": {
+            "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+            "pull_request_number": {"const": 268},
+            "base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+            "head_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"},
+            "superseded_head_sha": {"const": "4a0b2dd462a0c8783b83b8d9f8a4fd9c9d7fb75a"}
+          }
+        },
+        "required_root_permission_text": {"const": "Implement append-only successor task registrations with unique task IDs and ordinals, immutable historical entries, replay protection and explicit supersession records."},
+        "authority_fit": {"const": "One-time Task22-only append-only supersession of the exact Formal head binding in the immutable #169 registration; it does not re-register the task, change the identity or ordinal, alter #169 bytes, or enter the future successor ledger."},
+        "scope": {"const": "SUPERSEDE_ONE_TASK22_BOOTSTRAP_FORMAL_HEAD_BINDING_ONLY"},
+        "required_owner_web_flow_merge": {"const": true},
+        "required_single_added_file": {"const": true},
+        "required_ordered_parents": {"const": ["1111_main_base", "correction_branch_head"]},
+        "required_owner_signature_verification": {"const": "verified=true/reason=valid"},
+        "append_only": {"const": true},
+        "one_time_exact_head_only": {"const": true},
+        "formal_pr_raw_diff_sha256_required": {"const": true},
+        "owner_review_and_migration_bind_same_correction_identity": {"const": true},
+        "preserves_original_registration": {"const": true},
+        "no_task_id_or_ordinal_reallocation": {"const": true},
         "effective_only_after_verified_owner_merge": {"const": true},
         "ordinary_successor_registration_unchanged": {"const": true}
       }
@@ -599,6 +657,74 @@
         "committed_at": {"type": "string", "format": "date-time"}
       }
     },
+    "task22AuthorityRecordBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "pull_request_number", "merge_commit_sha", "file_path", "blob_sha", "file_sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "pull_request_number": {"type": "integer", "minimum": 1},
+        "merge_commit_sha": {"$ref": "#/$defs/sha1"},
+        "file_path": {"type": "string", "minLength": 1},
+        "blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "file_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "task22BootstrapHeadCorrectionRecord": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema_version", "record_type", "status", "correction_id", "root_authority_binding", "identity_assignment_binding", "independent_review_authority_binding", "task_identity", "superseded_registration_binding", "formal_pr_binding", "correction_nonce", "prepared_at_utc", "scope", "owner_actor_id", "effectiveness"],
+      "properties": {
+        "schema_version": {"const": "task22-bootstrap-head-correction-r0"},
+        "record_type": {"const": "TASK22_BOOTSTRAP_HEAD_CORRECTION"},
+        "status": {"const": "PENDING_OWNER_VERIFIED_MERGE"},
+        "correction_id": {"$ref": "#/$defs/safeId"},
+        "root_authority_binding": {"$ref": "#/$defs/task22AuthorityRecordBinding"},
+        "identity_assignment_binding": {"$ref": "#/$defs/task22AuthorityRecordBinding"},
+        "independent_review_authority_binding": {"$ref": "#/$defs/task22AuthorityRecordBinding"},
+        "task_identity": {
+          "type": "object", "additionalProperties": false,
+          "required": ["task_id", "formal_ordinal"],
+          "properties": {
+            "task_id": {"const": "IGNITION-20261105-022"},
+            "formal_ordinal": {"const": 22}
+          }
+        },
+        "superseded_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
+        "formal_pr_binding": {
+          "type": "object", "additionalProperties": false,
+          "required": ["repository", "pull_request_number", "base_sha", "head_branch", "superseded_head_sha", "candidate_head_sha", "raw_diff_sha256"],
+          "properties": {
+            "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+            "pull_request_number": {"const": 268},
+            "base_sha": {"$ref": "#/$defs/sha1"},
+            "head_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"},
+            "superseded_head_sha": {"$ref": "#/$defs/sha1"},
+            "candidate_head_sha": {"$ref": "#/$defs/sha1"},
+            "raw_diff_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "correction_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
+        "prepared_at_utc": {"type": "string", "format": "date-time"},
+        "scope": {"const": "SUPERSEDE_ONE_TASK22_BOOTSTRAP_FORMAL_HEAD_BINDING_ONLY"},
+        "owner_actor_id": {"const": 49422864},
+        "effectiveness": {"const": "NOT_EFFECTIVE_UNTIL_VERIFIED_OWNER_WEB_FLOW_MERGE_TO_1111_MAIN"}
+      }
+    },
+    "task22BootstrapHeadCorrectionBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["correction_id", "path", "pull_request_number", "commit_sha", "blob_sha", "file_sha256", "correction_nonce", "ordered_parent_shas", "committed_at", "formal_candidate_head_sha"],
+      "properties": {
+        "correction_id": {"$ref": "#/$defs/safeId"},
+        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-13-TASK22-BOOTSTRAP-HEAD-CORRECTION-R0.json"},
+        "pull_request_number": {"type": "integer", "minimum": 1},
+        "commit_sha": {"$ref": "#/$defs/sha1"},
+        "blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "file_sha256": {"$ref": "#/$defs/sha256"},
+        "correction_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
+        "ordered_parent_shas": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}},
+        "committed_at": {"type": "string", "format": "date-time"},
+        "formal_candidate_head_sha": {"$ref": "#/$defs/sha1"}
+      }
+    },
     "aiSourceReadback": {
       "type": "object", "additionalProperties": false,
       "required": ["mode", "repository", "source_base_sha", "source_head_sha", "formal_pr_diff_sha256", "raw_diff_sha256", "files"],
@@ -644,6 +770,7 @@
         "formal_pr_diff_sha256": {"$ref": "#/$defs/sha256"},
         "protocol_sha256": {"$ref": "#/$defs/sha256"},
         "task22_bootstrap_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
+        "task22_bootstrap_head_correction_binding": {"$ref": "#/$defs/task22BootstrapHeadCorrectionBinding"},
         "independent_ai_review_report": {"$ref": "#/$defs/independentAiReviewReport"},
         "decision": {"enum": ["APPROVE", "REQUEST_CHANGES"]},
         "review_summary": {"type": "string", "minLength": 1},
@@ -655,6 +782,15 @@
       "allOf": [{
         "if": {"properties": {"task_id": {"const": "IGNITION-20261105-022"}}, "required": ["task_id"]},
         "then": {"required": ["task22_bootstrap_registration_binding"]}
+      }, {
+        "if": {
+          "properties": {
+            "task_id": {"const": "IGNITION-20261105-022"},
+            "formal_candidate_head_sha": {"not": {"const": "4a0b2dd462a0c8783b83b8d9f8a4fd9c9d7fb75a"}}
+          },
+          "required": ["task_id", "formal_candidate_head_sha"]
+        },
+        "then": {"required": ["task22_bootstrap_registration_binding", "task22_bootstrap_head_correction_binding"]}
       }]
     },
     "successorPullRequestReview": {
@@ -789,6 +925,7 @@
         "independent_ai_review_artifact_id": {"type": "string", "minLength": 8, "maxLength": 256},
         "independent_ai_review_report_sha256": {"$ref": "#/$defs/sha256"},
         "task22_bootstrap_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
+        "task22_bootstrap_head_correction_binding": {"$ref": "#/$defs/task22BootstrapHeadCorrectionBinding"},
         "branch_required_github_reviews": {
           "type": "array", "minItems": 1,
           "items": {
@@ -813,6 +950,15 @@
       "allOf": [{
         "if": {"properties": {"formal_pr_number": {"const": 268}}, "required": ["formal_pr_number"]},
         "then": {"required": ["task22_bootstrap_registration_binding"]}
+      }, {
+        "if": {
+          "properties": {
+            "formal_pr_number": {"const": 268},
+            "formal_candidate_head_sha": {"not": {"const": "4a0b2dd462a0c8783b83b8d9f8a4fd9c9d7fb75a"}}
+          },
+          "required": ["formal_pr_number", "formal_candidate_head_sha"]
+        },
+        "then": {"required": ["task22_bootstrap_registration_binding", "task22_bootstrap_head_correction_binding"]}
       }]
     }
   }

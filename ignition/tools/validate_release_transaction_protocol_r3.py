@@ -86,6 +86,9 @@ TASK22_FORMAL_PR_NUMBER = 268
 TASK22_PREDECESSOR_ID = "IGNITION-20261101-021"
 TASK22_BOOTSTRAP_REGISTRATION_PATH = "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json"
 TASK22_BOOTSTRAP_REGISTRATION_PREFIX = "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-"
+TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH = "instructions/goal-mode/IGNITION-2026-11-13-TASK22-BOOTSTRAP-HEAD-CORRECTION-R0.json"
+TASK22_BOOTSTRAP_HEAD_CORRECTION_PREFIX = "instructions/goal-mode/IGNITION-2026-11-13-TASK22-BOOTSTRAP-HEAD-CORRECTION-"
+TASK22_BOOTSTRAP_INITIAL_HEAD_SHA = "4a0b2dd462a0c8783b83b8d9f8a4fd9c9d7fb75a"
 TASK22_BOOTSTRAP_SCHEMA_PATH = ROOT / "schemas/operations/task22-bootstrap-registration-r0.schema.json"
 TASK22_BOOTSTRAP_SCOPE = "TASK22_BOOTSTRAP_REGISTRATION_ONLY"
 OWNER_AI_REVIEW_AUTHORITY_PR_NUMBER = 166
@@ -799,13 +802,17 @@ def read_authenticated_successor_root_authority(
             readbacks[path] = binding
 
         authority = json.loads(readbacks[SUCCESSOR_ROOT_AUTHORITY_PATH]["raw"].decode("utf-8"))
+        root_scope = authority.get("scope") or {}
+        root_permissions = root_scope.get("permitted_after_activation")
         if (
             authority.get("record_id") != "IGNITION-20261104-OWNER-ROOT-GOVERNANCE-AUTHORITY-R0"
             or authority.get("status") != "PROPOSED_PENDING_OWNER_VERIFIED_MERGE"
             or authority.get("activation", {}).get("effective_only_after_verified_owner_merge") is not True
             or authority.get("activation", {}).get("r3_validator_is_not_the_authority_for_this_root_act") is not True
-            or authority.get("scope", {}).get("kind") != "ONE_TIME_GOVERNANCE_PROTOCOL_AMENDMENT_MANDATE"
-            or authority.get("scope", {}).get("task_identity_rule") is None
+            or root_scope.get("kind") != "ONE_TIME_GOVERNANCE_PROTOCOL_AMENDMENT_MANDATE"
+            or root_scope.get("task_identity_rule") is None
+            or not isinstance(root_permissions, list)
+            or not any("explicit supersession records" in item for item in root_permissions if isinstance(item, str))
             or authority.get("immutable_history", {}).get("retroactive_cure_for_pr_267") != "FORBIDDEN"
         ):
             return None, ["merged root-authority record does not contain the exact narrow external-to-R3 authority terms"]
@@ -829,6 +836,9 @@ def read_authenticated_successor_root_authority(
                 }
                 for path, binding in readbacks.items()
             },
+            "scope_kind": root_scope["kind"],
+            "scope_target": root_scope["target"],
+            "permitted_after_activation": root_permissions,
         }, []
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
         return None, [f"root governance authority readback failed closed: {error.__class__.__name__}: {error}"]
@@ -969,11 +979,14 @@ def read_authenticated_task22_amendment_preparation_authority(
     api = github_api or _gh_api_json
     try:
         contract = load_json(SUCCESSOR_PROTOCOL_PATH)["amendment_preparation_authority"]
+        correction_policy = load_json(SUCCESSOR_PROTOCOL_PATH)["task22_bootstrap_head_correction"]
         root, root_errors = read_authenticated_successor_root_authority(github_api=api)
         if root_errors or root is None:
             return None, [f"Task22 preparation lacks the live #163 root authority: {error}" for error in root_errors]
         if root["merge_commit_sha"] != contract["root_authority_merge_commit_sha"]:
             return None, ["Task22 preparation root merge differs from the exact #163 mandate"]
+        if correction_policy["required_root_permission_text"] not in root.get("permitted_after_activation", []):
+            return None, ["#163 does not authorize a Task22 bootstrap head correction through its exact append-only supersession permission"]
 
         ai_review_authority, ai_review_errors = read_authenticated_owner_ai_review_authority(github_api=api)
         if ai_review_errors or ai_review_authority is None:
@@ -1062,6 +1075,7 @@ def read_authenticated_task22_amendment_preparation_authority(
         return {
             "root_authority": root,
             "owner_independent_ai_review_authority": ai_review_authority,
+            "task22_bootstrap_head_correction_policy": correction_policy,
             "repository": OWNER_AUTHORIZATION_REPOSITORY,
             "pull_request_number": TASK22_IDENTITY_PR_NUMBER,
             "merge_commit_sha": TASK22_IDENTITY_MERGE_SHA,
@@ -1107,6 +1121,171 @@ def task22_bootstrap_registration_binding(row: dict[str, Any] | None) -> dict[st
         "ordered_parent_shas": row.get("parents"),
         "committed_at": row.get("committed_at"),
     }
+
+
+def task22_bootstrap_head_correction_binding(row: dict[str, Any] | None) -> dict[str, Any] | None:
+    """Return the immutable identity of the verified H1-to-H2 correction."""
+    if not isinstance(row, dict) or not isinstance(row.get("statement"), dict):
+        return None
+    statement = row["statement"]
+    formal_binding = statement.get("formal_pr_binding")
+    if not isinstance(formal_binding, dict):
+        return None
+    return {
+        "correction_id": statement.get("correction_id"),
+        "path": row.get("path"),
+        "pull_request_number": row.get("pull_request_number"),
+        "commit_sha": row.get("commit_sha"),
+        "blob_sha": row.get("blob_sha"),
+        "file_sha256": row.get("file_sha256"),
+        "correction_nonce": statement.get("correction_nonce"),
+        "ordered_parent_shas": row.get("parents"),
+        "committed_at": row.get("committed_at"),
+        "formal_candidate_head_sha": formal_binding.get("candidate_head_sha"),
+    }
+
+
+def validate_task22_bootstrap_head_correction_statement(
+    statement: dict[str, Any],
+    *,
+    authority: dict[str, Any],
+    task22_bootstrap_registration: dict[str, Any],
+    formal_pr: dict[str, Any],
+    expected_raw_diff_sha256: str,
+    existing_correction_ids: list[str] | None = None,
+    existing_nonces: list[str] | None = None,
+) -> list[str]:
+    """Validate one Task22-only exact-head supersession against authenticated inputs."""
+    errors: list[str] = []
+    schema = load_json(SUCCESSOR_SCHEMA_PATH)
+    errors.extend(_schema_errors(
+        statement,
+        {"$ref": "#/$defs/task22BootstrapHeadCorrectionRecord", "$defs": schema["$defs"]},
+    ))
+    if errors:
+        return errors
+    try:
+        root = authority["root_authority"]
+        identity = authority
+        review_authority = authority["owner_independent_ai_review_authority"]
+        policy = authority["task22_bootstrap_head_correction_policy"]
+        registration_statement = task22_bootstrap_registration["statement"]
+        registration_pr = registration_statement["formal_pr_binding"]
+        live_base = formal_pr.get("base") or {}
+        live_head = formal_pr.get("head") or {}
+        root_file = root["files"][SUCCESSOR_ROOT_AUTHORITY_PATH]
+        expected_bindings = {
+            "root_authority_binding": {
+                "repository": root["repository"], "pull_request_number": root["pull_request_number"],
+                "merge_commit_sha": root["merge_commit_sha"], "file_path": SUCCESSOR_ROOT_AUTHORITY_PATH,
+                "blob_sha": root_file["blob_sha"], "file_sha256": root_file["sha256"],
+            },
+            "identity_assignment_binding": {
+                "repository": identity["repository"], "pull_request_number": identity["pull_request_number"],
+                "merge_commit_sha": identity["merge_commit_sha"], "file_path": identity["file_path"],
+                "blob_sha": identity["file_blob_sha"], "file_sha256": identity["file_sha256"],
+            },
+            "independent_review_authority_binding": {
+                "repository": review_authority["repository"], "pull_request_number": review_authority["pull_request_number"],
+                "merge_commit_sha": review_authority["merge_commit_sha"], "file_path": review_authority["file_path"],
+                "blob_sha": review_authority["file_blob_sha"], "file_sha256": review_authority["file_sha256"],
+            },
+        }
+        for field, expected in expected_bindings.items():
+            if statement.get(field) != expected:
+                errors.append(f"Task22 head correction does not bind the authenticated {field.replace('_binding', '').replace('_', ' ')}")
+        if statement.get("task_identity") != {
+            "task_id": identity.get("task_id"), "formal_ordinal": identity.get("formal_ordinal"),
+        }:
+            errors.append("Task22 head correction differs from the exact #165 task identity and ordinal")
+        if (
+            root.get("merge_commit_sha") != SUCCESSOR_ROOT_MERGE_SHA
+            or root.get("scope_kind") != "ONE_TIME_GOVERNANCE_PROTOCOL_AMENDMENT_MANDATE"
+            or policy.get("required_root_permission_text") not in root.get("permitted_after_activation", [])
+        ):
+            errors.append("#163 root-authority validator does not authorize this Task22 append-only supersession")
+        expected_registration_binding = task22_bootstrap_registration_binding(task22_bootstrap_registration)
+        if (
+            task22_bootstrap_registration.get("path") != TASK22_BOOTSTRAP_REGISTRATION_PATH
+            or registration_statement.get("registration_id") != "task22-bootstrap-r0-20261112-276411603215ece73a0aba86ae8322b3"
+            or registration_pr.get("candidate_head_sha") != TASK22_BOOTSTRAP_INITIAL_HEAD_SHA
+            or statement.get("superseded_registration_binding") != expected_registration_binding
+        ):
+            errors.append("Task22 head correction does not supersede the exact immutable #169 registration at H1")
+        formal_binding = statement["formal_pr_binding"]
+        candidate_head = live_head.get("sha")
+        if (
+            formal_binding.get("repository") != PUBLIC_REPOSITORY
+            or formal_binding.get("pull_request_number") != TASK22_FORMAL_PR_NUMBER
+            or formal_binding.get("base_sha") != registration_pr.get("base_sha")
+            or formal_binding.get("head_branch") != registration_pr.get("head_branch")
+            or formal_binding.get("superseded_head_sha") != registration_pr.get("candidate_head_sha")
+            or candidate_head == TASK22_BOOTSTRAP_INITIAL_HEAD_SHA
+            or formal_binding.get("candidate_head_sha") != candidate_head
+            or live_base.get("ref") != "main"
+            or live_base.get("sha") != registration_pr.get("base_sha")
+            or live_head.get("ref") != registration_pr.get("head_branch")
+            or formal_binding.get("raw_diff_sha256") != expected_raw_diff_sha256
+        ):
+            errors.append("Task22 head correction does not bind the live #268 exact H2, original base/branch, H1 and raw diff digest")
+        if statement.get("correction_id") in (existing_correction_ids or []):
+            errors.append("Task22 head-correction ID is replayed by another immutable control record")
+        if statement.get("correction_nonce") in (existing_nonces or []) or statement.get("correction_nonce") == registration_statement.get("registration_nonce"):
+            errors.append("Task22 head-correction nonce is replayed by an immutable Owner control record")
+        return errors
+    except (KeyError, TypeError, ValueError, OSError, json.JSONDecodeError) as error:
+        return errors + [f"Task22 head-correction statement is incomplete: {error.__class__.__name__}: {error}"]
+
+
+def validate_task22_bootstrap_head_correction_evidence(
+    row: dict[str, Any] | None,
+    *,
+    authority: dict[str, Any],
+    task22_bootstrap_registration: dict[str, Any],
+    formal_pr: dict[str, Any],
+    expected_raw_diff_sha256: str,
+    existing_correction_ids: list[str] | None = None,
+    existing_nonces: list[str] | None = None,
+) -> list[str]:
+    """Require one immutable, signed Owner web-flow correction merge."""
+    if not isinstance(row, dict):
+        return ["live Task22 #268 head differs from #169 H1 but the Owner-verified correction record is missing"]
+    statement = row.get("statement")
+    if not isinstance(statement, dict):
+        return ["Task22 head correction has no structured statement"]
+    errors = validate_task22_bootstrap_head_correction_statement(
+        statement, authority=authority,
+        task22_bootstrap_registration=task22_bootstrap_registration,
+        formal_pr=formal_pr, expected_raw_diff_sha256=expected_raw_diff_sha256,
+        existing_correction_ids=existing_correction_ids, existing_nonces=existing_nonces,
+    )
+    if row.get("path") != TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH:
+        errors.append("Task22 head correction is not at the one fixed path outside r3-successors/")
+    if row.get("signature_verified") is not True or row.get("signature_reason") != "valid":
+        errors.append("Task22 head correction lacks a GitHub-verified Owner signature")
+    if row.get("owner_web_flow_merge_verified") is not True:
+        errors.append("Task22 head correction was not introduced by the Owner's GitHub web-flow merge")
+    if row.get("append_only_first_write_verified") is not True or row.get("path_addition_count") != 1:
+        errors.append("Task22 head correction path was replayed or is not one append-only first write")
+    raw = row.get("raw")
+    if not isinstance(raw, bytes):
+        errors.append("Task22 head correction has no exact raw file bytes")
+    elif row.get("file_sha256") != hashlib.sha256(raw).hexdigest() or row.get("blob_sha") != _git_blob_sha(raw):
+        errors.append("Task22 head-correction blob or SHA-256 differs from its exact bytes")
+    parents = row.get("parents")
+    if (
+        not isinstance(parents, list) or len(parents) != 2
+        or parents != [row.get("pr_base_sha"), row.get("pr_head_sha")]
+        or row.get("pr_merged_by_id") != authority.get("owner_actor_id")
+        or type(row.get("pull_request_number")) is not int or row.get("pull_request_number") < 1
+    ):
+        errors.append("Task22 head-correction merge lacks the exact Owner attribution or ordered two-parent PR identity")
+    committed, commit_errors = _parse_control_time(row.get("committed_at"), "Task22 head-correction verified Owner merge time")
+    prepared, prepared_errors = _parse_control_time(statement.get("prepared_at_utc"), "Task22 head-correction prepared_at_utc")
+    errors.extend(commit_errors + prepared_errors)
+    if committed and prepared and prepared > committed:
+        errors.append("Task22 head correction claims preparation after its verified Owner merge")
+    return errors
 
 
 def validate_task22_bootstrap_registration_statement(
@@ -1299,11 +1478,19 @@ def validate_task22_bootstrap_migration_binding(
     migration_statement: dict[str, Any],
     owner_review_statement: dict[str, Any] | None,
     task22_bootstrap_registration: dict[str, Any] | None,
+    task22_bootstrap_head_correction: dict[str, Any] | None = None,
 ) -> list[str]:
-    """Require PR #268 migration and its Owner review to name one real record."""
+    """Require PR #268 migration/review to bind #169 and the same H1-to-H2 record."""
     is_task22_migration = migration_statement.get("formal_pr_number") == TASK22_FORMAL_PR_NUMBER
     review_is_task22 = isinstance(owner_review_statement, dict) and owner_review_statement.get("task_id") == TASK22_IDENTITY_TASK_ID
-    has_binding = migration_statement.get("task22_bootstrap_registration_binding") is not None
+    has_binding = (
+        migration_statement.get("task22_bootstrap_registration_binding") is not None
+        or migration_statement.get("task22_bootstrap_head_correction_binding") is not None
+        or (isinstance(owner_review_statement, dict) and (
+            owner_review_statement.get("task22_bootstrap_registration_binding") is not None
+            or owner_review_statement.get("task22_bootstrap_head_correction_binding") is not None
+        ))
+    )
     if not is_task22_migration and not review_is_task22 and not has_binding:
         return []
     errors: list[str] = []
@@ -1327,9 +1514,32 @@ def validate_task22_bootstrap_migration_binding(
     if (
         bootstrap_statement.get("registration_id") != expected.get("registration_id")
         or bootstrap_statement.get("formal_pr_binding", {}).get("base_sha") != migration_statement.get("formal_base_sha")
-        or bootstrap_statement.get("formal_pr_binding", {}).get("candidate_head_sha") != migration_statement.get("formal_candidate_head_sha")
     ):
-        errors.append("Task22 migration does not match the bootstrap record's exact PR base and candidate head")
+        errors.append("Task22 migration does not match the bootstrap record's exact PR base and registration identity")
+    registered_head = bootstrap_statement.get("formal_pr_binding", {}).get("candidate_head_sha")
+    migration_head = migration_statement.get("formal_candidate_head_sha")
+    correction_binding = task22_bootstrap_head_correction_binding(task22_bootstrap_head_correction)
+    needs_correction = migration_head != registered_head
+    if needs_correction:
+        if correction_binding is None:
+            errors.append("Task22 H2 migration witness lacks an authenticated Owner-signed head correction")
+        if migration_statement.get("task22_bootstrap_head_correction_binding") != correction_binding:
+            errors.append("Task22 migration witness does not bind the exact authenticated H1-to-H2 correction")
+        if owner_review_statement is None or owner_review_statement.get("task22_bootstrap_head_correction_binding") != correction_binding:
+            errors.append("Task22 Owner review does not bind the same authenticated H1-to-H2 correction as migration")
+        correction_statement = (task22_bootstrap_head_correction or {}).get("statement", {})
+        correction_pr = correction_statement.get("formal_pr_binding", {})
+        if (
+            correction_pr.get("superseded_head_sha") != registered_head
+            or correction_pr.get("candidate_head_sha") != migration_head
+            or correction_pr.get("base_sha") != migration_statement.get("formal_base_sha")
+        ):
+            errors.append("Task22 migration head or base differs from the authenticated correction record")
+    elif correction_binding is not None or migration_statement.get("task22_bootstrap_head_correction_binding") is not None or (
+        isinstance(owner_review_statement, dict)
+        and owner_review_statement.get("task22_bootstrap_head_correction_binding") is not None
+    ):
+        errors.append("Task22 H1 review or migration carries a correction for a different exact head")
     return errors
 
 
@@ -1478,18 +1688,32 @@ def _require_owner_verified_control_pr_merge(
         linked_prs = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}/pulls")
         if not isinstance(linked_prs, list) or len(linked_prs) != 1:
             return None, ["control-record merge commit must resolve to exactly one GitHub pull request"]
-        pr = linked_prs[0]
+        linked_pr = linked_prs[0]
+        pr_number = linked_pr.get("number") if isinstance(linked_pr, dict) else None
+        if type(pr_number) is not int or pr_number < 1:
+            return None, ["control-record's unique linked pull request has no valid PR number"]
+        pr = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{pr_number}")
+        if not isinstance(pr, dict) or pr.get("number") != pr_number:
+            return None, ["control-record's linked pull request full detail is missing or identifies a different PR"]
+        merged_by = pr.get("merged_by")
+        merged_by_id = merged_by.get("id") if isinstance(merged_by, dict) else None
+        base = pr.get("base")
+        base_ref = base.get("ref") if isinstance(base, dict) else None
+        base_sha = base.get("sha") if isinstance(base, dict) else None
+        head = pr.get("head")
+        head_sha = head.get("sha") if isinstance(head, dict) else None
+        first_parent_sha = parents[0].get("sha") if isinstance(parents[0], dict) else None
+        second_parent_sha = parents[1].get("sha") if isinstance(parents[1], dict) else None
         if (
-            not isinstance(pr, dict)
-            or pr.get("merged") is not True
+            pr.get("merged") is not True
             or pr.get("merge_commit_sha") != commit_sha
-            or (pr.get("merged_by") or {}).get("id") != owner_id
-            or (pr.get("base") or {}).get("ref") != "main"
-            or (pr.get("base") or {}).get("sha") != parents[0].get("sha")
-            or (pr.get("head") or {}).get("sha") != parents[1].get("sha")
+            or merged_by_id != owner_id
+            or base_ref != "main"
+            or base_sha != first_parent_sha
+            or head_sha != second_parent_sha
         ):
             return None, ["control-record PR was not merged by the Owner into 1111/main"]
-        changed_files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{pr['number']}/files?per_page=100")
+        changed_files = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/pulls/{pr_number}/files?per_page=100")
         if not isinstance(changed_files, list) or len(changed_files) != 1 or changed_files[0].get("filename") != expected_path or changed_files[0].get("status") != "added":
             return None, ["each Owner control-record PR must add exactly its one immutable ledger file"]
         signed_path = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, commit_sha, expected_path, api, cache)
@@ -1682,12 +1906,14 @@ def read_authenticated_successor_control_ledger(
     """
     api = github_api or _gh_api_json
     errors: list[str] = []
+    root_authority: dict[str, Any] | None = None
     try:
         if require_root_authority:
             root, root_errors = read_authenticated_successor_root_authority(github_api=api)
             errors.extend(root_errors)
             if root_errors or root is None:
                 return None, errors
+            root_authority = root
             history, history_errors = read_authenticated_historical_adjudication(github_api=api)
             errors.extend(history_errors)
             if history_errors or history is None:
@@ -1718,11 +1944,21 @@ def read_authenticated_successor_control_ledger(
             if isinstance(row, dict) and isinstance(row.get("path"), str)
             and row["path"].startswith(TASK22_BOOTSTRAP_REGISTRATION_PREFIX)
         }
+        head_correction_paths = {
+            row.get("path"): row for row in tree["tree"]
+            if isinstance(row, dict) and isinstance(row.get("path"), str)
+            and row["path"].startswith(TASK22_BOOTSTRAP_HEAD_CORRECTION_PREFIX)
+        }
         if set(bootstrap_paths) - {TASK22_BOOTSTRAP_REGISTRATION_PATH}:
             return None, ["1111/main contains an unexpected second Task22 bootstrap-registration path"]
+        if set(head_correction_paths) - {TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH}:
+            return None, ["1111/main contains an unexpected second Task22 bootstrap head-correction path"]
         for path, entry in bootstrap_paths.items():
             if entry.get("type") != "blob" or not path.endswith(".json"):
                 return None, [f"Task22 bootstrap-registration path is not one JSON file: {path}"]
+        for path, entry in head_correction_paths.items():
+            if entry.get("type") != "blob" or not path.endswith(".json"):
+                return None, [f"Task22 bootstrap head-correction path is not one JSON file: {path}"]
         for path, entry in current_entries.items():
             if not isinstance(path, str) or not any(path.startswith(prefix) for prefix in SUCCESSOR_LEDGER_PREFIXES):
                 continue
@@ -1735,6 +1971,7 @@ def read_authenticated_successor_control_ledger(
         # Track every path creation/change along 1111/main's first-parent chain.
         additions: dict[str, dict[str, Any]] = {}
         bootstrap_additions: dict[str, dict[str, Any]] = {}
+        head_correction_additions: dict[str, dict[str, Any]] = {}
         cursor = main_sha
         control_merge_cache: dict[str, dict[str, Any]] = {}
         for _ in range(MAX_FIRST_PARENT_CONTROL_PATH_SCAN):
@@ -1754,6 +1991,8 @@ def read_authenticated_successor_control_ledger(
                     continue
                 if path.startswith(TASK22_BOOTSTRAP_REGISTRATION_PREFIX) and path != TASK22_BOOTSTRAP_REGISTRATION_PATH:
                     return None, [f"1111/main history contains an unexpected Task22 bootstrap-registration path: {path}"]
+                if path.startswith(TASK22_BOOTSTRAP_HEAD_CORRECTION_PREFIX) and path != TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH:
+                    return None, [f"1111/main history contains an unexpected Task22 bootstrap head-correction path: {path}"]
                 if path == TASK22_BOOTSTRAP_REGISTRATION_PATH:
                     if file_change.get("status") != "added" or path in bootstrap_additions:
                         return None, [f"Task22 bootstrap registration was changed, deleted, renamed or replayed at {cursor}"]
@@ -1778,6 +2017,34 @@ def read_authenticated_successor_control_ledger(
                     if addition_errors:
                         return None, [f"Task22 bootstrap path history failed closed at {cursor}: {item}" for item in addition_errors]
                     bootstrap_additions[path] = {
+                        "commit_sha": cursor, "blob_sha": after["sha"],
+                        "parents": [row.get("sha") for row in parent_list], "control_merge": control_merge,
+                    }
+                    continue
+                if path == TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH:
+                    if file_change.get("status") != "added" or path in head_correction_additions:
+                        return None, [f"Task22 bootstrap head correction was changed, deleted, renamed or replayed at {cursor}"]
+                    if not isinstance(file_change.get("sha"), str) or not re.fullmatch(r"[0-9a-f]{40}", file_change["sha"]):
+                        return None, ["Task22 bootstrap head-correction addition has no exact Git blob SHA"]
+                    if not parent_sha:
+                        return None, ["Task22 bootstrap head-correction addition has no 1111/main first parent"]
+                    control_merge, merge_errors = _require_owner_verified_control_pr_merge(
+                        cursor, owner_id, api, control_merge_cache, path
+                    )
+                    if merge_errors or control_merge is None:
+                        return None, [f"Task22 head correction is not a verified Owner web-flow PR merge: {error}" for error in merge_errors]
+                    after = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, cursor, path, api, cache)
+                    before = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, parent_sha, path, api, cache)
+                    second_parent_sha = parent_list[1].get("sha") if len(parent_list) == 2 and isinstance(parent_list[1], dict) else None
+                    second_parent = _path_entry_for_commit(OWNER_AUTHORIZATION_REPOSITORY, second_parent_sha, path, api, cache) if second_parent_sha else None
+                    addition_errors = validate_successor_append_only_addition(
+                        path, status=file_change.get("status"), already_added=False,
+                        blob_sha=file_change.get("sha"), first_parent_sha=parent_sha,
+                        before_entry=before, after_entry=after, second_parent_entry=second_parent,
+                    )
+                    if addition_errors:
+                        return None, [f"Task22 head-correction path history failed closed at {cursor}: {item}" for item in addition_errors]
+                    head_correction_additions[path] = {
                         "commit_sha": cursor, "blob_sha": after["sha"],
                         "parents": [row.get("sha") for row in parent_list], "control_merge": control_merge,
                     }
@@ -1826,6 +2093,8 @@ def read_authenticated_successor_control_ledger(
             return None, [f"append-only ledger tree/history mismatch: deleted={missing}, unsigned_or_untracked={unregistered}"]
         if set(bootstrap_additions) != set(bootstrap_paths):
             return None, ["Task22 bootstrap-registration tree/history mismatch; deletion or unsigned addition is present"]
+        if set(head_correction_additions) != set(head_correction_paths):
+            return None, ["Task22 bootstrap head-correction tree/history mismatch; deletion or unsigned addition is present"]
 
         schema = load_json(SUCCESSOR_SCHEMA_PATH)
         records: list[dict[str, Any]] = []
@@ -1892,6 +2161,9 @@ def read_authenticated_successor_control_ledger(
             })
 
         bootstrap_registration = None
+        task22_bootstrap_head_correction = None
+        live_task22_formal_pr: dict[str, Any] | None = None
+        task22_existing_nonces: list[str] = []
         if TASK22_BOOTSTRAP_REGISTRATION_PATH in bootstrap_paths:
             metadata = bootstrap_additions[TASK22_BOOTSTRAP_REGISTRATION_PATH]
             raw_content = api(
@@ -1931,15 +2203,15 @@ def read_authenticated_successor_control_ledger(
             registration_commit_time = path_binding["committed_at"]
             registration_pr = control_merge.get("pr") or {}
             formal_pr = api(f"repos/{PUBLIC_REPOSITORY}/pulls/{TASK22_FORMAL_PR_NUMBER}")
+            live_task22_formal_pr = formal_pr if isinstance(formal_pr, dict) else None
             formal_base, formal_head = formal_pr.get("base") or {}, formal_pr.get("head") or {}
             if (
                 formal_pr.get("number") != TASK22_FORMAL_PR_NUMBER
                 or formal_base.get("ref") != "main"
                 or formal_base.get("sha") != statement["formal_pr_binding"]["base_sha"]
                 or formal_head.get("ref") != statement["formal_pr_binding"]["head_branch"]
-                or formal_head.get("sha") != statement["formal_pr_binding"]["candidate_head_sha"]
             ):
-                return None, ["Task22 bootstrap record is stale for the live exact PR #268 base, branch or candidate head"]
+                return None, ["Task22 bootstrap record is stale for the live exact PR #268 base or branch"]
             existing_registration_rows = [
                 row for row in records if row.get("statement", {}).get("record_type") == "TASK_REGISTRATION"
             ]
@@ -1955,6 +2227,7 @@ def read_authenticated_successor_control_ledger(
                 for row in records
                 for field in ("registration_nonce", "preparation_nonce", "authorization_nonce", "revocation_nonce", "supersession_nonce", "review_nonce")
             }
+            task22_existing_nonces = [nonce for nonce in existing_nonces if isinstance(nonce, str)]
             if statement["registration_nonce"] in existing_nonces or statement["registration_nonce"] == task21_registration["statement"].get("registration_nonce"):
                 return None, ["Task22 bootstrap registration nonce is replayed by another Owner control record"]
             bootstrap_registration = {
@@ -1982,10 +2255,96 @@ def read_authenticated_successor_control_ledger(
                 expected_formal_base_sha=statement["formal_pr_binding"]["base_sha"],
                 expected_formal_candidate_head_sha=statement["formal_pr_binding"]["candidate_head_sha"],
                 existing_registration_ids=[row["statement"].get("registration_id", "") for row in existing_registration_rows],
-                existing_nonces=[nonce for nonce in existing_nonces if isinstance(nonce, str)],
+                existing_nonces=task22_existing_nonces,
             )
             if bootstrap_errors:
                 return None, [f"Task22 bootstrap registration evidence failed: {error}" for error in bootstrap_errors]
+
+        if head_correction_paths and bootstrap_registration is None:
+            return None, ["Task22 bootstrap head correction exists without its immutable Owner-verified #169 registration"]
+        if bootstrap_registration is not None:
+            if live_task22_formal_pr is None:
+                return None, ["Task22 live Formal PR #268 metadata is unavailable for exact-head correction validation"]
+            live_head_sha = (live_task22_formal_pr.get("head") or {}).get("sha")
+            registered_head_sha = bootstrap_registration["statement"]["formal_pr_binding"]["candidate_head_sha"]
+            has_correction = TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH in head_correction_paths
+            if live_head_sha != registered_head_sha and not has_correction:
+                return None, ["live Task22 #268 head differs from #169 H1 and the Owner-verified correction record is missing"]
+            if has_correction:
+                metadata = head_correction_additions[TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH]
+                raw_content = api(
+                    f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{quote(TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH, safe='/')}?ref={quote(main_sha, safe='')}"
+                )
+                raw, blob_sha = _decode_control_file(
+                    raw_content, OWNER_AUTHORIZATION_REPOSITORY,
+                    TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH, main_sha,
+                )
+                if blob_sha != head_correction_paths[TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH].get("sha") or blob_sha != metadata["blob_sha"]:
+                    return None, ["Task22 head-correction bytes differ from the exact Owner-merged main tree blob"]
+                statement = json.loads(raw.decode("utf-8"))
+                if not isinstance(authority, dict):
+                    authority, authority_errors = read_authenticated_task22_amendment_preparation_authority(github_api=api)
+                    if authority_errors or authority is None:
+                        return None, [f"Task22 head correction lacks its live #163/#165/#166 authority: {error}" for error in authority_errors]
+                raw_diff_sha256, raw_diff_errors = read_live_successor_pr_raw_diff_sha256(
+                    TASK22_FORMAL_PR_NUMBER,
+                    base_sha=bootstrap_registration["statement"]["formal_pr_binding"]["base_sha"],
+                    head_sha=live_head_sha,
+                    github_api=api,
+                )
+                if raw_diff_errors or raw_diff_sha256 is None:
+                    return None, [f"Task22 #268 raw diff could not be bound for its correction: {error}" for error in raw_diff_errors]
+                path_binding, path_errors = _read_authenticated_control_path_commit(
+                    OWNER_AUTHORIZATION_REPOSITORY, TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH,
+                    metadata["commit_sha"], owner_id,
+                    expected_file_sha256=hashlib.sha256(raw).hexdigest(),
+                    expected_parent_shas=metadata["parents"], api=api,
+                )
+                if path_errors or path_binding is None:
+                    return None, [f"Task22 head-correction Owner-merge readback failed closed: {error}" for error in path_errors]
+                if path_binding["blob_sha"] != blob_sha:
+                    return None, ["Task22 head-correction signed commit blob differs from exact file bytes"]
+                correction_pr = (metadata["control_merge"].get("pr") or {})
+                task22_bootstrap_head_correction = {
+                    "path": TASK22_BOOTSTRAP_HEAD_CORRECTION_PATH,
+                    "statement": statement,
+                    "commit_sha": metadata["commit_sha"],
+                    "parents": metadata["parents"],
+                    "blob_sha": blob_sha,
+                    "file_sha256": hashlib.sha256(raw).hexdigest(),
+                    "raw": raw,
+                    "committed_at": path_binding["committed_at"],
+                    "pull_request_number": correction_pr.get("number"),
+                    "pr_base_sha": (correction_pr.get("base") or {}).get("sha"),
+                    "pr_head_sha": (correction_pr.get("head") or {}).get("sha"),
+                    "pr_merged_by_id": (correction_pr.get("merged_by") or {}).get("id"),
+                    "owner_web_flow_merge_verified": True,
+                    "append_only_first_write_verified": True,
+                    "path_addition_count": 1,
+                    "signature_verified": True,
+                    "signature_reason": "valid",
+                    "main_sha": main_sha,
+                }
+                prior_ids = [
+                    row.get("statement", {}).get(field)
+                    for row in records
+                    for field in ("registration_id", "preparation_id", "authorization_id", "revocation_id", "supersession_id", "review_id", "transaction_id")
+                ]
+                prior_nonces = task22_existing_nonces + [
+                    bootstrap_registration["statement"].get("registration_nonce"),
+                    task21_registration["statement"].get("registration_nonce"),
+                ]
+                correction_errors = validate_task22_bootstrap_head_correction_evidence(
+                    task22_bootstrap_head_correction,
+                    authority=authority,
+                    task22_bootstrap_registration=bootstrap_registration,
+                    formal_pr=live_task22_formal_pr,
+                    expected_raw_diff_sha256=raw_diff_sha256,
+                    existing_correction_ids=[value for value in prior_ids if isinstance(value, str)],
+                    existing_nonces=[value for value in prior_nonces if isinstance(value, str)],
+                )
+                if correction_errors:
+                    return None, [f"Task22 head correction evidence failed: {error}" for error in correction_errors]
 
         task22_review_rows = [
             row for row in records if row.get("statement", {}).get("record_type") == "OWNER_EXACT_HEAD_REVIEW"
@@ -2219,6 +2578,7 @@ def read_authenticated_successor_control_ledger(
                     row["statement"], signed_record=row, owner_id=owner_id,
                     owner_review_records=owner_reviews, github_api=api,
                     task22_bootstrap_registration=bootstrap_registration,
+                    task22_bootstrap_head_correction=task22_bootstrap_head_correction,
                 )
             )
         for row in publications:
@@ -2241,6 +2601,7 @@ def read_authenticated_successor_control_ledger(
             "supersessions": supersessions,
             "owner_reviews": owner_reviews,
             "task22_bootstrap_registration": bootstrap_registration,
+            "task22_bootstrap_head_correction": task22_bootstrap_head_correction,
             "publications": publications,
             "migrations": migrations,
             "revoked_authorization_ids": sorted(revoked_ids),
@@ -2793,6 +3154,7 @@ def validate_successor_owner_exact_head_review_record(
     valid_through: str,
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
     task22_bootstrap_registration: dict[str, Any] | None = None,
+    task22_bootstrap_head_correction: dict[str, Any] | None = None,
 ) -> list[str]:
     """Require a separate Owner-signed, append-only review of this exact PR diff."""
     if review_row is None:
@@ -2818,11 +3180,30 @@ def validate_successor_owner_exact_head_review_record(
                 or bootstrap_task.get("formal_ordinal") != formal_ordinal
                 or bootstrap_pr.get("pull_request_number") != pr_number
                 or bootstrap_pr.get("base_sha") != base_sha
-                or bootstrap_pr.get("candidate_head_sha") != head_sha
             ):
                 errors.append("Task22 Owner exact-head review differs from the authenticated bootstrap registration ID or immutable record identity")
+            expected_correction_binding = task22_bootstrap_head_correction_binding(task22_bootstrap_head_correction)
+            registered_head = bootstrap_pr.get("candidate_head_sha")
+            if head_sha == registered_head:
+                if expected_correction_binding is not None or signed.get("task22_bootstrap_head_correction_binding") is not None:
+                    errors.append("Task22 Owner review of registered H1 carries a correction for a different exact head")
+            elif (
+                expected_correction_binding is None
+                or signed.get("task22_bootstrap_head_correction_binding") != expected_correction_binding
+            ):
+                errors.append("Task22 Owner exact-head review lacks the authenticated correction binding for H2")
+            else:
+                correction_pr = (task22_bootstrap_head_correction.get("statement") or {}).get("formal_pr_binding", {})
+                if (
+                    correction_pr.get("candidate_head_sha") != head_sha
+                    or correction_pr.get("superseded_head_sha") != registered_head
+                    or correction_pr.get("base_sha") != base_sha
+                ):
+                    errors.append("Task22 Owner exact-head review differs from the authenticated correction's H1/H2/base")
     elif signed.get("task22_bootstrap_registration_binding") is not None:
         errors.append("non-Task22 Owner review cannot claim the one-time Task22 bootstrap registration")
+    elif signed.get("task22_bootstrap_head_correction_binding") is not None:
+        errors.append("non-Task22 Owner review cannot claim the one-time Task22 bootstrap head correction")
     for field, value in (
         ("record_type", "OWNER_EXACT_HEAD_REVIEW"), ("owner_actor_id", owner_id),
         ("task_id", task_id), ("formal_ordinal", formal_ordinal), ("registration_id", registration_id),
@@ -3204,6 +3585,7 @@ def validate_successor_migration_witness_live(
     github_api: Callable[[str], dict[str, Any] | list[Any]],
     owner_review_records: list[dict[str, Any]] | None = None,
     task22_bootstrap_registration: dict[str, Any] | None = None,
+    task22_bootstrap_head_correction: dict[str, Any] | None = None,
 ) -> list[str]:
     """Revalidate the exact merge, independent review, Owner record and checks."""
     errors: list[str] = []
@@ -3296,7 +3678,7 @@ def validate_successor_migration_witness_live(
             ):
                 errors.append("migration witness does not bind the signed independent AI review artifact")
             errors.extend(validate_task22_bootstrap_migration_binding(
-                statement, owner_statement, task22_bootstrap_registration
+                statement, owner_statement, task22_bootstrap_registration, task22_bootstrap_head_correction
             ))
             errors.extend(validate_successor_owner_exact_head_review_record(
                 owner_review_record, owner_id=owner_id,
@@ -3312,6 +3694,7 @@ def validate_successor_migration_witness_live(
                 changed_files=changed_files, required_contexts=live_contexts,
                 valid_through=pr["merged_at"], github_api=github_api,
                 task22_bootstrap_registration=task22_bootstrap_registration,
+                task22_bootstrap_head_correction=task22_bootstrap_head_correction,
             ))
         merged_at, merged_errors = _parse_control_time(pr["merged_at"], "Formal migration merged_at")
         witnessed_at, witnessed_errors = _parse_control_time(statement["witnessed_at"], "migration witness witnessed_at")
@@ -5161,6 +5544,7 @@ def validate_transaction_record(
                 changed_files=changed_files, required_contexts=live_contexts,
                 valid_through=cutoff, github_api=github_api,
                 task22_bootstrap_registration=successor_ledger.get("task22_bootstrap_registration"),
+                task22_bootstrap_head_correction=successor_ledger.get("task22_bootstrap_head_correction"),
             ))
             report_digest = matching_owner_records[0]["statement"]["independent_ai_review_report"]["report_sha256"]
             if record["independent_ai_review_report_sha256"] != report_digest:
