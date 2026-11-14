@@ -159,7 +159,7 @@
       "properties": {
         "repository": {"const": "Arvin-liu/1111"},
         "branch": {"const": "main"},
-        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-12-TASK22-PRE-ACTIVATION-BOOTSTRAP-REGISTRATION-R0.json"},
+        "path": {"type": "string", "minLength": 1},
         "record_type": {"const": "TASK22_PRE_ACTIVATION_BOOTSTRAP_REGISTRATION"},
         "status_before_owner_verified_merge": {"const": "PROPOSED_PENDING_OWNER_VERIFIED_MERGE"},
         "task_id": {"const": "IGNITION-20261105-022"},
@@ -182,11 +182,11 @@
     },
     "task22BootstrapHeadCorrectionPolicy": {
       "type": "object", "additionalProperties": false,
-      "required": ["repository", "branch", "path", "record_type", "status_before_owner_verified_merge", "task_id", "formal_ordinal", "root_authority_merge_commit_sha", "identity_assignment_merge_commit_sha", "owner_review_authority_merge_commit_sha", "supersedes_registration", "formal_pr_binding", "required_root_permission_text", "authority_fit", "scope", "required_owner_web_flow_merge", "required_single_added_file", "required_ordered_parents", "required_owner_signature_verification", "append_only", "one_time_exact_head_only", "formal_pr_raw_diff_sha256_required", "owner_review_and_migration_bind_same_correction_identity", "preserves_original_registration", "no_task_id_or_ordinal_reallocation", "effective_only_after_verified_owner_merge", "ordinary_successor_registration_unchanged"],
+      "required": ["repository", "branch", "path", "record_type", "status_before_owner_verified_merge", "task_id", "formal_ordinal", "root_authority_merge_commit_sha", "identity_assignment_merge_commit_sha", "owner_review_authority_merge_commit_sha", "supersedes_registration", "formal_pr_binding", "required_root_permission_text", "authority_fit", "scope", "maximum_correction_records", "required_owner_web_flow_merge", "each_correction_requires_separate_owner_merge", "required_single_added_file", "required_ordered_parents", "required_owner_signature_verification", "append_only", "each_correction_exact_head_only", "no_successor_correction_after_r1", "formal_pr_raw_diff_sha256_required", "owner_review_and_migration_bind_same_correction_identity", "preserves_original_registration", "no_task_id_or_ordinal_reallocation", "effective_only_after_verified_owner_merge", "ordinary_successor_registration_unchanged"],
       "properties": {
-        "repository": {"const": "Arvin-liu/1111"},
+        "repository": {"type": "string", "minLength": 1},
         "branch": {"const": "main"},
-        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-13-TASK22-BOOTSTRAP-HEAD-CORRECTION-R0.json"},
+        "path": {"type": "string", "minLength": 1},
         "record_type": {"const": "TASK22_BOOTSTRAP_HEAD_CORRECTION"},
         "status_before_owner_verified_merge": {"const": "PENDING_OWNER_VERIFIED_MERGE"},
         "task_id": {"const": "IGNITION-20261105-022"},
@@ -211,24 +211,27 @@
         },
         "formal_pr_binding": {
           "type": "object", "additionalProperties": false,
-          "required": ["repository", "pull_request_number", "base_sha", "head_branch", "superseded_head_sha"],
+            "required": ["repository", "pull_request_number", "base_sha", "head_branch", "superseded_head_sha"],
           "properties": {
             "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
             "pull_request_number": {"const": 268},
             "base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
             "head_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"},
-            "superseded_head_sha": {"const": "4a0b2dd462a0c8783b83b8d9f8a4fd9c9d7fb75a"}
+              "superseded_head_sha": {"$ref": "#/$defs/sha1"}
           }
         },
         "required_root_permission_text": {"const": "Implement append-only successor task registrations with unique task IDs and ordinals, immutable historical entries, replay protection and explicit supersession records."},
-        "authority_fit": {"const": "One-time Task22-only append-only supersession of the exact Formal head binding in the immutable #169 registration; it does not re-register the task, change the identity or ordinal, alter #169 bytes, or enter the future successor ledger."},
-        "scope": {"const": "SUPERSEDE_ONE_TASK22_BOOTSTRAP_FORMAL_HEAD_BINDING_ONLY"},
+        "authority_fit": {"const": "Preserve the authenticated #169 registration and #170 correction, then allow at most one separate Owner-verified exact-head continuation; each edge is bound to its authenticated predecessor and the chain cannot extend beyond the configured maximum."},
+        "scope": {"const": "TASK22_BOOTSTRAP_CORRECTION_CHAIN_H1_H2_H3_ONLY"},
+        "maximum_correction_records": {"const": 2},
         "required_owner_web_flow_merge": {"const": true},
+        "each_correction_requires_separate_owner_merge": {"const": true},
         "required_single_added_file": {"const": true},
         "required_ordered_parents": {"const": ["1111_main_base", "correction_branch_head"]},
         "required_owner_signature_verification": {"const": "verified=true/reason=valid"},
         "append_only": {"const": true},
-        "one_time_exact_head_only": {"const": true},
+        "each_correction_exact_head_only": {"const": true},
+        "no_successor_correction_after_r1": {"const": true},
         "formal_pr_raw_diff_sha256_required": {"const": true},
         "owner_review_and_migration_bind_same_correction_identity": {"const": true},
         "preserves_original_registration": {"const": true},
@@ -684,8 +687,8 @@
           "type": "object", "additionalProperties": false,
           "required": ["task_id", "formal_ordinal"],
           "properties": {
-            "task_id": {"const": "IGNITION-20261105-022"},
-            "formal_ordinal": {"const": 22}
+            "task_id": {"type": "string", "minLength": 1},
+            "formal_ordinal": {"type": "integer", "minimum": 1}
           }
         },
         "superseded_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
@@ -693,10 +696,10 @@
           "type": "object", "additionalProperties": false,
           "required": ["repository", "pull_request_number", "base_sha", "head_branch", "superseded_head_sha", "candidate_head_sha", "raw_diff_sha256"],
           "properties": {
-            "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
-            "pull_request_number": {"const": 268},
+            "repository": {"type": "string", "minLength": 1},
+            "pull_request_number": {"type": "integer", "minimum": 1},
             "base_sha": {"$ref": "#/$defs/sha1"},
-            "head_branch": {"const": "codex/r3-successor-protocol-amendment-20261105-022"},
+            "head_branch": {"type": "string", "minLength": 1},
             "superseded_head_sha": {"$ref": "#/$defs/sha1"},
             "candidate_head_sha": {"$ref": "#/$defs/sha1"},
             "raw_diff_sha256": {"$ref": "#/$defs/sha256"}
@@ -705,16 +708,60 @@
         "correction_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
         "prepared_at_utc": {"type": "string", "format": "date-time"},
         "scope": {"const": "SUPERSEDE_ONE_TASK22_BOOTSTRAP_FORMAL_HEAD_BINDING_ONLY"},
-        "owner_actor_id": {"const": 49422864},
+        "owner_actor_id": {"type": "integer", "minimum": 1},
+        "effectiveness": {"const": "NOT_EFFECTIVE_UNTIL_VERIFIED_OWNER_WEB_FLOW_MERGE_TO_1111_MAIN"}
+      }
+    },
+    "task22BootstrapHeadCorrectionContinuationRecord": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema_version", "record_type", "status", "correction_sequence", "correction_id", "root_authority_binding", "identity_assignment_binding", "independent_review_authority_binding", "task_identity", "superseded_registration_binding", "predecessor_correction_binding", "formal_pr_binding", "correction_nonce", "prepared_at_utc", "scope", "owner_actor_id", "effectiveness"],
+      "properties": {
+        "schema_version": {"const": "task22-bootstrap-head-correction-r1"},
+        "record_type": {"const": "TASK22_BOOTSTRAP_HEAD_CORRECTION_CONTINUATION"},
+        "status": {"const": "PENDING_OWNER_VERIFIED_MERGE"},
+        "correction_sequence": {"const": 2},
+        "correction_id": {"$ref": "#/$defs/safeId"},
+        "root_authority_binding": {"$ref": "#/$defs/task22AuthorityRecordBinding"},
+        "identity_assignment_binding": {"$ref": "#/$defs/task22AuthorityRecordBinding"},
+        "independent_review_authority_binding": {"$ref": "#/$defs/task22AuthorityRecordBinding"},
+        "task_identity": {
+          "type": "object", "additionalProperties": false,
+          "required": ["task_id", "formal_ordinal"],
+          "properties": {
+            "task_id": {"type": "string", "minLength": 1},
+            "formal_ordinal": {"type": "integer", "minimum": 1}
+          }
+        },
+        "superseded_registration_binding": {"$ref": "#/$defs/task22BootstrapRegistrationBinding"},
+        "predecessor_correction_binding": {"$ref": "#/$defs/task22BootstrapHeadCorrectionBinding"},
+        "formal_pr_binding": {
+          "type": "object", "additionalProperties": false,
+          "required": ["repository", "pull_request_number", "base_sha", "head_branch", "superseded_head_sha", "candidate_head_sha", "raw_diff_sha256"],
+          "properties": {
+            "repository": {"type": "string", "minLength": 1},
+            "pull_request_number": {"type": "integer", "minimum": 1},
+            "base_sha": {"const": "87d7f8d3114e859a59585da336fb6301ee4cbbd3"},
+            "head_branch": {"type": "string", "minLength": 1},
+            "superseded_head_sha": {"$ref": "#/$defs/sha1"},
+            "candidate_head_sha": {"$ref": "#/$defs/sha1"},
+            "raw_diff_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "correction_nonce": {"type": "string", "pattern": "^[0-9a-f]{64,128}$"},
+        "prepared_at_utc": {"type": "string", "format": "date-time"},
+        "scope": {"const": "SUPERSEDE_TASK22_BOOTSTRAP_H2_TO_H3_ONLY"},
+        "owner_actor_id": {"type": "integer", "minimum": 1},
         "effectiveness": {"const": "NOT_EFFECTIVE_UNTIL_VERIFIED_OWNER_WEB_FLOW_MERGE_TO_1111_MAIN"}
       }
     },
     "task22BootstrapHeadCorrectionBinding": {
       "type": "object", "additionalProperties": false,
-      "required": ["correction_id", "path", "pull_request_number", "commit_sha", "blob_sha", "file_sha256", "correction_nonce", "ordered_parent_shas", "committed_at", "formal_candidate_head_sha"],
+      "required": ["correction_id", "correction_sequence", "path", "predecessor_correction_id", "pull_request_number", "commit_sha", "blob_sha", "file_sha256", "correction_nonce", "ordered_parent_shas", "committed_at", "formal_predecessor_head_sha", "formal_candidate_head_sha"],
       "properties": {
         "correction_id": {"$ref": "#/$defs/safeId"},
-        "path": {"const": "instructions/goal-mode/IGNITION-2026-11-13-TASK22-BOOTSTRAP-HEAD-CORRECTION-R0.json"},
+        "correction_sequence": {"enum": [1, 2]},
+        "path": {"type": "string", "minLength": 1},
+        "predecessor_correction_id": {"type": ["string", "null"]},
         "pull_request_number": {"type": "integer", "minimum": 1},
         "commit_sha": {"$ref": "#/$defs/sha1"},
         "blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
@@ -722,6 +769,7 @@
         "correction_nonce": {"type": "string", "pattern": "^[0-9a-f]{32,128}$"},
         "ordered_parent_shas": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}},
         "committed_at": {"type": "string", "format": "date-time"},
+        "formal_predecessor_head_sha": {"$ref": "#/$defs/sha1"},
         "formal_candidate_head_sha": {"$ref": "#/$defs/sha1"}
       }
     },
