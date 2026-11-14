@@ -48,6 +48,7 @@ VERSION_FACTS = {
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }
+PROJECT_FIRST_MODULE_HEADING = "1. 丹无定形，火有法度，炼无终局，化有来路。"
 HUMAN_IDENTITY_HEADING = "### 点火是什么"
 HUMAN_VALUES_HEADING = "### 价值方向"
 HUMAN_CURRENT_HEADING = "### 现在做到哪里"
@@ -234,7 +235,7 @@ def validate_readme_structure(readme: str) -> None:
         (match.group(1).strip(), match.start())
         for match in re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE)
     ]
-    required_h2 = ["1. 项目与价值", AI_FIRST_USE_HEADING, "3. 结果与火种", "4. 整体架构", "5. 致谢"]
+    required_h2 = [PROJECT_FIRST_MODULE_HEADING, AI_FIRST_USE_HEADING, "3. 结果与火种", "4. 整体架构", "5. 致谢"]
     require([title for title, _ in visible_h2] == required_h2, "README essential H2 sections must remain visible and ordered")
 
     section_one_start = next(position for title, position in visible_h2 if title == required_h2[0])
@@ -347,7 +348,7 @@ def validate_readme_structure(readme: str) -> None:
 
 
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:
-    required_order = ["## 1. 项目与价值", f"## {AI_FIRST_USE_HEADING}", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
+    required_order = [f"## {PROJECT_FIRST_MODULE_HEADING}", f"## {AI_FIRST_USE_HEADING}", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
     validate_readme_structure(readme)
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README visible result architecture is out of order")
