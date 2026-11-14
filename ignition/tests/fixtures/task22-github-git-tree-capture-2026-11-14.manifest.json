@@ -1,0 +1,12 @@
+{
+  "evidence_kind": "synthetic_sanitized_github_api_shapes",
+  "fixture_source": "Deterministic fictional API-shaped examples generated for regression tests.",
+  "private_capture_provenance": {
+    "capture_date_utc": "2026-11-14",
+    "capture_method": "Authenticated GitHub API read; raw response bodies remain local and are excluded from this repository.",
+    "private_archive_sha256": "e8a7eaec2d9cac339fba23d53fa4de96fd9019a73d6072c9a57efbf8c5906eef",
+    "private_transcript_sha256": "51456143f3faebc6bfe4bb47c498d501f70cf7aa0cfcfc547ec030d80039d193",
+    "private_transcript_compressed_bytes": 22405286
+  },
+  "public_fixture_contains_private_response_bodies": false
+}

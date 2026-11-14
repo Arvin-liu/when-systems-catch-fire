@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-670fc055b0dc389f"></a>
+## IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The existing ordered path rules cover all required current planes without an authoritative allowlist expansion: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit；The existing ordered path rules cover all required current planes without an authoritative allowlist expansion:；agentkernel/, agentruntime/, and agentfederation/ are TOOLORWORKFLOW;；packs/ is REFERENCEORKNOWLEDGE;；data/operations/iterations/ is RECEIPTHISTORYOPERATIONS;；tools/ is TOOLORWORKFLOW;
+- 完整阅读：[reports/operations/ignition-134-step04-path-rules-completeness-r1.md](../../reports/operations/ignition-134-step04-path-rules-completeness-r1.md)
+
 <a id="reading-hr-672777f571efc62e"></a>
 ## NOAA GML global annual methane growth lookup
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill.… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260826-140 Step 15 — Candidate natural full regression；The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill. The isolated dependency contract passed with Python 3.14.6, Sy…；The machine receipt preserves both natural attempts. The first run was not relabeled as green: it completed with 1201 tests, 19 failures, 1 error and 0 skips because the canonical component registry overlap repair had not yet been reflected in the generated component execution profiles. The profiles were regenerated, their focused 45-test closure passed, and…；The successful capture remains external to the formal repository:；stdout SHA-256: 447c8fc9507588ab4eeb13077bbcdf408820fbc00ace54050da628e460c64124;；stderr SHA-256: f9b5f13dc70dc9c38421298bd5316682b79ee584bda8020c4788982a27fe8f8e.
 - 完整阅读：[reports/operations/ignition-140-step15-candidate-full-regression.md](../../reports/operations/ignition-140-step15-candidate-full-regression.md)
-
-<a id="reading-hr-76c6925c9fcdf852"></a>
-## Human Surface 编辑契约
-`CURRENT_SCOPED_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- 1 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Human Surface 编辑契约；状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0；本契约把“所有 Human Surface 必须经过之元写作法”变成长期制度。它不是第二套写作方法，也不是事实、证明、外部证据或 Owner 授权。它只规定：机器记录如何被翻译成面向人的入口，以及这次翻译必须留下哪些边界。；凡是面向人的项目入口、结果页、成果册、文章、案例、研究报告摘要、函数资产、非函数资产、写作片段、失败说明、负结果和公共回应，均属于 Human Surface。机器 JSON/JSONL、schema、测试日志和内部收据可以保持精确字段，但只要它们被转成面向人的页面，就必须经过本契约。；它是什么、为什么出现。 用目标读者能直接理解的语言说明对象、来源类型和阅读目的。；它可以做什么。 只写当前登记允许的用途，例如继续阅读、比较、复核、提出下一步问题或运行仓库内的受限流程。
-- 完整阅读：[docs/governance/human-surface-editorial-contract.md](../../docs/governance/human-surface-editorial-contract.md)

@@ -1,0 +1,25 @@
+{
+  "evidence_kind": "synthetic_sanitized_github_api_shapes",
+  "note": "Fictional regression inputs generated for tests; no response body in this fixture was captured from a repository.",
+  "repository": "ExampleOrg/control-ledger-fixture",
+  "large_commit": {
+    "sha": "1111111111111111111111111111111111111111",
+    "parent_sha": "2222222222222222222222222222222222222222",
+    "rest_files_page_length": 300,
+    "recursive_added_leaf_count": 837
+  },
+  "control_merge": {
+    "sha": "3333333333333333333333333333333333333333",
+    "base_sha": "4444444444444444444444444444444444444444",
+    "side_sha": "5555555555555555555555555555555555555555",
+    "pr_number": 701,
+    "head_branch": "fixture/owner-merge",
+    "added_path": "fixture/control-records/example-r0.json",
+    "synthetic_record": {
+      "record_type": "SYNTHETIC_OWNER_CONTROL_RECORD",
+      "record_id": "fixture-record-01",
+      "nonce": "0123456789abcdef0123456789abcdef"
+    }
+  },
+  "associated_pull_requests": []
+}

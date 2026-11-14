@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f86694bd3f8612e7 / The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f1c2d5318e9334e5 / The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [The residual delta matrix passes 18/18. The live ledger preserves the historical Task104–106 mismatch and environmental](../../../agent-results/IGNITION-20260822-134-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-37bd7645ad113fae / The residual delta matrix passes 18/18. The live ledger preserves the historical Task104–106 mismatch and environmental

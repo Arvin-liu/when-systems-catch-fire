@@ -15,6 +15,7 @@
         "epistemic_governance_kernel",
         "human_knowledge_surfaces",
         "licensing",
+        "release_transaction_protocol_r3",
         "foundation",
         "ignition_operating_method",
         "l5",
@@ -34,7 +35,7 @@
         "formal/",
         "data/foundation/"
       ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
+      "reason": "Q33 governance components and the R3 successor protocol share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter, licensing, and successor protocol documents that also live under docs/governance/."
     },
     {
       "authority_source": ".github/README.md",
@@ -2666,9 +2667,13 @@
         ".github/workflows/release-transaction-protocol-validation.yml",
         "data/operations/release-transaction-protocol-r2.json",
         "data/operations/release-transaction-protocol-r3.json",
+        "data/operations/release-transaction-protocol-r3-successor-r1.json",
         "data/operations/release-transaction-recovery-state-r1.json",
+        "docs/governance/r3-successor-protocol-r1.md",
         "schemas/operations/release-transaction-protocol-r2.schema.json",
         "schemas/operations/release-transaction-protocol-r3.schema.json",
+        "schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json",
+        "schemas/operations/task22-bootstrap-registration-r0.schema.json",
         "tests/test_release_transaction_protocol.py",
         "tests/test_release_transaction_protocol_r3.py",
         "tools/validate_release_transaction_protocol.py",
