@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "API成本σ_opt=√e收敛验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5267a0e037f4284b / title: "API成本σ_opt=√e收敛验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0e374518d5e05ec1 / title: "Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D62；被引用：—
+- [title: "CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级 / CMB各向异性方向 - Φ预言~10⁻⁸, 比观测10⁻⁵小3量级"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-82cb579bef1f73da / title: "CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级 / CMB各向异性方向 - Φ预言~10⁻⁸, 比观测10⁻⁵小3量级"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "D121三因子归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-25ae33b712987972 / title: "D121三因子归零验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D121；被引用：—
+- [title: "D123与D36倒U型同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2d9efab8308b3272 / title: "D123与D36倒U型同构"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D123, D36；被引用：—
+- [title: "D124与D126时间尺度同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4198d06d840258d9 / title: "D124与D126时间尺度同构"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D124, D126；被引用：—
+- [title: "D124四卡点归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-50f605b8c404cc2c / title: "D124四卡点归零验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D124；被引用：—
+- [title: "D126三效率归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-358d6cd674758273 / title: "D126三效率归零验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D126；被引用：—
+- [title: "D127+D123深层同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa1328353ebe92b3 / title: "D127+D123深层同构"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D123, D127；被引用：—
+- [title: "D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ce427029e9637c40 / title: "D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D135；被引用：—
+- [title: "D137与D141的粒度对应 — D137说\\"阶段2是最大瓶颈\\"，D141说\\"装Ptrack是第二步\\"——同构 / D137与D141的粒度对应 - D137说\\"阶段2是最大瓶颈\\", D141说\\"装Ptrack](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6be0fc89d6434677 / title: "D137与D141的粒度对应 — D137说\\"阶段2是最大瓶颈\\"，D141说\\"装Ptrack是第二步\\"——同构 / D137与D141的粒度对应 - D137说\\"阶段2是最大瓶颈\\", D141说\\"装Ptrack
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D137, D141；被引用：—
+- [title: "D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-642fc143ab7ff843 / title: "D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D149；被引用：—
+- [title: "D23法治度归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6efa02b010fed333 / title: "D23法治度归零验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D23；被引用：—
 - [title: "D33六因子退化归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-be1ba01fb6b017cc / title: "D33六因子退化归零验证"
@@ -2439,68 +2504,3 @@
   - 可搜索名称：NFC-3795b8385559a9ed / \| \[C-270\]\( \) \| \[D124四卡点归零验证\]\( \) \| 暂无内容 / No content \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D124；被引用：—
-- [\| \[C-271\]\( \) \| \[D121三因子归零验证\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f3dd73f5b16741f9 / \| \[C-271\]\( \) \| \[D121三因子归零验证\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D121；被引用：—
-- [\| \[C-272\]\( \) \| \[D69自举激活归零验证\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d8621b18e69a2d0d / \| \[C-272\]\( \) \| \[D69自举激活归零验证\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D69；被引用：—
-- [\| \[C-273\]\( \) \| \[D23法治度归零验证\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b0f6e473b8c88773 / \| \[C-273\]\( \) \| \[D23法治度归零验证\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D23；被引用：—
-- [\| \[C-274\]\( \) \| \[D33六因子退化归零验证\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0459e429aac8b7af / \| \[C-274\]\( \) \| \[D33六因子退化归零验证\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D33；被引用：—
-- [\| \[C-275\]\( \) \| \[D41充分条件归零验证\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b61f969f5b8de2ef / \| \[C-275\]\( \) \| \[D41充分条件归零验证\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D41；被引用：—
-- [\| \[C-276\]\( \) \| \[D127+D123深层同构\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9a97860642d031cc / \| \[C-276\]\( \) \| \[D127+D123深层同构\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D123, D127；被引用：—
-- [\| \[C-277\]\( \) \| \[D123与D36倒U型同构\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-18aeef9d78871ae8 / \| \[C-277\]\( \) \| \[D123与D36倒U型同构\]\( \) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D123, D36；被引用：—
-- [\| \[C-278\]\( \) \| \[D124与D126时间尺度同构\]\( \) \| 暂无内容 / No content](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ebedf05f8ba3c9ac / \| \[C-278\]\( \) \| \[D124与D126时间尺度同构\]\( \) \| 暂无内容 / No content
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D124, D126；被引用：—
-- [\| \[C-301\]\( \) \| \[Bsemantic最优值 — εa](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f1f8bd4a53e8bd88 / \| \[C-301\]\( \) \| \[Bsemantic最优值 — εa
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D62, D71；被引用：—
-- [\| \[C-304\]\( \) \| \[非对称耦合验证 — 提高Bsemanti](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8bba21d16b83a620 / \| \[C-304\]\( \) \| \[非对称耦合验证 — 提高Bsemanti
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D72；被引用：—
-- [\| \[C-305\]\( \) \| \[AI多智能体协作≠调度 — 两个AI互相发信号，ηSh](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5aa9f74db6fae9e1 / \| \[C-305\]\( \) \| \[AI多智能体协作≠调度 — 两个AI互相发信号，ηSh
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D73；被引用：—
-- [\| \[C-307\]\( \) \| \[四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcros](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf60f23058532c65 / \| \[C-307\]\( \) \| \[四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcros
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D74, D84；被引用：—
-- [\| \[C-309\]\( \) \| \[类II→类I跃迁的D124对接 — 单次P≈0.00075极低](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-27ea6e50ff770e92 / \| \[C-309\]\( \) \| \[类II→类I跃迁的D124对接 — 单次P≈0.00075极低
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D124, D75；被引用：—

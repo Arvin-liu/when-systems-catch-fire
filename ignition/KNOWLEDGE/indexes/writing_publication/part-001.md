@@ -39,6 +39,11 @@
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [## Inherited gates and history boundary](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE710D562063A4EF / ## Inherited gates and history boundary / IMPLICIT-CE710D562063A4EF
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8ACF034FD195F618 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d / IMPLICIT-8ACF034FD195F618 / IMPLICIT-B9D9DF87E733D634

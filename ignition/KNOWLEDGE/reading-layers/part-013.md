@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ea1ccd6bb1e44892"></a>
+## IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix；The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated:；a complete host capsule with a bounded/truncated model-facing view is；independently recoverable; and；an incomplete capsule (durable cap, spool failure, or privacy rejection)；must remain OBSERVATIONINCOMPLETE and require reconciliation.
+- 完整阅读：[reports/operations/ignition-139-step04-context-loss-fault-matrix.md](../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
+
 <a id="reading-hr-ea8833ef83822509"></a>
 ## IGNITION-20260828-144 Step 11 — cross-surface split-brain audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`

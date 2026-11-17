@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-76c6925c9fcdf852"></a>
+## Human Surface 编辑契约
+`CURRENT_SCOPED_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Human Surface 编辑契约；状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0；本契约把“所有 Human Surface 必须经过之元写作法”变成长期制度。它不是第二套写作方法，也不是事实、证明、外部证据或 Owner 授权。它只规定：机器记录如何被翻译成面向人的入口，以及这次翻译必须留下哪些边界。；凡是面向人的项目入口、结果页、成果册、文章、案例、研究报告摘要、函数资产、非函数资产、写作片段、失败说明、负结果和公共回应，均属于 Human Surface。机器 JSON/JSONL、schema、测试日志和内部收据可以保持精确字段，但只要它们被转成面向人的页面，就必须经过本契约。；它是什么、为什么出现。 用目标读者能直接理解的语言说明对象、来源类型和阅读目的。；它可以做什么。 只写当前登记允许的用途，例如继续阅读、比较、复核、提出下一步问题或运行仓库内的受限流程。
+- 完整阅读：[docs/governance/human-surface-editorial-contract.md](../../docs/governance/human-surface-editorial-contract.md)
+
 <a id="reading-hr-771c2981fcc20396"></a>
 ## 121Q13 Attention, Distribution, And Compression Report
 `CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：governance.preflightdeclaredpermissiondelta@0.1.0 compares two caller-supplied declarations of grants for the same policy and subject. It reports exact (capability, scope) strings added to and removed from the candidate list. An addition or mixed change is labeled for review; a removal is not tre… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Declared Permission Delta Preflight；governance.preflightdeclaredpermissiondelta@0.1.0 compares two caller-supplied declarations of grants for the same policy and subject. It reports exact (capability, scope) strings added to and removed from the candidate list. An addition or mixed change is labeled for review; a removal is not treated as safe automatically.；The tool reads one UTF-8 JSON request from stdin, capped at 128 KiB. It makes no repository reads, network requests, policy writes, sandbox calls, or external actions. Runtime requirements are Python's standard library. See the strict input schema and the synthetic fixture.；The output compares caller-provided strings only. It does not authenticate who produced the snapshots, resolve inheritance or wildcard meanings, determine whether a path or host is contained by another scope, inspect effective runtime permissions, enforce an isolation boundary, or authorize a change. A string such as is only an exact label in the supplied se…；The checked-in fixture is synthetic. The existing route planner's default-off/explicit-allowlist route experiment is recorded in the route profile and the route evidence; selecting a route proposes a tool only and never applies or authorizes a policy.
 - 完整阅读：[docs/operations/declared-permission-delta-preflight.md](../../docs/operations/declared-permission-delta-preflight.md)
-
-<a id="reading-hr-8abef15d00fa6899"></a>
-## D220 countermodel-equivalence audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The source gives the chain Omega=1 - Phi=0 - no gate contribution - no constraints - no physics and explicitly adds the presupposition that “complete unification” concerns physical existence. It then treats no physics as conflicting with that presupposition. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：D220 countermodel-equivalence audit；主题：Source argument；The source gives the chain Omega=1 -> Phi=0 -> no gate contribution -> no constraints -> no physics and explicitly adds the presupposition that “complete unification” concerns physical existence. It then treats no physics as conflicting with that presupposition.；The Z3 model encodes the implication chain, asserts OmegaOne, and assigns PhysicalExists=false. This valuation is satisfiable.；主题：Correct conclusion；The model demonstrates that the implication chain alone does not entail not OmegaOne. It is not a countermodel to the full source reductio, because it deliberately makes the source's physical-existence presupposition false. The artifact therefore exposes a hidden-premise dependency; it does not refute the broader philosophical claim or prove that the premise…
-- 完整阅读：[reports/foundation-architecture/D220-countermodel-equivalence-audit-20260713.md](../../reports/foundation-architecture/D220-countermodel-equivalence-audit-20260713.md)

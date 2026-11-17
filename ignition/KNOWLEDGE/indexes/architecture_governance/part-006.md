@@ -1599,6 +1599,11 @@
   - 可搜索名称：NFC-bca2cee3ba7dce1b / ESI/soft-governance/current-state/structural targeted tests were `42/42 OK`; no-authority, executor inventory, federatio
   - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
+- [Every 1111 control record is a new append-only path. Each record enters through its own Owner-authored, GitHub-signature](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-13911526748b9e7b / Every 1111 control record is a new append-only path. Each record enters through its own Owner-authored, GitHub-signature
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-80e505add4e82e9e / Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-86e2cbfb3008643b / Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf
   - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
-  - 依赖：—；被引用：—
-- [Exact-title web/arXiv/OpenAlex and recorded-URL audit confirmed that IC-LoRA: In-Context Low-Rank Adaptation is an Emerg](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ce30a3bbe62df6cd / Exact-title web/arXiv/OpenAlex and recorded-URL audit confirmed that IC-LoRA: In-Context Low-Rank Adaptation is an Emerg
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—

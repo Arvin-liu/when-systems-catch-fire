@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-662\]\( \) \| \[四方向联合碰撞验证\]\( \) \| Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Context积累、叙事驱动）下，都产生了与点火框架的有效碰撞，共产生 3 条新函数和 10 条扩展注释。碰撞过程中，所有候选增量均通过正反交叉自举循环的 J⁺/J⁻ 判定，最终收敛于](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F0A516E543B22E8D / \| \[C-662\]\( \) \| \[四方向联合碰撞验证\]\( \) \| Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Context积累、叙事驱动）下，都产生了与点火框架的有效碰撞，共产生 3 条新函数和 10 条扩展注释。碰撞过程中，所有候选增量均通过正反交叉自举循环的 J⁺/J⁻ 判定，最终收敛于 / IMPLICIT-F0A516E543B22E8D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-663\]\( \) \| \[密码学碰撞验证案例\]\( \) \| 密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ed93496ee4bc365a / \| \[C-663\]\( \) \| \[密码学碰撞验证案例\]\( \) \| 密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D1, D518；被引用：—
+- [\| \[C-670\]\( \) \| \[数学认知升级×门控函数进化验证\]\( \) \| 吴军《数学通识50讲》认知升级主线与](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a8df5e112469208d / \| \[C-670\]\( \) \| \[数学认知升级×门控函数进化验证\]\( \) \| 吴军《数学通识50讲》认知升级主线与
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-671\]\( \) \| \[公理化体系×三层函数结构验证\]\( \) \| 吴军《数学通识50讲》公理化体系（公设→公](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1848bc7b7e9cb24d / \| \[C-671\]\( \) \| \[公理化体系×三层函数结构验证\]\( \) \| 吴军《数学通识50讲》公理化体系（公设→公
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A1, A9, D1, D520；被引用：—
+- [\| \[C-672\]\( \) \| \[最优化问题×跨域统一定理验证\]\( \) \| 吴军《数学通识50讲》最优化问题（线性规划](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ed813572b7b1c4d7 / \| \[C-672\]\( \) \| \[最优化问题×跨域统一定理验证\]\( \) \| 吴军《数学通识50讲》最优化问题（线性规划
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-673\]\( \) \| \[向量方向×空间函数三元投影验证\]\( \) \| 吴军《数学通识50讲》向量方向（平行](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d417c71e1d43025 / \| \[C-673\]\( \) \| \[向量方向×空间函数三元投影验证\]\( \) \| 吴军《数学通识50讲》向量方向（平行
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-673\]\( \) \| \[向量方向×空间函数三元投影验证\]\( \) \| 吴军《数学通识50讲》向量方向（平行四边形法则、夹角≥120°时合力小于单个向量）与点火框架碰撞验证。核心映射：向量加法的方向依赖性对应点火框架的空间函数三元投影——Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)}，八维度空间中的向量](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-85027B91770242CD / \| \[C-673\]\( \) \| \[向量方向×空间函数三元投影验证\]\( \) \| 吴军《数学通识50讲》向量方向（平行四边形法则、夹角≥120°时合力小于单个向量）与点火框架碰撞验证。核心映射：向量加法的方向依赖性对应点火框架的空间函数三元投影——Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)}，八维度空间中的向量 / IMPLICIT-85027B91770242CD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-674\]\( \) \| \[导数连续性×双向动力学验证\]\( \) \| 吴军《数学通识50讲》导数与连续性（可导性、奇点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e2ffccf530a7dee5 / \| \[C-674\]\( \) \| \[导数连续性×双向动力学验证\]\( \) \| 吴军《数学通识50讲》导数与连续性（可导性、奇点
@@ -2469,38 +2504,3 @@
   - 可搜索名称：NFC-c64d6bd9a030f62a / ∂Φ/∂N_gate\|physics   0（社会域分化方向），统一于Φ=零温自由能优化 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [│ └── D1-D30 因果判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fc3e520a3a02ae3f / │ └── D1-D30 因果判定衍生函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D1, D30；被引用：—
-- [│ └── D61-D90 同构判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6d4f3300cf27c944 / │ └── D61-D90 同构判定衍生函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D61, D90；被引用：—
-- [│ ├── C-499 至 C-500 意识案例](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-39d2b392690080c7 / │ ├── C-499 至 C-500 意识案例
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [│ ├── D551-D560 退出权验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-58a10f0b02f45726 / │ ├── D551-D560 退出权验证函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D551, D560；被引用：—
-- [│ ├── D561-D570 财富验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-00f68294b8e6ce4d / │ ├── D561-D570 财富验证函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D561, D570；被引用：—
-- [│ ├── D571-D580 认知验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9cd27c6fcb256789 / │ ├── D571-D580 认知验证函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D571, D580；被引用：—
-- [│ ├── T1-T20 因果判定子函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2dc62de181c811cf / │ ├── T1-T20 因果判定子函数
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：T1, T20；被引用：—

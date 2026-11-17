@@ -147,6 +147,7 @@
     "docs/governance/next-semantic-leap-assessment-2026-09-07.md": "2026-09-07",
     "docs/governance/non-sycophancy-output-protocol.md": "2026-07-15",
     "docs/governance/problem-space-rewrite-ablation-2026-09-08.md": "2026-09-08",
+    "docs/governance/r3-successor-protocol-r1.md": "2026-11-04",
     "docs/governance/representation-residual-casebook-2026-09-06.md": "2026-09-06",
     "docs/governance/self-correction-engine.md": "2026-07-29",
     "docs/governance/semantic-leap-detector-v2-2026-09-07.md": "2026-09-07",
@@ -637,7 +638,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 635,
+  "entry_count": 636,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

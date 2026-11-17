@@ -6,6 +6,41 @@
 
 - [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6dfb26ad85054d2b / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6ef73ad16c816daf / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-75004e87bfae4fdc / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-788f622ac25acbc1 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-79241fa8ca06e29c / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-99faeea22e9f51be / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a4c2781a8458f04 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9ea4b52496faa16d / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
   - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—
@@ -1019,6 +1054,11 @@
   - 可搜索名称：NFC-131685b820f10813 / The candidate is optional and default-off. Its machine identity card and evidence are in `ignition/data/operations/toolb
   - 来源：`docs/operations/noaa-n2o-source-surface-comparison.md`
   - 依赖：—；被引用：—
+- [The candidate retains R3's current required contexts, canonical full-suite receipt and independent revalidation, exact c](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-434e72695450dc51 / The candidate retains R3's current required contexts, canonical full-suite receipt and independent revalidation, exact c
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [The canonical live fact is now ledger-derived: four historical attempts exist,](../../../reports/operations/ignition-139-step07-current-state-sync.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a3a90d5d2079d6e0 / The canonical live fact is now ledger-derived: four historical attempts exist,
@@ -1174,6 +1214,11 @@
   - 可搜索名称：NFC-3b6a459f3935eebc / the deviation log with a timestamp — it never overwrites this plan \(§5.10\).
   - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
+- [The direct founding authority is Owner-verified PR #163, merged at `5f5af13ba5cd32b9e8a363ff8672f01f65d375c6` with order](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6b4a7aeabd29366d / The direct founding authority is Owner-verified PR #163, merged at `5f5af13ba5cd32b9e8a363ff8672f01f65d375c6` with order
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [The displayed implication chain does not entail that Omega=1 is impossible unless an additional physical-existence premi](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：CLAIM-D220 / The displayed implication chain does not entail that Omega=1 is impossible unless an additional physical-existence premi
@@ -1263,6 +1308,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5aa9e5c92e4a19a1 / The fixture binds Actions run `40064357026`, attempt `1`, head `8230dc6c13ec12c57f9c81f81994ee775ebb2ce8`, and the `FULL
   - 来源：`docs/operations/actions-validation-attribution.md`
+  - 依赖：—；被引用：—
+- [The focused tests cover protocol/schema consistency, the non-circular #163/#165/#166 bootstrap, preparation/final author](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3c4612ad7fc52ae / The focused tests cover protocol/schema consistency, the non-circular #163/#165/#166 bootstrap, preparation/final author
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [The following run then exposed three Current Facts failures. The regenerated](../../../reports/operations/ignition-138-step13-targeted-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1383,6 +1433,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-110c3c69c9d17578 / The ledger deliberately points back to the path-classification validator, Human Surface validator, historical propagatio
   - 来源：`reports/operations/ignition-134-step01-residual-ledger-r1.md`
+  - 依赖：—；被引用：—
+- [The legacy R3 bootstrap authorization, Task21/R7 record, Task20/R6 records, and PR #266 `PUBLISHED_AND_VERIFIED` witness](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d33e25053f2aa11b / The legacy R3 bootstrap authorization, Task21/R7 record, Task20/R6 records, and PR #266 `PUBLISHED_AND_VERIFIED` witness
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter crea](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1724,6 +1779,11 @@
   - 可搜索名称：NFC-c0d8dc3bb31f824a / The repeated-step analyzer still requires 2–20 context-matched runs and has a distinct multi-run history contract. Keep
   - 来源：`docs/operations/actions-validation-attribution.md`
   - 依赖：—；被引用：—
+- [The report also records the reviewer's separate read-only process and evidence so the Owner can assess whether the revie](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-64af5c4ffa5ed6a1 / The report also records the reviewer's separate read-only process and evidence so the Owner can assess whether the revie
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [The report always leaves source authenticity, semantic support, independent review, scientific acceptance, and execution](../../../docs/operations/grounded-ideation-preflight.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9ff255b0079ec929 / The report always leaves source authenticity, semantic support, independent review, scientific acceptance, and execution
@@ -2018,6 +2078,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1ca70703be852014 / the validator also checks derived facts, map-version coherence and stale
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The validator does not claim to authenticate platform execution identity; the Owner assesses the disclosed evidence and](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e1e1b2c0eeb4c585 / The validator does not claim to authenticate platform execution identity; the Owner assesses the disclosed evidence and
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [The value charter remains the highest normative boundary. Ψ0 remains a workflow orchestrator / algorithm protocol. Funct](../../../reports/architecture/121Q12-baseline-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2439,68 +2504,3 @@
   - 可搜索名称：NFC-44285a6e4765e456 / title: "AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "API成本σ_opt=√e收敛验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5267a0e037f4284b / title: "API成本σ_opt=√e收敛验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0e374518d5e05ec1 / title: "Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D62；被引用：—
-- [title: "CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级 / CMB各向异性方向 - Φ预言~10⁻⁸, 比观测10⁻⁵小3量级"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-82cb579bef1f73da / title: "CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级 / CMB各向异性方向 - Φ预言~10⁻⁸, 比观测10⁻⁵小3量级"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "D121三因子归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-25ae33b712987972 / title: "D121三因子归零验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D121；被引用：—
-- [title: "D123与D36倒U型同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2d9efab8308b3272 / title: "D123与D36倒U型同构"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D123, D36；被引用：—
-- [title: "D124与D126时间尺度同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4198d06d840258d9 / title: "D124与D126时间尺度同构"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D124, D126；被引用：—
-- [title: "D124四卡点归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-50f605b8c404cc2c / title: "D124四卡点归零验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D124；被引用：—
-- [title: "D126三效率归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-358d6cd674758273 / title: "D126三效率归零验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D126；被引用：—
-- [title: "D127+D123深层同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa1328353ebe92b3 / title: "D127+D123深层同构"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D123, D127；被引用：—
-- [title: "D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce427029e9637c40 / title: "D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D135；被引用：—
-- [title: "D137与D141的粒度对应 — D137说\\"阶段2是最大瓶颈\\"，D141说\\"装Ptrack是第二步\\"——同构 / D137与D141的粒度对应 - D137说\\"阶段2是最大瓶颈\\", D141说\\"装Ptrack](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6be0fc89d6434677 / title: "D137与D141的粒度对应 — D137说\\"阶段2是最大瓶颈\\"，D141说\\"装Ptrack是第二步\\"——同构 / D137与D141的粒度对应 - D137说\\"阶段2是最大瓶颈\\", D141说\\"装Ptrack
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D137, D141；被引用：—
-- [title: "D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-642fc143ab7ff843 / title: "D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D149；被引用：—
-- [title: "D23法治度归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6efa02b010fed333 / title: "D23法治度归零验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D23；被引用：—

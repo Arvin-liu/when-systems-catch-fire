@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-541c9f6fd2e3a890"></a>
+## IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and mani… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism；The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and manifest both contain 2,980 paths.；Two consecutive generations were byte-identical. The final check reports:；category drift: 0;；anti-backflow violations: 0.；The adversarial fixture check staged one temporary tracked path without regenerating and observed the required failure. The fixture was then removed and was not included in the formal commit. The authoritative allowlist remains unchanged.
+- 完整阅读：[reports/operations/ignition-134-step05-current-path-manifest-r1.md](../../reports/operations/ignition-134-step05-current-path-manifest-r1.md)
+
 <a id="reading-hr-545b33bce6b635d1"></a>
 ## CURRENTSTATESYNCINVARIANT
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The Step 09 receipt round-trips through the strict live-executor-receipt-r2 contract with digest 125c385e5d38ab7c922128ec015423797b6875bb98f8ca4359ee6336a163d83d. Its state is MALFORMEDRESULT, exit code is 1, and no structured result exists. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-137 Step 10 — independent validation outcome；The Step 09 receipt round-trips through the strict live-executor-receipt-r2 contract with digest 125c385e5d38ab7c922128ec015423797b6875bb98f8ca4359ee6336a163d83d. Its state is MALFORMEDRESULT, exit code is 1, and no structured result exists.；Pointfire therefore did not manufacture a validator PASS: IndependentValidationReceipt is deliberately absent, promotion to COMPLETEDVALIDATED is denied, and LIVEEXTERNALINVOCATION remains OPENNOVALIDATEDCOMPLETION. The unchanged fixture digest and CONFIRMEDGONE process-group evidence are retained as failure evidence, not completion evidence.；The targeted 27-test validation gate passed with 0 failures, 0 errors, and 0 skips. No live inference ran during this verification. Retry remains NOTRUNNOBLINDRETRY under the task’s explicit Step 09 rule.
 - 完整阅读：[reports/operations/ignition-137-step10-independent-validation-outcome.md](../../reports/operations/ignition-137-step10-independent-validation-outcome.md)
-
-<a id="reading-hr-670fc055b0dc389f"></a>
-## IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The existing ordered path rules cover all required current planes without an authoritative allowlist expansion: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit；The existing ordered path rules cover all required current planes without an authoritative allowlist expansion:；agentkernel/, agentruntime/, and agentfederation/ are TOOLORWORKFLOW;；packs/ is REFERENCEORKNOWLEDGE;；data/operations/iterations/ is RECEIPTHISTORYOPERATIONS;；tools/ is TOOLORWORKFLOW;
-- 完整阅读：[reports/operations/ignition-134-step04-path-rules-completeness-r1.md](../../reports/operations/ignition-134-step04-path-rules-completeness-r1.md)

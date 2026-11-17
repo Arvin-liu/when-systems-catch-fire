@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-2ffed40e044f68aa"></a>
+## STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: FROZENCALIBRATIONPREREGISTRATION 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration；Status: FROZENCALIBRATIONPREREGISTRATION；This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote any component to production, scientific validity, or external acceptance.；repository: when-systems-catch-fire；formal main base: e5c6d1d0b75dae41b414474bc22747816cd00c78；branch: research/architecture-capability-calibration-r1-20260813
+- 完整阅读：[reports/architecture-calibration/STEP08-PREREGISTRATION.md](../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+
 <a id="reading-hr-3011881d0fe50e03"></a>
 ## External Agent Federation R1 — disposable pilots
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Status: READYFORFINALRELEASEDECISION pending final remote CI observation on this head. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q10 Emergent Current State and License Text Finalization；Status: READYFORFINALRELEASEDECISION pending final remote CI observation on this head.；主题：Current-State Correction；The repository no longer treats “project positioning” as canonical current truth. docs/project-current-state.md now describes the project as a versioned, emergent, non-final current state. It explicitly says current capabilities, gaps, verified claims, downgraded claims, pending items, external feedback and future failures may change the next state.；docs/projectpositioning.md is kept only as a deprecated compatibility entry for old links.；Current entry points updated: README, SUMMARY, AI-START-HERE, AI-HANDOFF, llms.txt, docs/README, docs/AGENT-GUIDE.
 - 完整阅读：[reports/release/121Q10-emergent-state-license-finalization.md](../../reports/release/121Q10-emergent-state-license-finalization.md)
-
-<a id="reading-hr-4022b786a5d8eff6"></a>
-## IGNITION-137 Step 12 — obligation lifecycle
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：No validated live completion occurred, so the historical LIVEEXTERNALINVOCATION obligation remains open with its original semantic ceiling: LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-137 Step 12 — obligation lifecycle；No validated live completion occurred, so the historical LIVEEXTERNALINVOCATION obligation remains open with its original semantic ceiling: LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED.；The Codex startup receipt is retained as a real bounded-attempt failure, while the Hermes timeout remains an open reconciliation. This task does not create LIVEMULTIEXECUTORVALIDATION, does not close LIVEWRITEOREXTERNALSIDEEFFECTNOTPROVEN, and does not close LIVEPRODUCTIONRELIABILITYNOTESTABLISHED.；The repository-local state remains CURRENTWITHOPENOBLIGATIONS; EPISTEMICALLYACCEPTED=0 remains unchanged. No blind retry or obligation inflation is permitted.
-- 完整阅读：[reports/operations/ignition-137-step12-obligation-lifecycle.md](../../reports/operations/ignition-137-step12-obligation-lifecycle.md)

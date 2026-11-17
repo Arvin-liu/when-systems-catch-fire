@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-4022b786a5d8eff6"></a>
+## IGNITION-137 Step 12 — obligation lifecycle
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：No validated live completion occurred, so the historical LIVEEXTERNALINVOCATION obligation remains open with its original semantic ceiling: LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-137 Step 12 — obligation lifecycle；No validated live completion occurred, so the historical LIVEEXTERNALINVOCATION obligation remains open with its original semantic ceiling: LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED.；The Codex startup receipt is retained as a real bounded-attempt failure, while the Hermes timeout remains an open reconciliation. This task does not create LIVEMULTIEXECUTORVALIDATION, does not close LIVEWRITEOREXTERNALSIDEEFFECTNOTPROVEN, and does not close LIVEPRODUCTIONRELIABILITYNOTESTABLISHED.；The repository-local state remains CURRENTWITHOPENOBLIGATIONS; EPISTEMICALLYACCEPTED=0 remains unchanged. No blind retry or obligation inflation is permitted.
+- 完整阅读：[reports/operations/ignition-137-step12-obligation-lifecycle.md](../../reports/operations/ignition-137-step12-obligation-lifecycle.md)
+
 <a id="reading-hr-40912baa99eefd4a"></a>
 ## IGNITION 059 UNESCO coverage ledger
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；状态向某个均衡点、目标或吸引子收敛。；未防止强制同质化与过早收敛，易锁死未来选择（歧义/适用边界）。
 - 完整阅读：[docs/governance/meta-protocol-reviews/protocols/E4.md](../../docs/governance/meta-protocol-reviews/protocols/E4.md)
-
-<a id="reading-hr-541c9f6fd2e3a890"></a>
-## IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and mani… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism；The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and manifest both contain 2,980 paths.；Two consecutive generations were byte-identical. The final check reports:；category drift: 0;；anti-backflow violations: 0.；The adversarial fixture check staged one temporary tracked path without regenerating and observed the required failure. The fixture was then removed and was not included in the formal commit. The authoritative allowlist remains unchanged.
-- 完整阅读：[reports/operations/ignition-134-step05-current-path-manifest-r1.md](../../reports/operations/ignition-134-step05-current-path-manifest-r1.md)

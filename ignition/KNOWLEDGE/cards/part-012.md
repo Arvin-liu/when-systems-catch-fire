@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-b8735594845d5b76"></a>
+## Grounded Ideation Preflight
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B8735594845D5B76` · [docs/operations/grounded-ideation-preflight.md](../../docs/operations/grounded-ideation-preflight.md)
+- **为什么产生：** 此来源记录了什么：Grounded Ideation Preflight？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** research.preflightgroundedideation@0.1.0 checks one caller-supplied research-proposal packet for structural traceability before human review. It is an optional offline preflight, not an idea generator or literature-search system.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/operations/grounded-ideation-preflight.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-10-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Grounded Ideation Preflight`, `grounded-ideation-preflight`
+
 <a id="asset-hr-b9ed64291673acbc"></a>
 ## MF-0001~0005 补入审计记录（2026-07-08）
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `语言—思维逻辑平面`, `language-thought-logic-plane`
-
-<a id="asset-hr-cfc7e6abca6a8ee5"></a>
-## Audit Finding Comparator R0
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CFC7E6ABCA6A8EE5` · [docs/operations/toolbox-audit-finding-comparator.md](../../docs/operations/toolbox-audit-finding-comparator.md)
-- **为什么产生：** 此来源记录了什么：Audit Finding Comparator R0？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** maintenance.compareauditfindings compares two caller-supplied audit records that declare the same scope, target, and target revision. It reports finding coverage, disposition disagreements, and evidence-reference differences as a bounded JSON result.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/operations/toolbox-audit-finding-comparator.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-10-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Audit Finding Comparator R0`, `toolbox-audit-finding-comparator`

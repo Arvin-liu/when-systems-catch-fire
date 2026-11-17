@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D375} exist, compose F_{D375}=N\(⊕_{g∈D_{D375}} g\); otherwise treat F_{D375} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-64e95d02b0a221b4 / If upstream objects D_{D375} exist, compose F_{D375}=N\(⊕_{g∈D_{D375}} g\); otherwise treat F_{D375} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D375；被引用：—
+- [If upstream objects D_{D376} exist, compose F_{D376}=N\(⊕_{g∈D_{D376}} g\); otherwise treat F_{D376} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa067719615d8ee8 / If upstream objects D_{D376} exist, compose F_{D376}=N\(⊕_{g∈D_{D376}} g\); otherwise treat F_{D376} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D376；被引用：—
+- [If upstream objects D_{D377} exist, compose F_{D377}=N\(⊕_{g∈D_{D377}} g\); otherwise treat F_{D377} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa9586964c8ebfda / If upstream objects D_{D377} exist, compose F_{D377}=N\(⊕_{g∈D_{D377}} g\); otherwise treat F_{D377} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D377；被引用：—
 - [If upstream objects D_{D378} exist, compose F_{D378}=N\(⊕_{g∈D_{D378}} g\); otherwise treat F_{D378} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-23c14de6afad42d8 / If upstream objects D_{D378} exist, compose F_{D378}=N\(⊕_{g∈D_{D378}} g\); otherwise treat F_{D378} as an axiom seed.
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-e782ee07f42122cd / MULTI_CASE is not a theorem.
   - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7c4ee233f4055587 / Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evalua](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-10d141da100e08e6 / MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evalua
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Must use FORMAL_SEMANTIC_EQUIVALENCE with proof, or specify lower level](../../../data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-119118db9bb7bef0 / Must use FORMAL_SEMANTIC_EQUIVALENCE with proof, or specify lower level
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl`
   - 依赖：—；被引用：—

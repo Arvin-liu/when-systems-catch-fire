@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-9db313b3faf86fd3"></a>
+## IGNITION-20260826-140 — Step 08 Current State Sync
+`HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task140 is now the canonical Current formal task and latest architecture-changing task. The identity epoch is os-control-plane-r6-live-observation-reconciliation-r1, the formal ordinal is 140, the compatibility boundary alias is 140, and the registry-derived map is 0.14.0 Current. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 — Step 08 Current State Sync；Task140 is now the canonical Current formal task and latest architecture-changing task. The identity epoch is os-control-plane-r6-live-observation-reconciliation-r1, the formal ordinal is 140, the compatibility boundary alias is 140, and the registry-derived map is 0.14.0 Current.；The Current projection is sourced from the Task139 append-only attempt ledger plus the Task140 reconciliation-event overlay. It records five attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records. The next action is RUNDYNAMICEXECUTORADMISSION; no blind retry is admitted. The public/transport returncode: 0 for…；The three historical reconciliation events are hash-chained at 02027b3ebeb6a946333bc7ff807594083cb638753a81c267aa1601a5884cb10b. Hermes136 retains unknown external effect after evidence exhaustion, Codex138 second retains unknown effect as terminal observation-incomplete, and Task139 closes only its conclusive pre-dispatch boundary. Reconciliation closure is…；All 11 registered architecture-sync surfaces are marked CHANGE with path-bound evidence. The identity contract and map changed; the append-only State Changelog records the Task140 transition. Deterministic Current Facts, Current Snapshot, map derivation and all seven current-surface compiler checks pass. The focused Task140 gate ran 43 tests with 0 failures,…；Claim ceiling: repository-local architecture identity, typed observation, reconciliation and Current-surface synchronization evidence only. This receipt does not establish validated live completion, external truth, production readiness, Owner acceptance, formal publication or epistemic acceptance.
+- 完整阅读：[reports/operations/ignition-140-step08-current-state-sync.md](../../reports/operations/ignition-140-step08-current-state-sync.md)
+
 <a id="reading-hr-9e39d8c09bf33c74"></a>
 ## 121Q9 Cumulative Baseline
 `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：起始案例来源链｜公元1115年：金朝崛起为什么这么快？；原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。；笔记把用户综合与节目原文放在同一文件中，两者不能当作两份独立史证。；文末书目是外部核验队列；“列入参考文献”不等于本项目已逐项打开、定位或确认支持。；传统兵力数、“统一崩溃阈值”、“百次冲锋”和全球罕见性等说法仍需外部历史核验。；1127 年是北宋政权覆亡，不是整个宋朝终结；南宋延续。
 - 完整阅读：[docs/publication/cases/jin-rise-case-source.md](../../docs/publication/cases/jin-rise-case-source.md)
-
-<a id="reading-hr-af93590ef97f9465"></a>
-## Structural Analogy Search
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Structural Analogy Search；Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin；Compare one small caller-supplied relation graph with one to eight candidate graphs in other domains. The tool enumerates injective node mappings that preserve exact controlled role classes, applies the caller's one-to-one relation-type map, and ranks candidates by exact directed relation matches and then fewer extra mapped relations.；The input contains identifiers, role classes, directed relation triples, and an explicit relation map. It contains no free-text labels, embeddings, internet lookup, ontology, or authority metadata. The algorithm therefore measures only the structure encoded in that input.；Find bounded candidate structures when a task already has a typed source graph, typed target graphs, and an explicit relation-type correspondence.；Generate a short list of transfer hypotheses for later target-domain validation.
-- 完整阅读：[docs/operations/toolbox-structural-analogy-search.md](../../docs/operations/toolbox-structural-analogy-search.md)

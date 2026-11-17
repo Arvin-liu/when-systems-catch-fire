@@ -2162,6 +2162,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/publication-witness-protocol-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-state-model-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-transaction-protocol-r2.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-transaction-protocol-r3-successor-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-transaction-protocol-r3.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-transaction-recovery-state-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/residual-ledger-r1.json"}
@@ -3041,6 +3042,7 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/next-semantic-leap-assessment-2026-09-07.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/non-sycophancy-output-protocol.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/problem-space-rewrite-ablation-2026-09-08.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/r3-successor-protocol-r1.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/representation-residual-casebook-2026-09-06.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/self-correction-engine.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/governance/semantic-leap-detector-v2-2026-09-07.md"}
@@ -4064,6 +4066,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/pubmed-update-link-inspection-input-r0.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-state-model-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-transaction-protocol-r2.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-transaction-protocol-r3-successor-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-transaction-protocol-r3.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/residual-ledger-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/residual-ledger-r2.schema.json"}
@@ -4156,6 +4159,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/task150-step27-adversarial-split-scope-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/task150-step28-owner-adjudication-scope-split-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/task150-step29-exact-head-ready-gate-r1.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/task22-bootstrap-registration-r0.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/toolbox-actions-check-observations-input-r0.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/toolbox-actions-check-observations-output-r0.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/toolbox-actions-interval-union-output-r0.schema.json"}
@@ -4317,6 +4321,8 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/state-changelog-profile-r1.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/state-changelog-r2-append.md"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/step06-sealed-propagation-residual-r1.json"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/task22-github-api-shapes.synthetic.json"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/task22-github-git-tree-capture-2026-11-14.manifest.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/toolbox-actions-check-observations/pr264-8230dc6-check-runs-r0.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/toolbox-actions-step-timeline/actions-run-40064357026.json"}

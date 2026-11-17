@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [T9 自主意识函数 / autonomous consciousness function](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6630b8855e67bf1d / T9 自主意识函数 / autonomous consciousness function
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：T9；被引用：—
+- [T9-自主意识函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3a498ea8c2cffa60 / T9-自主意识函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T9；被引用：—
+- [Tables and ablations expose performance signals, while run uncertainty, traceability, code provenance and lifecycle obse](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-bde9061d7853f3de / Tables and ablations expose performance signals, while run uncertainty, traceability, code provenance and lifecycle obse
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Task 100 adds a deterministic corpus-wide non-function claim registry, thirteen-gate adjudication, evidence lineage and](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6695af10eff760ea / Task 100 adds a deterministic corpus-wide non-function claim registry, thirteen-gate adjudication, evidence lineage and
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [task 100 的 `data/foundation/nonfunction-claims/claim-registry.jsonl` 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 qua](../../../docs/foundation/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ea5b17c9b329037f / task 100 的 `data/foundation/nonfunction-claims/claim-registry.jsonl` 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 qua
@@ -58,6 +78,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-641a280c4a8e4675 / Task Lifecycle / Open Obligation / Executor Admission R1
   - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [Task registration** binds the Owner-selected task ID and ordinal, work and receipt branches, exact Formal base and prede](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cc94853911e0b0fe / Task registration** binds the Owner-selected task ID and ordinal, work and receipt branches, exact Formal base and prede
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [Task vector as weight-space representation of task behavior. Linear algebraic structure: negation, addition, analogy. Th](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -549,6 +574,11 @@
   - 可搜索名称：NFC-3105c1372a644df8 / The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy
   - 来源：`agent-results/IGNITION-20260821-129-result.md`
   - 依赖：—；被引用：—
+- [The report is AI evidence; it is never a GitHub `APPROVED` review.](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a83d063f827c1304 / The report is AI evidence; it is never a GitHub `APPROVED` review.
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-20ebb8fe331114bf / The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func
@@ -753,6 +783,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5bf8034f285367b7 / This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network
   - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [This is non-circular: the verified 1111 root mandate and Task22 identity precede the Formal PR. The future successor PRE](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-026c9ed639d2a2cd / This is non-circular: the verified 1111 root mandate and Task22 identity precede the Formal PR. The future successor PRE
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
   - 依赖：—；被引用：—
 - [This is the formal repository result for the Task132 canonical-Current advancement and release-transaction implementatio](../../../agent-results/IGNITION-20260822-132-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2467,40 +2502,5 @@
 - [title: "植物信号传递函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E9091BC0885AA4D7 / title: "植物信号传递函数" / IMPLICIT-E9091BC0885AA4D7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物分布式决策函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89B7EA317BAAB620 / title: "植物分布式决策函数" / IMPLICIT-89B7EA317BAAB620
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物哥德尔函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-308F9918C1DB427A / title: "植物哥德尔函数" / IMPLICIT-308F9918C1DB427A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物学习函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-75CC554A840F6A95 / title: "植物学习函数" / IMPLICIT-75CC554A840F6A95
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物意识函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9DE71875DF3C7B15 / title: "植物意识函数" / IMPLICIT-9DE71875DF3C7B15
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物意识函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bcfbda127cf4402d / title: "植物意识函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物数学优化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-65AE98A05F4A6413 / title: "植物数学优化函数" / IMPLICIT-65AE98A05F4A6413
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "植物演化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9BC41F68866C087 / title: "植物演化函数" / IMPLICIT-E9BC41F68866C087
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

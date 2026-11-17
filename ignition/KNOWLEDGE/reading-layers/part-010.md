@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-af93590ef97f9465"></a>
+## Structural Analogy Search
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Structural Analogy Search；Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin；Compare one small caller-supplied relation graph with one to eight candidate graphs in other domains. The tool enumerates injective node mappings that preserve exact controlled role classes, applies the caller's one-to-one relation-type map, and ranks candidates by exact directed relation matches and then fewer extra mapped relations.；The input contains identifiers, role classes, directed relation triples, and an explicit relation map. It contains no free-text labels, embeddings, internet lookup, ontology, or authority metadata. The algorithm therefore measures only the structure encoded in that input.；Find bounded candidate structures when a task already has a typed source graph, typed target graphs, and an explicit relation-type correspondence.；Generate a short list of transfer hypotheses for later target-domain validation.
+- 完整阅读：[docs/operations/toolbox-structural-analogy-search.md](../../docs/operations/toolbox-structural-analogy-search.md)
+
 <a id="reading-hr-afec762ef69d1b94"></a>
 ## NOAA GML global annual SF6 source-surface comparison
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：状态：候选实现审计；不自证 Accepted、Merged 或 Current。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：任务 102 知识体验层缺口与覆盖审计；状态：候选实现审计；不自证 Accepted、Merged 或 Current。；任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、HUMAN-READING.md、RESULTS/ 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研究问题组织的知识地图；没有统一资产卡；没有长文 1/5/完整三层；没有覆盖旧称、来源、历史、依赖、反向依赖和 supersession 的全量探索入口。；任务 102 用同一份配置和生成器建立 KNOWLEDGE/ 人类表面与 data/governance/knowledge-experience/ 机器表面。所有恢复的结果/文章来源都获得卡片与三层阅读；函数和断言 registry 全量进入搜索；任务 98 的重点函数以及公共高风险/结论回弹断言获得详细卡片。；覆盖计数以 coverage.json 为准，生成文件摘要与配对以 manifest.json 为准。正文中的数字只用于解释候选范围，不替代 exact-head 重算。；第一次读者路径和 README 两步可达；
 - 完整阅读：[reports/operations/102-knowledge-experience-audit.md](../../reports/operations/102-knowledge-experience-audit.md)
-
-<a id="reading-hr-c7aaddf58550aae5"></a>
-## 120 — Function Paradigm Atlas Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`
-- 1 分钟：Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：120 — Function Paradigm Atlas Report；主题：IGNITION-20260709-120；Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713；主题：1. Executive Summary；This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the generation of function paradigm cards, internal asset inventory, and adjudication of 6 candidate architecture gaps (GAP-015 through GAP-020). All 6 candidates were adjudicated as FIELDENHANCEMENTONLY due to insufficient fulltext evidence (0 FULL…；主题：2. Source Collection
-- 完整阅读：[reports/external-research/120-function-paradigm-atlas-report.md](../../reports/external-research/120-function-paradigm-atlas-report.md)

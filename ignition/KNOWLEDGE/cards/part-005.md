@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-369f261001c4ece1"></a>
+## 121Q25 Human Front-Door Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-369F261001C4ECE1` · [reports/operations/121Q25-front-door-audit.md](../../reports/operations/121Q25-front-door-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q25 Human Front-Door Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Starting main: 7fc4b309720ea1b4e9c4b47477c2f423860d53df.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/121Q25-front-door-audit.md`, `121Q25-FRONT-DOOR-AUDIT`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q25 Human Front-Door Audit`, `121Q25-front-door-audit`
+
 <a id="asset-hr-3717a33fca149544"></a>
 ## Bounded Thinking Operation Selector
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Function-Paradigm Full-Text Review Report — IGNITION-121`, `121-function-paradigm-fulltext-review-report`
-
-<a id="asset-hr-48569bcf01c7f27f"></a>
-## Core kernel adjudication
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-48569BCF01C7F27F` · [reports/foundation-architecture/core-kernel-adjudication-20260713.md](../../reports/foundation-architecture/core-kernel-adjudication-20260713.md)
-- **为什么产生：** 此来源记录了什么：Core kernel adjudication？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Complete machine-readable list: data/foundation/adjudications/core-kernel.jsonl.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `T2`
-- **来源与证据：** `reports/foundation-architecture/core-kernel-adjudication-20260713.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Core kernel adjudication`, `core-kernel-adjudication-20260713`

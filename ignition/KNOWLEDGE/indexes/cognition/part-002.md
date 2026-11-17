@@ -419,6 +419,16 @@
   - 可搜索名称：NFC-58aae56a2ca77332 / if status == "OPEN_REQUIRES_EVIDENCE":
   - 来源：`agent_federation/live_reconciliation.py`
   - 依赖：—；被引用：—
+- [If the Owner cannot establish genuine non-author review from the substantive exact-head evidence, the decision remains `](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8b09db7512cfaac1 / If the Owner cannot establish genuine non-author review from the substantive exact-head evidence, the decision remains `
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
+- [If the Owner cannot establish independence from the substantive evidence, the decision remains `BLOCKED_WITH_EVIDENCE`.](../../../docs/governance/r3-successor-protocol-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-88b194590f2dcc01 / If the Owner cannot establish independence from the substantive evidence, the decision remains `BLOCKED_WITH_EVIDENCE`.
+  - 来源：`docs/governance/r3-successor-protocol-r1.md`
+  - 依赖：—；被引用：—
 - [if to_state == "COMPLETED_VALIDATED" and self._state != "VALIDATING":](../../../agent_federation/live_bridge.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7dd418f427495c9b / if to_state == "COMPLETED_VALIDATED" and self._state != "VALIDATING":
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c16c45d5480bed44 / The machine rule is explicit: only `AGENTIC_EXECUTOR` can enter the live validated-completion path. A reasoner runtime's
   - 来源：`reports/operations/ignition-142-step10-reasoner-tool-closure.md`
-  - 依赖：—；被引用：—
-- [The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f86694bd3f8612e7 / The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f1c2d5318e9334e5 / The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

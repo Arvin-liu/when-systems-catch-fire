@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 741 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 742 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -1487,6 +1487,14 @@
 - 状态：`ADDED`
 - Delta：`CD-844A2312FD98066E`
 - 关联断言：['NFC-31b8a26f252e5a47', 'NFC-e144141b17b99731']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/r3-successor-protocol-r1.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2946AB5E0DA1108B`
+- 关联断言：['NFC-026c9ed639d2a2cd', 'NFC-0e20beb21b726d62', 'NFC-13911526748b9e7b', 'NFC-1670be0e74be2971', 'NFC-27b93757dfe56309', 'NFC-434e72695450dc51', 'NFC-64af5c4ffa5ed6a1', 'NFC-6b4a7aeabd29366d', 'NFC-709988242786e2f0', 'NFC-88b194590f2dcc01', 'NFC-8aa8f837a158290e', 'NFC-8b09db7512cfaac1', 'NFC-a4bc7ec917ac42f5', 'NFC-a83d063f827c1304', 'NFC-b0f8633486c89ec8', 'NFC-c3c4612ad7fc52ae', 'NFC-cc94853911e0b0fe', 'NFC-d33e25053f2aa11b', 'NFC-e1e1b2c0eeb4c585', 'NFC-e4a062edd629ad65']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

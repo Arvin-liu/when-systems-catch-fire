@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 635 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 636 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5796,6 +5796,19 @@
 - **问题：** 此来源记录了什么：持续自我纠错引擎？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R3 Successor Protocol R1 — Candidate](../docs/governance/r3-successor-protocol-r1.md)
+
+- **结果 ID：** `HR-2946AB5E0DA1108B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：R3 Successor Protocol R1 — Candidate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: CANDIDATENOTEFFECTIVE Normative machine contract: release-transaction-protocol-r3-successor-r1.json Schema: release-transaction-protocol-r3-successor-r1.schema.json
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-7dee237b2707a8c8"></a>
+## IGNITION-20260827-142 Step 09 — Codex Blocker Freeze
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7DEE237B2707A8C8` · [reports/operations/ignition-142-step09-codex-blocker-audit.md](../../reports/operations/ignition-142-step09-codex-blocker-audit.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260827-142 Step 09 — Codex Blocker Freeze？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** The fresh public probe resolved codex-cli 0.144.4, received exit 0 from --version and exec --help, and observed public login-status exit 0. JSON, output-schema, ephemeral, read-only sandbox and user-config/rules isolation flags remain present. The existing Codex adapter, filesystem-domain repair…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-142-step09-codex-blocker-audit.md`, `142-STEP09-CODEX-BLOCKER-AUDIT`
+- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260827-142 Step 09 — Codex Blocker Freeze`, `ignition-142-step09-codex-blocker-audit`
+
 <a id="asset-hr-7dfd6b8ed7333b2a"></a>
 ## 跨域 smoke test — 自然科学碰撞报告
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Soft Context Exposure Contract R0`, `soft-context-exposure-contract-r0`
-
-<a id="asset-hr-92e68b43ea044168"></a>
-## IGNITION-20260827-143 Step 16 — canonical 出版入口接入
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-92E68B43EA044168` · [reports/operations/ignition-143-step16-canonical-publication-integration.md](../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-143 Step 16 — canonical 出版入口接入？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Step 16 通过。Task143 的出版组合已经接回正式仓库现有的唯一 PUBLICATIONS/pointfire-results-book/ 入口，没有新建平行成果系统。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D600`
-- **来源与证据：** `reports/operations/ignition-143-step16-canonical-publication-integration.md`, `143-STEP16-CANONICAL-PUBLICATION-INTEGRATION`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-143 Step 16 — canonical 出版入口接入`, `ignition-143-step16-canonical-publication-integration`
