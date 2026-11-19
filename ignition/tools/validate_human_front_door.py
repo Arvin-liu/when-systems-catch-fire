@@ -9,11 +9,13 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 try:
+    from tools.markdown_document import markdown_headings
     from tools.generate_interactive_system_map import build_projection, load_spec, validate_spec
     from tools.validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
     from tools.governance.validate_human_visibility import validate as validate_human_visibility
     from tools.governance.validate_human_surface_contract import validate as validate_human_surface_contract
 except ModuleNotFoundError:
+    from markdown_document import markdown_headings
     from generate_interactive_system_map import build_projection, load_spec, validate_spec
     from validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
     from governance.validate_human_visibility import validate as validate_human_visibility
@@ -230,24 +232,44 @@ def validate_ai_first_use_section(readme: str) -> None:
 
 
 def validate_readme_structure(readme: str) -> None:
+    lines = readme.splitlines(keepends=True)
+    line_offsets = [0]
+    for line in lines:
+        line_offsets.append(line_offsets[-1] + len(line))
+
+    headings = markdown_headings(readme)
     visible_h2 = [
-        (match.group(1).strip(), match.start())
-        for match in re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE)
+        (str(item["title"]), int(item["line"]))
+        for item in headings
+        if int(item["level"]) == 2
     ]
     required_h2 = ["1. 项目与价值", AI_FIRST_USE_HEADING, "3. 结果与火种", "4. 整体架构", "5. 致谢"]
     require([title for title, _ in visible_h2] == required_h2, "README essential H2 sections must remain visible and ordered")
 
-    section_one_start = next(position for title, position in visible_h2 if title == required_h2[0])
-    section_two_start = next(position for title, position in visible_h2 if title == required_h2[1])
+    first_h2_line = visible_h2[0][1]
+    second_h2_line = visible_h2[1][1]
+    section_one_start = line_offsets[first_h2_line]
+    section_two_start = line_offsets[second_h2_line]
     section_one = readme[section_one_start:section_two_start]
-    h3_matches = list(re.finditer(r"^### (?!#)(.+?)\s*$", section_one, re.MULTILINE))
-    h3_titles = [match.group(1).strip() for match in h3_matches]
+    visible_h3 = [
+        item
+        for item in headings
+        if int(item["level"]) == 3 and first_h2_line < int(item["line"]) < second_h2_line
+    ]
+    h3_titles = [str(item["title"]) for item in visible_h3]
     require(
         h3_titles == ["点火是什么", "价值方向", "现在做到哪里"],
         "README 项目与价值 must contain 点火是什么、价值方向、现在做到哪里 in order",
     )
+
+    def line_end(line_number: int) -> int:
+        return line_offsets[line_number] + len(lines[line_number].rstrip("\r\n"))
+
+    h3_line_numbers = [int(item["line"]) for item in visible_h3]
+    h3_starts = [line_offsets[line_number] for line_number in h3_line_numbers]
+    h3_ends = [line_end(line_number) for line_number in h3_line_numbers]
     require(
-        section_one[section_one.find("\n") + 1 : h3_matches[0].start()].strip() == "",
+        readme[line_end(first_h2_line) : h3_starts[0]].strip() == "",
         "README 点火是什么 must be the first block under 项目与价值",
     )
     require(
@@ -255,9 +277,9 @@ def validate_readme_structure(readme: str) -> None:
         "README 项目与价值 must not contain a nested component or machine details block",
     )
 
-    identity_text = section_one[h3_matches[0].end() : h3_matches[1].start()]
-    values_text = section_one[h3_matches[1].end() : h3_matches[2].start()]
-    current_text = section_one[h3_matches[2].end() :]
+    identity_text = readme[h3_ends[0] : h3_starts[1]]
+    values_text = readme[h3_ends[1] : h3_starts[2]]
+    current_text = readme[h3_ends[2] : section_two_start]
     require(identity_text.strip() == PROJECT_IDENTITY_TEXT, "README 点火是什么 must exactly match the Owner-provided identity input")
     for phrase, label in (
         ("不能因此占有最后的解释权", "bounded explanatory authority"),

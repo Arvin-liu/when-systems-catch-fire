@@ -54,6 +54,52 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "点火是什么"):
             validate_visible_readme_sections(hidden)
 
+    def test_h2_inside_collapsed_details_does_not_satisfy_required_section(self):
+        hidden = self.readme.replace(
+            "## 3. 结果与火种",
+            "<details>\n<summary>更多</summary>\n## 3. 结果与火种\n</details>",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            validate_visible_readme_sections(hidden)
+
+    def test_h3_inside_collapsed_details_does_not_satisfy_identity_section(self):
+        hidden = self.readme.replace(
+            "### 点火是什么",
+            "<details>\n<summary>身份</summary>\n### 点火是什么\n</details>",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "must visibly contain"):
+            validate_visible_readme_sections(hidden)
+
+    def test_h2_inside_html_comment_does_not_satisfy_required_section(self):
+        hidden = self.readme.replace(
+            "## 3. 结果与火种",
+            "<!--\n## 3. 结果与火种\n-->",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            validate_visible_readme_sections(hidden)
+
+    def test_h3_inside_html_comment_does_not_satisfy_identity_section(self):
+        hidden = self.readme.replace(
+            "### 点火是什么",
+            "<!--\n### 点火是什么\n-->",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "must visibly contain"):
+            validate_visible_readme_sections(hidden)
+
+    def test_anchor_lookup_ignores_collapsed_details_and_html_comments(self):
+        collapsed = "<details>\n## 仅折叠锚点\n</details>\n"
+        commented = "<!--\n## 仅注释锚点\n-->\n"
+        self.assertFalse(markdown_anchor_exists(collapsed, "仅折叠锚点"))
+        self.assertFalse(markdown_anchor_exists(commented, "仅注释锚点"))
+
+    def test_unclosed_hidden_markup_fails_closed_for_anchor_lookup(self):
+        self.assertFalse(markdown_anchor_exists("<details>\n## 未闭合折叠锚点\n", "未闭合折叠锚点"))
+        self.assertFalse(markdown_anchor_exists("<!--\n## 未闭合注释锚点\n", "未闭合注释锚点"))
+
 
 if __name__ == "__main__":
     unittest.main()
