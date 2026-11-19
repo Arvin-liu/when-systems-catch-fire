@@ -92,12 +92,15 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
 
     def test_anchor_lookup_ignores_collapsed_details_and_html_comments(self):
         collapsed = "<details>\n## 仅折叠锚点\n</details>\n"
+        expanded = "<details open>\n## 展开锚点\n</details>\n"
         commented = "<!--\n## 仅注释锚点\n-->\n"
         self.assertFalse(markdown_anchor_exists(collapsed, "仅折叠锚点"))
+        self.assertTrue(markdown_anchor_exists(expanded, "展开锚点"))
         self.assertFalse(markdown_anchor_exists(commented, "仅注释锚点"))
 
     def test_unclosed_hidden_markup_fails_closed_for_anchor_lookup(self):
         self.assertFalse(markdown_anchor_exists("<details>\n## 未闭合折叠锚点\n", "未闭合折叠锚点"))
+        self.assertFalse(markdown_anchor_exists("<details open>\n## 未闭合展开锚点\n", "未闭合展开锚点"))
         self.assertFalse(markdown_anchor_exists("<!--\n## 未闭合注释锚点\n", "未闭合注释锚点"))
 
 

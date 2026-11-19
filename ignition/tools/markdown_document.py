@@ -48,6 +48,7 @@ def strip_nonvisible_markup(markdown: str) -> str:
     source = strip_fenced_code(markdown)
     output = list(source)
     collapsed_details: list[bool] = []
+    details_starts: list[int] = []
     index = 0
 
     while index < len(source):
@@ -60,7 +61,12 @@ def strip_nonvisible_markup(markdown: str) -> str:
                 backslashes += 1
                 previous -= 1
             opening_end = _backtick_run_end(source, index)
-            closing_end = None if backslashes % 2 else _inline_code_span_end(source, index, opening_end)
+            if backslashes % 2:
+                if hidden:
+                    _blank_range(output, index, opening_end)
+                index = opening_end
+                continue
+            closing_end = _inline_code_span_end(source, index, opening_end)
             if closing_end is not None:
                 if hidden:
                     _blank_range(output, index, closing_end)
@@ -82,6 +88,7 @@ def strip_nonvisible_markup(markdown: str) -> str:
             is_expanded = re.search(r"(?:^|\s)open(?:\s|=|$)", opening.group(1), re.IGNORECASE) is not None
             hidden = inherited_hidden or not is_expanded
             collapsed_details.append(hidden)
+            details_starts.append(index)
             if hidden:
                 _blank_range(output, index, opening.end())
             index = opening.end()
@@ -97,17 +104,23 @@ def strip_nonvisible_markup(markdown: str) -> str:
 
         closing = DETAILS_CLOSE_RE.match(source, index)
         if closing:
-            hidden = collapsed_details[-1] if collapsed_details else False
+            if not collapsed_details:
+                _blank_range(output, index, len(source))
+                break
+            hidden = collapsed_details[-1]
             if hidden:
                 _blank_range(output, index, closing.end())
-            if collapsed_details:
-                collapsed_details.pop()
+            collapsed_details.pop()
+            details_starts.pop()
             index = closing.end()
             continue
 
         if hidden and source[index] not in "\r\n":
             output[index] = " "
         index += 1
+
+    if details_starts:
+        _blank_range(output, min(details_starts), len(source))
 
     return "".join(output)
 
