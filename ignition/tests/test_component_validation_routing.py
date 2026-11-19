@@ -100,6 +100,40 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["seed_components"], ["usage"])
         self.assertEqual(result["selected_target_ids"], ["g_operating_method_consumers"])
 
+    def test_readme_only_change_runs_local_front_door_and_visibility_checks(self):
+        result = self.plan([".github/README.md"])
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["seed_components"], ["readme"])
+        self.assertEqual(result["affected_component_closure"], ["readme"])
+        self.assertEqual(
+            result["selected_target_ids"],
+            ["g_readme_front_door", "o_readme_visibility"],
+        )
+        self.assertEqual(result["traversed_relations"], [])
+        self.assertEqual(result["full_regression_reasons"], [])
+
+    def test_shared_owner_identity_source_keeps_full_current_state_and_governance_checks(self):
+        result = self.plan(["data/operations/human-front-door-identity-r1.json"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["current_state", "owner_human"])
+        self.assertIn("g_current_state_consumers", result["selected_target_ids"])
+        self.assertIn("g_human_front_door_consumers", result["selected_target_ids"])
+        self.assertTrue(any(
+            reason == {"kind": "component_requires_full_regression", "component_id": "current_state"}
+            for reason in result["full_regression_reasons"]
+        ))
+
+    def test_shared_permission_file_keeps_full_release_governance_checks(self):
+        result = self.plan([".github/CODEOWNERS"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["component_validation_router"])
+        self.assertEqual(result["selected_target_ids"], ["g_component_release_controls"])
+        self.assertTrue(any(
+            reason.get("kind") == "validation_authority_changed"
+            and reason.get("paths") == [".github/CODEOWNERS"]
+            for reason in result["full_regression_reasons"]
+        ))
+
     def test_foundation_only_change_requires_full_regression_and_actual_consumer_targets(self):
         result = self.plan(["data/foundation/README.md"])
         self.assertEqual(result["mode"], "FULL")
@@ -172,7 +206,8 @@ class ComponentValidationRoutingTest(unittest.TestCase):
             set(result["selected_target_ids"]),
             {
                 "g_component_release_controls",
-                "g_human_front_door_consumers",
+                "g_readme_front_door",
+                "o_readme_visibility",
                 "g_operating_method_consumers",
                 "g_repository_path_consumers",
                 "o_human_result_consumers",

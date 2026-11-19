@@ -702,7 +702,7 @@
       "id": "owner_human",
       "label": "Owner / Human",
       "group": "os_spine",
-      "target": ".github/README.md#1. 项目与价值",
+      "target": ".github/README.md#点火是什么",
       "description": "Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。",
       "lifecycle_status": "current"
     },

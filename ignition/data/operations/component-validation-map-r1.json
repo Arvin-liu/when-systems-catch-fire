@@ -170,6 +170,28 @@
       ]
     },
     {
+      "target_id": "g_readme_front_door",
+      "domain": "G",
+      "modules": [
+        "tests.test_human_front_door"
+      ],
+      "evidence": "README edits run the direct front-door structure and identity checks without the wider architecture or release consumers.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "o_readme_visibility",
+      "domain": "O",
+      "modules": [
+        "tests.test_human_visibility_gate"
+      ],
+      "evidence": "README edits run the local human-surface, link reachability and mapped-anchor checks.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
       "target_id": "g_operating_method_consumers",
       "domain": "G",
       "modules": [
@@ -1035,15 +1057,13 @@
         "O"
       ],
       "validation_targets": [
-        "g_human_front_door_consumers",
-        "o_human_result_consumers"
+        "g_readme_front_door",
+        "o_readme_visibility"
       ],
       "change_classifications": [
-        "INTERFACE_CHANGE",
-        "OPERATIONS_METHOD",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
+        "INTERFACE_CHANGE"
       ],
-      "evidence": "The registry assigns .github/README.md as the current-state and usage entry; typed relations connect the front door to current_state and knowledge surfaces, covered by the existing G front-door and O result-consumer suites."
+      "evidence": "Ordinary .github/README.md changes are presentation/interface edits and run only the direct G front-door and O visibility checks. Shared identity authority is separately owned by human-front-door-identity-r1.json; upstream operations-method effects retain their declared dependency route."
     },
     {
       "component_id": "owner_human",
@@ -1061,7 +1081,7 @@
         "RELEASE_OR_CURRENT_STATE_SYNC",
         "OPERATIONS_METHOD"
       ],
-      "evidence": "The Owner/Human identity and value slice of .github/README.md changes the public-facing project definition and its explicit authority and revision boundaries. Existing G front-door and O result-consumer suites validate structure, bounded claims and reader-facing links. This assignment selects validation only; it is not Owner approval or scientific acceptance.",
+      "evidence": "Owner/Human identity authority is sourced from human-front-door-identity-r1.json and projected to the README anchor. Its explicit shared path with current_state preserves full governance/current-state validation; this assignment selects validation only and is not Owner approval or scientific acceptance.",
       "requires_full_regression": false
     },
     {
