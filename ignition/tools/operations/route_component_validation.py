@@ -68,6 +68,7 @@ FULL_REGRESSION_PATHS = {
     "schemas/operations/component-release-manifest-r1.schema.json",
     "tools/operations/compute_change_propagation.py",
     "tools/operations/generate_component_profiles.py",
+    "tools/markdown_document.py",
     "tools/operations/plan_incremental_execution.py",
     "tools/operations/route_component_validation.py",
     "tools/operations/run_component_validation_targets.py",

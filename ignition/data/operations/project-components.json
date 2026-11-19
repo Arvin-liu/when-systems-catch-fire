@@ -2631,6 +2631,7 @@
         "schemas/operations/component-release-policy-r1.schema.json",
         "schemas/operations/component-release-manifest-r1.schema.json",
         "tools/operations/route_component_validation.py",
+        "tools/markdown_document.py",
         "tools/operations/run_component_validation_targets.py",
         "tools/operations/verify_component_validation_evidence.py",
         "tools/operations/write_final_main_witness.py",

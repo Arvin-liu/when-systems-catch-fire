@@ -394,6 +394,17 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                     for x in result["full_regression_reasons"]
                 ))
 
+    def test_shared_markdown_router_helper_is_mapped_to_full_regression(self):
+        path = "ignition/tools/markdown_document.py"
+        result = self.plan([path])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["component_validation_router"])
+        self.assertTrue(any(
+            reason.get("kind") == "validation_authority_changed"
+            and reason.get("paths") == ["tools/markdown_document.py"]
+            for reason in result["full_regression_reasons"]
+        ))
+
     def test_unknown_path_blocks_instead_of_running_zero_targets(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
             self.plan(["tools/unregistered-output.py"])
