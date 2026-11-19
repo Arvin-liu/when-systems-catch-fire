@@ -35,6 +35,30 @@ class HumanVisibilityGateTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             MODULE.validate_visible_readme_sections(missing)
 
+    def test_headings_inside_fenced_code_do_not_count_as_visible_sections(self):
+        readme = MODULE.file_for("README.md").read_text(encoding="utf-8")
+        hidden = readme.replace("## 3. 结果与火种", "### 3. 结果与火种", 1)
+        hidden += "\n```markdown\n## 3. 结果与火种\n```\n"
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            MODULE.validate_visible_readme_sections(hidden)
+
+    def test_headings_inside_fenced_code_do_not_satisfy_project_subsections(self):
+        readme = MODULE.file_for("README.md").read_text(encoding="utf-8")
+        hidden = readme.replace(
+            "### 现在做到哪里",
+            "~~~markdown\n### 现在做到哪里\n~~~",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "现在做到哪里"):
+            MODULE.validate_visible_readme_sections(hidden)
+        from tools.validate_human_front_door import validate_readme_structure
+        with self.assertRaisesRegex(AssertionError, "must contain"):
+            validate_readme_structure(MODULE.strip_fenced_code(hidden))
+
+    def test_anchor_lookup_ignores_fenced_code_headings(self):
+        markdown = "```markdown\n## 点火是什么\n```\n"
+        self.assertFalse(MODULE.markdown_anchor_exists(markdown, "点火是什么"))
+
 
 if __name__ == "__main__":
     unittest.main()

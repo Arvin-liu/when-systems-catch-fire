@@ -12,6 +12,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT if (ROOT / ".github/README.md").is_file() else ROOT.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.markdown_document import markdown_headings, strip_fenced_code
+
 CONFIG = json.loads((ROOT / "data/governance/human-results/config.json").read_text(encoding="utf-8"))
 PROJECT_COMPONENTS = ROOT / "data/operations/project-components.json"
 REQUIRED_VISIBLE_H2_SECTIONS = ("如何使用", "结果与火种", "整体架构", "致谢")
@@ -96,20 +100,8 @@ def local_links(path: str) -> set[str]:
 def markdown_heading_anchors(markdown: str) -> set[str]:
     anchors: set[str] = set()
     used: set[str] = set()
-    fence: str | None = None
-    for line in markdown.splitlines():
-        stripped = line.lstrip()
-        if fence is not None:
-            if stripped.startswith(fence):
-                fence = None
-            continue
-        if stripped.startswith(("```", "~~~")):
-            fence = stripped[:3]
-            continue
-        match = re.match(r"^#{1,6}\s+(.+?)\s*#*\s*$", line)
-        if not match:
-            continue
-        base = urllib.parse.unquote(match.group(1)).strip().lower()
+    for heading in markdown_headings(markdown):
+        base = urllib.parse.unquote(str(heading["title"])).strip().lower()
         base = re.sub(r"[^\w\- ]", "", base, flags=re.UNICODE)
         base = re.sub(r"\s+", "-", base).strip("-")
         candidate = base
@@ -130,16 +122,30 @@ def markdown_anchor_exists(markdown: str, fragment: str) -> bool:
 
 
 def validate_visible_readme_sections(readme: str) -> None:
-    visible_h2 = [
-        match.group(1).strip()
-        for match in re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE)
-    ]
+    headings = markdown_headings(readme)
+    visible_h2 = [str(item["title"]) for item in headings if item["level"] == 2]
     missing = [
         section for section in REQUIRED_VISIBLE_H2_SECTIONS
         if not any(section in heading for heading in visible_h2)
     ]
     if missing:
         raise AssertionError("README lacks visible section(s): " + ", ".join(missing))
+
+    first_h2 = next((item for item in headings if item["level"] == 2), None)
+    if first_h2 is None:
+        raise AssertionError("README lacks a visible project identity section")
+    next_h2_line = next(
+        (int(item["line"]) for item in headings if item["level"] == 2 and int(item["line"]) > int(first_h2["line"])),
+        len(strip_fenced_code(readme).splitlines()),
+    )
+    visible_h3 = [
+        str(item["title"])
+        for item in headings
+        if item["level"] == 3 and int(first_h2["line"]) < int(item["line"]) < next_h2_line
+    ]
+    required_h3 = ["点火是什么", "价值方向", "现在做到哪里"]
+    if visible_h3 != required_h3:
+        raise AssertionError("README project identity section must visibly contain 点火是什么、价值方向、现在做到哪里 in order")
 
 
 def project_component_anchor_errors() -> list[str]:
@@ -179,7 +185,7 @@ def validate() -> dict:
                     sys.path.insert(0, tools_path)
                 from validate_human_front_door import validate_readme_structure
             try:
-                validate_readme_structure(text)
+                validate_readme_structure(strip_fenced_code(text))
             except AssertionError as exc:
                 errors.append(f"README front-door structure invalid: {exc}")
         elif "<details" in text.lower():

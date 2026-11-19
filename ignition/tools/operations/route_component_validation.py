@@ -32,6 +32,7 @@ from tools.operations.compute_change_propagation import (  # noqa: E402
     relation_is_triggered,
     resolve_paths,
 )
+from tools.markdown_document import markdown_section_block  # noqa: E402
 
 REGISTRY_PATH = ROOT / "data/operations/project-components.json"
 TOPOLOGY_PATH = ROOT / "data/operations/change-propagation-topology.json"
@@ -142,6 +143,12 @@ def validate_validation_map(
                 raise RoutingBlocked(
                     f"target {target_id} domain {target['domain']} is outside component {component_id} domains"
                 )
+        for rule in assignment.get("content_classification_rules", []):
+            rule_path = normalize_repo_path(rule["path"])
+            if not any(matches_pattern(rule_path, pattern) for pattern in components[component_id]["path_patterns"]):
+                raise RoutingBlocked(
+                    f"content classification rule path is outside component {component_id}: {rule_path}"
+                )
     command_ids = [command_id for target in validation_map["targets"] for command_id in target.get("command_ids", [])]
     if len(command_ids) != len(set(command_ids)):
         raise RoutingBlocked("validation command IDs must be unique across targets")
@@ -158,7 +165,7 @@ def validate_validation_map(
 
 def _effect_closure(
     seeds: set[str], topology: dict[str, Any], assignments: dict[str, dict[str, Any]],
-    profiles: dict[str, Any],
+    profiles: dict[str, Any], content_classification_overrides: dict[str, list[str]] | None = None,
 ) -> tuple[set[str], list[dict[str, Any]], list[dict[str, Any]], list[dict[str, str]], list[dict[str, Any]]]:
     """Walk only relations triggered by each changed component's registered effect.
 
@@ -179,7 +186,9 @@ def _effect_closure(
         if profile is None:
             raise RoutingBlocked(f"changed component has no registered execution profile: {component_id}")
         dimensions = frozenset(profile.get("trigger_dimensions", []))
-        classifications = frozenset(assignment["change_classifications"])
+        classifications = frozenset(assignment["change_classifications"]) | frozenset(
+            (content_classification_overrides or {}).get(component_id, [])
+        )
         effects.append({
             "component_id": component_id,
             "dimensions": sorted(dimensions),
@@ -432,11 +441,51 @@ def _path_component_evidence(
     return evidence
 
 
+def classify_content_sections(
+    rules: list[dict[str, Any]], *, base_documents: dict[str, str | None],
+    head_documents: dict[str, str | None],
+) -> tuple[dict[str, list[str]], list[dict[str, Any]]]:
+    """Add declared classifications only when their Markdown sections change.
+
+    Missing or ambiguous headings are treated as changed so a malformed edit
+    cannot suppress a required current-state or method dependency.
+    """
+    overrides: dict[str, set[str]] = defaultdict(set)
+    evidence: list[dict[str, Any]] = []
+    for rule in rules:
+        path = rule["path"]
+        base_text = base_documents.get(path)
+        head_text = head_documents.get(path)
+        base_section = (
+            markdown_section_block(base_text, rule["heading_level"], rule["heading"])
+            if base_text is not None else None
+        )
+        head_section = (
+            markdown_section_block(head_text, rule["heading_level"], rule["heading"])
+            if head_text is not None else None
+        )
+        changed = base_section is None or head_section is None or base_section != head_section
+        evidence.append({
+            "path": path,
+            "heading_level": rule["heading_level"],
+            "heading": rule["heading"],
+            "change_classifications": sorted(rule["change_classifications"]),
+            "changed": changed,
+            "base_section_sha256": hashlib.sha256(base_section.encode("utf-8")).hexdigest() if base_section is not None else None,
+            "head_section_sha256": hashlib.sha256(head_section.encode("utf-8")).hexdigest() if head_section is not None else None,
+        })
+        if changed:
+            component_id = rule["component_id"]
+            overrides[component_id].update(rule["change_classifications"])
+    return {key: sorted(value) for key, value in sorted(overrides.items())}, evidence
+
+
 def plan_paths(
     changed_paths: list[str], *, registry: dict[str, Any] | None = None,
     topology: dict[str, Any] | None = None, validation_map: dict[str, Any] | None = None,
     schema: dict[str, Any] | None = None, profiles: dict[str, Any] | None = None, repo_root: Path = CHECKOUT_ROOT,
     verify_target_files: bool = True, source: dict[str, Any] | None = None,
+    content_classification_overrides: dict[str, list[str]] | None = None,
 ) -> dict[str, Any]:
     registry = registry or load_json(REGISTRY_PATH)
     topology = topology or load_json(TOPOLOGY_PATH)
@@ -498,7 +547,7 @@ def plan_paths(
 
     if seeds:
         affected, traversed, excluded_relations, cycle_residue, effect_inputs = _effect_closure(
-            seeds, topology, assignments, profiles
+            seeds, topology, assignments, profiles, content_classification_overrides
         )
     else:
         affected, traversed, excluded_relations, cycle_residue, effect_inputs = set(), [], [], [], []
@@ -625,6 +674,25 @@ def _git(repo_root: Path, *args: str) -> bytes:
     return completed.stdout
 
 
+def _git_blob_text_or_none(repo_root: Path, revision: str, relative_path: str) -> str | None:
+    completed = subprocess.run(
+        ["git", "-C", str(repo_root), "show", f"{revision}:{relative_path}"],
+        capture_output=True,
+        check=False,
+    )
+    if completed.returncode:
+        # A missing blob is a conservative signal for a changed section; other
+        # errors indicate broken exact source binding and must stop routing.
+        if completed.returncode == 128:
+            return None
+        detail = completed.stderr.decode("utf-8", errors="replace").strip()
+        raise RoutingBlocked(f"cannot read exact Markdown source {revision}:{relative_path}: {detail}")
+    try:
+        return completed.stdout.decode("utf-8", errors="strict")
+    except UnicodeDecodeError as exc:
+        raise RoutingBlocked(f"conditional Markdown source is not UTF-8: {relative_path}") from exc
+
+
 def _validate_commit(repo_root: Path, value: str, label: str) -> str:
     if not SHA_RE.fullmatch(value):
         raise RoutingBlocked(f"{label} must be an exact lowercase 40-character commit SHA")
@@ -707,14 +775,38 @@ def build_exact_plan(
         repo_root, base_sha, head_sha, validation_sha
     )
     paths, statuses = changed_paths_for_diff(repo_root, base_sha, head_sha)
+    validation_map = load_json(MAP_PATH)
+    changed_path_set = set(paths)
+    content_rules: list[dict[str, Any]] = []
+    for assignment in validation_map.get("components", []):
+        for rule in assignment.get("content_classification_rules", []):
+            if rule["path"] in changed_path_set:
+                content_rules.append({**rule, "component_id": assignment["component_id"]})
+    content_paths = sorted({rule["path"] for rule in content_rules})
+    base_documents = {
+        path: _git_blob_text_or_none(repo_root, base_sha, path)
+        for path in content_paths
+    }
+    head_documents = {
+        path: _git_blob_text_or_none(repo_root, head_sha, path)
+        for path in content_paths
+    }
+    content_overrides, content_evidence = classify_content_sections(
+        content_rules,
+        base_documents=base_documents,
+        head_documents=head_documents,
+    )
     return plan_paths(
         paths,
+        validation_map=validation_map,
         repo_root=repo_root,
+        content_classification_overrides=content_overrides,
         source={
             "base_sha": base_sha,
             "head_sha": head_sha,
             "validation_sha": validation_sha,
             "changed_file_statuses": statuses,
+            "content_classification_evidence": content_evidence,
         },
     )
 

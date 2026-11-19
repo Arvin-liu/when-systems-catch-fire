@@ -173,9 +173,9 @@
       "target_id": "g_readme_front_door",
       "domain": "G",
       "modules": [
-        "tests.test_human_front_door"
+        "tests.test_readme_front_door_local"
       ],
-      "evidence": "README edits run the direct front-door structure and identity checks without the wider architecture or release consumers.",
+      "evidence": "README edits run a dedicated local structure and canonical-identity check against the README text; the full human-surface and system-map suite stays with its broader consumers.",
       "import_roots": [
         "ignition"
       ]
@@ -184,9 +184,9 @@
       "target_id": "o_readme_visibility",
       "domain": "O",
       "modules": [
-        "tests.test_human_visibility_gate"
+        "tests.test_readme_visibility_local"
       ],
-      "evidence": "README edits run the local human-surface, link reachability and mapped-anchor checks.",
+      "evidence": "README edits run dedicated local visible-section, local-link and README-anchor checks, including code-fence negative controls.",
       "import_roots": [
         "ignition"
       ]
@@ -1063,7 +1063,25 @@
       "change_classifications": [
         "INTERFACE_CHANGE"
       ],
-      "evidence": "Ordinary .github/README.md changes are presentation/interface edits and run only the direct G front-door and O visibility checks. Shared identity authority is separately owned by human-front-door-identity-r1.json; upstream operations-method effects retain their declared dependency route."
+      "content_classification_rules": [
+        {
+          "path": ".github/README.md",
+          "heading_level": 3,
+          "heading": "现在做到哪里",
+          "change_classifications": [
+            "RELEASE_OR_CURRENT_STATE_SYNC"
+          ]
+        },
+        {
+          "path": ".github/README.md",
+          "heading_level": 2,
+          "heading": "2. 点火操作法 / 如何使用",
+          "change_classifications": [
+            "OPERATIONS_METHOD"
+          ]
+        }
+      ],
+      "evidence": "Ordinary README prose, titles, navigation and knowledge links use local G front-door/O visibility checks. Exact diff changes within the current-state and operating-method sections gain their declared propagation classifications; shared identity authority remains owned by human-front-door-identity-r1.json."
     },
     {
       "component_id": "owner_human",
