@@ -53,10 +53,14 @@ def markdown_headings(markdown: str) -> list[dict[str, int | str]]:
 
 
 def markdown_section_block(markdown: str, heading_level: int, heading_title: str) -> str | None:
-    """Return one heading section, or None when its heading is missing/ambiguous."""
-    visible = strip_fenced_code(markdown)
-    lines = visible.splitlines()
-    headings = markdown_headings(visible)
+    """Return one raw heading section, using visible headings for its bounds.
+
+    Fenced code cannot create or satisfy a heading boundary, but it remains
+    section content: code examples can carry current-state or operating-method
+    meaning and therefore participate in change classification.
+    """
+    lines = markdown.splitlines()
+    headings = markdown_headings(markdown)
     matches = [item for item in headings if item["level"] == heading_level and item["title"] == heading_title]
     if len(matches) != 1:
         return None

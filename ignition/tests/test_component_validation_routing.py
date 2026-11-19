@@ -151,6 +151,27 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertIn("current_state", result["affected_component_closure"])
         self.assertIn("map_readme_current", result["traversed_relations"])
 
+    def test_readme_current_state_code_example_change_keeps_sync_propagation(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        with_fenced_example = baseline.replace(
+            "\n## 2. 点火操作法 / 如何使用",
+            "\n\n```text\n状态示例：离线验证\n```\n\n## 2. 点火操作法 / 如何使用",
+            1,
+        )
+        changed = with_fenced_example.replace("状态示例：离线验证", "状态示例：外部执行", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, _ = classify_content_sections(
+            rules,
+            base_documents={path: with_fenced_example},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
     def test_readme_method_section_change_keeps_operation_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")
@@ -168,6 +189,28 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
         self.assertEqual(result["mode"], "TARGETED")
         self.assertIn("human_knowledge_surfaces", result["affected_component_closure"])
+        self.assertIn("human_results_depend_on_readme", result["traversed_relations"])
+        self.assertEqual(result["full_regression_reasons"], [])
+
+    def test_readme_method_code_example_change_keeps_operation_propagation(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        with_fenced_example = baseline.replace(
+            "\n## 3. 结果与火种",
+            "\n\n```sh\nagent --mode read-only\n```\n\n## 3. 结果与火种",
+            1,
+        )
+        changed = with_fenced_example.replace("--mode read-only", "--mode inspect", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, _ = classify_content_sections(
+            rules,
+            base_documents={path: with_fenced_example},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["OPERATIONS_METHOD"]})
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "TARGETED")
         self.assertIn("human_results_depend_on_readme", result["traversed_relations"])
         self.assertEqual(result["full_regression_reasons"], [])
 
