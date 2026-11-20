@@ -204,6 +204,29 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                 )
                 self.assertTrue(changed_rule["changed"])
 
+    def test_custom_html_quoted_greater_than_cannot_hide_current_state_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        base = baseline.replace(
+            "### 现在做到哪里",
+            '<custom-tag title=">">\n当前状态：旧\n### 现在做到哪里',
+            1,
+        )
+        changed = base.replace("当前状态：旧", "当前状态：新", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: base},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        current_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
     def test_readme_current_state_code_example_change_keeps_sync_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")

@@ -149,6 +149,19 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
             ["可见标题"],
         )
 
+    def test_custom_html_quoted_greater_than_hides_headings_and_anchors(self):
+        raw_html = '<custom-tag title=">">\n## Hidden HTML block heading\n\n'
+        self.assertEqual(markdown_headings(raw_html), [])
+        self.assertFalse(markdown_anchor_exists(raw_html, "Hidden HTML block heading"))
+
+        hidden = self.readme.replace(
+            "## 4. 整体架构",
+            '<custom-tag title=">">\n## 4. 整体架构\n\n</custom-tag>',
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "整体架构"):
+            validate_visible_readme_sections(hidden)
+
     def test_bare_cr_fenced_code_preserves_following_heading_line_number(self):
         markdown = "```text\r## 隐藏标题\r```\r## 可见标题\r"
         self.assertEqual(

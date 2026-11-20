@@ -106,6 +106,15 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
             validate_readme_structure(strip_fenced_code(readme))
 
+    def test_custom_html_quoted_greater_than_does_not_expose_a_required_h2(self):
+        readme = self.readme().replace(
+            "## 4. 整体架构",
+            '<custom-tag title=">">\n## 4. 整体架构\n</custom-tag>',
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
+            validate_readme_structure(strip_fenced_code(readme))
+
     def test_h2_inside_list_item_raw_html_block_is_not_visible(self):
         readme = self.readme().replace(
             "## 4. 整体架构",

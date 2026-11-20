@@ -45,7 +45,6 @@ HTML_BLOCK_TAG_RE = re.compile(
     + r")(?:" + HTML_ASCII_SPACE_CLASS + r"|/?>|$)",
     HTML_ASCII_TAG_FLAGS,
 )
-HTML_TAG_LINE_RE = re.compile(r"^ {0,3}</?([A-Za-z][A-Za-z0-9-]*)(?:[ \t]+[^<>]*)?/?>[ \t]*$")
 HTML_RAW_TAG_RE = re.compile(
     r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>|$)",
     HTML_ASCII_TAG_FLAGS,
@@ -181,6 +180,21 @@ def _html_tag_end(source: str, start: int) -> int | None:
         elif character == ">":
             return index + 1
     return None
+
+
+def _standalone_html_tag_name(line: str) -> str | None:
+    """Return a complete standalone HTML tag name, respecting quoted `>`s."""
+    start = len(line) - len(line.lstrip(" "))
+    if start > 3:
+        return None
+    tag = HTML_TAG_TOKEN_RE.match(line, start)
+    if tag is None:
+        return None
+    tag_end = _html_tag_end(line, tag.end())
+    if tag_end is None or any(character not in " \t" for character in line[tag_end:]):
+        return None
+    token = tag.group(0)
+    return token[2:] if token.startswith("</") else token[1:]
 
 
 def _html_attribute_present(attributes: str, target: str) -> bool | None:
@@ -579,8 +593,8 @@ def strip_raw_html_blocks(markdown: str) -> str:
             elif HTML_BLOCK_TAG_RE.match(body):
                 start_kind = "type6"
             else:
-                tag_line = HTML_TAG_LINE_RE.match(body)
-                if can_start_type7 and tag_line and tag_line.group(1).lower() not in HTML_BLOCK_TAGS:
+                tag_name = _standalone_html_tag_name(body)
+                if can_start_type7 and tag_name and tag_name.lower() not in HTML_BLOCK_TAGS:
                     start_kind = "type7"
 
             if start_kind is not None:
