@@ -55,6 +55,15 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
             validate_readme_structure(strip_fenced_code(readme))
 
+    def test_h2_inside_list_item_raw_html_block_is_not_visible(self):
+        readme = self.readme().replace(
+            "## 4. 整体架构",
+            "- <div>\n  ## 4. 整体架构\n  </div>",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
+            validate_readme_structure(strip_fenced_code(readme))
+
     def test_raw_html_block_types_do_not_contribute_headings(self):
         fixtures = (
             "<script>\n## 隐藏脚本标题\n</script>\n## 可见标题\n",
@@ -71,6 +80,8 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         paragraph = "普通段落\n<a>\n## 仍可见标题\n"
         indented_heading = "  ## 父标题\n<custom-tag>\n## 隐藏标题\n\n## 可见标题\n"
         setext_heading = "父标题\n===\n<custom-tag>\n## 隐藏标题\n\n## 可见标题\n"
+        table = "| 列 |\n| --- |\n<custom-tag>\n## 表格后隐藏标题\n</custom-tag>\n\n## 可见标题\n"
+        indented_code = "    代码块\n<custom-tag>\n## 代码后隐藏标题\n</custom-tag>\n\n## 可见标题\n"
         self.assertEqual([item["title"] for item in markdown_headings(block)], ["父标题", "可见标题"])
         self.assertEqual([item["title"] for item in markdown_headings(paragraph)], ["仍可见标题"])
         self.assertEqual(
@@ -78,6 +89,8 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
             ["父标题", "可见标题"],
         )
         self.assertEqual([item["title"] for item in markdown_headings(setext_heading)], ["可见标题"])
+        self.assertEqual([item["title"] for item in markdown_headings(table)], ["可见标题"])
+        self.assertEqual([item["title"] for item in markdown_headings(indented_code)], ["可见标题"])
 
     @staticmethod
     def readme() -> str:

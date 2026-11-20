@@ -21,6 +21,8 @@ HTML_BLOCK_TAG_RE = re.compile(
 )
 HTML_TAG_LINE_RE = re.compile(r"^ {0,3}</?([A-Za-z][A-Za-z0-9-]*)(?:[ \t]+[^<>]*)?/?>[ \t]*$")
 HTML_RAW_TAG_RE = re.compile(r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>)", re.IGNORECASE)
+LIST_ITEM_RE = re.compile(r"^( {0,3})([-+*]|\d{1,9}[.)])([ \t]+)(.*)$")
+TABLE_DELIMITER_CELL_RE = re.compile(r":?-{1,}:?")
 
 
 def _blank_range(output: list[str], start: int, end: int) -> None:
@@ -171,9 +173,9 @@ def strip_raw_html_blocks(markdown: str) -> str:
     Markdown headings inside them are not rendered headings. Types 6 and 7
     end at a blank line; the other block types end at their closing token.
     """
-    output: list[str] = []
-    block_kind: str | None = None
-    can_start_type7 = True
+    def line_ending(line: str) -> str:
+        body = line.rstrip("\r\n")
+        return line[len(body):]
 
     def blank_line(line: str) -> str:
         if line.endswith("\r\n"):
@@ -187,76 +189,165 @@ def strip_raw_html_blocks(markdown: str) -> str:
     def type1_terminates(body: str) -> bool:
         return bool(re.search(r"</(?:script|pre|style)\s*>", body, re.IGNORECASE))
 
-    for line in markdown.splitlines(keepends=True):
-        body = line.rstrip("\r\n")
-        is_blank = not body.strip()
+    def table_cells(body: str) -> list[str] | None:
+        stripped = body.strip()
+        if not re.search(r"(?<!\\)\|", stripped):
+            return None
+        if stripped.startswith("|"):
+            stripped = stripped[1:]
+        if stripped.endswith("|") and not stripped.endswith(r"\|"):
+            stripped = stripped[:-1]
+        return [cell.strip() for cell in re.split(r"(?<!\\)\|", stripped)]
 
-        if block_kind in {"type6", "type7"}:
-            if is_blank:
-                output.append(line)
-                block_kind = None
+    def table_row_indices(lines: list[str]) -> set[int]:
+        rows: set[int] = set()
+        bodies = [line.rstrip("\r\n") for line in lines]
+        for index in range(len(bodies) - 1):
+            header = table_cells(bodies[index])
+            delimiter = table_cells(bodies[index + 1])
+            if (
+                header is None
+                or delimiter is None
+                or len(header) != len(delimiter)
+                or not all(TABLE_DELIMITER_CELL_RE.fullmatch(cell) for cell in delimiter)
+            ):
+                continue
+            rows.update((index, index + 1))
+            cursor = index + 2
+            while cursor < len(bodies) and bodies[cursor].strip() and table_cells(bodies[cursor]) is not None:
+                rows.add(cursor)
+                cursor += 1
+        return rows
+
+    def scan(lines: list[str]) -> list[str]:
+        output: list[str] = []
+        block_kind: str | None = None
+        can_start_type7 = True
+        table_rows = table_row_indices(lines)
+        index = 0
+
+        while index < len(lines):
+            line = lines[index]
+            body = line.rstrip("\r\n")
+            is_blank = not body.strip()
+
+            # A list item's first block starts after its marker on the same
+            # line. Scan the item body as its own Markdown container so raw
+            # HTML opened there also hides indented continuation headings.
+            list_item = LIST_ITEM_RE.match(body) if block_kind is None else None
+            if list_item:
+                indent, marker, spacing, content = list_item.groups()
+                base_indent = len(indent)
+                content_indent = base_indent + len(marker) + min(len(spacing), 4)
+                if len(spacing) > 4:
+                    first_content = spacing[1:] + content
+                    first_prefix = body[:base_indent + len(marker) + 1]
+                else:
+                    first_content = content
+                    first_prefix = body[:content_indent]
+
+                item_end = index + 1
+                inner_lines = [first_content + line_ending(line)]
+                prefixes = [first_prefix]
+                while item_end < len(lines):
+                    candidate = lines[item_end]
+                    candidate_body = candidate.rstrip("\r\n")
+                    if not candidate_body.strip():
+                        inner_lines.append(candidate)
+                        prefixes.append("")
+                        item_end += 1
+                        continue
+                    sibling = LIST_ITEM_RE.match(candidate_body)
+                    if sibling and len(sibling.group(1)) == base_indent:
+                        break
+                    candidate_indent = len(candidate_body) - len(candidate_body.lstrip(" "))
+                    if candidate_indent < content_indent:
+                        break
+                    prefixes.append(candidate_body[:content_indent])
+                    inner_lines.append(candidate[content_indent:])
+                    item_end += 1
+
+                transformed = scan(inner_lines)
+                output.extend(prefix + inner for prefix, inner in zip(prefixes, transformed))
                 can_start_type7 = True
-            else:
+                index = item_end
+                continue
+
+            if block_kind in {"type6", "type7"}:
+                if is_blank:
+                    output.append(line)
+                    block_kind = None
+                    can_start_type7 = True
+                else:
+                    output.append(blank_line(line))
+                    can_start_type7 = False
+                index += 1
+                continue
+
+            if block_kind is not None:
                 output.append(blank_line(line))
-                can_start_type7 = False
-            continue
+                terminates = (
+                    (block_kind == "type1" and type1_terminates(body))
+                    or (block_kind == "type3" and "]]>" in body)
+                    or (block_kind == "type4" and "?>" in body)
+                    or (block_kind == "type5" and ">" in body)
+                )
+                if terminates:
+                    block_kind = None
+                can_start_type7 = bool(terminates)
+                index += 1
+                continue
 
-        if block_kind is not None:
-            output.append(blank_line(line))
-            terminates = (
-                (block_kind == "type1" and type1_terminates(body))
-                or (block_kind == "type3" and "]]>" in body)
-                or (block_kind == "type4" and "?>" in body)
-                or (block_kind == "type5" and ">" in body)
+            if HTML_RAW_TAG_RE.match(body):
+                output.append(blank_line(line))
+                terminates = type1_terminates(body)
+                if not terminates:
+                    block_kind = "type1"
+                can_start_type7 = terminates
+                index += 1
+                continue
+
+            start_kind: str | None = None
+            if re.match(r"^ {0,3}<!\[CDATA\[", body):
+                start_kind = "type3"
+            elif re.match(r"^ {0,3}<\?", body):
+                start_kind = "type4"
+            elif re.match(r"^ {0,3}<![A-Z]", body):
+                start_kind = "type5"
+            elif HTML_BLOCK_TAG_RE.match(body):
+                start_kind = "type6"
+            else:
+                tag_line = HTML_TAG_LINE_RE.match(body)
+                if can_start_type7 and tag_line and tag_line.group(1).casefold() not in HTML_BLOCK_TAGS:
+                    start_kind = "type7"
+
+            if start_kind is not None:
+                output.append(blank_line(line))
+                terminates = (
+                    (start_kind == "type3" and "]]>" in body)
+                    or (start_kind == "type4" and "?>" in body)
+                    or (start_kind == "type5" and ">" in body)
+                )
+                block_kind = None if terminates else start_kind
+                can_start_type7 = terminates
+                index += 1
+                continue
+
+            output.append(line)
+            can_start_type7 = (
+                is_blank
+                or index in table_rows
+                or bool(HEADING_RE.match(body))
+                or bool(re.match(r"^ {0,3}(?:>|(?:[-+*]|\d+[.)])[ \t]+)", body))
+                or bool(re.match(r"^ {0,3}(?:(?:\*[ \t]*){3,}|(?:-[ \t]*){3,}|(?:_[ \t]*){3,})$", body))
+                or bool(re.match(r"^ {0,3}(?:=+|-+)[ \t]*$", body))
+                or bool(re.match(r"^ {4,}\S", body))
             )
-            if terminates:
-                block_kind = None
-            can_start_type7 = bool(terminates)
-            continue
+            index += 1
 
-        if HTML_RAW_TAG_RE.match(body):
-            output.append(blank_line(line))
-            terminates = type1_terminates(body)
-            if not terminates:
-                block_kind = "type1"
-            can_start_type7 = terminates
-            continue
+        return output
 
-        start_kind: str | None = None
-        if re.match(r"^ {0,3}<!\[CDATA\[", body):
-            start_kind = "type3"
-        elif re.match(r"^ {0,3}<\?", body):
-            start_kind = "type4"
-        elif re.match(r"^ {0,3}<![A-Z]", body):
-            start_kind = "type5"
-        elif HTML_BLOCK_TAG_RE.match(body):
-            start_kind = "type6"
-        else:
-            tag_line = HTML_TAG_LINE_RE.match(body)
-            if can_start_type7 and tag_line and tag_line.group(1).casefold() not in HTML_BLOCK_TAGS:
-                start_kind = "type7"
-
-        if start_kind is not None:
-            output.append(blank_line(line))
-            terminates = (
-                (start_kind == "type3" and "]]>" in body)
-                or (start_kind == "type4" and "?>" in body)
-                or (start_kind == "type5" and ">" in body)
-            )
-            block_kind = None if terminates else start_kind
-            can_start_type7 = terminates
-            continue
-
-        output.append(line)
-        can_start_type7 = (
-            is_blank
-            or bool(HEADING_RE.match(body))
-            or bool(re.match(r"^ {0,3}(?:>|(?:[-+*]|\d+[.)])[ \t]+)", body))
-            or bool(re.match(r"^ {0,3}(?:(?:\*[ \t]*){3,}|(?:-[ \t]*){3,}|(?:_[ \t]*){3,})$", body))
-            or bool(re.match(r"^ {0,3}(?:=+|-+)[ \t]*$", body))
-        )
-
-    return "".join(output)
+    return "".join(scan(markdown.splitlines(keepends=True)))
 
 
 def markdown_headings(markdown: str) -> list[dict[str, int | str]]:
