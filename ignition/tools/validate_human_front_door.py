@@ -50,6 +50,7 @@ VERSION_FACTS = {
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }
+PROJECT_FIRST_MODULE_HEADING = "1. 丹无定形，火有法度，炼无终局，化有来路。"
 HUMAN_IDENTITY_HEADING = "### 点火是什么"
 HUMAN_VALUES_HEADING = "### 价值方向"
 HUMAN_CURRENT_HEADING = "### 现在做到哪里"
@@ -243,7 +244,7 @@ def validate_readme_structure(readme: str) -> None:
         for item in headings
         if int(item["level"]) == 2
     ]
-    required_h2 = ["1. 项目与价值", AI_FIRST_USE_HEADING, "3. 结果与火种", "4. 整体架构", "5. 致谢"]
+    required_h2 = [PROJECT_FIRST_MODULE_HEADING, AI_FIRST_USE_HEADING, "3. 结果与火种", "4. 整体架构", "5. 致谢"]
     require([title for title, _ in visible_h2] == required_h2, "README essential H2 sections must remain visible and ordered")
 
     first_h2_line = visible_h2[0][1]
@@ -257,9 +258,14 @@ def validate_readme_structure(readme: str) -> None:
         if int(item["level"]) == 3 and first_h2_line < int(item["line"]) < second_h2_line
     ]
     h3_titles = [str(item["title"]) for item in visible_h3]
+    required_h3 = [
+        HUMAN_IDENTITY_HEADING.removeprefix("### "),
+        HUMAN_VALUES_HEADING.removeprefix("### "),
+        HUMAN_CURRENT_HEADING.removeprefix("### "),
+    ]
     require(
-        h3_titles == ["点火是什么", "价值方向", "现在做到哪里"],
-        "README 项目与价值 must contain 点火是什么、价值方向、现在做到哪里 in order",
+        h3_titles == required_h3,
+        "README first module must contain 点火是什么、价值方向、现在做到哪里 in order",
     )
 
     def line_end(line_number: int) -> int:
@@ -270,11 +276,11 @@ def validate_readme_structure(readme: str) -> None:
     h3_ends = [line_end(line_number) for line_number in h3_line_numbers]
     require(
         readme[line_end(first_h2_line) : h3_starts[0]].strip() == "",
-        "README 点火是什么 must be the first block under 项目与价值",
+        "README 点火是什么 must be the first block under the first module",
     )
     require(
         "<details" not in section_one.casefold() and "</details" not in section_one.casefold(),
-        "README 项目与价值 must not contain a nested component or machine details block",
+        "README first module must not contain a nested component or machine details block",
     )
 
     identity_text = readme[h3_ends[0] : h3_starts[1]]
@@ -369,7 +375,7 @@ def validate_readme_structure(readme: str) -> None:
 
 
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:
-    required_order = ["## 1. 项目与价值", f"## {AI_FIRST_USE_HEADING}", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
+    required_order = [f"## {PROJECT_FIRST_MODULE_HEADING}", f"## {AI_FIRST_USE_HEADING}", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
     validate_readme_structure(readme)
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README visible result architecture is out of order")
