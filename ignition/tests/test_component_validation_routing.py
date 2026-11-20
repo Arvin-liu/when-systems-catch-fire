@@ -264,6 +264,29 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["mode"], "FULL")
         self.assertIn("map_readme_current", result["traversed_relations"])
 
+    def test_nbsp_only_line_wrapping_current_state_heading_forces_sync_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        changed = baseline.replace(
+            "### 现在做到哪里",
+            "<div>\n\u00a0\n### 现在做到哪里",
+            1,
+        )
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertIn("readme", overrides)
+        self.assertIn("RELEASE_OR_CURRENT_STATE_SYNC", overrides["readme"])
+        current_state_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_state_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
     def test_readme_method_code_example_change_keeps_operation_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")

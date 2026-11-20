@@ -109,6 +109,24 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "结果与火种"):
             validate_visible_readme_sections(hidden)
 
+    def test_nbsp_only_line_does_not_end_raw_html_block(self):
+        hidden = self.readme.replace(
+            "## 3. 结果与火种",
+            "<div>\n\u00a0\n## 3. 结果与火种",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            validate_visible_readme_sections(hidden)
+
+        list_raw_html = (
+            "- <div>\n  \u00a0\n  ## Hidden List Heading\n  </div>\n\n"
+            "## Visible Heading\n"
+        )
+        self.assertEqual(
+            [item["title"] for item in markdown_headings(list_raw_html)],
+            ["Visible Heading"],
+        )
+
     def test_h2_inside_list_item_raw_html_block_does_not_satisfy_required_section(self):
         hidden = self.readme.replace(
             "## 3. 结果与火种",

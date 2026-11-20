@@ -11,6 +11,7 @@ HTML_ASCII_WHITESPACE = frozenset(" \t\n\f\r")
 HTML_ASCII_SPACE_CLASS = r"[ \t\n\f\r]"
 HTML_ASCII_TAG_BOUNDARY = HTML_ASCII_SPACE_CLASS + r"|/|>|$"
 HTML_ASCII_TAG_FLAGS = re.IGNORECASE | re.ASCII
+GFM_BLANK_LINE_WHITESPACE = frozenset(" \t")
 DETAILS_OPEN_RE = re.compile(
     r"<details(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
     HTML_ASCII_TAG_FLAGS,
@@ -67,6 +68,10 @@ def _ascii_case_equal(value: str, target: str) -> bool:
     return value.isascii() and target.isascii() and value.lower() == target.lower()
 
 
+def _is_gfm_blank_line(line: str) -> bool:
+    return all(character in GFM_BLANK_LINE_WHITESPACE for character in line)
+
+
 def _list_item_segment(
     lines: list[str], index: int,
 ) -> tuple[int, list[str], list[str]] | None:
@@ -93,7 +98,7 @@ def _list_item_segment(
     while item_end < len(lines):
         candidate = lines[item_end]
         candidate_body = candidate.rstrip("\r\n")
-        if not candidate_body.strip():
+        if _is_gfm_blank_line(candidate_body):
             inner_lines.append(candidate)
             prefixes.append("")
             item_end += 1
@@ -357,7 +362,7 @@ def strip_nonvisible_markup(markdown: str) -> str:
                         next_line = source[
                             block_end:len(source) if next_line_end < 0 else next_line_end
                         ].rstrip("\r")
-                        if not next_line.strip():
+                        if _is_gfm_blank_line(next_line):
                             break
                         block_end = len(source) if next_line_end < 0 else next_line_end + 1
                     _blank_range(output, index, block_end)
@@ -486,7 +491,7 @@ def strip_raw_html_blocks(markdown: str) -> str:
         while index < len(lines):
             line = lines[index]
             body = line.rstrip("\r\n")
-            is_blank = not body.strip()
+            is_blank = _is_gfm_blank_line(body)
 
             # A list item's first block starts after its marker on the same
             # line. Scan the item body as its own Markdown container so raw
