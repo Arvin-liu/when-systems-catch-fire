@@ -9,13 +9,13 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 try:
-    from tools.markdown_document import markdown_headings
+    from tools.markdown_document import markdown_headings, split_gfm_lines
     from tools.generate_interactive_system_map import build_projection, load_spec, validate_spec
     from tools.validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
     from tools.governance.validate_human_visibility import validate as validate_human_visibility
     from tools.governance.validate_human_surface_contract import validate as validate_human_surface_contract
 except ModuleNotFoundError:
-    from markdown_document import markdown_headings
+    from markdown_document import markdown_headings, split_gfm_lines
     from generate_interactive_system_map import build_projection, load_spec, validate_spec
     from validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
     from governance.validate_human_visibility import validate as validate_human_visibility
@@ -232,7 +232,7 @@ def validate_ai_first_use_section(readme: str) -> None:
 
 
 def validate_readme_structure(readme: str) -> None:
-    lines = readme.splitlines(keepends=True)
+    lines = split_gfm_lines(readme, keepends=True)
     line_offsets = [0]
     for line in lines:
         line_offsets.append(line_offsets[-1] + len(line))

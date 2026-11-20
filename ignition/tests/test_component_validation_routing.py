@@ -151,6 +151,33 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertIn("current_state", result["affected_component_closure"])
         self.assertIn("map_readme_current", result["traversed_relations"])
 
+    def test_unicode_line_separator_cannot_hide_current_state_routing_change(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        base_with_lookalike = baseline.replace(
+            "### 现在做到哪里",
+            "当前状态：旧\u2028### 现在做到哪里",
+            1,
+        )
+        changed = base_with_lookalike.replace(
+            "当前状态：旧\u2028### 现在做到哪里",
+            "当前状态：新\u2028### 现在做到哪里",
+            1,
+        )
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: base_with_lookalike},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        current_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
     def test_readme_current_state_code_example_change_keeps_sync_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")

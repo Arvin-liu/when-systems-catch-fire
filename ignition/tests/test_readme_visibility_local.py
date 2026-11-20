@@ -127,6 +127,28 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
             ["Visible Heading"],
         )
 
+    def test_unicode_line_separator_does_not_create_a_heading_or_anchor(self):
+        markdown = "说明\u2028## 伪造标题\n"
+        self.assertEqual(markdown_headings(markdown), [])
+        self.assertFalse(markdown_anchor_exists(markdown, "伪造标题"))
+
+        hidden = self.readme.replace(
+            "## 3. 结果与火种",
+            "当前状态：旧\u2028## 3. 结果与火种",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            validate_visible_readme_sections(hidden)
+
+    def test_unicode_line_separator_does_not_end_a_fenced_code_block(self):
+        markdown = (
+            "```text\n正文\u2028```\n## 隐藏代码标题\n```\n## 可见标题\n"
+        )
+        self.assertEqual(
+            [item["title"] for item in markdown_headings(markdown)],
+            ["可见标题"],
+        )
+
     def test_h2_inside_list_item_raw_html_block_does_not_satisfy_required_section(self):
         hidden = self.readme.replace(
             "## 3. 结果与火种",

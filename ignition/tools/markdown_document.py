@@ -72,6 +72,26 @@ def _is_gfm_blank_line(line: str) -> bool:
     return all(character in GFM_BLANK_LINE_WHITESPACE for character in line)
 
 
+def split_gfm_lines(markdown: str, *, keepends: bool = False) -> list[str]:
+    """Split only on Markdown line endings (LF, CR, or CRLF)."""
+    lines: list[str] = []
+    start = 0
+    index = 0
+    while index < len(markdown):
+        if markdown[index] not in "\r\n":
+            index += 1
+            continue
+        line_end = index + 1
+        if markdown[index] == "\r" and line_end < len(markdown) and markdown[line_end] == "\n":
+            line_end += 1
+        lines.append(markdown[start:line_end] if keepends else markdown[start:index])
+        start = line_end
+        index = line_end
+    if start < len(markdown):
+        lines.append(markdown[start:])
+    return lines
+
+
 def _list_item_segment(
     lines: list[str], index: int,
 ) -> tuple[int, list[str], list[str]] | None:
@@ -425,7 +445,7 @@ def strip_fenced_code(markdown: str) -> str:
             index += 1
         return output
 
-    return "".join(scan(markdown.splitlines(keepends=True)))
+    return "".join(scan(split_gfm_lines(markdown, keepends=True)))
 
 
 def strip_raw_html_blocks(markdown: str) -> str:
@@ -579,14 +599,14 @@ def strip_raw_html_blocks(markdown: str) -> str:
 
         return output
 
-    return "".join(scan(markdown.splitlines(keepends=True)))
+    return "".join(scan(split_gfm_lines(markdown, keepends=True)))
 
 
 def markdown_headings(markdown: str) -> list[dict[str, int | str]]:
     """Return visible ATX headings with their zero-based line index."""
     visible = strip_raw_html_blocks(strip_nonvisible_markup(markdown))
     headings: list[dict[str, int | str]] = []
-    for line_number, line in enumerate(visible.splitlines()):
+    for line_number, line in enumerate(split_gfm_lines(visible)):
         match = HEADING_RE.match(line)
         if not match:
             continue
@@ -605,7 +625,7 @@ def markdown_section_block(markdown: str, heading_level: int, heading_title: str
     section content: code examples can carry current-state or operating-method
     meaning and therefore participate in change classification.
     """
-    lines = markdown.splitlines()
+    lines = split_gfm_lines(markdown)
     headings = markdown_headings(markdown)
     matches = [item for item in headings if item["level"] == heading_level and item["title"] == heading_title]
     if len(matches) != 1:
