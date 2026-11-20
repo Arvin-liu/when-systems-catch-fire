@@ -81,6 +81,15 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "结果与火种"):
             validate_visible_readme_sections(hidden)
 
+    def test_h2_inside_raw_html_block_does_not_satisfy_required_section(self):
+        hidden = self.readme.replace(
+            "## 3. 结果与火种",
+            "<div>\n## 3. 结果与火种\n</div>",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            validate_visible_readme_sections(hidden)
+
     def test_h3_inside_html_comment_does_not_satisfy_identity_section(self):
         hidden = self.readme.replace(
             "### 点火是什么",
@@ -90,13 +99,30 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "must visibly contain"):
             validate_visible_readme_sections(hidden)
 
+    def test_h3_inside_raw_html_block_does_not_satisfy_identity_section(self):
+        hidden = self.readme.replace(
+            "### 点火是什么",
+            "<div>\n### 点火是什么\n</div>",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "must visibly contain"):
+            validate_visible_readme_sections(hidden)
+
     def test_anchor_lookup_ignores_collapsed_details_and_html_comments(self):
         collapsed = "<details>\n## 仅折叠锚点\n</details>\n"
-        expanded = "<details open>\n## 展开锚点\n</details>\n"
+        expanded = "<details open>\n\n<summary>展开内容</summary>\n\n## 展开锚点\n\n</details>\n"
+        unseparated_expanded = "<details open>\n## 不应计入\n</details>\n"
         commented = "<!--\n## 仅注释锚点\n-->\n"
+        raw_html = "<div>\n## 仅原始 HTML 锚点\n</div>\n"
         self.assertFalse(markdown_anchor_exists(collapsed, "仅折叠锚点"))
         self.assertTrue(markdown_anchor_exists(expanded, "展开锚点"))
+        self.assertFalse(markdown_anchor_exists(unseparated_expanded, "不应计入"))
         self.assertFalse(markdown_anchor_exists(commented, "仅注释锚点"))
+        self.assertFalse(markdown_anchor_exists(raw_html, "仅原始 HTML 锚点"))
+
+    def test_markdown_after_raw_html_blank_line_remains_visible(self):
+        markdown = "<div>\nraw HTML\n\n## 可见标题\n\n</div>\n"
+        self.assertTrue(markdown_anchor_exists(markdown, "可见标题"))
 
     def test_unclosed_hidden_markup_fails_closed_for_anchor_lookup(self):
         self.assertFalse(markdown_anchor_exists("<details>\n## 未闭合折叠锚点\n", "未闭合折叠锚点"))
