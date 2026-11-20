@@ -99,6 +99,15 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "结果与火种"):
             validate_visible_readme_sections(hidden)
 
+    def test_h2_inside_list_item_fenced_code_does_not_satisfy_required_section(self):
+        hidden = self.readme.replace(
+            "## 3. 结果与火种",
+            "- ```markdown\n  ## 3. 结果与火种\n  ```",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "结果与火种"):
+            validate_visible_readme_sections(hidden)
+
     def test_h3_inside_html_comment_does_not_satisfy_identity_section(self):
         hidden = self.readme.replace(
             "### 点火是什么",
@@ -124,12 +133,14 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         commented = "<!--\n## 仅注释锚点\n-->\n"
         raw_html = "<div>\n## 仅原始 HTML 锚点\n</div>\n"
         list_raw_html = "- <div>\n  ## 仅列表原始 HTML 锚点\n  </div>\n"
+        list_fenced_code = "- ```markdown\n  ## 仅列表围栏锚点\n  ```\n"
         self.assertFalse(markdown_anchor_exists(collapsed, "仅折叠锚点"))
         self.assertTrue(markdown_anchor_exists(expanded, "展开锚点"))
         self.assertFalse(markdown_anchor_exists(unseparated_expanded, "不应计入"))
         self.assertFalse(markdown_anchor_exists(commented, "仅注释锚点"))
         self.assertFalse(markdown_anchor_exists(raw_html, "仅原始 HTML 锚点"))
         self.assertFalse(markdown_anchor_exists(list_raw_html, "仅列表原始 HTML 锚点"))
+        self.assertFalse(markdown_anchor_exists(list_fenced_code, "仅列表围栏锚点"))
 
     def test_markdown_after_raw_html_blank_line_remains_visible(self):
         markdown = "<div>\nraw HTML\n\n## 可见标题\n\n</div>\n"

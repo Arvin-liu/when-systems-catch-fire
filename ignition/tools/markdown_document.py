@@ -16,11 +16,11 @@ HTML_BLOCK_TAGS = frozenset(
     "tbody td tfoot th thead title tr track ul".split()
 )
 HTML_BLOCK_TAG_RE = re.compile(
-    r"^ {0,3}</?(" + "|".join(sorted(HTML_BLOCK_TAGS, key=len, reverse=True)) + r")(?:[ \t]|/?>)",
+    r"^ {0,3}</?(" + "|".join(sorted(HTML_BLOCK_TAGS, key=len, reverse=True)) + r")(?:[ \t]|/?>|$)",
     re.IGNORECASE,
 )
 HTML_TAG_LINE_RE = re.compile(r"^ {0,3}</?([A-Za-z][A-Za-z0-9-]*)(?:[ \t]+[^<>]*)?/?>[ \t]*$")
-HTML_RAW_TAG_RE = re.compile(r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>)", re.IGNORECASE)
+HTML_RAW_TAG_RE = re.compile(r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>|$)", re.IGNORECASE)
 LIST_ITEM_RE = re.compile(r"^( {0,3})([-+*]|\d{1,9}[.)])([ \t]+)(.*)$")
 TABLE_DELIMITER_CELL_RE = re.compile(r":?-{1,}:?")
 
@@ -29,6 +29,50 @@ def _blank_range(output: list[str], start: int, end: int) -> None:
     for index in range(start, end):
         if output[index] not in "\r\n":
             output[index] = " "
+
+
+def _list_item_segment(
+    lines: list[str], index: int,
+) -> tuple[int, list[str], list[str]] | None:
+    """Return one list item body, with its container indentation removed."""
+    line = lines[index]
+    body = line.rstrip("\r\n")
+    match = LIST_ITEM_RE.match(body)
+    if not match:
+        return None
+
+    indent, marker, spacing, content = match.groups()
+    base_indent = len(indent)
+    content_indent = base_indent + len(marker) + min(len(spacing), 4)
+    if len(spacing) > 4:
+        first_content = spacing[1:] + content
+        first_prefix = body[:base_indent + len(marker) + 1]
+    else:
+        first_content = content
+        first_prefix = body[:content_indent]
+
+    item_end = index + 1
+    inner_lines = [first_content + line[len(body):]]
+    prefixes = [first_prefix]
+    while item_end < len(lines):
+        candidate = lines[item_end]
+        candidate_body = candidate.rstrip("\r\n")
+        if not candidate_body.strip():
+            inner_lines.append(candidate)
+            prefixes.append("")
+            item_end += 1
+            continue
+        sibling = LIST_ITEM_RE.match(candidate_body)
+        if sibling and len(sibling.group(1)) == base_indent:
+            break
+        candidate_indent = len(candidate_body) - len(candidate_body.lstrip(" "))
+        if candidate_indent < content_indent:
+            break
+        prefixes.append(candidate_body[:content_indent])
+        inner_lines.append(candidate[content_indent:])
+        item_end += 1
+
+    return item_end, inner_lines, prefixes
 
 
 def _backtick_run_end(text: str, start: int) -> int:
@@ -141,29 +185,45 @@ def strip_nonvisible_markup(markdown: str) -> str:
 
 def strip_fenced_code(markdown: str) -> str:
     """Blank fenced code while preserving line boundaries for Markdown checks."""
-    output: list[str] = []
-    fence_char: str | None = None
-    fence_length = 0
-    for line in markdown.splitlines(keepends=True):
-        body = line.rstrip("\r\n")
-        if fence_char is not None:
-            match = re.match(r"^ {0,3}(`+|~+)[ \t]*$", body)
-            if match and match.group(1)[0] == fence_char and len(match.group(1)) >= fence_length:
-                fence_char = None
-                fence_length = 0
-            output.append("\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else "")
-            continue
-
-        match = FENCE_OPEN_RE.match(body)
-        if match:
-            marker, info = match.groups()
-            if marker[0] != "`" or "`" not in info:
-                fence_char = marker[0]
-                fence_length = len(marker)
-                output.append("\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else "")
+    def scan(lines: list[str]) -> list[str]:
+        output: list[str] = []
+        fence_char: str | None = None
+        fence_length = 0
+        index = 0
+        while index < len(lines):
+            line = lines[index]
+            body = line.rstrip("\r\n")
+            list_item = _list_item_segment(lines, index) if fence_char is None else None
+            if list_item:
+                item_end, inner_lines, prefixes = list_item
+                transformed = scan(inner_lines)
+                output.extend(prefix + inner for prefix, inner in zip(prefixes, transformed))
+                index = item_end
                 continue
-        output.append(line)
-    return "".join(output)
+
+            if fence_char is not None:
+                match = re.match(r"^ {0,3}(`+|~+)[ \t]*$", body)
+                if match and match.group(1)[0] == fence_char and len(match.group(1)) >= fence_length:
+                    fence_char = None
+                    fence_length = 0
+                output.append("\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else "")
+                index += 1
+                continue
+
+            match = FENCE_OPEN_RE.match(body)
+            if match:
+                marker, info = match.groups()
+                if marker[0] != "`" or "`" not in info:
+                    fence_char = marker[0]
+                    fence_length = len(marker)
+                    output.append("\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else "")
+                    index += 1
+                    continue
+            output.append(line)
+            index += 1
+        return output
+
+    return "".join(scan(markdown.splitlines(keepends=True)))
 
 
 def strip_raw_html_blocks(markdown: str) -> str:
@@ -173,10 +233,6 @@ def strip_raw_html_blocks(markdown: str) -> str:
     Markdown headings inside them are not rendered headings. Types 6 and 7
     end at a blank line; the other block types end at their closing token.
     """
-    def line_ending(line: str) -> str:
-        body = line.rstrip("\r\n")
-        return line[len(body):]
-
     def blank_line(line: str) -> str:
         if line.endswith("\r\n"):
             return "\r\n"
@@ -234,39 +290,9 @@ def strip_raw_html_blocks(markdown: str) -> str:
             # A list item's first block starts after its marker on the same
             # line. Scan the item body as its own Markdown container so raw
             # HTML opened there also hides indented continuation headings.
-            list_item = LIST_ITEM_RE.match(body) if block_kind is None else None
+            list_item = _list_item_segment(lines, index) if block_kind is None else None
             if list_item:
-                indent, marker, spacing, content = list_item.groups()
-                base_indent = len(indent)
-                content_indent = base_indent + len(marker) + min(len(spacing), 4)
-                if len(spacing) > 4:
-                    first_content = spacing[1:] + content
-                    first_prefix = body[:base_indent + len(marker) + 1]
-                else:
-                    first_content = content
-                    first_prefix = body[:content_indent]
-
-                item_end = index + 1
-                inner_lines = [first_content + line_ending(line)]
-                prefixes = [first_prefix]
-                while item_end < len(lines):
-                    candidate = lines[item_end]
-                    candidate_body = candidate.rstrip("\r\n")
-                    if not candidate_body.strip():
-                        inner_lines.append(candidate)
-                        prefixes.append("")
-                        item_end += 1
-                        continue
-                    sibling = LIST_ITEM_RE.match(candidate_body)
-                    if sibling and len(sibling.group(1)) == base_indent:
-                        break
-                    candidate_indent = len(candidate_body) - len(candidate_body.lstrip(" "))
-                    if candidate_indent < content_indent:
-                        break
-                    prefixes.append(candidate_body[:content_indent])
-                    inner_lines.append(candidate[content_indent:])
-                    item_end += 1
-
+                item_end, inner_lines, prefixes = list_item
                 transformed = scan(inner_lines)
                 output.extend(prefix + inner for prefix, inner in zip(prefixes, transformed))
                 can_start_type7 = True

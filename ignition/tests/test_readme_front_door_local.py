@@ -64,9 +64,20 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
             validate_readme_structure(strip_fenced_code(readme))
 
+    def test_h2_inside_list_item_fenced_code_is_not_visible(self):
+        readme = self.readme().replace(
+            "## 4. 整体架构",
+            "- ```markdown\n  ## 4. 整体架构\n  ```",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible|README is missing section"):
+            validate_readme_structure(strip_fenced_code(readme))
+
     def test_raw_html_block_types_do_not_contribute_headings(self):
         fixtures = (
             "<script>\n## 隐藏脚本标题\n</script>\n## 可见标题\n",
+            "<script\n## 隐藏不完整脚本标题\n</script>\n## 可见标题\n",
+            "<div\n## 隐藏不完整区块标题\n\n## 可见标题\n",
             "<![CDATA[\n## 隐藏 CDATA 标题\n]]>\n## 可见标题\n",
             "<?php\n## 隐藏处理指令标题\n?>\n## 可见标题\n",
             "<!DOCTYPE html\n## 隐藏声明标题\n>\n## 可见标题\n",
@@ -82,6 +93,7 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         setext_heading = "父标题\n===\n<custom-tag>\n## 隐藏标题\n\n## 可见标题\n"
         table = "| 列 |\n| --- |\n<custom-tag>\n## 表格后隐藏标题\n</custom-tag>\n\n## 可见标题\n"
         indented_code = "    代码块\n<custom-tag>\n## 代码后隐藏标题\n</custom-tag>\n\n## 可见标题\n"
+        list_code = "- ```markdown\n  ## 列表代码标题\n  ```\n\n## 可见标题\n"
         self.assertEqual([item["title"] for item in markdown_headings(block)], ["父标题", "可见标题"])
         self.assertEqual([item["title"] for item in markdown_headings(paragraph)], ["仍可见标题"])
         self.assertEqual(
@@ -91,6 +103,7 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         self.assertEqual([item["title"] for item in markdown_headings(setext_heading)], ["可见标题"])
         self.assertEqual([item["title"] for item in markdown_headings(table)], ["可见标题"])
         self.assertEqual([item["title"] for item in markdown_headings(indented_code)], ["可见标题"])
+        self.assertEqual([item["title"] for item in markdown_headings(list_code)], ["可见标题"])
 
     @staticmethod
     def readme() -> str:
