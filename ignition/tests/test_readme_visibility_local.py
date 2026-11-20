@@ -10,7 +10,7 @@ REPO_ROOT = ROOT.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.markdown_document import markdown_headings  # noqa: E402
+from tools.markdown_document import markdown_headings, strip_fenced_code  # noqa: E402
 from tools.governance.validate_human_visibility import (  # noqa: E402
     file_for,
     local_links,
@@ -147,6 +147,17 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         self.assertEqual(
             [item["title"] for item in markdown_headings(markdown)],
             ["可见标题"],
+        )
+
+    def test_bare_cr_fenced_code_preserves_following_heading_line_number(self):
+        markdown = "```text\r## 隐藏标题\r```\r## 可见标题\r"
+        self.assertEqual(
+            strip_fenced_code(markdown),
+            "\r\r\r## 可见标题\r",
+        )
+        self.assertEqual(
+            markdown_headings(markdown),
+            [{"level": 2, "title": "可见标题", "line": 3}],
         )
 
     def test_h2_inside_list_item_raw_html_block_does_not_satisfy_required_section(self):

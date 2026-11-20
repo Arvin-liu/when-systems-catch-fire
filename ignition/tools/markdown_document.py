@@ -72,6 +72,16 @@ def _is_gfm_blank_line(line: str) -> bool:
     return all(character in GFM_BLANK_LINE_WHITESPACE for character in line)
 
 
+def _gfm_line_ending(line: str) -> str:
+    if line.endswith("\r\n"):
+        return "\r\n"
+    if line.endswith("\r"):
+        return "\r"
+    if line.endswith("\n"):
+        return "\n"
+    return ""
+
+
 def split_gfm_lines(markdown: str, *, keepends: bool = False) -> list[str]:
     """Split only on Markdown line endings (LF, CR, or CRLF)."""
     lines: list[str] = []
@@ -428,7 +438,7 @@ def strip_fenced_code(markdown: str) -> str:
                 if match and match.group(1)[0] == fence_char and len(match.group(1)) >= fence_length:
                     fence_char = None
                     fence_length = 0
-                output.append("\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else "")
+                output.append(_gfm_line_ending(line))
                 index += 1
                 continue
 
@@ -438,7 +448,7 @@ def strip_fenced_code(markdown: str) -> str:
                 if marker[0] != "`" or "`" not in info:
                     fence_char = marker[0]
                     fence_length = len(marker)
-                    output.append("\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else "")
+                    output.append(_gfm_line_ending(line))
                     index += 1
                     continue
             output.append(line)

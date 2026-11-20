@@ -178,6 +178,32 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["mode"], "FULL")
         self.assertIn("map_readme_current", result["traversed_relations"])
 
+    def test_bare_cr_fenced_prefix_cannot_hide_content_routing_changes(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        fenced_prefix = "```text\r" + ("fixture\r" * 32) + "```\r"
+        base = fenced_prefix + baseline.replace("\n", "\r")
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+
+        for old, new, expected in (
+            ("今天的点火已拥有", "目前的点火已拥有", "RELEASE_OR_CURRENT_STATE_SYNC"),
+            ("把这个仓库链接", "将这个仓库链接", "OPERATIONS_METHOD"),
+        ):
+            with self.subTest(expected=expected):
+                changed = base.replace(old, new, 1)
+                self.assertNotEqual(changed, base)
+                overrides, evidence = classify_content_sections(
+                    rules,
+                    base_documents={path: base},
+                    head_documents={path: changed},
+                )
+                self.assertEqual(overrides, {"readme": [expected]})
+                changed_rule = next(
+                    item for item in evidence if expected in item["change_classifications"]
+                )
+                self.assertTrue(changed_rule["changed"])
+
     def test_readme_current_state_code_example_change_keeps_sync_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")
