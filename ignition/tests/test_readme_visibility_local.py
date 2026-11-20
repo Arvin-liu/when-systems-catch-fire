@@ -64,6 +64,19 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "结果与火种"):
             validate_visible_readme_sections(hidden)
 
+    def test_h2_inside_collapsed_details_after_raw_text_close_text_is_not_visible(self):
+        for element in ("script", "style"):
+            with self.subTest(element=element):
+                hidden = self.readme.replace(
+                    "## 3. 结果与火种",
+                    "<details>\n<summary>更多</summary>\n\n"
+                    f"<{element}>\n</details>\n</{element}>\n\n"
+                    "## 3. 结果与火种\n\n</details>",
+                    1,
+                )
+                with self.assertRaisesRegex(AssertionError, "结果与火种"):
+                    validate_visible_readme_sections(hidden)
+
     def test_h3_inside_collapsed_details_does_not_satisfy_identity_section(self):
         hidden = self.readme.replace(
             "### 点火是什么",
@@ -148,6 +161,49 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
             "## Expanded Section\n\n</details>\n"
         )
         self.assertTrue(markdown_anchor_exists(expanded, "Expanded Section"))
+
+    def test_details_close_text_inside_raw_text_elements_does_not_expose_headings_or_anchors(self):
+        for element in ("script", "style"):
+            with self.subTest(element=element):
+                collapsed = (
+                    "<details>\n<summary>More</summary>\n\n"
+                    f"<{element}>\n</details>\n</{element}>\n\n"
+                    "## Hidden Section\n\n</details>\n\n"
+                    "## Visible Section\n"
+                )
+                self.assertEqual(
+                    [item["title"] for item in markdown_headings(collapsed)],
+                    ["Visible Section"],
+                )
+                self.assertFalse(markdown_anchor_exists(collapsed, "Hidden Section"))
+                self.assertTrue(markdown_anchor_exists(collapsed, "Visible Section"))
+
+                raw_text_heading = (
+                    f"<{element}>\n## Not A Markdown Heading\n</{element}>\n"
+                    "## Visible Section\n"
+                )
+                self.assertEqual(
+                    [item["title"] for item in markdown_headings(raw_text_heading)],
+                    ["Visible Section"],
+                )
+                self.assertEqual(
+                    markdown_headings(f"<{element}>\n## Hidden Without A Close\n"),
+                    [],
+                )
+
+    def test_details_close_text_inside_a_quoted_tag_attribute_does_not_end_the_block(self):
+        collapsed = (
+            "<details>\n<summary>More</summary>\n\n"
+            '<div title="</details>">\n\n'
+            "## Hidden Section\n\n</details>\n\n"
+            "## Visible Section\n"
+        )
+        self.assertEqual(
+            [item["title"] for item in markdown_headings(collapsed)],
+            ["Visible Section"],
+        )
+        self.assertFalse(markdown_anchor_exists(collapsed, "Hidden Section"))
+        self.assertTrue(markdown_anchor_exists(collapsed, "Visible Section"))
 
     def test_anchor_lookup_ignores_collapsed_details_and_html_comments(self):
         collapsed = "<details>\n## 仅折叠锚点\n</details>\n"

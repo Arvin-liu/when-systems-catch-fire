@@ -9,6 +9,14 @@ FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
 DETAILS_OPEN_RE = re.compile(r"<details(?=[\s/>])", re.IGNORECASE)
 DETAILS_CLOSE_RE = re.compile(r"</details\s*>", re.IGNORECASE)
+HTML_RAW_TEXT_TAGS = frozenset(
+    "iframe noembed noframes noscript plaintext script style textarea title xmp".split()
+)
+HTML_RAW_TEXT_OPEN_RE = re.compile(
+    r"<(" + "|".join(sorted(HTML_RAW_TEXT_TAGS, key=len, reverse=True)) + r")(?=[\s/>]|$)",
+    re.IGNORECASE,
+)
+HTML_TAG_TOKEN_RE = re.compile(r"</?[A-Za-z][A-Za-z0-9:-]*(?=[\s/>]|$)")
 HTML_BLOCK_TAGS = frozenset(
     "address article aside base basefont blockquote body caption center col colgroup dd details dialog dir div dl dt "
     "fieldset figcaption figure footer form frame frameset h1 h2 h3 h4 h5 h6 head header hr html iframe legend "
@@ -105,6 +113,8 @@ def _html_tag_end(source: str, start: int) -> int | None:
                 quote = None
         elif character == '"' or character == "'":
             quote = character
+        elif character == "<":
+            return None
         elif character == ">":
             return index + 1
     return None
@@ -165,12 +175,12 @@ def _html_attribute_present(attributes: str, target: str) -> bool | None:
 
 
 def strip_nonvisible_markup(markdown: str) -> str:
-    """Blank fenced code, HTML comments, and collapsed details blocks.
+    """Blank fenced code, comments, raw-text elements, and collapsed details blocks.
 
     Newlines are preserved so heading line numbers remain stable. Inline code
-    spans are skipped while recognizing HTML markers, since their contents are
-    rendered as code rather than interpreted as comments or details tags.
-    Unclosed comments or details tags hide the remaining input (fail closed).
+    spans and tag attributes are skipped while recognizing HTML markers, since
+    their contents are not standalone comments or details tags.
+    Unclosed comments, raw-text elements, and uncertain HTML tags fail closed.
     """
     source = strip_fenced_code(markdown)
     output = list(source)
@@ -207,6 +217,29 @@ def strip_nonvisible_markup(markdown: str) -> str:
             index = close_end
             if close_start < 0:
                 break
+            continue
+
+        if source.startswith("<![CDATA[", index):
+            close_start = source.find("]]>", index + 9)
+            close_end = len(source) if close_start < 0 else close_start + 3
+            _blank_range(output, index, close_end)
+            index = close_end
+            continue
+
+        if source.startswith("<?", index):
+            close_start = source.find("?>", index + 2)
+            close_end = len(source) if close_start < 0 else close_start + 2
+            _blank_range(output, index, close_end)
+            index = close_end
+            continue
+
+        if source.startswith("<!", index):
+            declaration_end = _html_tag_end(source, index + 2)
+            if declaration_end is None:
+                _blank_range(output, index, len(source))
+                break
+            _blank_range(output, index, declaration_end)
+            index = declaration_end
             continue
 
         opening = DETAILS_OPEN_RE.match(source, index)
@@ -247,6 +280,64 @@ def strip_nonvisible_markup(markdown: str) -> str:
             collapsed_details.pop()
             details_starts.pop()
             index = closing.end()
+            continue
+
+        raw_text = HTML_RAW_TEXT_OPEN_RE.match(source, index)
+        if raw_text:
+            tag_name = raw_text.group(1).casefold()
+            tag_end = _html_tag_end(source, raw_text.end())
+            closing_pattern = re.compile(
+                r"</" + re.escape(tag_name) + r"\s*>",
+                re.IGNORECASE,
+            )
+            if tag_name == "plaintext":
+                raw_end = len(source)
+            elif tag_end is None:
+                # GFM raw HTML blocks can start on a tag prefix that is not a
+                # complete HTML start tag. Keep scanning to the raw block's
+                # matching terminator, and fail closed if none exists.
+                closing_tag = closing_pattern.search(source, raw_text.end())
+                if closing_tag is None:
+                    _blank_range(output, index, len(source))
+                    break
+                raw_end = closing_tag.end()
+            else:
+                closing_tag = closing_pattern.search(source, tag_end)
+                raw_end = len(source) if closing_tag is None else closing_tag.end()
+            # Raw-text/RCDATA elements cannot contribute Markdown headings,
+            # whether or not they are inside a collapsed details element.
+            _blank_range(output, index, raw_end)
+            index = raw_end
+            continue
+
+        tag = HTML_TAG_TOKEN_RE.match(source, index)
+        if tag:
+            tag_end = _html_tag_end(source, tag.end())
+            if tag_end is None:
+                line_start = source.rfind("\n", 0, index) + 1
+                line_end = source.find("\n", line_start)
+                line = source[line_start:len(source) if line_end < 0 else line_end].rstrip("\r")
+                if HTML_BLOCK_TAG_RE.match(line):
+                    # GFM type-6 blocks may start with a block tag prefix
+                    # without a complete opening tag. Consume to their blank
+                    # line boundary so apparent headings are not exposed.
+                    block_end = index
+                    while block_end < len(source):
+                        next_line_end = source.find("\n", block_end)
+                        next_line = source[
+                            block_end:len(source) if next_line_end < 0 else next_line_end
+                        ].rstrip("\r")
+                        if not next_line.strip():
+                            break
+                        block_end = len(source) if next_line_end < 0 else next_line_end + 1
+                    _blank_range(output, index, block_end)
+                    index = block_end
+                    continue
+                _blank_range(output, index, len(source))
+                break
+            if hidden:
+                _blank_range(output, index, tag_end)
+            index = tag_end
             continue
 
         if hidden and source[index] not in "\r\n":
