@@ -32,6 +32,17 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
             validate_readme_structure(strip_fenced_code(wrapped))
 
+    def test_h2_inside_collapsed_details_with_open_word_in_attribute_is_not_visible(self):
+        hidden = self.readme().replace(
+            "## 4. 整体架构",
+            '<details title="closed but open inside ">\n'
+            "<summary>更多</summary>\n\n"
+            "## 4. 整体架构\n\n</details>",
+            1,
+        )
+        with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
+            validate_readme_structure(strip_fenced_code(hidden))
+
     def test_entire_first_module_inside_html_comment_is_not_visible(self):
         readme = self.readme()
         headings = [item for item in markdown_headings(readme) if item["level"] == 2]

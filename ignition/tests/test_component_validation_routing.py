@@ -192,6 +192,33 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertIn("human_results_depend_on_readme", result["traversed_relations"])
         self.assertEqual(result["full_regression_reasons"], [])
 
+    def test_collapsed_details_heading_does_not_truncate_method_section_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        marker = "\n\n## 2. 点火操作法 / 如何使用"
+        with_hidden_heading = baseline.replace(
+            marker,
+            marker
+            + '\n\n<details title="closed but open inside ">'
+            + "\n<summary>更多</summary>\n\n"
+            + "## 隐藏的伪标题\n\n</details>",
+            1,
+        )
+        self.assertNotEqual(with_hidden_heading, baseline)
+        changed = with_hidden_heading.replace("把这个仓库链接", "把新的仓库链接", 1)
+        self.assertNotEqual(changed, with_hidden_heading)
+
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: with_hidden_heading},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["OPERATIONS_METHOD"]})
+        method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
+        self.assertTrue(method_rule["changed"])
+
     def test_readme_method_code_example_change_keeps_operation_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")

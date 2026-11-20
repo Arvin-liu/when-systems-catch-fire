@@ -10,6 +10,7 @@ REPO_ROOT = ROOT.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from tools.markdown_document import markdown_headings  # noqa: E402
 from tools.governance.validate_human_visibility import (  # noqa: E402
     file_for,
     local_links,
@@ -125,6 +126,28 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         )
         with self.assertRaisesRegex(AssertionError, "must visibly contain"):
             validate_visible_readme_sections(hidden)
+
+    def test_open_word_inside_collapsed_details_attribute_does_not_expose_headings_or_anchors(self):
+        collapsed = (
+            '<details title="closed but open inside > still closed">\n'
+            "<summary>More</summary>\n\n"
+            "## Hidden Section\n\n</details>\n"
+            "## Visible Section\n"
+        )
+        self.assertEqual(
+            [item["title"] for item in markdown_headings(collapsed)],
+            ["Visible Section"],
+        )
+        self.assertFalse(markdown_anchor_exists(collapsed, "Hidden Section"))
+        self.assertTrue(markdown_anchor_exists(collapsed, "Visible Section"))
+        self.assertFalse(markdown_anchor_exists("<details/open>\n\n## Hidden\n", "Hidden"))
+
+        expanded = (
+            '<details title="closed but open inside " open>\n'
+            "<summary>More</summary>\n\n"
+            "## Expanded Section\n\n</details>\n"
+        )
+        self.assertTrue(markdown_anchor_exists(expanded, "Expanded Section"))
 
     def test_anchor_lookup_ignores_collapsed_details_and_html_comments(self):
         collapsed = "<details>\n## 仅折叠锚点\n</details>\n"

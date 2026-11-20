@@ -7,7 +7,7 @@ import re
 
 FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
-DETAILS_OPEN_RE = re.compile(r"<details(?=[\s>])([^>]*)>", re.IGNORECASE)
+DETAILS_OPEN_RE = re.compile(r"<details(?=[\s/>])", re.IGNORECASE)
 DETAILS_CLOSE_RE = re.compile(r"</details\s*>", re.IGNORECASE)
 HTML_BLOCK_TAGS = frozenset(
     "address article aside base basefont blockquote body caption center col colgroup dd details dialog dir div dl dt "
@@ -95,6 +95,75 @@ def _inline_code_span_end(text: str, start: int, opening_end: int) -> int | None
         cursor = end
 
 
+def _html_tag_end(source: str, start: int) -> int | None:
+    """Find a tag end without treating quoted greater-than signs as delimiters."""
+    quote: str | None = None
+    for index in range(start, len(source)):
+        character = source[index]
+        if quote is not None:
+            if character == quote:
+                quote = None
+        elif character == '"' or character == "'":
+            quote = character
+        elif character == ">":
+            return index + 1
+    return None
+
+
+def _html_attribute_present(attributes: str, target: str) -> bool | None:
+    """Return attribute presence, or None when the attribute text is malformed."""
+    index = 0
+    found = False
+    while index < len(attributes):
+        while index < len(attributes) and attributes[index].isspace():
+            index += 1
+        if index < len(attributes) and attributes[index] == "/":
+            index += 1
+            while index < len(attributes) and attributes[index].isspace():
+                index += 1
+            return found if index == len(attributes) else None
+        if index == len(attributes):
+            break
+
+        name_start = index
+        while (
+            index < len(attributes)
+            and not attributes[index].isspace()
+            and attributes[index] not in ("=", "/", "<", ">", '"', "'")
+        ):
+            index += 1
+        if index == name_start:
+            return None
+        if attributes[name_start:index].casefold() == target.casefold():
+            found = True
+
+        while index < len(attributes) and attributes[index].isspace():
+            index += 1
+        if index < len(attributes) and attributes[index] == "=":
+            index += 1
+            while index < len(attributes) and attributes[index].isspace():
+                index += 1
+            if index == len(attributes):
+                return None
+            if attributes[index] in ('"', "'"):
+                quote = attributes[index]
+                index += 1
+                while index < len(attributes) and attributes[index] != quote:
+                    index += 1
+                if index == len(attributes):
+                    return None
+                index += 1
+            else:
+                value_start = index
+                while index < len(attributes) and not attributes[index].isspace():
+                    if attributes[index] in ('"', "'", "`", "=", "<", ">"):
+                        return None
+                    index += 1
+                if index == value_start:
+                    return None
+    return found
+
+
 def strip_nonvisible_markup(markdown: str) -> str:
     """Blank fenced code, HTML comments, and collapsed details blocks.
 
@@ -142,14 +211,21 @@ def strip_nonvisible_markup(markdown: str) -> str:
 
         opening = DETAILS_OPEN_RE.match(source, index)
         if opening:
+            tag_end = _html_tag_end(source, opening.end())
+            if tag_end is None:
+                _blank_range(output, index, len(source))
+                break
+            is_expanded = _html_attribute_present(source[opening.end():tag_end - 1], "open")
+            if is_expanded is None:
+                _blank_range(output, index, len(source))
+                break
             inherited_hidden = collapsed_details[-1] if collapsed_details else False
-            is_expanded = re.search(r"(?:^|\s)open(?:\s|=|$)", opening.group(1), re.IGNORECASE) is not None
             hidden = inherited_hidden or not is_expanded
             collapsed_details.append(hidden)
             details_starts.append(index)
             if hidden:
-                _blank_range(output, index, opening.end())
-            index = opening.end()
+                _blank_range(output, index, tag_end)
+            index = tag_end
             continue
 
         # A malformed opening details tag has uncertain visibility. Hide the
