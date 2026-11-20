@@ -19,14 +19,13 @@ class HumanVisibilityGateTests(unittest.TestCase):
 
     def test_visibility_gate_does_not_pin_the_owner_h2_title(self):
         readme = MODULE.file_for("README.md").read_text(encoding="utf-8")
-        renamed = readme.replace(
-            "## 1. 项目与价值",
-            "## 1. 丹无定形，火有法度，炼无终局，化有来路。",
-            1,
-        )
+        first_h2 = next(line for line in readme.splitlines() if line.startswith("## "))
+        renamed = readme.replace(first_h2, "## 1. 可见性检查临时标题", 1)
         self.assertNotEqual(readme, renamed)
         MODULE.validate_visible_readme_sections(renamed)
+        self.assertTrue(MODULE.markdown_anchor_exists(readme, "点火是什么"))
         self.assertTrue(MODULE.markdown_anchor_exists(renamed, "点火是什么"))
+        self.assertFalse(MODULE.markdown_anchor_exists(readme, "1. 项目与价值"))
         self.assertFalse(MODULE.markdown_anchor_exists(renamed, "1. 项目与价值"))
 
     def test_visibility_gate_still_rejects_a_missing_required_section(self):

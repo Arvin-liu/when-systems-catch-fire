@@ -258,9 +258,14 @@ def validate_readme_structure(readme: str) -> None:
         if int(item["level"]) == 3 and first_h2_line < int(item["line"]) < second_h2_line
     ]
     h3_titles = [str(item["title"]) for item in visible_h3]
+    required_h3 = [
+        HUMAN_IDENTITY_HEADING.removeprefix("### "),
+        HUMAN_VALUES_HEADING.removeprefix("### "),
+        HUMAN_CURRENT_HEADING.removeprefix("### "),
+    ]
     require(
-        h3_titles == ["点火是什么", "价值方向", "现在做到哪里"],
-        "README 项目与价值 must contain 点火是什么、价值方向、现在做到哪里 in order",
+        h3_titles == required_h3,
+        "README first module must contain 点火是什么、价值方向、现在做到哪里 in order",
     )
 
     def line_end(line_number: int) -> int:
@@ -271,11 +276,11 @@ def validate_readme_structure(readme: str) -> None:
     h3_ends = [line_end(line_number) for line_number in h3_line_numbers]
     require(
         readme[line_end(first_h2_line) : h3_starts[0]].strip() == "",
-        "README 点火是什么 must be the first block under 项目与价值",
+        "README 点火是什么 must be the first block under the first module",
     )
     require(
         "<details" not in section_one.casefold() and "</details" not in section_one.casefold(),
-        "README 项目与价值 must not contain a nested component or machine details block",
+        "README first module must not contain a nested component or machine details block",
     )
 
     identity_text = readme[h3_ends[0] : h3_starts[1]]

@@ -31,14 +31,22 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         missing = sorted(target for target in local_links("README.md") if not file_for(target).exists())
         self.assertEqual(missing, [])
 
-    def test_readme_component_anchor_is_present(self):
+    def test_readme_owner_anchor_matches_system_map(self):
         registry_path = ROOT / "data/operations/project-components.json"
         registry = json.loads(registry_path.read_text(encoding="utf-8"))
         component = next(row for row in registry["components"] if row["component_id"] == "owner_human")
         path, separator, fragment = component["canonical_target"].partition("#")
         self.assertTrue(separator)
         self.assertEqual(path, ".github/README.md")
-        self.assertTrue(markdown_anchor_exists(file_for(path).read_text(encoding="utf-8"), fragment))
+
+        system_map_path = ROOT / "data/architecture/interactive-system-map.json"
+        system_map = json.loads(system_map_path.read_text(encoding="utf-8"))
+        map_target = next(node["target"] for node in system_map["nodes"] if node["id"] == "owner_human")
+        self.assertEqual(map_target, component["canonical_target"])
+
+        readme = file_for(path).read_text(encoding="utf-8")
+        self.assertTrue(markdown_anchor_exists(readme, fragment))
+        self.assertFalse(markdown_anchor_exists(readme, "1. 项目与价值"))
 
     def test_code_fenced_h2_does_not_replace_visible_section(self):
         hidden = self.readme.replace("## 3. 结果与火种", "### 3. 结果与火种", 1)
