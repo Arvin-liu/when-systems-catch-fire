@@ -1,0 +1,662 @@
+"""Small Markdown structure helpers for repository-facing validators."""
+
+from __future__ import annotations
+
+import re
+
+
+FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
+HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
+HTML_ASCII_WHITESPACE = frozenset(" \t\n\f\r")
+HTML_ASCII_SPACE_CLASS = r"[ \t\n\f\r]"
+HTML_ASCII_TAG_BOUNDARY = HTML_ASCII_SPACE_CLASS + r"|/|>|$"
+HTML_ASCII_TAG_FLAGS = re.IGNORECASE | re.ASCII
+GFM_BLANK_LINE_WHITESPACE = frozenset(" \t")
+DETAILS_OPEN_RE = re.compile(
+    r"<details(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
+    HTML_ASCII_TAG_FLAGS,
+)
+DETAILS_CLOSE_RE = re.compile(
+    r"</details" + HTML_ASCII_SPACE_CLASS + r"*>",
+    HTML_ASCII_TAG_FLAGS,
+)
+HTML_RAW_TEXT_TAGS = frozenset(
+    "iframe noembed noframes noscript plaintext script style textarea title xmp".split()
+)
+HTML_RAW_TEXT_OPEN_RE = re.compile(
+    r"<("
+    + "|".join(sorted(HTML_RAW_TEXT_TAGS, key=len, reverse=True))
+    + r")(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
+    HTML_ASCII_TAG_FLAGS,
+)
+HTML_TAG_TOKEN_RE = re.compile(
+    r"</?[A-Za-z][A-Za-z0-9:-]*(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
+    HTML_ASCII_TAG_FLAGS,
+)
+HTML_BLOCK_TAGS = frozenset(
+    "address article aside base basefont blockquote body caption center col colgroup dd details dialog dir div dl dt "
+    "fieldset figcaption figure footer form frame frameset h1 h2 h3 h4 h5 h6 head header hr html iframe legend "
+    "li link main menu menuitem nav noframes ol optgroup option p param section source summary table "
+    "tbody td tfoot th thead title tr track ul".split()
+)
+HTML_BLOCK_TAG_RE = re.compile(
+    r"^ {0,3}</?("
+    + "|".join(sorted(HTML_BLOCK_TAGS, key=len, reverse=True))
+    + r")(?:" + HTML_ASCII_SPACE_CLASS + r"|/?>|$)",
+    HTML_ASCII_TAG_FLAGS,
+)
+HTML_RAW_TAG_RE = re.compile(
+    r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>|$)",
+    HTML_ASCII_TAG_FLAGS,
+)
+LIST_ITEM_RE = re.compile(r"^( {0,3})([-+*]|\d{1,9}[.)])([ \t]+)(.*)$")
+TABLE_DELIMITER_CELL_RE = re.compile(r":?-{1,}:?")
+
+
+def _blank_range(output: list[str], start: int, end: int) -> None:
+    for index in range(start, end):
+        if output[index] not in "\r\n":
+            output[index] = " "
+
+
+def _is_html_ascii_whitespace(character: str) -> bool:
+    return character in HTML_ASCII_WHITESPACE
+
+
+def _ascii_case_equal(value: str, target: str) -> bool:
+    return value.isascii() and target.isascii() and value.lower() == target.lower()
+
+
+def _is_gfm_blank_line(line: str) -> bool:
+    return all(character in GFM_BLANK_LINE_WHITESPACE for character in line)
+
+
+def _gfm_line_ending(line: str) -> str:
+    if line.endswith("\r\n"):
+        return "\r\n"
+    if line.endswith("\r"):
+        return "\r"
+    if line.endswith("\n"):
+        return "\n"
+    return ""
+
+
+def split_gfm_lines(markdown: str, *, keepends: bool = False) -> list[str]:
+    """Split only on Markdown line endings (LF, CR, or CRLF)."""
+    lines: list[str] = []
+    start = 0
+    index = 0
+    while index < len(markdown):
+        if markdown[index] not in "\r\n":
+            index += 1
+            continue
+        line_end = index + 1
+        if markdown[index] == "\r" and line_end < len(markdown) and markdown[line_end] == "\n":
+            line_end += 1
+        lines.append(markdown[start:line_end] if keepends else markdown[start:index])
+        start = line_end
+        index = line_end
+    if start < len(markdown):
+        lines.append(markdown[start:])
+    return lines
+
+
+def _list_item_segment(
+    lines: list[str], index: int,
+) -> tuple[int, list[str], list[str]] | None:
+    """Return one list item body, with its container indentation removed."""
+    line = lines[index]
+    body = line.rstrip("\r\n")
+    match = LIST_ITEM_RE.match(body)
+    if not match:
+        return None
+
+    indent, marker, spacing, content = match.groups()
+    base_indent = len(indent)
+    content_indent = base_indent + len(marker) + min(len(spacing), 4)
+    if len(spacing) > 4:
+        first_content = spacing[1:] + content
+        first_prefix = body[:base_indent + len(marker) + 1]
+    else:
+        first_content = content
+        first_prefix = body[:content_indent]
+
+    item_end = index + 1
+    inner_lines = [first_content + line[len(body):]]
+    prefixes = [first_prefix]
+    while item_end < len(lines):
+        candidate = lines[item_end]
+        candidate_body = candidate.rstrip("\r\n")
+        if _is_gfm_blank_line(candidate_body):
+            inner_lines.append(candidate)
+            prefixes.append("")
+            item_end += 1
+            continue
+        sibling = LIST_ITEM_RE.match(candidate_body)
+        if sibling and len(sibling.group(1)) == base_indent:
+            break
+        candidate_indent = len(candidate_body) - len(candidate_body.lstrip(" "))
+        if candidate_indent < content_indent:
+            break
+        prefixes.append(candidate_body[:content_indent])
+        inner_lines.append(candidate[content_indent:])
+        item_end += 1
+
+    return item_end, inner_lines, prefixes
+
+
+def _backtick_run_end(text: str, start: int) -> int:
+    end = start + 1
+    while end < len(text) and text[end] == "`":
+        end += 1
+    return end
+
+
+def _inline_code_span_end(text: str, start: int, opening_end: int) -> int | None:
+    width = opening_end - start
+    cursor = opening_end
+    while True:
+        candidate = text.find("`", cursor)
+        if candidate < 0:
+            return None
+        end = _backtick_run_end(text, candidate)
+        if end - candidate == width:
+            return end
+        cursor = end
+
+
+def _html_tag_end(source: str, start: int) -> int | None:
+    """Find a tag end without treating quoted greater-than signs as delimiters."""
+    quote: str | None = None
+    for index in range(start, len(source)):
+        character = source[index]
+        if quote is not None:
+            if character == quote:
+                quote = None
+        elif character == '"' or character == "'":
+            quote = character
+        elif character == "<":
+            return None
+        elif character == ">":
+            return index + 1
+    return None
+
+
+def _standalone_html_tag_name(line: str) -> str | None:
+    """Return a complete standalone HTML tag name, respecting quoted `>`s."""
+    start = len(line) - len(line.lstrip(" "))
+    if start > 3:
+        return None
+    tag = HTML_TAG_TOKEN_RE.match(line, start)
+    if tag is None:
+        return None
+    tag_end = _html_tag_end(line, tag.end())
+    if tag_end is None or any(character not in " \t" for character in line[tag_end:]):
+        return None
+    token = tag.group(0)
+    return token[2:] if token.startswith("</") else token[1:]
+
+
+def _html_attribute_present(attributes: str, target: str) -> bool | None:
+    """Return attribute presence, or None when the attribute text is malformed."""
+    index = 0
+    found = False
+    while index < len(attributes):
+        while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
+            index += 1
+        if index < len(attributes) and attributes[index] == "/":
+            index += 1
+            while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
+                index += 1
+            return found if index == len(attributes) else None
+        if index == len(attributes):
+            break
+
+        name_start = index
+        while (
+            index < len(attributes)
+            and not _is_html_ascii_whitespace(attributes[index])
+            and attributes[index] not in ("=", "/", "<", ">", '"', "'")
+        ):
+            index += 1
+        if index == name_start:
+            return None
+        if _ascii_case_equal(attributes[name_start:index], target):
+            found = True
+
+        while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
+            index += 1
+        if index < len(attributes) and attributes[index] == "=":
+            index += 1
+            while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
+                index += 1
+            if index == len(attributes):
+                return None
+            if attributes[index] in ('"', "'"):
+                quote = attributes[index]
+                index += 1
+                while index < len(attributes) and attributes[index] != quote:
+                    index += 1
+                if index == len(attributes):
+                    return None
+                index += 1
+            else:
+                value_start = index
+                while index < len(attributes) and not _is_html_ascii_whitespace(attributes[index]):
+                    if attributes[index] in ('"', "'", "`", "=", "<", ">"):
+                        return None
+                    index += 1
+                if index == value_start:
+                    return None
+    return found
+
+
+def strip_nonvisible_markup(markdown: str) -> str:
+    """Blank fenced code, comments, raw-text elements, and collapsed details blocks.
+
+    Newlines are preserved so heading line numbers remain stable. Inline code
+    spans and tag attributes are skipped while recognizing HTML markers, since
+    their contents are not standalone comments or details tags.
+    Unclosed comments, raw-text elements, and uncertain HTML tags fail closed.
+    """
+    source = strip_fenced_code(markdown)
+    output = list(source)
+    collapsed_details: list[bool] = []
+    details_starts: list[int] = []
+    index = 0
+
+    while index < len(source):
+        hidden = collapsed_details[-1] if collapsed_details else False
+
+        if source[index] == "`":
+            backslashes = 0
+            previous = index - 1
+            while previous >= 0 and source[previous] == "\\":
+                backslashes += 1
+                previous -= 1
+            opening_end = _backtick_run_end(source, index)
+            if backslashes % 2:
+                if hidden:
+                    _blank_range(output, index, opening_end)
+                index = opening_end
+                continue
+            closing_end = _inline_code_span_end(source, index, opening_end)
+            if closing_end is not None:
+                if hidden:
+                    _blank_range(output, index, closing_end)
+                index = closing_end
+                continue
+
+        if source.startswith("<!--", index):
+            close_start = source.find("-->", index + 4)
+            close_end = len(source) if close_start < 0 else close_start + 3
+            _blank_range(output, index, close_end)
+            index = close_end
+            if close_start < 0:
+                break
+            continue
+
+        if source.startswith("<![CDATA[", index):
+            close_start = source.find("]]>", index + 9)
+            close_end = len(source) if close_start < 0 else close_start + 3
+            _blank_range(output, index, close_end)
+            index = close_end
+            continue
+
+        if source.startswith("<?", index):
+            close_start = source.find("?>", index + 2)
+            close_end = len(source) if close_start < 0 else close_start + 2
+            _blank_range(output, index, close_end)
+            index = close_end
+            continue
+
+        if source.startswith("<!", index):
+            declaration_end = _html_tag_end(source, index + 2)
+            if declaration_end is None:
+                _blank_range(output, index, len(source))
+                break
+            _blank_range(output, index, declaration_end)
+            index = declaration_end
+            continue
+
+        opening = DETAILS_OPEN_RE.match(source, index)
+        if opening:
+            tag_end = _html_tag_end(source, opening.end())
+            if tag_end is None:
+                _blank_range(output, index, len(source))
+                break
+            is_expanded = _html_attribute_present(source[opening.end():tag_end - 1], "open")
+            if is_expanded is None:
+                _blank_range(output, index, len(source))
+                break
+            inherited_hidden = collapsed_details[-1] if collapsed_details else False
+            hidden = inherited_hidden or not is_expanded
+            collapsed_details.append(hidden)
+            details_starts.append(index)
+            if hidden:
+                _blank_range(output, index, tag_end)
+            index = tag_end
+            continue
+
+        # A malformed opening details tag has uncertain visibility. Hide the
+        # remainder instead of allowing headings after it to satisfy a gate.
+        if _ascii_case_equal(source[index:index + 8], "<details") and (
+            index + 8 == len(source)
+            or _is_html_ascii_whitespace(source[index + 8])
+            or source[index + 8] == ">"
+        ):
+            _blank_range(output, index, len(source))
+            break
+
+        closing = DETAILS_CLOSE_RE.match(source, index)
+        if closing:
+            if not collapsed_details:
+                _blank_range(output, index, len(source))
+                break
+            hidden = collapsed_details[-1]
+            if hidden:
+                _blank_range(output, index, closing.end())
+            collapsed_details.pop()
+            details_starts.pop()
+            index = closing.end()
+            continue
+
+        raw_text = HTML_RAW_TEXT_OPEN_RE.match(source, index)
+        if raw_text:
+            tag_name = raw_text.group(1).lower()
+            tag_end = _html_tag_end(source, raw_text.end())
+            closing_pattern = re.compile(
+                r"</" + re.escape(tag_name) + HTML_ASCII_SPACE_CLASS + r"*>",
+                HTML_ASCII_TAG_FLAGS,
+            )
+            if tag_name == "plaintext":
+                raw_end = len(source)
+            elif tag_end is None:
+                # GFM raw HTML blocks can start on a tag prefix that is not a
+                # complete HTML start tag. Keep scanning to the raw block's
+                # matching terminator, and fail closed if none exists.
+                closing_tag = closing_pattern.search(source, raw_text.end())
+                if closing_tag is None:
+                    _blank_range(output, index, len(source))
+                    break
+                raw_end = closing_tag.end()
+            else:
+                closing_tag = closing_pattern.search(source, tag_end)
+                raw_end = len(source) if closing_tag is None else closing_tag.end()
+            # Raw-text/RCDATA elements cannot contribute Markdown headings,
+            # whether or not they are inside a collapsed details element.
+            _blank_range(output, index, raw_end)
+            index = raw_end
+            continue
+
+        tag = HTML_TAG_TOKEN_RE.match(source, index)
+        if tag:
+            tag_end = _html_tag_end(source, tag.end())
+            if tag_end is None:
+                line_start = source.rfind("\n", 0, index) + 1
+                line_end = source.find("\n", line_start)
+                line = source[line_start:len(source) if line_end < 0 else line_end].rstrip("\r")
+                if HTML_BLOCK_TAG_RE.match(line):
+                    # GFM type-6 blocks may start with a block tag prefix
+                    # without a complete opening tag. Consume to their blank
+                    # line boundary so apparent headings are not exposed.
+                    block_end = index
+                    while block_end < len(source):
+                        next_line_end = source.find("\n", block_end)
+                        next_line = source[
+                            block_end:len(source) if next_line_end < 0 else next_line_end
+                        ].rstrip("\r")
+                        if _is_gfm_blank_line(next_line):
+                            break
+                        block_end = len(source) if next_line_end < 0 else next_line_end + 1
+                    _blank_range(output, index, block_end)
+                    index = block_end
+                    continue
+                _blank_range(output, index, len(source))
+                break
+            if hidden:
+                _blank_range(output, index, tag_end)
+            index = tag_end
+            continue
+
+        if hidden and source[index] not in "\r\n":
+            output[index] = " "
+        index += 1
+
+    if details_starts:
+        _blank_range(output, min(details_starts), len(source))
+
+    return "".join(output)
+
+
+def strip_fenced_code(markdown: str) -> str:
+    """Blank fenced code while preserving line boundaries for Markdown checks."""
+    def scan(lines: list[str]) -> list[str]:
+        output: list[str] = []
+        fence_char: str | None = None
+        fence_length = 0
+        index = 0
+        while index < len(lines):
+            line = lines[index]
+            body = line.rstrip("\r\n")
+            list_item = _list_item_segment(lines, index) if fence_char is None else None
+            if list_item:
+                item_end, inner_lines, prefixes = list_item
+                transformed = scan(inner_lines)
+                output.extend(prefix + inner for prefix, inner in zip(prefixes, transformed))
+                index = item_end
+                continue
+
+            if fence_char is not None:
+                match = re.match(r"^ {0,3}(`+|~+)[ \t]*$", body)
+                if match and match.group(1)[0] == fence_char and len(match.group(1)) >= fence_length:
+                    fence_char = None
+                    fence_length = 0
+                output.append(_gfm_line_ending(line))
+                index += 1
+                continue
+
+            match = FENCE_OPEN_RE.match(body)
+            if match:
+                marker, info = match.groups()
+                if marker[0] != "`" or "`" not in info:
+                    fence_char = marker[0]
+                    fence_length = len(marker)
+                    output.append(_gfm_line_ending(line))
+                    index += 1
+                    continue
+            output.append(line)
+            index += 1
+        return output
+
+    return "".join(scan(split_gfm_lines(markdown, keepends=True)))
+
+
+def strip_raw_html_blocks(markdown: str) -> str:
+    """Blank GFM raw HTML blocks while preserving line numbers.
+
+    HTML block contents are raw HTML until their GFM terminator, so apparent
+    Markdown headings inside them are not rendered headings. Types 6 and 7
+    end at a blank line; the other block types end at their closing token.
+    """
+    def blank_line(line: str) -> str:
+        if line.endswith("\r\n"):
+            return "\r\n"
+        if line.endswith("\n"):
+            return "\n"
+        if line.endswith("\r"):
+            return "\r"
+        return ""
+
+    def type1_terminates(body: str) -> bool:
+        return bool(re.search(
+            r"</(?:script|pre|style)" + HTML_ASCII_SPACE_CLASS + r"*>",
+            body,
+            HTML_ASCII_TAG_FLAGS,
+        ))
+
+    def table_cells(body: str) -> list[str] | None:
+        stripped = body.strip()
+        if not re.search(r"(?<!\\)\|", stripped):
+            return None
+        if stripped.startswith("|"):
+            stripped = stripped[1:]
+        if stripped.endswith("|") and not stripped.endswith(r"\|"):
+            stripped = stripped[:-1]
+        return [cell.strip() for cell in re.split(r"(?<!\\)\|", stripped)]
+
+    def table_row_indices(lines: list[str]) -> set[int]:
+        rows: set[int] = set()
+        bodies = [line.rstrip("\r\n") for line in lines]
+        for index in range(len(bodies) - 1):
+            header = table_cells(bodies[index])
+            delimiter = table_cells(bodies[index + 1])
+            if (
+                header is None
+                or delimiter is None
+                or len(header) != len(delimiter)
+                or not all(TABLE_DELIMITER_CELL_RE.fullmatch(cell) for cell in delimiter)
+            ):
+                continue
+            rows.update((index, index + 1))
+            cursor = index + 2
+            while cursor < len(bodies) and bodies[cursor].strip() and table_cells(bodies[cursor]) is not None:
+                rows.add(cursor)
+                cursor += 1
+        return rows
+
+    def scan(lines: list[str]) -> list[str]:
+        output: list[str] = []
+        block_kind: str | None = None
+        can_start_type7 = True
+        table_rows = table_row_indices(lines)
+        index = 0
+
+        while index < len(lines):
+            line = lines[index]
+            body = line.rstrip("\r\n")
+            is_blank = _is_gfm_blank_line(body)
+
+            # A list item's first block starts after its marker on the same
+            # line. Scan the item body as its own Markdown container so raw
+            # HTML opened there also hides indented continuation headings.
+            list_item = _list_item_segment(lines, index) if block_kind is None else None
+            if list_item:
+                item_end, inner_lines, prefixes = list_item
+                transformed = scan(inner_lines)
+                output.extend(prefix + inner for prefix, inner in zip(prefixes, transformed))
+                can_start_type7 = True
+                index = item_end
+                continue
+
+            if block_kind in {"type6", "type7"}:
+                if is_blank:
+                    output.append(line)
+                    block_kind = None
+                    can_start_type7 = True
+                else:
+                    output.append(blank_line(line))
+                    can_start_type7 = False
+                index += 1
+                continue
+
+            if block_kind is not None:
+                output.append(blank_line(line))
+                terminates = (
+                    (block_kind == "type1" and type1_terminates(body))
+                    or (block_kind == "type3" and "]]>" in body)
+                    or (block_kind == "type4" and "?>" in body)
+                    or (block_kind == "type5" and ">" in body)
+                )
+                if terminates:
+                    block_kind = None
+                can_start_type7 = bool(terminates)
+                index += 1
+                continue
+
+            if HTML_RAW_TAG_RE.match(body):
+                output.append(blank_line(line))
+                terminates = type1_terminates(body)
+                if not terminates:
+                    block_kind = "type1"
+                can_start_type7 = terminates
+                index += 1
+                continue
+
+            start_kind: str | None = None
+            if re.match(r"^ {0,3}<!\[CDATA\[", body):
+                start_kind = "type3"
+            elif re.match(r"^ {0,3}<\?", body):
+                start_kind = "type4"
+            elif re.match(r"^ {0,3}<![A-Z]", body):
+                start_kind = "type5"
+            elif HTML_BLOCK_TAG_RE.match(body):
+                start_kind = "type6"
+            else:
+                tag_name = _standalone_html_tag_name(body)
+                if can_start_type7 and tag_name and tag_name.lower() not in HTML_BLOCK_TAGS:
+                    start_kind = "type7"
+
+            if start_kind is not None:
+                output.append(blank_line(line))
+                terminates = (
+                    (start_kind == "type3" and "]]>" in body)
+                    or (start_kind == "type4" and "?>" in body)
+                    or (start_kind == "type5" and ">" in body)
+                )
+                block_kind = None if terminates else start_kind
+                can_start_type7 = terminates
+                index += 1
+                continue
+
+            output.append(line)
+            can_start_type7 = (
+                is_blank
+                or index in table_rows
+                or bool(HEADING_RE.match(body))
+                or bool(re.match(r"^ {0,3}(?:>|(?:[-+*]|\d+[.)])[ \t]+)", body))
+                or bool(re.match(r"^ {0,3}(?:(?:\*[ \t]*){3,}|(?:-[ \t]*){3,}|(?:_[ \t]*){3,})$", body))
+                or bool(re.match(r"^ {0,3}(?:=+|-+)[ \t]*$", body))
+                or bool(re.match(r"^ {4,}\S", body))
+            )
+            index += 1
+
+        return output
+
+    return "".join(scan(split_gfm_lines(markdown, keepends=True)))
+
+
+def markdown_headings(markdown: str) -> list[dict[str, int | str]]:
+    """Return visible ATX headings with their zero-based line index."""
+    visible = strip_raw_html_blocks(strip_nonvisible_markup(markdown))
+    headings: list[dict[str, int | str]] = []
+    for line_number, line in enumerate(split_gfm_lines(visible)):
+        match = HEADING_RE.match(line)
+        if not match:
+            continue
+        headings.append({
+            "level": len(match.group(1)),
+            "title": match.group(2).strip(),
+            "line": line_number,
+        })
+    return headings
+
+
+def markdown_section_block(markdown: str, heading_level: int, heading_title: str) -> str | None:
+    """Return one raw heading section, using visible headings for its bounds.
+
+    Fenced code cannot create or satisfy a heading boundary, but it remains
+    section content: code examples can carry current-state or operating-method
+    meaning and therefore participate in change classification.
+    """
+    lines = split_gfm_lines(markdown)
+    headings = markdown_headings(markdown)
+    matches = [item for item in headings if item["level"] == heading_level and item["title"] == heading_title]
+    if len(matches) != 1:
+        return None
+    start = int(matches[0]["line"])
+    end = next(
+        (int(item["line"]) for item in headings if int(item["line"]) > start and int(item["level"]) <= heading_level),
+        len(lines),
+    )
+    return "\n".join(lines[start:end]).rstrip()

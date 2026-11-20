@@ -22,6 +22,7 @@ from tools.operations.route_component_validation import (  # noqa: E402
     RoutingBlocked,
     _module_file,
     _validate_checkout_binding,
+    classify_content_sections,
     plan_paths,
     validate_validation_map,
 )
@@ -100,6 +101,334 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["seed_components"], ["usage"])
         self.assertEqual(result["selected_target_ids"], ["g_operating_method_consumers"])
 
+    def test_readme_only_change_runs_local_front_door_and_visibility_checks(self):
+        result = self.plan([".github/README.md"])
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["seed_components"], ["readme"])
+        self.assertEqual(result["affected_component_closure"], ["readme"])
+        self.assertEqual(
+            result["selected_target_ids"],
+            ["g_readme_front_door", "o_readme_visibility"],
+        )
+        self.assertEqual(result["traversed_relations"], [])
+        self.assertEqual(result["full_regression_reasons"], [])
+
+    def test_ordinary_readme_prose_change_keeps_local_route(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        changed = baseline.replace("建议先读", "可以先读", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {})
+        self.assertTrue(evidence)
+        self.assertTrue(all(item["changed"] is False for item in evidence))
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["affected_component_closure"], ["readme"])
+        self.assertEqual(result["selected_target_ids"], ["g_readme_front_door", "o_readme_visibility"])
+
+    def test_readme_current_state_section_change_keeps_sync_propagation(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        changed = baseline.replace("今天的点火已拥有", "目前的点火已拥有", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        current_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("current_state", result["affected_component_closure"])
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_unicode_line_separator_cannot_hide_current_state_routing_change(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        base_with_lookalike = baseline.replace(
+            "### 现在做到哪里",
+            "当前状态：旧\u2028### 现在做到哪里",
+            1,
+        )
+        changed = base_with_lookalike.replace(
+            "当前状态：旧\u2028### 现在做到哪里",
+            "当前状态：新\u2028### 现在做到哪里",
+            1,
+        )
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: base_with_lookalike},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        current_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_bare_cr_fenced_prefix_cannot_hide_content_routing_changes(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        fenced_prefix = "```text\r" + ("fixture\r" * 32) + "```\r"
+        base = fenced_prefix + baseline.replace("\n", "\r")
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+
+        for old, new, expected in (
+            ("今天的点火已拥有", "目前的点火已拥有", "RELEASE_OR_CURRENT_STATE_SYNC"),
+            ("把这个仓库链接", "将这个仓库链接", "OPERATIONS_METHOD"),
+        ):
+            with self.subTest(expected=expected):
+                changed = base.replace(old, new, 1)
+                self.assertNotEqual(changed, base)
+                overrides, evidence = classify_content_sections(
+                    rules,
+                    base_documents={path: base},
+                    head_documents={path: changed},
+                )
+                self.assertEqual(overrides, {"readme": [expected]})
+                changed_rule = next(
+                    item for item in evidence if expected in item["change_classifications"]
+                )
+                self.assertTrue(changed_rule["changed"])
+
+    def test_custom_html_quoted_greater_than_cannot_hide_current_state_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        base = baseline.replace(
+            "### 现在做到哪里",
+            '<custom-tag title=">">\n当前状态：旧\n### 现在做到哪里',
+            1,
+        )
+        changed = base.replace("当前状态：旧", "当前状态：新", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: base},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        current_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_readme_current_state_code_example_change_keeps_sync_propagation(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        with_fenced_example = baseline.replace(
+            "\n## 2. 点火操作法 / 如何使用",
+            "\n\n```text\n状态示例：离线验证\n```\n\n## 2. 点火操作法 / 如何使用",
+            1,
+        )
+        changed = with_fenced_example.replace("状态示例：离线验证", "状态示例：外部执行", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, _ = classify_content_sections(
+            rules,
+            base_documents={path: with_fenced_example},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_readme_method_section_change_keeps_operation_propagation(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        changed = baseline.replace("把这个仓库链接", "将这个仓库链接", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["OPERATIONS_METHOD"]})
+        method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
+        self.assertTrue(method_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertIn("human_knowledge_surfaces", result["affected_component_closure"])
+        self.assertIn("human_results_depend_on_readme", result["traversed_relations"])
+        self.assertEqual(result["full_regression_reasons"], [])
+
+    def test_collapsed_details_heading_does_not_truncate_method_section_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        marker = "\n\n## 2. 点火操作法 / 如何使用"
+        with_hidden_heading = baseline.replace(
+            marker,
+            marker
+            + '\n\n<details title="closed but open inside ">'
+            + "\n<summary>更多</summary>\n\n"
+            + "## 隐藏的伪标题\n\n</details>",
+            1,
+        )
+        self.assertNotEqual(with_hidden_heading, baseline)
+        changed = with_hidden_heading.replace("把这个仓库链接", "把新的仓库链接", 1)
+        self.assertNotEqual(changed, with_hidden_heading)
+
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: with_hidden_heading},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["OPERATIONS_METHOD"]})
+        method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
+        self.assertTrue(method_rule["changed"])
+
+    def test_raw_text_details_close_does_not_truncate_method_section_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        marker = "\n\n## 2. 点火操作法 / 如何使用"
+        with_hidden_heading = baseline.replace(
+            marker,
+            marker
+            + "\n\n<details>\n<summary>更多</summary>\n\n"
+            + "<script>\n</details>\n</script>\n\n"
+            + "## 隐藏的伪标题\n\n</details>",
+            1,
+        )
+        changed = with_hidden_heading.replace("把这个仓库链接", "把新的仓库链接", 1)
+
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: with_hidden_heading},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["OPERATIONS_METHOD"]})
+        method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
+        self.assertTrue(method_rule["changed"])
+
+    def test_non_ascii_open_attribute_wrapper_forces_visible_context_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        wrapped = '<details title="More"\u00a0open>\n\n' + baseline + "\n</details>\n"
+        changed = wrapped.replace("把这个仓库链接", "把新的仓库链接", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertIn("readme", overrides)
+        self.assertIn("OPERATIONS_METHOD", overrides["readme"])
+        method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
+        self.assertTrue(method_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_nbsp_only_line_wrapping_current_state_heading_forces_sync_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        changed = baseline.replace(
+            "### 现在做到哪里",
+            "<div>\n\u00a0\n### 现在做到哪里",
+            1,
+        )
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertIn("readme", overrides)
+        self.assertIn("RELEASE_OR_CURRENT_STATE_SYNC", overrides["readme"])
+        current_state_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertTrue(current_state_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_readme_method_code_example_change_keeps_operation_propagation(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        with_fenced_example = baseline.replace(
+            "\n## 3. 结果与火种",
+            "\n\n```sh\nagent --mode read-only\n```\n\n## 3. 结果与火种",
+            1,
+        )
+        changed = with_fenced_example.replace("--mode read-only", "--mode inspect", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, _ = classify_content_sections(
+            rules,
+            base_documents={path: with_fenced_example},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["OPERATIONS_METHOD"]})
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertIn("human_results_depend_on_readme", result["traversed_relations"])
+        self.assertEqual(result["full_regression_reasons"], [])
+
+    def test_missing_or_fenced_current_state_heading_fails_closed_to_sync_route(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        changed = baseline.replace(
+            "### 现在做到哪里",
+            "```markdown\n### 现在做到哪里\n```",
+            1,
+        )
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertEqual(overrides, {"readme": ["RELEASE_OR_CURRENT_STATE_SYNC"]})
+        current_rule = next(item for item in evidence if item["heading"] == "现在做到哪里")
+        self.assertIsNone(current_rule["head_section_sha256"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
+    def test_shared_owner_identity_source_keeps_full_current_state_and_governance_checks(self):
+        result = self.plan(["data/operations/human-front-door-identity-r1.json"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["current_state", "owner_human"])
+        self.assertIn("g_current_state_consumers", result["selected_target_ids"])
+        self.assertIn("g_human_front_door_consumers", result["selected_target_ids"])
+        self.assertTrue(any(
+            reason == {"kind": "component_requires_full_regression", "component_id": "current_state"}
+            for reason in result["full_regression_reasons"]
+        ))
+
+    def test_shared_permission_file_keeps_full_release_governance_checks(self):
+        result = self.plan([".github/CODEOWNERS"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["component_validation_router"])
+        self.assertEqual(result["selected_target_ids"], ["g_component_release_controls"])
+        self.assertTrue(any(
+            reason.get("kind") == "validation_authority_changed"
+            and reason.get("paths") == [".github/CODEOWNERS"]
+            for reason in result["full_regression_reasons"]
+        ))
+
     def test_foundation_only_change_requires_full_regression_and_actual_consumer_targets(self):
         result = self.plan(["data/foundation/README.md"])
         self.assertEqual(result["mode"], "FULL")
@@ -172,7 +501,8 @@ class ComponentValidationRoutingTest(unittest.TestCase):
             set(result["selected_target_ids"]),
             {
                 "g_component_release_controls",
-                "g_human_front_door_consumers",
+                "g_readme_front_door",
+                "o_readme_visibility",
                 "g_operating_method_consumers",
                 "g_repository_path_consumers",
                 "o_human_result_consumers",
@@ -277,6 +607,17 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                     and path in x["paths"]
                     for x in result["full_regression_reasons"]
                 ))
+
+    def test_shared_markdown_router_helper_is_mapped_to_full_regression(self):
+        path = "ignition/tools/markdown_document.py"
+        result = self.plan([path])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["component_validation_router"])
+        self.assertTrue(any(
+            reason.get("kind") == "validation_authority_changed"
+            and reason.get("paths") == ["tools/markdown_document.py"]
+            for reason in result["full_regression_reasons"]
+        ))
 
     def test_unknown_path_blocks_instead_of_running_zero_targets(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
