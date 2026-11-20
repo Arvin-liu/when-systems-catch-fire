@@ -1017,7 +1017,6 @@
         "lifecycle_current_state"
       ],
       "trigger_classifications": [
-        "INTERFACE_CHANGE",
         "RELEASE_OR_CURRENT_STATE_SYNC"
       ],
       "propagation_mode": "required_assessment",
@@ -1231,7 +1230,6 @@
         "operations_method"
       ],
       "trigger_classifications": [
-        "INTERFACE_CHANGE",
         "OPERATIONS_METHOD"
       ],
       "propagation_mode": "required_assessment",

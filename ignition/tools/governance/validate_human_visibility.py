@@ -12,7 +12,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT if (ROOT / ".github/README.md").is_file() else ROOT.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.markdown_document import markdown_headings, strip_fenced_code
+
 CONFIG = json.loads((ROOT / "data/governance/human-results/config.json").read_text(encoding="utf-8"))
+PROJECT_COMPONENTS = ROOT / "data/operations/project-components.json"
+REQUIRED_VISIBLE_H2_SECTIONS = ("如何使用", "结果与火种", "整体架构", "致谢")
 CORE = [
     "README.md",
     "HUMAN-READING.md",
@@ -91,6 +97,75 @@ def local_links(path: str) -> set[str]:
     return links
 
 
+def markdown_heading_anchors(markdown: str) -> set[str]:
+    anchors: set[str] = set()
+    used: set[str] = set()
+    for heading in markdown_headings(markdown):
+        base = urllib.parse.unquote(str(heading["title"])).strip().lower()
+        base = re.sub(r"[^\w\- ]", "", base, flags=re.UNICODE)
+        base = re.sub(r"\s+", "-", base).strip("-")
+        candidate = base
+        suffix = 0
+        while candidate in used:
+            suffix += 1
+            candidate = f"{base}-{suffix}"
+        used.add(candidate)
+        anchors.add(candidate)
+    return anchors
+
+
+def markdown_anchor_exists(markdown: str, fragment: str) -> bool:
+    anchor = urllib.parse.unquote(fragment).strip().lower()
+    anchor = re.sub(r"[^\w\- ]", "", anchor, flags=re.UNICODE)
+    anchor = re.sub(r"\s+", "-", anchor).strip("-")
+    return bool(anchor) and anchor in markdown_heading_anchors(markdown)
+
+
+def validate_visible_readme_sections(readme: str) -> None:
+    headings = markdown_headings(readme)
+    visible_h2 = [str(item["title"]) for item in headings if item["level"] == 2]
+    missing = [
+        section for section in REQUIRED_VISIBLE_H2_SECTIONS
+        if not any(section in heading for heading in visible_h2)
+    ]
+    if missing:
+        raise AssertionError("README lacks visible section(s): " + ", ".join(missing))
+
+    first_h2 = next((item for item in headings if item["level"] == 2), None)
+    if first_h2 is None:
+        raise AssertionError("README lacks a visible project identity section")
+    next_h2_line = next(
+        (int(item["line"]) for item in headings if item["level"] == 2 and int(item["line"]) > int(first_h2["line"])),
+        len(strip_fenced_code(readme).splitlines()),
+    )
+    visible_h3 = [
+        str(item["title"])
+        for item in headings
+        if item["level"] == 3 and int(first_h2["line"]) < int(item["line"]) < next_h2_line
+    ]
+    required_h3 = ["点火是什么", "价值方向", "现在做到哪里"]
+    if visible_h3 != required_h3:
+        raise AssertionError("README project identity section must visibly contain 点火是什么、价值方向、现在做到哪里 in order")
+
+
+def project_component_anchor_errors() -> list[str]:
+    registry = json.loads(PROJECT_COMPONENTS.read_text(encoding="utf-8"))
+    errors: list[str] = []
+    for component in registry["components"]:
+        target = component.get("canonical_target", "")
+        path, separator, fragment = target.partition("#")
+        if not separator:
+            continue
+        source = file_for(path)
+        if not source.is_file():
+            errors.append(f"mapped anchor source is missing: {component['component_id']} -> {target}")
+            continue
+        markdown = source.read_text(encoding="utf-8")
+        if not markdown_anchor_exists(markdown, fragment):
+            errors.append(f"mapped anchor does not exist: {component['component_id']} -> {target}")
+    return errors
+
+
 def validate() -> dict:
     errors: list[str] = []
     for path in CORE:
@@ -110,7 +185,7 @@ def validate() -> dict:
                     sys.path.insert(0, tools_path)
                 from validate_human_front_door import validate_readme_structure
             try:
-                validate_readme_structure(text)
+                validate_readme_structure(strip_fenced_code(text))
             except AssertionError as exc:
                 errors.append(f"README front-door structure invalid: {exc}")
         elif "<details" in text.lower():
@@ -176,9 +251,11 @@ def validate() -> dict:
         errors.append("human result census and ledger disagree")
 
     readme = file_for("README.md").read_text(encoding="utf-8")
-    for heading in ("项目与价值", "如何使用", "结果与火种", "整体架构", "致谢"):
-        if not any(line.startswith("## ") and heading in line for line in readme.splitlines()):
-            errors.append(f"README lacks visible section: {heading}")
+    try:
+        validate_visible_readme_sections(readme)
+    except AssertionError as exc:
+        errors.append(str(exc))
+    errors.extend(project_component_anchor_errors())
     current_state = file_for("docs/project-current-state.md").read_text(encoding="utf-8")
     if "任务 101" not in current_state or "任务 102" not in current_state:
         errors.append("project current state does not preserve task 101 and task 102 state")

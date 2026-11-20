@@ -37,15 +37,15 @@
       "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     },
     {
-      "authority_source": ".github/README.md",
+      "authority_source": "data/operations/human-front-door-identity-r1.json",
       "component_ids": [
-        "owner_human",
-        "readme"
+        "current_state",
+        "owner_human"
       ],
       "path_patterns": [
-        ".github/README.md"
+        "data/operations/human-front-door-identity-r1.json"
       ],
-      "reason": "Owner/Human authority and the existing README front door share one homepage; the overlap is explicit and does not create a second publication surface."
+      "reason": "The Owner/Human front-door identity contract is also a current-state authority input; changes to this shared identity source retain both current-state and Owner-facing validation."
     },
     {
       "authority_source": "OPERATING-METHOD.md",
@@ -1714,14 +1714,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": ".github/README.md#1. 项目与价值",
+      "canonical_target": ".github/README.md#点火是什么",
       "component_id": "owner_human",
       "component_type": "front_door",
       "description": "Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。",
       "label": "Owner / Human",
       "layer_or_overlay": "governance",
       "lifecycle": {
-        "source": ".github/README.md",
+        "source": "data/operations/human-front-door-identity-r1.json",
         "status": "current",
         "version": "R0"
       },
@@ -1730,7 +1730,7 @@
         "visible": true
       },
       "path_patterns": [
-        ".github/README.md"
+        "data/operations/human-front-door-identity-r1.json"
       ]
     },
     {
@@ -2631,6 +2631,7 @@
         "schemas/operations/component-release-policy-r1.schema.json",
         "schemas/operations/component-release-manifest-r1.schema.json",
         "tools/operations/route_component_validation.py",
+        "tools/markdown_document.py",
         "tools/operations/run_component_validation_targets.py",
         "tools/operations/verify_component_validation_evidence.py",
         "tools/operations/write_final_main_witness.py",
