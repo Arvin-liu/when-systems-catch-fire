@@ -244,6 +244,26 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
         self.assertTrue(method_rule["changed"])
 
+    def test_non_ascii_open_attribute_wrapper_forces_visible_context_routing(self):
+        path = ".github/README.md"
+        baseline = (ROOT.parent / path).read_text(encoding="utf-8")
+        wrapped = '<details title="More"\u00a0open>\n\n' + baseline + "\n</details>\n"
+        changed = wrapped.replace("把这个仓库链接", "把新的仓库链接", 1)
+        readme = next(x for x in self.validation_map["components"] if x["component_id"] == "readme")
+        rules = [{**rule, "component_id": "readme"} for rule in readme["content_classification_rules"]]
+        overrides, evidence = classify_content_sections(
+            rules,
+            base_documents={path: baseline},
+            head_documents={path: changed},
+        )
+        self.assertIn("readme", overrides)
+        self.assertIn("OPERATIONS_METHOD", overrides["readme"])
+        method_rule = next(item for item in evidence if item["heading"] == "2. 点火操作法 / 如何使用")
+        self.assertTrue(method_rule["changed"])
+        result = self.plan([path], content_classification_overrides=overrides, verify_target_files=True)
+        self.assertEqual(result["mode"], "FULL")
+        self.assertIn("map_readme_current", result["traversed_relations"])
+
     def test_readme_method_code_example_change_keeps_operation_propagation(self):
         path = ".github/README.md"
         baseline = (ROOT.parent / path).read_text(encoding="utf-8")

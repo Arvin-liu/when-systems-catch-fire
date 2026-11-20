@@ -7,16 +7,31 @@ import re
 
 FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
-DETAILS_OPEN_RE = re.compile(r"<details(?=[\s/>])", re.IGNORECASE)
-DETAILS_CLOSE_RE = re.compile(r"</details\s*>", re.IGNORECASE)
+HTML_ASCII_WHITESPACE = frozenset(" \t\n\f\r")
+HTML_ASCII_SPACE_CLASS = r"[ \t\n\f\r]"
+HTML_ASCII_TAG_BOUNDARY = HTML_ASCII_SPACE_CLASS + r"|/|>|$"
+HTML_ASCII_TAG_FLAGS = re.IGNORECASE | re.ASCII
+DETAILS_OPEN_RE = re.compile(
+    r"<details(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
+    HTML_ASCII_TAG_FLAGS,
+)
+DETAILS_CLOSE_RE = re.compile(
+    r"</details" + HTML_ASCII_SPACE_CLASS + r"*>",
+    HTML_ASCII_TAG_FLAGS,
+)
 HTML_RAW_TEXT_TAGS = frozenset(
     "iframe noembed noframes noscript plaintext script style textarea title xmp".split()
 )
 HTML_RAW_TEXT_OPEN_RE = re.compile(
-    r"<(" + "|".join(sorted(HTML_RAW_TEXT_TAGS, key=len, reverse=True)) + r")(?=[\s/>]|$)",
-    re.IGNORECASE,
+    r"<("
+    + "|".join(sorted(HTML_RAW_TEXT_TAGS, key=len, reverse=True))
+    + r")(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
+    HTML_ASCII_TAG_FLAGS,
 )
-HTML_TAG_TOKEN_RE = re.compile(r"</?[A-Za-z][A-Za-z0-9:-]*(?=[\s/>]|$)")
+HTML_TAG_TOKEN_RE = re.compile(
+    r"</?[A-Za-z][A-Za-z0-9:-]*(?=" + HTML_ASCII_TAG_BOUNDARY + r")",
+    HTML_ASCII_TAG_FLAGS,
+)
 HTML_BLOCK_TAGS = frozenset(
     "address article aside base basefont blockquote body caption center col colgroup dd details dialog dir div dl dt "
     "fieldset figcaption figure footer form frame frameset h1 h2 h3 h4 h5 h6 head header hr html iframe legend "
@@ -24,11 +39,16 @@ HTML_BLOCK_TAGS = frozenset(
     "tbody td tfoot th thead title tr track ul".split()
 )
 HTML_BLOCK_TAG_RE = re.compile(
-    r"^ {0,3}</?(" + "|".join(sorted(HTML_BLOCK_TAGS, key=len, reverse=True)) + r")(?:[ \t]|/?>|$)",
-    re.IGNORECASE,
+    r"^ {0,3}</?("
+    + "|".join(sorted(HTML_BLOCK_TAGS, key=len, reverse=True))
+    + r")(?:" + HTML_ASCII_SPACE_CLASS + r"|/?>|$)",
+    HTML_ASCII_TAG_FLAGS,
 )
 HTML_TAG_LINE_RE = re.compile(r"^ {0,3}</?([A-Za-z][A-Za-z0-9-]*)(?:[ \t]+[^<>]*)?/?>[ \t]*$")
-HTML_RAW_TAG_RE = re.compile(r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>|$)", re.IGNORECASE)
+HTML_RAW_TAG_RE = re.compile(
+    r"^ {0,3}<(script|pre|style)(?:[ \t]|/?>|$)",
+    HTML_ASCII_TAG_FLAGS,
+)
 LIST_ITEM_RE = re.compile(r"^( {0,3})([-+*]|\d{1,9}[.)])([ \t]+)(.*)$")
 TABLE_DELIMITER_CELL_RE = re.compile(r":?-{1,}:?")
 
@@ -37,6 +57,14 @@ def _blank_range(output: list[str], start: int, end: int) -> None:
     for index in range(start, end):
         if output[index] not in "\r\n":
             output[index] = " "
+
+
+def _is_html_ascii_whitespace(character: str) -> bool:
+    return character in HTML_ASCII_WHITESPACE
+
+
+def _ascii_case_equal(value: str, target: str) -> bool:
+    return value.isascii() and target.isascii() and value.lower() == target.lower()
 
 
 def _list_item_segment(
@@ -125,11 +153,11 @@ def _html_attribute_present(attributes: str, target: str) -> bool | None:
     index = 0
     found = False
     while index < len(attributes):
-        while index < len(attributes) and attributes[index].isspace():
+        while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
             index += 1
         if index < len(attributes) and attributes[index] == "/":
             index += 1
-            while index < len(attributes) and attributes[index].isspace():
+            while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
                 index += 1
             return found if index == len(attributes) else None
         if index == len(attributes):
@@ -138,20 +166,20 @@ def _html_attribute_present(attributes: str, target: str) -> bool | None:
         name_start = index
         while (
             index < len(attributes)
-            and not attributes[index].isspace()
+            and not _is_html_ascii_whitespace(attributes[index])
             and attributes[index] not in ("=", "/", "<", ">", '"', "'")
         ):
             index += 1
         if index == name_start:
             return None
-        if attributes[name_start:index].casefold() == target.casefold():
+        if _ascii_case_equal(attributes[name_start:index], target):
             found = True
 
-        while index < len(attributes) and attributes[index].isspace():
+        while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
             index += 1
         if index < len(attributes) and attributes[index] == "=":
             index += 1
-            while index < len(attributes) and attributes[index].isspace():
+            while index < len(attributes) and _is_html_ascii_whitespace(attributes[index]):
                 index += 1
             if index == len(attributes):
                 return None
@@ -165,7 +193,7 @@ def _html_attribute_present(attributes: str, target: str) -> bool | None:
                 index += 1
             else:
                 value_start = index
-                while index < len(attributes) and not attributes[index].isspace():
+                while index < len(attributes) and not _is_html_ascii_whitespace(attributes[index]):
                     if attributes[index] in ('"', "'", "`", "=", "<", ">"):
                         return None
                     index += 1
@@ -263,8 +291,10 @@ def strip_nonvisible_markup(markdown: str) -> str:
 
         # A malformed opening details tag has uncertain visibility. Hide the
         # remainder instead of allowing headings after it to satisfy a gate.
-        if source[index:index + 8].casefold() == "<details" and (
-            index + 8 == len(source) or source[index + 8].isspace() or source[index + 8] == ">"
+        if _ascii_case_equal(source[index:index + 8], "<details") and (
+            index + 8 == len(source)
+            or _is_html_ascii_whitespace(source[index + 8])
+            or source[index + 8] == ">"
         ):
             _blank_range(output, index, len(source))
             break
@@ -284,11 +314,11 @@ def strip_nonvisible_markup(markdown: str) -> str:
 
         raw_text = HTML_RAW_TEXT_OPEN_RE.match(source, index)
         if raw_text:
-            tag_name = raw_text.group(1).casefold()
+            tag_name = raw_text.group(1).lower()
             tag_end = _html_tag_end(source, raw_text.end())
             closing_pattern = re.compile(
-                r"</" + re.escape(tag_name) + r"\s*>",
-                re.IGNORECASE,
+                r"</" + re.escape(tag_name) + HTML_ASCII_SPACE_CLASS + r"*>",
+                HTML_ASCII_TAG_FLAGS,
             )
             if tag_name == "plaintext":
                 raw_end = len(source)
@@ -410,7 +440,11 @@ def strip_raw_html_blocks(markdown: str) -> str:
         return ""
 
     def type1_terminates(body: str) -> bool:
-        return bool(re.search(r"</(?:script|pre|style)\s*>", body, re.IGNORECASE))
+        return bool(re.search(
+            r"</(?:script|pre|style)" + HTML_ASCII_SPACE_CLASS + r"*>",
+            body,
+            HTML_ASCII_TAG_FLAGS,
+        ))
 
     def table_cells(body: str) -> list[str] | None:
         stripped = body.strip()
@@ -511,7 +545,7 @@ def strip_raw_html_blocks(markdown: str) -> str:
                 start_kind = "type6"
             else:
                 tag_line = HTML_TAG_LINE_RE.match(body)
-                if can_start_type7 and tag_line and tag_line.group(1).casefold() not in HTML_BLOCK_TAGS:
+                if can_start_type7 and tag_line and tag_line.group(1).lower() not in HTML_BLOCK_TAGS:
                     start_kind = "type7"
 
             if start_kind is not None:

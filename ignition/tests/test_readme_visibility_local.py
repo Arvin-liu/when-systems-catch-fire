@@ -77,6 +77,11 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, "结果与火种"):
                     validate_visible_readme_sections(hidden)
 
+    def test_entire_readme_inside_non_ascii_open_attribute_details_is_not_visible(self):
+        wrapped = '<details title="More"\u00a0open>\n\n' + self.readme + "\n</details>\n"
+        with self.assertRaisesRegex(AssertionError, "README lacks visible section"):
+            validate_visible_readme_sections(wrapped)
+
     def test_h3_inside_collapsed_details_does_not_satisfy_identity_section(self):
         hidden = self.readme.replace(
             "### 点火是什么",
@@ -204,6 +209,31 @@ class ReadmeVisibilityLocalTests(unittest.TestCase):
         )
         self.assertFalse(markdown_anchor_exists(collapsed, "Hidden Section"))
         self.assertTrue(markdown_anchor_exists(collapsed, "Visible Section"))
+
+    def test_non_ascii_space_does_not_create_an_open_attribute_or_close_details(self):
+        collapsed = (
+            '<details title="More"\u00a0open>\n<summary>More</summary>\n\n'
+            "## Hidden Section\n\n</detaıls>\n"
+            "## Still Hidden Section\n\n</details>\n\n"
+            "## Visible Section\n"
+        )
+        self.assertEqual(
+            [item["title"] for item in markdown_headings(collapsed)],
+            ["Visible Section"],
+        )
+        self.assertFalse(markdown_anchor_exists(collapsed, "Hidden Section"))
+        self.assertFalse(markdown_anchor_exists(collapsed, "Still Hidden Section"))
+        self.assertTrue(markdown_anchor_exists(collapsed, "Visible Section"))
+
+    def test_non_ascii_space_and_unicode_lookalike_do_not_close_raw_text(self):
+        for element, fake_close in (
+            ("script", "</script\u00a0>"),
+            ("script", "</scrıpt>"),
+            ("textarea", "</textarea\u00a0>"),
+        ):
+            with self.subTest(element=element, fake_close=fake_close):
+                markdown = f"<{element}>\n{fake_close}\n## Hidden Without An ASCII Close\n"
+                self.assertEqual(markdown_headings(markdown), [])
 
     def test_anchor_lookup_ignores_collapsed_details_and_html_comments(self):
         collapsed = "<details>\n## 仅折叠锚点\n</details>\n"

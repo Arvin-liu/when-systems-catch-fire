@@ -56,6 +56,15 @@ class ReadmeFrontDoorLocalTests(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
                     validate_readme_structure(strip_fenced_code(hidden))
 
+    def test_entire_readme_inside_non_ascii_open_attribute_details_is_not_visible(self):
+        wrapped = (
+            '<details title="More"\u00a0open>\n\n'
+            + self.readme()
+            + "\n</details>\n"
+        )
+        with self.assertRaisesRegex(AssertionError, "essential H2 sections must remain visible"):
+            validate_readme_structure(strip_fenced_code(wrapped))
+
     def test_entire_first_module_inside_html_comment_is_not_visible(self):
         readme = self.readme()
         headings = [item for item in markdown_headings(readme) if item["level"] == 2]
