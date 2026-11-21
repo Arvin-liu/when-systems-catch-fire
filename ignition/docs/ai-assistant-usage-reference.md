@@ -9,14 +9,23 @@
 普通任务使用这段短提示词；下面的长提示词只用于用户明确要求全项目介绍或全景分析。
 
 ```text
-请先读取 ignition/AI-START-HERE.md，按当前任务意图查询
-ignition/data/operations/ignition-operation-capability-registry-r1.json，
-只读取命中 operation 声明的 required_current_reads、validators、权限和 claim ceiling。
+请先读取 ignition/AI-START-HERE.md 与
+ignition/data/operations/ignition-operation-capability-registry-r1.json。
+Registry 没有正式 task_intents、aliases 或关键词索引；请按 operation 的
+public_name、description、accepted_input_types 做有界语义候选匹配。多个候选时报告
+UNRESOLVED；没有适用候选或输入类型不受支持时报告 UNSUPPORTED，并停止推断。
+对唯一适用候选核验 current_status、default_execution_mode、
+repository_mutation_permission、external_action_permission、
+explicit_owner_authorization_required、accepted_input_types、output_types、
+authoritative_sources、required_current_reads、validation_checks、known_limits
+与 claim_ceiling，然后只读取声明的最小权威文件。
 如需定位构件，再按 component_id 查询
 ignition/data/operations/project-components.json 与
-ignition/data/operations/component-validation-map-r1.json；未声明的域保持 UNRESOLVED，
-不得从路径、层级、系统图分组或测试目标推断。只按需读取命中的权威文件，
-引用实际路径和证据；若没有适用 operation 或映射不足，明确报告缺口，不要猜测。
+ignition/data/operations/component-validation-map-r1.json。domains 和 evidence
+仅表示映射明确声明的域关联；该验证映射不是完整的主责/所有权矩阵。
+validation_targets 是验证消费者/测试目标，不能单独证明域归属或所有权。
+未映射的域保持 UNRESOLVED；多域集合原样保留，不推定主责、责任方或审批方。
+不得从路径、层级、系统图分组或测试目标推断；引用实际来源，遇到歧义或证据不足时停止。
 ```
 
 可任选一款你日常使用的 AI 助手：

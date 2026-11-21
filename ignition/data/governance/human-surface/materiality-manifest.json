@@ -476,7 +476,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-START-HERE.md",
-      "source_sha256": "81352cfd8f7742c65874630f04c40d9aedc9fc274f6e0ff6755c64d07c1853b7",
+      "source_sha256": "01a5e8f4fbf68a98758755debab431302817509fc4ad6229143f4f3c0157929f",
       "writing_method": "之元写作法 0.5.0"
     },
     {
