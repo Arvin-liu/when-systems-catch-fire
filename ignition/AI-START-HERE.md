@@ -48,7 +48,7 @@ Owner 明示授权与 admission，不得因仓库存在相关实现或历史回�
 2. 只有候选唯一且输入适用时，才按现有字段核验 `current_status`、`default_execution_mode`、`repository_mutation_permission`、`external_action_permission`、`explicit_owner_authorization_required`、`accepted_input_types`、`output_types`、`authoritative_sources`、`required_current_reads`、`validation_checks`、`known_limits` 与 `claim_ceiling`；只读取所声明的最小权威文件，并遵守状态、权限和输入/输出边界。
 3. 需要定位系统域或构件时，在 `data/operations/project-components.json` 按稳定 `component_id` 查身份、`canonical_target` 与 `path_patterns`；再按同一 ID 查 `data/operations/component-validation-map-r1.json`。映射行显式声明的 `domains` 与 `evidence` 仅支持该行所声明的域关联；这是验证映射，不是完整的主责/所有权矩阵。`validation_targets` 是验证消费者/测试目标，不能单独证明域归属或所有权。没有映射的 ID 标记为 `UNRESOLVED`；多域集合原样保留，不推定主责域、责任方或审批方。不得从目录、扩展名、`layer_or_overlay`、系统图分组或测试目标猜域。
 4. 未命中唯一适用 operation 或域归属未解析时，说明缺口并停止推断。不要把组件身份目录当作能力、权限、事实或审批来源。topology 描述仓库变更的传播关系，不是用户意图路由器；只有已有具体变更集时才用它核定影响闭包。系统图是 registry/topology 的投影，不取代其权威数据。
-例如，“提出一个新研究问题”先查 `research.coordinate_obligations` 并只读该 operation 的 `required_current_reads`；“核对一条主张的证据链接”查 `knowledge.validate_evidence_link`，随后核对其声明的来源与限制。若用户要求修改仓库，再进入下文的 `REPOSITORY_CHANGE_RUN` 与 Iteration 子协议。
+例如，一般研究先按实际输入类型与各 operation 的 `public_name`、`description`、`accepted_input_types` 有界匹配，不预选 research operation；仅当输入类型实际属于 `research_obligation`、`evidence_request` 或 `negative_result` 时，才考虑 `research.coordinate_obligations`。笔记、文章、案例、论证、来源材料或结构化碰撞运行，则核对 `knowledge.collide_object` 的输入适用性。仅在候选唯一且 Current 状态、权限与 `claim_ceiling` 核验通过后，才读取对应 `required_current_reads`；“核对一条主张的证据链接”可按输入匹配后查 `knowledge.validate_evidence_link` 及其来源与限制。若用户要求修改仓库，再进入下文的 `REPOSITORY_CHANGE_RUN` 与 Iteration 子协议。
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
