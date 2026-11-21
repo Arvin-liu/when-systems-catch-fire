@@ -4,6 +4,21 @@
 
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
+## 单项任务的最小冷启动提示词
+
+普通任务使用这段短提示词；下面的长提示词只用于用户明确要求全项目介绍或全景分析。
+
+```text
+请先读取 ignition/AI-START-HERE.md，按当前任务意图查询
+ignition/data/operations/ignition-operation-capability-registry-r1.json，
+只读取命中 operation 声明的 required_current_reads、validators、权限和 claim ceiling。
+如需定位构件，再按 component_id 查询
+ignition/data/operations/project-components.json 与
+ignition/data/operations/component-validation-map-r1.json；未声明的域保持 UNRESOLVED，
+不得从路径、层级、系统图分组或测试目标推断。只按需读取命中的权威文件，
+引用实际路径和证据；若没有适用 operation 或映射不足，明确报告缺口，不要猜测。
+```
+
 可任选一款你日常使用的 AI 助手：
 
 - [ChatGPT](https://chatgpt.com/)
@@ -27,7 +42,7 @@
 
 Agent 应先读取 Operating Method 与 machine-readable Capability Registry。仓库链接是方法来源，附件是 `INPUT_OBJECT`；默认 `READ_ONLY_RUN`。只有当前请求明确要求修改点火自身时才进入 `REPOSITORY_CHANGE_RUN` 并调用 Iteration Method；外部动作还必须满足明示授权与 Current admission。
 
-## 可直接复制的提示词
+## 全景项目分析提示词（仅在需要整体介绍时使用）
 
 ```text
 请阅读并分析点火项目：
