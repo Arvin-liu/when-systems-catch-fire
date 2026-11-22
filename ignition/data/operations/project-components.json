@@ -827,7 +827,9 @@
       "path_patterns": [
         "docs/publication/",
         "reports/publication/",
-        "data/publication/fire-seeds/"
+        "data/publication/fire-seeds/",
+        "PUBLICATIONS/README.md",
+        "PUBLICATIONS/pointfire-manuscript/"
       ]
     },
     {
