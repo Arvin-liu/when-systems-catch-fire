@@ -1806,9 +1806,7 @@
       "path_patterns": [
         "agent_runtime/",
         "data/agent-runtime/pilots/r1-real-local/",
-        "data/operations/capability-execution-boundary-map-r1.json",
         "docs/architecture/agent-runtime-r1.md",
-        "tools/operations/build_capability_execution_boundary_map.py",
         "tools/validate_agent_runtime_boundary.py",
         "tests/test_agent_runtime_r0.py",
         "tests/test_agent_runtime_r1.py"
@@ -1901,7 +1899,9 @@
       },
       "path_patterns": [
         "agent_kernel/domain_pack.py",
-        "schemas/agent-runtime/domain-pack-manifest.schema.json"
+        "data/operations/capability-execution-boundary-map-r1.json",
+        "schemas/agent-runtime/domain-pack-manifest.schema.json",
+        "tools/operations/build_capability_execution_boundary_map.py"
       ]
     },
     {

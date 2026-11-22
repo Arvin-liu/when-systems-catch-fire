@@ -8,7 +8,7 @@
     },
     "component_registry": {
       "path": "ignition/data/operations/project-components.json",
-      "blob_sha1": "3f037b2e156c98730960879ced57a67db6c9efda"
+      "blob_sha1": "25f1366a4c83ffd352e8a2ead19e775a45391ec5"
     },
     "optional_candidate_catalog": {
       "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
@@ -25,7 +25,7 @@
       },
       {
         "path": "ignition/agent_runtime/README.md",
-        "blob_sha1": "3433e19ae140f43d511f166f39fc4e65f1443c39"
+        "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
       },
       {
         "path": "ignition/tests/test_pack_registry.py",
@@ -976,7 +976,7 @@
         },
         {
           "path": "ignition/agent_runtime/README.md",
-          "blob_sha1": "3433e19ae140f43d511f166f39fc4e65f1443c39"
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
         },
         {
           "path": "ignition/tests/test_pack_registry.py",
@@ -1056,7 +1056,7 @@
         },
         {
           "path": "ignition/agent_runtime/README.md",
-          "blob_sha1": "3433e19ae140f43d511f166f39fc4e65f1443c39"
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
         },
         {
           "path": "ignition/tests/test_pack_registry.py",
@@ -1128,7 +1128,7 @@
         },
         {
           "path": "ignition/agent_runtime/README.md",
-          "blob_sha1": "3433e19ae140f43d511f166f39fc4e65f1443c39"
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
         },
         {
           "path": "ignition/tests/test_pack_registry.py",
@@ -1200,7 +1200,7 @@
         },
         {
           "path": "ignition/agent_runtime/README.md",
-          "blob_sha1": "3433e19ae140f43d511f166f39fc4e65f1443c39"
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
         },
         {
           "path": "ignition/tests/test_pack_registry.py",

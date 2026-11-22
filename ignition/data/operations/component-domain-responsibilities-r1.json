@@ -20,7 +20,7 @@
   "sources": {
     "component_registry": {
       "path": "ignition/data/operations/project-components.json",
-      "blob_sha1": "3f037b2e156c98730960879ced57a67db6c9efda"
+      "blob_sha1": "25f1366a4c83ffd352e8a2ead19e775a45391ec5"
     },
     "validation_map": {
       "path": "ignition/data/operations/component-validation-map-r1.json",
