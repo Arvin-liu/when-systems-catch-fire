@@ -827,7 +827,11 @@
       "path_patterns": [
         "docs/publication/",
         "reports/publication/",
-        "data/publication/fire-seeds/"
+        "data/publication/fire-seeds/",
+        "PUBLICATIONS/README.md",
+        "PUBLICATIONS/pointfire-manuscript/README.md",
+        "PUBLICATIONS/pointfire-manuscript/00-research-route.md",
+        "PUBLICATIONS/pointfire-manuscript/01-foundation-ontology-r0.1.md"
       ]
     },
     {
