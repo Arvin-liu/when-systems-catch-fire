@@ -145,6 +145,9 @@
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/PUBLICATIONS/hundred-iteration-achievement-ledger.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/PUBLICATIONS/notes/001-pointfire-research-notes.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/PUBLICATIONS/notes/index.jsonl"}
+{"category":"REFERENCE_OR_KNOWLEDGE","matched_rule":"REFERENCE_OR_KNOWLEDGE","path":"ignition/PUBLICATIONS/pointfire-manuscript/00-research-route.md"}
+{"category":"REFERENCE_OR_KNOWLEDGE","matched_rule":"REFERENCE_OR_KNOWLEDGE","path":"ignition/PUBLICATIONS/pointfire-manuscript/01-foundation-ontology-r0.1.md"}
+{"category":"REFERENCE_OR_KNOWLEDGE","matched_rule":"REFERENCE_OR_KNOWLEDGE","path":"ignition/PUBLICATIONS/pointfire-manuscript/README.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/PUBLICATIONS/pointfire-results-book/01-起源与思想谱系.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/PUBLICATIONS/pointfire-results-book/02-思想核心-长读.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/PUBLICATIONS/pointfire-results-book/03-函数族深读.md"}
