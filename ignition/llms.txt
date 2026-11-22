@@ -73,6 +73,9 @@ Key paths:
 - data/governance/knowledge-experience/manifest.json : deterministic machine/human pairing, input/output hashes and coverage counts for the knowledge experience
 - OPERATING-METHOD.md : canonical use-layer entry for ordinary user tasks, run-mode classification, Current capability gating, minimal reads and unified result semantics
 - data/operations/ignition-operation-capability-registry-r1.json : canonical machine registry for operation status, input/output, authority, permission, limits and validators
+- data/operations/task-intent-index-r1.json : bounded Chinese/English discovery aliases over caller-verified input types; candidate routing only, no invocation or authorization
+- data/operations/component-domain-responsibilities-r1.json : evidence-backed R/O/G responsibility dispositions; validation-map associations and consumers remain separate, unresolved assignments stay explicit
+- data/operations/capability-execution-boundary-map-r1.json : registered operations, Pack proposal routing, generic Runtime evidence, and default-off experimental entries with implementation/execution limits
 - data/operations/ignition-operation-playbooks-r1.json : registry-derived callable playbooks; it grants no capability or permission
 - data/operations/ignition-run-output-contract-r1.json : unified machine-audit and concise human result contract
 - docs/project-current-state.md : versioned current-state description, not fixed positioning

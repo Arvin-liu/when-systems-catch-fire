@@ -568,6 +568,7 @@
         "data/operations/ignition-operation-capability-registry-r1.json",
         "data/operations/ignition-operation-playbooks-r1.json",
         "data/operations/ignition-run-output-contract-r1.json",
+        "data/operations/task-intent-index-r1.json",
         "schemas/operations/ignition-interface-sync-r1.schema.json",
         "schemas/operations/ignition-object-collision-run-r1.schema.json",
         "schemas/operations/ignition-operation-capability-registry-r1.schema.json",
@@ -578,6 +579,7 @@
         "tools/operations/evaluate_object_collision_run.py",
         "tools/operations/plan_ignition_operation_run.py",
         "tools/operations/run_ignition_stranger_agent_regression.py",
+        "tools/operations/task_intent_router.py",
         "tools/operations/validate_ignition_interface_sync.py",
         "tools/operations/validate_ignition_operation_playbooks.py",
         "tools/operations/validate_ignition_run_output.py",
@@ -1035,7 +1037,11 @@
       },
       "path_patterns": [
         "data/operations/project-components.json",
-        "schemas/operations/project-components.schema.json"
+        "data/operations/component-domain-responsibilities-r1.json",
+        "docs/architecture/discovery-domain-boundaries-r1.md",
+        "schemas/operations/project-components.schema.json",
+        "tests/test_discovery_domain_repair.py",
+        "tools/operations/validate_discovery_domain_assets.py"
       ]
     },
     {
@@ -1893,7 +1899,9 @@
       },
       "path_patterns": [
         "agent_kernel/domain_pack.py",
-        "schemas/agent-runtime/domain-pack-manifest.schema.json"
+        "data/operations/capability-execution-boundary-map-r1.json",
+        "schemas/agent-runtime/domain-pack-manifest.schema.json",
+        "tools/operations/build_capability_execution_boundary_map.py"
       ]
     },
     {
@@ -1937,6 +1945,7 @@
       },
       "path_patterns": [
         "docs/architecture/reos-vnext-light.md",
+        "packs/research/README.md",
         "reos_vnext/"
       ]
     },
@@ -1959,6 +1968,7 @@
       },
       "path_patterns": [
         "docs/publication/zhiyuan-writing-method.md",
+        "packs/writing/README.md",
         "templates/publication/zhiyuan-writing-spec.md"
       ]
     },

@@ -1,0 +1,2783 @@
+{
+  "schema_version": "capability-execution-boundary-map-r1",
+  "authority_boundary": "GENERATED_DISCOVERY_AND_BOUNDARY_PROJECTION; OPERATION_REGISTRY_AND_PACK_MANIFESTS_REMAIN_AUTHORITATIVE",
+  "sources": {
+    "operation_registry": {
+      "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    "component_registry": {
+      "path": "ignition/data/operations/project-components.json",
+      "blob_sha1": "25f1366a4c83ffd352e8a2ead19e775a45391ec5"
+    },
+    "optional_candidate_catalog": {
+      "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+    },
+    "runtime_evidence": [
+      {
+        "path": "ignition/agent_runtime/pack_registry.py",
+        "blob_sha1": "2444a206deac9dff7b5e79d0d5a27eb23cf8968a"
+      },
+      {
+        "path": "ignition/agent_runtime/routing.py",
+        "blob_sha1": "aa9c669b2e052843b6dbe196da09dfe28a491135"
+      },
+      {
+        "path": "ignition/agent_runtime/README.md",
+        "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+      },
+      {
+        "path": "ignition/tests/test_pack_registry.py",
+        "blob_sha1": "62f1b99430b0f21d333aa4f5f042c1270c7c438f"
+      },
+      {
+        "path": "ignition/tests/test_pack_aware_routing.py",
+        "blob_sha1": "ab6ced301f783aab8bb83e43399cc752c954ea91"
+      },
+      {
+        "path": "ignition/agent_kernel/contracts.py",
+        "blob_sha1": "d784b830419ea4e668a494f0c930d9221d95d95b"
+      },
+      {
+        "path": "ignition/agent_runtime/actions.py",
+        "blob_sha1": "6b9cfb202fb8cc3b165ba6e61f29c262b99ad058"
+      },
+      {
+        "path": "ignition/agent_runtime/executor_admission.py",
+        "blob_sha1": "207598e28ce5a4b5ab06f1c3081b56c3abf151bf"
+      },
+      {
+        "path": "ignition/agent_runtime/runtime.py",
+        "blob_sha1": "8db3cfab7cee6a9ae906a362307b7b518468a7a2"
+      }
+    ],
+    "supporting_entrypoint_evidence": [
+      {
+        "operation_ids": [
+          "foundation.resolve_current_asset"
+        ],
+        "path": "ignition/tools/foundation/resolve_current_canonical_asset.py",
+        "role": "RELATED_CURRENT_IDENTITY_RESOLVER_NOT_EXACT_OPERATION_REGISTRY_BINDING",
+        "execution_relation": "READ_ONLY_RESOLVER_SOURCE; THIS MAP DID NOT INVOKE IT",
+        "blob_sha1": "617b0b780154fd3c1072e835235da823183a465d"
+      },
+      {
+        "operation_ids": [
+          "knowledge.collide_object"
+        ],
+        "path": "ignition/tools/operations/evaluate_object_collision_run.py",
+        "role": "REGISTRY_DECLARED_VALIDATION_CHECK_AND_RESULT_RENDERER_NOT_ACTION_EXECUTOR",
+        "execution_relation": "CHECKS_AND_RENDERS_A_TYPED_RUN; THIS MAP DID NOT INVOKE IT",
+        "blob_sha1": "19be6be43c3a3024b5423ec2a7e3b98599856835"
+      },
+      {
+        "operation_ids": [
+          "*"
+        ],
+        "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+        "role": "REGISTERED_OPERATION_READ_PLAN_GENERATOR_NOT_INVOKER",
+        "execution_relation": "RETURNS_execution_authorized_FALSE; THIS MAP DID NOT INVOKE IT",
+        "blob_sha1": "e599a568777e2fba7a0d4acec49428c0ab8efbfe"
+      }
+    ]
+  },
+  "generic_runtime_boundary": {
+    "kernel_contract_ref": "ignition/agent_kernel/contracts.py",
+    "runtime_coordinator_ref": "ignition/agent_runtime/runtime.py",
+    "typed_local_action_executor_ref": "ignition/agent_runtime/actions.py",
+    "executor_admission_ref": "ignition/agent_runtime/executor_admission.py",
+    "observed_boundary": "GENERIC_TYPED_LOCAL_RUNTIME_WITH_CAPABILITY_SCOPE_AND_EXECUTOR_ADMISSION",
+    "operation_binding": "NO_EXACT_OPERATION_ID_TO_RUNTIME_ENTRYPOINT_BINDING_ESTABLISHED",
+    "execution_claim": "RUNTIME_SOURCE_EXISTS; THIS MAP PERFORMED NO ACTION AND DOES NOT BIND IT TO A REGISTERED DOMAIN OPERATION"
+  },
+  "boundary_vocabulary": {
+    "DISCOVERABLE": "An index or catalog can name the item; discovery does not authorize use.",
+    "REGISTERED": "An operation id is present in the operation registry; registration does not prove implementation or execution.",
+    "METADATA_LOADABLE": "Pack Registry validates/loads declarative metadata only; it does not import or execute hooks.",
+    "ROUTED_PROPOSAL": "Pack-aware routing emits a proposal; no domain action is performed by the router.",
+    "EXECUTABLE_UNDER_DECLARED_RUNTIME": "Use only when an exact implementation entrypoint, executor binding, and declared execution conditions are evidenced; no operation is assigned this state by this map.",
+    "EXPERIMENTAL_OPT_IN": "An optional catalog entry remains Experimental and default-off; use requires a separate explicit selection under its declared contract.",
+    "DEFERRED": "The registry contract is status-only, deferred, historical, or unsupported for execution routing.",
+    "UNRESOLVED": "An exact implementation/executor mapping is not established by the cited authority assets."
+  },
+  "operations": [
+    {
+      "operation_id": "executor.reference_conformance",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/0"
+      },
+      "contract_refs": {
+        "current_status": "/operations/0/current_status",
+        "ai_callability": "/operations/0/ai_callability",
+        "accepted_input_types": "/operations/0/accepted_input_types",
+        "default_execution_mode": "/operations/0/default_execution_mode",
+        "repository_mutation_permission": "/operations/0/repository_mutation_permission",
+        "external_action_permission": "/operations/0/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/0/explicit_owner_authorization_required",
+        "validation_checks": "/operations/0/validation_checks",
+        "claim_ceiling": "/operations/0/claim_ceiling"
+      },
+      "component_links": [],
+      "pack_ref": null,
+      "routing_state": "DEFERRED",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "DEFERRED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "external.live_invocation",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/1"
+      },
+      "contract_refs": {
+        "current_status": "/operations/1/current_status",
+        "ai_callability": "/operations/1/ai_callability",
+        "accepted_input_types": "/operations/1/accepted_input_types",
+        "default_execution_mode": "/operations/1/default_execution_mode",
+        "repository_mutation_permission": "/operations/1/repository_mutation_permission",
+        "external_action_permission": "/operations/1/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/1/explicit_owner_authorization_required",
+        "validation_checks": "/operations/1/validation_checks",
+        "claim_ceiling": "/operations/1/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "open_obligation_registry_r1",
+          "source_path": "ignition/data/operations/open-obligation-registry-r1.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": null,
+      "routing_state": "DEFERRED",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "DEFERRED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "foundation.resolve_current_asset",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/2"
+      },
+      "contract_refs": {
+        "current_status": "/operations/2/current_status",
+        "ai_callability": "/operations/2/ai_callability",
+        "accepted_input_types": "/operations/2/accepted_input_types",
+        "default_execution_mode": "/operations/2/default_execution_mode",
+        "repository_mutation_permission": "/operations/2/repository_mutation_permission",
+        "external_action_permission": "/operations/2/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/2/explicit_owner_authorization_required",
+        "validation_checks": "/operations/2/validation_checks",
+        "claim_ceiling": "/operations/2/claim_ceiling"
+      },
+      "component_links": [],
+      "pack_ref": null,
+      "routing_state": "DISCOVERABLE",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "ignition.recover_current_state",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/3"
+      },
+      "contract_refs": {
+        "current_status": "/operations/3/current_status",
+        "ai_callability": "/operations/3/ai_callability",
+        "accepted_input_types": "/operations/3/accepted_input_types",
+        "default_execution_mode": "/operations/3/default_execution_mode",
+        "repository_mutation_permission": "/operations/3/repository_mutation_permission",
+        "external_action_permission": "/operations/3/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/3/explicit_owner_authorization_required",
+        "validation_checks": "/operations/3/validation_checks",
+        "claim_ceiling": "/operations/3/claim_ceiling"
+      },
+      "component_links": [],
+      "pack_ref": null,
+      "routing_state": "DISCOVERABLE",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "knowledge.collide_object",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/4"
+      },
+      "contract_refs": {
+        "current_status": "/operations/4/current_status",
+        "ai_callability": "/operations/4/ai_callability",
+        "accepted_input_types": "/operations/4/accepted_input_types",
+        "default_execution_mode": "/operations/4/default_execution_mode",
+        "repository_mutation_permission": "/operations/4/repository_mutation_permission",
+        "external_action_permission": "/operations/4/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/4/explicit_owner_authorization_required",
+        "validation_checks": "/operations/4/validation_checks",
+        "claim_ceiling": "/operations/4/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "ignition_operating_method",
+          "source_path": "ignition/OPERATING-METHOD.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": null,
+      "routing_state": "DISCOVERABLE",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "knowledge.project_results",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/5"
+      },
+      "contract_refs": {
+        "current_status": "/operations/5/current_status",
+        "ai_callability": "/operations/5/ai_callability",
+        "accepted_input_types": "/operations/5/accepted_input_types",
+        "default_execution_mode": "/operations/5/default_execution_mode",
+        "repository_mutation_permission": "/operations/5/repository_mutation_permission",
+        "external_action_permission": "/operations/5/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/5/explicit_owner_authorization_required",
+        "validation_checks": "/operations/5/validation_checks",
+        "claim_ceiling": "/operations/5/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.project_results"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "knowledge.read_foundation",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/6"
+      },
+      "contract_refs": {
+        "current_status": "/operations/6/current_status",
+        "ai_callability": "/operations/6/ai_callability",
+        "accepted_input_types": "/operations/6/accepted_input_types",
+        "default_execution_mode": "/operations/6/default_execution_mode",
+        "repository_mutation_permission": "/operations/6/repository_mutation_permission",
+        "external_action_permission": "/operations/6/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/6/explicit_owner_authorization_required",
+        "validation_checks": "/operations/6/validation_checks",
+        "claim_ceiling": "/operations/6/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.read_foundation"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "knowledge.validate_claim",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/7"
+      },
+      "contract_refs": {
+        "current_status": "/operations/7/current_status",
+        "ai_callability": "/operations/7/ai_callability",
+        "accepted_input_types": "/operations/7/accepted_input_types",
+        "default_execution_mode": "/operations/7/default_execution_mode",
+        "repository_mutation_permission": "/operations/7/repository_mutation_permission",
+        "external_action_permission": "/operations/7/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/7/explicit_owner_authorization_required",
+        "validation_checks": "/operations/7/validation_checks",
+        "claim_ceiling": "/operations/7/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.validate_claim"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "knowledge.validate_evidence_link",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/8"
+      },
+      "contract_refs": {
+        "current_status": "/operations/8/current_status",
+        "ai_callability": "/operations/8/ai_callability",
+        "accepted_input_types": "/operations/8/accepted_input_types",
+        "default_execution_mode": "/operations/8/default_execution_mode",
+        "repository_mutation_permission": "/operations/8/repository_mutation_permission",
+        "external_action_permission": "/operations/8/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/8/explicit_owner_authorization_required",
+        "validation_checks": "/operations/8/validation_checks",
+        "claim_ceiling": "/operations/8/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.validate_evidence_link"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "language_thought.project_bounded_meaning",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/9"
+      },
+      "contract_refs": {
+        "current_status": "/operations/9/current_status",
+        "ai_callability": "/operations/9/ai_callability",
+        "accepted_input_types": "/operations/9/accepted_input_types",
+        "default_execution_mode": "/operations/9/default_execution_mode",
+        "repository_mutation_permission": "/operations/9/repository_mutation_permission",
+        "external_action_permission": "/operations/9/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/9/explicit_owner_authorization_required",
+        "validation_checks": "/operations/9/validation_checks",
+        "claim_ceiling": "/operations/9/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "language_thought_plane",
+          "source_path": "ignition/docs/architecture/language-thought-logic-plane.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": null,
+      "routing_state": "DISCOVERABLE",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "maintenance.inspect_repository",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/10"
+      },
+      "contract_refs": {
+        "current_status": "/operations/10/current_status",
+        "ai_callability": "/operations/10/ai_callability",
+        "accepted_input_types": "/operations/10/accepted_input_types",
+        "default_execution_mode": "/operations/10/default_execution_mode",
+        "repository_mutation_permission": "/operations/10/repository_mutation_permission",
+        "external_action_permission": "/operations/10/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/10/explicit_owner_authorization_required",
+        "validation_checks": "/operations/10/validation_checks",
+        "claim_ceiling": "/operations/10/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "maintenance_pack",
+          "source_path": "ignition/packs/maintenance/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        },
+        {
+          "component_id": "runtime_memory_loop",
+          "source_path": "ignition/agent_runtime/README.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "maintenance.repository",
+        "manifest_path": "ignition/packs/maintenance/manifest.json",
+        "manifest_capability_id": "maintenance.inspect_repository"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "maintenance.validate_checkpoint",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/11"
+      },
+      "contract_refs": {
+        "current_status": "/operations/11/current_status",
+        "ai_callability": "/operations/11/ai_callability",
+        "accepted_input_types": "/operations/11/accepted_input_types",
+        "default_execution_mode": "/operations/11/default_execution_mode",
+        "repository_mutation_permission": "/operations/11/repository_mutation_permission",
+        "external_action_permission": "/operations/11/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/11/explicit_owner_authorization_required",
+        "validation_checks": "/operations/11/validation_checks",
+        "claim_ceiling": "/operations/11/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "maintenance_pack",
+          "source_path": "ignition/packs/maintenance/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        },
+        {
+          "component_id": "runtime_memory_loop",
+          "source_path": "ignition/agent_runtime/README.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "maintenance.repository",
+        "manifest_path": "ignition/packs/maintenance/manifest.json",
+        "manifest_capability_id": "maintenance.validate_checkpoint"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "repository.apply_iteration_method",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/12"
+      },
+      "contract_refs": {
+        "current_status": "/operations/12/current_status",
+        "ai_callability": "/operations/12/ai_callability",
+        "accepted_input_types": "/operations/12/accepted_input_types",
+        "default_execution_mode": "/operations/12/default_execution_mode",
+        "repository_mutation_permission": "/operations/12/repository_mutation_permission",
+        "external_action_permission": "/operations/12/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/12/explicit_owner_authorization_required",
+        "validation_checks": "/operations/12/validation_checks",
+        "claim_ceiling": "/operations/12/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "iteration",
+          "source_path": "ignition/ITERATION.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": null,
+      "routing_state": "DISCOVERABLE",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "ITERATION.md is a documented governed procedure; the registry does not bind it to a machine executor entrypoint.",
+        "documented_procedure_refs": [
+          "ignition/ITERATION.md"
+        ]
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "repository.apply_iteration_method_1_3",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/13"
+      },
+      "contract_refs": {
+        "current_status": "/operations/13/current_status",
+        "ai_callability": "/operations/13/ai_callability",
+        "accepted_input_types": "/operations/13/accepted_input_types",
+        "default_execution_mode": "/operations/13/default_execution_mode",
+        "repository_mutation_permission": "/operations/13/repository_mutation_permission",
+        "external_action_permission": "/operations/13/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/13/explicit_owner_authorization_required",
+        "validation_checks": "/operations/13/validation_checks",
+        "claim_ceiling": "/operations/13/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "iteration",
+          "source_path": "ignition/ITERATION.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": null,
+      "routing_state": "DEFERRED",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "DEFERRED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "research.coordinate_obligations",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/14"
+      },
+      "contract_refs": {
+        "current_status": "/operations/14/current_status",
+        "ai_callability": "/operations/14/ai_callability",
+        "accepted_input_types": "/operations/14/accepted_input_types",
+        "default_execution_mode": "/operations/14/default_execution_mode",
+        "repository_mutation_permission": "/operations/14/repository_mutation_permission",
+        "external_action_permission": "/operations/14/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/14/explicit_owner_authorization_required",
+        "validation_checks": "/operations/14/validation_checks",
+        "claim_ceiling": "/operations/14/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "research_pack_reos_light",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "research.reos-light",
+        "manifest_path": "ignition/packs/research/manifest.json",
+        "manifest_capability_id": "research.coordinate_obligations"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "research.reos_full",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/15"
+      },
+      "contract_refs": {
+        "current_status": "/operations/15/current_status",
+        "ai_callability": "/operations/15/ai_callability",
+        "accepted_input_types": "/operations/15/accepted_input_types",
+        "default_execution_mode": "/operations/15/default_execution_mode",
+        "repository_mutation_permission": "/operations/15/repository_mutation_permission",
+        "external_action_permission": "/operations/15/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/15/explicit_owner_authorization_required",
+        "validation_checks": "/operations/15/validation_checks",
+        "claim_ceiling": "/operations/15/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "research_pack_reos_light",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": null,
+      "routing_state": "DEFERRED",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "DEFERRED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "research.validate_reos_light",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/16"
+      },
+      "contract_refs": {
+        "current_status": "/operations/16/current_status",
+        "ai_callability": "/operations/16/ai_callability",
+        "accepted_input_types": "/operations/16/accepted_input_types",
+        "default_execution_mode": "/operations/16/default_execution_mode",
+        "repository_mutation_permission": "/operations/16/repository_mutation_permission",
+        "external_action_permission": "/operations/16/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/16/explicit_owner_authorization_required",
+        "validation_checks": "/operations/16/validation_checks",
+        "claim_ceiling": "/operations/16/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "research_pack_reos_light",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "research.reos-light",
+        "manifest_path": "ignition/packs/research/manifest.json",
+        "manifest_capability_id": "research.validate_reos_light"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "visualization.render_derived_system_view",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/17"
+      },
+      "contract_refs": {
+        "current_status": "/operations/17/current_status",
+        "ai_callability": "/operations/17/ai_callability",
+        "accepted_input_types": "/operations/17/accepted_input_types",
+        "default_execution_mode": "/operations/17/default_execution_mode",
+        "repository_mutation_permission": "/operations/17/repository_mutation_permission",
+        "external_action_permission": "/operations/17/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/17/explicit_owner_authorization_required",
+        "validation_checks": "/operations/17/validation_checks",
+        "claim_ceiling": "/operations/17/claim_ceiling"
+      },
+      "component_links": [],
+      "pack_ref": null,
+      "routing_state": "DISCOVERABLE",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "writing.apply_editorial_method",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/18"
+      },
+      "contract_refs": {
+        "current_status": "/operations/18/current_status",
+        "ai_callability": "/operations/18/ai_callability",
+        "accepted_input_types": "/operations/18/accepted_input_types",
+        "default_execution_mode": "/operations/18/default_execution_mode",
+        "repository_mutation_permission": "/operations/18/repository_mutation_permission",
+        "external_action_permission": "/operations/18/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/18/explicit_owner_authorization_required",
+        "validation_checks": "/operations/18/validation_checks",
+        "claim_ceiling": "/operations/18/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "writing_pack",
+          "source_path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "writing.zhiyuan",
+        "manifest_path": "ignition/packs/writing/manifest.json",
+        "manifest_capability_id": "writing.apply_editorial_method"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "operation_id": "writing.validate_publication_surface",
+      "registry_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "json_pointer": "/operations/19"
+      },
+      "contract_refs": {
+        "current_status": "/operations/19/current_status",
+        "ai_callability": "/operations/19/ai_callability",
+        "accepted_input_types": "/operations/19/accepted_input_types",
+        "default_execution_mode": "/operations/19/default_execution_mode",
+        "repository_mutation_permission": "/operations/19/repository_mutation_permission",
+        "external_action_permission": "/operations/19/external_action_permission",
+        "explicit_owner_authorization_required": "/operations/19/explicit_owner_authorization_required",
+        "validation_checks": "/operations/19/validation_checks",
+        "claim_ceiling": "/operations/19/claim_ceiling"
+      },
+      "component_links": [
+        {
+          "component_id": "writing_pack",
+          "source_path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ],
+      "pack_ref": {
+        "pack_id": "writing.zhiyuan",
+        "manifest_path": "ignition/packs/writing/manifest.json",
+        "manifest_capability_id": "writing.validate_publication_surface"
+      },
+      "routing_state": "ROUTED_PROPOSAL",
+      "implementation": {
+        "state": "UNRESOLVED",
+        "entrypoints": [],
+        "executor_binding": null,
+        "reason": "The operation registry has no exact implementation-entrypoint and executor binding for this operation. authoritative_sources and validation_checks are references, not executable-entrypoint evidence."
+      },
+      "execution_state": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "REGISTERED",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "pack_id": "knowledge.r0",
+      "manifest_ref": {
+        "path": "ignition/packs/knowledge/manifest.json",
+        "blob_sha1": "947f8d72f27b5abefc16c44707c3e60c28dc2575"
+      },
+      "domain": "knowledge",
+      "capability_ids": [
+        "knowledge.read_foundation",
+        "knowledge.validate_claim",
+        "knowledge.validate_evidence_link",
+        "knowledge.project_results"
+      ],
+      "action_hooks": [
+        "knowledge.read_declared",
+        "knowledge.project_declared"
+      ],
+      "planning_hooks": [
+        "knowledge.plan_validation"
+      ],
+      "validator_entrypoints": [
+        "tools/validate_knowledge_corpus_admission.py",
+        "tools/governance/validate_knowledge_experience.py",
+        "tools/validate_epistemic_governance_relationships.py"
+      ],
+      "load_policy": "DECLARATIVE_METADATA_ONLY",
+      "load_state": "METADATA_LOADABLE",
+      "route_state": "ROUTED_PROPOSAL",
+      "runtime_evidence": [
+        {
+          "path": "ignition/agent_runtime/pack_registry.py",
+          "blob_sha1": "2444a206deac9dff7b5e79d0d5a27eb23cf8968a"
+        },
+        {
+          "path": "ignition/agent_runtime/routing.py",
+          "blob_sha1": "aa9c669b2e052843b6dbe196da09dfe28a491135"
+        },
+        {
+          "path": "ignition/agent_runtime/README.md",
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+        },
+        {
+          "path": "ignition/tests/test_pack_registry.py",
+          "blob_sha1": "62f1b99430b0f21d333aa4f5f042c1270c7c438f"
+        },
+        {
+          "path": "ignition/tests/test_pack_aware_routing.py",
+          "blob_sha1": "ab6ced301f783aab8bb83e43399cc752c954ea91"
+        },
+        {
+          "path": "ignition/agent_kernel/contracts.py",
+          "blob_sha1": "d784b830419ea4e668a494f0c930d9221d95d95b"
+        },
+        {
+          "path": "ignition/agent_runtime/actions.py",
+          "blob_sha1": "6b9cfb202fb8cc3b165ba6e61f29c262b99ad058"
+        },
+        {
+          "path": "ignition/agent_runtime/executor_admission.py",
+          "blob_sha1": "207598e28ce5a4b5ab06f1c3081b56c3abf151bf"
+        },
+        {
+          "path": "ignition/agent_runtime/runtime.py",
+          "blob_sha1": "8db3cfab7cee6a9ae906a362307b7b518468a7a2"
+        }
+      ],
+      "execution_claim": "NOT_PERFORMED_BY_PACK_AWARE_ROUTER",
+      "executor_requirement": "A separately bound and authorized executor is required; manifest hooks alone are declarations.",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "pack_id": "maintenance.repository",
+      "manifest_ref": {
+        "path": "ignition/packs/maintenance/manifest.json",
+        "blob_sha1": "e5a443456418cddaaa8d4ae2902a092b71b283d1"
+      },
+      "domain": "maintenance",
+      "capability_ids": [
+        "maintenance.inspect_repository",
+        "maintenance.validate_checkpoint"
+      ],
+      "action_hooks": [
+        "maintenance.inspect_declared",
+        "maintenance.validate_declared"
+      ],
+      "planning_hooks": [
+        "maintenance.plan_bounded_repository_check"
+      ],
+      "validator_entrypoints": [
+        "tools/validate_agent_runtime_boundary.py",
+        "tools/validate_state_changelog.py",
+        "tools/validate_knowledge_corpus_admission.py",
+        "tools/validate_pack_registry.py",
+        "tools/validate_operational_memory.py",
+        "tools/validate_supervisor.py",
+        "tools/validate_agent_profiles.py",
+        "tools/validate_reasoner_gateway.py",
+        "tools/validate_pack_aware_routing.py",
+        "tools/validate_r2_offline_repository_maintenance.py"
+      ],
+      "load_policy": "EXPLICIT_ACTIVATION",
+      "load_state": "METADATA_LOADABLE",
+      "route_state": "ROUTED_PROPOSAL",
+      "runtime_evidence": [
+        {
+          "path": "ignition/agent_runtime/pack_registry.py",
+          "blob_sha1": "2444a206deac9dff7b5e79d0d5a27eb23cf8968a"
+        },
+        {
+          "path": "ignition/agent_runtime/routing.py",
+          "blob_sha1": "aa9c669b2e052843b6dbe196da09dfe28a491135"
+        },
+        {
+          "path": "ignition/agent_runtime/README.md",
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+        },
+        {
+          "path": "ignition/tests/test_pack_registry.py",
+          "blob_sha1": "62f1b99430b0f21d333aa4f5f042c1270c7c438f"
+        },
+        {
+          "path": "ignition/tests/test_pack_aware_routing.py",
+          "blob_sha1": "ab6ced301f783aab8bb83e43399cc752c954ea91"
+        },
+        {
+          "path": "ignition/agent_kernel/contracts.py",
+          "blob_sha1": "d784b830419ea4e668a494f0c930d9221d95d95b"
+        },
+        {
+          "path": "ignition/agent_runtime/actions.py",
+          "blob_sha1": "6b9cfb202fb8cc3b165ba6e61f29c262b99ad058"
+        },
+        {
+          "path": "ignition/agent_runtime/executor_admission.py",
+          "blob_sha1": "207598e28ce5a4b5ab06f1c3081b56c3abf151bf"
+        },
+        {
+          "path": "ignition/agent_runtime/runtime.py",
+          "blob_sha1": "8db3cfab7cee6a9ae906a362307b7b518468a7a2"
+        }
+      ],
+      "execution_claim": "NOT_PERFORMED_BY_PACK_AWARE_ROUTER",
+      "executor_requirement": "A separately bound and authorized executor is required; manifest hooks alone are declarations.",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "pack_id": "research.reos-light",
+      "manifest_ref": {
+        "path": "ignition/packs/research/manifest.json",
+        "blob_sha1": "86ed54e73fb7cee087496372f37e073630c94967"
+      },
+      "domain": "research",
+      "capability_ids": [
+        "research.coordinate_obligations",
+        "research.validate_reos_light"
+      ],
+      "action_hooks": [
+        "research.record_obligation",
+        "research.record_negative_result"
+      ],
+      "planning_hooks": [
+        "research.plan_obligation_dag"
+      ],
+      "validator_entrypoints": [
+        "reos_vnext/validation.py",
+        "tests/test_reos_vnext_minimal_kernel.py"
+      ],
+      "load_policy": "DECLARATIVE_METADATA_ONLY",
+      "load_state": "METADATA_LOADABLE",
+      "route_state": "ROUTED_PROPOSAL",
+      "runtime_evidence": [
+        {
+          "path": "ignition/agent_runtime/pack_registry.py",
+          "blob_sha1": "2444a206deac9dff7b5e79d0d5a27eb23cf8968a"
+        },
+        {
+          "path": "ignition/agent_runtime/routing.py",
+          "blob_sha1": "aa9c669b2e052843b6dbe196da09dfe28a491135"
+        },
+        {
+          "path": "ignition/agent_runtime/README.md",
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+        },
+        {
+          "path": "ignition/tests/test_pack_registry.py",
+          "blob_sha1": "62f1b99430b0f21d333aa4f5f042c1270c7c438f"
+        },
+        {
+          "path": "ignition/tests/test_pack_aware_routing.py",
+          "blob_sha1": "ab6ced301f783aab8bb83e43399cc752c954ea91"
+        },
+        {
+          "path": "ignition/agent_kernel/contracts.py",
+          "blob_sha1": "d784b830419ea4e668a494f0c930d9221d95d95b"
+        },
+        {
+          "path": "ignition/agent_runtime/actions.py",
+          "blob_sha1": "6b9cfb202fb8cc3b165ba6e61f29c262b99ad058"
+        },
+        {
+          "path": "ignition/agent_runtime/executor_admission.py",
+          "blob_sha1": "207598e28ce5a4b5ab06f1c3081b56c3abf151bf"
+        },
+        {
+          "path": "ignition/agent_runtime/runtime.py",
+          "blob_sha1": "8db3cfab7cee6a9ae906a362307b7b518468a7a2"
+        }
+      ],
+      "execution_claim": "NOT_PERFORMED_BY_PACK_AWARE_ROUTER",
+      "executor_requirement": "A separately bound and authorized executor is required; manifest hooks alone are declarations.",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "pack_id": "writing.zhiyuan",
+      "manifest_ref": {
+        "path": "ignition/packs/writing/manifest.json",
+        "blob_sha1": "6f6b792a0b5e9e486e12e351c7e8b29cdb881b67"
+      },
+      "domain": "writing",
+      "capability_ids": [
+        "writing.apply_editorial_method",
+        "writing.validate_publication_surface"
+      ],
+      "action_hooks": [
+        "writing.render_declared_surface",
+        "writing.record_editorial_review"
+      ],
+      "planning_hooks": [
+        "writing.plan_source_bounded_revision"
+      ],
+      "validator_entrypoints": [
+        "tools/publication/validate_fire_seeds.py",
+        "tools/governance/validate_human_surface_contract.py"
+      ],
+      "load_policy": "DECLARATIVE_METADATA_ONLY",
+      "load_state": "METADATA_LOADABLE",
+      "route_state": "ROUTED_PROPOSAL",
+      "runtime_evidence": [
+        {
+          "path": "ignition/agent_runtime/pack_registry.py",
+          "blob_sha1": "2444a206deac9dff7b5e79d0d5a27eb23cf8968a"
+        },
+        {
+          "path": "ignition/agent_runtime/routing.py",
+          "blob_sha1": "aa9c669b2e052843b6dbe196da09dfe28a491135"
+        },
+        {
+          "path": "ignition/agent_runtime/README.md",
+          "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+        },
+        {
+          "path": "ignition/tests/test_pack_registry.py",
+          "blob_sha1": "62f1b99430b0f21d333aa4f5f042c1270c7c438f"
+        },
+        {
+          "path": "ignition/tests/test_pack_aware_routing.py",
+          "blob_sha1": "ab6ced301f783aab8bb83e43399cc752c954ea91"
+        },
+        {
+          "path": "ignition/agent_kernel/contracts.py",
+          "blob_sha1": "d784b830419ea4e668a494f0c930d9221d95d95b"
+        },
+        {
+          "path": "ignition/agent_runtime/actions.py",
+          "blob_sha1": "6b9cfb202fb8cc3b165ba6e61f29c262b99ad058"
+        },
+        {
+          "path": "ignition/agent_runtime/executor_admission.py",
+          "blob_sha1": "207598e28ce5a4b5ab06f1c3081b56c3abf151bf"
+        },
+        {
+          "path": "ignition/agent_runtime/runtime.py",
+          "blob_sha1": "8db3cfab7cee6a9ae906a362307b7b518468a7a2"
+        }
+      ],
+      "execution_claim": "NOT_PERFORMED_BY_PACK_AWARE_ROUTER",
+      "executor_requirement": "A separately bound and authorized executor is required; manifest hooks alone are declarations.",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "METADATA_LOADABLE",
+        "ROUTED_PROPOSAL",
+        "UNRESOLVED"
+      ]
+    }
+  ],
+  "optional_experimental_tools": [
+    {
+      "tool_id": "collaboration.build_portable_research_episode",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/0"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_build_portable_research_episode.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_build_portable_research_episode.py --stdin --workspace-root <path-under-ignition>",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "collaboration.preflight_handoff_action_binding",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/1"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_handoff_action_binding_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_handoff_action_binding_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "collaboration.preflight_receiver_handoff",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/2"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_receiver_handoff_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_receiver_handoff_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "collaboration.select_handoff_advisories",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/3"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_handoff_advisory_selector.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_handoff_advisory_selector.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "collaboration.validate_agent_episode_binding",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/4"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_agent_episode_binding.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_agent_episode_binding.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "collaboration.validate_portable_research_episode",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/5"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_portable_research_episode.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_portable_research_episode.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "collaboration.verify_handoff_artifact_files",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/6"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_verify_handoff_artifact_files.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_verify_handoff_artifact_files.py --stdin --workspace-root <path-under-ignition>",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "foundation.batch_resolve_current_asset_references",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/7"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_batch_resolve_current_assets.py --stdin (stdin JSON: {\"references\":[...]})",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "foundation.read_current_asset_card",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/8"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_read_current_asset_card.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_read_current_asset_card.py --stdin (stdin JSON: {\"canonical_id\":\"<exact Current ID>\"})",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "function_os.run_bounded_symbolic_spec",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/9"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_function_os_evaluator.py",
+      "entrypoint": "python3.11 -B ignition/tools/toolbox_function_os_evaluator.py --stdin (stdin JSON: {\"function_spec\":{...},\"inputs\":{...}})",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "governance.preflight_declared_permission_delta",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/10"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_declared_permission_delta_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_declared_permission_delta_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "ignition.adaptive_toolbox_route_planner",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/11"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "entrypoint": "python3 -B ignition/tools/operations/plan_ignition_operation_run.py --route-request",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "ignition.select_bounded_thinking_operation",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/12"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_bounded_thinking_operation.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_bounded_thinking_operation.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.assemble_context_packet",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/13"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_context_packet.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_context_packet.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.cluster_source_brief",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/14"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_cluster_source_brief.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C000",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.navigate_raw_evidence",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/15"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_raw_evidence_navigator.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.preflight_reusable_context",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/16"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_reusable_context_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_reusable_context_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.select_jsonl_records",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/17"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_jsonl_selector.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_jsonl_selector.py --workspace-root <repo-root> --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.validate_q38_i1_evidence_bundle",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/18"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_validate_q38_evidence_bundle.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_validate_q38_evidence_bundle.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.attribute_actions_validation_evidence",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/19"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_actions_validation_attribution.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_validation_attribution.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.audit_execution_state_lineage",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/20"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_execution_state_lineage.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_execution_state_lineage.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/21"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_repeated_step_analysis.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.compare_actions_validation_target_coverage",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/22"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_validation_target_coverage.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.compare_audit_findings",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/23"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_audit_finding_comparator.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_audit_finding_comparator.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.compare_context_packet_variants",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/24"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_context_packet_variant_comparator.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_context_packet_variant_comparator.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.compare_source_section_bytes",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/25"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_source_section_bytes.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_source_section_bytes.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.compare_toolbox_component_coverage",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/26"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_component_comparison.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_component_comparison.py --stdin < comparison.json",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.inspect_exact_head_check_observations",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/27"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_actions_check_observations.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_check_observations.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.plan_validation_invocation_deduplication",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/28"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_validation_invocation_deduplication.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_validation_invocation_deduplication.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.preflight_execution_effect_receipt",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/29"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_execution_effect_receipt.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_execution_effect_receipt.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.preflight_failure_anchored_recovery",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/30"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_failure_anchored_recovery.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_failure_anchored_recovery.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.preflight_governed_improvement_transition",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/31"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_governed_improvement_transition.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_governed_improvement_transition.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.preflight_producer_consumer_semantics",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/32"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_producer_consumer_semantic_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.summarize_actions_interval_union",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/33"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_actions_interval_union.py",
+      "entrypoint": "PYTHONPATH=ignition python3 -B ignition/tools/toolbox_actions_interval_union.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.summarize_actions_step_timeline",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/34"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_actions_step_timeline.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_step_timeline.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.summarize_component_path_residue",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/35"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_component_path_residue.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_component_path_residue.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/36"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_execution_pareto_frontier.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "planning.compare_task_decomposition_solvability",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/37"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_task_decomposition_solvability.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_task_decomposition_solvability.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "reasoning.search_structural_analogies",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/38"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_structural_analogy_search.py",
+      "entrypoint": "python3.10 -B ignition/tools/toolbox_structural_analogy_search.py --stdin < request.json",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.audit_pubmed_updates_from_doi",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/39"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_doi_update_audit.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.bind_offline_source_snapshot_run",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/40"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_bind_offline_source_snapshot_run.py",
+      "entrypoint": "python3 ignition/tools/toolbox_bind_offline_source_snapshot_run.py --source-snapshots MANIFEST --expected-digests LOCK --print-source-set-digest (or supply the expected digest, caller inputs, and an external output directory for a run)",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_crossref_reference_metadata",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/41"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_crossref_reference_metadata.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_evidence_update_snapshots",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/42"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_evidence_update_snapshots.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_evidence_update_snapshots.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_noaa_ch4_source_surfaces",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/43"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_noaa_ch4_surfaces.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_noaa_ch4_surfaces.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_noaa_co2_source_surfaces",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/44"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_noaa_co2_surfaces.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_noaa_n2o_source_surfaces",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/45"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_noaa_n2o_surfaces.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_noaa_n2o_surfaces.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_noaa_sf6_source_surfaces",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/46"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_noaa_sf6_surfaces.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_noaa_sf6_surfaces.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.compare_publication_metadata_snapshots",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/47"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_compare_publication_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_publication_metadata.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.inspect_pubmed_update_links",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/48"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_update_link_reader.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_arxiv_paper_metadata",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/49"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_arxiv_metadata_lookup.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_datacite_doi_metadata",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/50"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_datacite_doi_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_datacite_doi_metadata.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/51"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_ch4_annual_growth.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/52"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_co2_annual_growth.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/53"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_noaa_n2o_annual_growth_lookup.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_n2o_annual_growth_lookup.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/54"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/55"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_openalex_work_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_openalex_work_metadata.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.match_crossref_citation",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/56"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_crossref_citation_matcher.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_citation_matcher.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.match_pubmed_citation",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/57"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pubmed_citation_matcher.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_citation_matcher.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.merge_selected_index_search_results",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/58"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_merge_selected_index_search_results.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_merge_selected_index_search_results.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/59"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.preflight_g1_goal_intake",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/60"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_g1_goal_intake_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.preflight_grounded_ideation",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/61"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_grounded_ideation_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_grounded_ideation_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.probe_counterfactual_fragility",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/62"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_counterfactual_probe.py",
+      "entrypoint": "python3.12 -B ignition/tools/toolbox_counterfactual_probe.py --stdin < request.json",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/63"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_europe_pmc_fulltext_locator.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_europe_pmc_fulltext_locator.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.resolve_pubmed_identifiers",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/64"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_identifier_resolver.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.search_arxiv_query",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/65"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_arxiv_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_arxiv_query_search.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.search_crossref_query",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/66"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_crossref_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_query_search.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.search_europe_pmc_query",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/67"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_europe_pmc_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_europe_pmc_query_search.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.search_openalex_query",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/68"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_openalex_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_openalex_query_search.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.search_pubmed_query",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/69"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pubmed_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_query_search.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/70"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_validate_evidence_program.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_validate_evidence_program.py --check",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/71"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "research.verify_offline_source_snapshot_run",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/72"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_verify_offline_source_snapshot_run.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_verify_offline_source_snapshot_run.py --run-dir /canonical/absolute/path/to/e37-run",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "runtime.inspect_declared_pack_catalog",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/73"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_pack_registry_inspector.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pack_registry_inspector.py list | show <pack_id>",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "visualization.build_archify_derived_ir",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/74"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_build_archify_derived_ir.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_build_archify_derived_ir.py --stdin (stdin JSON: {\"formal_revision\":\"<40 lowercase hex SHA>\"})",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "writing.preflight_cognitive_migration_revision",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/75"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_cognitive_migration_revision.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_cognitive_migration_revision.py --stdin < request.json",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    },
+    {
+      "tool_id": "knowledge.preflight_executed_experience_reuse",
+      "catalog_ref": {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "json_pointer": "/candidates/76"
+      },
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "source_path": "ignition/tools/toolbox_executed_experience_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_executed_experience_preflight.py --stdin",
+      "execution_mode": "READ_ONLY_RUN",
+      "router_selectable_by_default": false,
+      "boundary_state": "EXPERIMENTAL_OPT_IN",
+      "implementation_evidence": "CANDIDATE_CATALOG_SOURCE_AND_ENTRYPOINT_DECLARATION_ONLY",
+      "execution_claim": "NOT_PERFORMED_BY_THIS_DISCOVERY_MAP",
+      "boundary_states": [
+        "DISCOVERABLE",
+        "EXPERIMENTAL_OPT_IN"
+      ]
+    }
+  ],
+  "claim_ceiling": "Repository-local declarations and routing code only. No action, external completion, truth, Owner acceptance, or scientific result is inferred."
+}

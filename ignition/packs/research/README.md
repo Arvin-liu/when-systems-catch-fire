@@ -9,9 +9,10 @@ second Kernel or a long-running scheduler. Its obligation DAG, evidence-request
 and review projections stay bounded by the REOS LIGHT contract; a completed
 workflow cannot create truth, Owner acceptance or `EPISTEMICALLY_ACCEPTED`.
 
-The runtime may route a declared REOS capability, but the Pack cannot import an
-unlisted module, select an executor, widen a Profile, or mutate the Knowledge
- registry. See [`manifest.json`](./manifest.json) and the
+The Pack-aware router may emit a proposal for a declared REOS capability; this
+does not execute its hook. The Pack cannot import an unlisted module, select an
+executor, widen a Profile, or mutate the Knowledge registry. See
+[`manifest.json`](./manifest.json) and the
 [REOS LIGHT boundary](../../docs/architecture/reos-vnext-light.md).
 
 External Agent Federation is a separate OS/executor contract. This Pack may
