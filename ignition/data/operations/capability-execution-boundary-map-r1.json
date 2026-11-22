@@ -8,7 +8,7 @@
     },
     "component_registry": {
       "path": "ignition/data/operations/project-components.json",
-      "blob_sha1": "a008b89b05efea82967c0fb0bb0ba70574bcff8f"
+      "blob_sha1": "3f037b2e156c98730960879ced57a67db6c9efda"
     },
     "optional_candidate_catalog": {
       "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
