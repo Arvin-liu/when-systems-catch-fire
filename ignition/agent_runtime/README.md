@@ -38,6 +38,16 @@ Profile-allowed loaded Packs. Knowledge validation cannot grant runtime
 permission or truth authority, writing quality cannot establish facts, and a
 REOS LIGHT workflow cannot create Owner acceptance or epistemic acceptance.
 
+These are distinct boundaries: Pack manifests are metadata declarations,
+Pack-aware routing emits proposals, and the generic `AgentRuntime` delegates a
+typed action to its separately supplied executor after scoped authorization.
+`LocalWorkspaceExecutor` implements the bounded local action plane, while
+`ExecutorAdmissionStore` gates admitted executor records. The operation registry
+does not currently bind each registered domain operation to an exact runtime
+entrypoint and executor pair. See the [capability and execution boundary map](../data/operations/capability-execution-boundary-map-r1.json);
+its unresolved implementation rows must remain unresolved until such a binding
+is evidenced.
+
 ## Operational Memory R1
 
 `agent_runtime.memory.OperationalMemoryStore` is a locked JSON store for typed

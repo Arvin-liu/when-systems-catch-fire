@@ -1,0 +1,691 @@
+{
+  "schema_version": "task-intent-index-r1",
+  "authority_boundary": "DISCOVERY_ONLY; OPERATION REGISTRY REMAINS THE AUTHORITY FOR STATUS, INPUTS, OUTPUTS, PERMISSIONS, VALIDATORS, AND CLAIM CEILING",
+  "source_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b",
+  "sources": {
+    "operation_registry": {
+      "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    "component_registry": {
+      "path": "ignition/data/operations/project-components.json",
+      "blob_sha1": "a008b89b05efea82967c0fb0bb0ba70574bcff8f"
+    }
+  },
+  "routing_contract": {
+    "input_type": "Caller-verified type; this index never infers a real object type from query words.",
+    "prefilter": "Read accepted_input_types, current_status, and ai_callability from the referenced registry operation before matching intent phrases.",
+    "matching": "Exact normalized alias/keyword phrase inclusion only; no score, ranking, or forced winner.",
+    "multiple_candidates": "UNRESOLVED",
+    "no_current_capability_or_unsupported_input_type": "UNSUPPORTED",
+    "single_candidate": "CANDIDATE only; reread the complete registry contract before action.",
+    "experimental_entries": "Never added to Current candidates; optional tools remain in the separate execution-boundary map."
+  },
+  "entries": [
+    {
+      "intent_id": "foundation.resolve_current_asset",
+      "label_zh": "解析规范资产身份",
+      "label_en": "Resolve canonical asset identity",
+      "aliases_zh": [
+        "解析规范资产身份",
+        "查找规范资产ID",
+        "解决旧资产引用"
+      ],
+      "aliases_en": [
+        "resolve canonical asset identity",
+        "look up canonical asset id",
+        "resolve a legacy asset reference"
+      ],
+      "keywords_zh": [
+        "规范身份解析",
+        "资产别名映射",
+        "未解析引用"
+      ],
+      "keywords_en": [
+        "canonical identity resolution",
+        "asset alias mapping",
+        "unresolved reference"
+      ],
+      "operation_id": "foundation.resolve_current_asset",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "foundation.resolve_current_asset",
+        "json_pointer": "/operations/2/accepted_input_types"
+      },
+      "component_resolution": "UNRESOLVED",
+      "component_ids": [],
+      "component_links": [],
+      "component_resolution_reason": "No authoritative operation source path exactly matches a canonical component target; the owning_component display label is not used to infer identity."
+    },
+    {
+      "intent_id": "ignition.recover_current_state",
+      "label_zh": "恢复点火当前状态",
+      "label_en": "Recover Ignition Current state",
+      "aliases_zh": [
+        "恢复点火当前状态",
+        "读取当前身份和开放义务",
+        "从仓库状态恢复上下文"
+      ],
+      "aliases_en": [
+        "recover Ignition current state",
+        "read current identity and open obligations",
+        "restore context from repository state"
+      ],
+      "keywords_zh": [
+        "点火当前状态",
+        "当前快照",
+        "开放义务边界"
+      ],
+      "keywords_en": [
+        "Ignition Current state",
+        "current snapshot",
+        "open-obligation boundary"
+      ],
+      "operation_id": "ignition.recover_current_state",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "ignition.recover_current_state",
+        "json_pointer": "/operations/3/accepted_input_types"
+      },
+      "component_resolution": "UNRESOLVED",
+      "component_ids": [],
+      "component_links": [],
+      "component_resolution_reason": "No authoritative operation source path exactly matches a canonical component target; the owning_component display label is not used to infer identity."
+    },
+    {
+      "intent_id": "knowledge.collide_object",
+      "label_zh": "分析并对照输入对象",
+      "label_en": "Analyze and compare an input object",
+      "aliases_zh": [
+        "分析笔记来源案例或论证",
+        "对照对象与规范资产",
+        "进行保留来源的对象分析"
+      ],
+      "aliases_en": [
+        "analyze a note source case or argument",
+        "compare an object with canonical assets",
+        "run provenance-preserving object analysis"
+      ],
+      "keywords_zh": [
+        "笔记分析",
+        "文章分析",
+        "案例对照",
+        "来源材料分析"
+      ],
+      "keywords_en": [
+        "note analysis",
+        "article analysis",
+        "case comparison",
+        "source material analysis"
+      ],
+      "operation_id": "knowledge.collide_object",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "knowledge.collide_object",
+        "json_pointer": "/operations/4/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "ignition_operating_method"
+      ],
+      "component_links": [
+        {
+          "component_id": "ignition_operating_method",
+          "source_path": "ignition/OPERATING-METHOD.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "knowledge.project_results",
+      "label_zh": "投影已登记研究结果",
+      "label_en": "Project a registered result",
+      "aliases_zh": [
+        "投影已登记研究结果",
+        "核对结果记录投影",
+        "生成有界结果展示"
+      ],
+      "aliases_en": [
+        "project a registered result record",
+        "validate a result-record projection",
+        "prepare a bounded results view"
+      ],
+      "keywords_zh": [
+        "结果投影",
+        "认知纠正记录"
+      ],
+      "keywords_en": [
+        "result projection",
+        "epistemic correction"
+      ],
+      "operation_id": "knowledge.project_results",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "knowledge.project_results",
+        "json_pointer": "/operations/5/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "knowledge_domain_pack"
+      ],
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "knowledge.read_foundation",
+      "label_zh": "查询已登记基础知识",
+      "label_en": "Query declared foundation knowledge",
+      "aliases_zh": [
+        "查询基础知识",
+        "读取已登记基础对象",
+        "查询函数或非函数资产"
+      ],
+      "aliases_en": [
+        "query foundation knowledge",
+        "read a declared foundation object",
+        "look up a function or nonfunction asset"
+      ],
+      "keywords_zh": [
+        "基础知识查询",
+        "函数资产",
+        "非函数断言"
+      ],
+      "keywords_en": [
+        "foundation knowledge query",
+        "function asset",
+        "nonfunction assertion"
+      ],
+      "operation_id": "knowledge.read_foundation",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "knowledge.read_foundation",
+        "json_pointer": "/operations/6/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "knowledge_domain_pack"
+      ],
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "knowledge.validate_claim",
+      "label_zh": "核验主张治理边界",
+      "label_en": "Validate claim governance boundaries",
+      "aliases_zh": [
+        "验证主张治理边界",
+        "检查主张的证据和成熟度",
+        "核对声明与主张上限"
+      ],
+      "aliases_en": [
+        "validate a claim governance boundary",
+        "check evidence and maturity for a claim",
+        "review a claim ceiling"
+      ],
+      "keywords_zh": [
+        "主张核验",
+        "证据门控",
+        "函数资产",
+        "非函数断言"
+      ],
+      "keywords_en": [
+        "claim validation",
+        "evidence gate",
+        "function asset",
+        "nonfunction assertion"
+      ],
+      "operation_id": "knowledge.validate_claim",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "knowledge.validate_claim",
+        "json_pointer": "/operations/7/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "knowledge_domain_pack"
+      ],
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "knowledge.validate_evidence_link",
+      "label_zh": "核对主张到来源的证据链接",
+      "label_en": "Validate a claim-to-source evidence link",
+      "aliases_zh": [
+        "核对主张到来源的证据链接",
+        "验证来源记录与主张关系",
+        "查找缺失证据或范围不匹配"
+      ],
+      "aliases_en": [
+        "validate a claim-to-source evidence link",
+        "check a source record and claim relationship",
+        "find missing or scope-mismatched evidence"
+      ],
+      "keywords_zh": [
+        "证据链接",
+        "来源核对",
+        "范围不匹配"
+      ],
+      "keywords_en": [
+        "evidence link",
+        "source record",
+        "scope mismatch"
+      ],
+      "operation_id": "knowledge.validate_evidence_link",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "knowledge.validate_evidence_link",
+        "json_pointer": "/operations/8/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "knowledge_domain_pack"
+      ],
+      "component_links": [
+        {
+          "component_id": "knowledge_domain_pack",
+          "source_path": "ignition/packs/knowledge/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "language_thought.project_bounded_meaning",
+      "label_zh": "生成有界语义与目标语言表达",
+      "label_en": "Project bounded meaning and target-language expression",
+      "aliases_zh": [
+        "转换有界语义并保留残余",
+        "规划目标语言表达",
+        "检查框架差异"
+      ],
+      "aliases_en": [
+        "project bounded meaning and retain residue",
+        "prepare target-language expression",
+        "inspect a framing delta"
+      ],
+      "keywords_zh": [
+        "翻译请求",
+        "语义残余",
+        "框架差异"
+      ],
+      "keywords_en": [
+        "translation request",
+        "meaning residue",
+        "framing delta"
+      ],
+      "operation_id": "language_thought.project_bounded_meaning",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "language_thought.project_bounded_meaning",
+        "json_pointer": "/operations/9/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "language_thought_plane"
+      ],
+      "component_links": [
+        {
+          "component_id": "language_thought_plane",
+          "source_path": "ignition/docs/architecture/language-thought-logic-plane.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "maintenance.inspect_repository",
+      "label_zh": "只读检查仓库快照",
+      "label_en": "Inspect a repository snapshot read-only",
+      "aliases_zh": [
+        "只读检查仓库快照",
+        "离线查看声明路径",
+        "检查仓库当前状态"
+      ],
+      "aliases_en": [
+        "inspect an offline repository snapshot",
+        "read a declared repository path",
+        "inspect repository state"
+      ],
+      "keywords_zh": [
+        "仓库快照",
+        "离线维护",
+        "只读仓库检查"
+      ],
+      "keywords_en": [
+        "repository snapshot",
+        "offline maintenance",
+        "read-only repository inspection"
+      ],
+      "operation_id": "maintenance.inspect_repository",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "maintenance.inspect_repository",
+        "json_pointer": "/operations/10/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "maintenance_pack",
+        "runtime_memory_loop"
+      ],
+      "component_links": [
+        {
+          "component_id": "maintenance_pack",
+          "source_path": "ignition/packs/maintenance/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        },
+        {
+          "component_id": "runtime_memory_loop",
+          "source_path": "ignition/agent_runtime/README.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "maintenance.validate_checkpoint",
+      "label_zh": "验证本地检查点回执",
+      "label_en": "Validate a local checkpoint receipt",
+      "aliases_zh": [
+        "验证本地检查点回执",
+        "检查仓库检查点完整性",
+        "核对离线检查点"
+      ],
+      "aliases_en": [
+        "validate a local checkpoint receipt",
+        "validate a repository checkpoint",
+        "check an offline checkpoint"
+      ],
+      "keywords_zh": [
+        "仓库快照",
+        "检查点回执",
+        "离线验证"
+      ],
+      "keywords_en": [
+        "repository snapshot",
+        "checkpoint receipt",
+        "offline validation"
+      ],
+      "operation_id": "maintenance.validate_checkpoint",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "maintenance.validate_checkpoint",
+        "json_pointer": "/operations/11/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "maintenance_pack",
+        "runtime_memory_loop"
+      ],
+      "component_links": [
+        {
+          "component_id": "maintenance_pack",
+          "source_path": "ignition/packs/maintenance/manifest.json",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        },
+        {
+          "component_id": "runtime_memory_loop",
+          "source_path": "ignition/agent_runtime/README.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "repository.apply_iteration_method",
+      "label_zh": "按迭代法准备点火仓库变更",
+      "label_en": "Prepare an Ignition repository change under the Iteration Method",
+      "aliases_zh": [
+        "按迭代法修改点火仓库",
+        "准备有限仓库变更候选",
+        "创建草案分支和Draft PR"
+      ],
+      "aliases_en": [
+        "apply the Iteration Method to an Ignition repository change",
+        "prepare a bounded repository-change candidate",
+        "create a Draft PR candidate"
+      ],
+      "keywords_zh": [
+        "仓库变更运行",
+        "迭代方法",
+        "Draft PR候选"
+      ],
+      "keywords_en": [
+        "repository change run",
+        "Iteration Method",
+        "Draft PR candidate"
+      ],
+      "operation_id": "repository.apply_iteration_method",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "repository.apply_iteration_method",
+        "json_pointer": "/operations/12/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "iteration"
+      ],
+      "component_links": [
+        {
+          "component_id": "iteration",
+          "source_path": "ignition/ITERATION.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "research.coordinate_obligations",
+      "label_zh": "协调已结构化的研究义务",
+      "label_en": "Coordinate an existing typed research obligation",
+      "aliases_zh": [
+        "协调已结构化的研究义务",
+        "登记证据请求",
+        "记录负结果并交接"
+      ],
+      "aliases_en": [
+        "coordinate an existing typed research obligation",
+        "record an evidence request",
+        "record a typed negative result"
+      ],
+      "keywords_zh": [
+        "研究义务",
+        "证据请求",
+        "负结果"
+      ],
+      "keywords_en": [
+        "research obligation",
+        "evidence request",
+        "negative result"
+      ],
+      "operation_id": "research.coordinate_obligations",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "research.coordinate_obligations",
+        "json_pointer": "/operations/14/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "research_pack_reos_light"
+      ],
+      "component_links": [
+        {
+          "component_id": "research_pack_reos_light",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "research.validate_reos_light",
+      "label_zh": "验证REOS LIGHT研究运行",
+      "label_en": "Validate a REOS LIGHT research run",
+      "aliases_zh": [
+        "验证REOS LIGHT研究运行",
+        "核对类型化研究状态",
+        "检查研究交接包"
+      ],
+      "aliases_en": [
+        "validate a REOS LIGHT research run",
+        "check typed research state",
+        "validate a research handoff bundle"
+      ],
+      "keywords_zh": [
+        "REOS LIGHT验证",
+        "研究运行",
+        "类型化交接"
+      ],
+      "keywords_en": [
+        "REOS LIGHT validation",
+        "research run",
+        "typed handoff"
+      ],
+      "operation_id": "research.validate_reos_light",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "research.validate_reos_light",
+        "json_pointer": "/operations/16/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "research_pack_reos_light"
+      ],
+      "component_links": [
+        {
+          "component_id": "research_pack_reos_light",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "visualization.render_derived_system_view",
+      "label_zh": "生成派生系统视图",
+      "label_en": "Render a derived system view",
+      "aliases_zh": [
+        "根据规范架构生成系统视图",
+        "生成派生系统图",
+        "渲染受界定的系统视图"
+      ],
+      "aliases_en": [
+        "render a system view from canonical architecture",
+        "generate a derived system map",
+        "render a bounded system view"
+      ],
+      "keywords_zh": [
+        "架构视图",
+        "系统图渲染",
+        "来源回执"
+      ],
+      "keywords_en": [
+        "architecture view",
+        "system map rendering",
+        "provenance receipt"
+      ],
+      "operation_id": "visualization.render_derived_system_view",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "visualization.render_derived_system_view",
+        "json_pointer": "/operations/17/accepted_input_types"
+      },
+      "component_resolution": "UNRESOLVED",
+      "component_ids": [],
+      "component_links": [],
+      "component_resolution_reason": "No authoritative operation source path exactly matches a canonical component target; the owning_component display label is not used to infer identity."
+    },
+    {
+      "intent_id": "writing.apply_editorial_method",
+      "label_zh": "应用有来源边界的写作法",
+      "label_en": "Apply the source-bounded editorial method",
+      "aliases_zh": [
+        "将有来源的素材转成目标语言稿",
+        "应用之元写作法修订稿",
+        "生成保留来源边界的出版草稿"
+      ],
+      "aliases_en": [
+        "transform sourced material into a target-language draft",
+        "revise a draft with the Zhiyuan method",
+        "prepare a source-bounded publication draft"
+      ],
+      "keywords_zh": [
+        "目标语言成稿",
+        "出版草稿",
+        "编辑来源"
+      ],
+      "keywords_en": [
+        "target-language draft",
+        "publication draft",
+        "editorial source"
+      ],
+      "operation_id": "writing.apply_editorial_method",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "writing.apply_editorial_method",
+        "json_pointer": "/operations/18/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "writing_pack"
+      ],
+      "component_links": [
+        {
+          "component_id": "writing_pack",
+          "source_path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    },
+    {
+      "intent_id": "writing.validate_publication_surface",
+      "label_zh": "验证出版页面的来源与导航边界",
+      "label_en": "Validate publication-surface provenance and navigation",
+      "aliases_zh": [
+        "验证出版页面来源和导航",
+        "检查公共出版面",
+        "核对发表入口边界"
+      ],
+      "aliases_en": [
+        "validate publication-surface provenance and navigation",
+        "check a public publication surface",
+        "audit publication entry boundaries"
+      ],
+      "keywords_zh": [
+        "出版页面",
+        "公共入口",
+        "人类可读界面"
+      ],
+      "keywords_en": [
+        "publication surface",
+        "public entry",
+        "human-facing entry"
+      ],
+      "operation_id": "writing.validate_publication_surface",
+      "input_type_source_ref": {
+        "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "operation_id": "writing.validate_publication_surface",
+        "json_pointer": "/operations/19/accepted_input_types"
+      },
+      "component_resolution": "RESOLVED",
+      "component_ids": [
+        "writing_pack"
+      ],
+      "component_links": [
+        {
+          "component_id": "writing_pack",
+          "source_path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "relation": "EXACT_AUTHORITATIVE_SOURCE_TARGET"
+        }
+      ]
+    }
+  ]
+}

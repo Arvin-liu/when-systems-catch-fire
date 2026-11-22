@@ -5,9 +5,10 @@
 Pack 不拥有 Agent lifecycle、executor 选择、generic permission、checkpoint/resume、Owner acceptance 或 Kernel definition。知识 Pack 的 claim ceiling、K13 assertion non-escalation、provenance 和结果状态继续由原有知识治理资产约束；Runtime 只负责调用已声明 capability 并保存结构化运行结果。
 
 在 Agent Platform R2 中，Knowledge Pack 通过 `manifest.json` 声明能力、对象
-类型、validator 和 source admission 边界；Runtime/Pack Bus 只调用声明的
-capability 并保留 declared-scope receipt。Knowledge 仍是第一个大型 Domain
-Pack，但不是 Kernel、Supervisor 或 Memory 的所有者。
+类型、validator 和 source admission 边界；Pack Registry/Bus 只加载 metadata
+并返回 `ROUTED_PROPOSAL`，不会执行声明的 hook。后续动作必须由独立绑定并
+获准的 executor 执行。Knowledge 仍是第一个大型 Domain Pack，但不是 Kernel、
+Supervisor 或 Memory 的所有者。
 
 机器入口见 [`manifest.json`](./manifest.json) 与
 [`Knowledge Corpus Admission Policy`](../../data/foundation/knowledge-corpus-admission-policy.json)。

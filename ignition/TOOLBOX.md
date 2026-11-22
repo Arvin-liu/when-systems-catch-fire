@@ -4,6 +4,16 @@
 >
 > Current operation entries are registered capabilities; the registry does not prove that every entry is a standalone executable in this environment. Experimental tools are opt-in and default off.
 
+<!-- DISCOVERY-BOUNDARY:BEGIN -->
+## Discovery and execution boundaries
+
+- Task-intent index: 16 entries. It filters by caller-verified input type and Current callability, then returns `CANDIDATE`, `UNRESOLVED` or `UNSUPPORTED`; it never invokes or authorizes an operation.
+- Component responsibility matrix: R `1`, O `5`, G `12`, shared `2`, unresolved `86` of 106 components. Validation-map associations and consumers remain separate from responsibility; all 46 previously unmapped IDs have individual dispositions.
+- Capability boundary map: 20 registered operations, 4 metadata-loadable Packs, and 77 opt-in Experimental entries. Pack-aware routing returns proposals and does not execute hooks; all experimental entries remain default-off.
+- Registration, metadata loading, proposal routing, a declared source path, or generic Runtime code does not establish an operation implementation binding or prove that an action ran.
+- Machine assets: [task-intent-index-r1.json](data/operations/task-intent-index-r1.json), [component-domain-responsibilities-r1.json](data/operations/component-domain-responsibilities-r1.json), [capability-execution-boundary-map-r1.json](data/operations/capability-execution-boundary-map-r1.json).
+<!-- DISCOVERY-BOUNDARY:END -->
+
 ## Evidence-based lifecycle (Owner C1)
 
 Compare tools on the same task with matched permissions, environment, and evidence quality. Compare correctness, evidence completeness, coverage, actual cost, reliability, maintainability, risk, and rollback. Retire an old callable tool when a new tool has shown better performance, or equivalent performance with clearly lower cost or risk, and covers every valuable incumbent use case with no evidenced unique scenario left. Keep or specialize tools with evidenced unique use cases. When the evidence cannot decide, mark `COMPARISON_UNKNOWN` or `EXPERIMENTAL` and use a low-cost, controlled comparison that can disconfirm the replacement hypothesis. Preserve comparison receipts and historical references even when retired runtime code has no remaining value.

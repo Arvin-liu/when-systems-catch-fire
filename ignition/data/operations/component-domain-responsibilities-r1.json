@@ -1,0 +1,4028 @@
+{
+  "schema_version": "component-domain-responsibilities-r1",
+  "authority_boundary": "R_O_G_RESPONSIBILITY_MATRIX; VALIDATION_MAP_ASSOCIATIONS_AND_CONSUMERS_REMAIN_A_SEPARATE_PROJECTION",
+  "source_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b",
+  "domain_definition_authority": {
+    "type": "OWNER_BRIEF",
+    "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7076017884",
+    "section": "2.6"
+  },
+  "domain_definitions": {
+    "R": "Research discovery and evidence formation.",
+    "O": "Expression, operation, and presentation of typed R outputs.",
+    "G": "Cross-cutting constraints on sources, evidence, permissions, claim ceilings, and publication."
+  },
+  "handoff_principles": [
+    "R findings reach O only as typed outputs with source and claim-ceiling references preserved.",
+    "G constrains R and O through source, evidence, permission, claim-ceiling, and publication gates; it does not replace their local truth or output authority.",
+    "Shared components are recorded only where source code or canonical protocols show typed interfaces; do not duplicate implementation or infer interfaces from validation targets."
+  ],
+  "sources": {
+    "component_registry": {
+      "path": "ignition/data/operations/project-components.json",
+      "blob_sha1": "a008b89b05efea82967c0fb0bb0ba70574bcff8f"
+    },
+    "validation_map": {
+      "path": "ignition/data/operations/component-validation-map-r1.json",
+      "blob_sha1": "ab946fc93f1b250baa822b730017fe923d5fe66f"
+    },
+    "operation_registry": {
+      "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    }
+  },
+  "classification_counts": {
+    "single_domain_primary": {
+      "G": 12,
+      "O": 5,
+      "R": 1
+    },
+    "shared_cross_domain": 2,
+    "unresolved": 86
+  },
+  "validation_map_semantics": "The 60 source rows remain unchanged. A row domain/evidence describes only its declared validation-domain association. validation_targets are validation consumers. Neither field is converted to primary ownership.",
+  "previously_unmapped_review": [
+    {
+      "component_id": "accepted_work",
+      "canonical_target": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/works/when-an-army-believes-its-own-back.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "arn",
+      "canonical_target": "docs/architecture/adaptive-relational-network.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/adaptive-relational-network.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "bounded_scheduler_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "candidate_return",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "case_source",
+      "canonical_target": "docs/publication/cases/jin-rise-case-source.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/cases/jin-rise-case-source.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "charter",
+      "canonical_target": "docs/governance/life-community-value-charter.md",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Constrains governance decisions around beneficiaries, costs, refusal, pause, rollback, and evidence gates."
+    },
+    {
+      "component_id": "charter_system_r1",
+      "canonical_target": "docs/governance/charter-system-r1.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/governance/charter-system-r1.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "concurrent_operational_memory_r2",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "copyright_governance_jurisdiction_registry",
+      "canonical_target": "data/governance/jurisdiction-rule-registry.json",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Constrains source-rights review through declared jurisdiction rules for publication decisions."
+    },
+    {
+      "component_id": "copyright_governance_material_classification",
+      "canonical_target": "data/governance/material-classification.json",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Constrains publication through explicit material classes and allowed publication-gate decisions."
+    },
+    {
+      "component_id": "copyright_governance_non_republication_principle",
+      "canonical_target": "docs/governance/external-input-non-republication-principle.md",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Sets a cross-cutting source-use restriction that constrains public publication."
+    },
+    {
+      "component_id": "copyright_governance_publication_gate_validator",
+      "canonical_target": "tools/governance/fail_closed_publication_gate.py",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Enforces source-rights, material-classification, and non-republication conditions before public surfaces."
+    },
+    {
+      "component_id": "copyright_governance_source_rights",
+      "canonical_target": "data/governance/source-rights-registry.json",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Records source categories, rights status, and required publication-governance actions."
+    },
+    {
+      "component_id": "driver_console_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Driver Console R1",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Driver Console R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "durable_dispatch_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "executor_health_lease_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Executor Health Lease R1",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Executor Health Lease R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "external_input",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#双来源写作素材池 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "feedback_routes",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "foundation_data",
+      "canonical_target": "FOUNDATION.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target FOUNDATION.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "function_os",
+      "canonical_target": "function-os-candidate/v0.2/README.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target function-os-candidate/v0.2/README.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "historical_reports",
+      "canonical_target": "reports/operations/",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target reports/operations/ was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "ignition_increment",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#双来源写作素材池 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "l0",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target ARCHITECTURE.md#七层关系 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "l1",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target ARCHITECTURE.md#七层关系 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "language_thought_plane",
+      "canonical_target": "docs/architecture/language-thought-logic-plane.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/language-thought-logic-plane.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "licensing",
+      "canonical_target": "docs/governance/licensing-rights-inventory.md",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Distinguishes rights and reuse constraints for software, documentation, and third-party materials."
+    },
+    {
+      "component_id": "mcf",
+      "canonical_target": "docs/architecture/multiscale-causal-fabric.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/multiscale-causal-fabric.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "point_fire_analysis",
+      "canonical_target": "reports/publication/jin-rise-point-fire-analysis.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target reports/publication/jin-rise-point-fire-analysis.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "policy_compiler_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "propagation_topology",
+      "canonical_target": "data/operations/change-propagation-topology.json",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "The canonical target separates repository propagation relations from reality-level causal claims and governance authority; it does not assign a primary R/O/G duty or typed R/O/G handoff."
+    },
+    {
+      "component_id": "provenance_capture",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "psd",
+      "canonical_target": "docs/architecture/probabilistic-system-dynamics.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/probabilistic-system-dynamics.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "public_response",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "q12",
+      "canonical_target": "docs/architecture/effectual-action-plane.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/effectual-action-plane.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "q13",
+      "canonical_target": "docs/architecture/attention-attractor-control-plane.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/attention-attractor-control-plane.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "q14",
+      "canonical_target": "docs/architecture/ignition-atlas.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/ignition-atlas.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "queue_control_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "runtime_memory_loop",
+      "canonical_target": "agent_runtime/README.md#Memory R0",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target agent_runtime/README.md#Memory R0 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "showcase",
+      "canonical_target": "docs/publication/zhiyuan-writing-showcase.md",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Presents the bounded public-writing outputs and their provenance for human navigation."
+    },
+    {
+      "component_id": "showcase_registry",
+      "canonical_target": "data/publication/zhiyuan-writing-showcase.json",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Maintains the machine-readable projection of public-writing outputs and their provenance/status."
+    },
+    {
+      "component_id": "source_pool",
+      "canonical_target": "templates/publication/zhiyuan-writing-spec.md#双来源素材池",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target templates/publication/zhiyuan-writing-spec.md#双来源素材池 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "summary",
+      "canonical_target": "SUMMARY.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target SUMMARY.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "sustainability",
+      "canonical_target": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target reports/atlas/maps/map-maintainer-sustainability-economics.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "system_map",
+      "canonical_target": "data/architecture/interactive-system-map.json",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target data/architecture/interactive-system-map.json was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "system_map_layout",
+      "canonical_target": "data/architecture/interactive-system-map-layout.json",
+      "disposition": "UNRESOLVED",
+      "disposition_reason": "Canonical target data/architecture/interactive-system-map-layout.json was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "zhiyuan_method",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md",
+      "disposition": "SINGLE_DOMAIN_PRIMARY",
+      "disposition_reason": "Transforms declared external inputs and registered increments into bounded target-language public expression."
+    }
+  ],
+  "components": [
+    {
+      "component_id": "accepted_work",
+      "canonical_target": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/works/when-an-army-believes-its-own-back.md",
+          "component_registry_pointer": "/components/0"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/works/when-an-army-believes-its-own-back.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "ai_guide",
+      "canonical_target": "docs/ai-assistant-usage-reference.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "ai_guide",
+        "declared_validation_domain_associations": [
+          "O"
+        ],
+        "validation_consumers": [
+          "o_human_result_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/0/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/ai-assistant-usage-reference.md",
+          "component_registry_pointer": "/components/1"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "arn",
+      "canonical_target": "docs/architecture/adaptive-relational-network.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/adaptive-relational-network.md",
+          "component_registry_pointer": "/components/2"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/adaptive-relational-network.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "candidate_return",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/3"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "case_source",
+      "canonical_target": "docs/publication/cases/jin-rise-case-source.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/cases/jin-rise-case-source.md",
+          "component_registry_pointer": "/components/4"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/cases/jin-rise-case-source.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "charter",
+      "canonical_target": "docs/governance/life-community-value-charter.md",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Constrains governance decisions around beneficiaries, costs, refusal, pause, rollback, and evidence gates.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/governance/life-community-value-charter.md",
+          "blob_sha1": "7eaa719c153bff72264d96bf6b030a9b646a8e64",
+          "role": "GOVERNANCE_CHARTER",
+          "supports": "Defines Charter Gate fields, evidence thresholds, refusal conditions, and rollback conditions."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/governance/life-community-value-charter.md",
+          "component_registry_pointer": "/components/5"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "current_state",
+      "canonical_target": "docs/project-current-state.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "current_state",
+        "declared_validation_domain_associations": [
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_current_state_consumers",
+          "o_human_result_consumers",
+          "g_human_front_door_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/4/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/project-current-state.md",
+          "component_registry_pointer": "/components/6"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "external_input",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/7"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#双来源写作素材池 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "feedback_routes",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/8"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "foundation",
+      "canonical_target": "FOUNDATION.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "foundation",
+        "declared_validation_domain_associations": [
+          "R",
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_foundation_argument_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "HISTORICAL_ONLY",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/7/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/FOUNDATION.md",
+          "component_registry_pointer": "/components/9"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "foundation_data",
+      "canonical_target": "FOUNDATION.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/FOUNDATION.md",
+          "component_registry_pointer": "/components/10"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target FOUNDATION.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "function_os",
+      "canonical_target": "function-os-candidate/v0.2/README.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/function-os-candidate/v0.2/README.md",
+          "component_registry_pointer": "/components/11"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target function-os-candidate/v0.2/README.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "historical_reports",
+      "canonical_target": "reports/operations/",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/reports/operations/",
+          "component_registry_pointer": "/components/12"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target reports/operations/ was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "ignition_increment",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/13"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#双来源写作素材池 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "incremental_execution",
+      "canonical_target": "docs/architecture/incremental-execution.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "incremental_execution",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/11/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/incremental-execution.md",
+          "component_registry_pointer": "/components/14"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "ignition_operating_method",
+      "canonical_target": "OPERATING-METHOD.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "ignition_operating_method",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_operating_method_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/10/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "knowledge.collide_object",
+          "source_path": "ignition/OPERATING-METHOD.md"
+        }
+      ],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/OPERATING-METHOD.md",
+          "component_registry_pointer": "/components/15"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "iteration",
+      "canonical_target": "ITERATION.md",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Governs bounded repository changes, evidence gates, permissions, exact-head review, Draft lifecycle, and release boundaries.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/ITERATION.md",
+          "blob_sha1": "f45510bc262f9b32541625013f048292455d1840",
+          "role": "REPOSITORY_GOVERNANCE_METHOD",
+          "supports": "Defines the governed method for changing Formal, required evidence gates, authorization, protected state, and Draft-only candidate work."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "iteration",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_publication_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/52/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "repository.apply_iteration_method",
+          "source_path": "ignition/ITERATION.md"
+        },
+        {
+          "operation_id": "repository.apply_iteration_method_1_3",
+          "source_path": "ignition/ITERATION.md"
+        }
+      ],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/ITERATION.md",
+          "component_registry_pointer": "/components/16"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "stage_snapshot_publication",
+      "canonical_target": "docs/operations/stage-snapshot-publication.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "stage_snapshot_publication",
+        "declared_validation_domain_associations": [
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls",
+          "g_publication_consumers",
+          "o_human_result_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/56/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/operations/stage-snapshot-publication.md",
+          "component_registry_pointer": "/components/17"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "canonical_target": "schemas/operations/iteration-manifest.schema.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "iteration_manifest_contract",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_publication_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/51/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/schemas/operations/iteration-manifest.schema.json",
+          "component_registry_pointer": "/components/18"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "l0",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/19"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target ARCHITECTURE.md#七层关系 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "l1",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/20"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target ARCHITECTURE.md#七层关系 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "l2",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "l2",
+        "declared_validation_domain_associations": [
+          "R",
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_foundation_formal_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/12/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/21"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "l3",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "l3",
+        "declared_validation_domain_associations": [
+          "R",
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_foundation_argument_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/13/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/22"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "l4",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "l4",
+        "declared_validation_domain_associations": [
+          "R",
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_foundation_formal_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/14/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/23"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "l5",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "l5",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_repository_path_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/15/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/24"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "l6",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "O",
+      "primary_responsibility": "Provides interpretation, application, and publication surfaces while preserving lower-layer claim limits.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/ARCHITECTURE.md",
+          "blob_sha1": "c557e8f2f23a5e17d69c98649cd3117ffa42eb4c",
+          "role": "PUBLICATION_LAYER",
+          "supports": "Defines L6 as interpretation, application, and publication under the existing claim ceiling."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "l6",
+        "declared_validation_domain_associations": [
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_publication_consumers",
+          "o_human_result_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/16/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/25"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "language_thought_plane",
+      "canonical_target": "docs/architecture/language-thought-logic-plane.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [
+        {
+          "operation_id": "language_thought.project_bounded_meaning",
+          "source_path": "ignition/docs/architecture/language-thought-logic-plane.md"
+        }
+      ],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/language-thought-logic-plane.md",
+          "component_registry_pointer": "/components/26"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/language-thought-logic-plane.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "licensing",
+      "canonical_target": "docs/governance/licensing-rights-inventory.md",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Distinguishes rights and reuse constraints for software, documentation, and third-party materials.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/governance/licensing-rights-inventory.md",
+          "blob_sha1": "1deb0f13efe73de6201600655fa7ff178bf26a57",
+          "role": "RIGHTS_GOVERNANCE_POLICY",
+          "supports": "Defines licensing and reuse constraints by material class and rights status."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/governance/licensing-rights-inventory.md",
+          "component_registry_pointer": "/components/27"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "mcf",
+      "canonical_target": "docs/architecture/multiscale-causal-fabric.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/multiscale-causal-fabric.md",
+          "component_registry_pointer": "/components/28"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/multiscale-causal-fabric.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "no_l7",
+      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "no_l7",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_human_front_door_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/17/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/ARCHITECTURE.md",
+          "component_registry_pointer": "/components/29"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "no_totality_proof",
+      "canonical_target": "docs/project-current-state.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "no_totality_proof",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_human_front_door_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/18/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/project-current-state.md",
+          "component_registry_pointer": "/components/30"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "no_truth_upgrade",
+      "canonical_target": "FOUNDATION.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "no_truth_upgrade",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_epistemic_boundary_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/19/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/FOUNDATION.md",
+          "component_registry_pointer": "/components/31"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "human_knowledge_surfaces",
+      "canonical_target": "KNOWLEDGE/README.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "human_knowledge_surfaces",
+        "declared_validation_domain_associations": [
+          "O"
+        ],
+        "validation_consumers": [
+          "o_human_result_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/9/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/KNOWLEDGE/README.md",
+          "component_registry_pointer": "/components/32"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "point_fire_analysis",
+      "canonical_target": "reports/publication/jin-rise-point-fire-analysis.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/reports/publication/jin-rise-point-fire-analysis.md",
+          "component_registry_pointer": "/components/33"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target reports/publication/jin-rise-point-fire-analysis.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "project_component_registry",
+      "canonical_target": "data/operations/project-components.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "project_component_registry",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/54/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/project-components.json",
+          "component_registry_pointer": "/components/34"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "propagation_calculator",
+      "canonical_target": "tools/operations/compute_change_propagation.py",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "propagation_calculator",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_repository_path_consumers"
+        ],
+        "change_classifications": [
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/22/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/tools/operations/compute_change_propagation.py",
+          "component_registry_pointer": "/components/35"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "propagation_topology",
+      "canonical_target": "data/operations/change-propagation-topology.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/change-propagation-topology.json",
+          "component_registry_pointer": "/components/36"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The canonical target separates repository propagation relations from reality-level causal claims and governance authority; it does not assign a primary R/O/G duty or typed R/O/G handoff."
+    },
+    {
+      "component_id": "provenance_capture",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/37"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "psd",
+      "canonical_target": "docs/architecture/probabilistic-system-dynamics.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/probabilistic-system-dynamics.md",
+          "component_registry_pointer": "/components/38"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/probabilistic-system-dynamics.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "public_response",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/39"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/publication/zhiyuan-writing-method.md#返回点火 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "q12",
+      "canonical_target": "docs/architecture/effectual-action-plane.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/effectual-action-plane.md",
+          "component_registry_pointer": "/components/40"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/effectual-action-plane.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "q13",
+      "canonical_target": "docs/architecture/attention-attractor-control-plane.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/attention-attractor-control-plane.md",
+          "component_registry_pointer": "/components/41"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/attention-attractor-control-plane.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "q14",
+      "canonical_target": "docs/architecture/ignition-atlas.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/ignition-atlas.md",
+          "component_registry_pointer": "/components/42"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/ignition-atlas.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "readme",
+      "canonical_target": ".github/README.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "readme",
+        "declared_validation_domain_associations": [
+          "G",
+          "O"
+        ],
+        "validation_consumers": [
+          "g_readme_front_door",
+          "o_readme_visibility"
+        ],
+        "change_classifications": [
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/23/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/.github/README.md",
+          "component_registry_pointer": "/components/43"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "showcase",
+      "canonical_target": "docs/publication/zhiyuan-writing-showcase.md",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "O",
+      "primary_responsibility": "Presents the bounded public-writing outputs and their provenance for human navigation.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/publication/zhiyuan-writing-showcase.md",
+          "blob_sha1": "c4a8baafb260ae63d5bb714e585f4c5f301e9cb3",
+          "role": "HUMAN_PUBLICATION_SURFACE",
+          "supports": "Defines a human-readable navigation surface for writing outputs, status, and provenance."
+        },
+        {
+          "path": "ignition/data/publication/zhiyuan-writing-showcase.json",
+          "blob_sha1": "e8b86ffb7d0abc7b9c5a1f27f6ff5d0562764580",
+          "role": "MACHINE_PUBLICATION_SURFACE",
+          "supports": "Provides machine-readable ordered output records, source paths, review, and claim-ceiling fields."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-showcase.md",
+          "component_registry_pointer": "/components/44"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "showcase_registry",
+      "canonical_target": "data/publication/zhiyuan-writing-showcase.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "O",
+      "primary_responsibility": "Maintains the machine-readable projection of public-writing outputs and their provenance/status.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/publication/zhiyuan-writing-showcase.json",
+          "blob_sha1": "e8b86ffb7d0abc7b9c5a1f27f6ff5d0562764580",
+          "role": "MACHINE_PUBLICATION_SURFACE",
+          "supports": "Contains ordered publication entries, paths, hashes, review state, and claim ceilings."
+        },
+        {
+          "path": "ignition/docs/publication/zhiyuan-writing-showcase.md",
+          "blob_sha1": "c4a8baafb260ae63d5bb714e585f4c5f301e9cb3",
+          "role": "HUMAN_PUBLICATION_SURFACE",
+          "supports": "Documents the human-facing projection of the same publication registry."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/publication/zhiyuan-writing-showcase.json",
+          "component_registry_pointer": "/components/45"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "source_pool",
+      "canonical_target": "templates/publication/zhiyuan-writing-spec.md#双来源素材池",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/templates/publication/zhiyuan-writing-spec.md",
+          "component_registry_pointer": "/components/46"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target templates/publication/zhiyuan-writing-spec.md#双来源素材池 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "summary",
+      "canonical_target": "SUMMARY.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/SUMMARY.md",
+          "component_registry_pointer": "/components/47"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target SUMMARY.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "sustainability",
+      "canonical_target": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/reports/atlas/maps/map-maintainer-sustainability-economics.md",
+          "component_registry_pointer": "/components/48"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target reports/atlas/maps/map-maintainer-sustainability-economics.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "sync",
+      "canonical_target": "data/operations/synchronization-surfaces.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "sync",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls"
+        ],
+        "change_classifications": [
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/27/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/synchronization-surfaces.json",
+          "component_registry_pointer": "/components/49"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "system_map",
+      "canonical_target": "data/architecture/interactive-system-map.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/data/architecture/interactive-system-map.json",
+          "component_registry_pointer": "/components/50"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target data/architecture/interactive-system-map.json was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "system_map_layout",
+      "canonical_target": "data/architecture/interactive-system-map-layout.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/data/architecture/interactive-system-map-layout.json",
+          "component_registry_pointer": "/components/51"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target data/architecture/interactive-system-map-layout.json was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "system_map_projection",
+      "canonical_target": "data/architecture/interactive-system-map.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "system_map_projection",
+        "declared_validation_domain_associations": [
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "g_human_front_door_consumers",
+          "o_human_result_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/28/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/data/architecture/interactive-system-map.json",
+          "component_registry_pointer": "/components/52"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "usage",
+      "canonical_target": "docs/USAGE.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "usage",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_operating_method_consumers"
+        ],
+        "change_classifications": [
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/1/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/USAGE.md",
+          "component_registry_pointer": "/components/53"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "zhiyuan_method",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "O",
+      "primary_responsibility": "Transforms declared external inputs and registered increments into bounded target-language public expression.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "blob_sha1": "5cd9b5e85561ead7718273dc869416f26fdf3a34",
+          "role": "PUBLICATION_FUNCTION",
+          "supports": "Specifies the writing method, source pool, target-language output, provenance, and claim ceiling."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/54"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_jurisdiction_registry",
+      "canonical_target": "data/governance/jurisdiction-rule-registry.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Constrains source-rights review through declared jurisdiction rules for publication decisions.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/governance/jurisdiction-rule-registry.json",
+          "blob_sha1": "7198548a63abe89162ec1fc57a84f97f69f8c93a",
+          "role": "RIGHTS_GOVERNANCE_RULES",
+          "supports": "Records jurisdictional copyright rules used by the publication gate; it does not provide a general research conclusion."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/governance/jurisdiction-rule-registry.json",
+          "component_registry_pointer": "/components/55"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_source_rights",
+      "canonical_target": "data/governance/source-rights-registry.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Records source categories, rights status, and required publication-governance actions.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/governance/source-rights-registry.json",
+          "blob_sha1": "a7b183aeeb4078d90aa6a5da8231038eb14ef30d",
+          "role": "RIGHTS_GOVERNANCE_RULES",
+          "supports": "Defines source-rights categories, rights status, and actions used by the publication gate."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/governance/source-rights-registry.json",
+          "component_registry_pointer": "/components/56"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_material_classification",
+      "canonical_target": "data/governance/material-classification.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Constrains publication through explicit material classes and allowed publication-gate decisions.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/governance/material-classification.json",
+          "blob_sha1": "668773d9e4de68bf1255602da47931cf4d094a96",
+          "role": "PUBLICATION_GOVERNANCE_RULES",
+          "supports": "Declares material classes and the publication gate allowed for each class."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/governance/material-classification.json",
+          "component_registry_pointer": "/components/57"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_history_remediation",
+      "canonical_target": "data/governance/history-remediation-register.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Tracks remediation of prior source-rights boundary violations and preserves the remediation record.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/governance/history-remediation-register.json",
+          "blob_sha1": "9072d36ba8f5d3652bc32e6d4cb05cc302135846",
+          "role": "RIGHTS_GOVERNANCE_REMEDIATION",
+          "supports": "Records prior copyright/rights violations, affected materials, and remediation actions."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "copyright_governance_history_remediation",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_history_remediation_contract"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "HISTORICAL_ONLY"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/3/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/governance/history-remediation-register.json",
+          "component_registry_pointer": "/components/58"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_publication_gate_validator",
+      "canonical_target": "tools/governance/fail_closed_publication_gate.py",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Enforces source-rights, material-classification, and non-republication conditions before public surfaces.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/tools/governance/fail_closed_publication_gate.py",
+          "blob_sha1": "d9aa3a4524c7649ff15939584434046abf6f29fc",
+          "role": "PUBLICATION_GATE_IMPLEMENTATION",
+          "supports": "Implements a fail-closed publication gate over source-rights and material-classification inputs."
+        },
+        {
+          "path": "ignition/docs/governance/external-input-non-republication-principle.md",
+          "blob_sha1": "84e4626e89d2cab87ddba6db5ae562d76ac14d3c",
+          "role": "PUBLICATION_GATE_POLICY",
+          "supports": "States the non-republication boundary and links the rule to the validator."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/tools/governance/fail_closed_publication_gate.py",
+          "component_registry_pointer": "/components/59"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_non_republication_principle",
+      "canonical_target": "docs/governance/external-input-non-republication-principle.md",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Sets a cross-cutting source-use restriction that constrains public publication.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/governance/external-input-non-republication-principle.md",
+          "blob_sha1": "84e4626e89d2cab87ddba6db5ae562d76ac14d3c",
+          "role": "SOURCE_AND_PUBLICATION_POLICY",
+          "supports": "Prohibits republication of third-party copyrighted material and defines the publication-gate relationship."
+        }
+      ],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/governance/external-input-non-republication-principle.md",
+          "component_registry_pointer": "/components/60"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "copyright_governance_tests",
+      "canonical_target": "tests/test_q33_governance_infrastructure.py",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "copyright_governance_tests",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls",
+          "g_q33_workflow_trigger_contract"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/58/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/tests/test_q33_governance_infrastructure.py",
+          "component_registry_pointer": "/components/61"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "charter_system_r1",
+      "canonical_target": "docs/governance/charter-system-r1.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/governance/charter-system-r1.md",
+          "component_registry_pointer": "/components/62"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/governance/charter-system-r1.md was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "epistemic_governance_kernel",
+      "canonical_target": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+      "classification_status": "SHARED_CROSS_DOMAIN",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Applies shared evidence, provenance, inference, and claim-ceiling constraints across research, operation, and publication planes.",
+      "participating_domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "cross_domain_interfaces": [
+        {
+          "from_domain": "G",
+          "to_domain": "R",
+          "input": "Research claims, evidence, and typed cross-plane relations",
+          "output": "Source-bound inference constraints, independent epistemic status, and typed handoff rules",
+          "evidence_refs": [
+            {
+              "path": "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+              "blob_sha1": "a2c2351a1dde44d900f31dfa1fa2b292d0091472"
+            }
+          ]
+        },
+        {
+          "from_domain": "G",
+          "to_domain": "O",
+          "input": "Public wording and publication claims",
+          "output": "Provenance and claim-ceiling constraints for public expression",
+          "evidence_refs": [
+            {
+              "path": "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+              "blob_sha1": "a2c2351a1dde44d900f31dfa1fa2b292d0091472"
+            }
+          ]
+        }
+      ],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+          "blob_sha1": "a2c2351a1dde44d900f31dfa1fa2b292d0091472",
+          "role": "CROSS_DOMAIN_GOVERNANCE_INTERFACE",
+          "supports": "Defines shared no-escalation rules and typed handoffs constraining independent epistemic, language, action, engineering, and publication planes."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "epistemic_governance_kernel",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_epistemic_boundary_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/5/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+          "component_registry_pointer": "/components/63"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "structural_governance_surface",
+      "canonical_target": "docs/architecture/esi-human-surface-r0.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "structural_governance_surface",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_epistemic_boundary_consumers"
+        ],
+        "change_classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/26/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/esi-human-surface-r0.md",
+          "component_registry_pointer": "/components/64"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "owner_human",
+      "canonical_target": ".github/README.md#点火是什么",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "owner_human",
+        "declared_validation_domain_associations": [
+          "G",
+          "O"
+        ],
+        "validation_consumers": [
+          "g_human_front_door_consumers",
+          "o_human_result_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/24/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/.github/README.md",
+          "component_registry_pointer": "/components/65"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "agentization_boundary_r0",
+      "canonical_target": "docs/architecture/agentization-boundary-r0.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "agentization_boundary_r0",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls",
+          "g_human_front_door_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/55/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/agentization-boundary-r0.md",
+          "component_registry_pointer": "/components/66"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "agent_kernel_r0",
+      "canonical_target": "agent_kernel/README.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "agent_kernel_r0",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_agent_runtime_consumers",
+          "g_agent_runtime_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/29/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/agent_kernel/README.md",
+          "component_registry_pointer": "/components/67"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "agent_runtime_r0",
+      "canonical_target": "agent_runtime/README.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "agent_runtime_r0",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_agent_runtime_consumers",
+          "g_agent_runtime_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/31/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/agent_runtime/README.md",
+          "component_registry_pointer": "/components/68"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "agent_profile_r0",
+      "canonical_target": "data/agent-runtime/agent-profile-r0.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "agent_profile_r0",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_agent_runtime_consumers",
+          "g_agent_runtime_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/30/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/data/agent-runtime/agent-profile-r0.json",
+          "component_registry_pointer": "/components/69"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "runtime_environment",
+      "canonical_target": "docs/architecture/agent-runtime-r0.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "runtime_environment",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_agent_runtime_consumers",
+          "g_agent_runtime_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "GOVERNANCE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/47/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/agent-runtime-r0.md",
+          "component_registry_pointer": "/components/70"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "runtime_memory_loop",
+      "canonical_target": "agent_runtime/README.md#Memory R0",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [
+        {
+          "operation_id": "maintenance.inspect_repository",
+          "source_path": "ignition/agent_runtime/README.md"
+        },
+        {
+          "operation_id": "maintenance.validate_checkpoint",
+          "source_path": "ignition/agent_runtime/README.md"
+        }
+      ],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/agent_runtime/README.md",
+          "component_registry_pointer": "/components/71"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target agent_runtime/README.md#Memory R0 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "domain_pack_contract",
+      "canonical_target": "agent_kernel/domain_pack.py",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "domain_pack_contract",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_pack_governance_consumers",
+          "g_agent_runtime_boundary_consumers",
+          "g_domain_pack_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "GOVERNANCE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/33/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/agent_kernel/domain_pack.py",
+          "component_registry_pointer": "/components/72"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "knowledge_domain_pack",
+      "canonical_target": "packs/knowledge/manifest.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "knowledge_domain_pack",
+        "declared_validation_domain_associations": [
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "o_knowledge_and_publication_consumers",
+          "g_domain_pack_consumers",
+          "o_knowledge_pack_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/38/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "knowledge.project_results",
+          "source_path": "ignition/packs/knowledge/manifest.json"
+        },
+        {
+          "operation_id": "knowledge.read_foundation",
+          "source_path": "ignition/packs/knowledge/manifest.json"
+        },
+        {
+          "operation_id": "knowledge.validate_claim",
+          "source_path": "ignition/packs/knowledge/manifest.json"
+        },
+        {
+          "operation_id": "knowledge.validate_evidence_link",
+          "source_path": "ignition/packs/knowledge/manifest.json"
+        }
+      ],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/packs/knowledge/manifest.json",
+          "component_registry_pointer": "/components/73"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "research_pack_reos_light",
+      "canonical_target": "docs/architecture/reos-vnext-light.md#Navigation boundary",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "R",
+      "primary_responsibility": "Bounded research obligations, evidence requests, negative results, and typed handoffs; it does not decide truth or grant authority.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/architecture/reos-vnext-light.md",
+          "blob_sha1": "c9469685182f576a39ec5e4076d4387c26357d61",
+          "role": "RESEARCH_FUNCTION",
+          "supports": "Defines REOS LIGHT as a research-execution control system for obligations, references, review work, and typed handoff."
+        },
+        {
+          "path": "ignition/packs/research/manifest.json",
+          "blob_sha1": "86ed54e73fb7cee087496372f37e073630c94967",
+          "role": "DECLARED_PACK_DOMAIN",
+          "supports": "Declares the Pack domain as research and its typed research capability and object contracts."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "research_pack_reos_light",
+        "declared_validation_domain_associations": [
+          "R",
+          "G"
+        ],
+        "validation_consumers": [
+          "r_reos_research_consumers",
+          "g_domain_pack_consumers",
+          "r_reos_pack_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/45/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "research.coordinate_obligations",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md"
+        },
+        {
+          "operation_id": "research.reos_full",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md"
+        },
+        {
+          "operation_id": "research.validate_reos_light",
+          "source_path": "ignition/docs/architecture/reos-vnext-light.md"
+        }
+      ],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/reos-vnext-light.md",
+          "component_registry_pointer": "/components/74"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "writing_pack",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双向接口契约",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "O",
+      "primary_responsibility": "Expresses source-bounded material through declared editorial and publication operations.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "blob_sha1": "5cd9b5e85561ead7718273dc869416f26fdf3a34",
+          "role": "PUBLICATION_FUNCTION",
+          "supports": "Defines the method as a target-language publication consumer and constrains its output to source-bounded claims."
+        },
+        {
+          "path": "ignition/packs/writing/manifest.json",
+          "blob_sha1": "6f6b792a0b5e9e486e12e351c7e8b29cdb881b67",
+          "role": "DECLARED_PACK_DOMAIN",
+          "supports": "Declares the Pack domain as writing and the editorial/publication operation contracts."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "writing_pack",
+        "declared_validation_domain_associations": [
+          "O",
+          "G"
+        ],
+        "validation_consumers": [
+          "o_knowledge_and_publication_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "EVIDENCE_UPDATE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/49/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "writing.apply_editorial_method",
+          "source_path": "ignition/docs/publication/zhiyuan-writing-method.md"
+        },
+        {
+          "operation_id": "writing.validate_publication_surface",
+          "source_path": "ignition/docs/publication/zhiyuan-writing-method.md"
+        }
+      ],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "component_registry_pointer": "/components/75"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "maintenance_pack",
+      "canonical_target": "packs/maintenance/manifest.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "maintenance_pack",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_pack_governance_consumers",
+          "g_domain_pack_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/41/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "maintenance.inspect_repository",
+          "source_path": "ignition/packs/maintenance/manifest.json"
+        },
+        {
+          "operation_id": "maintenance.validate_checkpoint",
+          "source_path": "ignition/packs/maintenance/manifest.json"
+        }
+      ],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/packs/maintenance/manifest.json",
+          "component_registry_pointer": "/components/76"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "nonknowledge_pilot",
+      "canonical_target": "agent_runtime/pilots/non_knowledge_manifest.py",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "nonknowledge_pilot",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_agent_runtime_consumers",
+          "g_agent_runtime_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/42/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/agent_runtime/pilots/non_knowledge_manifest.py",
+          "component_registry_pointer": "/components/77"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "external_agent_federation",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Architecture hierarchy",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "external_agent_federation",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/6/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/78"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "live_executor_bridge_r1",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "live_executor_bridge_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_live_reconciliation_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/39/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/79"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "live_observation_reconciliation_plane_r1",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "live_observation_reconciliation_plane_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_live_reconciliation_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/40/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/80"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "openclaw_adapter",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "openclaw_adapter",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_executor_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "GOVERNANCE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/43/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/81"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "hermes_adapter",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "hermes_adapter",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_executor_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "GOVERNANCE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/37/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/82"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "codex_adapter",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Codex adapter boundary",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "codex_adapter",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_executor_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "GOVERNANCE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/32/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/83"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "reference_executor",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Reference Executor freeze",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "reference_executor",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_executor_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/44/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/84"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "future_executors",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Future executors",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "future_executors",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/8/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/85"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "event_ledger_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Event Ledger R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "event_ledger_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_live_reconciliation_consumers",
+          "g_event_ledger_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/35/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/86"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "policy_compiler_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/87"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "resource_arbitration_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Resource Arbitration R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "resource_arbitration_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_durability_steering_consumers",
+          "g_resource_arbitration_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/46/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/88"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "bounded_scheduler_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/89"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "executor_health_lease_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Executor Health Lease R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/90"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Executor Health Lease R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "queue_control_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/91"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "durable_dispatch_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/92"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "concurrent_operational_memory_r2",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/93"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "driver_console_r1",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Driver Console R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": null,
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "CANONICAL_TARGET_REVIEWED_UNRESOLVED",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/94"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "Canonical target docs/architecture/os-control-plane-r2.md#Driver Console R1 was checked for direct R/O/G responsibility and typed handoff evidence; no source-specific primary duty or cross-domain interface is established. Preserve UNRESOLVED until such evidence is recorded."
+    },
+    {
+      "component_id": "durability_lifecycle_r3",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Durability and Lifecycle R3",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "durability_lifecycle_r3",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_durability_steering_consumers",
+          "g_durability_lifecycle_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/34/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-control-plane-r2.md",
+          "component_registry_pointer": "/components/95"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "steering_intent_obligation_r1",
+      "canonical_target": "docs/architecture/os-steering-intent-r1.md#OS Steering, Intent, and Obligation R1",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "steering_intent_obligation_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_durability_steering_consumers",
+          "g_steering_obligation_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/48/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+          "component_registry_pointer": "/components/96"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "formal_task_lifecycle_r1",
+      "canonical_target": "data/operations/formal-task-lifecycle-r1.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Governs formal task identity, scope, terminality, publication, and witness rules independently from carried obligations.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+          "blob_sha1": "6871a417ffa9075fd150769ae774b83e24cd5323",
+          "role": "TASK_GOVERNANCE_CONTRACT",
+          "supports": "Declares the formal task lifecycle authority and its terminality/obligation-separation contract."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "formal_task_lifecycle_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_current_state_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/50/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+          "component_registry_pointer": "/components/97"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "open_obligation_registry_r1",
+      "canonical_target": "data/operations/open-obligation-registry-r1.json",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Carries cross-task obligation identity, status, owner plane, blocker, next eligible action, evidence, and lineage.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/data/operations/open-obligation-registry-r1.json",
+          "blob_sha1": "07627b8dc92e742d5803859746a0bc76fe3efea8",
+          "role": "OBLIGATION_GOVERNANCE_CONTRACT",
+          "supports": "Declares an independent obligation authority that does not keep a completed formal task live."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "open_obligation_registry_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_current_state_consumers"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/53/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [
+        {
+          "operation_id": "external.live_invocation",
+          "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
+        }
+      ],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/open-obligation-registry-r1.json",
+          "component_registry_pointer": "/components/98"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "executor_admission_r1",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Provider-neutral executor admission",
+      "classification_status": "SINGLE_DOMAIN_PRIMARY",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Governs admission conditions for external executors, including attestation, authorization, isolation, capture, cleanup, and side effects.",
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "blob_sha1": "638ae5b2dfdcb3ccf077c48b5bb5ee7889cfe485",
+          "role": "EXECUTOR_ADMISSION_POLICY",
+          "supports": "Defines a provider-neutral admission gate before live dispatch and separates admission from execution results."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "executor_admission_r1",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_federation_executor_consumers",
+          "g_federation_boundary_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/36/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+          "component_registry_pointer": "/components/99"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "openalex_adapter_r1",
+      "canonical_target": "scripts/external-research/openalex_client.py",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "openalex_adapter_r1",
+        "declared_validation_domain_associations": [
+          "R"
+        ],
+        "validation_consumers": [
+          "r_research_slot_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/20/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/scripts/external-research/openalex_client.py",
+          "component_registry_pointer": "/components/100"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "research_workflow_slot",
+      "canonical_target": "research_workflow/SLOT.md",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "research_workflow_slot",
+        "declared_validation_domain_associations": [
+          "R"
+        ],
+        "validation_consumers": [
+          "r_research_slot_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/25/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/research_workflow/SLOT.md",
+          "component_registry_pointer": "/components/101"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "crossref_verifier_r1",
+      "canonical_target": "evidence-program/tools/run_crossref_verification.py",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "crossref_verifier_r1",
+        "declared_validation_domain_associations": [
+          "R"
+        ],
+        "validation_consumers": [
+          "r_research_slot_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/21/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/evidence-program/tools/run_crossref_verification.py",
+          "component_registry_pointer": "/components/102"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "component_validation_router",
+      "canonical_target": "tools/operations/route_component_validation.py",
+      "classification_status": "SHARED_CROSS_DOMAIN",
+      "primary_responsibility_domain": "G",
+      "primary_responsibility": "Routes exact repository changes to declared domain validation consumers under G-controlled change-impact and release gates.",
+      "participating_domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "cross_domain_interfaces": [
+        {
+          "from_domain": "G",
+          "to_domain": "R",
+          "input": "Exact repository change plus declared R validation association",
+          "output": "Selected R validation consumer targets and bounded validation plan",
+          "evidence_refs": [
+            {
+              "path": "ignition/tools/operations/route_component_validation.py",
+              "blob_sha1": "b43079006258a742f1a3a4524d8ebfe7c7a2e7d7"
+            },
+            {
+              "path": "ignition/data/operations/component-validation-map-r1.json",
+              "blob_sha1": "ab946fc93f1b250baa822b730017fe923d5fe66f"
+            }
+          ]
+        },
+        {
+          "from_domain": "G",
+          "to_domain": "O",
+          "input": "Exact repository change plus declared O validation association",
+          "output": "Selected O validation consumer targets and bounded validation plan",
+          "evidence_refs": [
+            {
+              "path": "ignition/tools/operations/route_component_validation.py",
+              "blob_sha1": "b43079006258a742f1a3a4524d8ebfe7c7a2e7d7"
+            },
+            {
+              "path": "ignition/data/operations/component-validation-map-r1.json",
+              "blob_sha1": "ab946fc93f1b250baa822b730017fe923d5fe66f"
+            }
+          ]
+        }
+      ],
+      "responsibility_evidence": [
+        {
+          "path": "ignition/tools/operations/route_component_validation.py",
+          "blob_sha1": "b43079006258a742f1a3a4524d8ebfe7c7a2e7d7",
+          "role": "CROSS_DOMAIN_VALIDATION_INTERFACE",
+          "supports": "Implements change-to-component closure, declared domain/target routing, and cross-domain validation outcomes."
+        }
+      ],
+      "validation_map_projection": {
+        "component_id": "component_validation_router",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/2/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "DIRECT_EVIDENCE_SUPPORTS_ASSIGNMENT",
+        "canonical_target_ref": {
+          "path": "ignition/tools/operations/route_component_validation.py",
+          "component_registry_pointer": "/components/103"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": null
+    },
+    {
+      "component_id": "release_transaction_protocol_r3",
+      "canonical_target": "data/operations/release-transaction-protocol-r3.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "release_transaction_protocol_r3",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_component_release_controls"
+        ],
+        "change_classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/57/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/release-transaction-protocol-r3.json",
+          "component_registry_pointer": "/components/104"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    },
+    {
+      "component_id": "toolbox_candidate_bundle",
+      "canonical_target": "data/operations/toolbox-candidate-cards-r0.json",
+      "classification_status": "UNRESOLVED",
+      "primary_responsibility_domain": null,
+      "primary_responsibility": null,
+      "participating_domains": [],
+      "cross_domain_interfaces": [],
+      "responsibility_evidence": [],
+      "validation_map_projection": {
+        "component_id": "toolbox_candidate_bundle",
+        "declared_validation_domain_associations": [
+          "G"
+        ],
+        "validation_consumers": [
+          "g_toolbox_candidate_consumers"
+        ],
+        "change_classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "evidence_ref": {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "json_pointer": "/components/59/evidence",
+          "relation": "DECLARED_VALIDATION_ASSOCIATION_ONLY_NOT_OWNERSHIP"
+        }
+      },
+      "operation_source_consumers": [],
+      "evidence_review": {
+        "status": "VALIDATION_MAP_ASSOCIATION_ONLY",
+        "canonical_target_ref": {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "component_registry_pointer": "/components/105"
+        },
+        "reviewed_commit": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
+      },
+      "unresolved_reason": "The existing validation-map row declares domain associations, validation consumers, change classifications, and row evidence only; these fields are not primary-ownership evidence. No separate direct R/O/G responsibility or typed cross-domain interface is recorded for this component."
+    }
+  ],
+  "claim_ceiling": "Repository-local source/protocol responsibilities only; no scientific, external, Owner-acceptance, or production-readiness claim."
+}

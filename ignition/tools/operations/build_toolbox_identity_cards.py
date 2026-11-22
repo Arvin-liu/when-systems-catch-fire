@@ -18,6 +18,11 @@ REGISTRY_REL = "ignition/data/operations/ignition-operation-capability-registry-
 CANDIDATES_REL = "ignition/data/operations/toolbox-candidate-cards-r0.json"
 CARDS_REL = "ignition/data/operations/toolbox-identity-cards-r0.json"
 HUMAN_REL = "ignition/TOOLBOX.md"
+INTENT_INDEX_REL = "ignition/data/operations/task-intent-index-r1.json"
+RESPONSIBILITY_MATRIX_REL = "ignition/data/operations/component-domain-responsibilities-r1.json"
+BOUNDARY_MAP_REL = "ignition/data/operations/capability-execution-boundary-map-r1.json"
+BOUNDARY_BEGIN = "<!-- DISCOVERY-BOUNDARY:BEGIN -->"
+BOUNDARY_END = "<!-- DISCOVERY-BOUNDARY:END -->"
 REGISTRY_PATH = REPO_ROOT / REGISTRY_REL
 CANDIDATES_PATH = REPO_ROOT / CANDIDATES_REL
 
@@ -226,6 +231,41 @@ def build_cards() -> dict[str, Any]:
     }
 
 
+def discovery_boundary_section() -> str:
+    intent = load_json(REPO_ROOT / INTENT_INDEX_REL)
+    matrix = load_json(REPO_ROOT / RESPONSIBILITY_MATRIX_REL)
+    boundary = load_json(REPO_ROOT / BOUNDARY_MAP_REL)
+    counts = matrix["classification_counts"]
+    single = counts["single_domain_primary"]
+    lines = [
+        BOUNDARY_BEGIN,
+        "## Discovery and execution boundaries",
+        "",
+        f"- Task-intent index: {len(intent['entries'])} entries. It filters by caller-verified input type and Current callability, then returns `CANDIDATE`, `UNRESOLVED` or `UNSUPPORTED`; it never invokes or authorizes an operation.",
+        f"- Component responsibility matrix: R `{single['R']}`, O `{single['O']}`, G `{single['G']}`, shared `{counts['shared_cross_domain']}`, unresolved `{counts['unresolved']}` of 106 components. Validation-map associations and consumers remain separate from responsibility; all 46 previously unmapped IDs have individual dispositions.",
+        f"- Capability boundary map: {len(boundary['operations'])} registered operations, {len(boundary['packs'])} metadata-loadable Packs, and {len(boundary['optional_experimental_tools'])} opt-in Experimental entries. Pack-aware routing returns proposals and does not execute hooks; all experimental entries remain default-off.",
+        "- Registration, metadata loading, proposal routing, a declared source path, or generic Runtime code does not establish an operation implementation binding or prove that an action ran.",
+        f"- Machine assets: [{Path(INTENT_INDEX_REL).name}](data/operations/{Path(INTENT_INDEX_REL).name}), [{Path(RESPONSIBILITY_MATRIX_REL).name}](data/operations/{Path(RESPONSIBILITY_MATRIX_REL).name}), [{Path(BOUNDARY_MAP_REL).name}](data/operations/{Path(BOUNDARY_MAP_REL).name}).",
+        BOUNDARY_END,
+    ]
+    return "\n".join(lines)
+
+
+def replace_discovery_boundary(text: str, section: str) -> str:
+    begin_count = text.count(BOUNDARY_BEGIN)
+    end_count = text.count(BOUNDARY_END)
+    if begin_count != end_count or begin_count > 1:
+        raise IdentityCardError("Toolbox discovery-boundary markers are missing or duplicated")
+    if begin_count == 1:
+        start = text.index(BOUNDARY_BEGIN)
+        end = text.index(BOUNDARY_END, start) + len(BOUNDARY_END)
+        return text[:start] + section + text[end:]
+    anchor = "## Evidence-based lifecycle (Owner C1)"
+    if text.count(anchor) != 1:
+        raise IdentityCardError("cannot locate the Toolbox insertion anchor for the discovery boundary")
+    return text.replace(anchor, section + "\n\n" + anchor, 1)
+
+
 def render_human(document: dict[str, Any]) -> str:
     lines = [
         "# Ignition Toolbox / 点火工具箱",
@@ -233,6 +273,8 @@ def render_human(document: dict[str, Any]) -> str:
         "> This page is generated from the canonical Current operation registry plus the pinned optional candidate-card source. It is a discovery surface, not a permission or truth authority.",
         ">",
         "> Current operation entries are registered capabilities; the registry does not prove that every entry is a standalone executable in this environment. Experimental tools are opt-in and default off.",
+        "",
+        discovery_boundary_section(),
         "",
         "## Evidence-based lifecycle (Owner C1)",
         "",
@@ -332,7 +374,26 @@ def main(argv: list[str] | None = None) -> int:
     group.add_argument("--write", action="store_true", help="write the deterministic JSON and Markdown projections")
     group.add_argument("--check", action="store_true", help="verify both checked-in projections are current")
     group.add_argument("--markdown", action="store_true", help="print the human directory to stdout")
+    group.add_argument("--boundary-only", action="store_true", help="update or check only the discovery-boundary block in the human directory")
+    group.add_argument("--boundary-only-check", action="store_true", help="verify only the discovery-boundary block without requiring full candidate sources")
     args = parser.parse_args(argv)
+    if args.boundary_only or args.boundary_only_check:
+        try:
+            human_path = REPO_ROOT / HUMAN_REL
+            current = human_path.read_text(encoding="utf-8")
+            expected = replace_discovery_boundary(current, discovery_boundary_section())
+        except (IdentityCardError, OSError, json.JSONDecodeError) as exc:
+            print(f"TOOLBOX_BOUNDARY_INVALID: {exc}", file=sys.stderr)
+            return 1
+        if args.boundary_only_check:
+            if current != expected:
+                print("TOOLBOX_BOUNDARY_STALE: " + HUMAN_REL, file=sys.stderr)
+                return 1
+            print("TOOLBOX_BOUNDARY_OK intents=16 components=106 operations=20 packs=4 experimental=77")
+            return 0
+        human_path.write_text(expected, encoding="utf-8")
+        print("TOOLBOX_BOUNDARY_WRITTEN intents=16 components=106 operations=20 packs=4 experimental=77")
+        return 0
     try:
         document = build_cards()
     except IdentityCardError as exc:
