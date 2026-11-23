@@ -1,15 +1,21 @@
+import base64
 import copy
+import gzip
 import json
+import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
+from unittest.mock import patch
 
+from tools.operations import validate_responsibility_domain_registry as registry_validator
 from tools.operations.validate_responsibility_domain_registry import (
     FORMAL_MAIN,
     MAIN_COMPONENTS_PATH,
     OWNER_ACCEPTANCE_SOURCE,
     OWNER_RELATION_ACCEPTANCE_SOURCE,
     REGISTRY_PATH,
+    SOURCE_SNAPSHOT_PATH,
     derive_domain_views,
     validate,
 )
@@ -22,6 +28,39 @@ class ResponsibilityDomainRegistryTests(unittest.TestCase):
 
     def test_candidate_registry_and_source_evidence_resolve(self):
         self.assertEqual(validate(self.registry), [])
+
+    def test_pinned_source_snapshot_validates_without_git_source_objects(self):
+        registry_validator._pinned_source_blob.cache_clear()
+        try:
+            with patch.object(registry_validator, "_git_blob_if_available", return_value=None):
+                for source_id, (_, _, expected_blob_sha1) in registry_validator.FIXED_SOURCE_ANCHORS.items():
+                    if source_id not in {"identity_audit_r0_1", "previous_registry_candidate_a30"}:
+                        continue
+                    content = registry_validator._pinned_source_blob(source_id, str(SOURCE_SNAPSHOT_PATH))
+                    self.assertEqual(registry_validator._git_blob_oid(content), expected_blob_sha1)
+                self.assertEqual(validate(self.registry), [])
+        finally:
+            registry_validator._pinned_source_blob.cache_clear()
+
+    def test_pinned_source_snapshot_tampering_fails_closed(self):
+        snapshot = json.loads(gzip.decompress(SOURCE_SNAPSHOT_PATH.read_bytes()).decode("utf-8"))
+        entry = snapshot["sources"]["previous_registry_candidate_a30"]
+        content = bytearray(base64.b64decode(entry["content_base64"], validate=True))
+        content[0] ^= 1
+        entry["content_base64"] = base64.b64encode(content).decode("ascii")
+        with tempfile.TemporaryDirectory() as directory:
+            snapshot_path = Path(directory) / "tampered-source-snapshot.json.gz"
+            snapshot_bytes = json.dumps(snapshot, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+            snapshot_path.write_bytes(gzip.compress(snapshot_bytes, mtime=0))
+            registry_validator._pinned_source_blob.cache_clear()
+            try:
+                with patch.object(registry_validator, "SOURCE_SNAPSHOT_PATH", snapshot_path), patch.object(
+                    registry_validator, "_git_blob_if_available", return_value=None
+                ):
+                    errors = validate(self.registry)
+                self.assertTrue(any("source snapshot Git blob SHA-1 mismatch" in error for error in errors), errors)
+            finally:
+                registry_validator._pinned_source_blob.cache_clear()
 
     def test_accepted_domain_definitions_and_boundaries_are_content_pinned(self):
         accepted_new_domains = [

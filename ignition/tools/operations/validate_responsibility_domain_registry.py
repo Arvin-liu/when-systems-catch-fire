@@ -4,11 +4,16 @@
 from __future__ import annotations
 
 import argparse
+import base64
+import binascii
+import gzip
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
+import zlib
 from collections import Counter, defaultdict
 from functools import lru_cache
 from pathlib import Path
@@ -22,6 +27,9 @@ IGNITION_ROOT = HERE.parents[2]
 REPO_ROOT = IGNITION_ROOT.parent
 REGISTRY_PATH = IGNITION_ROOT / "data/operations/responsibility-domain-registry-r1.json"
 SCHEMA_PATH = IGNITION_ROOT / "schemas/operations/responsibility-domain-registry-r1.schema.json"
+SOURCE_SNAPSHOT_PATH = IGNITION_ROOT / "data/operations/responsibility-domain-registry-r1-source-snapshot.json.gz"
+SOURCE_SNAPSHOT_MAX_COMPRESSED_BYTES = 1_000_000
+SOURCE_SNAPSHOT_MAX_UNCOMPRESSED_BYTES = 2_000_000
 
 FORMAL_MAIN = "509d49e0b26216ce5443d5c3677aed6c4da4ef4b"
 PR275_HEAD = "b188dbab54677484aaf914a134064903b8902a43"
@@ -132,6 +140,97 @@ def _git_blob(commit: str, path: str) -> bytes:
         ["git", "-C", str(REPO_ROOT), "show", f"{commit}:{path}"],
         stderr=subprocess.STDOUT,
     )
+
+
+def _git_blob_oid(content: bytes) -> str:
+    header = f"blob {len(content)}\0".encode("ascii")
+    return hashlib.sha1(header + content).hexdigest()
+
+
+def _git_blob_if_available(commit: str, path: str) -> bytes | None:
+    env = os.environ.copy()
+    env["GIT_NO_LAZY_FETCH"] = "1"
+    commit_result = subprocess.run(
+        ["git", "-C", str(REPO_ROOT), "cat-file", "-e", commit],
+        env=env,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=False,
+    )
+    if commit_result.returncode != 0:
+        return None
+    blob_result = subprocess.run(
+        ["git", "-C", str(REPO_ROOT), "cat-file", "-e", f"{commit}:{path}"],
+        env=env,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=False,
+    )
+    if blob_result.returncode != 0:
+        return None
+    return _git_blob(commit, path)
+
+
+@lru_cache(maxsize=None)
+def _pinned_source_blob(source_id: str, snapshot_path: str) -> bytes:
+    anchor = FIXED_SOURCE_ANCHORS.get(source_id)
+    if anchor is None or source_id not in {"identity_audit_r0_1", "previous_registry_candidate_a30"}:
+        raise ValueError(f"source is not eligible for the pinned provenance snapshot: {source_id}")
+    try:
+        snapshot_file = Path(snapshot_path)
+        if snapshot_file.is_symlink() or not snapshot_file.is_file():
+            raise ValueError("pinned source snapshot must be a regular file")
+        if snapshot_file.stat().st_size > SOURCE_SNAPSHOT_MAX_COMPRESSED_BYTES:
+            raise ValueError("pinned source snapshot exceeds its compressed size limit")
+        with gzip.open(snapshot_file, "rb") as stream:
+            manifest_bytes = stream.read(SOURCE_SNAPSHOT_MAX_UNCOMPRESSED_BYTES + 1)
+            if (
+                len(manifest_bytes) > SOURCE_SNAPSHOT_MAX_UNCOMPRESSED_BYTES
+                or stream.read(1)
+            ):
+                raise ValueError("pinned source snapshot exceeds its uncompressed size limit")
+        payload = json.loads(manifest_bytes.decode("utf-8"))
+    except (OSError, EOFError, UnicodeDecodeError, json.JSONDecodeError, zlib.error) as exc:
+        raise ValueError(f"pinned source snapshot cannot be loaded: {exc}") from exc
+    if (
+        not isinstance(payload, dict)
+        or set(payload) != {"format", "sources"}
+        or payload.get("format") != "responsibility-domain-registry-r1-source-snapshot-v1"
+    ):
+        raise ValueError("pinned source snapshot format is invalid")
+    sources = payload.get("sources")
+    if not isinstance(sources, dict) or set(sources) != {"identity_audit_r0_1", "previous_registry_candidate_a30"}:
+        raise ValueError("pinned source snapshot has an unexpected source set")
+    entry = sources.get(source_id)
+    if not isinstance(entry, dict) or set(entry) != {"commit", "path", "blob_sha1", "content_base64"}:
+        raise ValueError(f"pinned source snapshot entry is invalid: {source_id}")
+    if (entry.get("commit"), entry.get("path"), entry.get("blob_sha1")) != anchor:
+        raise ValueError(f"pinned source snapshot provenance differs from the fixed anchor: {source_id}")
+    try:
+        content = base64.b64decode(entry["content_base64"], validate=True)
+    except (TypeError, ValueError, binascii.Error) as exc:
+        raise ValueError(f"pinned source snapshot content encoding is invalid: {source_id}") from exc
+    if _git_blob_oid(content) != anchor[2]:
+        raise ValueError(f"pinned source snapshot Git blob SHA-1 mismatch: {source_id}")
+    git_content = _git_blob_if_available(anchor[0], anchor[1])
+    if git_content is not None and git_content != content:
+        raise ValueError(f"pinned source snapshot differs from the source commit blob: {source_id}")
+    return content
+
+
+def _source_blob(source_id: str, commit: str, path: str) -> bytes:
+    if source_id in {"identity_audit_r0_1", "previous_registry_candidate_a30"}:
+        anchor = FIXED_SOURCE_ANCHORS[source_id]
+        if (commit, path) != anchor[:2]:
+            raise ValueError(f"source snapshot does not cover a different commit/path: {source_id}")
+        return _pinned_source_blob(source_id, str(SOURCE_SNAPSHOT_PATH))
+    return _git_blob(commit, path)
+
+
+def _source_blob_sha1(source_id: str, commit: str, path: str) -> str:
+    if source_id in {"identity_audit_r0_1", "previous_registry_candidate_a30"}:
+        return _git_blob_oid(_source_blob(source_id, commit, path))
+    return _git_blob_sha1(commit, path)
 
 
 @lru_cache(maxsize=None)
@@ -296,8 +395,8 @@ def _validate_source_catalog(document: dict[str, Any], errors: list[str], verify
                 continue
             if verify_sources:
                 try:
-                    actual = _git_blob_sha1(source["commit"], source["path"])
-                except (subprocess.CalledProcessError, OSError) as exc:
+                    actual = _source_blob_sha1(source_id, source["commit"], source["path"])
+                except (subprocess.CalledProcessError, OSError, ValueError) as exc:
                     errors.append(f"git source cannot be resolved for {source_id}: {exc}")
                 else:
                     if actual != source.get("blob_sha1"):
@@ -346,10 +445,10 @@ def _resolve_evidence_ref(
             actual_blob: str | None = None
             if verify_sources or need_component_subject:
                 try:
-                    raw = _git_blob(effective_commit, path)
+                    raw = _source_blob(effective_source_id, effective_commit, path)
                     if verify_sources:
-                        actual_blob = _git_blob_sha1(effective_commit, path)
-                except (subprocess.CalledProcessError, OSError) as exc:
+                        actual_blob = _source_blob_sha1(effective_source_id, effective_commit, path)
+                except (subprocess.CalledProcessError, OSError, ValueError) as exc:
                     errors.append(f"{location}: evidence artifact cannot be resolved ({path}): {exc}")
             if verify_sources and ref.get("blob_sha1") and actual_blob != ref["blob_sha1"]:
                 errors.append(f"{location}: evidence blob SHA-1 mismatch ({path})")
@@ -673,8 +772,10 @@ def _validate_acceptance(document: dict[str, Any], errors: list[str], domain_ids
         domains_by_id = {row["domain_id"]: row for row in document["domains"]}
         pinned_candidate_document: dict[str, Any] | None = None
         try:
-            pinned_candidate_document = json.loads(_git_blob(PRIOR_CANDIDATE_COMMIT, PRIOR_CANDIDATE_PATH).decode("utf-8"))
-        except (subprocess.CalledProcessError, OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+            pinned_candidate_document = json.loads(
+                _source_blob("previous_registry_candidate_a30", PRIOR_CANDIDATE_COMMIT, PRIOR_CANDIDATE_PATH).decode("utf-8")
+            )
+        except (subprocess.CalledProcessError, OSError, UnicodeDecodeError, json.JSONDecodeError, ValueError) as exc:
             errors.append(f"pinned Owner-accepted definition source cannot be loaded: {exc}")
         for domain_id, expected_hash in OWNER_ACCEPTED_DOMAIN_FINGERPRINTS.items():
             fingerprint = fingerprint_by_id.get(domain_id)
@@ -846,8 +947,10 @@ def _validate_relationships(
     candidate_source_id = "previous_registry_candidate_a30"
     candidate_document: dict[str, Any] | None = None
     try:
-        candidate_document = json.loads(_git_blob(PRIOR_CANDIDATE_COMMIT, PRIOR_CANDIDATE_PATH).decode("utf-8"))
-    except (subprocess.CalledProcessError, OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        candidate_document = json.loads(
+            _source_blob("previous_registry_candidate_a30", PRIOR_CANDIDATE_COMMIT, PRIOR_CANDIDATE_PATH).decode("utf-8")
+        )
+    except (subprocess.CalledProcessError, OSError, UnicodeDecodeError, json.JSONDecodeError, ValueError) as exc:
         errors.append(f"pinned prior candidate cannot be loaded for relation pointer checks: {exc}")
 
     for index, row in enumerate(decisions):
