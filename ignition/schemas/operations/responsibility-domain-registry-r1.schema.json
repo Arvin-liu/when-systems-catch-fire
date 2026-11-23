@@ -170,6 +170,7 @@
     },
     "validation_domain_associations": {
       "type": "array",
+      "maxItems": 0,
       "items": {"$ref": "#/$defs/validationAssociation"}
     },
     "future_evolution": {

@@ -13,7 +13,9 @@ from tools.operations.validate_responsibility_domain_registry import (
     FORMAL_MAIN,
     MAIN_COMPONENTS_PATH,
     OWNER_ACCEPTANCE_SOURCE,
+    OWNER_RELATION_ACCEPTANCE_COMMENT,
     OWNER_RELATION_ACCEPTANCE_SOURCE,
+    OWNER_RELATION_ACCEPTANCE_URL,
     REGISTRY_PATH,
     SOURCE_SNAPSHOT_PATH,
     derive_domain_views,
@@ -545,33 +547,82 @@ class ResponsibilityDomainRegistryTests(unittest.TestCase):
             validation_schema["$defs"]["domain"]["enum"],
         )
 
-    def test_route_crosswalk_needs_an_existing_target_and_separate_authorization(self):
+    def test_validation_crosswalk_cannot_be_authorized_by_relabeling_an_owner_record(self):
         mutated = copy.deepcopy(self.registry)
+        source = next(
+            row for row in mutated["sources"] if row["source_id"] == OWNER_RELATION_ACCEPTANCE_SOURCE
+        )
+        source["availability"] = "explicit_separate_validation_migration_authorization"
+        usage_ref = copy.deepcopy(
+            next(
+                row["source_ref"]
+                for row in mutated["component_identity_snapshot"]
+                if row["component_id"] == "usage"
+            )
+        )
+        route_document = json.loads(
+            (registry_validator.IGNITION_ROOT / "data/operations/component-validation-map-r1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        route = next(row for row in route_document["components"] if row["component_id"] == "usage")
+        self.assertIn("G", route["domains"])
+        self.assertIn("g_operating_method_consumers", route["validation_targets"])
         mutated["validation_domain_associations"].append(
             {
-                "component_id": "ai_guide",
-                "responsibility_domain_id": "decision_support_mapping",
-                "validation_domain_id": "O",
-                "validation_target_id": "not_an_existing_target",
-                "evidence_refs": [
-                    copy.deepcopy(
-                        next(
-                            row["source_ref"]
-                            for row in self.registry["component_identity_snapshot"]
-                            if row["component_id"] == "ai_guide"
-                        )
-                    )
-                ],
+                "component_id": "usage",
+                "responsibility_domain_id": "G",
+                "validation_domain_id": "G",
+                "validation_target_id": "g_operating_method_consumers",
+                "evidence_refs": [usage_ref],
                 "migration_authorization_ref": {
-                    "source_id": OWNER_ACCEPTANCE_SOURCE,
-                    "comment_id": 7093080490,
-                    "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490",
+                    "source_id": OWNER_RELATION_ACCEPTANCE_SOURCE,
+                    "comment_id": OWNER_RELATION_ACCEPTANCE_COMMENT,
+                    "url": OWNER_RELATION_ACCEPTANCE_URL,
                 },
             }
         )
         errors = validate(mutated, verify_sources=False)
-        self.assertTrue(any("target is not declared" in error for error in errors))
-        self.assertTrue(any("separate explicit Owner migration-authorization" in error for error in errors))
+        self.assertTrue(
+            any("validation_domain_associations must remain empty" in error for error in errors),
+            errors,
+        )
+
+        schema = json.loads(
+            (REGISTRY_PATH.parents[2] / "schemas/operations/responsibility-domain-registry-r1.schema.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        schema_errors = list(registry_validator.Draft202012Validator(schema).iter_errors(mutated))
+        self.assertTrue(
+            any(list(error.absolute_path) == ["validation_domain_associations"] for error in schema_errors),
+            schema_errors,
+        )
+
+    def _assert_owner_accepted_relation_cannot_be_demoted(self, relation):
+        mutated = copy.deepcopy(self.registry)
+        row = next(
+            item
+            for item in mutated["component_relationship_decisions"]
+            if (item["component_id"], item["domain_id"], item["relationship_type"]) == relation
+        )
+        row["decision_status"] = "proposed"
+        row["owner_acceptance_record_id"] = None
+        errors = validate(mutated, verify_sources=False)
+        self.assertTrue(
+            any("actual owner_accepted component relationship set" in error for error in errors),
+            errors,
+        )
+
+    def test_q14_primary_owner_acceptance_cannot_be_demoted(self):
+        self._assert_owner_accepted_relation_cannot_be_demoted(
+            ("q14", "decision_support_mapping", "primary")
+        )
+
+    def test_q14_shared_interface_owner_acceptance_cannot_be_demoted(self):
+        self._assert_owner_accepted_relation_cannot_be_demoted(
+            ("q14", "G", "shared_interface")
+        )
 
     def test_independent_closed_enums_remain_closed(self):
         ignition_root = REGISTRY_PATH.parents[2]

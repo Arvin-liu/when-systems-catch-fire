@@ -14040,6 +14040,6 @@
   "future_evolution": {
     "adding_a_domain": "Add a unique domain record with direct evidence and a status supported by an explicit acceptance record; no domain count ceiling or code enum is used.",
     "adding_a_relationship": "Add a concrete component/domain/type decision with resolvable source refs; keep source_declared, proposed, owner_accepted, and unresolved distinct.",
-    "route_crosswalk": "Add a validation_domain_association only for a real existing Validation Map component/domain/target tuple with evidence and separate authorization. A responsibility domain does not create a route or target."
+    "route_crosswalk": "Keep validation_domain_associations empty while the claim ceiling denies Validation Map routes. A future crosswalk requires a separately pinned Owner authorization bound to its source identity, content hash, and exact migration object; a free-form source availability value is not authorization. A responsibility domain does not create a route or target."
   }
 }

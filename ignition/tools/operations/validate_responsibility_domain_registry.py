@@ -39,8 +39,6 @@ MAIN_COMPONENTS_PATH = "ignition/data/operations/project-components.json"
 MATRIX_PATH = "ignition/data/operations/component-domain-responsibilities-r1.json"
 IDENTITY_AUDIT_PATH = "ignition/docs/architecture/rog/component-identity-audit-r0.1.md"
 PRIOR_CANDIDATE_PATH = "ignition/docs/architecture/rog/component-domain-registry-candidate-r0.json"
-VALIDATION_MAP_PATH = "ignition/data/operations/component-validation-map-r1.json"
-
 OWNER_ACCEPTANCE_SOURCE = "owner_architecture_ruling_7093080490"
 OWNER_ACCEPTANCE_COMMENT = 7093080490
 OWNER_ACCEPTANCE_URL = "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490"
@@ -1107,6 +1105,19 @@ def _validate_relationships(
         else:
             errors.append(f"unknown relationship decision status: {status}")
 
+    owner_accepted_rows = [
+        (row["component_id"], row["domain_id"], row["relationship_type"])
+        for row in decisions
+        if row["decision_status"] == "owner_accepted"
+    ]
+    if (
+        len(owner_accepted_rows) != len(OWNER_ACCEPTED_RELATIONS)
+        or set(owner_accepted_rows) != OWNER_ACCEPTED_RELATIONS
+    ):
+        errors.append(
+            "actual owner_accepted component relationship set must exactly match the two pinned Owner-accepted relations"
+        )
+
     if len(logical_keys) != len(set(logical_keys)):
         errors.append("duplicate logical component/domain/relationship decisions found")
     for cid in identities:
@@ -1131,52 +1142,12 @@ def _validate_relationships(
             errors.append(f"unresolved candidate outcome conflicts with a classified #275 source row: {row['component_id']}")
 
 
-def _validation_route_rows(errors: list[str], verify_sources: bool) -> dict[str, dict[str, Any]]:
-    try:
-        if verify_sources:
-            route_document = json.loads(_git_blob(FORMAL_MAIN, VALIDATION_MAP_PATH).decode("utf-8"))
-        else:
-            route_document = _load_json(IGNITION_ROOT / "data/operations/component-validation-map-r1.json")
-    except (subprocess.CalledProcessError, OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
-        errors.append(f"pinned Validation Map cannot be resolved for association checks: {exc}")
-        return {}
-    return {row["component_id"]: row for row in route_document.get("components", [])}
-
-
-def _validate_route_separation(document: dict[str, Any], errors: list[str], domain_ids: set[str], verify_sources: bool) -> None:
-    route_rows = _validation_route_rows(errors, verify_sources)
-    seen: set[tuple[str, str, str, str]] = set()
-    sources, _ = _source_maps(document)
-    for association in document["validation_domain_associations"]:
-        component_id = association["component_id"]
-        responsibility_domain_id = association["responsibility_domain_id"]
-        validation_domain_id = association["validation_domain_id"]
-        validation_target_id = association["validation_target_id"]
-        if component_id not in route_rows:
-            errors.append(f"route crosswalk names a component absent from the current Validation Map: {component_id}")
-            continue
-        if responsibility_domain_id not in domain_ids:
-            errors.append(f"route crosswalk names an unknown responsibility domain: {responsibility_domain_id}")
-        row = route_rows[component_id]
-        if validation_domain_id not in row.get("domains", []):
-            errors.append(f"route crosswalk domain is not declared for {component_id}: {validation_domain_id}")
-        if validation_target_id not in row.get("validation_targets", []):
-            errors.append(f"route crosswalk target is not declared for {component_id}: {validation_target_id}")
-        key = (component_id, responsibility_domain_id, validation_domain_id, validation_target_id)
-        if key in seen:
-            errors.append(f"duplicate validation-domain association: {key}")
-        seen.add(key)
-
-        authorization_ref = association["migration_authorization_ref"]
-        auth_source = sources.get(authorization_ref.get("source_id"))
-        if (
-            auth_source is None
-            or auth_source.get("source_kind") != "github_issue_comment"
-            or auth_source.get("availability") != "explicit_separate_validation_migration_authorization"
-        ):
-            errors.append("route crosswalk lacks a separate explicit Owner migration-authorization source")
-        elif auth_source.get("comment_id") == OWNER_ACCEPTANCE_COMMENT:
-            errors.append("the current architecture ruling does not authorize Validation Map migration")
+def _validate_route_separation(document: dict[str, Any], errors: list[str]) -> None:
+    if document.get("validation_domain_associations") != []:
+        errors.append(
+            "the pinned claim ceiling denies Validation Map routes and no separate Owner migration authorization is pinned; "
+            "validation_domain_associations must remain empty"
+        )
 
 
 def derive_domain_views(
@@ -1387,6 +1358,7 @@ def validate(
         return ["registry document must be an object"]
     errors: list[str] = []
     _validate_claim_ceiling(document, errors)
+    _validate_route_separation(document, errors)
     _validate_q14_maturity_claims(document, errors)
     _validate_q14_shared_interface_endpoints(document, errors)
     _validate_inter_domain_interaction_acceptance(document, errors)
@@ -1418,7 +1390,6 @@ def validate(
         {row["component_id"] for row in document["component_identity_snapshot"]},
     )
 
-    _validate_route_separation(document, errors, domain_ids, verify_sources)
     return errors
 
 
