@@ -174,6 +174,10 @@
         "blob_sha1": {"anyOf": [{"$ref": "#/$defs/blobSha1"}, {"type": "null"}]},
         "comment_id": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
         "url": {"anyOf": [{"type": "string", "format": "uri"}, {"type": "null"}]},
+        "issue_number": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+        "author_login": {"type": "string", "minLength": 1},
+        "body_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "decision_content_summary": {"type": "string", "minLength": 1},
         "availability": {"type": "string", "minLength": 1},
         "description": {"type": "string", "minLength": 1}
       },
@@ -251,16 +255,71 @@
         "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
       }
     },
+    "domainFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain_id", "fingerprint_fields", "fingerprint_sha256", "source_ref"],
+      "properties": {
+        "domain_id": {"$ref": "#/$defs/domainId"},
+        "fingerprint_fields": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "domain_id", "name_zh", "definition",
+              "responsibility_boundary.included", "responsibility_boundary.excluded"
+            ]
+          }
+        },
+        "fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_ref": {
+          "allOf": [
+            {"$ref": "#/$defs/evidenceRef"},
+            {"required": ["source_id", "commit", "path", "json_pointer", "blob_sha1"]}
+          ]
+        }
+      }
+    },
+    "acceptedExternalInterface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_domain_id", "target_type", "external_consumer_id", "direction",
+        "interface_type", "component_ids", "interaction"
+      ],
+      "properties": {
+        "source_domain_id": {"$ref": "#/$defs/domainId"},
+        "target_type": {"const": "external_consumer"},
+        "external_consumer_id": {"type": "string", "minLength": 1},
+        "direction": {"enum": ["external_consumer_invokes_source_domain", "source_domain_invokes_external_consumer"]},
+        "interface_type": {"type": "string", "minLength": 1},
+        "component_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "interaction": {"type": "string", "minLength": 1}
+      }
+    },
     "ownerAcceptance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["record_id", "source_id", "comment_id", "url", "accepted_domain_ids", "accepted_component_relations", "scope", "recorded_at", "author"],
+      "required": [
+        "record_id", "source_id", "comment_id", "url", "accepted_domain_ids", "accepted_component_relations",
+        "scope", "recorded_at", "author", "source_repository", "source_issue_number", "author_login",
+        "source_content_sha256", "decision_content_summary", "accepted_domain_fingerprints", "accepted_external_interfaces"
+      ],
       "properties": {
         "record_id": {"type": "string", "minLength": 1},
         "source_id": {"type": "string", "minLength": 1},
         "comment_id": {"type": "integer", "minimum": 1},
         "url": {"type": "string", "format": "uri"},
         "accepted_domain_ids": {"type": "array", "items": {"$ref": "#/$defs/domainId"}},
+        "source_repository": {"type": "string", "minLength": 1},
+        "source_issue_number": {"type": "integer", "minimum": 1},
+        "author_login": {"type": "string", "minLength": 1},
+        "source_content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "decision_content_summary": {"type": "string", "minLength": 1},
+        "accepted_domain_fingerprints": {"type": "array", "items": {"$ref": "#/$defs/domainFingerprint"}},
+        "accepted_external_interfaces": {"type": "array", "items": {"$ref": "#/$defs/acceptedExternalInterface"}},
         "accepted_component_relations": {
           "type": "array",
           "items": {
@@ -338,16 +397,29 @@
     "externalInterface": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["source_domain_id", "external_consumer_id", "interface_type", "interaction", "component_ids", "evidence_refs", "interface_status"],
+      "required": [
+        "source_domain_id", "external_consumer_id", "target_type", "direction", "interface_type",
+        "interaction", "component_ids", "evidence_refs", "interface_status", "owner_acceptance_record_id"
+      ],
       "properties": {
         "source_domain_id": {"$ref": "#/$defs/domainId"},
         "external_consumer_id": {"type": "string", "minLength": 1},
+        "target_type": {"const": "external_consumer"},
+        "direction": {"enum": ["external_consumer_invokes_source_domain", "source_domain_invokes_external_consumer"]},
         "interface_type": {"type": "string", "minLength": 1},
         "interaction": {"type": "string", "minLength": 1},
         "component_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
         "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
-        "interface_status": {"enum": ["proposed", "owner_accepted", "unresolved"]}
-      }
+        "interface_status": {"enum": ["proposed", "owner_accepted", "unresolved"]},
+        "owner_acceptance_record_id": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"interface_status": {"const": "owner_accepted"}}, "required": ["interface_status"]},
+          "then": {"properties": {"owner_acceptance_record_id": {"type": "string", "minLength": 1}}},
+          "else": {"properties": {"owner_acceptance_record_id": {"type": "null"}}}
+        }
+      ]
     },
     "validationAssociation": {
       "type": "object",

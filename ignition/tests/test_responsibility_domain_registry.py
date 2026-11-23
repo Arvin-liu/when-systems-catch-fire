@@ -8,6 +8,7 @@ from tools.operations.validate_responsibility_domain_registry import (
     FORMAL_MAIN,
     MAIN_COMPONENTS_PATH,
     OWNER_ACCEPTANCE_SOURCE,
+    OWNER_RELATION_ACCEPTANCE_SOURCE,
     REGISTRY_PATH,
     derive_domain_views,
     validate,
@@ -21,6 +22,197 @@ class ResponsibilityDomainRegistryTests(unittest.TestCase):
 
     def test_candidate_registry_and_source_evidence_resolve(self):
         self.assertEqual(validate(self.registry), [])
+
+    def test_accepted_domain_definitions_and_boundaries_are_content_pinned(self):
+        accepted_new_domains = [
+            "agent_execution_coordination",
+            "formal_repository_change_coordination",
+            "bounded_function_execution",
+            "decision_support_mapping",
+        ]
+        for domain_id in accepted_new_domains:
+            for field, boundary_key in (
+                ("definition", None),
+                ("responsibility_boundary", "included"),
+                ("responsibility_boundary", "excluded"),
+            ):
+                with self.subTest(domain_id=domain_id, field=field, boundary_key=boundary_key):
+                    mutated = copy.deepcopy(self.registry)
+                    domain = next(row for row in mutated["domains"] if row["domain_id"] == domain_id)
+                    if field == "definition":
+                        domain[field] += " Tampered."
+                    else:
+                        domain[field][boundary_key][0] += " Tampered."
+                    errors = validate(mutated, verify_sources=False)
+                    self.assertTrue(any("fingerprint mismatch" in error for error in errors), errors)
+
+    def test_acceptance_record_cannot_expand_or_forge_the_accepted_domain_set(self):
+        expanded_list_only = copy.deepcopy(self.registry)
+        expanded_list_only["owner_acceptance_records"][0]["accepted_domain_ids"].append("unaccepted_domain")
+        self.assertTrue(
+            any(
+                "exact pinned accepted set" in error
+                for error in validate(expanded_list_only, verify_sources=False)
+            )
+        )
+
+        expanded = copy.deepcopy(self.registry)
+        extra = copy.deepcopy(expanded["domains"][0])
+        extra.update(
+            domain_id="forged_owner_domain",
+            name_zh="伪造接受领域",
+            aliases=[],
+            definition="A forged accepted domain.",
+            responsibility_boundary={
+                "included": ["A forged responsibility."],
+                "excluded": ["Validation routes."],
+            },
+            domain_status="owner_accepted",
+            owner_acceptance_record_id=OWNER_ACCEPTANCE_SOURCE,
+        )
+        expanded["domains"].append(extra)
+        expanded["owner_acceptance_records"][0]["accepted_domain_ids"].append("forged_owner_domain")
+        self.assertTrue(
+            any("exact pinned accepted set" in error for error in validate(expanded, verify_sources=False))
+        )
+
+        disguised = copy.deepcopy(self.registry)
+        disguised["domains"].append(extra)
+        errors = validate(disguised, verify_sources=False)
+        self.assertTrue(any("owner-accepted domain lacks its matching acceptance record" in error for error in errors))
+
+    def test_owner_accepted_new_domain_cannot_be_demoted(self):
+        mutated = copy.deepcopy(self.registry)
+        domain = next(row for row in mutated["domains"] if row["domain_id"] == "bounded_function_execution")
+        domain["domain_status"] = "proposed"
+        domain["owner_acceptance_record_id"] = None
+        errors = validate(mutated, verify_sources=False)
+        self.assertTrue(any("pinned Owner-accepted domain was demoted" in error for error in errors), errors)
+
+    def test_owner_decision_source_and_fingerprint_bindings_cannot_be_rewritten(self):
+        mutations = []
+
+        changed_source_hash = copy.deepcopy(self.registry)
+        changed_source_hash["sources"][-1]["body_sha256"] = "0" * 64
+        mutations.append(changed_source_hash)
+
+        changed_both_summaries = copy.deepcopy(self.registry)
+        changed_both_summaries["sources"][-1]["decision_content_summary"] = "A forged summary."
+        changed_both_summaries["owner_acceptance_records"][0]["decision_content_summary"] = "A forged summary."
+        mutations.append(changed_both_summaries)
+
+        changed_fingerprint = copy.deepcopy(self.registry)
+        changed_fingerprint["owner_acceptance_records"][0]["accepted_domain_fingerprints"][0][
+            "fingerprint_sha256"
+        ] = "0" * 64
+        mutations.append(changed_fingerprint)
+
+        changed_pointer = copy.deepcopy(self.registry)
+        changed_pointer["owner_acceptance_records"][0]["accepted_domain_fingerprints"][0]["source_ref"][
+            "json_pointer"
+        ] = "/domains/2"
+        mutations.append(changed_pointer)
+
+        for mutated in mutations:
+            with self.subTest(mutation=mutated["owner_acceptance_records"][0]["accepted_domain_fingerprints"][0]):
+                self.assertNotEqual(validate(mutated, verify_sources=False), [])
+
+    def test_component_evidence_pointer_cannot_be_swapped_to_another_component(self):
+        mutated = copy.deepcopy(self.registry)
+        identity = mutated["component_identity_snapshot"][0]
+        identity["source_ref"]["json_pointer"] = "/components/1"
+        errors = validate(mutated)
+        self.assertTrue(
+            any("identifies components" in error or "exact main registry row" in error for error in errors),
+            errors,
+        )
+
+    def test_prior_candidate_pointer_must_resolve_to_the_same_component_relation(self):
+        mutated = copy.deepcopy(self.registry)
+        function_os = next(
+            row for row in mutated["component_relationship_decisions"]
+            if row["component_id"] == "function_os" and row["domain_id"] == "bounded_function_execution"
+        )
+        prior_ref = next(
+            ref for ref in function_os["evidence_refs"]
+            if ref.get("source_id") == "previous_registry_candidate_a30"
+        )
+        prior_ref["json_pointer"] = "/component_mappings/10/domain_relations/0"
+        errors = validate(mutated)
+        self.assertTrue(
+            any("identifies components" in error or "different component" in error or "does not match component/domain/type" in error for error in errors),
+            errors,
+        )
+
+    def test_identity_audit_evidence_key_must_name_the_same_component_row(self):
+        mutated = copy.deepcopy(self.registry)
+        q14 = next(
+            row for row in mutated["component_relationship_decisions"]
+            if row["component_id"] == "q14" and row["domain_id"] == "decision_support_mapping"
+        )
+        audit_ref = next(ref for ref in q14["evidence_refs"] if ref.get("source_id") == "identity_audit_r0_1")
+        audit_ref["location"] = "§逐项身份记录 item 40 (line 207)"
+        errors = validate(mutated)
+        self.assertTrue(any("does not identify any expected component" in error for error in errors), errors)
+
+    def test_external_consumer_is_explicit_and_remains_proposed(self):
+        interface = self.registry["external_consumer_interfaces"][0]
+        domain_ids = {row["domain_id"] for row in self.registry["domains"]}
+        self.assertEqual(interface["target_type"], "external_consumer")
+        self.assertEqual(interface["direction"], "external_consumer_invokes_source_domain")
+        self.assertNotIn(interface["external_consumer_id"], domain_ids)
+        self.assertEqual(interface["interface_status"], "proposed")
+        self.assertIsNone(interface["owner_acceptance_record_id"])
+        self.assertEqual(validate(self.registry), [])
+
+        forged_domain_target = copy.deepcopy(self.registry)
+        forged_domain_target["external_consumer_interfaces"][0]["external_consumer_id"] = "decision_support_mapping"
+        errors = validate(forged_domain_target, verify_sources=False)
+        self.assertTrue(any("must use an external identity" in error for error in errors), errors)
+
+    def test_external_interface_cannot_be_owner_accepted_without_a_record(self):
+        mutated = copy.deepcopy(self.registry)
+        mutated["external_consumer_interfaces"][0]["interface_status"] = "owner_accepted"
+        errors = validate(mutated, verify_sources=False)
+        self.assertTrue(any("owner_acceptance_record_id" in error for error in errors), errors)
+
+    def test_external_acceptance_must_match_component_type_and_target(self):
+        original = self.registry["external_consumer_interfaces"][0]
+        binding = {
+            "source_domain_id": original["source_domain_id"],
+            "target_type": original["target_type"],
+            "external_consumer_id": original["external_consumer_id"],
+            "direction": original["direction"],
+            "interface_type": original["interface_type"],
+            "component_ids": copy.deepcopy(original["component_ids"]),
+            "interaction": original["interaction"],
+        }
+        for field, changed_value in (
+            ("component_ids", ["function_os"]),
+            ("interface_type", "forged_interface_type"),
+            ("external_consumer_id", "decision_support_mapping"),
+        ):
+            with self.subTest(field=field):
+                mutated = copy.deepcopy(self.registry)
+                accepted_binding = copy.deepcopy(binding)
+                accepted_binding[field] = changed_value
+                mutated["owner_acceptance_records"][0]["accepted_external_interfaces"] = [accepted_binding]
+                interface = mutated["external_consumer_interfaces"][0]
+                interface["interface_status"] = "owner_accepted"
+                interface["owner_acceptance_record_id"] = OWNER_ACCEPTANCE_SOURCE
+                interface["evidence_refs"].append(
+                    {
+                        "source_id": OWNER_ACCEPTANCE_SOURCE,
+                        "comment_id": 7093080490,
+                        "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490",
+                        "evidence_key": "accepted responsibility-domain set and boundaries; Q14 primary/shared-interface principle",
+                    }
+                )
+                errors = validate(mutated, verify_sources=False)
+                self.assertTrue(
+                    any("does not match the accepted target/direction/type/components" in error for error in errors),
+                    errors,
+                )
 
     def test_source_matrix_facts_remain_separate_from_relationship_decisions(self):
         rows = self.registry["source_matrix_snapshot"]["document"]["components"]
@@ -52,6 +244,11 @@ class ResponsibilityDomainRegistryTests(unittest.TestCase):
                 ("q14", "G", "shared_interface"),
             },
         )
+        for row in decisions:
+            if row["decision_status"] == "owner_accepted":
+                self.assertEqual(row["owner_acceptance_record_id"], OWNER_RELATION_ACCEPTANCE_SOURCE)
+        for domain in self.registry["domains"]:
+            self.assertEqual(domain["owner_acceptance_record_id"], OWNER_ACCEPTANCE_SOURCE)
 
     def test_rg_definitions_match_the_exact_matrix_text(self):
         matrix = self.registry["source_matrix_snapshot"]["document"]

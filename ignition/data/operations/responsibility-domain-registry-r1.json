@@ -104,7 +104,27 @@
       "comment_id": 7093080490,
       "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490",
       "availability": "owner_recorded",
-      "description": "Owner architecture ruling accepting the domain set and boundaries and the Q14 primary/shared-interface rule."
+      "description": "Owner architecture ruling accepting the domain set and boundaries and the Q14 primary/shared-interface rule.",
+      "issue_number": 164,
+      "author_login": "Arvin-liu",
+      "body_sha256": "5869ee1b404e1337beaf623528be9689f59a9bcbd7ceccd5b697729870e24f8e",
+      "decision_content_summary": "Accepts the open unbounded responsibility-domain set, preserves exact R/O/G definitions, accepts the four named new domain definitions and responsibility boundaries, and accepts the Q14 architecture attribution principle; it does not authorize Validation Map migration."
+    },
+    {
+      "source_id": "owner_relation_status_7094188476",
+      "source_kind": "github_issue_comment",
+      "repository": "Arvin-liu/1111",
+      "commit": null,
+      "path": null,
+      "blob_sha1": null,
+      "comment_id": 7094188476,
+      "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7094188476",
+      "availability": "owner_recorded",
+      "description": "Owner-designated issue record for the exact accepted component relation statuses.",
+      "issue_number": 164,
+      "author_login": "Arvin-liu",
+      "body_sha256": "4165e25ad668f358dc87c367bfb8197af423dcf6f86688ce8a45f734b3cf227c",
+      "decision_content_summary": "The record states that only Q14 decision_support_mapping primary and G shared_interface component relations are Owner accepted; all other candidate component relations remain proposed."
     }
   ],
   "owner_acceptance_records": [
@@ -122,6 +142,97 @@
         "bounded_function_execution",
         "decision_support_mapping"
       ],
+      "accepted_component_relations": [],
+      "scope": "Accepts the open domain model, exact R/O/G definitions, four named new domain boundaries, and the Q14 architecture attribution principle. The specific accepted component relation statuses are separately bound to #164 comment 7094188476.",
+      "recorded_at": "2026-11-23",
+      "author": "Arvin-liu",
+      "source_repository": "Arvin-liu/1111",
+      "source_issue_number": 164,
+      "author_login": "Arvin-liu",
+      "source_content_sha256": "5869ee1b404e1337beaf623528be9689f59a9bcbd7ceccd5b697729870e24f8e",
+      "decision_content_summary": "Accepts the open unbounded responsibility-domain set, preserves exact R/O/G definitions, accepts the four named new domain definitions and responsibility boundaries, and accepts the Q14 architecture attribution principle; it does not authorize Validation Map migration.",
+      "accepted_external_interfaces": [],
+      "accepted_domain_fingerprints": [
+        {
+          "domain_id": "agent_execution_coordination",
+          "fingerprint_fields": [
+            "domain_id",
+            "name_zh",
+            "definition",
+            "responsibility_boundary.included",
+            "responsibility_boundary.excluded"
+          ],
+          "fingerprint_sha256": "6b57b9fc22582cea88afb218ea10b77f49b0b70baf3965ceef9d51838988a392",
+          "source_ref": {
+            "source_id": "previous_registry_candidate_a30",
+            "commit": "a30ac9ce110820252523e16019827bdaa941c802",
+            "path": "ignition/docs/architecture/rog/component-domain-registry-candidate-r0.json",
+            "json_pointer": "/domains/3",
+            "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
+          }
+        },
+        {
+          "domain_id": "formal_repository_change_coordination",
+          "fingerprint_fields": [
+            "domain_id",
+            "name_zh",
+            "definition",
+            "responsibility_boundary.included",
+            "responsibility_boundary.excluded"
+          ],
+          "fingerprint_sha256": "63ee7eb2163d3b3f8f1f55d84e0d8621f30b593428dddc37d726fae954873710",
+          "source_ref": {
+            "source_id": "previous_registry_candidate_a30",
+            "commit": "a30ac9ce110820252523e16019827bdaa941c802",
+            "path": "ignition/docs/architecture/rog/component-domain-registry-candidate-r0.json",
+            "json_pointer": "/domains/4",
+            "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
+          }
+        },
+        {
+          "domain_id": "bounded_function_execution",
+          "fingerprint_fields": [
+            "domain_id",
+            "name_zh",
+            "definition",
+            "responsibility_boundary.included",
+            "responsibility_boundary.excluded"
+          ],
+          "fingerprint_sha256": "8c8013595601a088ee57c7e01efc5a5781db5b3153402a86c92441054d0e61e4",
+          "source_ref": {
+            "source_id": "previous_registry_candidate_a30",
+            "commit": "a30ac9ce110820252523e16019827bdaa941c802",
+            "path": "ignition/docs/architecture/rog/component-domain-registry-candidate-r0.json",
+            "json_pointer": "/domains/5",
+            "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
+          }
+        },
+        {
+          "domain_id": "decision_support_mapping",
+          "fingerprint_fields": [
+            "domain_id",
+            "name_zh",
+            "definition",
+            "responsibility_boundary.included",
+            "responsibility_boundary.excluded"
+          ],
+          "fingerprint_sha256": "606682b90ec216c3c5ce8e3e93390e06c33273d4e9d844b6117f2470a433c827",
+          "source_ref": {
+            "source_id": "previous_registry_candidate_a30",
+            "commit": "a30ac9ce110820252523e16019827bdaa941c802",
+            "path": "ignition/docs/architecture/rog/component-domain-registry-candidate-r0.json",
+            "json_pointer": "/domains/6",
+            "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "owner_relation_status_7094188476",
+      "source_id": "owner_relation_status_7094188476",
+      "comment_id": 7094188476,
+      "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7094188476",
+      "accepted_domain_ids": [],
       "accepted_component_relations": [
         {
           "component_id": "q14",
@@ -134,9 +245,16 @@
           "relationship_type": "primary"
         }
       ],
-      "scope": "Accepts the open domain model, R/O/G definitions, four new domain boundaries, and Q14 decision_support_mapping primary plus G shared/interface. It does not accept unrelated candidate component relations or rewrite #275 source statuses.",
+      "scope": "Records the exact two Owner-accepted component relations: q14 decision_support_mapping primary and q14 G shared_interface; no other component relations are owner_accepted.",
       "recorded_at": "2026-11-23",
-      "author": "Arvin-liu"
+      "author": "Arvin-liu",
+      "source_repository": "Arvin-liu/1111",
+      "source_issue_number": 164,
+      "author_login": "Arvin-liu",
+      "source_content_sha256": "4165e25ad668f358dc87c367bfb8197af423dcf6f86688ce8a45f734b3cf227c",
+      "decision_content_summary": "The record states that only Q14 decision_support_mapping primary and G shared_interface component relations are Owner accepted; all other candidate component relations remain proposed.",
+      "accepted_external_interfaces": [],
+      "accepted_domain_fingerprints": []
     }
   ],
   "domains": [
@@ -9671,13 +9789,13 @@
           "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
         },
         {
-          "source_id": "owner_architecture_ruling_7093080490",
-          "comment_id": 7093080490,
-          "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490",
-          "evidence_key": "accepted responsibility-domain set and boundaries; Q14 primary/shared-interface principle"
+          "source_id": "owner_relation_status_7094188476",
+          "comment_id": 7094188476,
+          "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7094188476",
+          "evidence_key": "只有 Q14 的 decision_support_mapping primary 和 G shared_interface 两条被记录为 Owner 接受；其他候选关系未提升。"
         }
       ],
-      "owner_acceptance_record_id": "owner_architecture_ruling_7093080490"
+      "owner_acceptance_record_id": "owner_relation_status_7094188476"
     },
     {
       "decision_id": "q14::decision_support_mapping::primary",
@@ -9748,13 +9866,13 @@
           "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
         },
         {
-          "source_id": "owner_architecture_ruling_7093080490",
-          "comment_id": 7093080490,
-          "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490",
-          "evidence_key": "accepted responsibility-domain set and boundaries; Q14 primary/shared-interface principle"
+          "source_id": "owner_relation_status_7094188476",
+          "comment_id": 7094188476,
+          "url": "https://github.com/Arvin-liu/1111/issues/164#issuecomment-7094188476",
+          "evidence_key": "只有 Q14 的 decision_support_mapping primary 和 G shared_interface 两条被记录为 Owner 接受；其他候选关系未提升。"
         }
       ],
-      "owner_acceptance_record_id": "owner_architecture_ruling_7093080490"
+      "owner_acceptance_record_id": "owner_relation_status_7094188476"
     },
     {
       "decision_id": "readme::G::shared_interface",
@@ -13883,7 +14001,10 @@
           "blob_sha1": "f6c614f2aa0d7fb39d73c6ecf7e3cd486733b7f7"
         }
       ],
-      "interface_status": "proposed"
+      "interface_status": "proposed",
+      "direction": "external_consumer_invokes_source_domain",
+      "target_type": "external_consumer",
+      "owner_acceptance_record_id": null
     }
   ],
   "validation_domain_associations": [],

@@ -29,6 +29,14 @@ The Owner has accepted these three definitions and the four following responsibi
 
 That acceptance is recorded at [#164 comment 7093080490](https://github.com/Arvin-liu/1111/issues/164#issuecomment-7093080490). The registry still remains an isolated candidate pending independent review and a later Owner decision about publication and Formal lifecycle.
 
+## Owner decision binding
+
+The validator treats two exact #164 records as separate anchors. Comment 7093080490 binds the domain set and the four new domain definitions and responsibility boundaries. Comment 7094188476 binds the exact status of the two accepted component relations. The source records identify `Arvin-liu/1111`, issue 164, comment ID, Owner login, a fixed SHA-256 of the retrieved comment body, and a concise summary of the decision content.
+
+For each of the four new domains, the acceptance record stores a canonical SHA-256 over `domain_id`, `name_zh`, `definition`, `responsibility_boundary.included`, and `responsibility_boundary.excluded`. The validator pins each digest and its exact JSON Pointer into the prior candidate at `a30ac9ce110820252523e16019827bdaa941c802`, with the source path and blob SHA-1. It compares the registry domain, acceptance record, and resolved source object. The source comment hash, Owner identity, accepted domain set, and exact two relation tuples are pinned in validator code, so editing only the registry cannot expand or rewrite acceptance.
+
+This is a local integrity check against the pinned GitHub records and source commit; it does not call GitHub at validation time or add a signature system. The validator code and its pinned constants remain part of the review boundary. The candidate does not claim cryptographic protection against an authorized change to the validator itself.
+
 `decision_support_mapping` covers manually curated, source-marked, versioned map projections for declared observers and decision questions. It does not establish a mature automated decision engine. The current snapshot freshness and actual external decision benefit remain unverified.
 
 ## Source layers and relationship states
@@ -43,7 +51,7 @@ Current decision counts are derived from the data, not used as a limit:
 
 - 28 source-declared relations: 20 primary declarations, 4 non-primary participating declarations, and 4 shared-interface declarations from the matrix.
 - 107 candidate proposals remain `proposed`.
-- Only Q14's `decision_support_mapping` primary and G shared-interface relations are `owner_accepted` by comment 7093080490.
+- Only Q14's `decision_support_mapping` primary and G shared-interface relations are `owner_accepted` by the exact status recorded in comment 7094188476. Comment 7093080490 accepts the Q14 architecture attribution principle; it does not promote other component relations.
 - 2 components with no proposed relationship remain explicitly unresolved.
 
 The exact 86 matrix rows remain `UNRESOLVED`, even where this candidate proposes one or more component relations. The source matrix's `participating_domains` array is copied unchanged; its non-primary entries are represented as source-declared `participating` relations, while its primary domain is not duplicated as a participant. The original source row remains available for inspection.
@@ -70,11 +78,17 @@ An external consumer is recorded in `external_consumer_interfaces`, with a sourc
 
 ## Q14 boundary
 
-The raw #275 row for `q14` remains `UNRESOLVED` with `primary_responsibility_domain: null`. The Owner has accepted the candidate relationship rule that Q14 is primary in `decision_support_mapping` and has a G shared/interface relation. This relation decision does not rewrite the matrix snapshot.
+The raw #275 row for `q14` remains `UNRESOLVED` with `primary_responsibility_domain: null`. Comment 7093080490 accepts the Q14 architecture attribution principle. Comment 7094188476 records the exact accepted relation statuses: Q14 is primary in `decision_support_mapping` and has a G `shared_interface` relation. This relation decision does not rewrite the matrix snapshot.
 
 The accepted mapping describes a manually curated, versioned projection that is marked with sources and claim limits. It does not establish current snapshot freshness or a verified external decision benefit. It does not own Charter permissions, acceptance, publication, or the Formal system-map generation chain.
 
-The validator bounds `owner_accepted` component relations to the two exact Q14 relations in the cited ruling. The remaining prior-candidate relations are kept `proposed`; none becomes accepted merely because it appears in a domain record or derived view.
+The validator binds those two `owner_accepted` component relations to comment 7094188476 and their specific component, domain, and relationship type. The remaining prior-candidate relations are kept `proposed`; none becomes accepted merely because it appears in a domain record or derived view.
+
+## Evidence subject binding
+
+Evidence references retain the exact source commit, path, and blob SHA-1 checks. For JSON Pointers attached to a component record, the validator resolves the target object and requires its component ID or explicit component endpoint to match the component under review. Prior-candidate relationship pointers must land on the matching component mapping and exact domain/relation entry; participant pointers must land on the matching component's participant list. Identity-audit evidence keys must resolve to the numbered row that names the same component.
+
+External-consumer interfaces name a `target_type` of `external_consumer`, a separate consumer ID, and an explicit direction. A consumer ID cannot reuse a responsibility-domain ID. An `owner_accepted` interface must match an exact tuple in an anchored acceptance record, including source domain, consumer target, direction, interface type, components, and interaction. Neither current Owner record accepts external-consumer interfaces, so the Toolbox Function OS interface remains `proposed`.
 
 ## Validation Map separation
 
