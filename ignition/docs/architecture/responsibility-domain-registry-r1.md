@@ -37,7 +37,9 @@ For each of the four new domains, the acceptance record stores a canonical SHA-2
 
 This is a local integrity check against the pinned GitHub records and source blob contents; it does not call GitHub at validation time or add a signature system. The snapshot removes reliance on unreachable Git objects in a shallow CI checkout while preserving the original commit IDs, paths, and blob SHA-1 values. The validator code and its pinned constants remain part of the review boundary. The candidate does not claim cryptographic protection against an authorized change to the validator itself.
 
-`decision_support_mapping` covers manually curated, source-marked, versioned map projections for declared observers and decision questions. It does not establish a mature automated decision engine. The current snapshot freshness and actual external decision benefit remain unverified.
+The global `claim_ceiling` is a structured candidate-state boundary. Its candidate status is fixed to `CANDIDATE_NOT_EFFECTIVE`, and its Formal current/merge, additional relationship, route, execution, review, publication, and external-action authority fields are pinned false by both schema and semantic validator. Replacing the object with permissive prose or changing any field fails validation.
+
+The Q14 maturity limit is a separate `owner_claim_constraints` record, bound to the same exact #164 comment identity and body hash. It is not added to the four accepted-domain boundary fingerprints. The `decision_support_mapping` maturity must remain a manually curated, source-marked, versioned map projection; snapshot freshness and actual external decision benefit are unverified; it is not a mature automated decision engine. Both the structured limits and the Q14 display description are pinned by the validator.
 
 ## Source layers and relationship states
 
@@ -80,9 +82,11 @@ An external consumer is recorded in `external_consumer_interfaces`, with a sourc
 
 The raw #275 row for `q14` remains `UNRESOLVED` with `primary_responsibility_domain: null`. Comment 7093080490 accepts the Q14 architecture attribution principle. Comment 7094188476 records the exact accepted relation statuses: Q14 is primary in `decision_support_mapping` and has a G `shared_interface` relation. This relation decision does not rewrite the matrix snapshot.
 
-The accepted mapping describes a manually curated, versioned projection that is marked with sources and claim limits. It does not establish current snapshot freshness or a verified external decision benefit. It does not own Charter permissions, acceptance, publication, or the Formal system-map generation chain.
+The accepted Q14/G `shared_interface` relation has exactly the two endpoints `G` and `decision_support_mapping`; the validator rejects a missing, additional, duplicate, or substituted endpoint. The accepted mapping describes a manually curated, versioned projection that is marked with sources and claim limits. It does not establish current snapshot freshness or a verified external decision benefit. It does not own Charter permissions, acceptance, publication, or the Formal system-map generation chain.
 
 The validator binds those two `owner_accepted` component relations to comment 7094188476 and their specific component, domain, and relationship type. The remaining prior-candidate relations are kept `proposed`; none becomes accepted merely because it appears in a domain record or derived view.
+
+The G → `decision_support_mapping` `governance_boundary` record in `inter_domain_interactions` remains `proposed`. Comment 7093080490 accepts the Q14 attribution principle and its claim limits, but does not accept that interaction's complete from/to, interaction type, component set, and content tuple. An interaction cannot inherit `owner_accepted` from the Q14 component relations or merely by including `q14`; no complete interaction tuple is Owner-accepted by the pinned records.
 
 ## Evidence subject binding
 

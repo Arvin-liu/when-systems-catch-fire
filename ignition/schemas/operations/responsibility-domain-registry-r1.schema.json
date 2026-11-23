@@ -15,6 +15,7 @@
     "relationship_semantics",
     "sources",
     "owner_acceptance_records",
+    "owner_claim_constraints",
     "domains",
     "component_identity_snapshot",
     "source_matrix_snapshot",
@@ -29,7 +30,26 @@
     "registry_id": {"type": "string", "minLength": 1},
     "registry_status": {"enum": ["CANDIDATE_NOT_EFFECTIVE"]},
     "work_identifier": {"type": "string", "minLength": 1},
-    "claim_ceiling": {"type": "string", "minLength": 1},
+    "claim_ceiling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_status", "formal_main_current", "formal_merge_authorized",
+        "other_component_relationships_owner_accepted", "validation_map_routes_authorized",
+        "execution_authorized", "review_authorized", "publication_authorized", "external_action_authorized"
+      ],
+      "properties": {
+        "candidate_status": {"const": "CANDIDATE_NOT_EFFECTIVE"},
+        "formal_main_current": {"const": false},
+        "formal_merge_authorized": {"const": false},
+        "other_component_relationships_owner_accepted": {"const": false},
+        "validation_map_routes_authorized": {"const": false},
+        "execution_authorized": {"const": false},
+        "review_authorized": {"const": false},
+        "publication_authorized": {"const": false},
+        "external_action_authorized": {"const": false}
+      }
+    },
     "scope": {
       "type": "object",
       "additionalProperties": false,
@@ -99,6 +119,12 @@
     "owner_acceptance_records": {
       "type": "array",
       "items": {"$ref": "#/$defs/ownerAcceptance"}
+    },
+    "owner_claim_constraints": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {"$ref": "#/$defs/ownerClaimConstraint"}
     },
     "domains": {
       "type": "array",
@@ -253,7 +279,22 @@
         "domain_status": {"enum": ["owner_accepted", "proposed", "unresolved"]},
         "owner_acceptance_record_id": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]},
         "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"domain_id": {"const": "decision_support_mapping"}},
+            "required": ["domain_id"]
+          },
+          "then": {
+            "properties": {
+              "maturity": {
+                "const": "Manually curated, source-marked, versioned map projection; snapshot freshness and actual external decision benefit are unverified; it is not a mature automated decision engine."
+              }
+            }
+          }
+        }
+      ]
     },
     "domainFingerprint": {
       "type": "object",
@@ -336,6 +377,40 @@
         "scope": {"type": "string", "minLength": 1},
         "recorded_at": {"type": "string", "format": "date"},
         "author": {"type": "string", "minLength": 1}
+      }
+    },
+    "ownerClaimConstraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "constraint_id", "source_acceptance_record_id", "source_repository", "source_issue_number",
+        "source_comment_id", "source_author_login", "source_content_sha256", "target_component_id",
+        "target_domain_id", "maturity_claims"
+      ],
+      "properties": {
+        "constraint_id": {"const": "q14_maturity_claim_ceiling_7093080490"},
+        "source_acceptance_record_id": {"const": "owner_architecture_ruling_7093080490"},
+        "source_repository": {"const": "Arvin-liu/1111"},
+        "source_issue_number": {"const": 164},
+        "source_comment_id": {"const": 7093080490},
+        "source_author_login": {"const": "Arvin-liu"},
+        "source_content_sha256": {"const": "5869ee1b404e1337beaf623528be9689f59a9bcbd7ceccd5b697729870e24f8e"},
+        "target_component_id": {"const": "q14"},
+        "target_domain_id": {"const": "decision_support_mapping"},
+        "maturity_claims": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maturity_class", "snapshot_freshness", "external_actual_decision_benefit",
+            "mature_automated_decision_engine"
+          ],
+          "properties": {
+            "maturity_class": {"const": "manual_curated_source_marked_versioned_map_projection"},
+            "snapshot_freshness": {"const": "unverified"},
+            "external_actual_decision_benefit": {"const": "unverified"},
+            "mature_automated_decision_engine": {"const": false}
+          }
+        }
       }
     },
     "componentIdentity": {

@@ -29,6 +29,133 @@ class ResponsibilityDomainRegistryTests(unittest.TestCase):
     def test_candidate_registry_and_source_evidence_resolve(self):
         self.assertEqual(validate(self.registry), [])
 
+    def test_q14_maturity_claims_are_bound_to_the_exact_owner_source(self):
+        q14 = lambda registry: next(
+            row for row in registry["domains"] if row["domain_id"] == "decision_support_mapping"
+        )
+        constraint = lambda registry: registry["owner_claim_constraints"][0]["maturity_claims"]
+        self.assertEqual(validate(self.registry), [])
+
+        mutations = []
+        mature_engine = copy.deepcopy(self.registry)
+        q14(mature_engine)["maturity"] = "A mature automated decision engine."
+        mutations.append(("mature-engine-description", mature_engine))
+
+        freshness_removed = copy.deepcopy(self.registry)
+        del constraint(freshness_removed)["snapshot_freshness"]
+        mutations.append(("freshness-removed", freshness_removed))
+
+        freshness_reversed = copy.deepcopy(self.registry)
+        constraint(freshness_reversed)["snapshot_freshness"] = "verified"
+        mutations.append(("freshness-reversed", freshness_reversed))
+
+        benefit_removed = copy.deepcopy(self.registry)
+        del constraint(benefit_removed)["external_actual_decision_benefit"]
+        mutations.append(("benefit-removed", benefit_removed))
+
+        benefit_reversed = copy.deepcopy(self.registry)
+        constraint(benefit_reversed)["external_actual_decision_benefit"] = "verified"
+        mutations.append(("benefit-reversed", benefit_reversed))
+
+        mature_claim = copy.deepcopy(self.registry)
+        constraint(mature_claim)["mature_automated_decision_engine"] = True
+        mutations.append(("mature-engine-claim", mature_claim))
+
+        source_rebound = copy.deepcopy(self.registry)
+        source_rebound["owner_claim_constraints"][0]["source_content_sha256"] = "0" * 64
+        mutations.append(("source-hash-rebound", source_rebound))
+
+        for label, mutated in mutations:
+            with self.subTest(label=label):
+                errors = validate(mutated, verify_sources=False)
+                self.assertTrue(
+                    any("Q14 maturity" in error for error in errors),
+                    errors,
+                )
+
+    def test_global_claim_ceiling_is_a_pinned_candidate_boundary(self):
+        self.assertEqual(validate(self.registry), [])
+        fields = (
+            "formal_main_current",
+            "formal_merge_authorized",
+            "other_component_relationships_owner_accepted",
+            "validation_map_routes_authorized",
+            "execution_authorized",
+            "review_authorized",
+            "publication_authorized",
+            "external_action_authorized",
+        )
+        for field in fields:
+            with self.subTest(field=field):
+                mutated = copy.deepcopy(self.registry)
+                mutated["claim_ceiling"][field] = True
+                errors = validate(mutated, verify_sources=False)
+                self.assertTrue(any("claim_ceiling differs" in error for error in errors), errors)
+
+        rewritten = copy.deepcopy(self.registry)
+        rewritten["claim_ceiling"] = "Validation Map routes and execution are authorized."
+        errors = validate(rewritten, verify_sources=False)
+        self.assertTrue(any("claim_ceiling differs" in error for error in errors), errors)
+
+    def test_q14_shared_interface_requires_the_exact_two_endpoints(self):
+        endpoint_mutations = (
+            ["G"],
+            ["G", "R"],
+            ["G", "G", "decision_support_mapping"],
+            ["G", "agent_execution_coordination"],
+        )
+        for endpoints in endpoint_mutations:
+            with self.subTest(endpoints=endpoints):
+                mutated = copy.deepcopy(self.registry)
+                relation = next(
+                    row
+                    for row in mutated["component_relationship_decisions"]
+                    if row["decision_id"] == "q14::G::shared_interface"
+                )
+                relation["interface_domain_ids"] = endpoints
+                errors = validate(mutated, verify_sources=False)
+                self.assertTrue(
+                    any("endpoints must be exactly {G, decision_support_mapping}" in error for error in errors),
+                    errors,
+                )
+
+    def test_q14_governance_interaction_is_proposed_without_full_tuple_acceptance(self):
+        interaction = next(
+            row
+            for row in self.registry["inter_domain_interactions"]
+            if row["from_domain_id"] == "G" and row["to_domain_id"] == "decision_support_mapping"
+        )
+        self.assertEqual(interaction["interaction_status"], "proposed")
+        self.assertIsNone(interaction["owner_acceptance_record_id"])
+        self.assertEqual(validate(self.registry), [])
+
+    def test_inter_domain_interaction_cannot_inherit_q14_owner_acceptance(self):
+        mutations = (
+            ("exact-proposal", lambda row: None),
+            ("unaccepted-component", lambda row: row["component_ids"].append("function_os")),
+            ("interaction-type", lambda row: row.update(interaction_type="permission_grant")),
+            ("from-domain", lambda row: row.update(from_domain_id="decision_support_mapping")),
+            ("to-domain", lambda row: row.update(to_domain_id="O")),
+            ("component-set", lambda row: row.update(component_ids=["q14"])),
+            ("interaction-content", lambda row: row.update(interaction="Q14 is authorized to execute and publish.")),
+        )
+        for label, mutate in mutations:
+            with self.subTest(label=label):
+                candidate = copy.deepcopy(self.registry)
+                interaction = next(
+                    row
+                    for row in candidate["inter_domain_interactions"]
+                    if row["from_domain_id"] == "G" and row["to_domain_id"] == "decision_support_mapping"
+                )
+                interaction["interaction_status"] = "owner_accepted"
+                interaction["owner_acceptance_record_id"] = OWNER_ACCEPTANCE_SOURCE
+                mutate(interaction)
+                errors = validate(candidate, verify_sources=False)
+                self.assertTrue(
+                    any("full-tuple Owner acceptance" in error for error in errors),
+                    errors,
+                )
+
     def test_pinned_source_snapshot_validates_without_git_source_objects(self):
         registry_validator._pinned_source_blob.cache_clear()
         try:

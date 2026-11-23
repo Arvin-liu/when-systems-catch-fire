@@ -3,7 +3,17 @@
   "registry_id": "formal_responsibility_domain_registry",
   "registry_status": "CANDIDATE_NOT_EFFECTIVE",
   "work_identifier": "RESPONSIBILITY-DOMAIN-REGISTRY-IMPLEMENTATION-01",
-  "claim_ceiling": "This isolated local branch contains a candidate registry mechanism. Owner acceptance of domain boundaries and the Q14 relationship rule does not make this file current, merge it to Formal main, accept other component relationships, or authorize routes, execution, review, publication, or external action.",
+  "claim_ceiling": {
+    "candidate_status": "CANDIDATE_NOT_EFFECTIVE",
+    "formal_main_current": false,
+    "formal_merge_authorized": false,
+    "other_component_relationships_owner_accepted": false,
+    "validation_map_routes_authorized": false,
+    "execution_authorized": false,
+    "review_authorized": false,
+    "publication_authorized": false,
+    "external_action_authorized": false
+  },
   "scope": {
     "formal_main_baseline": "509d49e0b26216ce5443d5c3677aed6c4da4ef4b",
     "pr275_matrix_head": "b188dbab54677484aaf914a134064903b8902a43",
@@ -255,6 +265,25 @@
       "decision_content_summary": "The record states that only Q14 decision_support_mapping primary and G shared_interface component relations are Owner accepted; all other candidate component relations remain proposed.",
       "accepted_external_interfaces": [],
       "accepted_domain_fingerprints": []
+    }
+  ],
+  "owner_claim_constraints": [
+    {
+      "constraint_id": "q14_maturity_claim_ceiling_7093080490",
+      "source_acceptance_record_id": "owner_architecture_ruling_7093080490",
+      "source_repository": "Arvin-liu/1111",
+      "source_issue_number": 164,
+      "source_comment_id": 7093080490,
+      "source_author_login": "Arvin-liu",
+      "source_content_sha256": "5869ee1b404e1337beaf623528be9689f59a9bcbd7ceccd5b697729870e24f8e",
+      "target_component_id": "q14",
+      "target_domain_id": "decision_support_mapping",
+      "maturity_claims": {
+        "maturity_class": "manual_curated_source_marked_versioned_map_projection",
+        "snapshot_freshness": "unverified",
+        "external_actual_decision_benefit": "unverified",
+        "mature_automated_decision_engine": false
+      }
     }
   ],
   "domains": [
@@ -1795,7 +1824,7 @@
         }
       ],
       "lifecycle": "Project Component Registry 将 q14 标为 current；Atlas 文件与 121Q14 产物仍保留 overlay/candidate 标签；新领域关系本身未被 Owner 接受。",
-      "maturity": "固定 main 中存在 Atlas 规范、builder、validator、3 张首发地图、决策摘要与 MapDiff；来源中 AS_OF_COMMIT 早于本次 main，且未运行 validator 或观察外部实际决策收益。",
+      "maturity": "Manually curated, source-marked, versioned map projection; snapshot freshness and actual external decision benefit are unverified; it is not a mature automated decision engine.",
       "evidence_refs": [
         {
           "source_id": "identity_audit_r0_1",
@@ -13877,8 +13906,8 @@
           "evidence_key": "accepted responsibility-domain set and boundaries; Q14 primary/shared-interface principle"
         }
       ],
-      "interaction_status": "owner_accepted",
-      "owner_acceptance_record_id": "owner_architecture_ruling_7093080490"
+      "interaction_status": "proposed",
+      "owner_acceptance_record_id": null
     }
   ],
   "external_consumer_interfaces": [

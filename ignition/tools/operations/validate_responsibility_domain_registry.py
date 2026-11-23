@@ -105,6 +105,42 @@ OWNER_ACCEPTED_RELATIONS = {
     ("q14", "G", "shared_interface"),
 }
 OWNER_ACCEPTED_EXTERNAL_INTERFACES: tuple[dict[str, Any], ...] = ()
+CANDIDATE_CLAIM_CEILING = {
+    "candidate_status": "CANDIDATE_NOT_EFFECTIVE",
+    "formal_main_current": False,
+    "formal_merge_authorized": False,
+    "other_component_relationships_owner_accepted": False,
+    "validation_map_routes_authorized": False,
+    "execution_authorized": False,
+    "review_authorized": False,
+    "publication_authorized": False,
+    "external_action_authorized": False,
+}
+Q14_MATURITY_DESCRIPTION = (
+    "Manually curated, source-marked, versioned map projection; snapshot freshness and actual "
+    "external decision benefit are unverified; it is not a mature automated decision engine."
+)
+OWNER_Q14_MATURITY_CONSTRAINT = {
+    "constraint_id": "q14_maturity_claim_ceiling_7093080490",
+    "source_acceptance_record_id": OWNER_ACCEPTANCE_SOURCE,
+    "source_repository": OWNER_REPOSITORY,
+    "source_issue_number": OWNER_ISSUE_NUMBER,
+    "source_comment_id": OWNER_ACCEPTANCE_COMMENT,
+    "source_author_login": OWNER_LOGIN,
+    "source_content_sha256": OWNER_COMMENT_BODY_SHA256,
+    "target_component_id": "q14",
+    "target_domain_id": "decision_support_mapping",
+    "maturity_claims": {
+        "maturity_class": "manual_curated_source_marked_versioned_map_projection",
+        "snapshot_freshness": "unverified",
+        "external_actual_decision_benefit": "unverified",
+        "mature_automated_decision_engine": False,
+    },
+}
+Q14_SHARED_INTERFACE_ENDPOINTS = frozenset({"G", "decision_support_mapping"})
+PINNED_OWNER_ACCEPTED_INTERACTION_TUPLES: frozenset[
+    tuple[str, str, str, tuple[str, ...], str]
+] = frozenset()
 
 FIXED_SOURCE_ANCHORS = {
     "formal_main_component_registry": (
@@ -1239,15 +1275,126 @@ def _validate_external_interfaces(
         errors.append("accepted external-interface records and owner_accepted interfaces do not match exactly")
 
 
+def _validate_claim_ceiling(document: dict[str, Any], errors: list[str]) -> None:
+    if document.get("claim_ceiling") != CANDIDATE_CLAIM_CEILING:
+        errors.append("claim_ceiling differs from the exact pinned candidate-state and authority boundary")
+
+
+def _validate_q14_maturity_claims(document: dict[str, Any], errors: list[str]) -> None:
+    if document.get("owner_claim_constraints") != [OWNER_Q14_MATURITY_CONSTRAINT]:
+        errors.append("Q14 maturity claims are not bound to the exact Owner source constraint")
+
+    domains = document.get("domains")
+    if not isinstance(domains, list):
+        errors.append("Q14 maturity claim target is missing from the domain list")
+        return
+    q14_domains = [
+        row
+        for row in domains
+        if isinstance(row, dict) and row.get("domain_id") == "decision_support_mapping"
+    ]
+    if len(q14_domains) != 1 or q14_domains[0].get("maturity") != Q14_MATURITY_DESCRIPTION:
+        errors.append("Q14 maturity description differs from the exact pinned Owner maturity ceiling")
+
+    sources = document.get("sources")
+    if not isinstance(sources, list):
+        errors.append("Q14 maturity source is missing from the source catalog")
+        return
+    owner_sources = [
+        row
+        for row in sources
+        if isinstance(row, dict) and row.get("source_id") == OWNER_ACCEPTANCE_SOURCE
+    ]
+    if len(owner_sources) != 1:
+        errors.append("Q14 maturity constraint does not resolve to one pinned Owner source")
+        return
+    source = owner_sources[0]
+    expected_source = {
+        "source_kind": "github_issue_comment",
+        "repository": OWNER_REPOSITORY,
+        "issue_number": OWNER_ISSUE_NUMBER,
+        "comment_id": OWNER_ACCEPTANCE_COMMENT,
+        "url": OWNER_ACCEPTANCE_URL,
+        "author_login": OWNER_LOGIN,
+        "body_sha256": OWNER_COMMENT_BODY_SHA256,
+    }
+    if any(source.get(key) != value for key, value in expected_source.items()):
+        errors.append("Q14 maturity constraint Owner source identity/content hash does not match the pinned ruling")
+
+
+def _validate_q14_shared_interface_endpoints(document: dict[str, Any], errors: list[str]) -> None:
+    decisions = document.get("component_relationship_decisions")
+    if not isinstance(decisions, list):
+        errors.append("the exact Q14 G shared-interface decision is missing")
+        return
+    rows = [
+        row
+        for row in decisions
+        if isinstance(row, dict) and row.get("decision_id") == "q14::G::shared_interface"
+    ]
+    if len(rows) != 1:
+        errors.append("the exact Q14 G shared-interface decision must appear exactly once")
+        return
+    row = rows[0]
+    endpoints = row.get("interface_domain_ids")
+    if (
+        row.get("component_id") != "q14"
+        or row.get("domain_id") != "G"
+        or row.get("relationship_type") != "shared_interface"
+        or not isinstance(endpoints, list)
+        or len(endpoints) != 2
+        or not all(isinstance(endpoint, str) for endpoint in endpoints)
+        or set(endpoints) != Q14_SHARED_INTERFACE_ENDPOINTS
+    ):
+        errors.append("Q14 G shared_interface endpoints must be exactly {G, decision_support_mapping}")
+
+
+def _validate_inter_domain_interaction_acceptance(document: dict[str, Any], errors: list[str]) -> None:
+    interactions = document.get("inter_domain_interactions")
+    if not isinstance(interactions, list):
+        return
+    for index, interaction in enumerate(interactions):
+        if not isinstance(interaction, dict):
+            continue
+        if interaction.get("interaction_status") == "owner_accepted":
+            components = interaction.get("component_ids")
+            normalized_components = (
+                tuple(sorted(components))
+                if isinstance(components, list) and all(isinstance(item, str) for item in components)
+                else ()
+            )
+            interaction_tuple = (
+                interaction.get("from_domain_id"),
+                interaction.get("to_domain_id"),
+                interaction.get("interaction_type"),
+                normalized_components,
+                interaction.get("interaction"),
+            )
+            if interaction_tuple not in PINNED_OWNER_ACCEPTED_INTERACTION_TUPLES:
+                errors.append(
+                    "inter-domain interaction lacks a full-tuple Owner acceptance in the pinned sources: "
+                    f"{index}"
+                )
+        elif interaction.get("owner_acceptance_record_id") is not None:
+            errors.append(f"non-accepted inter-domain interaction has an Owner acceptance record: {index}")
+
+
 def validate(
     document: dict[str, Any] | None = None, *, verify_sources: bool = True
 ) -> list[str]:
     document = document if document is not None else _load_json(REGISTRY_PATH)
+    if not isinstance(document, dict):
+        return ["registry document must be an object"]
+    errors: list[str] = []
+    _validate_claim_ceiling(document, errors)
+    _validate_q14_maturity_claims(document, errors)
+    _validate_q14_shared_interface_endpoints(document, errors)
+    _validate_inter_domain_interaction_acceptance(document, errors)
     schema = _load_json(SCHEMA_PATH)
-    errors = [
+    errors.extend(
         f"{list(error.absolute_path)}: {error.message}"
         for error in Draft202012Validator(schema).iter_errors(document)
-    ]
+    )
     if errors:
         return errors
 
@@ -1263,16 +1410,6 @@ def validate(
             errors.append(f"inter_domain_interactions[{index}] references an unknown responsibility domain")
         if any(component_id not in matrix_by_id for component_id in interaction["component_ids"]):
             errors.append(f"inter_domain_interactions[{index}] references an unknown component")
-        if interaction["interaction_status"] == "owner_accepted":
-            if not (
-                interaction["from_domain_id"] == "G"
-                and interaction["to_domain_id"] == "decision_support_mapping"
-                and "q14" in interaction["component_ids"]
-                and interaction.get("owner_acceptance_record_id") == OWNER_ACCEPTANCE_SOURCE
-            ):
-                errors.append(f"unaccepted inter-domain interaction was promoted: {index}")
-        elif interaction.get("owner_acceptance_record_id") is not None:
-            errors.append(f"proposed inter-domain interaction has an Owner acceptance record: {index}")
 
     _validate_external_interfaces(
         document,
