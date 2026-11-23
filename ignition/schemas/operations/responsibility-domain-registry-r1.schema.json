@@ -1,0 +1,514 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/responsibility-domain-registry-r1.schema.json",
+  "title": "Formal responsibility-domain registry R1",
+  "description": "Candidate responsibility domains and component relations with separate source, proposal, and Owner acceptance states. Domain IDs are open-ended.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "registry_id",
+    "registry_status",
+    "work_identifier",
+    "claim_ceiling",
+    "scope",
+    "relationship_semantics",
+    "sources",
+    "owner_acceptance_records",
+    "owner_claim_constraints",
+    "domains",
+    "component_identity_snapshot",
+    "source_matrix_snapshot",
+    "component_relationship_decisions",
+    "inter_domain_interactions",
+    "external_consumer_interfaces",
+    "validation_domain_associations",
+    "future_evolution"
+  ],
+  "properties": {
+    "schema_version": {"const": "responsibility-domain-registry-r1"},
+    "registry_id": {"type": "string", "minLength": 1},
+    "registry_status": {"enum": ["CANDIDATE_NOT_EFFECTIVE"]},
+    "work_identifier": {"type": "string", "minLength": 1},
+    "claim_ceiling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_status", "formal_main_current", "formal_merge_authorized",
+        "other_component_relationships_owner_accepted", "validation_map_routes_authorized",
+        "execution_authorized", "review_authorized", "publication_authorized", "external_action_authorized"
+      ],
+      "properties": {
+        "candidate_status": {"const": "CANDIDATE_NOT_EFFECTIVE"},
+        "formal_main_current": {"const": false},
+        "formal_merge_authorized": {"const": false},
+        "other_component_relationships_owner_accepted": {"const": false},
+        "validation_map_routes_authorized": {"const": false},
+        "execution_authorized": {"const": false},
+        "review_authorized": {"const": false},
+        "publication_authorized": {"const": false},
+        "external_action_authorized": {"const": false}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "formal_main_baseline",
+        "pr275_matrix_head",
+        "previous_candidate_commit",
+        "previous_candidate_is_remote_visible",
+        "domain_count_policy",
+        "responsibility_and_validation_domains_are_distinct",
+        "new_responsibility_domain_auto_creates_validation_route",
+        "new_responsibility_domain_auto_grants_execution_review_or_publication_authority"
+      ],
+      "properties": {
+        "formal_main_baseline": {"$ref": "#/$defs/commit"},
+        "pr275_matrix_head": {"$ref": "#/$defs/commit"},
+        "previous_candidate_commit": {"$ref": "#/$defs/commit"},
+        "previous_candidate_is_remote_visible": {"const": false},
+        "domain_count_policy": {"const": "OPEN_UNBOUNDED"},
+        "responsibility_and_validation_domains_are_distinct": {"const": true},
+        "new_responsibility_domain_auto_creates_validation_route": {"const": false},
+        "new_responsibility_domain_auto_grants_execution_review_or_publication_authority": {"const": false}
+      }
+    },
+    "relationship_semantics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relationship_types", "decision_statuses", "views"],
+      "properties": {
+        "relationship_types": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["primary", "participating", "shared_interface"],
+          "properties": {
+            "primary": {"type": "string", "minLength": 1},
+            "participating": {"type": "string", "minLength": 1},
+            "shared_interface": {"type": "string", "minLength": 1}
+          }
+        },
+        "decision_statuses": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source_declared", "proposed", "owner_accepted", "unresolved"],
+          "properties": {
+            "source_declared": {"type": "string", "minLength": 1},
+            "proposed": {"type": "string", "minLength": 1},
+            "owner_accepted": {"type": "string", "minLength": 1},
+            "unresolved": {"type": "string", "minLength": 1}
+          }
+        },
+        "views": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["core_components", "participating_components", "interfaces"],
+          "properties": {
+            "core_components": {"type": "string", "minLength": 1},
+            "participating_components": {"type": "string", "minLength": 1},
+            "interfaces": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "owner_acceptance_records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ownerAcceptance"}
+    },
+    "owner_claim_constraints": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {"$ref": "#/$defs/ownerClaimConstraint"}
+    },
+    "domains": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/domain"}
+    },
+    "component_identity_snapshot": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/componentIdentity"}
+    },
+    "source_matrix_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "commit", "path", "blob_sha1", "document"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "commit": {"$ref": "#/$defs/commit"},
+        "path": {"type": "string", "minLength": 1},
+        "blob_sha1": {"$ref": "#/$defs/blobSha1"},
+        "document": {
+          "type": "object",
+          "required": ["schema_version", "source_commit", "domain_definitions", "components"],
+          "properties": {
+            "schema_version": {"const": "component-domain-responsibilities-r1"},
+            "source_commit": {"type": "string", "minLength": 1},
+            "domain_definitions": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+            "components": {"type": "array", "items": {"type": "object"}}
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "component_relationship_decisions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/relationshipDecision"}
+    },
+    "inter_domain_interactions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/domainInteraction"}
+    },
+    "external_consumer_interfaces": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/externalInterface"}
+    },
+    "validation_domain_associations": {
+      "type": "array",
+      "maxItems": 0,
+      "items": {"$ref": "#/$defs/validationAssociation"}
+    },
+    "future_evolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["adding_a_domain", "adding_a_relationship", "route_crosswalk"],
+      "properties": {
+        "adding_a_domain": {"type": "string", "minLength": 1},
+        "adding_a_relationship": {"type": "string", "minLength": 1},
+        "route_crosswalk": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "$defs": {
+    "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "blobSha1": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "domainId": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_kind", "repository", "availability", "description"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "source_kind": {"enum": ["git_commit", "github_issue_comment"]},
+        "repository": {"type": "string", "minLength": 1},
+        "commit": {"anyOf": [{"$ref": "#/$defs/commit"}, {"type": "null"}]},
+        "path": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]},
+        "blob_sha1": {"anyOf": [{"$ref": "#/$defs/blobSha1"}, {"type": "null"}]},
+        "comment_id": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+        "url": {"anyOf": [{"type": "string", "format": "uri"}, {"type": "null"}]},
+        "issue_number": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+        "author_login": {"type": "string", "minLength": 1},
+        "body_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "decision_content_summary": {"type": "string", "minLength": 1},
+        "availability": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"source_kind": {"const": "git_commit"}}},
+          "then": {"required": ["commit", "path", "blob_sha1"]}
+        },
+        {
+          "if": {"properties": {"source_kind": {"const": "github_issue_comment"}}},
+          "then": {"required": ["comment_id", "url"]}
+        }
+      ]
+    },
+    "evidenceRef": {
+      "type": "object",
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "commit": {"$ref": "#/$defs/commit"},
+        "path": {"type": "string", "minLength": 1},
+        "json_pointer": {"type": "string"},
+        "evidence_key": {"type": "string", "minLength": 1},
+        "location": {"type": "string", "minLength": 1},
+        "blob_sha1": {"$ref": "#/$defs/blobSha1"},
+        "evidence_target_path": {"type": "string", "minLength": 1},
+        "evidence_target_blob_sha1": {"$ref": "#/$defs/blobSha1"},
+        "comment_id": {"type": "integer", "minimum": 1},
+        "url": {"type": "string", "format": "uri"},
+        "evidence_refs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}}
+      },
+      "additionalProperties": true
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "allOf": [
+          {"$ref": "#/$defs/evidenceRef"},
+          {"required": ["source_id"]}
+        ]
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["included", "excluded"],
+      "properties": {
+        "included": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "excluded": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain_id", "name_zh", "aliases", "definition", "responsibility_boundary",
+        "inputs", "outputs", "consumers", "inter_domain_dependencies", "lifecycle", "maturity",
+        "prior_candidate_status", "domain_status", "owner_acceptance_record_id", "evidence_refs"
+      ],
+      "properties": {
+        "domain_id": {"$ref": "#/$defs/domainId"},
+        "name_zh": {"type": "string", "minLength": 1},
+        "aliases": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "definition": {"type": "string", "minLength": 1},
+        "responsibility_boundary": {"$ref": "#/$defs/boundary"},
+        "inputs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "outputs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "consumers": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "inter_domain_dependencies": {"type": "array", "items": {"type": "object"}},
+        "lifecycle": {"type": "string", "minLength": 1},
+        "maturity": {"type": "string", "minLength": 1},
+        "prior_candidate_status": {"type": "string", "minLength": 1},
+        "domain_status": {"enum": ["owner_accepted", "proposed", "unresolved"]},
+        "owner_acceptance_record_id": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"domain_id": {"const": "decision_support_mapping"}},
+            "required": ["domain_id"]
+          },
+          "then": {
+            "properties": {
+              "maturity": {
+                "const": "Manually curated, source-marked, versioned map projection; snapshot freshness and actual external decision benefit are unverified; it is not a mature automated decision engine."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "domainFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain_id", "fingerprint_fields", "fingerprint_sha256", "source_ref"],
+      "properties": {
+        "domain_id": {"$ref": "#/$defs/domainId"},
+        "fingerprint_fields": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "domain_id", "name_zh", "definition",
+              "responsibility_boundary.included", "responsibility_boundary.excluded"
+            ]
+          }
+        },
+        "fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_ref": {
+          "allOf": [
+            {"$ref": "#/$defs/evidenceRef"},
+            {"required": ["source_id", "commit", "path", "json_pointer", "blob_sha1"]}
+          ]
+        }
+      }
+    },
+    "acceptedExternalInterface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_domain_id", "target_type", "external_consumer_id", "direction",
+        "interface_type", "component_ids", "interaction"
+      ],
+      "properties": {
+        "source_domain_id": {"$ref": "#/$defs/domainId"},
+        "target_type": {"const": "external_consumer"},
+        "external_consumer_id": {"type": "string", "minLength": 1},
+        "direction": {"enum": ["external_consumer_invokes_source_domain", "source_domain_invokes_external_consumer"]},
+        "interface_type": {"type": "string", "minLength": 1},
+        "component_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "interaction": {"type": "string", "minLength": 1}
+      }
+    },
+    "ownerAcceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id", "source_id", "comment_id", "url", "accepted_domain_ids", "accepted_component_relations",
+        "scope", "recorded_at", "author", "source_repository", "source_issue_number", "author_login",
+        "source_content_sha256", "decision_content_summary", "accepted_domain_fingerprints", "accepted_external_interfaces"
+      ],
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1},
+        "source_id": {"type": "string", "minLength": 1},
+        "comment_id": {"type": "integer", "minimum": 1},
+        "url": {"type": "string", "format": "uri"},
+        "accepted_domain_ids": {"type": "array", "items": {"$ref": "#/$defs/domainId"}},
+        "source_repository": {"type": "string", "minLength": 1},
+        "source_issue_number": {"type": "integer", "minimum": 1},
+        "author_login": {"type": "string", "minLength": 1},
+        "source_content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "decision_content_summary": {"type": "string", "minLength": 1},
+        "accepted_domain_fingerprints": {"type": "array", "items": {"$ref": "#/$defs/domainFingerprint"}},
+        "accepted_external_interfaces": {"type": "array", "items": {"$ref": "#/$defs/acceptedExternalInterface"}},
+        "accepted_component_relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["component_id", "domain_id", "relationship_type"],
+            "properties": {
+              "component_id": {"type": "string", "minLength": 1},
+              "domain_id": {"$ref": "#/$defs/domainId"},
+              "relationship_type": {"enum": ["primary", "participating", "shared_interface"]}
+            }
+          }
+        },
+        "scope": {"type": "string", "minLength": 1},
+        "recorded_at": {"type": "string", "format": "date"},
+        "author": {"type": "string", "minLength": 1}
+      }
+    },
+    "ownerClaimConstraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "constraint_id", "source_acceptance_record_id", "source_repository", "source_issue_number",
+        "source_comment_id", "source_author_login", "source_content_sha256", "target_component_id",
+        "target_domain_id", "maturity_claims"
+      ],
+      "properties": {
+        "constraint_id": {"const": "q14_maturity_claim_ceiling_7093080490"},
+        "source_acceptance_record_id": {"const": "owner_architecture_ruling_7093080490"},
+        "source_repository": {"const": "Arvin-liu/1111"},
+        "source_issue_number": {"const": 164},
+        "source_comment_id": {"const": 7093080490},
+        "source_author_login": {"const": "Arvin-liu"},
+        "source_content_sha256": {"const": "5869ee1b404e1337beaf623528be9689f59a9bcbd7ceccd5b697729870e24f8e"},
+        "target_component_id": {"const": "q14"},
+        "target_domain_id": {"const": "decision_support_mapping"},
+        "maturity_claims": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maturity_class", "snapshot_freshness", "external_actual_decision_benefit",
+            "mature_automated_decision_engine"
+          ],
+          "properties": {
+            "maturity_class": {"const": "manual_curated_source_marked_versioned_map_projection"},
+            "snapshot_freshness": {"const": "unverified"},
+            "external_actual_decision_benefit": {"const": "unverified"},
+            "mature_automated_decision_engine": {"const": false}
+          }
+        }
+      }
+    },
+    "componentIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "canonical_target", "component_type", "lifecycle", "source_ref"],
+      "properties": {
+        "component_id": {"type": "string", "minLength": 1},
+        "canonical_target": {"type": "string", "minLength": 1},
+        "component_type": {"type": "string", "minLength": 1},
+        "lifecycle": {},
+        "source_ref": {
+          "allOf": [
+            {"$ref": "#/$defs/evidenceRef"},
+            {"required": ["source_id"]}
+          ]
+        }
+      }
+    },
+    "relationshipDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id", "component_id", "domain_id", "relationship_type", "decision_status", "origin",
+        "source_matrix_status_at_275_head", "source_matrix_primary_domain_at_275_head", "interface_domain_ids",
+        "rationale", "evidence_refs", "owner_acceptance_record_id"
+      ],
+      "properties": {
+        "decision_id": {"type": "string", "minLength": 1},
+        "component_id": {"type": "string", "minLength": 1},
+        "domain_id": {"anyOf": [{"$ref": "#/$defs/domainId"}, {"type": "null"}]},
+        "relationship_type": {"anyOf": [{"enum": ["primary", "participating", "shared_interface"]}, {"type": "null"}]},
+        "decision_status": {"enum": ["source_declared", "proposed", "owner_accepted", "unresolved"]},
+        "origin": {"type": "string", "minLength": 1},
+        "source_matrix_status_at_275_head": {"enum": ["SINGLE_DOMAIN_PRIMARY", "SHARED_CROSS_DOMAIN", "UNRESOLVED"]},
+        "source_matrix_primary_domain_at_275_head": {"anyOf": [{"$ref": "#/$defs/domainId"}, {"type": "null"}]},
+        "interface_domain_ids": {"type": "array", "items": {"$ref": "#/$defs/domainId"}},
+        "rationale": {"type": "string", "minLength": 1},
+        "interface_flow": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "owner_acceptance_record_id": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}
+      }
+    },
+    "domainInteraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_domain_id", "to_domain_id", "interaction_type", "interaction", "component_ids", "evidence_refs", "interaction_status", "owner_acceptance_record_id"],
+      "properties": {
+        "from_domain_id": {"$ref": "#/$defs/domainId"},
+        "to_domain_id": {"$ref": "#/$defs/domainId"},
+        "interaction_type": {"type": "string", "minLength": 1},
+        "interaction": {"type": "string", "minLength": 1},
+        "component_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "interaction_status": {"enum": ["proposed", "owner_accepted", "unresolved"]},
+        "owner_acceptance_record_id": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}
+      }
+    },
+    "externalInterface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_domain_id", "external_consumer_id", "target_type", "direction", "interface_type",
+        "interaction", "component_ids", "evidence_refs", "interface_status", "owner_acceptance_record_id"
+      ],
+      "properties": {
+        "source_domain_id": {"$ref": "#/$defs/domainId"},
+        "external_consumer_id": {"type": "string", "minLength": 1},
+        "target_type": {"const": "external_consumer"},
+        "direction": {"enum": ["external_consumer_invokes_source_domain", "source_domain_invokes_external_consumer"]},
+        "interface_type": {"type": "string", "minLength": 1},
+        "interaction": {"type": "string", "minLength": 1},
+        "component_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "interface_status": {"enum": ["proposed", "owner_accepted", "unresolved"]},
+        "owner_acceptance_record_id": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"interface_status": {"const": "owner_accepted"}}, "required": ["interface_status"]},
+          "then": {"properties": {"owner_acceptance_record_id": {"type": "string", "minLength": 1}}},
+          "else": {"properties": {"owner_acceptance_record_id": {"type": "null"}}}
+        }
+      ]
+    },
+    "validationAssociation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "responsibility_domain_id", "validation_domain_id", "validation_target_id", "evidence_refs", "migration_authorization_ref"],
+      "properties": {
+        "component_id": {"type": "string", "minLength": 1},
+        "responsibility_domain_id": {"$ref": "#/$defs/domainId"},
+        "validation_domain_id": {"type": "string", "minLength": 1},
+        "validation_target_id": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "migration_authorization_ref": {"$ref": "#/$defs/evidenceRef"}
+      }
+    }
+  }
+}
